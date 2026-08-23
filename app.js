@@ -70,6 +70,20 @@ const GAME_ORDER = [
 ];
 let GAME_LIST = [];
 
+/**
+ * Catch-all buckets the data generator falls back to when a card matches no
+ * specific Final Fantasy game. Right now that is a single "Punchcard" token in
+ * the token set, which makes for a progress pill reading 0/1.
+ *
+ * These are hidden from the progress pills and the FF Game filter only. The
+ * cards themselves stay in the binder and can still be collected, and they still
+ * count towards overall completion - they simply do not get a game of their own.
+ *
+ * Listed rather than removed from the data so that a future set regeneration
+ * cannot quietly reintroduce them.
+ */
+const HIDDEN_GAMES = ["Spin-Off / Multi-Game", "Unknown"];
+
 // Master variant dictionary
 const MASTER_VARIANTS = {
   "Non-Foil": { key: "nonfoil", label: "Non-Foil", short: "Non-Foil", icon: "\u{1F4C4}", priceKey: "price_usd", badgeClass: "active-nonfoil" },
@@ -525,7 +539,9 @@ function buildFilterOptions() {
   const sets = distinctValues(card => card.set);
   fillSelect("filterSet", "All Sets", sets.map(v => ({ value: v, label: SET_LABELS[v] || v })));
 
-  const games = distinctValues(card => card.game).sort(byCanonicalGameOrder);
+  const games = distinctValues(card => card.game)
+    .filter(game => HIDDEN_GAMES.indexOf(game) === -1)
+    .sort(byCanonicalGameOrder);
   GAME_LIST = games;
   fillSelect("filterGame", "All Games", games.map(v => ({ value: v, label: GAME_LABELS[v] || v })));
 
