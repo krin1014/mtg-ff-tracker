@@ -142,6 +142,31 @@ const COLOR_LABELS = { W: "White (W)", U: "Blue (U)", B: "Black (B)", R: "Red (R
 
 const RARITY_ORDER = { Mythic: 5, Rare: 4, Special: 3, Uncommon: 2, Common: 1 };
 
+/** Print styles, in the order results are grouped. Anything else sorts last. */
+const TREATMENT_ORDER = ["Showcase", "Borderless", "Extended Art", "Standard", "Art Card"];
+
+/**
+ * Sets in release order, main set first.
+ *
+ * Deliberately a fixed list rather than something derived from Scryfall's
+ * release dates, because those dates cannot produce this order: the ten Final
+ * Fantasy sets all launched on the same day, and the general promo collections
+ * that happen to carry a Final Fantasy card have set dates running back to 1995
+ * (Media Promos) and 2007 (Pro Tour Promos). Sorting by date would put those
+ * ahead of FIN.
+ *
+ * Those promo collections simply go last within each print style. A set missing
+ * from this list sorts after everything here, alphabetically.
+ */
+const SET_RELEASE_ORDER = [
+  // 2025-06-13, the Final Fantasy launch
+  "FIN", "FIC", "FCA", "AFIN", "TFIN", "TFIC", "PFIN", "RFIN", "PSS5", "WFIN",
+  // 2025-12-05
+  "AFIC",
+  // Final Fantasy cards printed inside general promo collections
+  "PSPL", "PF25", "PW25", "PMEI", "PPRO", "SLD"
+];
+
 // ---------------------------------------------------------------------------
 // Small utilities
 // ---------------------------------------------------------------------------
@@ -421,7 +446,9 @@ function loadPrefs() {
 
   if (prefs.view === "table" || prefs.view === "grid") currentView = prefs.view;
   if ([24, 60, 120].indexOf(Number(prefs.pageSize)) !== -1) pageSize = Number(prefs.pageSize);
-  setValue("sortBySelect", prefs.sort);
+  // "number_asc" was the old default. Nobody picked it deliberately, so move
+  // those devices onto the new default rather than pinning them to the old one.
+  setValue("sortBySelect", prefs.sort === "number_asc" ? "print_style" : prefs.sort);
   setValue("searchInput", prefs.search);
   if (prefs.filters && typeof prefs.filters === "object") {
     FILTER_IDS.forEach(id => setValue(id, prefs.filters[id]));
@@ -1293,7 +1320,7 @@ function resetAllFilters() {
   setValue("searchInput", "");
   document.getElementById("clearSearchBtn").style.display = "none";
   FILTER_IDS.forEach(id => setValue(id, "all"));
-  setValue("sortBySelect", "number_asc");
+  setValue("sortBySelect", "print_style");
   activeGameFilter = "all";
   activeLocationFilter = "all";
   locationUiSignature = "";
@@ -1425,14 +1452,16 @@ function sortFilteredCards(sortBy) {
       case "price_asc":
         return bestPrice(a) - bestPrice(b);
       case "rarity_desc":
-        return ((RARITY_ORDER[b.rarity] || 0) - (RARITY_ORDER[a.rarity] || 0)) || compareByNumber(a, b);
+        return ((RARITY_ORDER[b.rarity] || 0) - (RARITY_ORDER[a.rarity] || 0)) || compareByPrintStyle(a, b);
       case "owned_desc":
-        return ((isCardOwned(b.id) ? 1 : 0) - (isCardOwned(a.id) ? 1 : 0)) || compareByNumber(a, b);
+        return ((isCardOwned(b.id) ? 1 : 0) - (isCardOwned(a.id) ? 1 : 0)) || compareByPrintStyle(a, b);
       case "qty_desc":
-        return (getCardTotalQty(b.id) - getCardTotalQty(a.id)) || compareByNumber(a, b);
+        return (getCardTotalQty(b.id) - getCardTotalQty(a.id)) || compareByPrintStyle(a, b);
       case "number_asc":
-      default:
         return compareByNumber(a, b);
+      case "print_style":
+      default:
+        return compareByPrintStyle(a, b);
     }
   });
 }
@@ -1441,6 +1470,31 @@ function bestPrice(card) {
   if (typeof card.price_usd === "number") return card.price_usd;
   if (typeof card.price_foil === "number") return card.price_foil;
   return 0;
+}
+
+function treatmentRank(card) {
+  const at = TREATMENT_ORDER.indexOf(card.treatment);
+  return at === -1 ? TREATMENT_ORDER.length : at;
+}
+
+function setRank(card) {
+  const at = SET_RELEASE_ORDER.indexOf(card.set);
+  return at === -1 ? SET_RELEASE_ORDER.length : at;
+}
+
+function compareBySet(a, b) {
+  const rankDiff = setRank(a) - setRank(b);
+  if (rankDiff !== 0) return rankDiff;
+  // Same rank means either the same set, or two sets not on the list at all.
+  return a.set === b.set ? 0 : a.set.localeCompare(b.set);
+}
+
+/**
+ * The default order: group by print style, and within each style run through the
+ * sets in release order, starting with FIN.
+ */
+function compareByPrintStyle(a, b) {
+  return (treatmentRank(a) - treatmentRank(b)) || compareBySet(a, b) || compareByNumber(a, b);
 }
 
 function compareByNumber(a, b) {
