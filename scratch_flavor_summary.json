@@ -1,0 +1,1069 @@
+[
+  {
+    "set": "fca",
+    "num": "1",
+    "ff_name": "Hero of Light",
+    "mtg_name": "Adeline, Resplendent Cathar",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "21",
+    "ff_name": "Blessing of the Oracle",
+    "mtg_name": "Akroma's Will",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "12",
+    "ff_name": "Dragon of Mount Gulg",
+    "mtg_name": "Ancient Copper Dragon",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "rfin",
+    "num": "J2",
+    "ff_name": "\u30d5\u30a7\u30a4\u30bf\u30ea\u30ba\u30e0",
+    "mtg_name": "Arcane Denial",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxiv",
+      "universesbeyond",
+      "buyabox"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "49",
+    "ff_name": "Sephiroth, the Savior",
+    "mtg_name": "Atraxa, Grand Unifier",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffvii",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "15",
+    "ff_name": "Princess Sarah",
+    "mtg_name": "Azusa, Lost but Seeking",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fic",
+    "num": "483",
+    "ff_name": "Paradise Chocobo",
+    "mtg_name": "Birds of Paradise",
+    "finishes": [
+      "foil"
+    ],
+    "promo_types": [
+      "ffxiv",
+      "universesbeyond",
+      "bundle"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "7",
+    "ff_name": "Kefka's Tower",
+    "mtg_name": "Bolas's Citadel",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffvi",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "28",
+    "ff_name": "Endwalker",
+    "mtg_name": "Brainstorm",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "boosterfun",
+      "ffxiv",
+      "sourcematerial",
+      "universesbeyond"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "50",
+    "ff_name": "Hugo Kupka",
+    "mtg_name": "Bruse Tarl, Boorish Herder",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxvi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "38",
+    "ff_name": "Vaan, Aspiring Sky Pirate",
+    "mtg_name": "Captain Lannery Storm",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "44",
+    "ff_name": "Fal'Cie Paradise",
+    "mtg_name": "Carpet of Flowers",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffxiii",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "61",
+    "ff_name": "Crystal of Altar Cave",
+    "mtg_name": "Chromatic Lantern",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "64",
+    "ff_name": "Balamb Garden",
+    "mtg_name": "Command Beacon",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffviii"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "4",
+    "ff_name": "Wild Rose Rebellion",
+    "mtg_name": "Counterspell",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "29",
+    "ff_name": "To the Crystal Tower",
+    "mtg_name": "Cryptic Command",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "22",
+    "ff_name": "Squall Leonhart",
+    "mtg_name": "Danitha Capashen, Paragon",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "boosterfun",
+      "ffviii",
+      "sourcematerial",
+      "universesbeyond"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "8",
+    "ff_name": "Darkness of Eternity",
+    "mtg_name": "Dark Ritual",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffix",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "33",
+    "ff_name": "Baron Rivalry",
+    "mtg_name": "Deadly Dispute",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "34",
+    "ff_name": "Shantotto's Coercion",
+    "mtg_name": "Diabolic Intent",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffxi",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "51",
+    "ff_name": "Shadowbringers",
+    "mtg_name": "Dovin's Veto",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "45",
+    "ff_name": "Newfound Adventure",
+    "mtg_name": "Farseek",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "9",
+    "ff_name": "Battle at the Big Bridge",
+    "mtg_name": "Fatal Push",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffv",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "rfin",
+    "num": "J1",
+    "ff_name": "\u9b54\u5973\u306e\u4e88\u898b",
+    "mtg_name": "Force of Negation",
+    "finishes": [
+      "nonfoil"
+    ],
+    "promo_types": [
+      "buyabox",
+      "ffviii",
+      "universesbeyond"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "46",
+    "ff_name": "Vayne Carudas Solidor",
+    "mtg_name": "Fynn, the Fangbearer",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "35",
+    "ff_name": "The Shadow Lord",
+    "mtg_name": "Gix, Yawgmoth Praetor",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffxi",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "13",
+    "ff_name": "Gilgamesh, Weapon Collector",
+    "mtg_name": "Godo, Bandit Warlord",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffv",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "52",
+    "ff_name": "Kuja, Mage Manufacturer",
+    "mtg_name": "Inalla, Archmage Ritualist",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffix"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "53",
+    "ff_name": "Benedikta Harman",
+    "mtg_name": "Ishai, Ojutai Dragonspeaker",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxvi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "54",
+    "ff_name": "Lightning, Lone Commando",
+    "mtg_name": "Isshin, Two Heavens as One",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffxiii",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "17",
+    "ff_name": "Warrior of Light",
+    "mtg_name": "Jodah, the Unifier",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "23",
+    "ff_name": "Noctis Lucis Caelum",
+    "mtg_name": "Kenrith, the Returned King",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "55",
+    "ff_name": "Seymour Guado",
+    "mtg_name": "Kinnan, Bonder Prodigy",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffx",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "56",
+    "ff_name": "Barnabas Tharmr",
+    "mtg_name": "Kraum, Ludevic's Opus",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxvi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "36",
+    "ff_name": "Emet-Selch, Ascian",
+    "mtg_name": "K'rrik, Son of Yawgmoth",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "30",
+    "ff_name": "Vana'diel Adventurers",
+    "mtg_name": "Laboratory Maniac",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffxi",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "40",
+    "ff_name": "Thrum of the Vestige",
+    "mtg_name": "Lightning Bolt",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffxiii",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "39",
+    "ff_name": "A Promise Fulfilled",
+    "mtg_name": "Light Up the Stage",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffviii"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "24",
+    "ff_name": "Garnet Til Alexandros 17th",
+    "mtg_name": "Loran of the Third Path",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffix"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "25",
+    "ff_name": "Minwu, Rebellion Strategist",
+    "mtg_name": "Mangara, the Diplomat",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "41",
+    "ff_name": "Dawn Warriors' Legacy",
+    "mtg_name": "Mizzix's Mastery",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffv"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "57",
+    "ff_name": "Orphan, Cocoon fal'Cie",
+    "mtg_name": "Muldrotha, the Gravetide",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffxiii",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "42",
+    "ff_name": "Cloud Strife",
+    "mtg_name": "Najeela, the Blade-Blossom",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffvii",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "47",
+    "ff_name": "Search for the Frozen Esper",
+    "mtg_name": "Nature's Claim",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffvi",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "16",
+    "ff_name": "The Cloudsea Djinn",
+    "mtg_name": "Nyxbloom Ancient",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "48",
+    "ff_name": "Astral Titan",
+    "mtg_name": "Primeval Titan",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "14",
+    "ff_name": "Kefka Palazzo",
+    "mtg_name": "Purphoros, God of the Forge",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffvi",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "43",
+    "ff_name": "Zidane Tribal",
+    "mtg_name": "Ragavan, Nimble Pilferer",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffix",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "2",
+    "ff_name": "Knights of San d'Oria",
+    "mtg_name": "Ranger-Captain of Eos",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffxi",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "31",
+    "ff_name": "Stay with Me",
+    "mtg_name": "Rhystic Study",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffx",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "62",
+    "ff_name": "The Strahl",
+    "mtg_name": "Smuggler's Copter",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "3",
+    "ff_name": "Firion, Swordmaster",
+    "mtg_name": "Sram, Senior Edificer",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "63",
+    "ff_name": "Luca Stadium",
+    "mtg_name": "Strixhaven Stadium",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffx",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "26",
+    "ff_name": "Memories of Nibelheim",
+    "mtg_name": "Stroke of Midnight",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffvii",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "10",
+    "ff_name": "Golbez, Clad In Darkness",
+    "mtg_name": "Syr Konrad, the Grim",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "32",
+    "ff_name": "Edea Kramer",
+    "mtg_name": "Teferi, Mage of Zhalfir",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffviii"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "58",
+    "ff_name": "Tidus, Zanarkand Fayth",
+    "mtg_name": "Thrasios, Triton Hero",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffx",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "20",
+    "ff_name": "Giant of Babil",
+    "mtg_name": "Traxos, Scourge of Kroog",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "18",
+    "ff_name": "Cecil Harvey",
+    "mtg_name": "Tymna the Weaver",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "5",
+    "ff_name": "Terra Branford",
+    "mtg_name": "Urza, Lord High Artificer",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "ffvi",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "37",
+    "ff_name": "Ardyn Izunia",
+    "mtg_name": "Varragoth, Bloodsky Sire",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxv",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "6",
+    "ff_name": "Master Xande",
+    "mtg_name": "Venser, Shaper Savant",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffiii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "59",
+    "ff_name": "Clive Rosfield",
+    "mtg_name": "Vial Smasher the Fierce",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxvi",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "27",
+    "ff_name": "The Imperial City of Archades",
+    "mtg_name": "Wall of Omens",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffxii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "19",
+    "ff_name": "Bartz Klauser",
+    "mtg_name": "Winota, Joiner of Forces",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun",
+      "ffv"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "11",
+    "ff_name": "The Emperor, Hell Tyrant",
+    "mtg_name": "Yawgmoth, Thran Physician",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "ffii",
+      "sourcematerial",
+      "universesbeyond",
+      "boosterfun"
+    ]
+  },
+  {
+    "set": "fca",
+    "num": "60",
+    "ff_name": "Yuffie Kisaragi",
+    "mtg_name": "Yuriko, the Tiger's Shadow",
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "promo_types": [
+      "sourcematerial",
+      "universesbeyond",
+      "ffvii",
+      "boosterfun"
+    ]
+  }
+]
