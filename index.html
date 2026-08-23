@@ -162,7 +162,10 @@
 
       <!-- Filter dropdowns are populated from the card data at runtime,
            so an option can never exist for a value no card has. -->
-      <details class="filters-details">
+      <!-- Open by default so every filter is visible on a normal screen. On a
+           phone, app.js collapses this on load so the filters do not push the
+           cards off the bottom; the summary below is the tap target there. -->
+      <details class="filters-details" id="filtersDetails" open>
         <summary class="filters-summary">
           <span>Filters</span>
           <span id="filtersActiveNote" class="filters-active-note" style="display:none;">filters active</span>

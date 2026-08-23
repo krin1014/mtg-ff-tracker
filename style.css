@@ -2335,6 +2335,8 @@ body.modal-open {
   border: 1px solid var(--border-color);
   background: var(--bg-surface);
   color: var(--text-secondary);
+  /* Some messages carry a second paragraph of instructions. */
+  white-space: pre-line;
 }
 
 .sync-result.is-ok {

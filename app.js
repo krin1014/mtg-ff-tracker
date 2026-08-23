@@ -479,6 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCollectionState();
   loadSyncConfig();
   buildFilterOptions();
+  collapseFiltersOnSmallScreens();
   loadPrefs();
   applyViewMode();
   buildGamePills();
@@ -558,6 +559,21 @@ function buildFilterOptions() {
   });
   ownership.push({ value: "unowned", label: "Missing / Not Collected (No)" });
   fillSelect("filterOwned", "All Cards", ownership);
+}
+
+/**
+ * The filters live in a <details> that is `open` in the markup, so a desktop
+ * visitor sees all seven of them laid out with no clicking. A <details> hides
+ * its own contents when it is not open, and the summary is hidden on desktop by
+ * the stylesheet - so leaving it closed made the filters invisible AND
+ * unreachable on a normal screen.
+ *
+ * On a phone the summary is visible and the filters would otherwise push the
+ * cards off the bottom of the screen, so collapse it there.
+ */
+function collapseFiltersOnSmallScreens() {
+  const details = document.getElementById("filtersDetails");
+  if (details && isSmallScreen()) details.removeAttribute("open");
 }
 
 function distinctValues(getter) {
@@ -1704,6 +1720,28 @@ function registerServiceWorker() {
 const SYNC_KEY = "ff_mtg_sync_v1";
 const SYNC_DEBOUNCE_MS = 4000;
 const SYNC_TIMEOUT_MS = 25000;
+
+/**
+ * The Code.gs version this tracker expects, checked on every sync.
+ *
+ * A Google Apps Script web app serves a frozen snapshot from whenever it was
+ * last deployed - saving the editor changes nothing until a new version is
+ * published. That failure is completely silent: the sync keeps working, it just
+ * runs old code. Checking the version turns a baffling "my fix did nothing" into
+ * a message that says exactly what to do.
+ */
+const REQUIRED_SCRIPT_VERSION = 4;
+
+const STALE_SCRIPT_MESSAGE =
+  "Your sheet is running an old copy of the sync script, so recent fixes are not " +
+  "active. In the Apps Script editor choose Deploy, then Manage deployments, then " +
+  "the pencil icon, set Version to New version, and click Deploy. The web address " +
+  "does not change.";
+
+/** True when the sheet's deployed script is older than this tracker needs. */
+function isScriptStale(result) {
+  return !result || Number(result.scriptVersion || 0) < REQUIRED_SCRIPT_VERSION;
+}
 /** Tolerance for the two devices disagreeing about what time it is. */
 const SYNC_CLOCK_GRACE_MS = 10 * 60 * 1000;
 
@@ -1959,7 +1997,12 @@ function runSync(options) {
   setSyncStatus("syncing", "");
 
   const startedAt = nowMs();
-  const changes = cardsChangedSince(syncConfig.lastSync);
+
+  // A routine save sends only what changed. A full sync re-sends everything this
+  // device knows about, which is also what repairs a sheet whose readable
+  // name / set / number columns have gone blank - those values live on the
+  // device, so only the device can restore them.
+  const changes = cardsChangedSince(settings.full ? 0 : syncConfig.lastSync);
 
   /**
    * How far back to ask the sheet for changes.
@@ -2000,6 +2043,14 @@ function runSync(options) {
         applyFiltersAndRender();
       } else {
         updateDashboardStats();
+      }
+
+      if (isScriptStale(result)) {
+        // The sync itself worked, but against old code. Say so loudly rather
+        // than letting fixes appear to do nothing.
+        setSyncStatus("error", STALE_SCRIPT_MESSAGE);
+        if (!settings.silent) showToast("Sheet script is out of date - open Sync", true);
+        return true;
       }
 
       setSyncStatus("ok", "");
@@ -2227,10 +2278,10 @@ function testSyncConnection() {
 
   sheetGet(url, "ping")
     .then(result => {
-      syncTestResult = {
-        ok: true,
-        message: `Connected to "${result.sheetName || "your sheet"}" - ${result.cardCount || 0} card rows found.`
-      };
+      const connected = `Connected to "${result.sheetName || "your sheet"}" - ${result.cardCount || 0} card rows found.`;
+      syncTestResult = isScriptStale(result)
+        ? { ok: false, message: `${connected}\n\n${STALE_SCRIPT_MESSAGE}` }
+        : { ok: true, message: connected };
     })
     .catch(error => {
       syncTestResult = { ok: false, message: error && error.message ? error.message : String(error) };
