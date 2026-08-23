@@ -1191,6 +1191,10 @@ function runAction(target, event) {
       event.preventDefault();
       selectLocationPill(target.getAttribute("data-location"));
       break;
+    case "clear-filter":
+      event.preventDefault();
+      clearOneFilter(target.getAttribute("data-clear"));
+      break;
     default:
       if (action.indexOf("sync-") === 0) {
         event.preventDefault();
@@ -1385,6 +1389,89 @@ function compareByNumber(a, b) {
   return String(a.collector_number).localeCompare(String(b.collector_number));
 }
 
+/** Readable name for the binder currently being viewed. */
+function locationFilterLabel() {
+  if (activeLocationFilter === NO_LOCATION) return "Not filed anywhere";
+  const place = locationSummary().places.find(entry => entry.key === activeLocationFilter);
+  return place ? place.label : activeLocationFilter;
+}
+
+/**
+ * Show every active filter as a chip you can tap to remove.
+ *
+ * On a phone the filters collapse behind a summary bar and the binder view is
+ * reached from the Tools menu, so once something is filtered there is no visible
+ * way back - you have to remember where the control was. These chips sit above
+ * the cards and are always on screen.
+ */
+function renderActiveFilters() {
+  const container = document.getElementById("activeFilters");
+  if (!container) return;
+
+  const chips = [];
+
+  const query = valueOf("searchInput").trim();
+  if (query) chips.push({ key: "search", label: `Search: ${query}` });
+
+  FILTER_IDS.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el || el.value === "all") return;
+    const option = el.options[el.selectedIndex];
+    chips.push({ key: id, label: option ? option.textContent.trim() : el.value });
+  });
+
+  if (activeLocationFilter !== "all") {
+    chips.push({ key: "location", label: `\u{1F4D2} ${locationFilterLabel()}` });
+  }
+
+  if (!chips.length) {
+    container.style.display = "none";
+    container.innerHTML = "";
+    return;
+  }
+
+  container.style.display = "flex";
+  container.innerHTML =
+    `<span class="active-filters-label">Showing only</span>` +
+    chips.map(chip => `
+      <button type="button" class="filter-chip" data-action="clear-filter"
+              data-clear="${esc(chip.key)}"
+              aria-label="Stop filtering by ${esc(chip.label)}">
+        <span class="filter-chip-text">${esc(chip.label)}</span>
+        <span class="filter-chip-x" aria-hidden="true">✕</span>
+      </button>`).join("") +
+    (chips.length > 1
+      ? `<button type="button" class="filter-chip filter-chip-all" data-action="clear-filter" data-clear="__all__">Show everything</button>`
+      : "");
+}
+
+/** Remove one active filter, or all of them. */
+function clearOneFilter(key) {
+  if (key === "__all__") {
+    resetAllFilters();
+    return;
+  }
+
+  if (key === "search") {
+    setValue("searchInput", "");
+    const clearBtn = document.getElementById("clearSearchBtn");
+    if (clearBtn) clearBtn.style.display = "none";
+  } else if (key === "location") {
+    activeLocationFilter = "all";
+    if (isBindersModalOpen()) renderBindersModal();
+  } else {
+    setValue(key, "all");
+    if (key === "filterGame") {
+      activeGameFilter = "all";
+      syncGamePillActiveState();
+    }
+  }
+
+  currentPage = 1;
+  applyFiltersAndRender();
+  savePrefs();
+}
+
 /** Highlight the reset control whenever a filter is actually narrowing results. */
 function updateFilterActiveState() {
   const anyFilter = FILTER_IDS.some(id => valueOf(id) !== "all") ||
@@ -1394,6 +1481,7 @@ function updateFilterActiveState() {
   if (btn) btn.classList.toggle("is-active", anyFilter);
   const note = document.getElementById("filtersActiveNote");
   if (note) note.style.display = anyFilter ? "inline-flex" : "none";
+  renderActiveFilters();
 }
 
 // ---------------------------------------------------------------------------

@@ -2587,3 +2587,87 @@ body.modal-open {
   border-color: var(--accent-gold);
   background: rgba(245, 158, 11, 0.12);
 }
+
+/* --------------------------------------------------------------------------
+   Active filter chips
+   Always visible above the cards, so there is a way out of a filter even when
+   the filter panel itself is collapsed (phones) or the filter was set from the
+   Tools menu (binders).
+   -------------------------------------------------------------------------- */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0 2px;
+}
+
+.active-filters-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--accent-cyan);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.filter-chip:hover {
+  background: var(--accent-cyan);
+  color: #0B0F19;
+}
+
+.filter-chip-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+.filter-chip-x {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.filter-chip-all {
+  border-color: var(--accent-rose);
+  background: rgba(244, 63, 94, 0.12);
+  color: #FDA4AF;
+}
+
+.filter-chip-all:hover {
+  background: var(--accent-rose);
+  color: #FFFFFF;
+}
+
+@media (pointer: coarse) {
+  .filter-chip {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .active-filters {
+    padding: 8px 0 4px;
+  }
+  .filter-chip-text {
+    max-width: 60vw;
+  }
+}
