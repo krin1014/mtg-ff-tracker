@@ -2518,3 +2518,72 @@ body.modal-open {
 .tracker-table .match-why {
   margin: 3px 0 0;
 }
+
+/* --------------------------------------------------------------------------
+   Binders panel (Tools -> Binders)
+   -------------------------------------------------------------------------- */
+.binder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 46vh;
+  overflow-y: auto;
+}
+
+.binder-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.binder-row:hover {
+  border-color: var(--accent-cyan);
+  background: var(--bg-surface-light);
+}
+
+.binder-row.is-active {
+  border-color: var(--accent-emerald);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.binder-name {
+  font-size: 14px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.binder-count {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+/* Cards you own but have not filed anywhere yet. */
+.binder-row.is-unfiled .binder-name {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.binder-row.is-unfiled .binder-count {
+  color: var(--accent-gold);
+}
+
+.binder-row.is-unfiled.is-active {
+  border-color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.12);
+}

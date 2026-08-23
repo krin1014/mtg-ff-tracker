@@ -50,6 +50,9 @@
           <span class="icon" id="viewToggleIcon" aria-hidden="true">☷</span>
           <span id="viewToggleText">Table View</span>
         </button>
+        <button type="button" id="bindersBtn" class="btn btn-outline" title="See which cards are in each binder or box">
+          <span class="icon" aria-hidden="true">📒</span> Binders
+        </button>
         <button type="button" id="exportCsvBtn" class="btn btn-outline" title="Export the complete collection with variant counts as CSV">
           <span class="icon" aria-hidden="true">↓</span> Export CSV
         </button>
@@ -129,6 +132,7 @@
         </summary>
         <div class="games-pills-row" id="gamePillsRow"></div>
       </details>
+
     </div>
   </section>
 
@@ -205,6 +209,11 @@
           <div class="filter-group">
             <label for="filterColor">Colour identity</label>
             <select id="filterColor"><option value="all">All colours</option></select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filterLocation">Storage location</label>
+            <select id="filterLocation"><option value="all">All locations</option></select>
           </div>
 
           <div class="filter-group filter-reset-group">
@@ -289,6 +298,14 @@
     <div class="modal-card">
       <button type="button" id="modalCloseBtn" class="modal-close-btn" aria-label="Close">&times;</button>
       <div class="modal-body" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Where the cards physically are -->
+  <div id="bindersModal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-label="Binders and boxes">
+    <div class="modal-card modal-card-narrow">
+      <button type="button" id="bindersModalCloseBtn" class="modal-close-btn" aria-label="Close">&times;</button>
+      <div class="sync-body" id="bindersModalContent"></div>
     </div>
   </div>
 

@@ -50,6 +50,8 @@ let currentPage = 1;
 let pageSize = 60;
 let filteredCards = [];
 let activeGameFilter = "all";
+let activeLocationFilter = "all";
+let locationUiSignature = "";
 let cardsById = new Map();
 let searchDebounceTimer = null;
 
@@ -379,7 +381,8 @@ function saveCollectionState(toastMessage = null) {
 // UI preferences (view mode, sort, filters, page size)
 // ---------------------------------------------------------------------------
 
-const FILTER_IDS = ["filterOwned", "filterGame", "filterSet", "filterVariant", "filterTreatment", "filterRarity", "filterColor"];
+const FILTER_IDS = ["filterOwned", "filterGame", "filterSet", "filterVariant",
+  "filterTreatment", "filterRarity", "filterColor", "filterLocation"];
 
 function savePrefs() {
   const prefs = {
@@ -414,6 +417,7 @@ function loadPrefs() {
     FILTER_IDS.forEach(id => setValue(id, prefs.filters[id]));
   }
   activeGameFilter = valueOf("filterGame") || "all";
+  activeLocationFilter = valueOf("filterLocation") || "all";
 }
 
 /** Assign a select/input value only when the option still exists. */
@@ -494,6 +498,10 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCollectionState();
   loadSyncConfig();
   buildFilterOptions();
+  // Locations come from the collection rather than the card data, so this has
+  // to run before loadPrefs - otherwise a remembered binder is not yet an
+  // option in the dropdown and the saved choice gets thrown away on reload.
+  refreshLocationUi();
   collapseFiltersOnSmallScreens();
   loadPrefs();
   applyViewMode();
@@ -579,6 +587,181 @@ function buildFilterOptions() {
 }
 
 // ---------------------------------------------------------------------------
+// Storage locations
+//
+// The location is free text, so "Binder 1, page 3" and "Binder 1, page 7" are
+// different strings for the same binder. Grouping by the container turns a pile
+// of one-off notes into a browsable list of places.
+// ---------------------------------------------------------------------------
+
+const NO_LOCATION = "__none__";
+
+/**
+ * Reduce a written location to the thing holding the cards.
+ *
+ *   "Binder 1, page 3"  -> "Binder 1"
+ *   "Binder 1 page 3"   -> "Binder 1"
+ *   "Deck box - top"    -> "Deck box"
+ *   "Shoebox"           -> "Shoebox"
+ */
+function locationContainer(location) {
+  let text = String(location || "").trim();
+  if (!text) return "";
+  // Drop a trailing page reference, with or without a separator before it.
+  text = text.replace(/[,;:/\-–—]?\s*(?:page|pg|p)\.?\s*\d+\s*$/i, "");
+  // Then keep only what comes before the first separator.
+  text = text.split(/[,;/|]|\s[-–—]\s/)[0];
+  return text.trim();
+}
+
+/**
+ * Every container currently in use, with a card count, most-used first.
+ * Grouped case-insensitively but displayed using the spelling first seen, so
+ * "binder 1" and "Binder 1" do not become two entries.
+ */
+function locationSummary() {
+  const byKey = new Map();
+  let unfiled = 0;
+
+  CARDS_DATA.forEach(card => {
+    const entry = readCard(card.id);
+    if (entryTotalQty(entry) <= 0) return;
+
+    const container = locationContainer(entry.location);
+    if (!container) {
+      unfiled++;
+      return;
+    }
+    const key = container.toLowerCase();
+    const found = byKey.get(key);
+    if (found) found.count++;
+    else byKey.set(key, { key: key, label: container, count: 1 });
+  });
+
+  const list = Array.from(byKey.values());
+  list.sort((a, b) => (b.count - a.count) || a.label.localeCompare(b.label));
+  return { places: list, unfiled: unfiled };
+}
+
+/** Rebuild the Storage location dropdown, keeping the current selection. */
+function refreshLocationUi() {
+  const summary = locationSummary();
+  const signature = summary.places.map(p => `${p.key}:${p.count}`).join("|") + `#${summary.unfiled}`;
+  if (signature === locationUiSignature) return;
+  locationUiSignature = signature;
+
+  const options = summary.places.map(place => ({
+    value: place.key,
+    label: `${place.label} (${place.count})`
+  }));
+  if (summary.unfiled > 0) {
+    options.push({ value: NO_LOCATION, label: `No location set (${summary.unfiled})` });
+  }
+
+  const current = valueOf("filterLocation");
+  fillSelect("filterLocation", "All locations", options);
+  setValue("filterLocation", current);
+  // The stored choice may name a binder that no longer has any cards in it.
+  if (valueOf("filterLocation") !== current) activeLocationFilter = "all";
+
+  if (isBindersModalOpen()) renderBindersModal();
+}
+
+function selectLocationPill(key) {
+  activeLocationFilter = activeLocationFilter === key ? "all" : key;
+  setValue("filterLocation", activeLocationFilter);
+  currentPage = 1;
+  applyFiltersAndRender();
+  savePrefs();
+  closeBindersModal();
+
+  const label = key === NO_LOCATION ? "cards with no location" : key;
+  showToast(activeLocationFilter === "all" ? "Showing all locations" : `Showing ${label}`);
+}
+
+// ---------------------------------------------------------------------------
+// Binders panel (Tools -> Binders)
+// ---------------------------------------------------------------------------
+
+function isBindersModalOpen() {
+  const modal = document.getElementById("bindersModal");
+  return Boolean(modal) && modal.style.display !== "none";
+}
+
+function openBindersModal() {
+  renderBindersModal();
+  const modal = document.getElementById("bindersModal");
+  modal.style.display = "flex";
+  document.body.classList.add("modal-open");
+}
+
+function closeBindersModal() {
+  const modal = document.getElementById("bindersModal");
+  if (!modal || modal.style.display === "none") return;
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+}
+
+function renderBindersModal() {
+  const container = document.getElementById("bindersModalContent");
+  if (!container) return;
+
+  const summary = locationSummary();
+  const filed = summary.places.reduce((total, place) => total + place.count, 0);
+
+  if (!summary.places.length && !summary.unfiled) {
+    container.innerHTML = `
+      <h2 class="sync-title">Binders and boxes</h2>
+      <p class="sync-lede">Nothing to show yet - you have not recorded owning any cards.</p>
+      <p class="sync-note">
+        Once you start adding cards, type where you keep each one in its
+        <strong>Storage location</strong> box. Write it however you like, for example
+        <em>Binder 1, page 3</em>. Pages of the same binder are grouped together here.
+      </p>`;
+    return;
+  }
+
+  const rows = summary.places.map(place => `
+    <button type="button" class="binder-row ${activeLocationFilter === place.key ? "is-active" : ""}"
+            data-action="select-location" data-location="${esc(place.key)}">
+      <span class="binder-name">${esc(place.label)}</span>
+      <span class="binder-count">${place.count} card${place.count === 1 ? "" : "s"}</span>
+    </button>`).join("");
+
+  const unfiledRow = summary.unfiled > 0 ? `
+    <button type="button" class="binder-row is-unfiled ${activeLocationFilter === NO_LOCATION ? "is-active" : ""}"
+            data-action="select-location" data-location="${esc(NO_LOCATION)}">
+      <span class="binder-name">Not filed anywhere yet</span>
+      <span class="binder-count">${summary.unfiled} card${summary.unfiled === 1 ? "" : "s"}</span>
+    </button>` : "";
+
+  container.innerHTML = `
+    <h2 class="sync-title">Binders and boxes</h2>
+    <p class="sync-lede">
+      ${summary.places.length} place${summary.places.length === 1 ? "" : "s"},
+      ${filed} card${filed === 1 ? "" : "s"} filed.
+      Tap one to see what is inside it.
+    </p>
+
+    <div class="binder-list">
+      ${rows}
+      ${unfiledRow}
+    </div>
+
+    ${activeLocationFilter !== "all" ? `
+      <div class="sync-actions">
+        <button type="button" class="btn btn-secondary" data-action="select-location"
+                data-location="${esc(activeLocationFilter)}">Show all locations again</button>
+      </div>` : ""}
+
+    <p class="sync-note">
+      These come from the <strong>Storage location</strong> box on each card. Write it
+      however you like - <em>Binder 1, page 3</em>, <em>Deck box</em>, <em>Shoebox</em> -
+      and pages of the same binder are grouped together.
+    </p>`;
+}
+
+// ---------------------------------------------------------------------------
 // Search
 //
 // Two rules make the results match what people expect:
@@ -594,9 +777,17 @@ function buildFilterOptions() {
 //    anything found only in those is labelled so it never looks like a mistake.
 // ---------------------------------------------------------------------------
 
-/** Match quality, highest first. Also the sort order within a search. */
+/**
+ * Match quality, highest first. Also the sort order within a search.
+ *
+ * Gameplay role outranks even the card name, because a role word is an
+ * unambiguous request. Searching "commander" put Commander's Sphere - an
+ * artifact - above 568 actual commanders, purely because the word is in its
+ * name. Someone typing a role wants the cards that FILL that role first.
+ */
+const MATCH_ROLE = 4;   // can actually do the thing, e.g. lead a Commander deck
 const MATCH_NAME = 3;   // Final Fantasy name or original Magic name
-const MATCH_META = 2;   // type line, set code, collector number, gameplay role
+const MATCH_META = 2;   // type line, set code, collector number
 const MATCH_ARTIST = 1; // artist
 const MATCH_TEXT = 0;   // rules text
 
@@ -680,9 +871,9 @@ function buildSearchIndex() {
       // Fantasy something", so "fantasy" matched all 1,365 cards, and
       // "commander" returned the whole Commander product rather than the cards
       // that can actually be a commander. The Card Set filter does that job.
-      meta: normaliseForSearch(
-        `${card.type_line} ${card.set} ${number} ${plainNumber} ${roleKeywords(card)}`
-      ),
+      meta: normaliseForSearch(`${card.type_line} ${card.set} ${number} ${plainNumber}`),
+      // What the card can DO, ranked above everything else - see MATCH_ROLE.
+      role: normaliseForSearch(roleKeywords(card)),
       artist: normaliseForSearch(card.artist),
       // Rules text only. Flavour text is deliberately NOT searched: it is the
       // italic story quote, so a card can mention a character it has nothing
@@ -720,7 +911,8 @@ function scoreCard(card, terms) {
     const term = terms[i];
     let best = -1;
 
-    if (containsTerm(fields.name, term)) best = MATCH_NAME;
+    if (containsTerm(fields.role, term)) best = MATCH_ROLE;
+    else if (containsTerm(fields.name, term)) best = MATCH_NAME;
     else if (containsTerm(fields.meta, term)) best = MATCH_META;
     else if (containsTerm(fields.artist, term)) best = MATCH_ARTIST;
     else if (containsTerm(fields.text, term)) best = MATCH_TEXT;
@@ -834,6 +1026,10 @@ function initEventListeners() {
         activeGameFilter = el.value;
         syncGamePillActiveState();
       }
+      if (id === "filterLocation") {
+        activeLocationFilter = el.value;
+        if (isBindersModalOpen()) renderBindersModal();
+      }
       currentPage = 1;
       applyFiltersAndRender();
       savePrefs();
@@ -875,6 +1071,11 @@ function initEventListeners() {
     });
   }
 
+  document.getElementById("bindersBtn").addEventListener("click", openBindersModal);
+  document.getElementById("bindersModalCloseBtn").addEventListener("click", closeBindersModal);
+  document.getElementById("bindersModal").addEventListener("click", event => {
+    if (event.target.id === "bindersModal") closeBindersModal();
+  });
   document.getElementById("backupBtn").addEventListener("click", exportJsonBackup);
   document.getElementById("exportCsvBtn").addEventListener("click", exportCsvData);
   document.getElementById("restoreFileInput").addEventListener("change", importJsonBackup);
@@ -895,6 +1096,7 @@ function initEventListeners() {
     if (event.key !== "Escape") return;
     closeModal();
     closeSyncModal();
+    closeBindersModal();
   });
 
   // One delegated click handler for every generated control.
@@ -972,6 +1174,10 @@ function runAction(target, event) {
       event.preventDefault();
       selectGamePill(target.getAttribute("data-game"));
       break;
+    case "select-location":
+      event.preventDefault();
+      selectLocationPill(target.getAttribute("data-location"));
+      break;
     default:
       if (action.indexOf("sync-") === 0) {
         event.preventDefault();
@@ -1012,6 +1218,7 @@ function resetAllFilters() {
   FILTER_IDS.forEach(id => setValue(id, "all"));
   setValue("sortBySelect", "number_asc");
   activeGameFilter = "all";
+  activeLocationFilter = "all";
   syncGamePillActiveState();
   currentPage = 1;
   applyFiltersAndRender();
@@ -1052,6 +1259,7 @@ function applyFiltersAndRender() {
   const treatmentFilter = valueOf("filterTreatment");
   const rarityFilter = valueOf("filterRarity");
   const colorFilter = valueOf("filterColor");
+  const locationFilter = valueOf("filterLocation");
   const sortBy = valueOf("sortBySelect");
 
   const ownedVariantKey = ownedFilter.indexOf("has_") === 0 ? ownedFilter.slice(4) : null;
@@ -1072,6 +1280,16 @@ function applyFiltersAndRender() {
     if (ownedFilter === "owned" && !owned) return false;
     if (ownedFilter === "unowned" && owned) return false;
     if (ownedVariantKey && (entry.variants[ownedVariantKey] || 0) <= 0) return false;
+
+    if (locationFilter !== "all") {
+      const container = locationContainer(entry.location).toLowerCase();
+      if (locationFilter === NO_LOCATION) {
+        // "No location set" only makes sense for cards you actually own.
+        if (!owned || container) return false;
+      } else if (container !== locationFilter) {
+        return false;
+      }
+    }
 
     if (gameFilter !== "all" && card.game !== gameFilter) return false;
     if (setFilter !== "all" && card.set !== setFilter) return false;
@@ -1554,6 +1772,7 @@ function updateDashboardStats() {
   if (track) track.setAttribute("aria-valuenow", completionPct.toFixed(1));
 
   updateGamePillValues(gameStats);
+  refreshLocationUi();
 }
 
 function setText(id, text) {
