@@ -488,6 +488,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   cardsById = new Map(CARDS_DATA.map(card => [card.id, card]));
+  buildSearchIndex();
   pageSize = isSmallScreen() ? 24 : 60;
 
   loadCollectionState();
@@ -575,6 +576,113 @@ function buildFilterOptions() {
   });
   ownership.push({ value: "unowned", label: "Missing / Not Collected (No)" });
   fillSelect("filterOwned", "All Cards", ownership);
+}
+
+// ---------------------------------------------------------------------------
+// Search
+//
+// Two rules make the results match what people expect:
+//
+// 1. A term matches the START OF A WORD, not any old substring. Searching
+//    "sephi" used to return 33 cards, because the artist "Josephine Chang"
+//    contains "sephi" in the middle of her first name. Fifteen results with no
+//    visible connection to the query. Word-start matching removes all of them
+//    while still finding "Sephiroth" from "sephi".
+//
+// 2. Where a term matched decides the order. A card whose NAME matches ranks
+//    above one that only mentions the word in its rules or flavour text, and
+//    anything found only in those is labelled so it never looks like a mistake.
+// ---------------------------------------------------------------------------
+
+/** Match quality, highest first. Also the sort order within a search. */
+const MATCH_NAME = 3;   // Final Fantasy name or original Magic name
+const MATCH_META = 2;   // type line, set, collector number
+const MATCH_ARTIST = 1; // artist
+const MATCH_TEXT = 0;   // rules text or flavour text
+
+const MATCH_LABELS = {};
+MATCH_LABELS[MATCH_ARTIST] = "matched artist";
+MATCH_LABELS[MATCH_TEXT] = "matched card text";
+
+/** Card id -> match quality, for the current search only. */
+let searchScores = new Map();
+
+/** Card id -> { name, meta, artist, text }, built once at startup. */
+let searchIndex = new Map();
+
+/**
+ * Collapse to lowercase, turn every run of punctuation into a single space, and
+ * pad with spaces. A term then matches a word start iff the haystack contains
+ * " " + term.
+ */
+function normaliseForSearch(value) {
+  return " " + String(value === null || value === undefined ? "" : value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim() + " ";
+}
+
+function buildSearchIndex() {
+  searchIndex = new Map();
+  CARDS_DATA.forEach(card => {
+    // Collector numbers are stored zero-padded ("0001"). Index the plain form
+    // too, so typing "1" still finds card number 1.
+    const number = String(card.collector_number || "");
+    const plainNumber = number.replace(/^0+(?=\d)/, "");
+
+    searchIndex.set(card.id, {
+      name: normaliseForSearch(`${card.ff_name} ${card.mtg_name}`),
+      meta: normaliseForSearch(`${card.type_line} ${card.set} ${card.set_name} ${number} ${plainNumber}`),
+      artist: normaliseForSearch(card.artist),
+      text: normaliseForSearch(`${card.oracle_text} ${card.flavor_text}`)
+    });
+  });
+}
+
+/** Split what was typed into searchable terms, discarding punctuation. */
+function searchTerms(query) {
+  return normaliseForSearch(query).trim().split(" ").filter(term => term.length > 0);
+}
+
+function containsTerm(haystack, term) {
+  return haystack.indexOf(" " + term) !== -1;
+}
+
+/**
+ * Best match quality for a card, or -1 if it does not match.
+ *
+ * Every term must be found somewhere, otherwise typing two words would widen
+ * the results instead of narrowing them. The score reflects the weakest field
+ * any single term had to fall back on, so a card only counts as a name match
+ * when the whole query is in its name.
+ */
+function scoreCard(card, terms) {
+  const fields = searchIndex.get(card.id);
+  if (!fields) return -1;
+
+  let weakest = MATCH_NAME;
+
+  for (let i = 0; i < terms.length; i++) {
+    const term = terms[i];
+    let best = -1;
+
+    if (containsTerm(fields.name, term)) best = MATCH_NAME;
+    else if (containsTerm(fields.meta, term)) best = MATCH_META;
+    else if (containsTerm(fields.artist, term)) best = MATCH_ARTIST;
+    else if (containsTerm(fields.text, term)) best = MATCH_TEXT;
+
+    if (best === -1) return -1;
+    if (best < weakest) weakest = best;
+  }
+
+  return weakest;
+}
+
+/** Explanation shown on results that matched nothing visible on the card. */
+function matchLabel(cardId) {
+  if (!searchScores.size) return "";
+  const score = searchScores.get(cardId);
+  return score === undefined ? "" : (MATCH_LABELS[score] || "");
 }
 
 /**
@@ -876,16 +984,17 @@ function applyFiltersAndRender() {
 
   const ownedVariantKey = ownedFilter.indexOf("has_") === 0 ? ownedFilter.slice(4) : null;
 
+  const terms = searchTerms(query);
+  searchScores.clear();
+
   filteredCards = CARDS_DATA.filter(card => {
     const entry = readCard(card.id);
     const owned = entryTotalQty(entry) > 0;
 
-    if (query) {
-      const haystack = [
-        card.ff_name, card.mtg_name, card.type_line, card.oracle_text,
-        card.flavor_text, card.artist, card.collector_number, card.set, card.set_name
-      ];
-      if (!haystack.some(field => (field || "").toLowerCase().indexOf(query) !== -1)) return false;
+    if (terms.length) {
+      const score = scoreCard(card, terms);
+      if (score < 0) return false;
+      searchScores.set(card.id, score);
     }
 
     if (ownedFilter === "owned" && !owned) return false;
@@ -918,7 +1027,18 @@ function applyFiltersAndRender() {
 }
 
 function sortFilteredCards(sortBy) {
+  const searching = searchScores.size > 0;
+
   filteredCards.sort((a, b) => {
+    // While searching, group by how well each card matched so the cards whose
+    // NAME contains the query come first, ahead of ones that merely mention it
+    // in their rules or flavour text. The chosen sort still orders within each
+    // group.
+    if (searching) {
+      const byRelevance = (searchScores.get(b.id) || 0) - (searchScores.get(a.id) || 0);
+      if (byRelevance !== 0) return byRelevance;
+    }
+
     switch (sortBy) {
       case "ff_name_asc":
         return displayName(a.ff_name).localeCompare(displayName(b.ff_name));
@@ -1062,6 +1182,8 @@ function renderGridView(cards) {
 
           ${card.is_reprint ? `<div class="card-mtg-subtitle" title="Original MTG name">aka: ${esc(displayName(card.mtg_name))}</div>` : ""}
 
+          ${matchLabel(card.id) ? `<div class="match-why">${esc(matchLabel(card.id))}</div>` : ""}
+
           <div class="card-type" title="${esc(card.type_line)}">${esc(card.type_line)}</div>
 
           <div class="card-price-row">
@@ -1129,6 +1251,7 @@ function renderTableView(cards) {
         </td>
         <td class="col-name">
           <button type="button" class="link-name" data-action="open-modal" data-card-id="${esc(card.id)}">${esc(name)}</button>
+          ${matchLabel(card.id) ? `<span class="match-why">${esc(matchLabel(card.id))}</span>` : ""}
           <span class="col-name-meta">${esc(card.set)} #${esc(card.collector_number)} · ${esc(card.game)} · ${esc(card.rarity)}</span>
         </td>
         <td class="col-mtg">${card.is_reprint ? `<span class="tag-mtg-name">${esc(displayName(card.mtg_name))}</span>` : `<span class="dim">—</span>`}</td>

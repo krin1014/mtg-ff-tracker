@@ -2495,3 +2495,26 @@ body.modal-open {
     text-align: left;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Search: why a weaker result matched
+   Shown only on cards found via the artist or the rules/flavour text, so a
+   result never looks like a mistake.
+   -------------------------------------------------------------------------- */
+.match-why {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.tracker-table .match-why {
+  margin: 3px 0 0;
+}
