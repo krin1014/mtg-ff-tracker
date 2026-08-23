@@ -382,7 +382,7 @@ function saveCollectionState(toastMessage = null) {
 // ---------------------------------------------------------------------------
 
 const FILTER_IDS = ["filterOwned", "filterGame", "filterSet", "filterVariant",
-  "filterTreatment", "filterRarity", "filterColor", "filterLocation"];
+  "filterTreatment", "filterRarity", "filterColor"];
 
 function savePrefs() {
   const prefs = {
@@ -390,6 +390,7 @@ function savePrefs() {
     pageSize: pageSize,
     sort: valueOf("sortBySelect"),
     search: valueOf("searchInput"),
+    location: activeLocationFilter,
     filters: {}
   };
   FILTER_IDS.forEach(id => { prefs.filters[id] = valueOf(id); });
@@ -417,7 +418,7 @@ function loadPrefs() {
     FILTER_IDS.forEach(id => setValue(id, prefs.filters[id]));
   }
   activeGameFilter = valueOf("filterGame") || "all";
-  activeLocationFilter = valueOf("filterLocation") || "all";
+  if (typeof prefs.location === "string") activeLocationFilter = prefs.location;
 }
 
 /** Assign a select/input value only when the option still exists. */
@@ -498,10 +499,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCollectionState();
   loadSyncConfig();
   buildFilterOptions();
-  // Locations come from the collection rather than the card data, so this has
-  // to run before loadPrefs - otherwise a remembered binder is not yet an
-  // option in the dropdown and the saved choice gets thrown away on reload.
-  refreshLocationUi();
   collapseFiltersOnSmallScreens();
   loadPrefs();
   applyViewMode();
@@ -643,45 +640,56 @@ function locationSummary() {
   return { places: list, unfiled: unfiled };
 }
 
-/** Rebuild the Storage location dropdown, keeping the current selection. */
+/**
+ * Forget a remembered binder that no longer holds anything - it may have been
+ * emptied on another device since this one last looked.
+ */
+function validateLocationFilter() {
+  if (activeLocationFilter === "all") return;
+  const summary = locationSummary();
+  const stillExists = activeLocationFilter === NO_LOCATION
+    ? summary.unfiled > 0
+    : summary.places.some(place => place.key === activeLocationFilter);
+  if (!stillExists) activeLocationFilter = "all";
+}
+
+/** Keep the Binders panel in step with the collection while it is open. */
 function refreshLocationUi() {
   const summary = locationSummary();
   const signature = summary.places.map(p => `${p.key}:${p.count}`).join("|") + `#${summary.unfiled}`;
   if (signature === locationUiSignature) return;
   locationUiSignature = signature;
-
-  const options = summary.places.map(place => ({
-    value: place.key,
-    label: `${place.label} (${place.count})`
-  }));
-  if (summary.unfiled > 0) {
-    options.push({ value: NO_LOCATION, label: `No location set (${summary.unfiled})` });
-  }
-
-  const current = valueOf("filterLocation");
-  fillSelect("filterLocation", "All locations", options);
-  setValue("filterLocation", current);
-  // The stored choice may name a binder that no longer has any cards in it.
-  if (valueOf("filterLocation") !== current) activeLocationFilter = "all";
-
   if (isBindersModalOpen()) renderBindersModal();
 }
 
 function selectLocationPill(key) {
   activeLocationFilter = activeLocationFilter === key ? "all" : key;
-  setValue("filterLocation", activeLocationFilter);
   currentPage = 1;
   applyFiltersAndRender();
   savePrefs();
   closeBindersModal();
+  closeToolsMenu();
 
   const label = key === NO_LOCATION ? "cards with no location" : key;
   showToast(activeLocationFilter === "all" ? "Showing all locations" : `Showing ${label}`);
+
+  // On a phone the header fills the screen, so filtering without moving looks
+  // like nothing happened. Put the results in front of her.
+  const anchor = document.getElementById("cardsSection");
+  if (anchor) window.scrollTo({ top: Math.max(0, anchor.offsetTop - 12), behavior: "smooth" });
 }
 
 // ---------------------------------------------------------------------------
 // Binders panel (Tools -> Binders)
 // ---------------------------------------------------------------------------
+
+/** Collapse the phone Tools menu. A no-op on a wide screen, where it is always open. */
+function closeToolsMenu() {
+  const actions = document.getElementById("headerActions");
+  const toggle = document.getElementById("menuToggleBtn");
+  if (actions) actions.classList.remove("is-open");
+  if (toggle) toggle.setAttribute("aria-expanded", "false");
+}
 
 function isBindersModalOpen() {
   const modal = document.getElementById("bindersModal");
@@ -735,13 +743,16 @@ function renderBindersModal() {
       <span class="binder-count">${summary.unfiled} card${summary.unfiled === 1 ? "" : "s"}</span>
     </button>` : "";
 
+  const lede = summary.places.length
+    ? `${summary.places.length} place${summary.places.length === 1 ? "" : "s"},
+       ${filed} card${filed === 1 ? "" : "s"} filed. Tap one to see what is inside it.`
+    : `You have not written a storage location on any card yet. Open a card, type
+       where you keep it in the <strong>Storage location</strong> box, and it will
+       appear here.`;
+
   container.innerHTML = `
     <h2 class="sync-title">Binders and boxes</h2>
-    <p class="sync-lede">
-      ${summary.places.length} place${summary.places.length === 1 ? "" : "s"},
-      ${filed} card${filed === 1 ? "" : "s"} filed.
-      Tap one to see what is inside it.
-    </p>
+    <p class="sync-lede">${lede}</p>
 
     <div class="binder-list">
       ${rows}
@@ -1026,10 +1037,6 @@ function initEventListeners() {
         activeGameFilter = el.value;
         syncGamePillActiveState();
       }
-      if (id === "filterLocation") {
-        activeLocationFilter = el.value;
-        if (isBindersModalOpen()) renderBindersModal();
-      }
       currentPage = 1;
       applyFiltersAndRender();
       savePrefs();
@@ -1070,6 +1077,12 @@ function initEventListeners() {
       menuToggle.setAttribute("aria-expanded", String(open));
     });
   }
+
+  // On a phone every tool lives inside the collapsed Tools menu. Leaving it
+  // open after a tap hides the very thing the tool just changed.
+  document.getElementById("headerActions").addEventListener("click", event => {
+    if (event.target.closest("button, label")) closeToolsMenu();
+  });
 
   document.getElementById("bindersBtn").addEventListener("click", openBindersModal);
   document.getElementById("bindersModalCloseBtn").addEventListener("click", closeBindersModal);
@@ -1219,6 +1232,7 @@ function resetAllFilters() {
   setValue("sortBySelect", "number_asc");
   activeGameFilter = "all";
   activeLocationFilter = "all";
+  locationUiSignature = "";
   syncGamePillActiveState();
   currentPage = 1;
   applyFiltersAndRender();
@@ -1259,10 +1273,12 @@ function applyFiltersAndRender() {
   const treatmentFilter = valueOf("filterTreatment");
   const rarityFilter = valueOf("filterRarity");
   const colorFilter = valueOf("filterColor");
-  const locationFilter = valueOf("filterLocation");
   const sortBy = valueOf("sortBySelect");
 
   const ownedVariantKey = ownedFilter.indexOf("has_") === 0 ? ownedFilter.slice(4) : null;
+
+  validateLocationFilter();
+  const locationFilter = activeLocationFilter;
 
   const terms = searchTerms(query);
   searchScores.clear();
@@ -1371,7 +1387,9 @@ function compareByNumber(a, b) {
 
 /** Highlight the reset control whenever a filter is actually narrowing results. */
 function updateFilterActiveState() {
-  const anyFilter = FILTER_IDS.some(id => valueOf(id) !== "all") || valueOf("searchInput").trim() !== "";
+  const anyFilter = FILTER_IDS.some(id => valueOf(id) !== "all") ||
+    activeLocationFilter !== "all" ||
+    valueOf("searchInput").trim() !== "";
   const btn = document.getElementById("resetFiltersBtn");
   if (btn) btn.classList.toggle("is-active", anyFilter);
   const note = document.getElementById("filtersActiveNote");
