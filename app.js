@@ -932,6 +932,26 @@ function searchTerms(query) {
   return normaliseForSearch(query).trim().split(" ").filter(term => term.length > 0);
 }
 
+/**
+ * Added to a card's score when it contains the whole query as a phrase, rather
+ * than merely containing each word somewhere.
+ *
+ * Typing a type line - "card // card" - was returning "Sidequest: Card
+ * Collection // Magicked Card" at the very top. That card genuinely contains the
+ * word "card" twice, so it matched both terms, and a name match outranks a type
+ * match. Correct by the letter of the rules, useless in practice.
+ *
+ * Requiring the words to be adjacent separates "this IS the thing you typed"
+ * from "this happens to contain those words", and that distinction matters more
+ * than which field the words were found in. Kept well above the tier values so
+ * it always dominates; the tier survives as `score % PHRASE_BONUS`.
+ */
+const PHRASE_BONUS = 10;
+
+function matchTier(score) {
+  return score % PHRASE_BONUS;
+}
+
 function containsTerm(haystack, term) {
   return haystack.indexOf(" " + term) !== -1;
 }
@@ -944,7 +964,7 @@ function containsTerm(haystack, term) {
  * any single term had to fall back on, so a card only counts as a name match
  * when the whole query is in its name.
  */
-function scoreCard(card, terms) {
+function scoreCard(card, terms, phrase) {
   const fields = searchIndex.get(card.id);
   if (!fields) return -1;
 
@@ -964,7 +984,15 @@ function scoreCard(card, terms) {
     if (best < weakest) weakest = best;
   }
 
-  return weakest;
+  // Does the card contain the words together, in the order they were typed?
+  const isPhrase = phrase && (
+    containsTerm(fields.name, phrase) ||
+    containsTerm(fields.meta, phrase) ||
+    containsTerm(fields.artist, phrase) ||
+    containsTerm(fields.text, phrase)
+  );
+
+  return weakest + (isPhrase ? PHRASE_BONUS : 0);
 }
 
 /**
@@ -980,16 +1008,16 @@ function scoreCard(card, terms) {
  * Otherwise fall back to the weaker matches rather than returning nothing.
  */
 function applySearchFallback() {
-  const hasStrongMatch = filteredCards.some(card => (searchScores.get(card.id) || 0) >= MATCH_META);
-  if (!hasStrongMatch) return;
-  filteredCards = filteredCards.filter(card => (searchScores.get(card.id) || 0) >= MATCH_META);
+  const isStrong = card => matchTier(searchScores.get(card.id) || 0) >= MATCH_META;
+  if (!filteredCards.some(isStrong)) return;
+  filteredCards = filteredCards.filter(isStrong);
 }
 
 /** Explanation shown on results that matched nothing visible on the card. */
 function matchLabel(cardId) {
   if (!searchScores.size) return "";
   const score = searchScores.get(cardId);
-  return score === undefined ? "" : (MATCH_LABELS[score] || "");
+  return score === undefined ? "" : (MATCH_LABELS[matchTier(score)] || "");
 }
 
 /**
@@ -1317,6 +1345,8 @@ function applyFiltersAndRender() {
   const locationFilter = activeLocationFilter;
 
   const terms = searchTerms(query);
+  // The whole query as one phrase, for the adjacency bonus in scoreCard.
+  const phrase = terms.join(" ");
   searchScores.clear();
 
   filteredCards = CARDS_DATA.filter(card => {
@@ -1324,7 +1354,7 @@ function applyFiltersAndRender() {
     const owned = entryTotalQty(entry) > 0;
 
     if (terms.length) {
-      const score = scoreCard(card, terms);
+      const score = scoreCard(card, terms, phrase);
       if (score < 0) return false;
       searchScores.set(card.id, score);
     }
