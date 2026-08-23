@@ -598,11 +598,11 @@ function buildFilterOptions() {
 const MATCH_NAME = 3;   // Final Fantasy name or original Magic name
 const MATCH_META = 2;   // type line, set, collector number
 const MATCH_ARTIST = 1; // artist
-const MATCH_TEXT = 0;   // rules text or flavour text
+const MATCH_TEXT = 0;   // rules text
 
 const MATCH_LABELS = {};
 MATCH_LABELS[MATCH_ARTIST] = "matched artist";
-MATCH_LABELS[MATCH_TEXT] = "matched card text";
+MATCH_LABELS[MATCH_TEXT] = "matched rules text";
 
 /** Card id -> match quality, for the current search only. */
 let searchScores = new Map();
@@ -634,7 +634,11 @@ function buildSearchIndex() {
       name: normaliseForSearch(`${card.ff_name} ${card.mtg_name}`),
       meta: normaliseForSearch(`${card.type_line} ${card.set} ${card.set_name} ${number} ${plainNumber}`),
       artist: normaliseForSearch(card.artist),
-      text: normaliseForSearch(`${card.oracle_text} ${card.flavor_text}`)
+      // Rules text only. Flavour text is deliberately NOT searched: it is the
+      // italic story quote, so a card can mention a character it has nothing
+      // else to do with. Searching "sephi" was returning five cards on that
+      // basis alone, none of which were Sephiroth cards.
+      text: normaliseForSearch(card.oracle_text)
     });
   });
 }
