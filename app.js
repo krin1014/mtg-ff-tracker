@@ -827,6 +827,27 @@ MATCH_LABELS[MATCH_TEXT] = "matched rules text";
  *
  * The set is still reachable, and more precisely, through the Card Set filter.
  */
+/**
+ * Words that belong with a card's type but are not printed in its type line.
+ *
+ * Four cards in the token sets are typed "Card" or "Emblem" rather than
+ * "Token ..." - Foretell, The Monarch, the Sephiroth emblem and Punchcard. They
+ * come in the token slot and people look for them as tokens, so "token" should
+ * find them.
+ *
+ * Note this keys off the SET, not the type line: the 77 art cards are also
+ * typed "Card // Card" and are emphatically not tokens.
+ */
+function derivedTypeWords(card) {
+  const typeLine = (card.type_line || "").toLowerCase();
+  const setName = (card.set_name || "").toLowerCase();
+
+  const alreadySaysToken = typeLine.indexOf("token") !== -1;
+  const isTokenProduct = setName.indexOf("token") !== -1 || typeLine.indexOf("emblem") !== -1;
+
+  return (!alreadySaysToken && isTokenProduct) ? "token" : "";
+}
+
 function roleKeywords(card) {
   const rules = (card.oracle_text || "").toLowerCase();
   const roles = [];
@@ -891,7 +912,9 @@ function buildSearchIndex() {
       // Fantasy something", so "fantasy" matched all 1,365 cards, and
       // "commander" returned the whole Commander product rather than the cards
       // that can actually be a commander. The Card Set filter does that job.
-      meta: normaliseForSearch(`${card.type_line} ${card.set} ${number} ${plainNumber}`),
+      meta: normaliseForSearch(
+        `${card.type_line} ${card.set} ${number} ${plainNumber} ${derivedTypeWords(card)}`
+      ),
       // What the card can DO, ranked above everything else - see MATCH_ROLE.
       role: normaliseForSearch(roleKeywords(card)),
       artist: normaliseForSearch(card.artist),
