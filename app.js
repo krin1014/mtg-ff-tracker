@@ -595,14 +595,44 @@ function buildFilterOptions() {
 // ---------------------------------------------------------------------------
 
 /** Match quality, highest first. Also the sort order within a search. */
-const MATCH_NAME = 3;   // Final Fantasy name or original Magic name
-const MATCH_META = 2;   // type line, set, collector number
+const MATCH_NAME = 4;   // Final Fantasy name or original Magic name
+const MATCH_META = 3;   // type line, set code, collector number
+const MATCH_SET = 2;    // distinctive part of the set name, e.g. "Commander"
 const MATCH_ARTIST = 1; // artist
 const MATCH_TEXT = 0;   // rules text
 
 const MATCH_LABELS = {};
+MATCH_LABELS[MATCH_SET] = "matched set";
 MATCH_LABELS[MATCH_ARTIST] = "matched artist";
 MATCH_LABELS[MATCH_TEXT] = "matched rules text";
+
+/**
+ * Words that appear in EVERY set name, worked out from the data rather than
+ * hardcoded, so it keeps adapting as sets are added.
+ *
+ * Every set here is called "Final Fantasy something", so indexing the whole set
+ * name made "fantasy" match all 1,365 cards. Dropping the words common to all of
+ * them leaves precisely the part worth searching: Commander, Tokens, Promos,
+ * Art Series, Scene Box, Through the Ages.
+ */
+function commonSetNameWords() {
+  const perSet = [];
+  const seen = new Set();
+  CARDS_DATA.forEach(card => {
+    const name = card.set_name || "";
+    if (!name || seen.has(name)) return;
+    seen.add(name);
+    perSet.push(normaliseForSearch(name).trim().split(" ").filter(Boolean));
+  });
+
+  // With only one set there is nothing to compare against, so strip nothing.
+  if (perSet.length < 2) return new Set();
+
+  return perSet.reduce((common, words) => {
+    const here = new Set(words);
+    return new Set(Array.from(common).filter(word => here.has(word)));
+  }, new Set(perSet[0]));
+}
 
 /** Card id -> match quality, for the current search only. */
 let searchScores = new Map();
@@ -624,6 +654,8 @@ function normaliseForSearch(value) {
 
 function buildSearchIndex() {
   searchIndex = new Map();
+  const commonWords = commonSetNameWords();
+
   CARDS_DATA.forEach(card => {
     // Collector numbers are stored zero-padded ("0001"). Index the plain form
     // too, so typing "1" still finds card number 1.
@@ -632,7 +664,24 @@ function buildSearchIndex() {
 
     searchIndex.set(card.id, {
       name: normaliseForSearch(`${card.ff_name} ${card.mtg_name}`),
-      meta: normaliseForSearch(`${card.type_line} ${card.set} ${card.set_name} ${number} ${plainNumber}`),
+      // The set CODE is on every card tile, so matching it is obvious. The set
+      // NAME is not shown anywhere and every single set is called "Final
+      // Fantasy something" - so searching "fantasy" matched all 1,365 cards and
+      // "commander" matched 505, with nothing visible to explain why. The Card
+      // Set dropdown is the right tool for that anyway.
+      // The type line is printed on every tile, so "legendary", "creature",
+      // "saga" and every creature type match visibly. So does the set CODE.
+      meta: normaliseForSearch(`${card.type_line} ${card.set} ${number} ${plainNumber}`),
+      // Just the distinctive words of the set name - "commander", "tokens",
+      // "promos". Searchable because the set is a real thing people look for,
+      // but ranked below the type line and labelled, because the full set name
+      // is not printed on the tile.
+      setName: normaliseForSearch(
+        (card.set_name || "")
+          .split(/\s+/)
+          .filter(word => !commonWords.has(normaliseForSearch(word).trim()))
+          .join(" ")
+      ),
       artist: normaliseForSearch(card.artist),
       // Rules text only. Flavour text is deliberately NOT searched: it is the
       // italic story quote, so a card can mention a character it has nothing
@@ -672,6 +721,7 @@ function scoreCard(card, terms) {
 
     if (containsTerm(fields.name, term)) best = MATCH_NAME;
     else if (containsTerm(fields.meta, term)) best = MATCH_META;
+    else if (containsTerm(fields.setName, term)) best = MATCH_SET;
     else if (containsTerm(fields.artist, term)) best = MATCH_ARTIST;
     else if (containsTerm(fields.text, term)) best = MATCH_TEXT;
 
@@ -680,6 +730,24 @@ function scoreCard(card, terms) {
   }
 
   return weakest;
+}
+
+/**
+ * Weak matches only appear when there is nothing better.
+ *
+ * Artist and rules-text hits are useful when they are all you have - typing an
+ * artist's surname, or a keyword like "flying" - but they are noise the moment a
+ * real name match exists. Rules text in particular is full of ordinary grammar:
+ * "control" appears in 569 cards, "target" in 418, none of which show the word
+ * anywhere on the tile.
+ *
+ * So: if anything matched on a name, type line, set or number, show only those.
+ * Otherwise fall back to the weaker matches rather than returning nothing.
+ */
+function applySearchFallback() {
+  const hasStrongMatch = filteredCards.some(card => (searchScores.get(card.id) || 0) >= MATCH_SET);
+  if (!hasStrongMatch) return;
+  filteredCards = filteredCards.filter(card => (searchScores.get(card.id) || 0) >= MATCH_SET);
 }
 
 /** Explanation shown on results that matched nothing visible on the card. */
@@ -1023,6 +1091,8 @@ function applyFiltersAndRender() {
 
     return true;
   });
+
+  if (terms.length) applySearchFallback();
 
   sortFilteredCards(sortBy);
   updateFilterActiveState();
