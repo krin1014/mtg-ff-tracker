@@ -595,43 +595,48 @@ function buildFilterOptions() {
 // ---------------------------------------------------------------------------
 
 /** Match quality, highest first. Also the sort order within a search. */
-const MATCH_NAME = 4;   // Final Fantasy name or original Magic name
-const MATCH_META = 3;   // type line, set code, collector number
-const MATCH_SET = 2;    // distinctive part of the set name, e.g. "Commander"
+const MATCH_NAME = 3;   // Final Fantasy name or original Magic name
+const MATCH_META = 2;   // type line, set code, collector number, gameplay role
 const MATCH_ARTIST = 1; // artist
 const MATCH_TEXT = 0;   // rules text
 
 const MATCH_LABELS = {};
-MATCH_LABELS[MATCH_SET] = "matched set";
 MATCH_LABELS[MATCH_ARTIST] = "matched artist";
 MATCH_LABELS[MATCH_TEXT] = "matched rules text";
 
 /**
- * Words that appear in EVERY set name, worked out from the data rather than
- * hardcoded, so it keeps adapting as sets are added.
+ * Keywords for what a card can DO, so a gameplay term finds the right cards even
+ * when the word is not printed anywhere on them.
  *
- * Every set here is called "Final Fantasy something", so indexing the whole set
- * name made "fantasy" match all 1,365 cards. Dropping the words common to all of
- * them leaves precisely the part worth searching: Commander, Tokens, Promos,
- * Art Series, Scene Box, Through the Ages.
+ * "commander" is the case that matters. In the Commander format only a Legendary
+ * Creature - or a card that explicitly says it can be your commander - may lead
+ * a deck. Matching the SET called "Final Fantasy Commander" instead returned 497
+ * cards of which 321 were lands, instants, sorceries and other things that can
+ * never be a commander.
+ *
+ * The set is still reachable, and more precisely, through the Card Set filter.
  */
-function commonSetNameWords() {
-  const perSet = [];
-  const seen = new Set();
-  CARDS_DATA.forEach(card => {
-    const name = card.set_name || "";
-    if (!name || seen.has(name)) return;
-    seen.add(name);
-    perSet.push(normaliseForSearch(name).trim().split(" ").filter(Boolean));
-  });
+function roleKeywords(card) {
+  const rules = (card.oracle_text || "").toLowerCase();
+  const roles = [];
 
-  // With only one set there is nothing to compare against, so strip nothing.
-  if (perSet.length < 2) return new Set();
+  // A double-faced card's eligibility is decided by its FRONT face, so only look
+  // at the part before the "//". "Sidequest: Hunt the Mark // Yiazmat" has a
+  // legendary creature on the back, but an Enchantment front - it cannot lead a
+  // deck. A token can never be a commander either, however legendary it says it
+  // is (the set contains two: Angelo and Darkstar).
+  const frontType = (card.type_line || "").toLowerCase().split("//")[0];
 
-  return perSet.reduce((common, words) => {
-    const here = new Set(words);
-    return new Set(Array.from(common).filter(word => here.has(word)));
-  }, new Set(perSet[0]));
+  const isLegendaryCreature =
+    frontType.indexOf("legendary") !== -1 &&
+    frontType.indexOf("creature") !== -1 &&
+    frontType.indexOf("token") === -1;
+
+  if (isLegendaryCreature || rules.indexOf("can be your commander") !== -1) {
+    roles.push("commander");
+  }
+
+  return roles.join(" ");
 }
 
 /** Card id -> match quality, for the current search only. */
@@ -654,8 +659,6 @@ function normaliseForSearch(value) {
 
 function buildSearchIndex() {
   searchIndex = new Map();
-  const commonWords = commonSetNameWords();
-
   CARDS_DATA.forEach(card => {
     // Collector numbers are stored zero-padded ("0001"). Index the plain form
     // too, so typing "1" still finds card number 1.
@@ -670,17 +673,15 @@ function buildSearchIndex() {
       // "commander" matched 505, with nothing visible to explain why. The Card
       // Set dropdown is the right tool for that anyway.
       // The type line is printed on every tile, so "legendary", "creature",
-      // "saga" and every creature type match visibly. So does the set CODE.
-      meta: normaliseForSearch(`${card.type_line} ${card.set} ${number} ${plainNumber}`),
-      // Just the distinctive words of the set name - "commander", "tokens",
-      // "promos". Searchable because the set is a real thing people look for,
-      // but ranked below the type line and labelled, because the full set name
-      // is not printed on the tile.
-      setName: normaliseForSearch(
-        (card.set_name || "")
-          .split(/\s+/)
-          .filter(word => !commonWords.has(normaliseForSearch(word).trim()))
-          .join(" ")
+      // "saga", "token" and every creature type match visibly. So does the set
+      // CODE, and the gameplay roles derived from the type line.
+      //
+      // The set NAME is deliberately NOT searched. Every set is called "Final
+      // Fantasy something", so "fantasy" matched all 1,365 cards, and
+      // "commander" returned the whole Commander product rather than the cards
+      // that can actually be a commander. The Card Set filter does that job.
+      meta: normaliseForSearch(
+        `${card.type_line} ${card.set} ${number} ${plainNumber} ${roleKeywords(card)}`
       ),
       artist: normaliseForSearch(card.artist),
       // Rules text only. Flavour text is deliberately NOT searched: it is the
@@ -721,7 +722,6 @@ function scoreCard(card, terms) {
 
     if (containsTerm(fields.name, term)) best = MATCH_NAME;
     else if (containsTerm(fields.meta, term)) best = MATCH_META;
-    else if (containsTerm(fields.setName, term)) best = MATCH_SET;
     else if (containsTerm(fields.artist, term)) best = MATCH_ARTIST;
     else if (containsTerm(fields.text, term)) best = MATCH_TEXT;
 
@@ -745,9 +745,9 @@ function scoreCard(card, terms) {
  * Otherwise fall back to the weaker matches rather than returning nothing.
  */
 function applySearchFallback() {
-  const hasStrongMatch = filteredCards.some(card => (searchScores.get(card.id) || 0) >= MATCH_SET);
+  const hasStrongMatch = filteredCards.some(card => (searchScores.get(card.id) || 0) >= MATCH_META);
   if (!hasStrongMatch) return;
-  filteredCards = filteredCards.filter(card => (searchScores.get(card.id) || 0) >= MATCH_SET);
+  filteredCards = filteredCards.filter(card => (searchScores.get(card.id) || 0) >= MATCH_META);
 }
 
 /** Explanation shown on results that matched nothing visible on the card. */
