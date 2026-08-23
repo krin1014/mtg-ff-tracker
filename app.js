@@ -107,7 +107,16 @@ const SET_LABELS = {
   RFIN: "RFIN (Retro / Special)",
   PFIN: "PFIN (Prerelease & Promos)",
   TFIN: "TFIN (Tokens - Main)",
-  TFIC: "TFIC (Tokens - Commander)"
+  TFIC: "TFIC (Tokens - Commander)",
+  // Final Fantasy cards printed outside the Final Fantasy sets.
+  PMEI: "PMEI (Media & Collaboration Promos)",
+  PPRO: "PPRO (Pro Tour Promos)",
+  PSPL: "PSPL (Spotlight Series)",
+  PSS5: "PSS5 (Standard Showdown)",
+  PF25: "PF25 (MagicFest 2025)",
+  PW25: "PW25 (Wizards Play Network 2025)",
+  WFIN: "WFIN (Asia WPN Promo Tokens)",
+  SLD: "SLD (Secret Lair Drop)"
 };
 
 const VARIANT_LABELS = {
