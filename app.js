@@ -1525,6 +1525,34 @@ function treatmentRank(card) {
   return at === -1 ? TREATMENT_ORDER.length : at;
 }
 
+/**
+ * What kind of card this is, for the default order: the cards you actually cast
+ * come first, then lands, then tokens.
+ *
+ * Grouping by treatment alone put every token and full-art land ahead of most of
+ * the playable cards, because all of them are Full Art and Full Art sorts before
+ * Default.
+ *
+ * A double-faced card is judged by its FRONT face, the same way roleKeywords
+ * does it: "Land - Town // Sorcery - Adventure" is a land, while
+ * "Enchantment // Land" is not.
+ */
+const KIND_PLAYABLE = 0;
+const KIND_LAND = 1;
+const KIND_TOKEN = 2;
+
+function cardKind(card) {
+  const front = (card.type_line || "").toLowerCase().split("//")[0];
+  // Emblems live with the tokens - they come out of the same products and are
+  // not cards you own to play.
+  if (card.set === "TFIN" || card.set === "TFIC"
+      || front.indexOf("token") !== -1 || front.indexOf("emblem") !== -1) {
+    return KIND_TOKEN;
+  }
+  if (front.indexOf("land") !== -1) return KIND_LAND;
+  return KIND_PLAYABLE;
+}
+
 function setRank(card) {
   const at = SET_RELEASE_ORDER.indexOf(card.set);
   return at === -1 ? SET_RELEASE_ORDER.length : at;
@@ -1538,11 +1566,15 @@ function compareBySet(a, b) {
 }
 
 /**
- * The default order: group by print style, and within each style run through the
- * sets in release order, starting with FIN.
+ * The default order: playable cards, then lands, then tokens. Within each of
+ * those, group by print style, and within each style run through the sets in
+ * release order, starting with FIN.
  */
 function compareByPrintStyle(a, b) {
-  return (treatmentRank(a) - treatmentRank(b)) || compareBySet(a, b) || compareByNumber(a, b);
+  return (cardKind(a) - cardKind(b))
+    || (treatmentRank(a) - treatmentRank(b))
+    || compareBySet(a, b)
+    || compareByNumber(a, b);
 }
 
 function compareByNumber(a, b) {
