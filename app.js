@@ -91,7 +91,7 @@ const MASTER_VARIANTS = {
   "Non-Foil": { key: "nonfoil", label: "Non-Foil", short: "Non-Foil", icon: "\u{1F4C4}", priceKey: "price_usd", badgeClass: "active-nonfoil" },
   "Traditional Foil": { key: "foil", label: "Traditional Foil", short: "Foil", icon: "✨", priceKey: "price_foil", badgeClass: "active-foil" },
   "Surge Foil": { key: "surge", label: "Surge Foil", short: "Surge", icon: "\u{1F30A}", priceKey: "price_foil", badgeClass: "active-surge" },
-  "Wave Foil": { key: "wave", label: "Wave Foil", short: "Wave", icon: "⚡", priceKey: "price_foil", badgeClass: "active-wave" },
+  "Wave Foil": { key: "wave", label: "Chocobo Track Foil", short: "Chocobo Track", icon: "⚡", priceKey: "price_foil", badgeClass: "active-wave" },
   "Foil Etched": { key: "etched", label: "Foil Etched", short: "Etched", icon: "\u{1F48E}", priceKey: "price_etched", badgeClass: "active-foil" },
   "Promo": { key: "promo", label: "Promo / Prerelease", short: "Promo", icon: "\u{1F396}️", priceKey: "price_foil", badgeClass: "active-promo" },
   "Serialized": { key: "serialized", label: "Serialized", short: "Serial", icon: "\u{1F522}", priceKey: "price_foil", badgeClass: "active-serialized" }
@@ -123,11 +123,22 @@ const VARIANT_LABELS = {
   "Basic/Non-foil": "Standard Print",
   "Traditional Foil": "Foil Print",
   "Surge Foil": "Surge Foil Print",
-  "Wave Foil": "Wave Foil (Chocobo Track)",
+  "Wave Foil": "Chocobo Track Foil",
   "Foil Etched": "Foil Etched",
   "Promo": "Promo / Prerelease",
   "Serialized": "Serialized Print"
 };
+
+/**
+ * The official name for a print variant, for the badge on a card tile.
+ *
+ * The raw data still says "Wave Foil" because that is the key the collection is
+ * stored under and renaming it would detach every recorded count. Wizards calls
+ * it Chocobo Track Foil, so that is what gets shown.
+ */
+function variantName(variant) {
+  return variant === "Wave Foil" ? "Chocobo Track Foil" : variant;
+}
 
 const GAME_LABELS = {
   FF1: "Final Fantasy I (FF1)", FF2: "Final Fantasy II (FF2)", FF3: "Final Fantasy III (FF3)",
@@ -142,8 +153,23 @@ const COLOR_LABELS = { W: "White (W)", U: "Blue (U)", B: "Black (B)", R: "Red (R
 
 const RARITY_ORDER = { Mythic: 5, Rare: 4, Special: 3, Uncommon: 2, Common: 1 };
 
-/** Print styles, in the order results are grouped. Anything else sorts last. */
-const TREATMENT_ORDER = ["Showcase", "Borderless", "Extended Art", "Standard", "Art Card"];
+/**
+ * Wizards' official treatment names, from the Final Fantasy Card Image Gallery.
+ *
+ * A card's `treatment` is its frame - one of these six - and results are
+ * grouped in this order. `treatments` is every official treatment that applies
+ * to the printing, frame and finish together, which is what the filter matches
+ * against. Anything not listed here sorts last.
+ */
+const TREATMENT_ORDER = ["Showcase", "Borderless", "Extended Art", "Full Art", "Default", "Art Card"];
+
+// The finishes, in the order the filter should list them after the frames.
+const TREATMENT_FINISHES = [
+  "Scene Card", "Traditional Foil", "Surge Foil", "Chocobo Track Foil", "Neon Ink", "Serialized"
+];
+
+// Every official treatment, frames first, for the filter dropdown.
+const TREATMENT_FILTER_ORDER = TREATMENT_ORDER.concat(TREATMENT_FINISHES);
 
 /**
  * Sets in release order, main set first.
@@ -590,8 +616,13 @@ function buildFilterOptions() {
   const variants = distinctValues(card => card.variant);
   fillSelect("filterVariant", "All Styles", variants.map(v => ({ value: v, label: VARIANT_LABELS[v] || v })));
 
-  const treatments = distinctValues(card => card.treatment);
-  fillSelect("filterTreatment", "All Frames", treatments.map(v => ({ value: v, label: v })));
+  // Every official treatment any card carries, frames first then finishes, so
+  // the list reads the way Wizards' own gallery does rather than alphabetically.
+  const present = new Set();
+  CARDS_DATA.forEach(card => (card.treatments || [card.treatment]).forEach(t => present.add(t)));
+  const treatments = TREATMENT_FILTER_ORDER.filter(t => present.has(t))
+    .concat([...present].filter(t => TREATMENT_FILTER_ORDER.indexOf(t) === -1).sort());
+  fillSelect("filterTreatment", "All Treatments", treatments.map(v => ({ value: v, label: v })));
 
   const rarities = distinctValues(card => card.rarity)
     .sort((a, b) => (RARITY_ORDER[b] || 0) - (RARITY_ORDER[a] || 0));
@@ -939,8 +970,16 @@ function buildSearchIndex() {
       // Fantasy something", so "fantasy" matched all 1,365 cards, and
       // "commander" returned the whole Commander product rather than the cards
       // that can actually be a commander. The Card Set filter does that job.
+      //
+      // The frame treatment is searchable because it is printed on the tile as
+      // a badge. "Default" is not - it has no badge, and it would match 755
+      // cards with nothing on screen to explain the hit. The finish treatments
+      // are left out for the same reason: a card can come in Surge Foil
+      // without this particular printing being the surge foil one. Both are
+      // reachable through the Treatment filter, which is exact.
       meta: normaliseForSearch(
-        `${card.type_line} ${card.set} ${number} ${plainNumber} ${derivedTypeWords(card)}`
+        `${card.type_line} ${card.set} ${number} ${plainNumber} ${derivedTypeWords(card)} ` +
+        `${card.treatment && card.treatment !== "Default" ? card.treatment : ""}`
       ),
       // What the card can DO, ranked above everything else - see MATCH_ROLE.
       role: normaliseForSearch(roleKeywords(card)),
@@ -995,7 +1034,11 @@ function scoreCard(card, terms, phrase) {
   const fields = searchIndex.get(card.id);
   if (!fields) return -1;
 
-  let weakest = MATCH_NAME;
+  // Start at the best tier there is. Starting at MATCH_NAME instead capped
+  // every score there, so a role match scored the same as a name match and
+  // MATCH_ROLE could never be the result - the whole point of ranking the role
+  // above the name was lost.
+  let weakest = MATCH_ROLE;
 
   for (let i = 0; i < terms.length; i++) {
     const term = terms[i];
@@ -1403,7 +1446,12 @@ function applyFiltersAndRender() {
     if (gameFilter !== "all" && card.game !== gameFilter) return false;
     if (setFilter !== "all" && card.set !== setFilter) return false;
     if (variantFilter !== "all" && card.variant !== variantFilter) return false;
-    if (treatmentFilter !== "all" && card.treatment !== treatmentFilter) return false;
+    // Match against the full treatment list, not just the frame, so picking
+    // "Surge Foil" or "Scene Card" works the same way "Borderless" does.
+    if (treatmentFilter !== "all") {
+      const list = card.treatments || [card.treatment];
+      if (list.indexOf(treatmentFilter) === -1) return false;
+    }
     if (rarityFilter !== "all" && card.rarity.toLowerCase() !== rarityFilter.toLowerCase()) return false;
 
     if (colorFilter !== "all") {
@@ -1684,7 +1732,8 @@ function renderGridView(cards) {
             <span class="tag-badge tag-game">${esc(card.game)}</span>
             <span class="tag-badge tag-set">${esc(card.set)} #${esc(card.collector_number)}</span>
             <span class="tag-badge tag-rarity-${esc(card.rarity.toLowerCase())}">${esc(card.rarity)}</span>
-            ${card.variant !== "Basic/Non-foil" ? `<span class="tag-badge tag-variant">${esc(card.variant)}</span>` : ""}
+            ${card.treatment && card.treatment !== "Default" ? `<span class="tag-badge tag-treatment">${esc(card.treatment)}</span>` : ""}
+            ${card.variant !== "Basic/Non-foil" ? `<span class="tag-badge tag-variant">${esc(variantName(card.variant))}</span>` : ""}
           </div>
         </div>
 
@@ -2129,7 +2178,7 @@ function openCardModal(cardId) {
         <div class="modal-meta-item"><strong>Set:</strong> ${esc(card.set_name)} (${esc(card.set)})</div>
         <div class="modal-meta-item"><strong>Collector #:</strong> ${esc(card.collector_number)}</div>
         <div class="modal-meta-item"><strong>Base printing:</strong> ${esc(card.variant)}</div>
-        <div class="modal-meta-item"><strong>Frame treatment:</strong> ${esc(card.treatment)}</div>
+        <div class="modal-meta-item"><strong>Treatment:</strong> ${esc((card.treatments || [card.treatment]).join(", "))}</div>
         <div class="modal-meta-item"><strong>Rarity:</strong> ${esc(card.rarity)}</div>
         <div class="modal-meta-item"><strong>Artist:</strong> ${esc(card.artist || "Unknown")}</div>
       </div>

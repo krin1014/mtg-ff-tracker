@@ -639,6 +639,8 @@ body {
 .tag-rarity-uncommon { background: rgba(71, 85, 105, 0.85); color: #F1F5F9; }
 .tag-rarity-common { background: rgba(15, 23, 42, 0.85); color: #94A3B8; }
 .tag-variant { background: rgba(124, 58, 237, 0.85); color: #EDE9FE; }
+/* Wizards' official treatment name (Showcase, Borderless, ...). */
+.tag-treatment { background: rgba(13, 148, 136, 0.85); color: #CCFBF1; }
 .tag-mtg-name {
   font-size: 11px;
   color: #94A3B8;
