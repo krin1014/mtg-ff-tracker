@@ -1219,6 +1219,20 @@ body {
   margin-bottom: 6px;
 }
 
+/* Names the filters responsible when nothing comes back. */
+.empty-reason {
+  font-size: 14px;
+  margin: 10px auto 16px;
+  max-width: 44ch;
+  line-height: 1.6;
+  color: var(--text-secondary, #94A3B8);
+}
+
+.empty-reason strong {
+  color: var(--text-primary, #F8FAFC);
+  font-weight: 600;
+}
+
 .empty-state p {
   color: var(--text-muted);
   margin-bottom: 18px;
@@ -2673,3 +2687,211 @@ body.modal-open {
     max-width: 60vw;
   }
 }
+
+
+/* --- Price history -------------------------------------------------------
+   Drawn as inline SVG. A charting library would have to come from a CDN, and
+   the page is deliberately self-contained. */
+.price-history:empty { display: none; }
+
+.price-history {
+  margin: 18px 0 4px;
+  padding: 16px;
+  background: var(--bg-elevated, rgba(15, 23, 42, 0.5));
+  border: 1px solid var(--border-color, #334155);
+  border-radius: 10px;
+}
+
+.price-history-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary, #94A3B8);
+  margin: 0 0 14px;
+}
+
+.price-history-row + .price-history-row {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border-color, #334155);
+}
+
+.price-history-row-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+  margin-bottom: 8px;
+}
+
+.price-history-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.price-history-now {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.price-history-delta {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.price-history-delta.is-up { color: #34D399; }
+.price-history-delta.is-down { color: #F87171; }
+
+.price-chart {
+  display: block;
+  width: 100%;
+  height: 74px;
+  overflow: visible;
+}
+
+.price-chart-line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.price-chart.is-up .price-chart-line { stroke: #34D399; }
+.price-chart.is-down .price-chart-line { stroke: #F87171; }
+.price-chart.is-up .price-chart-area { fill: rgba(52, 211, 153, 0.14); }
+.price-chart.is-down .price-chart-area { fill: rgba(248, 113, 113, 0.14); }
+.price-chart.is-up .price-chart-dot { fill: #34D399; }
+.price-chart.is-down .price-chart-dot { fill: #F87171; }
+
+.price-history-axis {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-secondary, #94A3B8);
+}
+
+/* --- What you paid ------------------------------------------------------- */
+.acquired-summary.is-empty { display: none; }
+
+.acquired-summary {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.7;
+  background: var(--bg-elevated, rgba(15, 23, 42, 0.5));
+  border: 1px solid var(--border-color, #334155);
+  border-left: 3px solid var(--accent, #38BDF8);
+  border-radius: 8px;
+}
+
+.acquired-delta {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.acquired-delta.is-up { color: #34D399; }
+.acquired-delta.is-down { color: #F87171; }
+
+.acquired-market {
+  color: var(--text-secondary, #94A3B8);
+  white-space: nowrap;
+}
+
+/* --- Purchase price on the main page -------------------------------------
+   Shown on every card, as a button when nothing is recorded, so the feature
+   is visible rather than buried in the card window. */
+.btn-add-purchase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary, #94A3B8);
+  background: transparent;
+  border: 1px dashed var(--border-color, #334155);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.btn-add-purchase:hover,
+.btn-add-purchase:focus-visible {
+  color: var(--accent, #38BDF8);
+  border-color: var(--accent, #38BDF8);
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.btn-add-purchase.is-compact {
+  width: auto;
+  margin: 0;
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+.card-purchase,
+.table-purchase {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 7px 10px;
+  font-size: 12px;
+  text-align: left;
+  background: var(--bg-elevated, rgba(15, 23, 42, 0.5));
+  border: 1px solid var(--border-color, #334155);
+  border-left: 3px solid var(--border-color, #334155);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-purchase.is-up, .table-purchase.is-up { border-left-color: #34D399; }
+.card-purchase.is-down, .table-purchase.is-down { border-left-color: #F87171; }
+
+.card-purchase:hover, .table-purchase:hover { border-color: var(--accent, #38BDF8); }
+
+.table-purchase {
+  margin: 0;
+  padding: 4px 8px;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.purchase-label {
+  color: var(--text-secondary, #94A3B8);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.purchase-paid {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary, #F8FAFC);
+}
+
+.purchase-move {
+  margin-left: auto;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.table-purchase .purchase-move { margin-left: 0; }
+
+.purchase-move.is-up { color: #34D399; }
+.purchase-move.is-down { color: #F87171; }
+.purchase-move.is-flat { color: var(--text-secondary, #94A3B8); font-weight: 400; }
+
+.col-paid { white-space: nowrap; }

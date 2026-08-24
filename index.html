@@ -153,9 +153,10 @@
           <select id="sortBySelect">
             <option value="print_style">Print style, then set release</option>
             <option value="number_asc">Collector number (low → high)</option>
-            <option value="ff_name_asc">Final Fantasy name (A → Z)</option>
-            <option value="ff_name_desc">Final Fantasy name (Z → A)</option>
-            <option value="mtg_name_asc">MTG name (A → Z)</option>
+            <option value="game_asc">Final Fantasy Game (I → XVI)</option>
+            <option value="ff_name_asc">Final Fantasy Name (A → Z)</option>
+            <option value="ff_name_desc">Final Fantasy Name (Z → A)</option>
+            <option value="mtg_name_asc">MTG Name (A → Z)</option>
             <option value="price_desc">Price: high → low</option>
             <option value="price_asc">Price: low → high</option>
             <option value="rarity_desc">Rarity (Mythic → Common)</option>
@@ -267,6 +268,7 @@
               <th class="col-condition">Condition</th>
               <th class="col-price">Price</th>
               <th class="col-price-foil">Foil</th>
+              <th class="col-paid">Paid</th>
               <th class="col-location">Storage location</th>
             </tr>
           </thead>
@@ -279,6 +281,7 @@
         <div class="empty-icon" aria-hidden="true">🎴</div>
         <h3>No cards match your search and filters</h3>
         <p>Try clearing the search box or resetting the filters.</p>
+        <p id="emptyReason" class="empty-reason" style="display: none;"></p>
         <button type="button" id="emptyResetBtn" class="btn btn-primary">Reset all filters</button>
       </div>
 

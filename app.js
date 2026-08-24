@@ -255,6 +255,11 @@ const PRICE_FALLBACK = {
   price_etched: "price_eur_foil"
 };
 
+/** "USD" or "EUR" - so a tile never labels a euro price as dollars. */
+function priceUnit(card, field) {
+  return cardPrice(card, field).currency.toUpperCase();
+}
+
 function cardPrice(card, field) {
   const direct = card[field];
   if (typeof direct === "number") return { value: direct, currency: "usd" };
@@ -1395,6 +1400,13 @@ function runAction(target, event) {
       event.preventDefault();
       openCardModal(cardId);
       break;
+    case "add-purchase":
+      // Opens the card window with the cursor already in the price box, so the
+      // button on the tile leads straight to the thing it advertises.
+      event.preventDefault();
+      openCardModal(cardId);
+      focusPurchasePrice();
+      break;
     case "chip-inc":
       event.preventDefault();
       event.stopPropagation();
@@ -1958,14 +1970,16 @@ function renderGridView(cards) {
 
           <div class="card-price-row">
             <div class="price-item">
-              <span class="price-label">Normal USD</span>
+              <span class="price-label">Normal ${esc(priceUnit(card, "price_usd"))}</span>
               <span class="price-val">${money(cardPrice(card, "price_usd").value, cardPrice(card, "price_usd").currency)}</span>
             </div>
             <div class="price-item" style="text-align: right;">
-              <span class="price-label">Foil USD</span>
+              <span class="price-label">Foil ${esc(priceUnit(card, "price_foil"))}</span>
               <span class="price-val price-foil">${money(cardPrice(card, "price_foil").value, cardPrice(card, "price_foil").currency)}</span>
             </div>
           </div>
+
+          ${purchaseRow(card, entry)}
 
           <div class="card-variants-hub">
             <div class="variants-hub-label">
@@ -2039,6 +2053,7 @@ function renderTableView(cards) {
         </td>
         <td class="col-price">${money(cardPrice(card, "price_usd").value, cardPrice(card, "price_usd").currency)}</td>
         <td class="col-price-foil">${money(cardPrice(card, "price_foil").value, cardPrice(card, "price_foil").currency)}</td>
+        <td class="col-paid">${purchaseCell(card, entry)}</td>
         <td class="col-location">
           <input type="text" class="table-input" placeholder="Binder page, box..."
                  value="${esc(entry.location)}" aria-label="Storage location for ${esc(name)}"
@@ -2469,6 +2484,91 @@ function sparkline(points, rising, currency) {
 }
 
 /**
+ * How a purchase has moved since, as one shared calculation.
+ *
+ * Used by the card tiles, the table and the card window, so the three can never
+ * disagree. Returns null when there is nothing to compare - no purchase price,
+ * no market price, or a market price quoted in a different currency from the
+ * one that was paid.
+ */
+function purchaseMove(card, entry) {
+  const paid = entry.acquiredPrice;
+  if (typeof paid !== "number") return null;
+
+  const market = bestPrice(card);
+  // Purchase prices are typed in without a currency, so they are taken as
+  // dollars. Subtracting a euro market price from a dollar purchase would be
+  // arithmetic on two different things, so it is not done.
+  if (!market || market.value <= 0 || market.currency !== "usd") return null;
+
+  const delta = market.value - paid;
+  const pct = paid > 0 ? (delta / paid) * 100 : null;
+  return {
+    paid: paid,
+    market: market.value,
+    delta: delta,
+    pct: pct,
+    up: delta >= 0,
+    // Solid triangles rather than arrows: they read at any size.
+    arrow: delta > 0 ? "▲" : delta < 0 ? "▼" : "–",
+    sign: delta > 0 ? "+" : delta < 0 ? "−" : ""
+  };
+}
+
+/** "▲ +$1.05 (+23.3%)" - the movement on its own, for a tile or a table cell. */
+function purchaseMoveText(move) {
+  const pct = move.pct === null ? "" : ` (${move.sign}${Math.abs(move.pct).toFixed(1)}%)`;
+  return `${move.arrow} ${move.sign}${money(Math.abs(move.delta), "usd")}${pct}`;
+}
+
+/** The compact form for a table row. */
+function purchaseCell(card, entry) {
+  const paid = entry.acquiredPrice;
+  if (typeof paid !== "number") {
+    return `<button type="button" class="btn-add-purchase is-compact" data-action="add-purchase"
+             data-card-id="${esc(card.id)}" title="Record what you paid">＋ Add</button>`;
+  }
+  const move = purchaseMove(card, entry);
+  return `<button type="button" class="table-purchase" data-action="add-purchase"
+           data-card-id="${esc(card.id)}" title="Edit what you paid">
+      <span class="purchase-paid">${esc(money(paid, "usd"))}</span>
+      ${move ? `<span class="purchase-move ${move.up ? "is-up" : "is-down"}">${esc(purchaseMoveText(move))}</span>` : ""}
+    </button>`;
+}
+
+/**
+ * The purchase line on a card tile.
+ *
+ * With nothing recorded this is a button rather than blank space - otherwise
+ * the feature is invisible and nobody finds it.
+ */
+function purchaseRow(card, entry) {
+  const paid = entry.acquiredPrice;
+
+  if (typeof paid !== "number") {
+    return `
+      <button type="button" class="btn-add-purchase" data-action="add-purchase"
+              data-card-id="${esc(card.id)}">
+        <span aria-hidden="true">＋</span> Add Purchase Price
+      </button>`;
+  }
+
+  const move = purchaseMove(card, entry);
+  const detail = move
+    ? `<span class="purchase-move ${move.up ? "is-up" : "is-down"}">${esc(purchaseMoveText(move))}</span>`
+    : `<span class="purchase-move is-flat">no comparable price</span>`;
+
+  return `
+    <button type="button" class="card-purchase ${move ? (move.up ? "is-up" : "is-down") : ""}"
+            data-action="add-purchase" data-card-id="${esc(card.id)}"
+            title="Edit what you paid">
+      <span class="purchase-label">Paid</span>
+      <span class="purchase-paid">${esc(money(paid, "usd"))}</span>
+      ${detail}
+    </button>`;
+}
+
+/**
  * What you paid, and how that compares with the card's price today.
  *
  * Compared against the card's best current price rather than the price of the
@@ -2483,21 +2583,22 @@ function acquiredSummary(card, entry) {
   }
 
   const parts = [];
-  if (typeof paid === "number") parts.push(`Paid <strong>${esc(money(paid))}</strong>`);
+  if (typeof paid === "number") parts.push(`Paid <strong>${esc(money(paid, "usd"))}</strong>`);
   if (when) parts.push(`${parts.length ? "on" : "Bought"} <strong>${esc(shortDate(when))}</strong>`);
 
   let change = "";
-  const market = bestPrice(card);
-  if (typeof paid === "number" && market > 0) {
-    const delta = market - paid;
-    const pct = paid > 0 ? (delta / paid) * 100 : 0;
-    const up = delta >= 0;
-    const sign = delta > 0 ? "+" : delta < 0 ? "−" : "";
-    const pctText = paid > 0 ? ` (${sign}${Math.abs(pct).toFixed(1)}%)` : "";
+  const move = purchaseMove(card, entry);
+  if (move) {
     change =
-      `<span class="acquired-delta ${up ? "is-up" : "is-down"}">` +
-      `${up ? "▲" : "▼"} ${sign}${esc(money(Math.abs(delta)))}${pctText}` +
-      `</span> <span class="acquired-market">vs ${esc(money(market))} today</span>`;
+      `<span class="acquired-delta ${move.up ? "is-up" : "is-down"}">${esc(purchaseMoveText(move))}</span> ` +
+      `<span class="acquired-market">vs ${esc(money(move.market, "usd"))} today</span>`;
+  } else if (typeof paid === "number") {
+    const market = bestPrice(card);
+    if (market.value > 0) {
+      // A euro market price against a dollar purchase: shown side by side
+      // rather than subtracted, because the two are not the same unit.
+      change = `<span class="acquired-market">market ${esc(money(market.value, market.currency))} today</span>`;
+    }
   }
 
   return `<div id="modalAcquiredSummary" class="acquired-summary">${parts.join(" ")} ${change}</div>`;
@@ -2556,6 +2657,17 @@ function renderPriceHistoryInto(card) {
     return;
   }
   loadPriceHistory().then(paint);
+}
+
+/** Put the cursor in the price box and scroll it into view. */
+function focusPurchasePrice() {
+  const field = document.getElementById("modalAcquiredPrice");
+  if (!field) return;
+  field.focus();
+  field.select();
+  if (typeof field.scrollIntoView === "function") {
+    field.scrollIntoView({ block: "center" });
+  }
 }
 
 function openCardModal(cardId) {
