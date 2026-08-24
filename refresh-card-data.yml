@@ -1,0 +1,81 @@
+name: Refresh card data
+
+# Pulls fresh card data and prices from Scryfall once a WEEK and commits
+# cards_data.js and price_history.js.
+#
+# Weekly, not monthly: price_history.js records one reading per run, and the
+# card window only shows a trend once a card has three of them. Monthly would
+# mean waiting a quarter to see a single line. Weekly gives a usable trend in
+# three weeks and a year of history in 52 readings.
+#
+# price_history.js is append-only and CANNOT be rebuilt - Scryfall serves
+# today's price and nothing else - so unlike every other generated file here,
+# a lost history is lost for good. It is committed even when nothing else
+# changed, so a flat week still records its reading.
+#
+# You can also run it on demand: Actions tab -> "Refresh card data" -> "Run workflow".
+# Running twice in one day overwrites that day rather than adding a second
+# reading, so a manual run is safe.
+
+on:
+  schedule:
+    # 07:00 UTC every Monday.
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-card-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Regenerate cards_data.js from Scryfall
+        run: python generate_ff_tracker.py --only-js
+
+      - name: Commit and push
+        run: |
+          # price_history.js gains a reading on every run, so there is normally
+          # something to commit even when no card or price changed. Checking it
+          # too means a quiet week still gets recorded.
+          if git diff --quiet -- cards_data.js price_history.js; then
+            echo "Nothing changed. Nothing to commit."
+            exit 0
+          fi
+
+          # Bump the service worker cache version so returning visitors are not
+          # served last week's prices out of their offline cache.
+          STAMP="v$(date -u +%Y%m%d)"
+          sed -i "s/^const CACHE_VERSION = .*/const CACHE_VERSION = \"${STAMP}\";/" sw.js
+
+          CHANGED=$(git diff --numstat -- cards_data.js | awk '{print $1" added, "$2" removed"}')
+          READINGS=$(grep -o '"dates":\[[^]]*\]' price_history.js | grep -o '"20[0-9-]*"' | wc -l)
+          echo "cards_data.js changed: ${CHANGED:-no change}"
+          echo "price history now holds ${READINGS} readings"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cards_data.js price_history.js sw.js
+          git commit -m "chore: weekly Scryfall card data and price refresh
+
+          ${CHANGED:-cards_data.js unchanged}
+          price history: ${READINGS} readings"
+          git push
