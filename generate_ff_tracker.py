@@ -15,6 +15,7 @@ Usage:
 import argparse
 import json
 import os
+from urllib.parse import quote
 import sys
 import time
 import re
@@ -32,10 +33,22 @@ from openpyxl.formatting.rule import FormulaRule
 # Configuration & Constants
 # ---------------------------------------------------------------------------
 
+# The nine sets that are wholly Final Fantasy.
+FF_SET_CODES = ["fin", "fic", "fca", "afic", "afin", "rfin", "pfin", "tfin", "tfic"]
+
+# Asking only for those nine sets misses Final Fantasy cards printed elsewhere:
+# Pro Tour promos (PPRO), media inserts (PMEI), Spotlight Series (PSPL), Secret
+# Lair (SLD) and several store/event promos all contain FF cards under their own
+# set codes. Eighteen printings were missing because of this.
+#
+# "in:fin" means "every printing of any card that appears in FIN", so this finds
+# those strays wherever they live. It also drags in ordinary Magic printings of
+# the cards FCA reprints under Final Fantasy names, which is what
+# is_final_fantasy_printing() below filters back out.
 SCRYFALL_API_URL = (
     "https://api.scryfall.com/cards/search?"
-    "q=(game:paper)+(set:fin+OR+set:fic+OR+set:fca+OR+set:afic+OR+set:afin+OR+set:rfin+OR+set:pfin+OR+set:tfin+OR+set:tfic)"
-    "+include:extras+unique:prints&prefer=best"
+    "q=" + quote("game:paper (" + " or ".join("in:" + code for code in FF_SET_CODES) + ")") +
+    "&unique=prints&include_extras=true"
 )
 
 USER_AGENT = "MTG-Final-Fantasy-Collection-Tracker/1.0 (Contact: collector@example.com)"
@@ -43,6 +56,12 @@ OUTPUT_XLSX = "MTG_Final_Fantasy_Collection_Tracker.xlsx"
 OUTPUT_CSV = "MTG_Final_Fantasy_Collection.csv"
 OUTPUT_TSV = "MTG_Final_Fantasy_Collection.tsv"
 OUTPUT_CARDS_JS = "cards_data.js"
+OUTPUT_PRICE_HISTORY = "price_history.js"
+
+# How many readings to keep per card. The refresh runs weekly, so this is a
+# rolling year. Older readings fall off the front rather than growing the file
+# without limit - at roughly 13 KB per reading, a year is about 700 KB.
+HISTORY_LIMIT = 52
 
 MAIN_SHEET_COLUMNS = [
     "Final Fantasy Card Name",
@@ -79,13 +98,15 @@ VALIDATION_OPTIONS = {
         "Promo",
         "Serialized",
     ],
+    # Wizards' own treatment names, taken from the Card Image Gallery's CMS.
+    # See determine_treatment() for where the list comes from.
     "Treatment / Frame": [
-        "Standard",
+        "Showcase",
         "Borderless",
         "Extended Art",
-        "Showcase",
+        "Full Art",
+        "Default",
         "Art Card",
-        "Retro Frame",
     ],
     "Game Number": [
         "FF1",
@@ -164,14 +185,24 @@ def fetch_scryfall_cards(query_url: str = SCRYFALL_API_URL) -> List[Dict[str, An
     
     while current_url:
         print(f"Fetching page {page_num}...")
-        try:
-            response = requests.get(current_url, headers=headers, timeout=30)
-            response.raise_for_status()
-            data = response.json()
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching page {page_num} from Scryfall: {e}")
-            raise
-        
+        # The full query runs to about sixty pages, and Scryfall starts
+        # answering 429 partway through even at its documented pacing. Back off
+        # and retry rather than losing the whole run.
+        data = None
+        for attempt in range(6):
+            try:
+                response = requests.get(current_url, headers=headers, timeout=30)
+                response.raise_for_status()
+                data = response.json()
+                break
+            except requests.exceptions.RequestException as e:
+                wait = 2 ** attempt
+                print(f"  ! page {page_num} failed ({e}); retrying in {wait}s")
+                time.sleep(wait)
+        if data is None:
+            print(f"Error fetching page {page_num} from Scryfall: gave up after 6 attempts")
+            raise SystemExit(1)
+
         page_cards = data.get("data", [])
         cards.extend(page_cards)
         print(f"  -> Page {page_num} parsed: {len(page_cards)} cards (Running Total: {len(cards)})")
@@ -181,10 +212,32 @@ def fetch_scryfall_cards(query_url: str = SCRYFALL_API_URL) -> List[Dict[str, An
         page_num += 1
         
         if current_url:
-            time.sleep(0.1)
+            time.sleep(0.25)
             
-    print(f"\nAll pages fetched successfully. Total cards retrieved: {len(cards)}")
-    return cards
+    print(f"\nAll pages fetched successfully. Total printings retrieved: {len(cards)}")
+
+    ff_cards = [card for card in cards if is_final_fantasy_printing(card)]
+    dropped = len(cards) - len(ff_cards)
+    print(f"Kept {len(ff_cards)} Final Fantasy printings ({dropped} unrelated printings filtered out).")
+    return ff_cards
+
+
+def is_final_fantasy_printing(card: Dict[str, Any]) -> bool:
+    """Keep a printing only if it is genuinely a Final Fantasy card.
+
+    Two ways to qualify:
+      1. it lives in one of the nine Final Fantasy sets, or
+      2. it carries a Final Fantasy game tag (ffvii and friends), which is how
+         the strays in PPRO / PMEI / PSPL / SLD identify themselves.
+
+    This is what removes the ordinary Magic printings that "in:fca" drags in.
+    FCA reprints existing cards under Final Fantasy names, so asking for every
+    printing of them also returns the originals from their real sets.
+    """
+    if (card.get("set") or "").lower() in FF_SET_CODES:
+        return True
+    tags = {str(tag).lower() for tag in (card.get("promo_types") or [])}
+    return bool(tags & set(ROMAN_TO_GAME.keys()))
 
 
 def determine_ff_game(card: Dict[str, Any], name_lookup: Dict[str, str]) -> str:
@@ -238,7 +291,10 @@ def determine_print_variant(card: Dict[str, Any]) -> str:
         return "Wave Foil"
     if "etched" in finishes or "foiletched" in promo_types:
         return "Foil Etched"
-    if set_code in ["pfin", "rfin"] or any(
+    # card["promo"] catches the ones printed outside the Final Fantasy sets -
+    # Pro Tour, media inserts, Spotlight Series - which carry none of the tags
+    # listed below.
+    if card.get("promo") or set_code in ["pfin", "rfin"] or any(
         p in promo_types for p in ["prerelease", "buyabox", "bundle", "datestamped", "starterdeck"]
     ):
         return "Promo"
@@ -247,25 +303,107 @@ def determine_print_variant(card: Dict[str, Any]) -> str:
     return "Basic/Non-foil"
 
 
+# Wizards' official treatment vocabulary, read from the Card Image Gallery's
+# CMS (Contentful space s5n2t79q9icq, content type "magicCard", field
+# "treatments" -> tag entries titled "Magic Card Treatment | ...").
+#
+# The gallery at
+#   https://magic.wizards.com/en/products/final-fantasy/card-image-gallery
+# renders client-side, so the names are not in the served HTML; they come from
+# that API. Twelve exist for Final Fantasy, and they split into two independent
+# axes:
+#
+#   frame   Art Card, Showcase, Borderless, Extended Art, Full Art, Default
+#   finish  Traditional Foil, Surge Foil, Chocobo Track Foil, Neon Ink, Serialized
+#
+# plus "Scene Card", a category that rides along with Borderless.
+#
+# Scryfall does not carry these names - `is:showcase` returns nothing for every
+# Final Fantasy set - so the frame is derived below. The derivation was checked
+# against all 1,258 cards that join to Wizards' data by set and collector
+# number and reproduces their label for every one of them. Order matters:
+# Borderless outranks Full Art (166 cards are both, and Wizards calls them
+# Borderless), and tokens are Full Art even though Scryfall leaves full_art
+# false on them.
+TREATMENT_FRAMES = ["Showcase", "Borderless", "Extended Art", "Full Art", "Default", "Art Card"]
+
+# The Scene Box holds 24 scenes, and each one exists twice: as a playable
+# borderless card in the Commander set (a contiguous block, FIC 442-465) and as
+# an art card in its own set, AFIC ("Final Fantasy Scene Box"). The two line up
+# one for one by name.
+#
+# Wizards tags only the playable half "Scene Card" and calls the art half plain
+# "Art Card" - but their own names for those read "<card> Scene Art Card N/24",
+# so both halves are tagged here. That keeps the Scene Box findable as one thing
+# while leaving the Art Card count alone.
+SCENE_CARD_SET = "fic"
+SCENE_CARD_RANGE = (442, 465)
+SCENE_ART_SET = "afic"
+
+# The Art Series proper. Kept separate from the Scene Box art cards: they come
+# out of different products and sort as different things.
+ART_SERIES_SET = "afin"
+
+
 def determine_treatment(card: Dict[str, Any]) -> str:
+    """The card's official Wizards frame treatment."""
     set_code = (card.get("set") or "").lower()
     layout = card.get("layout") or ""
     border = card.get("border_color") or ""
-    frame = card.get("frame") or ""
     frame_effects = card.get("frame_effects") or []
-    promo_types = card.get("promo_types") or []
-    
+    type_line = card.get("type_line") or ""
+
     if layout == "art_series" or set_code in ["afin", "afic"]:
         return "Art Card"
-    if "retro" in frame_effects or frame in ["1993", "1997"]:
-        return "Retro Frame"
-    if border == "borderless" or "borderless" in promo_types:
+    # The Through the Ages bonus sheet is Showcase in its entirety, and is the
+    # only place in Final Fantasy the label is used outside a few promos.
+    if set_code == "fca":
+        return "Showcase"
+    if border == "borderless":
         return "Borderless"
     if "extendedart" in frame_effects:
         return "Extended Art"
-    if "showcase" in promo_types or "showcase" in frame_effects or "boosterfun" in promo_types:
-        return "Showcase"
-    return "Standard"
+    if (card.get("full_art")
+            or layout in ("token", "double_faced_token", "emblem")
+            or set_code in ("tfin", "tfic")
+            or "Token" in type_line):
+        return "Full Art"
+    return "Default"
+
+
+def determine_treatments(card: Dict[str, Any]) -> List[str]:
+    """Every official treatment that applies to this printing.
+
+    Frame plus Scene Card plus the finishes. The finishes come from Scryfall
+    rather than from Wizards: Wizards' own records omit them for the whole
+    Commander set and for every art card, whereas Scryfall's promo_types and
+    finishes are complete.
+    """
+    out = [determine_treatment(card)]
+
+    set_code = (card.get("set") or "").lower()
+    digits = re.sub(r"\D", "", str(card.get("collector_number") or ""))
+    if set_code == SCENE_ART_SET:
+        out.append("Scene Card")
+    elif set_code == SCENE_CARD_SET and digits:
+        if SCENE_CARD_RANGE[0] <= int(digits) <= SCENE_CARD_RANGE[1]:
+            out.append("Scene Card")
+
+    promo_types = set(card.get("promo_types") or [])
+    finishes = set(card.get("finishes") or [])
+    special = False
+    if "surgefoil" in promo_types:
+        out.append("Surge Foil"); special = True
+    if "chocobotrackfoil" in promo_types:
+        out.append("Chocobo Track Foil"); special = True
+    if "neonink" in promo_types:
+        out.append("Neon Ink"); special = True
+    if "serialized" in promo_types or "serialized" in finishes:
+        out.append("Serialized"); special = True
+    if "foil" in finishes and not special:
+        out.append("Traditional Foil")
+
+    return out
 
 
 def build_name_to_game(raw_cards: List[Dict[str, Any]]) -> Dict[str, str]:
@@ -453,6 +591,21 @@ def _available_variants(card: Dict[str, Any]) -> List[str]:
     finishes = card.get("finishes") or []
     set_lower = (card.get("set") or "").lower()
 
+    # Art cards are never printed in foil - Wizards gives them a gloss varnish
+    # instead. The second version is the artist's gold-stamped signature, which
+    # Scryfall records as the "foil" finish for want of anywhere better. So the
+    # two versions are Basic and Signed, not Non-Foil and Traditional Foil.
+    #
+    # Both names map back to the nonfoil/foil storage keys in app.js, so a
+    # collection recorded before this change keeps its counts.
+    if (card.get("layout") or "") == "art_series" or set_lower in (ART_SERIES_SET, SCENE_ART_SET):
+        variants = []
+        if "nonfoil" in finishes:
+            variants.append("Basic")
+        if "foil" in finishes:
+            variants.append("Signed")
+        return variants or ["Basic"]
+
     if "serialized" in promo_types:
         return ["Serialized"]
     if "surgefoil" in promo_types:
@@ -468,7 +621,7 @@ def _available_variants(card: Dict[str, Any]) -> List[str]:
     if "foil" in finishes:
         variants.append("Traditional Foil")
 
-    is_promo = set_lower in ["pfin", "rfin"] or any(
+    is_promo = card.get("promo") or set_lower in ["pfin", "rfin"] or any(
         p in promo_types for p in ["prerelease", "buyabox", "bundle", "datestamped"]
     )
     if is_promo:
@@ -529,6 +682,7 @@ def build_card_records(raw_cards: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "variant": determine_print_variant(card),
             "avail_variants": _available_variants(card),
             "treatment": determine_treatment(card),
+            "treatments": determine_treatments(card),
             "game": determine_ff_game(card, name_to_game),
             "rarity": (card.get("rarity") or "Unknown").capitalize(),
             "type_line": type_line,
@@ -546,6 +700,12 @@ def build_card_records(raw_cards: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "price_usd": _price(prices, "usd"),
             "price_foil": _price(prices, "usd_foil"),
             "price_etched": _price(prices, "usd_etched"),
+            # Scryfall has NO dollar price for the Art Series, the Scene Box or a
+            # handful of promos - only euros. One of those is a Cloud promo worth
+            # several hundred. Carrying the euro price means the site can show a
+            # real number for them instead of "--".
+            "price_eur": _price(prices, "eur"),
+            "price_eur_foil": _price(prices, "eur_foil"),
             "scryfall_uri": card.get("scryfall_uri", ""),
         })
 
@@ -582,6 +742,157 @@ def export_cards_js(records: List[Dict[str, Any]], output_path: str = OUTPUT_CAR
 
     size_mb = os.path.getsize(output_path) / (1024 * 1024)
     print(f"Card database written: {len(records)} cards, {size_mb:.2f} MB.")
+
+
+def _read_price_history(path: str) -> Dict[str, Any]:
+    """Load price_history.js, or start a fresh one.
+
+    The file is a plain `const PRICE_HISTORY = {...};` script so it can be
+    loaded straight from the page - and from a file:// copy - with no fetch and
+    no server, exactly like cards_data.js.
+    """
+    if not os.path.exists(path):
+        return {"dates": [], "cards": {}}
+    with open(path, encoding="utf-8") as handle:
+        text = handle.read()
+    start = text.find("{", text.find("PRICE_HISTORY"))
+    if start == -1:
+        print("  ! price history file is unreadable; starting a new one")
+        return {"dates": [], "cards": {}}
+    try:
+        data = json.loads(text[start:].rstrip().rstrip(";"))
+    except ValueError as exc:
+        print(f"  ! price history file is unreadable ({exc}); starting a new one")
+        return {"dates": [], "cards": {}}
+    data.setdefault("dates", [])
+    data.setdefault("cards", {})
+    return data
+
+
+def update_price_history(records: List[Dict[str, Any]],
+                         path: str = OUTPUT_PRICE_HISTORY,
+                         today: str = None) -> Dict[str, Any]:
+    """Record today's prices and rewrite price_history.js.
+
+    Shape:
+
+        { "dates": ["2026-08-24", ...],
+          "cards": { "<scryfall id>": { "usd": [...], "foil": [...] } } }
+
+    One shared date list, and one reading per date per card, so a card id is
+    stored once rather than once per snapshot. A reading with no price is null.
+
+    Re-running on a day already recorded OVERWRITES that day rather than adding
+    a second column, so a manual run cannot double up a date.
+
+    Only the last HISTORY_LIMIT dates are kept. Weekly, that is a rolling year.
+    """
+    if today is None:
+        today = time.strftime("%Y-%m-%d", time.gmtime())
+
+    history = _read_price_history(path)
+    dates: List[str] = history["dates"]
+    cards: Dict[str, Any] = history["cards"]
+
+    if today in dates:
+        index = dates.index(today)
+        rewriting = True
+    else:
+        dates.append(today)
+        index = len(dates) - 1
+        rewriting = False
+
+    width = len(dates)
+
+    def price_of(record, key):
+        value = record.get(key)
+        return round(float(value), 2) if isinstance(value, (int, float)) else None
+
+    seen = set()
+    for record in records:
+        usd = price_of(record, "price_usd")
+        foil = price_of(record, "price_foil")
+        etched = price_of(record, "price_etched")
+        # The euro price is only recorded where there is no dollar one for the
+        # same finish. Keeping both everywhere would double the file to say the
+        # same thing twice - and the site shows the euro line only when the
+        # dollar line is missing, so this is exactly what gets displayed.
+        eur = price_of(record, "price_eur") if usd is None else None
+        eur_foil = price_of(record, "price_eur_foil") if foil is None else None
+
+        readings = (("usd", usd), ("foil", foil), ("etched", etched),
+                    ("eur", eur), ("eurFoil", eur_foil))
+
+        if all(value is None for _, value in readings) and record["id"] not in cards:
+            # No price in any currency, and never has had one. Tokens are the
+            # bulk of these. A row would be a column of nulls; if a price ever
+            # appears, the row is created then.
+            continue
+
+        seen.add(record["id"])
+        series = cards.setdefault(record["id"], {})
+        for name, value in readings:
+            # Only carry a column once it has something in it, so a card priced
+            # in euros does not also store three empty dollar columns.
+            if name not in series and value is None:
+                continue
+            column = series.setdefault(name, [])
+            while len(column) < width:
+                column.append(None)
+            column[index] = value
+
+    # A card that has dropped out of the data keeps its past readings, but gets
+    # a null for today rather than a stale repeat of last week's price.
+    for card_id, series in cards.items():
+        if card_id in seen:
+            continue
+        for name in list(series.keys()):
+            column = series[name]
+            while len(column) < width:
+                column.append(None)
+
+    # Trim to the rolling window.
+    if width > HISTORY_LIMIT:
+        cut = width - HISTORY_LIMIT
+        history["dates"] = dates[cut:]
+        for series in cards.values():
+            for name in list(series.keys()):
+                series[name] = series[name][cut:]
+
+    # Drop cards whose whole remaining window is empty.
+    # Drop empty columns first, then any card left with nothing at all.
+    for series in cards.values():
+        for name in list(series.keys()):
+            if all(v is None for v in series[name]):
+                del series[name]
+    history["cards"] = {
+        card_id: series for card_id, series in cards.items() if series
+    }
+
+    banner = (
+        "/**\n"
+        " * Price history for the Final Fantasy MTG Collection Tracker.\n"
+        " *\n"
+        " * GENERATED FILE - do not edit by hand. Appended to on every refresh;\n"
+        " * past readings are never rewritten, so this is the one generated file\n"
+        " * whose history would be lost if it were deleted.\n"
+        " *\n"
+        " * dates: the day of each reading, oldest first.\n"
+        " * cards: scryfall id -> { usd: [...], foil: [...] }, one entry per date,\n"
+        f" *        null where there was no price. Keeps the last {HISTORY_LIMIT} readings.\n"
+        " */\n"
+    )
+    with open(path, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(banner)
+        handle.write("const PRICE_HISTORY = ")
+        handle.write(json.dumps(history, separators=(",", ":"), ensure_ascii=False))
+        handle.write(";\n")
+
+    size_kb = os.path.getsize(path) / 1024
+    verb = "rewrote" if rewriting else "added"
+    print(f"Price history: {verb} {today}; "
+          f"{len(history['dates'])} readings, {len(history['cards'])} cards, {size_kb:.0f} KB.")
+    return history
 
 
 # ---------------------------------------------------------------------------
@@ -963,6 +1274,18 @@ def main():
             js_path = OUTPUT_CARDS_JS + suffix
             export_cards_js(records, js_path)
             written.append(("Web card database", js_path))
+
+            # Append today's prices. On a dry run this writes alongside rather
+            # than into the real history, which must never be clobbered: unlike
+            # every other output it cannot be rebuilt from Scryfall, because
+            # Scryfall only serves today's price.
+            history_path = OUTPUT_PRICE_HISTORY + suffix
+            if args.dry_run and not os.path.exists(history_path):
+                import shutil
+                if os.path.exists(OUTPUT_PRICE_HISTORY):
+                    shutil.copyfile(OUTPUT_PRICE_HISTORY, history_path)
+            update_price_history(records, history_path)
+            written.append(("Price history", history_path))
 
         if not args.only_js:
             df_cards = parse_card_data(raw_cards)

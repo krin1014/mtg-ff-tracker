@@ -228,8 +228,40 @@ function displayName(name) {
   return raw;
 }
 
-function money(value) {
-  return typeof value === "number" && isFinite(value) ? `$${value.toFixed(2)}` : "--";
+const CURRENCY_SYMBOL = { usd: "$", eur: "€" };
+
+/**
+ * Format a price. Defaults to dollars, but Scryfall has no USD price at all for
+ * the art cards and a couple of promos - only euros - so the symbol has to
+ * follow the number rather than being assumed.
+ */
+function money(value, currency) {
+  if (typeof value !== "number" || !isFinite(value)) return "--";
+  return `${CURRENCY_SYMBOL[currency] || "$"}${value.toFixed(2)}`;
+}
+
+/**
+ * A price and the currency it is quoted in.
+ *
+ * Scryfall prices most cards in both USD and EUR, but the Art Series, the Scene
+ * Box and a couple of promos are EUR-only - including a Cloud promo worth some
+ * six hundred euros. Showing "--" for those was hiding real money, so the euro
+ * price is used when there is no dollar one. The two are never mixed in a
+ * calculation, and the symbol always says which is which.
+ */
+const PRICE_FALLBACK = {
+  price_usd: "price_eur",
+  price_foil: "price_eur_foil",
+  price_etched: "price_eur_foil"
+};
+
+function cardPrice(card, field) {
+  const direct = card[field];
+  if (typeof direct === "number") return { value: direct, currency: "usd" };
+  const alt = PRICE_FALLBACK[field];
+  const euro = alt ? card[alt] : null;
+  if (typeof euro === "number") return { value: euro, currency: "eur" };
+  return { value: null, currency: "usd" };
 }
 
 function nowMs() {
@@ -258,8 +290,40 @@ function createCardEntry() {
     serialNumbers: {},
     condition: DEFAULT_CONDITION,
     location: "",
+    // What YOU paid and when. Typed in by hand, and yours alone - unlike the
+    // Scryfall prices, which are the same for everybody and live in the repo.
+    acquiredDate: "",
+    acquiredPrice: null,
     updatedAt: nowMs()
   };
+}
+
+/**
+ * Purchase date, as YYYY-MM-DD or "".
+ *
+ * Anything else is discarded rather than stored: this round-trips through a
+ * Google Sheet cell, where a hand edit can leave a real Date, a serial number,
+ * or free text, and the date input would silently reject a bad value anyway.
+ */
+function normaliseAcquiredDate(value) {
+  if (value instanceof Date && !isNaN(value.getTime())) {
+    return value.toISOString().slice(0, 10);
+  }
+  const text = String(value == null ? "" : value).trim();
+  if (!text) return "";
+  const match = text.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!match) return "";
+  const probe = new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00Z`);
+  return isNaN(probe.getTime()) ? "" : `${match[1]}-${match[2]}-${match[3]}`;
+}
+
+/** Purchase price as a number, or null. Currency symbols and commas are fine. */
+function normaliseAcquiredPrice(value) {
+  if (typeof value === "number") return isFinite(value) && value >= 0 ? value : null;
+  const text = String(value == null ? "" : value).replace(/[^0-9.\-]/g, "").trim();
+  if (!text) return null;
+  const num = parseFloat(text);
+  return isFinite(num) && num >= 0 ? Math.round(num * 100) / 100 : null;
 }
 
 /**
@@ -272,6 +336,8 @@ const EMPTY_CARD_ENTRY = Object.freeze({
   serialNumbers: Object.freeze({}),
   condition: DEFAULT_CONDITION,
   location: "",
+  acquiredDate: "",
+  acquiredPrice: null,
   updatedAt: 0
 });
 
@@ -396,6 +462,8 @@ function normaliseEntry(raw) {
   base.serialNumbers = raw.serialNumbers && typeof raw.serialNumbers === "object" ? Object.assign({}, raw.serialNumbers) : {};
   base.condition = typeof raw.condition === "string" && raw.condition ? raw.condition : DEFAULT_CONDITION;
   base.location = typeof raw.location === "string" ? raw.location : "";
+  base.acquiredDate = normaliseAcquiredDate(raw.acquiredDate);
+  base.acquiredPrice = normaliseAcquiredPrice(raw.acquiredPrice);
   base.updatedAt = Number(raw.updatedAt) || nowMs();
   return base;
 }
@@ -528,12 +596,12 @@ function getCardVariantDefs(card) {
 }
 
 function variantPrice(card, def) {
-  const direct = card[def.priceKey];
-  if (typeof direct === "number") return direct;
-  if (def.key === "nonfoil") return typeof card.price_usd === "number" ? card.price_usd : null;
-  if (typeof card.price_foil === "number") return card.price_foil;
-  if (typeof card.price_usd === "number") return card.price_usd;
-  return null;
+  const direct = cardPrice(card, def.priceKey);
+  if (direct.value !== null) return direct;
+  if (def.key === "nonfoil") return cardPrice(card, "price_usd");
+  const foil = cardPrice(card, "price_foil");
+  if (foil.value !== null) return foil;
+  return cardPrice(card, "price_usd");
 }
 
 /**
@@ -1390,6 +1458,12 @@ function handleDelegatedChange(event) {
     case "serial":
       setCardSerial(cardId, target.value);
       break;
+    case "acquired-date":
+      setCardAcquiredDate(cardId, target.value);
+      break;
+    case "acquired-price":
+      setCardAcquiredPrice(cardId, target.value);
+      break;
     default:
       break;
   }
@@ -1532,9 +1606,9 @@ function sortFilteredCards(sortBy) {
       case "mtg_name_asc":
         return (a.mtg_name || "").localeCompare(b.mtg_name || "");
       case "price_desc":
-        return bestPrice(b) - bestPrice(a);
+        return bestPriceValue(b) - bestPriceValue(a);
       case "price_asc":
-        return bestPrice(a) - bestPrice(b);
+        return bestPriceValue(a) - bestPriceValue(b);
       case "rarity_desc":
         return ((RARITY_ORDER[b.rarity] || 0) - (RARITY_ORDER[a.rarity] || 0)) || compareByPrintStyle(a, b);
       case "owned_desc":
@@ -1552,10 +1626,24 @@ function sortFilteredCards(sortBy) {
   });
 }
 
+/**
+ * Just the number, for sorting.
+ *
+ * Sorting by price across two currencies is approximate - a euro is not a
+ * dollar - but the alternative is dropping every euro-only card to the bottom
+ * as if it were worthless, and one of them is a six-hundred-euro Cloud.
+ */
+function bestPriceValue(card) {
+  return bestPrice(card).value;
+}
+
+/** The card's headline price, with its currency. Zero when it has none. */
 function bestPrice(card) {
-  if (typeof card.price_usd === "number") return card.price_usd;
-  if (typeof card.price_foil === "number") return card.price_foil;
-  return 0;
+  const usd = cardPrice(card, "price_usd");
+  if (usd.value !== null) return usd;
+  const foil = cardPrice(card, "price_foil");
+  if (foil.value !== null) return foil;
+  return { value: 0, currency: "usd" };
 }
 
 function treatmentRank(card) {
@@ -1662,10 +1750,15 @@ function locationFilterLabel() {
  * way back - you have to remember where the control was. These chips sit above
  * the cards and are always on screen.
  */
-function renderActiveFilters() {
-  const container = document.getElementById("activeFilters");
-  if (!container) return;
-
+/**
+ * Everything currently narrowing the view, as { key, label } pairs.
+ *
+ * Shared by the chip row and the empty state. Filters persist between visits,
+ * and they combine: a Set or Game left over from a previous session ANDs with
+ * whatever you pick next, so a perfectly good choice can come back empty. The
+ * empty state names them for that reason.
+ */
+function activeFilterChips() {
   const chips = [];
 
   const query = valueOf("searchInput").trim();
@@ -1681,6 +1774,15 @@ function renderActiveFilters() {
   if (activeLocationFilter !== "all") {
     chips.push({ key: "location", label: `\u{1F4D2} ${locationFilterLabel()}` });
   }
+
+  return chips;
+}
+
+function renderActiveFilters() {
+  const container = document.getElementById("activeFilters");
+  if (!container) return;
+
+  const chips = activeFilterChips();
 
   if (!chips.length) {
     container.style.display = "none";
@@ -1757,6 +1859,17 @@ function renderCards() {
   const tableBody = document.getElementById("trackerTableBody");
 
   if (total === 0) {
+    // Say WHICH filters are responsible. They persist between visits and they
+    // combine, so the usual reason nothing comes back is a filter left on from
+    // a previous session rather than the one just chosen.
+    const reasonEl = document.getElementById("emptyReason");
+    if (reasonEl) {
+      const chips = activeFilterChips();
+      reasonEl.innerHTML = chips.length
+        ? `Active right now: ${chips.map(c => `<strong>${esc(c.label)}</strong>`).join(" + ")}`
+        : "";
+      reasonEl.style.display = chips.length ? "block" : "none";
+    }
     emptyEl.style.display = "block";
     gridEl.style.display = "none";
     tableEl.style.display = "none";
@@ -1846,11 +1959,11 @@ function renderGridView(cards) {
           <div class="card-price-row">
             <div class="price-item">
               <span class="price-label">Normal USD</span>
-              <span class="price-val">${money(card.price_usd)}</span>
+              <span class="price-val">${money(cardPrice(card, "price_usd").value, cardPrice(card, "price_usd").currency)}</span>
             </div>
             <div class="price-item" style="text-align: right;">
               <span class="price-label">Foil USD</span>
-              <span class="price-val price-foil">${money(card.price_foil)}</span>
+              <span class="price-val price-foil">${money(cardPrice(card, "price_foil").value, cardPrice(card, "price_foil").currency)}</span>
             </div>
           </div>
 
@@ -1924,8 +2037,8 @@ function renderTableView(cards) {
             ${CONDITION_OPTIONS.map(opt => `<option value="${esc(opt)}" ${entry.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
           </select>
         </td>
-        <td class="col-price">${money(card.price_usd)}</td>
-        <td class="col-price-foil">${money(card.price_foil)}</td>
+        <td class="col-price">${money(cardPrice(card, "price_usd").value, cardPrice(card, "price_usd").currency)}</td>
+        <td class="col-price-foil">${money(cardPrice(card, "price_foil").value, cardPrice(card, "price_foil").currency)}</td>
         <td class="col-location">
           <input type="text" class="table-input" placeholder="Binder page, box..."
                  value="${esc(entry.location)}" aria-label="Storage location for ${esc(name)}"
@@ -2073,6 +2186,27 @@ function setCardSerial(cardId, value) {
   saveCollectionState("Serial number saved");
 }
 
+function setCardAcquiredDate(cardId, value) {
+  editCard(cardId).acquiredDate = normaliseAcquiredDate(value);
+  saveCollectionState("Purchase date saved");
+  refreshAcquiredSummary(cardId);
+}
+
+function setCardAcquiredPrice(cardId, value) {
+  editCard(cardId).acquiredPrice = normaliseAcquiredPrice(value);
+  saveCollectionState("Purchase price saved");
+  refreshAcquiredSummary(cardId);
+}
+
+/** Redraw the paid-vs-today line in place, without rebuilding the whole modal
+ *  (which would blur the field being typed into). */
+function refreshAcquiredSummary(cardId) {
+  const host = document.getElementById("modalAcquiredSummary");
+  const card = cardsById.get(cardId);
+  if (!host || !card || modalCardId !== cardId) return;
+  host.outerHTML = acquiredSummary(card, readCard(cardId));
+}
+
 // ---------------------------------------------------------------------------
 // Live Dashboard & Game Pills
 // ---------------------------------------------------------------------------
@@ -2195,6 +2329,235 @@ function syncGamePillActiveState() {
 let modalShowingBack = false;
 let modalCardId = null;
 
+// ---------------------------------------------------------------------------
+// Price history
+//
+// price_history.js is a separate file, loaded the first time a card is opened
+// rather than up front. It is not needed to browse or to record a collection,
+// and it grows by about 13 KB every week, so making the whole page wait for it
+// would be paying for it on every visit to use it on some.
+// ---------------------------------------------------------------------------
+
+/** Below this many readings there is no trend to look at, so nothing is shown. */
+const PRICE_HISTORY_MIN_POINTS = 3;
+
+let priceHistoryPromise = null;
+
+function priceHistoryLoaded() {
+  return typeof PRICE_HISTORY !== "undefined";
+}
+
+function loadPriceHistory() {
+  if (priceHistoryLoaded()) return Promise.resolve(true);
+  if (priceHistoryPromise) return priceHistoryPromise;
+
+  priceHistoryPromise = new Promise(resolve => {
+    const script = document.createElement("script");
+    script.src = "price_history.js";
+    script.onload = () => resolve(true);
+    // No history file yet, or offline before it was ever cached. The rest of
+    // the card details are unaffected, so fail quietly.
+    script.onerror = () => resolve(false);
+    document.head.appendChild(script);
+  });
+  return priceHistoryPromise;
+}
+
+/** What this card calls the finish behind a price column. */
+function priceSeriesLabel(card, variantKey) {
+  const defs = getCardVariantDefs(card);
+  for (let i = 0; i < defs.length; i++) {
+    if (defs[i].key === variantKey) return defs[i].label;
+  }
+  return variantKey === "foil" ? "Foil" : "Non-Foil";
+}
+
+/**
+ * Readings for one card, as a list of series with the gaps closed up.
+ *
+ * A null reading is a week the card had no price, not a price of zero, so it is
+ * dropped rather than plotted. Returns null when nothing has enough readings.
+ */
+function priceSeriesFor(card) {
+  if (!priceHistoryLoaded()) return null;
+  const all = PRICE_HISTORY && PRICE_HISTORY.cards;
+  const entry = all && all[card.id];
+  if (!entry) return null;
+
+  const dates = (PRICE_HISTORY && PRICE_HISTORY.dates) || [];
+  const series = [];
+
+  // Every column Scryfall gives, in the order they should be shown. The euro
+  // ones are the only prices the art cards and a few promos ever have.
+  const COLUMNS = [
+    { key: "usd", variant: "nonfoil", currency: "usd" },
+    { key: "foil", variant: "foil", currency: "usd" },
+    { key: "etched", variant: "etched", currency: "usd" },
+    { key: "eur", variant: "nonfoil", currency: "eur" },
+    { key: "eurFoil", variant: "foil", currency: "eur" }
+  ];
+
+  COLUMNS.forEach(column => {
+    const values = entry[column.key] || [];
+    const points = [];
+    for (let i = 0; i < dates.length; i++) {
+      if (typeof values[i] === "number") points.push({ date: dates[i], value: values[i] });
+    }
+    if (points.length < PRICE_HISTORY_MIN_POINTS) return;
+    // Do not show the euro line for a card that already has a dollar one for
+    // the same finish - it would be the same card twice.
+    const already = series.some(s => s.variant === column.variant && s.currency === "usd");
+    if (column.currency === "eur" && already) return;
+    series.push({
+      label: priceSeriesLabel(card, column.variant),
+      variant: column.variant,
+      currency: column.currency,
+      points: points
+    });
+  });
+
+  return series.length ? series : null;
+}
+
+/** "2026-08-24" -> "24 Aug 26". Kept short: it sits under a small chart. */
+function shortDate(iso) {
+  const parts = String(iso || "").split("-");
+  if (parts.length !== 3) return String(iso || "");
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const month = months[Number(parts[1]) - 1] || parts[1];
+  return `${Number(parts[2])} ${month} ${parts[0].slice(2)}`;
+}
+
+/** A line chart of one series, as inline SVG - no charting library, no CDN. */
+function sparkline(points, rising, currency) {
+  const W = 320;
+  const H = 74;
+  const PAD = 8;
+
+  let min = points[0].value;
+  let max = points[0].value;
+  for (let i = 1; i < points.length; i++) {
+    if (points[i].value < min) min = points[i].value;
+    if (points[i].value > max) max = points[i].value;
+  }
+  // A perfectly flat series would divide by zero; give it a band so the line
+  // sits in the middle instead of on an edge.
+  if (max === min) {
+    max = min + Math.max(0.01, Math.abs(min) * 0.1);
+    min = min - Math.max(0.01, Math.abs(min) * 0.1);
+  }
+
+  const x = i => PAD + (i * (W - 2 * PAD)) / (points.length - 1);
+  const y = v => H - PAD - ((v - min) * (H - 2 * PAD)) / (max - min);
+
+  let path = "";
+  for (let i = 0; i < points.length; i++) {
+    path += `${i ? "L" : "M"}${x(i).toFixed(1)},${y(points[i].value).toFixed(1)}`;
+  }
+  const last = points.length - 1;
+  const area = `${path}L${x(last).toFixed(1)},${(H - PAD).toFixed(1)}L${x(0).toFixed(1)},${(H - PAD).toFixed(1)}Z`;
+  const tone = rising ? "is-up" : "is-down";
+
+  return `
+    <svg class="price-chart ${tone}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"
+         role="img" aria-label="${points.length} readings, ${esc(money(min, currency))} to ${esc(money(max, currency))}">
+      <path class="price-chart-area" d="${area}"></path>
+      <path class="price-chart-line" d="${path}" vector-effect="non-scaling-stroke"></path>
+      <circle class="price-chart-dot" cx="${x(last).toFixed(1)}" cy="${y(points[last].value).toFixed(1)}" r="3"></circle>
+    </svg>`;
+}
+
+/**
+ * What you paid, and how that compares with the card's price today.
+ *
+ * Compared against the card's best current price rather than the price of the
+ * particular finish you own: a purchase is one line, not one per finish, and
+ * the finish a copy was bought in is not recorded.
+ */
+function acquiredSummary(card, entry) {
+  const paid = entry.acquiredPrice;
+  const when = entry.acquiredDate;
+  if (typeof paid !== "number" && !when) {
+    return `<div id="modalAcquiredSummary" class="acquired-summary is-empty"></div>`;
+  }
+
+  const parts = [];
+  if (typeof paid === "number") parts.push(`Paid <strong>${esc(money(paid))}</strong>`);
+  if (when) parts.push(`${parts.length ? "on" : "Bought"} <strong>${esc(shortDate(when))}</strong>`);
+
+  let change = "";
+  const market = bestPrice(card);
+  if (typeof paid === "number" && market > 0) {
+    const delta = market - paid;
+    const pct = paid > 0 ? (delta / paid) * 100 : 0;
+    const up = delta >= 0;
+    const sign = delta > 0 ? "+" : delta < 0 ? "−" : "";
+    const pctText = paid > 0 ? ` (${sign}${Math.abs(pct).toFixed(1)}%)` : "";
+    change =
+      `<span class="acquired-delta ${up ? "is-up" : "is-down"}">` +
+      `${up ? "▲" : "▼"} ${sign}${esc(money(Math.abs(delta)))}${pctText}` +
+      `</span> <span class="acquired-market">vs ${esc(money(market))} today</span>`;
+  }
+
+  return `<div id="modalAcquiredSummary" class="acquired-summary">${parts.join(" ")} ${change}</div>`;
+}
+
+function priceHistoryMarkup(series) {
+  const rows = series.map(s => {
+    const points = s.points;
+    const first = points[0].value;
+    const last = points[points.length - 1].value;
+    const delta = last - first;
+    const pct = first ? (delta / first) * 100 : 0;
+    const rising = delta >= 0;
+    const sign = delta > 0 ? "+" : delta < 0 ? "−" : "";
+    const arrow = delta > 0 ? "▲" : delta < 0 ? "▼" : "–";
+
+    return `
+      <div class="price-history-row">
+        <div class="price-history-row-head">
+          <span class="price-history-label">${esc(s.label)}</span>
+          <span class="price-history-now">${esc(money(last, s.currency))}</span>
+          <span class="price-history-delta ${rising ? "is-up" : "is-down"}">
+            ${arrow} ${sign}${esc(money(Math.abs(delta), s.currency))} (${sign}${Math.abs(pct).toFixed(1)}%)
+          </span>
+        </div>
+        ${sparkline(points, rising, s.currency)}
+        <div class="price-history-axis">
+          <span>${esc(shortDate(points[0].date))}</span>
+          <span>${points.length} readings</span>
+          <span>${esc(shortDate(points[points.length - 1].date))}</span>
+        </div>
+      </div>`;
+  }).join("");
+
+  return `<h4 class="price-history-title">Price history</h4>${rows}`;
+}
+
+/**
+ * Fill in the price history once the file is available.
+ *
+ * The modal is already on screen by then, so this checks the card has not
+ * changed underneath it - open a card, close it, open another, and the first
+ * load could otherwise write the wrong card's chart into the new modal.
+ */
+function renderPriceHistoryInto(card) {
+  const paint = () => {
+    if (modalCardId !== card.id) return;
+    const host = document.getElementById("modalPriceHistory");
+    if (!host) return;
+    const series = priceSeriesFor(card);
+    host.innerHTML = series ? priceHistoryMarkup(series) : "";
+  };
+
+  if (priceHistoryLoaded()) {
+    paint();
+    return;
+  }
+  loadPriceHistory().then(paint);
+}
+
 function openCardModal(cardId) {
   const card = cardsById.get(cardId);
   if (!card) return;
@@ -2216,7 +2579,7 @@ function openCardModal(cardId) {
     return `
       <tr>
         <td><strong>${def.icon} ${esc(def.label)}</strong></td>
-        <td class="variant-price">${money(price)}</td>
+        <td class="variant-price">${money(price.value, price.currency)}</td>
         <td>
           <div class="stepper-control">
             <button type="button" class="stepper-btn" data-action="modal-step" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}" data-step="-1" aria-label="Remove one ${esc(def.label)}">−</button>
@@ -2265,6 +2628,8 @@ function openCardModal(cardId) {
         </div>
       </div>
 
+      <div id="modalPriceHistory" class="price-history"></div>
+
       ${card.oracle_text ? `<div class="modal-oracle-box">${esc(card.oracle_text)}</div>` : ""}
       ${card.flavor_text ? `<div class="modal-flavor-box">${esc(card.flavor_text)}</div>` : ""}
 
@@ -2289,7 +2654,22 @@ function openCardModal(cardId) {
           <input id="modalLocationInput" type="text" class="table-input" placeholder="e.g. Binder 1, page 3"
                  value="${esc(entry.location)}" data-change="location" data-card-id="${esc(card.id)}">
         </div>
+        <div>
+          <label class="field-label" for="modalAcquiredDate">Date purchased</label>
+          <input id="modalAcquiredDate" type="date" class="table-input"
+                 value="${esc(entry.acquiredDate || "")}"
+                 data-change="acquired-date" data-card-id="${esc(card.id)}">
+        </div>
+        <div>
+          <label class="field-label" for="modalAcquiredPrice">Price paid</label>
+          <input id="modalAcquiredPrice" type="number" min="0" step="0.01" inputmode="decimal"
+                 class="table-input" placeholder="0.00"
+                 value="${typeof entry.acquiredPrice === "number" ? esc(entry.acquiredPrice.toFixed(2)) : ""}"
+                 data-change="acquired-price" data-card-id="${esc(card.id)}">
+        </div>
       </div>
+
+      ${acquiredSummary(card, entry)}
 
       <div class="modal-footer-actions">
         <a href="${esc(card.scryfall_uri)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View on Scryfall ↗</a>
@@ -2298,6 +2678,10 @@ function openCardModal(cardId) {
 
   modal.style.display = "flex";
   document.body.classList.add("modal-open");
+
+  // Fills itself in once price_history.js has loaded; stays empty if this card
+  // has fewer than PRICE_HISTORY_MIN_POINTS readings.
+  renderPriceHistoryInto(card);
 }
 
 function closeModal() {
@@ -2548,7 +2932,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 4;
+const REQUIRED_SCRIPT_VERSION = 5;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +
@@ -2647,6 +3031,8 @@ function cardsChangedSince(since) {
       serialNumbers: entry.serialNumbers,
       condition: entry.condition,
       location: entry.location,
+      acquiredDate: entry.acquiredDate || "",
+      acquiredPrice: typeof entry.acquiredPrice === "number" ? entry.acquiredPrice : null,
       updatedAt: entry.updatedAt,
       ff_name: card ? displayName(card.ff_name) : "",
       set: card ? card.set : "",
@@ -2704,6 +3090,17 @@ function mergeRemoteCards(remoteCards, syncStartedAt) {
 
     const local = collection.cards[id];
     if (!local || remote.updatedAt > local.updatedAt) {
+      // A sheet written by an older script has no purchase columns, so an
+      // incoming entry can be silent about them. Keep what this device already
+      // knows rather than blanking it; an explicit '' or null still clears.
+      if (local) {
+        if (!(raw && Object.prototype.hasOwnProperty.call(raw, "acquiredDate"))) {
+          remote.acquiredDate = local.acquiredDate || "";
+        }
+        if (!(raw && Object.prototype.hasOwnProperty.call(raw, "acquiredPrice"))) {
+          remote.acquiredPrice = typeof local.acquiredPrice === "number" ? local.acquiredPrice : null;
+        }
+      }
       collection.cards[id] = remote;
       changed++;
     }

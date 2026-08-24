@@ -53,7 +53,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.53,
+  "price_eur_foil": null
  },
  {
   "id": "f7e44a42-ac64-49e2-875c-355f932467e1",
@@ -95,7 +97,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "0aa1e74b-7fd7-4c48-a0a3-56eb1a6f877a",
@@ -137,7 +141,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.44,
+  "price_eur_foil": null
  },
  {
   "id": "bf18dca9-de07-47f5-be86-fbea8b527411",
@@ -179,7 +185,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": null
  },
  {
   "id": "40a495d6-cd48-45a5-9afd-d9ec3a21ec3a",
@@ -221,7 +229,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": null
  },
  {
   "id": "76ed17e5-4adb-4b75-99a4-62c1b107cfdd",
@@ -263,7 +273,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.5,
+  "price_eur_foil": null
  },
  {
   "id": "f8cbf62a-ab28-4c7b-84a5-ce1ee8bb3bf1",
@@ -305,7 +317,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.59,
+  "price_eur_foil": null
  },
  {
   "id": "1370d8b5-bd31-4943-885e-ae6211990561",
@@ -347,7 +361,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.52,
+  "price_eur_foil": null
  },
  {
   "id": "6d3909f0-1bd4-476c-af64-cf346eeaab0c",
@@ -389,7 +405,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.51,
+  "price_eur_foil": null
  },
  {
   "id": "837a0a26-e32f-42ff-889b-50f7064c4793",
@@ -431,7 +449,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.55,
+  "price_eur_foil": null
  },
  {
   "id": "822db9a8-4549-4892-ba3c-a082f0ed6a74",
@@ -473,7 +493,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.52,
+  "price_eur_foil": null
  },
  {
   "id": "df08fc22-2158-442a-96ac-60e7275bb9dd",
@@ -515,7 +537,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.54,
+  "price_eur_foil": null
  },
  {
   "id": "c87ae25b-ae0b-4dd6-a6b9-726a2c38beba",
@@ -557,7 +581,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": null
  },
  {
   "id": "4be163a6-563c-4bd9-a957-dd44707c4e29",
@@ -599,7 +625,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": null
  },
  {
   "id": "e51442af-ecc5-4972-9ed4-f8621142b46c",
@@ -641,7 +669,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": null
  },
  {
   "id": "8e0f0337-e8ad-4ac0-ad1c-97ce6a36adb1",
@@ -683,7 +713,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.45,
+  "price_eur_foil": null
  },
  {
   "id": "82bfac4e-fb59-4463-832d-585e5d915564",
@@ -725,7 +757,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.54,
+  "price_eur_foil": null
  },
  {
   "id": "c53779b1-f96d-4f99-9d71-b1d706fd13a5",
@@ -767,7 +801,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": null
  },
  {
   "id": "c028cb1b-cd10-4a30-91fd-3216a86aa966",
@@ -809,7 +845,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": null
  },
  {
   "id": "59811a52-0db6-4f88-b24c-d16fe73b1937",
@@ -851,7 +889,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.42,
+  "price_eur_foil": null
  },
  {
   "id": "4ebf9196-ac3c-4b74-a5c6-af55f728b9fd",
@@ -893,7 +933,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.47,
+  "price_eur_foil": null
  },
  {
   "id": "138d2fa9-0b31-4eed-820e-9933c733c3c7",
@@ -935,7 +977,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": null
  },
  {
   "id": "aa688d0e-4dd1-4d7e-a987-17b61496ad62",
@@ -977,7 +1021,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": null
  },
  {
   "id": "54e12165-f09b-49b1-b834-9cb4ee096a48",
@@ -1019,7 +1065,9 @@ const CARDS_DATA = [
    "Art Card",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.54,
+  "price_eur_foil": null
  },
  {
   "id": "9b74f022-3e1d-481d-b822-cd86060a9901",
@@ -1062,7 +1110,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.52,
+  "price_eur_foil": null
  },
  {
   "id": "09f68f79-0f5d-470b-adf2-4a554b9bf9a3",
@@ -1105,7 +1155,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.69,
+  "price_eur_foil": null
  },
  {
   "id": "23aa866f-fe13-478c-9ec4-f99f8119b6d7",
@@ -1148,7 +1200,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.13,
+  "price_eur_foil": null
  },
  {
   "id": "b3cdbce0-eba7-4be8-b6fc-b7fdd2a435eb",
@@ -1191,7 +1245,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.56,
+  "price_eur_foil": null
  },
  {
   "id": "a0923d9e-efd8-4c02-b08c-631b1f94a5b9",
@@ -1234,7 +1290,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.22,
+  "price_eur_foil": null
  },
  {
   "id": "11910fed-224d-44de-98e8-12ad49626178",
@@ -1277,7 +1335,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.33,
+  "price_eur_foil": null
  },
  {
   "id": "1cc61bfc-45e0-43aa-9bc2-039fada63281",
@@ -1320,7 +1380,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.82,
+  "price_eur_foil": null
  },
  {
   "id": "8025c445-45cb-42ac-b24e-98dda6490c54",
@@ -1363,7 +1425,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.98,
+  "price_eur_foil": null
  },
  {
   "id": "c8e2bfb1-5a6a-4e49-a0ad-b7fae84890d1",
@@ -1406,7 +1470,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.62,
+  "price_eur_foil": null
  },
  {
   "id": "7e10f8c5-d2bd-491e-827f-145a1bacc258",
@@ -1449,7 +1515,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.12,
+  "price_eur_foil": null
  },
  {
   "id": "d9ed7c22-12bc-488f-ba93-74b548228613",
@@ -1492,7 +1560,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.94,
+  "price_eur_foil": null
  },
  {
   "id": "fd964723-444e-4112-8db3-daf26d05e79a",
@@ -1535,7 +1605,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.24,
+  "price_eur_foil": null
  },
  {
   "id": "9b491159-5ac0-4376-8344-33e01c64cda7",
@@ -1578,7 +1650,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.94,
+  "price_eur_foil": null
  },
  {
   "id": "7d59bcba-4287-40c9-a1c2-746c62166894",
@@ -1621,7 +1695,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.51,
+  "price_eur_foil": null
  },
  {
   "id": "bf158578-1959-4dee-9d11-d50d06bacbe6",
@@ -1664,7 +1740,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.08,
+  "price_eur_foil": null
  },
  {
   "id": "b5b6b3a2-3bbc-4f6a-9b59-db5e1e1e59eb",
@@ -1707,7 +1785,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.97,
+  "price_eur_foil": null
  },
  {
   "id": "ce06b786-f407-46fc-920c-238363e18913",
@@ -1750,7 +1830,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.28,
+  "price_eur_foil": null
  },
  {
   "id": "24c9126a-463b-4e5f-b456-a26fc36d3b22",
@@ -1793,7 +1875,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.09,
+  "price_eur_foil": null
  },
  {
   "id": "1462aa03-5e46-4ea9-8844-045ab9ad82dd",
@@ -1836,7 +1920,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.22,
+  "price_eur_foil": null
  },
  {
   "id": "8d40da4e-9470-40a4-8eb6-d6ee3f99a153",
@@ -1879,7 +1965,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.49,
+  "price_eur_foil": null
  },
  {
   "id": "6ebeaadd-5c7a-4047-a009-c9e0fa5993be",
@@ -1922,7 +2010,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.95,
+  "price_eur_foil": null
  },
  {
   "id": "452907b1-edc1-45eb-bd48-d46474d2c3a5",
@@ -1965,7 +2055,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.75,
+  "price_eur_foil": null
  },
  {
   "id": "d82ba98b-869b-4f02-a086-b0fdcfb0a70e",
@@ -2008,7 +2100,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.97,
+  "price_eur_foil": null
  },
  {
   "id": "38a8ea39-4212-4521-bf59-0b7d488efe54",
@@ -2051,7 +2145,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.14,
+  "price_eur_foil": null
  },
  {
   "id": "e0da27b5-9586-4d66-b052-1efb86a34704",
@@ -2094,7 +2190,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.16,
+  "price_eur_foil": null
  },
  {
   "id": "0141880e-ad53-4c5a-8435-2da9d92057ba",
@@ -2137,7 +2235,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.24,
+  "price_eur_foil": null
  },
  {
   "id": "6b9e2cb5-6e1f-4e80-b52f-c158c89ce02a",
@@ -2180,7 +2280,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.92,
+  "price_eur_foil": null
  },
  {
   "id": "27b1b42f-da36-4e93-badd-cd761d837926",
@@ -2223,7 +2325,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.46,
+  "price_eur_foil": null
  },
  {
   "id": "60078126-4ee4-41c1-b249-d2e9f0276766",
@@ -2266,7 +2370,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.57,
+  "price_eur_foil": null
  },
  {
   "id": "2677ce15-1452-4514-adeb-f63ef6822ba7",
@@ -2309,7 +2415,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.96,
+  "price_eur_foil": null
  },
  {
   "id": "82209aac-42e2-4cc6-a9f8-abc9c8f14789",
@@ -2352,7 +2460,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.99,
+  "price_eur_foil": null
  },
  {
   "id": "82981213-987a-407a-9084-00c69735fab8",
@@ -2395,7 +2505,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.16,
+  "price_eur_foil": null
  },
  {
   "id": "610d926c-ca66-4006-9241-e153c4ea6eca",
@@ -2438,7 +2550,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.67,
+  "price_eur_foil": null
  },
  {
   "id": "26d6ab7c-045f-4237-b4bb-2586acb97817",
@@ -2481,7 +2595,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.3,
+  "price_eur_foil": null
  },
  {
   "id": "9d721a89-f928-413b-9e66-d7d9671f1534",
@@ -2524,7 +2640,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.61,
+  "price_eur_foil": null
  },
  {
   "id": "b65952d3-31ff-493f-85b3-82b15257158f",
@@ -2567,7 +2685,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.47,
+  "price_eur_foil": null
  },
  {
   "id": "a306d654-15ef-4bfa-8f16-972408963743",
@@ -2610,7 +2730,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.34,
+  "price_eur_foil": null
  },
  {
   "id": "7eb8d77f-8e60-47f7-8e5a-01baca70d554",
@@ -2653,7 +2775,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.25,
+  "price_eur_foil": null
  },
  {
   "id": "2d9a5bfd-e0f2-44f9-9240-4081c6202e0a",
@@ -2696,7 +2820,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.41,
+  "price_eur_foil": null
  },
  {
   "id": "c74a6ccf-fd7e-4f53-aa14-e9cede3661e7",
@@ -2739,7 +2865,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.63,
+  "price_eur_foil": null
  },
  {
   "id": "674c5221-9726-4c37-822a-73e60fa55cfa",
@@ -2782,7 +2910,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.26,
+  "price_eur_foil": null
  },
  {
   "id": "44b650a3-49ad-43a9-9da9-e34bbe384a0e",
@@ -2825,7 +2955,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.16,
+  "price_eur_foil": null
  },
  {
   "id": "908ec49d-7671-469f-9aba-f68597f19a7f",
@@ -2868,7 +3000,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.27,
+  "price_eur_foil": null
  },
  {
   "id": "213c5d4c-20d3-4e86-b0b1-d572b468fd7b",
@@ -2911,7 +3045,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.38,
+  "price_eur_foil": null
  },
  {
   "id": "f71f77aa-e10e-4d6f-8478-aa9e9b1acd47",
@@ -2954,7 +3090,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.31,
+  "price_eur_foil": null
  },
  {
   "id": "5c4b8e1d-f1a0-4b74-9edd-a477459a1211",
@@ -2997,7 +3135,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.12,
+  "price_eur_foil": null
  },
  {
   "id": "25f3ad30-ea49-4f24-ad85-95959a4c9e1e",
@@ -3040,7 +3180,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.56,
+  "price_eur_foil": null
  },
  {
   "id": "070d99d0-29c4-4bd6-9c7a-6635122d84b9",
@@ -3083,7 +3225,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.26,
+  "price_eur_foil": null
  },
  {
   "id": "2c5af371-8841-4e29-9a12-06f03f5541e8",
@@ -3126,7 +3270,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.64,
+  "price_eur_foil": null
  },
  {
   "id": "18263a99-378d-45af-8bc1-7188ca2a83a5",
@@ -3169,7 +3315,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.31,
+  "price_eur_foil": null
  },
  {
   "id": "74f1708e-6446-4ca9-9186-3cb1e6a1ad3f",
@@ -3212,7 +3360,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.45,
+  "price_eur_foil": null
  },
  {
   "id": "090c3bb1-3964-4c0b-a7b1-e614de781364",
@@ -3255,7 +3405,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.72,
+  "price_eur_foil": null
  },
  {
   "id": "c4a45167-f115-4573-bfa3-22cb9ec8ca60",
@@ -3298,7 +3450,9 @@ const CARDS_DATA = [
   "treatments": [
    "Art Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.51,
+  "price_eur_foil": null
  },
  {
   "id": "0b9579d8-bc8f-4d74-bfc1-dcdd42568f79",
@@ -3344,7 +3498,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.49,
+  "price_eur_foil": 22.98
  },
  {
   "id": "9af0b8d6-f41b-4aa3-ae32-1ef2d1d4bade",
@@ -3390,7 +3546,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 35.38,
+  "price_eur_foil": 300.52
  },
  {
   "id": "084d7a61-ef18-42e3-8485-76ae9a36ef7b",
@@ -3436,7 +3594,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.85,
+  "price_eur_foil": 20.85
  },
  {
   "id": "e1e48b21-1a4f-4708-a4b4-e2e296df924c",
@@ -3482,7 +3642,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.07,
+  "price_eur_foil": 4.25
  },
  {
   "id": "98294441-b5a1-4b59-9325-80d0ff913ebd",
@@ -3528,7 +3690,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 20.21,
+  "price_eur_foil": 218.6
  },
  {
   "id": "d9aa060d-8682-4803-9ab9-052250e3d794",
@@ -3574,7 +3738,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.1,
+  "price_eur_foil": 10.72
  },
  {
   "id": "24b2833e-6c08-4f33-8481-f65f2a063c60",
@@ -3620,7 +3786,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.33,
+  "price_eur_foil": 40.8
  },
  {
   "id": "7cc0cfe1-7f13-4b1b-9a37-33ef457d3c62",
@@ -3666,7 +3834,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.19,
+  "price_eur_foil": 35.29
  },
  {
   "id": "2430f223-edb2-402b-a85b-5d328323992d",
@@ -3712,7 +3882,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.84,
+  "price_eur_foil": 3.08
  },
  {
   "id": "5b40815d-0104-461e-b193-fcf5e1f35299",
@@ -3758,7 +3930,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.67,
+  "price_eur_foil": 2.79
  },
  {
   "id": "6ed83401-0b7e-48c7-b1a4-8e97aec29960",
@@ -3804,7 +3978,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 28.66,
+  "price_eur_foil": 92.61
  },
  {
   "id": "f6cbc754-8aed-4c32-857c-ea639943b5d2",
@@ -3850,7 +4026,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 92.05,
+  "price_eur_foil": 405.06
  },
  {
   "id": "b24b733e-f98a-4ae1-9e54-eb416dea7cf6",
@@ -3896,7 +4074,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.21,
+  "price_eur_foil": 20.27
  },
  {
   "id": "fbd25e79-d29b-4b51-9653-3932c980b931",
@@ -3942,7 +4122,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 23.3,
+  "price_eur_foil": 130.2
  },
  {
   "id": "ea8e1f76-bd26-4037-8556-e348d50bfd95",
@@ -3988,7 +4170,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.82,
+  "price_eur_foil": 34.95
  },
  {
   "id": "5f2b2373-9052-4246-a644-1f5b723ea9f1",
@@ -4034,7 +4218,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 20.58,
+  "price_eur_foil": 72.28
  },
  {
   "id": "c02bef17-a293-4f77-8043-104864de4eaa",
@@ -4080,7 +4266,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.61,
+  "price_eur_foil": 25.37
  },
  {
   "id": "87eff269-c8d7-479e-ade4-383b8622e70d",
@@ -4126,7 +4314,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.66,
+  "price_eur_foil": 46.26
  },
  {
   "id": "6e1a948f-2d7f-4398-9f56-90dac6897c69",
@@ -4172,7 +4362,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.71,
+  "price_eur_foil": 11.61
  },
  {
   "id": "3f0cbff1-4b4e-4d60-b114-20bd3e977b25",
@@ -4218,7 +4410,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.03,
+  "price_eur_foil": 10.17
  },
  {
   "id": "fc9c542d-ff46-4193-9972-68287879a8a0",
@@ -4264,7 +4458,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 25.27,
+  "price_eur_foil": 131.95
  },
  {
   "id": "210ff924-215e-4ae8-8706-5af3891c6605",
@@ -4310,7 +4506,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": 1.22
  },
  {
   "id": "d51b956a-acca-4aee-92ff-bd90a9814988",
@@ -4356,7 +4554,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.01,
+  "price_eur_foil": 20.33
  },
  {
   "id": "450ec0a6-839b-4a35-a79b-ae358408a17c",
@@ -4402,7 +4602,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.05,
+  "price_eur_foil": 28.14
  },
  {
   "id": "232b5c18-0a0a-425d-89aa-de2db833a22c",
@@ -4448,7 +4650,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.45,
+  "price_eur_foil": 11.86
  },
  {
   "id": "711135d0-7769-4154-873a-e2505f8795f0",
@@ -4494,7 +4698,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.53,
+  "price_eur_foil": 4.0
  },
  {
   "id": "ae94ab2a-5a6b-4358-ad7f-bdc9a98a9ac0",
@@ -4540,7 +4746,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.68
  },
  {
   "id": "c14f8bce-d5b3-4d01-8346-8a4923ec03d9",
@@ -4586,7 +4794,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.27,
+  "price_eur_foil": 5.27
  },
  {
   "id": "7b182d1f-be0f-4b97-bca3-083483f7713c",
@@ -4632,7 +4842,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.33,
+  "price_eur_foil": 14.58
  },
  {
   "id": "44ede007-b6db-4396-8b25-9e2621cfeec4",
@@ -4678,7 +4890,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": 0.67
  },
  {
   "id": "cd212de7-25f6-4b3b-a35b-df7d87fe205b",
@@ -4724,7 +4938,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 68.63,
+  "price_eur_foil": 360.45
  },
  {
   "id": "9ca8fdd4-7e62-4475-9aed-c227ab3977f7",
@@ -4770,7 +4986,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.42,
+  "price_eur_foil": 12.26
  },
  {
   "id": "a4e0b297-6d33-4e2b-b497-aa952dcf2141",
@@ -4816,7 +5034,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.53,
+  "price_eur_foil": 1.34
  },
  {
   "id": "a2ec8e5e-ada8-4cd7-b43d-157568356a80",
@@ -4862,7 +5082,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 11.37,
+  "price_eur_foil": 29.95
  },
  {
   "id": "f1de9d89-4cbf-453b-ab6d-88090bd7a204",
@@ -4908,7 +5130,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.43,
+  "price_eur_foil": 31.11
  },
  {
   "id": "45393005-78c7-4056-9ce6-310264922af3",
@@ -4954,7 +5178,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.97,
+  "price_eur_foil": 11.93
  },
  {
   "id": "e6628dee-54b1-4e04-90b2-3b327a2de090",
@@ -5000,7 +5226,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.39,
+  "price_eur_foil": 9.89
  },
  {
   "id": "7c3aeedd-d41b-44c9-9b0a-e5952202f632",
@@ -5046,7 +5274,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.56
  },
  {
   "id": "686150d8-1d01-4c4f-8e4d-61ada78d6859",
@@ -5092,7 +5322,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": 0.82
  },
  {
   "id": "e89794ab-6070-4916-936f-2b42fe41d31b",
@@ -5138,7 +5370,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.44,
+  "price_eur_foil": 2.81
  },
  {
   "id": "8a139398-4d42-4715-8a5a-c446bf665a2e",
@@ -5184,7 +5418,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.55,
+  "price_eur_foil": 13.98
  },
  {
   "id": "cc30e027-8cb8-4b06-a24a-6ad49d6a2cf3",
@@ -5230,7 +5466,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.4,
+  "price_eur_foil": 92.12
  },
  {
   "id": "a71d1ec3-2d7a-4749-8936-8bf7a8b83d84",
@@ -5276,7 +5514,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 29.81,
+  "price_eur_foil": 121.13
  },
  {
   "id": "dd28c05c-9473-4df8-9bb3-70593f2c5a50",
@@ -5322,7 +5562,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.24,
+  "price_eur_foil": 18.97
  },
  {
   "id": "f36f237f-6b44-4513-ba5d-fe6b4936f78e",
@@ -5368,7 +5610,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.91,
+  "price_eur_foil": 2.78
  },
  {
   "id": "e983925b-de9c-4a09-8bff-913301aff269",
@@ -5414,7 +5658,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.64
  },
  {
   "id": "d349901d-f9a6-4f09-a881-531c695cf1c4",
@@ -5460,7 +5706,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.5,
+  "price_eur_foil": 1.7
  },
  {
   "id": "972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a",
@@ -5506,7 +5754,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.36,
+  "price_eur_foil": 21.51
  },
  {
   "id": "be326fe9-4ed8-4f64-934c-9955edea5fdb",
@@ -5552,7 +5802,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 25.03,
+  "price_eur_foil": 228.57
  },
  {
   "id": "07889f56-740f-4d17-9b0e-8d8e9e327f31",
@@ -5598,7 +5850,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.87,
+  "price_eur_foil": 9.07
  },
  {
   "id": "ba332954-ed8c-48d7-8d85-971c7b71dccf",
@@ -5644,7 +5898,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.25,
+  "price_eur_foil": 3.35
  },
  {
   "id": "786a3daa-41a6-4cf3-97bc-c59e1c7cd674",
@@ -5690,7 +5946,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.08,
+  "price_eur_foil": 6.83
  },
  {
   "id": "92e0c1a4-e6f3-494d-9238-913af54dbffb",
@@ -5736,7 +5994,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.81,
+  "price_eur_foil": 17.12
  },
  {
   "id": "a3baaf97-171a-40c0-a1dc-74ae05db0e25",
@@ -5782,7 +6042,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.72,
+  "price_eur_foil": 54.07
  },
  {
   "id": "e141f975-945e-4e2c-ac04-6083b5bdaf16",
@@ -5828,7 +6090,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.85,
+  "price_eur_foil": 63.44
  },
  {
   "id": "b1a273c4-008a-41a0-84b8-38654303265d",
@@ -5874,7 +6138,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.56,
+  "price_eur_foil": 19.36
  },
  {
   "id": "752e16fc-8ee1-41f7-9495-6ab8029c9353",
@@ -5920,7 +6186,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.38,
+  "price_eur_foil": 10.72
  },
  {
   "id": "5f13417d-3fe1-4357-b826-cb48dd111247",
@@ -5966,7 +6234,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 15.74,
+  "price_eur_foil": 118.07
  },
  {
   "id": "958077e8-a226-4cb5-839f-35557051c953",
@@ -6012,7 +6282,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.51,
+  "price_eur_foil": 45.73
  },
  {
   "id": "6b26622f-7bf5-4a07-b109-4bcb13fdb010",
@@ -6058,7 +6330,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.57,
+  "price_eur_foil": 20.96
  },
  {
   "id": "d170adf6-eb5e-4094-9917-3b68be92e8b9",
@@ -6104,7 +6378,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.24,
+  "price_eur_foil": 19.12
  },
  {
   "id": "d0e53c71-6a58-4ea1-a550-f3cbd749eafd",
@@ -6150,7 +6426,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.45,
+  "price_eur_foil": 7.57
  },
  {
   "id": "bcf0d751-5c47-4531-add4-acd07b82adf5",
@@ -6196,7 +6474,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.52
  },
  {
   "id": "2670653e-fcaa-46e3-b3bf-cb8e8b981a9c",
@@ -6242,7 +6522,9 @@ const CARDS_DATA = [
   "treatments": [
    "Showcase",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.21,
+  "price_eur_foil": 15.86
  },
  {
   "id": "30584c53-533b-4dc7-b07c-8600164a99b3",
@@ -6286,7 +6568,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.47,
+  "price_eur_foil": 0.38
  },
  {
   "id": "07b4e4f8-6a31-4533-be51-668ce3ddc84f",
@@ -6330,7 +6614,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.88,
+  "price_eur_foil": 0.49
  },
  {
   "id": "f90eb8ef-ad70-4d6c-9958-e6153f8599bc",
@@ -6374,7 +6660,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": 0.45
  },
  {
   "id": "5aa1a2d7-6133-41a9-9662-9008d1309935",
@@ -6418,7 +6706,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": 0.31
  },
  {
   "id": "2cfd4494-346c-4cbc-8072-e267254cefcc",
@@ -6462,7 +6752,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.57,
+  "price_eur_foil": 0.59
  },
  {
   "id": "31513afc-329c-4913-8fcd-945c39ec82b2",
@@ -6506,7 +6798,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.36,
+  "price_eur_foil": 0.52
  },
  {
   "id": "c7f2c2d5-e052-49e8-b5de-712858c2ea78",
@@ -6550,7 +6844,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.29,
+  "price_eur_foil": 1.0
  },
  {
   "id": "930da933-4263-40ff-96af-4bd9e797249e",
@@ -6594,7 +6890,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.91,
+  "price_eur_foil": 0.66
  },
  {
   "id": "ba96f831-02cb-4a74-a2e4-7f76444e3cd7",
@@ -6638,7 +6936,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.38,
+  "price_eur_foil": null
  },
  {
   "id": "cb82d614-13d8-40ec-9213-8e6852d37c9c",
@@ -6682,7 +6982,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": null
  },
  {
   "id": "d1031ce5-063f-4c38-a6a9-abc15d254dfc",
@@ -6726,7 +7028,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.63,
+  "price_eur_foil": null
  },
  {
   "id": "e874e435-7ade-4299-9803-1358c0f07a8f",
@@ -6770,7 +7074,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": null
  },
  {
   "id": "afa9e3e6-a633-46ad-b52a-48574b2f3d07",
@@ -6814,7 +7120,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.74,
+  "price_eur_foil": null
  },
  {
   "id": "1eb10082-4f0a-41f9-9a70-0d3c7ead249f",
@@ -6858,7 +7166,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "cde3765f-e25c-4d16-b361-448167ed8736",
@@ -6902,7 +7212,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": null
  },
  {
   "id": "a1e779b4-32dd-406b-8b68-48f6df458005",
@@ -6946,7 +7258,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "27ec595f-406b-4539-8d2e-eb98df1a0fc9",
@@ -6990,7 +7304,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "d16553a3-65c3-4dec-af92-123d1e5dce10",
@@ -7034,7 +7350,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "4742c222-1f29-4e1a-a545-798d175255ca",
@@ -7078,7 +7396,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "39384ab7-54da-43e3-8fbc-5c171b7ca7f4",
@@ -7122,7 +7442,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "8e216baf-0e3c-4173-a852-5c5aeb3a9d79",
@@ -7166,7 +7488,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "2073f387-9cdd-4184-8704-e6031c934b6d",
@@ -7210,7 +7534,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "134ef3cd-01ac-4d60-a277-df7ab7b8f88c",
@@ -7254,7 +7580,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "917e9267-010d-450c-ab98-6f861250c437",
@@ -7298,7 +7626,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.45,
+  "price_eur_foil": null
  },
  {
   "id": "dddad2c2-bd19-42bd-aad6-bbf23ccef269",
@@ -7342,7 +7672,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "c14098d6-28ae-492f-8ffc-7d115d83ce6a",
@@ -7386,7 +7718,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.38,
+  "price_eur_foil": null
  },
  {
   "id": "acb35dcb-0bee-4deb-88bf-ffa1f110c67b",
@@ -7430,7 +7764,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": null
  },
  {
   "id": "cdbc2d28-ea35-47c6-af7e-07924e9d5794",
@@ -7474,7 +7810,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.08,
+  "price_eur_foil": null
  },
  {
   "id": "8150be1a-4bac-4c67-9165-9d6fc04a69cc",
@@ -7518,7 +7856,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "93176e85-2343-43a8-8578-69699b464b86",
@@ -7562,7 +7902,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 7.52,
+  "price_eur_foil": null
  },
  {
   "id": "cc74ea74-05cf-4a33-84df-94ec34e816fe",
@@ -7606,7 +7948,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "8fdb8414-2f08-42fb-ae0a-c7f0af1e144e",
@@ -7650,7 +7994,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.74,
+  "price_eur_foil": null
  },
  {
   "id": "65331e86-1ff3-45e4-b789-7afec4ca9bd5",
@@ -7694,7 +8040,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": null
  },
  {
   "id": "771808d9-d0c8-418b-ab6c-1ae6fc07ca20",
@@ -7738,7 +8086,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "9b3cfc13-db4e-4ec3-8444-f715bcd43be6",
@@ -7782,7 +8132,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "e04a05e5-7bff-46a4-aae1-6713977e6e30",
@@ -7826,7 +8178,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": null
  },
  {
   "id": "abcfefe3-c66d-4512-bcc3-c9a39cfbb983",
@@ -7870,7 +8224,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "9c0b1d5d-2b10-4dde-bb95-8cbf780cca97",
@@ -7914,7 +8270,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.76,
+  "price_eur_foil": null
  },
  {
   "id": "9d860089-fb88-4736-b7f4-b605551bedc8",
@@ -7958,7 +8316,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.51,
+  "price_eur_foil": null
  },
  {
   "id": "6301c10c-8c27-4595-a0a7-30c621332b2c",
@@ -8002,7 +8362,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "d377cc5f-f6eb-4ed0-a358-af22245f3550",
@@ -8046,7 +8408,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.41,
+  "price_eur_foil": null
  },
  {
   "id": "e0474d99-48e5-4e60-8cd6-537a10bcfea5",
@@ -8090,7 +8454,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "6cb18871-dd23-4ce8-a535-16adefae63c0",
@@ -8134,7 +8500,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": null
  },
  {
   "id": "186862e7-91ba-47e9-bc38-e8e20772d40c",
@@ -8178,7 +8546,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.92,
+  "price_eur_foil": null
  },
  {
   "id": "080fc2be-d463-4e8e-ba42-8f3cb0c95ed3",
@@ -8222,7 +8592,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "08c9bf6c-fc52-4565-96d1-951a314e59e5",
@@ -8266,7 +8638,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.58,
+  "price_eur_foil": null
  },
  {
   "id": "30be9a07-5803-4bef-9313-391c926bfcec",
@@ -8310,7 +8684,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "e1e53ff2-c321-4fc8-b4d7-eb253d670c5b",
@@ -8354,7 +8730,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "f3140950-1ce2-41b8-91f9-da53bfbee963",
@@ -8398,7 +8776,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "f88d81d9-8ded-4c20-8237-2218046595fb",
@@ -8442,7 +8822,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "69dadb0c-413e-4658-9cdc-23a65df7a800",
@@ -8486,7 +8868,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "66392b0e-8691-42a4-bc84-03b017174a73",
@@ -8530,7 +8914,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.63,
+  "price_eur_foil": null
  },
  {
   "id": "20a87dbc-5deb-42ae-9097-806e9a27466f",
@@ -8574,7 +8960,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "3e0f6c53-6bbf-4d4c-bbbf-4dab22297527",
@@ -8618,7 +9006,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": null
  },
  {
   "id": "89175ce1-0746-4ba1-970e-617d134b0527",
@@ -8662,7 +9052,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "0db05dc8-03f8-4ab4-9ca3-2aaaa0099eb4",
@@ -8706,7 +9098,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.37,
+  "price_eur_foil": null
  },
  {
   "id": "43bacd07-fdaf-4ce4-bf7a-dda55a99d460",
@@ -8750,7 +9144,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "46f1179d-6e48-46ed-ab41-abddace7b5d4",
@@ -8794,7 +9190,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": null
  },
  {
   "id": "a8c971d0-9ac4-4b34-ae19-1152c1c9dac1",
@@ -8838,7 +9236,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "7f0298b4-c7ca-49b8-baaa-b9fad4c2bfd5",
@@ -8882,7 +9282,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": null
  },
  {
   "id": "ba934866-efd0-4126-b1ff-9c7e82b73bd6",
@@ -8926,7 +9328,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": null
  },
  {
   "id": "b5b0f0fd-574a-4ae7-ab55-b815112d6b3a",
@@ -8970,7 +9374,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "31aed8e9-44be-4e7c-85ac-a084eaecaea7",
@@ -9014,7 +9420,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "9e53d0b2-eeb0-4d54-86e5-723e05aaf6da",
@@ -9058,7 +9466,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": null
  },
  {
   "id": "117bb5db-4a1c-4704-b0b5-c67b45ac2f52",
@@ -9102,7 +9512,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "99155fae-507a-4eab-918a-bdee021e2262",
@@ -9146,7 +9558,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.94,
+  "price_eur_foil": null
  },
  {
   "id": "48b4101b-3428-4b6b-818a-6097a093e9b5",
@@ -9190,7 +9604,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.03,
+  "price_eur_foil": null
  },
  {
   "id": "f6a4267b-aa76-4dec-bc72-252236c44968",
@@ -9234,7 +9650,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "107ffe2e-47eb-43de-bc9e-c68013b62912",
@@ -9278,7 +9696,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "51188b1d-cb45-40f7-a3c2-5652b0679e02",
@@ -9322,7 +9742,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 8.77,
+  "price_eur_foil": null
  },
  {
   "id": "76a8cae7-e6ea-45eb-be8d-0e6a29b98aa6",
@@ -9366,7 +9788,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "176401fb-f87c-4085-9dac-e6c8a843e32e",
@@ -9410,7 +9834,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "0f4f6de2-1c3d-4f3b-b999-70879f9cbb26",
@@ -9454,7 +9880,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.56,
+  "price_eur_foil": null
  },
  {
   "id": "5044eedb-f7d9-4b65-aa5b-fb494d00facd",
@@ -9498,7 +9926,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "8e591a23-15c3-4a65-a9d2-d1ce0f83552c",
@@ -9542,7 +9972,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "d041a51c-9a28-4b32-9da3-0f06807959f1",
@@ -9586,7 +10018,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "9fc1ac8a-bbd4-4d17-81d9-fd04876084b1",
@@ -9630,7 +10064,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.44,
+  "price_eur_foil": null
  },
  {
   "id": "63e84ece-b129-457d-84ed-b4280120f08b",
@@ -9674,7 +10110,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "2e37fd36-84f0-4869-bfae-da4b97c9725d",
@@ -9718,7 +10156,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "098a8025-6454-45d8-abe3-2c3dada3f582",
@@ -9762,7 +10202,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "dd3141de-633e-48e3-a89f-a91339f5e882",
@@ -9806,7 +10248,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.52,
+  "price_eur_foil": null
  },
  {
   "id": "7812c768-8417-4689-9a51-f577c1cf5dc0",
@@ -9850,7 +10294,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "60aed76e-2265-471d-8e41-1d8605603b78",
@@ -9894,7 +10340,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "21cfc161-11b8-4253-a872-3b08a13b6991",
@@ -9938,7 +10386,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.62,
+  "price_eur_foil": null
  },
  {
   "id": "42006bd4-f6f0-4638-a50e-46d9d7a54b6e",
@@ -9982,7 +10432,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": null
  },
  {
   "id": "125dd19b-98a0-49d9-a870-63214255e12a",
@@ -10026,7 +10478,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "42cd66f2-0704-4c8e-b5de-6df93f4a8bed",
@@ -10070,7 +10524,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "97845ece-ceef-468c-a4e3-6fde1413c9f0",
@@ -10114,7 +10570,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": null
  },
  {
   "id": "e9cb8ac9-64a0-455d-a8dd-1579ee321bbd",
@@ -10158,7 +10616,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "0b876b1e-fcf4-4e5c-81b0-1080ac8099ed",
@@ -10202,7 +10662,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "10407b26-be28-4628-9567-746681e5c834",
@@ -10246,7 +10708,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "df919eb8-9eff-4777-9c46-94c795cda918",
@@ -10290,7 +10754,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.5,
+  "price_eur_foil": null
  },
  {
   "id": "5e3e5b0f-c702-4671-ad95-ab0cda1ab83d",
@@ -10334,7 +10800,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "6f2cec5d-50ea-4d0f-8925-eba06222d015",
@@ -10378,7 +10846,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "fc0474b7-3d32-49b4-80c7-822de6cdbfa6",
@@ -10422,7 +10892,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": null
  },
  {
   "id": "44d44107-da15-41b9-8dfb-6335c1cbd83a",
@@ -10466,7 +10938,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "9f7fcef4-99fc-4df2-b0f5-4398f71b2fcf",
@@ -10510,7 +10984,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "019615fa-4bec-41e8-9c4c-2c6f91bdefb2",
@@ -10554,7 +11030,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "99fd1cd5-4740-4a0f-b773-3d3b66861d77",
@@ -10598,7 +11076,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.99,
+  "price_eur_foil": null
  },
  {
   "id": "e1f16620-08d6-49bd-9f75-d89ae46bfd1f",
@@ -10642,7 +11122,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.45,
+  "price_eur_foil": null
  },
  {
   "id": "92ef9285-e2dc-40fc-86fa-6913bbc405db",
@@ -10687,7 +11169,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.13,
+  "price_eur_foil": 3.8
  },
  {
   "id": "ea58b5ff-7c16-4edf-a27f-b05459c8923f",
@@ -10732,7 +11216,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.83,
+  "price_eur_foil": 1.16
  },
  {
   "id": "8d49825c-8264-40a5-9afc-c2601f95ec26",
@@ -10777,7 +11263,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.66,
+  "price_eur_foil": 1.44
  },
  {
   "id": "652be579-44ad-4656-975b-5e336a9e21c8",
@@ -10822,7 +11310,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": 0.7
  },
  {
   "id": "13764c53-57cc-4418-8a15-cdb72f6f3b0e",
@@ -10867,7 +11357,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.44,
+  "price_eur_foil": 1.44
  },
  {
   "id": "4fe4000f-e7aa-48e7-a0be-8cc1c2698ad0",
@@ -10912,7 +11404,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": 0.73
  },
  {
   "id": "2d4f9623-fd04-4377-b7cf-fbd896ebe03f",
@@ -10957,7 +11451,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.18,
+  "price_eur_foil": 2.91
  },
  {
   "id": "fda5e860-2d9c-4c7a-981a-86c58e59cd14",
@@ -11002,7 +11498,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": 0.98
  },
  {
   "id": "c539c201-64c2-475c-b934-8a738d071b02",
@@ -11047,7 +11545,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.69,
+  "price_eur_foil": 1.07
  },
  {
   "id": "6c85ce70-7080-430e-8560-81bc09ca329e",
@@ -11092,7 +11592,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.89,
+  "price_eur_foil": 3.37
  },
  {
   "id": "931c1983-f606-4dc2-8d0b-3a7160ee0d06",
@@ -11137,7 +11639,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": 0.96
  },
  {
   "id": "1b3188ab-feb9-4486-bda0-1b80f128f7d2",
@@ -11182,7 +11686,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.55,
+  "price_eur_foil": 0.7
  },
  {
   "id": "abfa939d-3914-44ec-979c-731e9413ba3a",
@@ -11227,7 +11733,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.71,
+  "price_eur_foil": 1.72
  },
  {
   "id": "f02cfc75-d0da-403f-835f-9a614e5ed836",
@@ -11272,7 +11780,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.74,
+  "price_eur_foil": 1.54
  },
  {
   "id": "a34f241d-4420-4549-b702-b224027ebee7",
@@ -11317,7 +11827,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.42,
+  "price_eur_foil": 7.74
  },
  {
   "id": "81313ac5-ee30-4ac4-ad5f-e9dbda46b2b0",
@@ -11362,7 +11874,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.52,
+  "price_eur_foil": 0.95
  },
  {
   "id": "723d9139-d75e-42e9-8ffc-5df053096839",
@@ -11407,7 +11921,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": 0.85
  },
  {
   "id": "32f42de9-2eb3-4c11-aed1-7c0fb8768af1",
@@ -11452,7 +11968,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.51,
+  "price_eur_foil": 0.98
  },
  {
   "id": "51cb61ab-0508-4668-8680-051d38df7ccb",
@@ -11497,7 +12015,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.16,
+  "price_eur_foil": 2.17
  },
  {
   "id": "2fbe13c7-af6c-43f4-b947-f32ea48a0edb",
@@ -11542,7 +12062,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.76,
+  "price_eur_foil": 0.84
  },
  {
   "id": "809276a9-4804-422f-abb0-ba302f329e6e",
@@ -11587,7 +12109,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": 1.02
  },
  {
   "id": "d1d50fa8-e92c-4531-b773-b9ef406e8c44",
@@ -11632,7 +12156,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.26,
+  "price_eur_foil": 2.6
  },
  {
   "id": "064a1fc2-6983-4ebf-a0bc-524bc77682c2",
@@ -11677,7 +12203,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.82,
+  "price_eur_foil": 11.09
  },
  {
   "id": "cb916f4e-1aa4-4092-9dc6-7ba59fb87a05",
@@ -11722,7 +12250,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": 1.49
  },
  {
   "id": "599bea5b-ec99-441b-99d4-08dd1ec97f1c",
@@ -11767,7 +12297,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.8,
+  "price_eur_foil": 1.82
  },
  {
   "id": "76c0645f-d44c-4ad3-9e90-9d6187e44eb4",
@@ -11812,7 +12344,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.53,
+  "price_eur_foil": 1.18
  },
  {
   "id": "0c184913-bde3-4310-af3f-58a7fba77041",
@@ -11857,7 +12391,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.88,
+  "price_eur_foil": 2.08
  },
  {
   "id": "c934a62e-d327-44ce-9155-7dc424daec36",
@@ -11902,7 +12438,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.98,
+  "price_eur_foil": 1.68
  },
  {
   "id": "de9e594c-fe46-4c24-8e64-a5929472453d",
@@ -11947,7 +12485,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.12,
+  "price_eur_foil": 7.09
  },
  {
   "id": "12646217-db83-4b47-8f79-388c925dce77",
@@ -11992,7 +12532,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.49,
+  "price_eur_foil": 4.74
  },
  {
   "id": "73e1ba99-2a8b-43de-b03c-196a1907ca19",
@@ -12037,7 +12579,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.79,
+  "price_eur_foil": 5.7
  },
  {
   "id": "b0d7df49-9e4c-4724-8e76-441d84b6c01f",
@@ -12082,7 +12626,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": 1.16
  },
  {
   "id": "c392f20f-4ad0-4302-9b12-15131e8fc9a3",
@@ -12127,7 +12673,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.76,
+  "price_eur_foil": 5.09
  },
  {
   "id": "ff6b510b-a425-48c8-b67e-276fba2f0ef0",
@@ -12172,7 +12720,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.99,
+  "price_eur_foil": 1.84
  },
  {
   "id": "e5226e79-646b-4488-9a19-0549e15ba6ad",
@@ -12217,7 +12767,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.5,
+  "price_eur_foil": 1.68
  },
  {
   "id": "ad2547e0-b3bb-45df-a0ee-1af4bd80c834",
@@ -12262,7 +12814,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.57,
+  "price_eur_foil": 1.22
  },
  {
   "id": "bd61145b-5177-4b7e-8ac2-f07e6cf4863a",
@@ -12307,7 +12861,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.57,
+  "price_eur_foil": 1.9
  },
  {
   "id": "8c832508-e6f8-4581-8424-744f4e24fad2",
@@ -12352,7 +12908,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.48,
+  "price_eur_foil": 25.19
  },
  {
   "id": "bcd85c4e-c674-4753-ae82-80293554fdc5",
@@ -12397,7 +12955,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.57,
+  "price_eur_foil": 1.94
  },
  {
   "id": "37e4ab61-bf18-4f9f-ba78-3e08a21aaf4d",
@@ -12442,7 +13002,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.78,
+  "price_eur_foil": 3.78
  },
  {
   "id": "ebacdfc9-7459-45b7-b563-572bdab27702",
@@ -12487,7 +13049,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.43,
+  "price_eur_foil": 4.92
  },
  {
   "id": "11f0886a-fbc0-4060-b506-a0b0f9de8b0b",
@@ -12532,7 +13096,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.91,
+  "price_eur_foil": 3.69
  },
  {
   "id": "61844cbe-f4b3-45c6-bf4c-76542de4b195",
@@ -12577,7 +13143,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.48,
+  "price_eur_foil": 8.27
  },
  {
   "id": "d292e7d4-deab-47f8-bc6d-d7cbb01a3268",
@@ -12622,7 +13190,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.32,
+  "price_eur_foil": 3.79
  },
  {
   "id": "f993e3dd-f275-452b-b883-b9d420a91ded",
@@ -12667,7 +13237,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.44,
+  "price_eur_foil": 5.01
  },
  {
   "id": "fede6d1c-461e-456f-8cdb-7acac69d30ae",
@@ -12712,7 +13284,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.35,
+  "price_eur_foil": 5.17
  },
  {
   "id": "cf820446-9cea-426e-ad34-977cf3833cf7",
@@ -12757,7 +13331,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.58,
+  "price_eur_foil": 1.17
  },
  {
   "id": "d2a400d2-cf8e-4be8-9eb8-46af1aa73698",
@@ -12802,7 +13378,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.02,
+  "price_eur_foil": 3.82
  },
  {
   "id": "dba36096-75dd-47d6-b222-970b7450098c",
@@ -12847,7 +13425,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.48,
+  "price_eur_foil": 2.24
  },
  {
   "id": "9c7bf45f-88f4-4b5f-a816-ae096e177ff0",
@@ -12892,7 +13472,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.56,
+  "price_eur_foil": 2.59
  },
  {
   "id": "26742bbb-38b1-43c1-8b33-80a79c8ddcce",
@@ -12937,7 +13519,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.74,
+  "price_eur_foil": 3.98
  },
  {
   "id": "c7f4920b-cbf6-407c-ae02-6f6cc047187d",
@@ -12982,7 +13566,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.77,
+  "price_eur_foil": 4.34
  },
  {
   "id": "ebf0b7b3-2e9a-4fb1-aaad-ff1567a4993c",
@@ -13027,7 +13613,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.25,
+  "price_eur_foil": 11.39
  },
  {
   "id": "d34e4b6f-9b6d-4599-be08-05dc5a2a38a4",
@@ -13072,7 +13660,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": 2.02
  },
  {
   "id": "8b880c1a-b82d-42ae-aaaf-22cdc81fe891",
@@ -13117,7 +13707,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.53,
+  "price_eur_foil": 2.51
  },
  {
   "id": "85b5e0a7-8d3c-4d79-b507-8d4ce9a04328",
@@ -13162,7 +13754,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.45,
+  "price_eur_foil": 1.38
  },
  {
   "id": "96c957b1-ef31-4575-9003-fe4a649d303b",
@@ -13207,7 +13801,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.39,
+  "price_eur_foil": 7.26
  },
  {
   "id": "3504bbeb-b4f0-4b43-9ab9-ff456f080b7f",
@@ -13252,7 +13848,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.81,
+  "price_eur_foil": 3.76
  },
  {
   "id": "df25ab56-3f87-4d63-915d-dacfbad17a4f",
@@ -13297,7 +13895,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.67,
+  "price_eur_foil": 6.09
  },
  {
   "id": "5861c54a-6385-46d2-8daa-83fd717d6928",
@@ -13342,7 +13942,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.54,
+  "price_eur_foil": 3.84
  },
  {
   "id": "1c43fe9e-7869-4f11-8fc1-b11caa8c3636",
@@ -13387,7 +13989,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.66,
+  "price_eur_foil": 3.7
  },
  {
   "id": "0ab4ee8a-acf7-46ec-a32a-befe1e0e7d58",
@@ -13432,7 +14036,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.25,
+  "price_eur_foil": 3.96
  },
  {
   "id": "82518d3f-9557-416b-9b4d-dfe3ffa57f88",
@@ -13477,7 +14083,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.18,
+  "price_eur_foil": 6.99
  },
  {
   "id": "866400d8-c94b-4b1a-ba5a-20f9d92476db",
@@ -13522,7 +14130,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.34,
+  "price_eur_foil": 7.19
  },
  {
   "id": "9f860c20-cf00-449b-85cb-d53227162ccf",
@@ -13567,7 +14177,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.68,
+  "price_eur_foil": 2.59
  },
  {
   "id": "6ee716c6-a4be-4237-bdef-f812baffa6d5",
@@ -13612,7 +14224,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": 1.37
  },
  {
   "id": "736a3102-6f0f-47ba-9ca6-f7574ec85a10",
@@ -13657,7 +14271,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.6,
+  "price_eur_foil": 9.39
  },
  {
   "id": "955189c4-cfbc-47be-9681-cfffab403443",
@@ -13702,7 +14318,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.83,
+  "price_eur_foil": 13.5
  },
  {
   "id": "db64bbb0-aa7a-4e6d-b424-9930d55e6853",
@@ -13747,7 +14365,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.63,
+  "price_eur_foil": 1.91
  },
  {
   "id": "584394a0-9d72-4fe3-bcfe-bfaceac12e98",
@@ -13792,7 +14412,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.6,
+  "price_eur_foil": 7.75
  },
  {
   "id": "421df8fe-e812-4bf2-9aae-b7b47627a884",
@@ -13837,7 +14459,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.41,
+  "price_eur_foil": 4.79
  },
  {
   "id": "a5ec8a4e-92fd-49bd-8d9c-c83dd853ca01",
@@ -13882,7 +14506,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.63,
+  "price_eur_foil": 3.2
  },
  {
   "id": "66f4c958-48ec-4cdd-a210-ede6322ee28f",
@@ -13927,7 +14553,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.42,
+  "price_eur_foil": 2.38
  },
  {
   "id": "76f9dd01-0adb-4dbd-9930-fb6546e569ab",
@@ -13972,7 +14600,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.76,
+  "price_eur_foil": 5.58
  },
  {
   "id": "402780a2-ae0b-448d-a93a-e5ef6f7160d4",
@@ -14017,7 +14647,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.65,
+  "price_eur_foil": 5.63
  },
  {
   "id": "170dcae0-3cf4-4f96-80a7-d70a5c15193c",
@@ -14062,7 +14694,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": 2.87
  },
  {
   "id": "d089946c-87c5-4135-8372-ed7b8a03548c",
@@ -14107,7 +14741,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.95,
+  "price_eur_foil": 3.08
  },
  {
   "id": "227ada0a-e1b5-44ed-8303-d6449069599f",
@@ -14152,7 +14788,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.59,
+  "price_eur_foil": 6.33
  },
  {
   "id": "572b31b6-ae09-43a7-a8d4-8f0f99f5cd8e",
@@ -14197,7 +14835,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.73,
+  "price_eur_foil": 3.66
  },
  {
   "id": "7a3ebe5c-d34a-4e47-a060-76f6700af12d",
@@ -14242,7 +14882,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.73,
+  "price_eur_foil": 3.28
  },
  {
   "id": "46ae057f-ae57-4c22-be68-2ef6a26e4e6c",
@@ -14287,7 +14929,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.22,
+  "price_eur_foil": 5.95
  },
  {
   "id": "42edc09b-29e7-41d1-ad4b-b904f2976a66",
@@ -14332,7 +14976,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.35,
+  "price_eur_foil": 11.72
  },
  {
   "id": "0e5b6968-fff2-4227-9442-d2b5225b29e5",
@@ -14377,7 +15023,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": 2.55
  },
  {
   "id": "d87bd7f7-b56d-4cc0-98cc-2d035865c7b6",
@@ -14422,7 +15070,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.6,
+  "price_eur_foil": 2.73
  },
  {
   "id": "8e6e92aa-43bc-4be5-97a5-0817e7c3c9a9",
@@ -14467,7 +15117,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.93,
+  "price_eur_foil": 5.69
  },
  {
   "id": "e0946131-2cda-4850-912e-cb8a8124685b",
@@ -14512,7 +15164,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.74,
+  "price_eur_foil": 9.55
  },
  {
   "id": "77248a4b-0823-4d33-8355-30d0ed158796",
@@ -14557,7 +15211,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.97,
+  "price_eur_foil": 8.82
  },
  {
   "id": "40df262f-e567-4be2-99e4-6b62e864d259",
@@ -14602,7 +15258,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.45,
+  "price_eur_foil": 11.07
  },
  {
   "id": "ebbd957a-db0f-4f3c-8269-801feb6a53db",
@@ -14647,7 +15305,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.51,
+  "price_eur_foil": 1.43
  },
  {
   "id": "c959214d-1a61-4995-b477-46d9298ae692",
@@ -14692,7 +15352,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.02,
+  "price_eur_foil": 2.43
  },
  {
   "id": "0bda4de9-d0ec-4d27-b92b-8a76779747cf",
@@ -14737,7 +15399,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.54,
+  "price_eur_foil": 27.16
  },
  {
   "id": "bbd454a8-b8d0-4755-bd60-321d51589904",
@@ -14782,7 +15446,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.06,
+  "price_eur_foil": 11.02
  },
  {
   "id": "59c9633d-484c-4bce-ac86-696791afd6a4",
@@ -14827,7 +15493,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.5,
+  "price_eur_foil": 7.69
  },
  {
   "id": "3aabb93a-7fa2-4fb5-a683-db1d274ac367",
@@ -14872,7 +15540,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.68,
+  "price_eur_foil": 7.19
  },
  {
   "id": "92c0bfc2-ba98-48b6-82a4-95a2321c8df4",
@@ -14917,7 +15587,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.91,
+  "price_eur_foil": 8.2
  },
  {
   "id": "fb7f1e73-183f-4041-907d-700e248ac5af",
@@ -14962,7 +15634,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 12.18,
+  "price_eur_foil": 17.25
  },
  {
   "id": "c95c1a97-4c9e-4d38-8b12-193f8ff0d556",
@@ -15007,7 +15681,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.33,
+  "price_eur_foil": 8.53
  },
  {
   "id": "e34b664c-2e80-4672-83ae-51babf28cf6c",
@@ -15052,7 +15728,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.43,
+  "price_eur_foil": 4.86
  },
  {
   "id": "a469904f-f144-4e70-b689-c7869e40bcb2",
@@ -15097,7 +15775,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.52,
+  "price_eur_foil": 4.19
  },
  {
   "id": "83ba525d-d38e-4e68-9516-b6239a1b0b09",
@@ -15142,7 +15822,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.48,
+  "price_eur_foil": 4.89
  },
  {
   "id": "d30dd823-9a04-4e3d-89c6-0fc5afc9efa4",
@@ -15187,7 +15869,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 23.45,
+  "price_eur_foil": 36.61
  },
  {
   "id": "15ce92a3-0d51-4c8e-bbce-d225021b4c35",
@@ -15232,7 +15916,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 46.9,
+  "price_eur_foil": 81.39
  },
  {
   "id": "24a80798-8ff1-41b9-9ffe-a48d1add8538",
@@ -15277,7 +15963,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 11.5,
+  "price_eur_foil": 16.25
  },
  {
   "id": "901bd4dc-ebd3-40af-9fb0-57a8719329a4",
@@ -15322,7 +16010,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 39.56,
+  "price_eur_foil": 63.03
  },
  {
   "id": "7f4af6c8-c419-42a9-ae5e-c3b73ea5eeea",
@@ -15367,7 +16057,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 29.26,
+  "price_eur_foil": 47.44
  },
  {
   "id": "33743b2c-9e30-458d-ada5-fd1cd5b25a5a",
@@ -15412,7 +16104,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 27.71,
+  "price_eur_foil": 45.09
  },
  {
   "id": "514ad860-dff2-45f2-ad5c-77c776c1cf74",
@@ -15457,7 +16151,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 127.36,
+  "price_eur_foil": 254.76
  },
  {
   "id": "e562a30c-038e-44bb-ae07-0c3d0e8a1393",
@@ -15502,7 +16198,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 41.33,
+  "price_eur_foil": 63.05
  },
  {
   "id": "f1c9e178-24ec-41cb-a6e2-9e9222dec4c2",
@@ -15546,7 +16244,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 180.88
  },
  {
   "id": "c22ebe7c-dcfe-4cb2-b6c4-2b4eaa1e635d",
@@ -15590,7 +16290,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 335.71
  },
  {
   "id": "4dd910c1-9d74-4f08-bc36-51fa504f9017",
@@ -15634,7 +16336,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 58.01
  },
  {
   "id": "bb077546-d0f6-4b74-bc59-3c6a50fbc4f2",
@@ -15678,7 +16382,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 340.03
  },
  {
   "id": "5c40cf0f-2eee-4c56-8c5d-fd70e11dc3cc",
@@ -15722,7 +16428,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 159.41
  },
  {
   "id": "ec975a48-5919-4666-9c60-b9fbe986f18c",
@@ -15766,7 +16474,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 239.25
  },
  {
   "id": "58cca3dc-eac8-4ef6-a2c0-d46d9240d06b",
@@ -15810,7 +16520,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 993.97
  },
  {
   "id": "2819652e-c944-4c5d-a098-2d15e232366e",
@@ -15854,7 +16566,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 269.24
  },
  {
   "id": "3219a87c-1b92-4777-ac5d-c78f3ddf35d2",
@@ -15898,7 +16612,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.9,
+  "price_eur_foil": 5.0
  },
  {
   "id": "d325fef9-2422-4b35-8b3d-4ed3b2553392",
@@ -15942,7 +16658,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.97,
+  "price_eur_foil": 6.44
  },
  {
   "id": "1fed38d0-c32c-440c-9d99-ca3b48a34791",
@@ -15986,7 +16704,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.53,
+  "price_eur_foil": 3.29
  },
  {
   "id": "8adf7d34-186d-4823-a746-150d71b53739",
@@ -16029,7 +16749,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.87
  },
  {
   "id": "5a186ba3-94c1-4eab-8d4f-42a320bfa073",
@@ -16072,7 +16794,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.64
  },
  {
   "id": "214453a2-9dcb-4bab-853f-5b56bbcbe4f8",
@@ -16115,7 +16839,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.17
  },
  {
   "id": "4f36f28b-b9c9-42a2-a2e5-d1b532e482a3",
@@ -16158,7 +16884,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.81
  },
  {
   "id": "6021debf-8d5d-40e4-a197-3751b3ef5701",
@@ -16201,7 +16929,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.24
  },
  {
   "id": "09f09db5-ee5a-4a4b-9dbb-aca0dff04fcf",
@@ -16244,7 +16974,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.85
  },
  {
   "id": "e8df6177-e14d-4dc9-bfc6-5e5f31c2834d",
@@ -16287,7 +17019,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 9.51
  },
  {
   "id": "a8d64705-c6ce-4bfa-a444-aa06ea9ee122",
@@ -16330,7 +17064,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.16
  },
  {
   "id": "48a8abd6-8b5f-45b6-9f82-f2ce17d86222",
@@ -16374,7 +17110,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.37
  },
  {
   "id": "fd9c99f0-390d-4ab1-ac0a-b18f1b0af12c",
@@ -16418,7 +17156,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "c6ff5063-c93f-4b21-8d08-ab0e8e046d39",
@@ -16462,7 +17202,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.41,
+  "price_eur_foil": null
  },
  {
   "id": "93e3dbd9-20f6-47a2-8246-c260b2ead9dc",
@@ -16506,7 +17248,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.44,
+  "price_eur_foil": null
  },
  {
   "id": "53e3fa87-8de0-4e3a-90bf-780dd0a9fb48",
@@ -16550,7 +17294,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 4.77,
+  "price_eur_foil": null
  },
  {
   "id": "0ed04a28-2984-4fa6-a11e-f508b7b5446e",
@@ -16594,7 +17340,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.48,
+  "price_eur_foil": null
  },
  {
   "id": "032dc879-bf2f-4626-8aac-4d5446421923",
@@ -16638,7 +17386,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "81096eba-ad0a-4fa8-8d56-5a1ea9a9155b",
@@ -16682,7 +17432,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": null
  },
  {
   "id": "4836e220-5c89-49fc-8918-a51adf026ab4",
@@ -16726,7 +17478,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 5.26,
+  "price_eur_foil": null
  },
  {
   "id": "af2dcc4d-f4bf-49e4-9103-9b4bc9545ae4",
@@ -16770,7 +17524,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "b42f5488-949f-434a-a9cf-c98e070d6a7f",
@@ -16814,7 +17570,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "8d82e20d-09c0-4b16-9b25-4790924aa0b6",
@@ -16858,7 +17616,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 3.56,
+  "price_eur_foil": null
  },
  {
   "id": "694e5322-b7c9-4f38-97ce-0b03a391a453",
@@ -16902,7 +17662,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "2ecc0fcb-9141-465c-90b1-7652d3c9a4ab",
@@ -16946,7 +17708,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": null
  },
  {
   "id": "4d8b6418-da30-4c68-b87c-3936eb77620c",
@@ -16990,7 +17754,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 4.44,
+  "price_eur_foil": null
  },
  {
   "id": "438a7db0-8005-46ac-8dd1-e7e364fd2ba7",
@@ -17034,7 +17800,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": null
  },
  {
   "id": "755e0d2b-9a5e-4a13-b085-13c33e120de0",
@@ -17078,7 +17846,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "e464408d-3e50-4a9e-beca-b91e15baacaf",
@@ -17122,7 +17892,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": null
  },
  {
   "id": "e6fc5c0b-0b64-491d-b312-b9b2133225d9",
@@ -17166,7 +17938,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.97,
+  "price_eur_foil": null
  },
  {
   "id": "9f129968-0af6-4ae4-a0c3-6f911a7bae22",
@@ -17210,7 +17984,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "bba46570-dca2-4849-966a-0972e6a4c506",
@@ -17254,7 +18030,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.57,
+  "price_eur_foil": null
  },
  {
   "id": "2c6e2b9e-2efb-42f1-9898-77918a7bb1b2",
@@ -17298,7 +18076,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "b7f768ce-e30e-4da6-a2e3-3e67315b1766",
@@ -17342,7 +18122,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.93,
+  "price_eur_foil": null
  },
  {
   "id": "fe1d5e11-0c74-4de0-a8be-428af44be684",
@@ -17386,7 +18168,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": null
  },
  {
   "id": "99e1d96f-c326-49b2-9a24-6e3e5465047e",
@@ -17430,7 +18214,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.41,
+  "price_eur_foil": null
  },
  {
   "id": "d09a77e7-649c-4f2c-bcd3-0598271e9373",
@@ -17474,7 +18260,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "e135d544-2a3e-4b22-ae4d-6c2203769e2a",
@@ -17518,7 +18306,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.36,
+  "price_eur_foil": null
  },
  {
   "id": "25774e8c-bbc1-4a53-926c-7c01c2ac908f",
@@ -17562,7 +18352,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "06554274-78ee-4bfc-b203-b81cb4639427",
@@ -17606,7 +18398,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.11,
+  "price_eur_foil": null
  },
  {
   "id": "834c5cf1-69a7-462c-822e-47a43a86f9a9",
@@ -17650,7 +18444,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "a479784c-3f94-4950-8928-6a1e57bb6627",
@@ -17694,7 +18490,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "76c9b6c1-05de-4c16-8ebf-ea68aa110a69",
@@ -17738,7 +18536,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "5bb0f6ec-6448-40bd-a819-b828b85b2118",
@@ -17782,7 +18582,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": null
  },
  {
   "id": "e85c555a-f034-4c79-92d8-610527d16529",
@@ -17826,7 +18628,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.38,
+  "price_eur_foil": null
  },
  {
   "id": "886ce333-44d7-458e-a3bb-a58d1d7fc69b",
@@ -17870,7 +18674,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.36,
+  "price_eur_foil": null
  },
  {
   "id": "766b2e52-6ba1-4222-a9f4-01a2bf3e9443",
@@ -17914,7 +18720,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "4358fcf2-e07c-4a0f-8f69-5d0f83adeb20",
@@ -17958,7 +18766,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "a992fad9-1dd1-47fe-b315-a62f7875f3be",
@@ -18002,7 +18812,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.02,
+  "price_eur_foil": null
  },
  {
   "id": "24c55c03-2c7a-416d-81d6-74a77a103704",
@@ -18046,7 +18858,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "fe1023a2-c096-4c62-8627-e865b348ba02",
@@ -18090,7 +18904,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 3.0,
+  "price_eur_foil": null
  },
  {
   "id": "8fdbe10e-4a5c-43ee-abb5-20a8d5be9727",
@@ -18134,7 +18950,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.56,
+  "price_eur_foil": null
  },
  {
   "id": "31d56cda-ee00-4037-a2e3-e17286750b0b",
@@ -18178,7 +18996,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "e1d1c0ab-6f75-4144-baab-59b2194742f9",
@@ -18222,7 +19042,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": null
  },
  {
   "id": "a71d0330-ae9b-48c4-802b-b2383958e0d4",
@@ -18266,7 +19088,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "a6a0afd5-f3f9-459e-bd03-1a7a3521b570",
@@ -18310,7 +19134,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.38,
+  "price_eur_foil": null
  },
  {
   "id": "aa0ba9cb-e45c-4c23-baab-38e01391ec6b",
@@ -18354,7 +19180,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.68,
+  "price_eur_foil": null
  },
  {
   "id": "68846892-3cdb-4a17-aef7-dd7a3aed22ff",
@@ -18398,7 +19226,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.44,
+  "price_eur_foil": null
  },
  {
   "id": "4d507db6-29a6-4816-8e37-5b6e318d740f",
@@ -18442,7 +19272,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": null
  },
  {
   "id": "333c8e71-fe90-408c-aabd-c5b7d83d0f03",
@@ -18486,7 +19318,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": null
  },
  {
   "id": "0802be9f-686f-4321-afa4-d472241de653",
@@ -18530,7 +19364,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": null
  },
  {
   "id": "44b14a83-ba66-4c94-8b67-ebe577024532",
@@ -18574,7 +19410,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "dd239710-62ef-43b5-aea2-e82bb385744d",
@@ -18618,7 +19456,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "47dfd4bd-a7a0-40bd-80e8-16c5ddd91091",
@@ -18662,7 +19502,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": null
  },
  {
   "id": "8ba8b02a-8a05-40cd-8b83-51fd0cc0a7a5",
@@ -18706,7 +19548,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 3.09,
+  "price_eur_foil": null
  },
  {
   "id": "58838b71-404f-41ad-9a9b-2c7f875bab06",
@@ -18750,7 +19594,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 7.93,
+  "price_eur_foil": null
  },
  {
   "id": "953c7338-e30d-452c-89ff-0c5fca690b2f",
@@ -18794,7 +19640,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 3.62,
+  "price_eur_foil": null
  },
  {
   "id": "4a4192e9-ba32-4801-a7f5-b4dad3559e4e",
@@ -18838,7 +19686,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": null
  },
  {
   "id": "a3b1fc65-3620-4052-a1f8-1779d95029c7",
@@ -18882,7 +19732,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 7.7,
+  "price_eur_foil": null
  },
  {
   "id": "73f1aa13-b3bc-480e-826c-6bded7ee1ca6",
@@ -18926,7 +19778,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.88,
+  "price_eur_foil": null
  },
  {
   "id": "fa6c734a-672b-44cb-9232-5688e3534ccc",
@@ -18970,7 +19824,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.36,
+  "price_eur_foil": null
  },
  {
   "id": "601be092-2353-4b86-ac01-e8fbdbed29b7",
@@ -19014,7 +19870,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "484ade24-6c2c-4f7e-b561-da802a80e0bb",
@@ -19058,7 +19916,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.83,
+  "price_eur_foil": null
  },
  {
   "id": "67d41ba2-a908-4613-b275-6ffe4165e48a",
@@ -19102,7 +19962,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.99,
+  "price_eur_foil": null
  },
  {
   "id": "a3579f5c-255d-4b01-9b84-9f5c72cb4178",
@@ -19146,7 +20008,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.55,
+  "price_eur_foil": null
  },
  {
   "id": "07cc036d-f46e-490d-adbb-d6974c4e10fd",
@@ -19190,7 +20054,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": null
  },
  {
   "id": "fe233fa7-bc38-45f5-bfe5-da93877f1075",
@@ -19234,7 +20100,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "a886ed1a-d6a4-46d2-8b97-ee4a533773fb",
@@ -19278,7 +20146,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "97ff9946-af2c-4568-847e-b828a71d0217",
@@ -19322,7 +20192,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.86,
+  "price_eur_foil": null
  },
  {
   "id": "d5a53791-d4e9-49e9-9daf-c8b378925afe",
@@ -19366,7 +20238,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 4.63,
+  "price_eur_foil": null
  },
  {
   "id": "a0eafd12-c0c9-4fe3-a4bb-40ab7b64e47c",
@@ -19410,7 +20284,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "9b5a8df2-2bc0-408c-a9d2-e70c0f56642d",
@@ -19454,7 +20330,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.57,
+  "price_eur_foil": null
  },
  {
   "id": "5fc6876d-7441-42ac-b9a1-c10a0f6a387a",
@@ -19498,7 +20376,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": null
  },
  {
   "id": "0c5f5297-fe94-44df-9004-427640196afd",
@@ -19542,7 +20422,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.53,
+  "price_eur_foil": null
  },
  {
   "id": "2ce4ebd2-c3e6-4299-bdb7-8e5eb1834168",
@@ -19586,7 +20468,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "f9b52ee8-3cde-4082-8a6c-0a82caa3505d",
@@ -19630,7 +20514,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.82,
+  "price_eur_foil": null
  },
  {
   "id": "ed314c9c-ce86-4782-981f-7956ceca564c",
@@ -19674,7 +20560,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "de0f3be6-4e5b-4186-af49-fe3dadadcd01",
@@ -19718,7 +20606,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": null
  },
  {
   "id": "8f4a43b9-6ee8-4b89-b204-83093fba8de4",
@@ -19762,7 +20652,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.57,
+  "price_eur_foil": null
  },
  {
   "id": "236c4e0d-1a54-4024-85ef-4d73028bfb87",
@@ -19806,7 +20698,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.5,
+  "price_eur_foil": null
  },
  {
   "id": "1219d294-22b3-45de-91d9-8d80e27c2fd6",
@@ -19850,7 +20744,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.12,
+  "price_eur_foil": null
  },
  {
   "id": "978410dd-aace-4a70-8028-6dd11c14156e",
@@ -19894,7 +20790,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "348d4546-3da5-4f78-82f3-9a79d2f9b0d1",
@@ -19938,7 +20836,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.23,
+  "price_eur_foil": null
  },
  {
   "id": "be938240-214d-4726-ba2a-aaedc5bbe7ba",
@@ -19982,7 +20882,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": null
  },
  {
   "id": "01c2b71a-492d-431c-90ba-173781ba8815",
@@ -20026,7 +20928,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.91,
+  "price_eur_foil": null
  },
  {
   "id": "ad09a5c2-3081-4d5d-9c0f-037e045e9045",
@@ -20070,7 +20974,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "f3b48473-b53d-4c85-b970-7ee09a1eefd2",
@@ -20114,7 +21020,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.56,
+  "price_eur_foil": null
  },
  {
   "id": "9ce2aa8e-b0c4-4e22-84eb-94b9e5ca6f76",
@@ -20158,7 +21066,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": null
  },
  {
   "id": "5bcf7495-a8af-4c7f-a27d-be27748f64e0",
@@ -20202,7 +21112,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 4.94,
+  "price_eur_foil": null
  },
  {
   "id": "fd5a8a4c-4d66-48a1-bc3e-caaa2dbb64d4",
@@ -20246,7 +21158,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "fda23b02-c650-4092-a35d-ae330547c425",
@@ -20290,7 +21204,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": null
  },
  {
   "id": "4ae1ec4a-5367-4663-841b-4038ae30a690",
@@ -20334,7 +21250,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.34,
+  "price_eur_foil": null
  },
  {
   "id": "284fe591-88e6-46f0-8b9c-9ec7d143a2d0",
@@ -20378,7 +21296,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.36,
+  "price_eur_foil": null
  },
  {
   "id": "22b8fad5-bb39-4a1b-9f9b-c0c9cf8228bb",
@@ -20422,7 +21342,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": null
  },
  {
   "id": "a06fe501-0e25-46ee-8ed8-055f3bf636cd",
@@ -20466,7 +21388,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "e7674039-7640-4f70-84e9-d1fa76a59dbe",
@@ -20510,7 +21434,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "dae88c31-77a5-40aa-84be-d74b4545a6ee",
@@ -20554,7 +21480,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "33a37435-bd6c-4330-8138-98a2afa36e54",
@@ -20598,7 +21526,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": null
  },
  {
   "id": "4bb9c7e1-46a6-4acf-8415-221d9c9d9d23",
@@ -20642,7 +21572,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "39fe8402-2f70-4498-a0b6-6a9dd0e2848f",
@@ -20686,7 +21618,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": null
  },
  {
   "id": "5f4fa21b-4733-49a6-b751-779b8325c4d2",
@@ -20730,7 +21664,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "1131c841-d736-4c97-9c80-7e61fa30079d",
@@ -20774,7 +21710,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "930bc0f5-758a-49a7-ab23-5b74802bcddb",
@@ -20818,7 +21756,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.06,
+  "price_eur_foil": null
  },
  {
   "id": "1b2c1bf2-d03a-4cd5-ab51-26c928949497",
@@ -20862,7 +21802,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.6,
+  "price_eur_foil": null
  },
  {
   "id": "b1fe4252-f5f8-405a-82c4-2c7b35e7e7fb",
@@ -20906,7 +21848,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.46,
+  "price_eur_foil": null
  },
  {
   "id": "9ce66ebc-b39f-4b40-9d95-981629a5dd06",
@@ -20950,7 +21894,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.78,
+  "price_eur_foil": null
  },
  {
   "id": "f4f7cc5b-a52a-470b-8970-260b61c91ad5",
@@ -20994,7 +21940,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.73,
+  "price_eur_foil": null
  },
  {
   "id": "9df4b5a2-95bf-4268-9d75-6065176651d1",
@@ -21038,7 +21986,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.6,
+  "price_eur_foil": null
  },
  {
   "id": "4c861c4c-0520-46d9-b281-63a1188417dc",
@@ -21082,7 +22032,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.72,
+  "price_eur_foil": null
  },
  {
   "id": "99fbb6f1-0584-45c2-b4c5-0431447913d4",
@@ -21126,7 +22078,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "a207957a-16e4-4830-a101-39bcd4a46e61",
@@ -21170,7 +22124,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.26,
+  "price_eur_foil": null
  },
  {
   "id": "f50acbb6-b295-4aaa-bd75-7a94b704b945",
@@ -21214,7 +22170,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.88,
+  "price_eur_foil": null
  },
  {
   "id": "0851660f-fa02-4f08-b28b-10279c58d4e4",
@@ -21258,7 +22216,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "8e47061a-5505-4fe3-8caa-b0279b26e9b2",
@@ -21302,7 +22262,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.88,
+  "price_eur_foil": null
  },
  {
   "id": "5b4ce244-d34f-4e96-9fe5-a0a8cefb92c7",
@@ -21346,7 +22308,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "49277723-84df-4842-a8e5-cdf1c1aa8161",
@@ -21390,7 +22354,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 3.57,
+  "price_eur_foil": null
  },
  {
   "id": "5d659b0c-dc93-464f-847f-2af075caf145",
@@ -21434,7 +22400,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "bc50f65f-1866-4fa6-b318-1d981845723b",
@@ -21478,7 +22446,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "9f67b38f-275c-459d-ab9c-4851106ec732",
@@ -21522,7 +22492,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "08866f84-406d-4372-9893-ba22690a48ef",
@@ -21566,7 +22538,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "6c28687d-b96a-4d3c-a6cb-99fbae6a384b",
@@ -21610,7 +22584,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "df087751-b8bf-4db0-a571-fb32f596fc2e",
@@ -21654,7 +22630,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "779abd27-985f-4bb9-9330-38d49bf52903",
@@ -21698,7 +22676,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 4.28,
+  "price_eur_foil": null
  },
  {
   "id": "a9118fbe-f19c-4a65-a6ac-1c8a6308628d",
@@ -21742,7 +22722,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "7aeddfc1-38b0-4491-92f1-0a9989a53439",
@@ -21786,7 +22768,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "717b0d6b-fa62-46d2-a061-7161d3255c98",
@@ -21830,7 +22814,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "7fdef0b6-a3b9-4752-bce6-53c0140a1693",
@@ -21874,7 +22860,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "ed235727-7e60-4b37-8947-4b3613711c4d",
@@ -21918,7 +22906,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.12,
+  "price_eur_foil": null
  },
  {
   "id": "4e5d5649-3e30-4aca-80f8-5a7522d366da",
@@ -21962,7 +22952,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 5.97,
+  "price_eur_foil": null
  },
  {
   "id": "8fb860f9-3729-436e-adfb-c98c2a389d5d",
@@ -22006,7 +22998,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.45,
+  "price_eur_foil": null
  },
  {
   "id": "d105068a-d4f1-4971-b5a0-72806a798497",
@@ -22050,7 +23044,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.46,
+  "price_eur_foil": null
  },
  {
   "id": "9a34ac23-e318-4c0b-ab4c-e1eaa0e2547e",
@@ -22094,7 +23090,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.35,
+  "price_eur_foil": null
  },
  {
   "id": "1abcafa9-0f27-482f-95a9-24520f0106b8",
@@ -22138,7 +23136,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.34,
+  "price_eur_foil": null
  },
  {
   "id": "64d2d473-9157-408a-b088-1489306c1912",
@@ -22182,7 +23182,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "1beee53e-9380-481e-86a6-d13645a6a5a5",
@@ -22226,7 +23228,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.45,
+  "price_eur_foil": null
  },
  {
   "id": "a822129c-0699-40e2-8639-c1a609a5ba3b",
@@ -22270,7 +23274,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 4.3,
+  "price_eur_foil": null
  },
  {
   "id": "029fb369-f5ef-4768-8c0b-23d3cfd023d9",
@@ -22314,7 +23320,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.36,
+  "price_eur_foil": null
  },
  {
   "id": "c7fb7ff7-aef0-4893-a120-e17a082cd07f",
@@ -22358,7 +23366,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.32,
+  "price_eur_foil": null
  },
  {
   "id": "79696e14-837f-431a-b5fb-fe3620bb8262",
@@ -22402,7 +23412,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.78,
+  "price_eur_foil": null
  },
  {
   "id": "0f7b46ae-2cd4-407b-a97a-d112a5b6b86b",
@@ -22446,7 +23458,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.92,
+  "price_eur_foil": null
  },
  {
   "id": "2dc4dfe7-ae80-4a6e-b588-fd497c35fe37",
@@ -22490,7 +23504,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.48,
+  "price_eur_foil": null
  },
  {
   "id": "5c617d99-354a-4586-9a09-1671c0e88754",
@@ -22534,7 +23550,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.4,
+  "price_eur_foil": null
  },
  {
   "id": "08b0d5aa-8d76-4951-a326-0f4078fdfd28",
@@ -22578,7 +23596,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "fd1f14be-8c7c-471d-93e3-5856f48ff94a",
@@ -22622,7 +23642,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.0,
+  "price_eur_foil": null
  },
  {
   "id": "50507ec0-72ff-4110-a73c-b6f256ac2e35",
@@ -22666,7 +23688,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 7.11,
+  "price_eur_foil": null
  },
  {
   "id": "69dd3fa7-5498-4b88-bc98-6de8ca5fe007",
@@ -22710,7 +23734,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "82ce1102-a88c-46ff-9fc1-7153beb50b6a",
@@ -22754,7 +23780,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": null
  },
  {
   "id": "77df073b-49dc-4743-82a3-d595bc938761",
@@ -22798,7 +23826,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": null
  },
  {
   "id": "a2de3346-9647-4540-ba41-e67c24ddf141",
@@ -22842,7 +23872,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": null
  },
  {
   "id": "abcd3daa-dd34-4d7d-b3ed-839f5e438cd7",
@@ -22886,7 +23918,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": null
  },
  {
   "id": "c2bc3f62-1e3a-4ec3-a83b-f6547d7c7b0d",
@@ -22930,7 +23964,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.81,
+  "price_eur_foil": null
  },
  {
   "id": "5d33aeaa-df27-4c41-9926-79e9dc6a9c69",
@@ -22974,7 +24010,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "d9cf2b77-afb0-4c21-bc23-6942ec292035",
@@ -23018,7 +24056,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": null
  },
  {
   "id": "597dd04f-cb3d-4224-8e56-21f66485df47",
@@ -23062,7 +24102,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": null
  },
  {
   "id": "2cddc851-fef6-4a45-818c-97d3dfc4140d",
@@ -23106,7 +24148,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "9ac9c12b-5135-4124-b01b-336560907940",
@@ -23150,7 +24194,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.5,
+  "price_eur_foil": null
  },
  {
   "id": "bf544abb-c338-4da4-bb77-eddd3aaacc9a",
@@ -23194,7 +24240,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.6,
+  "price_eur_foil": null
  },
  {
   "id": "bcb5a670-7c8f-4b76-82c6-c89abffbb4bd",
@@ -23238,7 +24286,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "7f6d8cae-face-4bff-8c0a-348cefe1e9dd",
@@ -23282,7 +24332,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "a0ecbdad-aebf-421d-a71e-e112f8c0e4bb",
@@ -23326,7 +24378,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "44f78cab-06d4-4786-987f-4d0d15654fd5",
@@ -23370,7 +24424,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.9,
+  "price_eur_foil": null
  },
  {
   "id": "8a47d5f6-e08d-4311-97d0-16f7737b83a0",
@@ -23414,7 +24470,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.04,
+  "price_eur_foil": null
  },
  {
   "id": "351f791c-4bee-4fce-aee4-d0214ca0c945",
@@ -23458,7 +24516,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "47c2b572-b54a-444c-8d74-b005e94d751f",
@@ -23502,7 +24562,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "5277f73d-b964-4ce6-823d-ce0fbf0a2d28",
@@ -23546,7 +24608,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": null
  },
  {
   "id": "bcab849e-336d-490f-8dd2-0936fba2afbe",
@@ -23590,7 +24654,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.55,
+  "price_eur_foil": null
  },
  {
   "id": "7b280a73-9246-4da4-8fc1-a5683edd8aab",
@@ -23634,7 +24700,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.38,
+  "price_eur_foil": null
  },
  {
   "id": "a7659f3f-a26a-4097-88ea-d72c3abb5e1d",
@@ -23678,7 +24746,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "7ac60dfc-040e-4cc1-a967-3c915770fc8e",
@@ -23722,7 +24792,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "1028b210-db71-4bbd-8bd7-59dc4032f426",
@@ -23766,7 +24838,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "67e44005-d0a5-49d2-b2f7-4b991ffbb5ce",
@@ -23810,7 +24884,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "4d62258f-135b-44ca-a27d-3c2267f408a5",
@@ -23854,7 +24930,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": null
  },
  {
   "id": "d504caa5-e557-4e69-8899-44760b88f076",
@@ -23898,7 +24976,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": null
  },
  {
   "id": "d75d748f-38c3-4a7f-8211-db62d5314180",
@@ -23942,7 +25022,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.41,
+  "price_eur_foil": null
  },
  {
   "id": "7f33cce1-1484-43da-a825-b090eb5403a4",
@@ -23986,7 +25068,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.79,
+  "price_eur_foil": null
  },
  {
   "id": "09eeb9f5-4149-47c6-bfd0-472237043672",
@@ -24030,7 +25114,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.83,
+  "price_eur_foil": null
  },
  {
   "id": "9f89d20d-bb8b-4da8-97c7-1058c1b60325",
@@ -24074,7 +25160,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": null
  },
  {
   "id": "afe2ebec-0310-4b2f-ace4-fb293a1e4837",
@@ -24118,7 +25206,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "8ca61142-d0ed-42cb-9a51-0e44151f2b44",
@@ -24162,7 +25252,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": null
  },
  {
   "id": "cf5f5ffc-fad0-4f7b-b2a3-cc10ca445d40",
@@ -24206,7 +25298,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "de5279fc-2532-4e66-bc44-ca395e106ab0",
@@ -24250,7 +25344,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "e99933e3-9237-45e8-b067-44367fc21430",
@@ -24294,7 +25390,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "790d5244-5042-4b84-b16d-be0f87d11fad",
@@ -24338,7 +25436,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "2d0812ef-a3b7-49d0-b1b8-ec0c8891b887",
@@ -24382,7 +25482,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "4dd83a5d-1908-4141-8449-fac5e77cd6c0",
@@ -24426,7 +25528,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "f1ac3b7f-a1db-49df-ba02-fc80cb2f70af",
@@ -24470,7 +25574,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "ce3a0ad9-6b7a-470c-8e49-4121fea72c89",
@@ -24514,7 +25620,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": null
  },
  {
   "id": "977bf5a1-81f2-4c5b-a227-347bf8e19554",
@@ -24558,7 +25666,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": null
  },
  {
   "id": "b8cd0293-d140-4f80-804c-019957c1f49a",
@@ -24602,7 +25712,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.44,
+  "price_eur_foil": null
  },
  {
   "id": "73a2e070-f375-4558-a982-01f6f4e902e9",
@@ -24646,7 +25758,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.43,
+  "price_eur_foil": null
  },
  {
   "id": "3d575770-cb81-4353-b49e-cdaca7a5162f",
@@ -24690,7 +25804,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": null
  },
  {
   "id": "eb18e293-a58b-4a49-b601-88a30ffa9b99",
@@ -24734,7 +25850,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": null
  },
  {
   "id": "a4e3f65d-8d73-4fd1-9de4-813ba6e40940",
@@ -24778,7 +25896,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": null
  },
  {
   "id": "a4fa7ef6-4a14-4820-b646-8945ff3b4786",
@@ -24822,7 +25942,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": null
  },
  {
   "id": "4d02658c-bbe8-4673-8b44-0b24e0155a85",
@@ -24866,7 +25988,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "e45eff2e-c624-4c59-b192-a9d7dc2eeeba",
@@ -24910,7 +26034,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "0972c465-0369-4ac2-9912-2898fad1bdba",
@@ -24954,7 +26080,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "30d0754a-f7bb-4c13-b7e3-28046db48cc1",
@@ -24998,7 +26126,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "7ddf0ca3-dc64-47ac-87b9-4bd85b173885",
@@ -25042,7 +26172,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "60057719-f597-4f2e-a75c-663f98a08573",
@@ -25086,7 +26218,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": null
  },
  {
   "id": "35b403ee-62cc-4f67-911e-4bf26e495374",
@@ -25130,7 +26264,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 1.62,
+  "price_eur_foil": null
  },
  {
   "id": "81e28e36-893f-4b34-aef7-5f2c15dc231c",
@@ -25174,7 +26310,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": null
  },
  {
   "id": "3eb96a33-46db-4d84-9a7f-9bb6a19a1a93",
@@ -25218,7 +26356,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": null
  },
  {
   "id": "2dbd21b1-d6cf-4d10-8a31-aa52208c95d7",
@@ -25262,7 +26402,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 3.48,
+  "price_eur_foil": null
  },
  {
   "id": "4b163c67-2e88-4181-90c9-3f15eba59d03",
@@ -25306,7 +26448,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": null
  },
  {
   "id": "5b0275b1-64bc-4c78-ac1a-9bd31399b946",
@@ -25350,7 +26494,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.66,
+  "price_eur_foil": null
  },
  {
   "id": "84b648e4-d9c2-426f-8b2a-ef88e9eb25ac",
@@ -25394,7 +26540,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "defd23e2-9459-45b1-ba18-3661b220fac6",
@@ -25438,7 +26586,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": null
  },
  {
   "id": "fc99e7b0-0f2c-4a2b-938b-abd31b71cd4f",
@@ -25482,7 +26632,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "3ede4ff9-b0f6-4075-b7ad-3ec90497d0f6",
@@ -25526,7 +26678,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": null
  },
  {
   "id": "04dc78e1-50d8-493a-9c1f-9c1d95343fff",
@@ -25570,7 +26724,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "f1cb4775-8e14-4c83-a417-40d1432ac90a",
@@ -25614,7 +26770,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": null
  },
  {
   "id": "c219a41a-d5f4-42f3-841c-2518be583198",
@@ -25658,7 +26816,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 2.37,
+  "price_eur_foil": null
  },
  {
   "id": "353758ce-419f-4f6a-93f4-42a746c4a26d",
@@ -25702,7 +26862,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": null
  },
  {
   "id": "672b6ef0-a21a-4bf0-9058-58d9a353ed57",
@@ -25746,7 +26908,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": null
  },
  {
   "id": "b81c3f08-9319-4265-a75b-5b12b09aba89",
@@ -25791,7 +26955,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.33,
+  "price_eur_foil": 6.51
  },
  {
   "id": "743ee254-07f1-4d13-9ec7-6cb6358b9303",
@@ -25836,7 +27002,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.41,
+  "price_eur_foil": 3.43
  },
  {
   "id": "8b52f14c-e6b9-4ad0-8515-6644b201e2ea",
@@ -25881,7 +27049,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 12.03,
+  "price_eur_foil": 12.81
  },
  {
   "id": "417d0d15-4c90-45dc-86f8-4c17fc2dd3f4",
@@ -25926,7 +27096,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.66,
+  "price_eur_foil": 3.87
  },
  {
   "id": "de95250d-294d-4a0e-8049-e0a877078e2e",
@@ -25971,7 +27143,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.13,
+  "price_eur_foil": 3.46
  },
  {
   "id": "cbba90d0-c45e-4ef1-ba0e-a2160533e27f",
@@ -26016,7 +27190,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 15.19,
+  "price_eur_foil": 13.01
  },
  {
   "id": "6db60c73-5943-49da-9a8a-f4a382a1c0f0",
@@ -26061,7 +27237,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.36,
+  "price_eur_foil": 8.68
  },
  {
   "id": "bd84f688-a2bb-4f1e-ae24-1a5cf8a05445",
@@ -26106,7 +27284,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.12,
+  "price_eur_foil": 7.03
  },
  {
   "id": "76a9b08e-53f7-48d7-a024-3e2bf2318391",
@@ -26151,7 +27331,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.38,
+  "price_eur_foil": 6.45
  },
  {
   "id": "8a24c7c8-18c6-4e0d-b49b-05c19deaf31e",
@@ -26196,7 +27378,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.96,
+  "price_eur_foil": 1.78
  },
  {
   "id": "230e997e-3736-4afd-8571-1cc1b1d6ed96",
@@ -26241,7 +27425,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.67,
+  "price_eur_foil": 3.99
  },
  {
   "id": "682b9f3c-960b-4600-b650-eefd588071d3",
@@ -26286,7 +27472,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.82,
+  "price_eur_foil": 2.99
  },
  {
   "id": "c358af5d-61e3-4c4d-9d7d-2f3e43210339",
@@ -26331,7 +27519,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 29.06,
+  "price_eur_foil": 26.47
  },
  {
   "id": "2327bf49-348c-44e5-9a6b-97ef1c810079",
@@ -26376,7 +27566,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.65,
+  "price_eur_foil": 5.81
  },
  {
   "id": "daecaf9c-f327-435a-963b-a4631b6cca5c",
@@ -26421,7 +27613,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.41,
+  "price_eur_foil": 1.09
  },
  {
   "id": "00ef8f06-dfcc-4ffa-a054-b0c81b39dcc0",
@@ -26466,7 +27660,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.66,
+  "price_eur_foil": 1.7
  },
  {
   "id": "be6ba2e4-e657-4a2d-8f5f-255376d861b3",
@@ -26511,7 +27707,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 39.19,
+  "price_eur_foil": 38.61
  },
  {
   "id": "9adaef20-1d82-4941-b4bb-a037cf3d63db",
@@ -26556,7 +27754,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.85,
+  "price_eur_foil": 2.01
  },
  {
   "id": "c8c69ad3-e999-4beb-85f5-527a00f482da",
@@ -26601,7 +27801,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.56,
+  "price_eur_foil": 3.99
  },
  {
   "id": "b2a1b5b3-8d7a-4614-b7f9-d13db5654d03",
@@ -26646,7 +27848,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.54,
+  "price_eur_foil": 5.78
  },
  {
   "id": "4fcd08ad-4dac-4236-9030-f59e473b3ec7",
@@ -26691,7 +27895,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.33,
+  "price_eur_foil": 4.76
  },
  {
   "id": "2bca2cd2-4d4a-44e4-87c3-732692b77921",
@@ -26736,7 +27942,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 26.56,
+  "price_eur_foil": 28.56
  },
  {
   "id": "ec6d3402-eed6-44be-a572-9ec0678af403",
@@ -26781,7 +27989,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.75,
+  "price_eur_foil": 10.98
  },
  {
   "id": "7263ef64-dc8d-4a58-91b9-ff4f718e53ae",
@@ -26826,7 +28036,9 @@ const CARDS_DATA = [
    "Borderless",
    "Scene Card",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.25,
+  "price_eur_foil": 2.06
  },
  {
   "id": "545c98b3-dc78-4070-8dcb-f6a246abce09",
@@ -26869,7 +28081,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 168.73
  },
  {
   "id": "99cb1ba3-e16b-414d-8682-fb3b2f350ea2",
@@ -26912,7 +28126,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 126.41
  },
  {
   "id": "b62cd4af-7d7a-4b0b-b2d6-2086281c7b21",
@@ -26955,7 +28171,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 73.19
  },
  {
   "id": "4790a887-26dd-4a5f-9b85-10346cb6328b",
@@ -26998,7 +28216,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 124.6
  },
  {
   "id": "f8417267-c953-4d58-8a9e-af3d0da01509",
@@ -27041,7 +28261,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 83.91
  },
  {
   "id": "aa1bd238-a9f5-4145-9668-eb49a3b4c2bf",
@@ -27084,7 +28306,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 119.36
  },
  {
   "id": "b39a7df7-12b8-4537-9f17-25dfc6d2a5c6",
@@ -27127,7 +28351,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 38.7
  },
  {
   "id": "8a38634f-a100-4493-87c3-0ecc51ca565d",
@@ -27170,7 +28396,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 123.61
  },
  {
   "id": "356432cf-a17c-4147-9d02-921960032d0e",
@@ -27213,7 +28441,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 28.47
  },
  {
   "id": "af4481b1-43b0-43e6-a9ea-f4ec0a551e61",
@@ -27256,7 +28486,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 48.31
  },
  {
   "id": "f8ed092f-3a85-45d5-b986-2d400d6e1bad",
@@ -27299,7 +28531,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 51.11
  },
  {
   "id": "8e036ebd-1749-4c41-9840-8dc5f69d6c86",
@@ -27342,7 +28576,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 26.15
  },
  {
   "id": "a8d4a0cf-9bbc-43da-a88c-47cb43fe13af",
@@ -27385,7 +28621,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.18
  },
  {
   "id": "95ef40f4-7d88-4fb6-bfdd-8d07c96e4ff8",
@@ -27428,7 +28666,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.46
  },
  {
   "id": "6c0ea7e6-0659-4944-a997-f46e00340542",
@@ -27471,7 +28711,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.96
  },
  {
   "id": "9a58d03b-1b47-4d3c-9d8a-18f20c8f978b",
@@ -27514,7 +28756,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.83
  },
  {
   "id": "0a45560e-ce25-45a5-aa43-aa33d1964cd8",
@@ -27557,7 +28801,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.92
  },
  {
   "id": "9f8b95bd-c709-4259-b3fe-92119b92acae",
@@ -27601,7 +28847,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 11.77
  },
  {
   "id": "4a2dfd72-a8f4-4e43-b5de-caf6a129a51a",
@@ -27645,7 +28893,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.47,
+  "price_eur_foil": null
  },
  {
   "id": "aae0b3ae-ed57-4d17-8876-736aa22186cf",
@@ -27689,7 +28939,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": null
  },
  {
   "id": "605b2218-0eab-4c9d-a5d8-7fab342137a0",
@@ -27733,7 +28985,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.48,
+  "price_eur_foil": null
  },
  {
   "id": "95318d85-4a08-47ac-a43d-ea83c0bea81c",
@@ -27777,7 +29031,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 23.33,
+  "price_eur_foil": 31.77
  },
  {
   "id": "d55a4c02-1aa4-454c-9041-84937377a53b",
@@ -27821,7 +29077,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.65,
+  "price_eur_foil": 1.63
  },
  {
   "id": "1a67a991-1e52-4676-a2e3-2bc7aa943ab3",
@@ -27865,7 +29123,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.31
  },
  {
   "id": "e86328b6-ded2-41df-8b6e-4a770e7b171e",
@@ -27909,7 +29169,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.73,
+  "price_eur_foil": 2.32
  },
  {
   "id": "3123d16c-e1e6-4659-a7a3-2ec6efc6bf08",
@@ -27953,7 +29215,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.1
  },
  {
   "id": "f2596767-7d19-4110-86ed-3cfc93ac7483",
@@ -27997,7 +29261,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.23
  },
  {
   "id": "ffe0596f-ef99-4862-9386-0fe455259995",
@@ -28041,7 +29307,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.34
  },
  {
   "id": "77d82764-563c-4bc2-b568-625ec7215e0d",
@@ -28085,7 +29353,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.18
  },
  {
   "id": "240e1466-bd02-423d-b829-234dcd2bfab2",
@@ -28129,7 +29399,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.28
  },
  {
   "id": "2cf7e8a3-fad7-413d-b17c-7519a9cf5fb5",
@@ -28173,7 +29445,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 21.45,
+  "price_eur_foil": 31.49
  },
  {
   "id": "7387bca7-f496-45da-a0ac-6be049303a8f",
@@ -28217,7 +29491,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.15
  },
  {
   "id": "7604b534-5480-42fa-bc36-bbae730f8582",
@@ -28261,7 +29537,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.15
  },
  {
   "id": "5f51c853-949d-44e9-a3a2-02e1ce69a147",
@@ -28305,7 +29583,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.33
  },
  {
   "id": "d4df4373-0ee6-44e3-81c6-0881c070014c",
@@ -28349,7 +29629,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.21
  },
  {
   "id": "f58840dc-c641-4092-8b67-9c0d449af715",
@@ -28393,7 +29675,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.32
  },
  {
   "id": "8c0f9306-2058-476d-a711-bd37a6e15e42",
@@ -28437,7 +29721,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.47,
+  "price_eur_foil": 0.93
  },
  {
   "id": "96630531-8eb7-4e3e-8d63-60c562a5571b",
@@ -28481,7 +29767,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.31
  },
  {
   "id": "e17c0d27-e88d-4ba9-acbb-3f916cee3d7e",
@@ -28525,7 +29813,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.12
  },
  {
   "id": "900cdf11-b42e-4dcc-97c3-2e4d8e406a70",
@@ -28569,7 +29859,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.06
  },
  {
   "id": "0c730a3b-334e-466b-bb9b-4b41fce2af6d",
@@ -28613,7 +29905,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.76
  },
  {
   "id": "076a8eca-ed73-4ee9-aab4-d9d43d394ee6",
@@ -28657,7 +29951,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.13
  },
  {
   "id": "29606c49-e1a4-49c3-883b-9122c08bbbc7",
@@ -28701,7 +29997,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.11
  },
  {
   "id": "ff976428-2145-4630-aab1-08870b90b2f0",
@@ -28745,7 +30043,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": 0.72
  },
  {
   "id": "59c4a1a2-623c-43b2-8005-ecb5c6436c10",
@@ -28789,7 +30089,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.17
  },
  {
   "id": "b64dc6d7-dd01-4e66-9099-4c90865448df",
@@ -28833,7 +30135,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.17
  },
  {
   "id": "6822144f-f0eb-4e10-a217-52cad36d2973",
@@ -28877,7 +30181,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": 0.41
  },
  {
   "id": "caa838a7-60a9-4791-af5b-194f7574c4c8",
@@ -28921,7 +30227,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": 0.52
  },
  {
   "id": "446506c5-5e1d-4b42-aef3-ea247d7881ef",
@@ -28965,7 +30273,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.11
  },
  {
   "id": "62e299b0-9ef6-49d3-aa79-384325fed89e",
@@ -29009,7 +30319,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": 0.25
  },
  {
   "id": "494e68e9-ecba-4482-82bc-207ad59144c1",
@@ -29053,7 +30365,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.39,
+  "price_eur_foil": 1.79
  },
  {
   "id": "bdb5452e-d97f-409b-91d0-2664f39b09b8",
@@ -29097,7 +30411,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.16
  },
  {
   "id": "da6d9529-3cb0-4adc-8209-b9b02db3bf54",
@@ -29141,7 +30457,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.12
  },
  {
   "id": "399bb699-e61d-4b41-b6e9-e594cbad6194",
@@ -29185,7 +30503,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.15
  },
  {
   "id": "06a972a4-0c1b-4f12-a5a5-fdea47c4cd35",
@@ -29229,7 +30549,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": 0.54
  },
  {
   "id": "00546117-018a-4286-bc20-b5446c5be56f",
@@ -29273,7 +30595,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.16
  },
  {
   "id": "44d23652-077e-4c1f-b640-b284685db911",
@@ -29317,7 +30641,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 11.26,
+  "price_eur_foil": 14.55
  },
  {
   "id": "e44497a8-067e-454e-a9c0-684f03df55ff",
@@ -29361,7 +30687,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.13
  },
  {
   "id": "39504a0e-f63f-4907-afd7-c4492f6b8a3b",
@@ -29405,7 +30733,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.6,
+  "price_eur_foil": 1.13
  },
  {
   "id": "2625c00d-0a51-4481-bf36-cf13a2546242",
@@ -29449,7 +30779,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.87,
+  "price_eur_foil": 1.69
  },
  {
   "id": "c9e6b374-3e44-4df7-b0a3-4ef98dc08267",
@@ -29493,7 +30825,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.14
  },
  {
   "id": "2df6f515-9d21-4769-b1c4-c219611bccbb",
@@ -29537,7 +30871,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.25
  },
  {
   "id": "30db372e-0b4c-4e16-9667-bf3fda666f72",
@@ -29581,7 +30917,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.12
  },
  {
   "id": "19bd0885-baaa-40f2-9c59-b1ea53807540",
@@ -29625,7 +30963,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.81,
+  "price_eur_foil": 3.72
  },
  {
   "id": "1867b5cb-2bb0-4f49-b302-036fdffa2344",
@@ -29669,7 +31009,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.14
  },
  {
   "id": "f21f9161-5945-40da-8da0-446f6a4a1c23",
@@ -29713,7 +31055,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.44
  },
  {
   "id": "bfa4e927-1d6f-4a64-9801-7d168a5ef3f6",
@@ -29757,7 +31101,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.33,
+  "price_eur_foil": 1.36
  },
  {
   "id": "932b865c-bfe7-4bb7-82e9-2403cf0e0522",
@@ -29801,7 +31147,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.37
  },
  {
   "id": "ec195607-ac30-4931-acfd-f9d8ac8b047f",
@@ -29845,7 +31193,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.13
  },
  {
   "id": "d92bce20-308e-4841-aaf8-8e20698292e7",
@@ -29889,7 +31239,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.05
  },
  {
   "id": "ba752243-2727-4b8a-8e21-e70becfd4ff3",
@@ -29933,7 +31285,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.12
  },
  {
   "id": "950ee302-5512-43c5-ac7c-b2b06f4177bf",
@@ -29977,7 +31331,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.61
  },
  {
   "id": "aec83c9a-8ec4-4a5a-b27f-0e74a2b3d21e",
@@ -30021,7 +31377,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.19
  },
  {
   "id": "896ee6e9-15a9-4974-b576-50f4759fac38",
@@ -30065,7 +31423,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.18
  },
  {
   "id": "cce4eb99-d960-4ab7-911a-bb4ea74d1775",
@@ -30109,7 +31469,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.18,
+  "price_eur_foil": 4.44
  },
  {
   "id": "ad304c9c-943f-442f-bb82-ff378ad7d7ba",
@@ -30153,7 +31515,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.08
  },
  {
   "id": "9dabd626-7ec3-4913-babb-d5d3fd5e32d5",
@@ -30197,7 +31561,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.07
  },
  {
   "id": "ae612312-3a8e-495f-8730-deaaf7505ca1",
@@ -30241,7 +31607,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.19
  },
  {
   "id": "1f163763-4802-4a96-a5bc-f3c381db7b5c",
@@ -30285,7 +31653,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.38,
+  "price_eur_foil": 0.98
  },
  {
   "id": "4a6976f2-0bd5-449a-8fcf-f5a732ce22c1",
@@ -30329,7 +31699,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.3,
+  "price_eur_foil": 0.99
  },
  {
   "id": "ae875471-346c-4a76-b26f-b7205dad5b80",
@@ -30373,7 +31745,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": 0.49
  },
  {
   "id": "44921b2e-5938-4f63-92b9-0b719a2f8c68",
@@ -30417,7 +31791,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.21
  },
  {
   "id": "1dd61cf6-2fb5-4cff-ab00-7677ac85774c",
@@ -30461,7 +31837,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.48,
+  "price_eur_foil": 0.63
  },
  {
   "id": "a753abfc-35d3-4faf-ab35-3b51aa778174",
@@ -30505,7 +31883,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": 0.4
  },
  {
   "id": "e3998132-5746-4dde-9529-97d3ad7d7361",
@@ -30549,7 +31929,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.16
  },
  {
   "id": "a75a6ecc-a6a5-462c-bd92-ae57dde9b965",
@@ -30593,7 +31975,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.1
  },
  {
   "id": "61784cbd-92e9-43c7-a1a8-4004b1bf4dae",
@@ -30637,7 +32021,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.27
  },
  {
   "id": "6aedac12-3714-4a81-bd4d-1d2555c66f78",
@@ -30681,7 +32067,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.23
  },
  {
   "id": "ebd733f0-8883-434a-b36c-ef76b091fe8e",
@@ -30725,7 +32113,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.09
  },
  {
   "id": "4572884d-0c0e-41e7-b219-f76b95fdbd01",
@@ -30769,7 +32159,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.14
  },
  {
   "id": "a12ff7c3-6ae0-4098-9240-ff3fd16a5288",
@@ -30813,7 +32205,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.14
  },
  {
   "id": "516940c7-c271-4f64-af75-c7ba98548382",
@@ -30857,7 +32251,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.11
  },
  {
   "id": "08ab5220-e5c1-472e-8217-97fd60e1773c",
@@ -30901,7 +32297,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.07
  },
  {
   "id": "8ac3d2c9-5978-4cfb-a746-c901decff093",
@@ -30945,7 +32343,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.15
  },
  {
   "id": "c96cae63-7625-48e3-aaba-5b1632a8642d",
@@ -30989,7 +32389,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.22
  },
  {
   "id": "0d80c511-2f4d-4f77-8143-7b49b2b19fae",
@@ -31033,7 +32435,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.15
  },
  {
   "id": "6678501e-6349-4e37-ab4c-a31a3d408d52",
@@ -31077,7 +32481,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.18
  },
  {
   "id": "ea7f26a9-b203-4ee7-88f1-3d9c77a25bcb",
@@ -31121,7 +32527,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.96,
+  "price_eur_foil": 1.38
  },
  {
   "id": "a80511f8-7cb1-4974-afde-8a5cebe13ad7",
@@ -31165,7 +32573,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.22
  },
  {
   "id": "2270642d-fe2a-4265-aff0-a24a43ebe0a1",
@@ -31209,7 +32619,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.19
  },
  {
   "id": "83e1cd8d-5b97-427a-be75-2a1947f9c59b",
@@ -31253,7 +32665,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.14
  },
  {
   "id": "c2dcfd0a-3f52-4616-a09a-fd2db8b6b93e",
@@ -31297,7 +32711,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.18
  },
  {
   "id": "aa5086e0-e2f2-498f-9035-1b31e1d21e0a",
@@ -31341,7 +32757,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.17
  },
  {
   "id": "14379198-9a0a-4853-9d51-fb074a24b1c0",
@@ -31385,7 +32803,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.13
  },
  {
   "id": "b40a055f-ea66-44d4-b058-a328a3d10994",
@@ -31429,7 +32849,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.15
  },
  {
   "id": "e0af8436-797b-4e1f-b21a-d8e93701c3c9",
@@ -31473,7 +32895,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.12,
+  "price_eur_foil": 2.68
  },
  {
   "id": "aef218fa-13a4-4653-95d6-6b3ef1b33a92",
@@ -31517,7 +32941,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.36,
+  "price_eur_foil": 6.2
  },
  {
   "id": "162a415c-5465-497e-8f4e-c6f09681641d",
@@ -31561,7 +32987,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.1
  },
  {
   "id": "58ccdcfc-a669-480f-bded-4273cfaf2045",
@@ -31605,7 +33033,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.15
  },
  {
   "id": "4627072e-9c72-4084-8021-690777342548",
@@ -31649,7 +33079,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.9,
+  "price_eur_foil": 1.41
  },
  {
   "id": "35e8f140-055f-4fc7-a765-fb030d828214",
@@ -31693,7 +33125,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": 0.55
  },
  {
   "id": "026e7167-d665-43d0-a51e-8df2d68cdb5e",
@@ -31737,7 +33171,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.04,
+  "price_eur_foil": 1.8
  },
  {
   "id": "c969bd0f-f174-4e2f-b95c-c9ccd5d0b8ba",
@@ -31781,7 +33217,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": 0.25
  },
  {
   "id": "688fcf8a-0a44-416a-8086-83acf9a6fe69",
@@ -31825,7 +33263,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.25
  },
  {
   "id": "2520ab23-a068-4462-b261-2754409b4108",
@@ -31869,7 +33309,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.5,
+  "price_eur_foil": 5.15
  },
  {
   "id": "b50dcc7c-260f-4d8c-9a9e-9244ec23a91e",
@@ -31913,7 +33355,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.28
  },
  {
   "id": "0f93b6ac-54ce-45d0-8549-19307406e6e5",
@@ -31957,7 +33401,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.78,
+  "price_eur_foil": 4.12
  },
  {
   "id": "13abd96c-d1af-43d0-b3a4-ac3db20e3b51",
@@ -32001,7 +33447,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.25
  },
  {
   "id": "eb98cbc3-749c-44f4-974c-00be1286d69e",
@@ -32045,7 +33493,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": 0.14
  },
  {
   "id": "f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8",
@@ -32089,7 +33539,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.25
  },
  {
   "id": "01c5bafe-c995-4cef-90fb-7ccb95858511",
@@ -32133,7 +33585,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "e1b0739a-dcc4-4034-96d7-69e551b2f36b",
@@ -32177,7 +33631,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.23
  },
  {
   "id": "bbf01770-6d0f-4015-b4b4-a74a53cb767a",
@@ -32221,7 +33677,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.16
  },
  {
   "id": "a4ee8ba5-6a79-4652-b2a4-a3dae804bc28",
@@ -32265,7 +33723,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.22
  },
  {
   "id": "8680d052-c07b-4d9b-bda9-b5f69f44f424",
@@ -32309,7 +33769,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.17
  },
  {
   "id": "4ec91fe8-b3da-47fa-b45e-94b62a260aba",
@@ -32353,7 +33815,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": 0.76
  },
  {
   "id": "f8c86be0-e1b3-4a78-9254-238dd936914b",
@@ -32397,7 +33861,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": 0.51
  },
  {
   "id": "e46d8048-03ce-4e07-ba24-f41ba6140a4e",
@@ -32441,7 +33907,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.16
  },
  {
   "id": "f9d25b34-990d-416c-aef7-1b5a73f19dd4",
@@ -32485,7 +33953,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.09
  },
  {
   "id": "a6b5af82-3646-44f9-ac12-1d7fa698f037",
@@ -32529,7 +33999,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.57
  },
  {
   "id": "ae075e71-d33d-4d6c-b4a5-0b47dd6fd196",
@@ -32573,7 +34045,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": 0.35
  },
  {
   "id": "7a50d2ac-101d-41e1-b400-18fa7d2d7125",
@@ -32617,7 +34091,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.28
  },
  {
   "id": "ff2bafe7-4d0f-464d-b7ba-55a54366fc68",
@@ -32661,7 +34137,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.12
  },
  {
   "id": "7475ecf6-23f5-45af-9ef0-ac7923bbc9cb",
@@ -32705,7 +34183,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.12
  },
  {
   "id": "b5eb0064-c7c4-4e3e-add2-b86269de3fb9",
@@ -32749,7 +34229,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.17
  },
  {
   "id": "945006ea-c6a1-4ee5-abb2-387c2b6d3123",
@@ -32793,7 +34275,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.18
  },
  {
   "id": "85eaf5e7-77dc-4842-a70c-ce4ac7f724df",
@@ -32837,7 +34321,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 27.58,
+  "price_eur_foil": 37.71
  },
  {
   "id": "cf7df82f-937a-443f-813f-2bcc6944c5c0",
@@ -32881,7 +34367,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.04
  },
  {
   "id": "f02ce338-4fe2-44b0-a896-3ed7e6c874a3",
@@ -32925,7 +34413,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.2
  },
  {
   "id": "7367b257-1a8c-4593-a307-7116e36e0342",
@@ -32969,7 +34459,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.07
  },
  {
   "id": "c3eb2ae5-10de-4c3d-91c8-8734befc80b2",
@@ -33013,7 +34505,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.15
  },
  {
   "id": "aa4f6703-21f8-4c29-ad5a-5afb54188ade",
@@ -33057,7 +34551,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.19
  },
  {
   "id": "8b1b5f06-e34d-44a3-976e-5157c4b7a0f4",
@@ -33101,7 +34597,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.16,
+  "price_eur_foil": 1.98
  },
  {
   "id": "1a9b8723-4383-4c14-b24d-52863af8703d",
@@ -33145,7 +34643,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.24
  },
  {
   "id": "274788f4-fbf3-4a15-bdc0-f513a2fde30d",
@@ -33189,7 +34689,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.11
  },
  {
   "id": "6de6d23b-7d42-41c1-be1c-010fe43ee586",
@@ -33233,7 +34735,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.2
  },
  {
   "id": "028ef608-acfe-4e9d-90db-eca4411ba78a",
@@ -33277,7 +34781,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.78,
+  "price_eur_foil": 1.42
  },
  {
   "id": "0502c426-5271-4989-8598-5bc159afe79c",
@@ -33321,7 +34827,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.11
  },
  {
   "id": "b65ffce4-bb58-418a-9bad-81533a5f2ba2",
@@ -33365,7 +34873,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.35,
+  "price_eur_foil": 0.55
  },
  {
   "id": "9ba292d5-5139-42ea-950d-0a638445277f",
@@ -33409,7 +34919,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": 0.73
  },
  {
   "id": "1a504dff-5857-4a61-ab99-616d5df7cf5a",
@@ -33453,7 +34965,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.13
  },
  {
   "id": "70f47277-ca47-428a-808f-0fb32e820a71",
@@ -33497,7 +35011,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.12
  },
  {
   "id": "b2e1986c-2852-4843-bdc4-eddb727ba3d4",
@@ -33541,7 +35057,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.09
  },
  {
   "id": "8d8d3903-a7f4-4cd8-8d29-b4a173e4fbb2",
@@ -33585,7 +35103,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.29
  },
  {
   "id": "9a069e96-2786-493d-aca8-f70611435dbe",
@@ -33629,7 +35149,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.59,
+  "price_eur_foil": 4.67
  },
  {
   "id": "13e81e32-7246-46b9-872e-cde77cedd197",
@@ -33673,7 +35195,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.14
  },
  {
   "id": "ea430b17-2014-4b8e-b53f-43bcfc06f7cd",
@@ -33717,7 +35241,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.17,
+  "price_eur_foil": 5.19
  },
  {
   "id": "415ff6a5-61ef-4b37-ae08-e44476300d4a",
@@ -33761,7 +35287,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.73,
+  "price_eur_foil": 2.3
  },
  {
   "id": "98366937-d15b-4a66-b9f6-878d50b63871",
@@ -33805,7 +35333,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.41,
+  "price_eur_foil": 0.68
  },
  {
   "id": "9921f646-e893-44db-ac89-0633c1009788",
@@ -33849,7 +35379,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.53
  },
  {
   "id": "1eb81329-fb7a-4347-b96c-9960a5c48e87",
@@ -33893,7 +35425,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.38,
+  "price_eur_foil": 0.75
  },
  {
   "id": "3af9d100-70ee-4c6c-a762-11a0c4f3ef6f",
@@ -33937,7 +35471,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.18
  },
  {
   "id": "2a8b3e1e-5c10-4360-ac1c-83b2e026278c",
@@ -33981,7 +35517,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.07
  },
  {
   "id": "bd2db3f5-fd0d-4817-af90-6bea1f07e16b",
@@ -34025,7 +35563,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.15
  },
  {
   "id": "cd5b9daf-6325-4eb4-a069-4a8cc7807884",
@@ -34069,7 +35609,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.12
  },
  {
   "id": "98bb716d-ca66-445f-9cb3-0fc656c8ebff",
@@ -34113,7 +35655,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.08
  },
  {
   "id": "6bc39af4-be19-4889-b930-df7ebf7b9481",
@@ -34157,7 +35701,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.28
  },
  {
   "id": "3d3e926a-74af-4996-849f-d31e0fdedeae",
@@ -34201,7 +35747,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.02,
+  "price_eur_foil": 7.47
  },
  {
   "id": "0343916d-1b65-4e95-aef1-e72dbcebf0c4",
@@ -34245,7 +35793,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.45
  },
  {
   "id": "4c617bcd-05f8-40c2-bb38-489bc863ce6b",
@@ -34289,7 +35839,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.14
  },
  {
   "id": "c38c98bb-74c9-460f-9997-ea5c5f922347",
@@ -34333,7 +35885,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.26
  },
  {
   "id": "3618e283-2df9-4eb9-97b0-96b55ee31cc0",
@@ -34377,7 +35931,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.08
  },
  {
   "id": "7035d11b-525f-4120-8dcb-610095196681",
@@ -34421,7 +35977,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": 0.67
  },
  {
   "id": "e0579955-75f9-47a9-8b03-e287d120826a",
@@ -34465,7 +36023,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.19
  },
  {
   "id": "12df1295-8b08-4c8e-bac9-55b4f514c0be",
@@ -34509,7 +36069,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": 0.22
  },
  {
   "id": "11f1d378-c78c-402a-ac46-2d32598c23e7",
@@ -34553,7 +36115,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.18
  },
  {
   "id": "a6e021da-2397-4ad3-a07b-65c701df531a",
@@ -34597,7 +36161,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.2
  },
  {
   "id": "9c776984-99ea-4181-ac95-78c41ba9d54f",
@@ -34641,7 +36207,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.57
  },
  {
   "id": "7661003c-bf83-46bb-bcc0-8fbf5819ffa8",
@@ -34685,7 +36253,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": 0.45
  },
  {
   "id": "31e2ad37-73cf-4858-8a3a-fc1165cd21a7",
@@ -34729,7 +36299,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.16
  },
  {
   "id": "7efd7627-0754-4685-9d04-8f5f82f45632",
@@ -34773,7 +36345,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.27
  },
  {
   "id": "8ab5429a-1075-49aa-9608-0610080fbf7a",
@@ -34817,7 +36391,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": 0.69
  },
  {
   "id": "840659ee-1493-4190-a514-c2c9ae14e331",
@@ -34861,7 +36437,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.12
  },
  {
   "id": "d0e5cbd4-401b-4456-80bf-d90beadfd1f8",
@@ -34905,7 +36483,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": 0.74
  },
  {
   "id": "c6c73092-5195-4bdc-b039-a699f6e297b2",
@@ -34949,7 +36529,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.18
  },
  {
   "id": "f61693a2-7042-44e0-85ba-9bf12ab94e7e",
@@ -34993,7 +36575,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.34
  },
  {
   "id": "9f2b202c-91da-40ec-8324-6b6be7cb3bc8",
@@ -35037,7 +36621,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.11
  },
  {
   "id": "d9a1de36-7f47-4b28-bb56-38d7e5bed82f",
@@ -35081,7 +36667,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": 0.67
  },
  {
   "id": "0265fd20-a85d-49ce-b338-4c40843a5b18",
@@ -35125,7 +36713,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.09
  },
  {
   "id": "50e1ec29-9de3-4f1b-b818-057e030d475b",
@@ -35169,7 +36759,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": 0.65
  },
  {
   "id": "cb98a7dd-542e-4448-b3bb-ff5d67a36535",
@@ -35213,7 +36805,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.27
  },
  {
   "id": "135d6b27-9168-4513-9d7d-56edae048857",
@@ -35257,7 +36851,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.89
  },
  {
   "id": "ec91c4e4-711f-464d-bc83-e6813f4fdcdb",
@@ -35301,7 +36897,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.1
  },
  {
   "id": "4c139f30-5ecd-48fd-ae7c-ec2cc98889ff",
@@ -35345,7 +36943,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.9,
+  "price_eur_foil": 5.09
  },
  {
   "id": "e5857b1b-73bc-458e-b26b-7ed8bef785f3",
@@ -35389,7 +36989,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.12
  },
  {
   "id": "2ac03e90-1e16-453f-88e4-a0448db73403",
@@ -35433,7 +37035,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.11
  },
  {
   "id": "d818d574-2832-4a7a-a13b-aa6e695fdaa5",
@@ -35477,7 +37081,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": 0.63
  },
  {
   "id": "ec8ab637-3d7d-4712-9f83-8920f808f715",
@@ -35521,7 +37127,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.14
  },
  {
   "id": "d5273db4-6214-41e4-825a-612fca8bbe03",
@@ -35565,7 +37173,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.15
  },
  {
   "id": "ff8c8be0-8223-499c-8704-cb68e0a42ce2",
@@ -35609,7 +37219,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.19
  },
  {
   "id": "1565813b-6912-42f4-bae0-22136a2d6a92",
@@ -35653,7 +37265,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": 0.3
  },
  {
   "id": "75c18134-f517-4a68-8640-0426b3cd4f6c",
@@ -35697,7 +37311,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.28
  },
  {
   "id": "900206f1-7dd6-4db9-a430-73e560fd196b",
@@ -35741,7 +37357,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.22
  },
  {
   "id": "784287c2-43c5-4210-93ae-cdd33b9acb1b",
@@ -35785,7 +37403,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.13
  },
  {
   "id": "6ce7f494-2a19-4b11-94d4-fc5e5a7068bd",
@@ -35829,7 +37449,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.32
  },
  {
   "id": "d585e218-3dc8-4fbd-8ad2-795fbc9b2155",
@@ -35873,7 +37495,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.48,
+  "price_eur_foil": 7.38
  },
  {
   "id": "0f503360-216a-4629-89b2-d32072850aef",
@@ -35917,7 +37541,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.31,
+  "price_eur_foil": 1.74
  },
  {
   "id": "0ce05634-6c01-4941-a135-904cb4e33ac4",
@@ -35961,7 +37587,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.16
  },
  {
   "id": "bc10d648-4053-460f-bc52-9c20477bf6de",
@@ -36005,7 +37633,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.09
  },
  {
   "id": "b7c3544a-5dd5-423e-8a40-ac4803db8adc",
@@ -36049,7 +37679,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.07
  },
  {
   "id": "4dced21f-478c-4500-9484-af5864dea5cc",
@@ -36093,7 +37725,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.13
  },
  {
   "id": "020dee17-d85b-44c4-9faa-b1ef977956f4",
@@ -36137,7 +37771,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.12
  },
  {
   "id": "db01c222-8795-47e9-a789-e7f749a3ee7d",
@@ -36181,7 +37817,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.2,
+  "price_eur_foil": 3.44
  },
  {
   "id": "a182bc66-bfda-4bf5-bd12-3de5dba60945",
@@ -36225,7 +37863,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.08
  },
  {
   "id": "d6e1dee0-e2cd-4899-a3ea-7d0df717c9ab",
@@ -36269,7 +37909,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.15
  },
  {
   "id": "4f352b5e-9731-4a8e-b872-db5d3bf32211",
@@ -36313,7 +37955,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.14
  },
  {
   "id": "c25960e0-5779-4e20-89f3-03950ad9d91c",
@@ -36357,7 +38001,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.15,
+  "price_eur_foil": 0.24
  },
  {
   "id": "d1af74e4-38d5-44b5-85e1-4d13f6970453",
@@ -36401,7 +38047,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.78
  },
  {
   "id": "19ad36d6-8bf4-490c-9980-b98a470af892",
@@ -36445,7 +38093,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": 0.29
  },
  {
   "id": "40a06165-2835-4610-86a1-7f684992fcf2",
@@ -36489,7 +38139,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.16
  },
  {
   "id": "1e2a3566-1390-457e-8077-d776a8671319",
@@ -36533,7 +38185,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": 0.79
  },
  {
   "id": "dda6b4d0-1b60-46b0-b321-b9ffe15afff4",
@@ -36577,7 +38231,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.74,
+  "price_eur_foil": 0.95
  },
  {
   "id": "0cbf911c-a721-4b84-8645-d83a0966be18",
@@ -36621,7 +38277,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.34
  },
  {
   "id": "32eb192b-de6b-4814-8077-628d343d014e",
@@ -36665,7 +38323,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.18
  },
  {
   "id": "93feb9d5-d004-4598-a448-b3488c869c05",
@@ -36709,7 +38369,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": 0.41
  },
  {
   "id": "5ce6ea96-7293-496d-b9c8-8ed6d6109a4d",
@@ -36753,7 +38415,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.48,
+  "price_eur_foil": 2.5
  },
  {
   "id": "d9fda3fc-569d-49f8-a2ed-e0b1d6668426",
@@ -36797,7 +38461,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": 0.75
  },
  {
   "id": "fb781323-2746-405d-a9b2-e778c037a6e9",
@@ -36841,7 +38507,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.92,
+  "price_eur_foil": 3.45
  },
  {
   "id": "24d6eab7-22bd-494f-8cbe-204446f24be9",
@@ -36885,7 +38553,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.29
  },
  {
   "id": "0f5725aa-42bb-4dfd-9c15-135b38b33da3",
@@ -36929,7 +38599,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.4
  },
  {
   "id": "49cd4efa-4df4-4257-9a42-60330f7781e2",
@@ -36973,7 +38645,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.25
  },
  {
   "id": "2462df62-fc35-47ed-9571-40452074dc6d",
@@ -37017,7 +38691,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 18.66,
+  "price_eur_foil": 23.46
  },
  {
   "id": "91226c1a-63a0-494e-bcf0-77c2d6f49213",
@@ -37061,7 +38737,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.17
  },
  {
   "id": "aa192912-c9ee-403f-8a46-a338c9edb4b9",
@@ -37105,7 +38783,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.28,
+  "price_eur_foil": 3.84
  },
  {
   "id": "afcaed7d-7ea3-4f2a-a7f5-ee3315226369",
@@ -37149,7 +38829,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.44
  },
  {
   "id": "fe86e41b-b0f6-4aa1-8827-c095c721f304",
@@ -37193,7 +38875,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.45
  },
  {
   "id": "409c305a-52dc-4538-8e72-efcd568eaf49",
@@ -37237,7 +38921,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": 1.04
  },
  {
   "id": "7fb99393-d2b6-40a6-8de7-317efdc4c50b",
@@ -37281,7 +38967,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 11.98,
+  "price_eur_foil": 19.97
  },
  {
   "id": "a292094a-674a-401f-8776-ba5ebe57c946",
@@ -37325,7 +39013,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.11
  },
  {
   "id": "75cf4eb8-33e7-4dfc-b890-a7e3b5c1b9d5",
@@ -37369,7 +39059,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.58,
+  "price_eur_foil": 3.39
  },
  {
   "id": "3d75e8fd-6139-4b10-9ce3-195b47d72e0c",
@@ -37413,7 +39105,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": 0.35
  },
  {
   "id": "1b4bab87-4000-461d-8b58-d34928fee305",
@@ -37457,7 +39151,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.25
  },
  {
   "id": "dd463dbe-5f2c-4d4f-86f8-ad8ff407af62",
@@ -37501,7 +39197,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.19
  },
  {
   "id": "b883df14-8d7b-4f6a-9a6a-2f71f5b6ddda",
@@ -37545,7 +39243,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.34
  },
  {
   "id": "6a7784de-a10d-4ce6-98a5-aaf3e85773b6",
@@ -37589,7 +39289,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.29
  },
  {
   "id": "442957fc-045d-4db6-b82a-445f172d23e4",
@@ -37633,7 +39335,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": 0.25
  },
  {
   "id": "849f5716-7211-4e93-a220-f88d49f937f4",
@@ -37677,7 +39381,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": 0.65
  },
  {
   "id": "fbdb68cc-5516-481a-94c5-59f6c69b8a17",
@@ -37721,7 +39427,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": 0.65
  },
  {
   "id": "ab4f9721-5b2c-4371-98a5-3f6714265e57",
@@ -37765,7 +39473,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.2
  },
  {
   "id": "534f98ee-7bc2-44d6-b49f-f57c051807d5",
@@ -37809,7 +39519,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.58,
+  "price_eur_foil": 2.65
  },
  {
   "id": "457fdbb9-5439-460f-8e37-176f8919362c",
@@ -37853,7 +39565,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.94,
+  "price_eur_foil": 1.52
  },
  {
   "id": "f9e64cb6-48f7-41d3-99e7-4b0bc3b33fd7",
@@ -37897,7 +39611,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.21
  },
  {
   "id": "8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8",
@@ -37941,7 +39657,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.56,
+  "price_eur_foil": 9.44
  },
  {
   "id": "008782d2-72b0-4554-b1ce-2db99969a4d8",
@@ -37985,7 +39703,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.08,
+  "price_eur_foil": 2.04
  },
  {
   "id": "1103da9c-300c-406b-997d-9e5bb7cd02d6",
@@ -38029,7 +39749,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.25,
+  "price_eur_foil": 11.0
  },
  {
   "id": "572feb8c-6976-40a8-8a34-b4db836cca56",
@@ -38073,7 +39795,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.2
  },
  {
   "id": "1881a66b-956d-4bab-b578-5b2d3407c972",
@@ -38117,7 +39841,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": 0.5
  },
  {
   "id": "9a8eb7e6-0c0b-42d0-aa90-2d3d29bc15aa",
@@ -38161,7 +39887,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.17
  },
  {
   "id": "ba79d293-bf42-48b6-a868-5249f4beeb76",
@@ -38205,7 +39933,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.3
  },
  {
   "id": "f5fff00b-c9a0-4e90-abc0-349f8716c885",
@@ -38249,7 +39979,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.16
  },
  {
   "id": "99450143-6ab5-463d-9e04-e8e6703a8b92",
@@ -38293,7 +40025,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.27
  },
  {
   "id": "62fa74c0-43ae-445c-8039-ca9d00e9709a",
@@ -38337,7 +40071,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": 1.1
  },
  {
   "id": "eff984b2-6ea9-4471-91c5-99c47f87f10b",
@@ -38381,7 +40117,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.19
  },
  {
   "id": "659be746-bd31-4a70-8cec-7798da78b0b5",
@@ -38425,7 +40163,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.84
  },
  {
   "id": "cc4e5234-fb41-48f7-91f4-039710542bc3",
@@ -38469,7 +40209,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.66,
+  "price_eur_foil": 1.17
  },
  {
   "id": "a67793ef-ef80-4434-9c54-e3fd8a270bbe",
@@ -38513,7 +40255,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.4
  },
  {
   "id": "fbd447aa-588d-4c4d-925e-a7d3bdf6a65c",
@@ -38557,7 +40301,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.43,
+  "price_eur_foil": 5.96
  },
  {
   "id": "aa851d68-a7a4-48c0-9cd7-d3d2e079f3a1",
@@ -38601,7 +40347,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.25
  },
  {
   "id": "2d6a2b68-5407-464e-a335-7866fd969c30",
@@ -38645,7 +40393,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.28
  },
  {
   "id": "ecc1027a-8c07-44a0-bdde-fa2844cff694",
@@ -38689,7 +40439,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 30.27,
+  "price_eur_foil": 43.96
  },
  {
   "id": "77bc419d-ff69-4e7c-afe6-faca383a5ed7",
@@ -38733,7 +40485,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": 1.06
  },
  {
   "id": "35b613ad-86f0-431b-af93-147d21041fde",
@@ -38777,7 +40531,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.3,
+  "price_eur_foil": 9.37
  },
  {
   "id": "e42c7d9d-8685-415b-8c5d-6ab2165863b9",
@@ -38821,7 +40577,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.22
  },
  {
   "id": "0a1d6dcd-bd41-4f57-a35b-6613811fe4d4",
@@ -38865,7 +40623,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.12
  },
  {
   "id": "038710ca-c756-4e66-a9de-278e676c9f5b",
@@ -38909,7 +40669,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.15,
+  "price_eur_foil": 8.69
  },
  {
   "id": "92f4ad73-42bf-45c0-8bb6-0b44043c81ef",
@@ -38953,7 +40715,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.19
  },
  {
   "id": "374d7383-a1a7-4eea-91f7-290180e14cc9",
@@ -38997,7 +40761,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 30.0,
+  "price_eur_foil": 33.55
  },
  {
   "id": "a4b05d37-df62-475c-8371-735ed2fa1b05",
@@ -39041,7 +40807,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.06,
+  "price_eur_foil": 0.22
  },
  {
   "id": "d42e5fed-67ac-46d7-a5d4-78f661f3e8b4",
@@ -39085,7 +40853,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.4,
+  "price_eur_foil": 0.98
  },
  {
   "id": "f724dde1-84b0-4e3b-a9b8-44cd22bb9f79",
@@ -39129,7 +40899,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.26,
+  "price_eur_foil": 7.08
  },
  {
   "id": "ef7011f4-fc08-4b15-973d-d15357cbe744",
@@ -39173,7 +40945,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.25
  },
  {
   "id": "e48cf6d5-4d32-4b66-80be-3495ecd3e906",
@@ -39217,7 +40991,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.02,
+  "price_eur_foil": 0.14
  },
  {
   "id": "04d327a3-1699-4556-b681-a957671ad142",
@@ -39261,7 +41037,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.21
  },
  {
   "id": "d6e1e3e7-20d4-42cb-ad22-60356b9e8fdc",
@@ -39305,7 +41083,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.1
  },
  {
   "id": "57d07ca0-5618-4a90-a605-ca14a193ce3b",
@@ -39349,7 +41129,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.27
  },
  {
   "id": "fc408575-8ef7-4043-b6b7-b38cef7c97d1",
@@ -39393,7 +41175,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.49,
+  "price_eur_foil": 1.35
  },
  {
   "id": "995033f0-873d-4e46-b0c9-98ec8ef270ff",
@@ -39437,7 +41221,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.08
  },
  {
   "id": "989b52f7-d8a5-4488-9a5d-f14a1d48686d",
@@ -39481,7 +41267,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": 0.47
  },
  {
   "id": "dc420e79-c483-474f-97cd-e9c6a636c306",
@@ -39525,7 +41313,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.9,
+  "price_eur_foil": 1.67
  },
  {
   "id": "e09ee4c9-85ef-4d1e-864b-d659b8e8f51d",
@@ -39569,7 +41359,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.04,
+  "price_eur_foil": 0.15
  },
  {
   "id": "75761f1e-9449-4c58-8265-8abac71dafc1",
@@ -39613,7 +41405,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.26
  },
  {
   "id": "70d9ab99-ec8a-402e-ba1d-ffa6c4c84a3f",
@@ -39657,7 +41451,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.07,
+  "price_eur_foil": 0.22
  },
  {
   "id": "f0da2ee1-986e-4cbf-92eb-d96fdb572ca5",
@@ -39701,7 +41497,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.4
  },
  {
   "id": "001e9f20-5b15-41cb-bf82-46172decc235",
@@ -39745,7 +41543,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.64
  },
  {
   "id": "6e4bf840-802d-47d5-bffd-8ba495e19cf6",
@@ -39789,7 +41589,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.14
  },
  {
   "id": "f73ce8ec-c916-48eb-ae20-c0d6d03d7145",
@@ -39833,7 +41635,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.26
  },
  {
   "id": "5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c",
@@ -39877,7 +41681,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": 0.84
  },
  {
   "id": "64db46d4-f91f-49cc-971c-b8e19f0c4ea9",
@@ -39921,7 +41727,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.03,
+  "price_eur_foil": 0.14
  },
  {
   "id": "e28eac1e-adc7-4f8d-b206-bef09ba07d38",
@@ -39965,7 +41773,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.14
  },
  {
   "id": "99582781-613e-4a33-aec7-7569b4a961aa",
@@ -40009,7 +41819,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.13
  },
  {
   "id": "5363c881-443d-43df-afd8-f81e1a1741a2",
@@ -40053,7 +41865,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.26
  },
  {
   "id": "7beccfa6-3e4b-4460-954e-870cb39e462d",
@@ -40097,7 +41911,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.1,
+  "price_eur_foil": 0.16
  },
  {
   "id": "dfcbc131-fd50-4908-b539-c8e52bb70c58",
@@ -40141,7 +41957,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.11,
+  "price_eur_foil": 0.19
  },
  {
   "id": "07fca511-a65c-4779-82c0-9215b0dcd068",
@@ -40185,7 +42003,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.11
  },
  {
   "id": "068bc755-9d3d-430b-abc5-c775a5415bf9",
@@ -40229,7 +42049,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.06,
+  "price_eur_foil": 1.64
  },
  {
   "id": "98b2d5b5-f85b-4c42-a0f5-a76f6af304ba",
@@ -40273,7 +42095,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.75,
+  "price_eur_foil": 1.6
  },
  {
   "id": "548dd152-f0b6-4e8f-9afc-a4ec1671b648",
@@ -40317,7 +42141,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.89,
+  "price_eur_foil": 1.98
  },
  {
   "id": "8a837256-6bb4-4a60-962d-d2793548d26c",
@@ -40361,7 +42187,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.87,
+  "price_eur_foil": 2.31
  },
  {
   "id": "c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1",
@@ -40405,7 +42233,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.05,
+  "price_eur_foil": 0.12
  },
  {
   "id": "7a745b5e-cdb8-4d05-ac5c-87be69536da6",
@@ -40449,7 +42279,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.17
  },
  {
   "id": "fc7d1912-7e27-49ef-bd98-375d975a42b0",
@@ -40493,7 +42325,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.7,
+  "price_eur_foil": 19.53
  },
  {
   "id": "f6285535-bc44-4274-a886-b14d7c7aaba8",
@@ -40537,7 +42371,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.09,
+  "price_eur_foil": 0.15
  },
  {
   "id": "10e5648e-4884-41e3-95f8-c76f6bca01e2",
@@ -40581,7 +42417,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.12,
+  "price_eur_foil": 0.11
  },
  {
   "id": "c74024bd-b383-468d-9cf5-d112a29f6457",
@@ -40625,7 +42463,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.08,
+  "price_eur_foil": 0.15
  },
  {
   "id": "881e4c00-3b9a-47a1-bf66-1badda994c88",
@@ -40669,7 +42509,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": 0.74
  },
  {
   "id": "9dd2d666-7c6b-48ce-93dc-c004ebdd1fe9",
@@ -40713,7 +42555,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.28
  },
  {
   "id": "e623b058-76d2-476b-9ee6-82807f7992c3",
@@ -40757,7 +42601,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.71,
+  "price_eur_foil": null
  },
  {
   "id": "ee86ac2f-f398-4422-8721-8ac859fbf5bc",
@@ -40801,7 +42647,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.16,
+  "price_eur_foil": 0.21
  },
  {
   "id": "b92ec9f6-a56d-40c6-aee2-7d5e1524c985",
@@ -40845,7 +42693,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.36
  },
  {
   "id": "eeecf096-87dd-4dcb-953f-700445bf3f3a",
@@ -40889,7 +42739,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": 0.42
  },
  {
   "id": "347e00db-abcf-4053-aa27-4a5b42e1da55",
@@ -40933,7 +42785,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.34
  },
  {
   "id": "f66094ef-059b-4511-aa6e-835906736de4",
@@ -40977,7 +42831,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.2,
+  "price_eur_foil": 0.44
  },
  {
   "id": "a7f56d20-16dc-4b7f-98bf-124817a83bae",
@@ -41021,7 +42877,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.19,
+  "price_eur_foil": 0.42
  },
  {
   "id": "08ec1e4f-e284-4216-a022-bd94c4dae02b",
@@ -41065,7 +42923,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.34
  },
  {
   "id": "a18ef64b-a9de-4548-b4d5-168758442db7",
@@ -41109,7 +42969,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.17,
+  "price_eur_foil": 0.32
  },
  {
   "id": "d061b9a8-e95d-48ec-a1c9-337433b62dfc",
@@ -41153,7 +43015,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.14,
+  "price_eur_foil": 0.25
  },
  {
   "id": "ea1735b9-fd10-4c9c-b9d3-046d8c22b852",
@@ -41197,7 +43061,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.18,
+  "price_eur_foil": 0.33
  },
  {
   "id": "be72862d-d71e-4b18-98a6-59019399f631",
@@ -41241,7 +43107,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": 0.58
  },
  {
   "id": "3d08f6a6-316d-45d8-aabe-1760a20903ac",
@@ -41285,7 +43153,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.45
  },
  {
   "id": "c52038c8-5bba-4d8e-845f-30af44300acc",
@@ -41329,7 +43199,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.23,
+  "price_eur_foil": 0.38
  },
  {
   "id": "c61feafd-ef09-437c-a12c-fd7d6cb8c15a",
@@ -41373,7 +43245,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.34,
+  "price_eur_foil": 0.45
  },
  {
   "id": "b5327e09-2ea0-4365-bb20-087a08da8ce6",
@@ -41418,7 +43292,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.69,
+  "price_eur_foil": 4.05
  },
  {
   "id": "72678d58-888e-4d3c-bc2c-78f5b7862e03",
@@ -41463,7 +43339,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.89,
+  "price_eur_foil": 2.06
  },
  {
   "id": "b2ae92d9-7047-424e-a482-2311888a8c56",
@@ -41508,7 +43386,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.43,
+  "price_eur_foil": 5.09
  },
  {
   "id": "fa605930-a7f0-410d-ac58-f5f0bd8caadf",
@@ -41553,7 +43433,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.49,
+  "price_eur_foil": 5.19
  },
  {
   "id": "c64bb94b-c1a7-4dd3-b2dc-b87d306d62ad",
@@ -41598,7 +43480,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.51,
+  "price_eur_foil": 1.56
  },
  {
   "id": "41ae833d-77ee-4876-8990-591ae0d800ab",
@@ -41643,7 +43527,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.38,
+  "price_eur_foil": 4.9
  },
  {
   "id": "39f9de73-84a7-483f-927e-91ade20a2d06",
@@ -41688,7 +43574,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.17,
+  "price_eur_foil": 4.56
  },
  {
   "id": "83c82209-47d5-4c4c-b8ec-96ab907e15d3",
@@ -41733,7 +43621,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 58.73,
+  "price_eur_foil": 153.69
  },
  {
   "id": "425d5bea-9c9a-4e8a-b4bc-02284fb9b5b4",
@@ -41778,7 +43668,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 21.9,
+  "price_eur_foil": 54.44
  },
  {
   "id": "6aaba8b1-1fcb-4a73-894f-f32400352c8c",
@@ -41823,7 +43715,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.36,
+  "price_eur_foil": 2.81
  },
  {
   "id": "be2af52c-9f38-40e4-a643-06c5f2a9f416",
@@ -41868,7 +43762,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 34.55,
+  "price_eur_foil": 65.88
  },
  {
   "id": "ada6aeb6-8c9f-4498-9326-b4da0fcb19a3",
@@ -41913,7 +43809,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 60.06,
+  "price_eur_foil": 137.01
  },
  {
   "id": "0cadfe0e-9cdf-4e64-b143-f996c76bf93b",
@@ -41958,7 +43856,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 29.9,
+  "price_eur_foil": 74.12
  },
  {
   "id": "0cf789e7-045c-4ad1-abc3-23eabda54f02",
@@ -42003,7 +43903,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 31.7,
+  "price_eur_foil": 96.9
  },
  {
   "id": "2ac1b165-27ff-47f3-b598-43f7f021093a",
@@ -42048,7 +43950,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.07,
+  "price_eur_foil": 4.38
  },
  {
   "id": "2ecefb14-23a2-44f4-a3aa-63c246f744e1",
@@ -42093,7 +43997,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": 0.83
  },
  {
   "id": "522920b3-e7a4-4097-8321-2dbb326719c6",
@@ -42138,7 +44044,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.94,
+  "price_eur_foil": 2.62
  },
  {
   "id": "8347cb57-7c20-4085-83f3-bee35b55b3f1",
@@ -42183,7 +44091,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.14,
+  "price_eur_foil": 1.98
  },
  {
   "id": "e673fb51-d36c-42fb-91bf-805812522064",
@@ -42228,7 +44138,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.19,
+  "price_eur_foil": 3.45
  },
  {
   "id": "a9a432dc-6e53-48d2-8fbe-b01bd2cab6dd",
@@ -42273,7 +44185,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.72,
+  "price_eur_foil": 6.94
  },
  {
   "id": "423134fa-62d9-439c-b123-eeea52f42414",
@@ -42318,7 +44232,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.95,
+  "price_eur_foil": 8.86
  },
  {
   "id": "fb3c836d-8012-4591-ba4f-e6db6d59b974",
@@ -42363,7 +44279,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.79,
+  "price_eur_foil": 1.78
  },
  {
   "id": "0cf03aad-0562-4d29-8c70-dc529c3a3961",
@@ -42408,7 +44326,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": 0.46
  },
  {
   "id": "7572888a-c394-4d9f-b66f-30d91364d265",
@@ -42453,7 +44373,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.59,
+  "price_eur_foil": 6.97
  },
  {
   "id": "378df0f4-5043-461f-8705-9a2c0c3acd43",
@@ -42498,7 +44420,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.93,
+  "price_eur_foil": 15.85
  },
  {
   "id": "749f2041-0eb5-42c3-b9ac-05a7575cb693",
@@ -42543,7 +44467,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.28,
+  "price_eur_foil": 11.12
  },
  {
   "id": "2eb50ecd-d32f-482b-8e6f-57f68179241b",
@@ -42588,7 +44514,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.77,
+  "price_eur_foil": 3.71
  },
  {
   "id": "58306c68-5de8-48f4-9ce5-ea69792af58c",
@@ -42633,7 +44561,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.74,
+  "price_eur_foil": 10.14
  },
  {
   "id": "816f618c-ed6c-4320-9c33-9ae903e32abf",
@@ -42678,7 +44608,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.78,
+  "price_eur_foil": 2.49
  },
  {
   "id": "f6c21de9-7278-4406-8037-afe2c29b271f",
@@ -42723,7 +44655,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 14.65,
+  "price_eur_foil": 17.78
  },
  {
   "id": "5bd84d2c-6f09-4aef-a98b-7b256c7de821",
@@ -42768,7 +44702,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.16,
+  "price_eur_foil": 2.16
  },
  {
   "id": "fa15ebf3-7ada-4e86-abc9-85dea83edb8c",
@@ -42813,7 +44749,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.27,
+  "price_eur_foil": 0.61
  },
  {
   "id": "9240303a-73a3-4daf-b5fc-090ce7cbd92a",
@@ -42858,7 +44796,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 13.13,
+  "price_eur_foil": 18.21
  },
  {
   "id": "fe80b498-a25d-4f68-ac26-9554c3ee1677",
@@ -42903,7 +44843,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.7,
+  "price_eur_foil": 6.64
  },
  {
   "id": "aa78ab04-6ddf-4a67-8bcf-0da4646a1e48",
@@ -42948,7 +44890,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.74,
+  "price_eur_foil": 1.53
  },
  {
   "id": "66188ecc-ac97-4dcb-ada3-57d86915a911",
@@ -42993,7 +44937,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": 0.62
  },
  {
   "id": "9f80efa6-769f-4205-b69e-9cf0e78b7bcd",
@@ -43038,7 +44984,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.92,
+  "price_eur_foil": 11.33
  },
  {
   "id": "615f1a04-2ad4-443b-a915-2181a6bf13af",
@@ -43083,7 +45031,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.26,
+  "price_eur_foil": 0.39
  },
  {
   "id": "ce15bf1d-debf-4e0f-a69d-a57619d4b0ee",
@@ -43128,7 +45078,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.34,
+  "price_eur_foil": 3.39
  },
  {
   "id": "0dcb6a53-ad1b-465b-8d4c-f2c8b2b29e25",
@@ -43173,7 +45125,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.84,
+  "price_eur_foil": 1.81
  },
  {
   "id": "2ceea116-6197-45ec-a5a9-73588744b8a0",
@@ -43218,7 +45172,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.25,
+  "price_eur_foil": 13.23
  },
  {
   "id": "f57d0446-1eae-4b88-b65c-92a14a3f9cef",
@@ -43263,7 +45219,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 60.9,
+  "price_eur_foil": 136.87
  },
  {
   "id": "becf759b-e3bc-4281-a1e1-1da9f36247ef",
@@ -43308,7 +45266,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.65,
+  "price_eur_foil": 2.75
  },
  {
   "id": "a288efba-7c70-428d-a2b7-571891976f78",
@@ -43353,7 +45313,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.77,
+  "price_eur_foil": 5.19
  },
  {
   "id": "1a6c87dc-188c-4c75-9026-568263940b90",
@@ -43398,7 +45360,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.2,
+  "price_eur_foil": 2.29
  },
  {
   "id": "4786e79c-1e64-41bd-87f6-9a33110afa71",
@@ -43443,7 +45407,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": 0.38
  },
  {
   "id": "fd5cb1fc-71b2-4b05-abd3-c90e95c53ad1",
@@ -43488,7 +45454,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 49.26,
+  "price_eur_foil": 74.15
  },
  {
   "id": "c2416ecc-bb6b-44f6-8fa6-61d168777f2e",
@@ -43533,7 +45501,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.39,
+  "price_eur_foil": 0.69
  },
  {
   "id": "b95481b1-1780-4cf9-b910-dd0a4461f818",
@@ -43578,7 +45548,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": 0.77
  },
  {
   "id": "b8a48466-6dc1-4874-9328-c7358e642f39",
@@ -43623,7 +45595,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 24.11,
+  "price_eur_foil": 31.48
  },
  {
   "id": "f6ee6624-79be-4a76-8c12-80bf31f81ae2",
@@ -43668,7 +45642,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.37,
+  "price_eur_foil": 0.42
  },
  {
   "id": "4c6738f5-55cb-48f0-8e70-296d1c549cd3",
@@ -43713,7 +45689,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.41,
+  "price_eur_foil": 5.61
  },
  {
   "id": "340b2b03-1b20-411c-ba30-2be77655290a",
@@ -43758,7 +45736,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": 0.7
  },
  {
   "id": "20c75373-7db4-4964-8e09-2badce2f0f84",
@@ -43803,7 +45783,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.49,
+  "price_eur_foil": 3.14
  },
  {
   "id": "d4aa9f4e-cba9-41fa-8c65-3e263988f90d",
@@ -43848,7 +45830,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": 0.61
  },
  {
   "id": "d8117e64-6e43-4aa8-90df-c5b21fbb9182",
@@ -43893,7 +45877,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.93,
+  "price_eur_foil": 9.16
  },
  {
   "id": "fac98745-a30e-4f64-be21-302c0d73d4f7",
@@ -43938,7 +45924,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.56,
+  "price_eur_foil": 3.25
  },
  {
   "id": "a6edb808-9753-4029-81ed-60a91ebc1d77",
@@ -43983,7 +45971,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.28,
+  "price_eur_foil": 0.48
  },
  {
   "id": "a5ad1e50-2bf1-4f43-9da4-62a89b521206",
@@ -44028,7 +46018,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.53,
+  "price_eur_foil": 2.27
  },
  {
   "id": "25c3ce9a-39e5-4273-ba67-224a837b75e7",
@@ -44073,7 +46065,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": 0.46
  },
  {
   "id": "efbe3aa0-ddf1-4db2-ae4c-cfea7b5d09ed",
@@ -44118,7 +46112,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.34,
+  "price_eur_foil": 4.75
  },
  {
   "id": "a44ae92c-4894-4172-82b3-11e2e94653ef",
@@ -44163,7 +46159,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": 0.58
  },
  {
   "id": "412093fb-15c1-4b36-aa53-9484f955ee2c",
@@ -44208,7 +46206,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.32,
+  "price_eur_foil": 1.33
  },
  {
   "id": "e5881485-7935-427e-911e-843f198d94dc",
@@ -44253,7 +46253,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.77,
+  "price_eur_foil": 5.61
  },
  {
   "id": "fa316d6e-9ea7-4496-a3f3-5023a6952473",
@@ -44298,7 +46300,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.05,
+  "price_eur_foil": 11.43
  },
  {
   "id": "5d8690ec-fded-4801-8eaf-5e5fe3d444ec",
@@ -44343,7 +46347,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 44.96,
+  "price_eur_foil": 67.58
  },
  {
   "id": "f2309a7e-4ba0-4820-8313-ecd38d32a55f",
@@ -44388,7 +46394,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.81,
+  "price_eur_foil": 5.85
  },
  {
   "id": "054e180d-4e66-426d-adb5-a4fee94b6a67",
@@ -44433,7 +46441,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.63,
+  "price_eur_foil": 10.33
  },
  {
   "id": "8b67055b-4a0a-4a16-9c83-d493c36fce01",
@@ -44478,7 +46488,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.69,
+  "price_eur_foil": 5.18
  },
  {
   "id": "35090ce1-6fb4-438c-88e9-dd116d550a92",
@@ -44523,7 +46535,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.98,
+  "price_eur_foil": 2.96
  },
  {
   "id": "d8c5c414-c7a0-489b-9cb8-1b910aa89b8e",
@@ -44568,7 +46582,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.27,
+  "price_eur_foil": 4.46
  },
  {
   "id": "dca1a706-9eee-4d75-80ee-fa12257908e3",
@@ -44613,7 +46629,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.21,
+  "price_eur_foil": 0.77
  },
  {
   "id": "0f40e47b-32ed-4846-92b3-cc54e89368fe",
@@ -44658,7 +46676,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "f150d6e9-3da6-4655-9c63-dd34525d08a1",
@@ -44703,7 +46723,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 52.35,
+  "price_eur_foil": 94.31
  },
  {
   "id": "221efaa7-ba6e-4f6e-99d1-e258b91091f7",
@@ -44748,7 +46770,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.08,
+  "price_eur_foil": 8.96
  },
  {
   "id": "59fc74c0-9a97-44d5-a62e-a2b68880cfac",
@@ -44793,7 +46817,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.77,
+  "price_eur_foil": 5.67
  },
  {
   "id": "faf87bad-253a-4c7a-9dd5-c575cb27db9f",
@@ -44838,7 +46864,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 11.02,
+  "price_eur_foil": 11.8
  },
  {
   "id": "8f1cb5a5-2f52-4a9d-a4fe-9603116b7ad5",
@@ -44883,7 +46911,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.74,
+  "price_eur_foil": 3.94
  },
  {
   "id": "d8f9b257-6491-46d2-be41-846ab4c39d5e",
@@ -44928,7 +46958,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.25,
+  "price_eur_foil": 0.47
  },
  {
   "id": "90ee46cc-12fc-499f-8c13-a289d5fdbaba",
@@ -44973,7 +47005,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.98,
+  "price_eur_foil": 2.0
  },
  {
   "id": "e0863980-7f20-4af0-8a5a-5504b2419f64",
@@ -45018,7 +47052,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.99,
+  "price_eur_foil": 1.54
  },
  {
   "id": "6db5c3de-eb63-40f1-a721-9f2de47ea59e",
@@ -45063,7 +47099,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.56,
+  "price_eur_foil": 1.63
  },
  {
   "id": "d402d825-4c2c-46db-b16b-5df583bc5f83",
@@ -45108,7 +47146,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.0,
+  "price_eur_foil": 15.51
  },
  {
   "id": "28cdd11b-7337-4696-b2a0-77236c7b7210",
@@ -45153,7 +47193,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.32,
+  "price_eur_foil": 0.76
  },
  {
   "id": "c8198264-150f-4f95-9de1-cbc7fa456535",
@@ -45198,7 +47240,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.94,
+  "price_eur_foil": 1.99
  },
  {
   "id": "fd537047-d997-4ee1-b259-3ed54b7c5576",
@@ -45243,7 +47287,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.27,
+  "price_eur_foil": 10.99
  },
  {
   "id": "95822b03-a49b-4a77-a257-fe0527088177",
@@ -45288,7 +47334,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.21,
+  "price_eur_foil": 5.17
  },
  {
   "id": "5b1fd4c8-7de6-47cb-916a-513d04774f01",
@@ -45333,7 +47381,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.05,
+  "price_eur_foil": 3.55
  },
  {
   "id": "04dd9ad9-eab2-447c-b065-078a0b184519",
@@ -45378,7 +47428,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.56,
+  "price_eur_foil": 5.03
  },
  {
   "id": "53756218-bcdb-498a-8c61-654183153487",
@@ -45423,7 +47475,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 14.7,
+  "price_eur_foil": 20.17
  },
  {
   "id": "374877d1-167a-42ea-adf3-a707ea0300e8",
@@ -45468,7 +47522,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.19,
+  "price_eur_foil": 6.65
  },
  {
   "id": "45cb2a76-7d12-41e6-93c7-09922934699c",
@@ -45513,7 +47569,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 19.61,
+  "price_eur_foil": 32.62
  },
  {
   "id": "8d61fe60-0318-4362-8cea-7c6499b8ca70",
@@ -45558,7 +47616,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.63,
+  "price_eur_foil": 3.21
  },
  {
   "id": "883c6111-c921-4cd6-930d-4fa335ef2871",
@@ -45603,7 +47663,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.88,
+  "price_eur_foil": 5.58
  },
  {
   "id": "f39b9892-9b82-4dea-bae0-e1735618341e",
@@ -45648,7 +47710,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.74,
+  "price_eur_foil": 3.02
  },
  {
   "id": "8f861d59-f2ce-457f-99f4-48b12ae34fa2",
@@ -45693,7 +47757,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 19.7,
+  "price_eur_foil": 26.4
  },
  {
   "id": "8dca28e1-21f1-4ed7-b294-df2e0c5c9503",
@@ -45738,7 +47804,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.47,
+  "price_eur_foil": 0.59
  },
  {
   "id": "28ce1dbc-508c-4d09-8e44-37bf5ebfdc8f",
@@ -45783,7 +47851,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 31.97,
+  "price_eur_foil": 52.56
  },
  {
   "id": "a3e8d94e-050b-4571-ae12-1e80e6b63611",
@@ -45827,7 +47897,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.83,
+  "price_eur_foil": 5.73
  },
  {
   "id": "a9801368-263b-4515-9027-4f1827e7214c",
@@ -45871,7 +47943,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.06,
+  "price_eur_foil": 6.55
  },
  {
   "id": "2bbab097-acb3-480d-a433-e4f81dde62e4",
@@ -45915,7 +47989,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.6,
+  "price_eur_foil": 5.32
  },
  {
   "id": "fc4d240f-8920-4f8d-82a2-4cd4da93d6fb",
@@ -45959,7 +48035,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.68,
+  "price_eur_foil": 5.15
  },
  {
   "id": "8200a5e1-0c8b-45a4-b468-03e5067e9f81",
@@ -46003,7 +48081,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.83,
+  "price_eur_foil": 5.62
  },
  {
   "id": "5a9b1404-3061-4979-81eb-e056bc212205",
@@ -46047,7 +48127,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.96,
+  "price_eur_foil": 10.59
  },
  {
   "id": "cc027995-3d7c-4283-9e0e-eaef5727f2b8",
@@ -46091,7 +48173,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.12,
+  "price_eur_foil": 6.68
  },
  {
   "id": "4bd892ea-b5bc-4b57-b317-741113381b50",
@@ -46135,7 +48219,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.2,
+  "price_eur_foil": 7.97
  },
  {
   "id": "b6776f23-5f5b-4f0a-a00c-1ca8f03ffc5f",
@@ -46179,7 +48265,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.67,
+  "price_eur_foil": 5.72
  },
  {
   "id": "e564eda2-36dd-4f44-b84b-d0c18a9bdb1e",
@@ -46223,7 +48311,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.25,
+  "price_eur_foil": 5.14
  },
  {
   "id": "3952bbbb-6fe4-4d13-8825-e93df1d048e9",
@@ -46267,7 +48357,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.05,
+  "price_eur_foil": 6.7
  },
  {
   "id": "0148fa7c-b6d6-458c-8cdd-a6c4e6dd4e59",
@@ -46311,7 +48403,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.02,
+  "price_eur_foil": 6.6
  },
  {
   "id": "7d8b2dfc-ecaf-403b-932f-a5efc8b713e6",
@@ -46355,7 +48449,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.94,
+  "price_eur_foil": 5.94
  },
  {
   "id": "2c1b48ba-b158-4b9d-802c-5cbfdf96dca5",
@@ -46399,7 +48495,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.73,
+  "price_eur_foil": 8.21
  },
  {
   "id": "e6e27054-03e1-424e-92d8-6e77d7683d79",
@@ -46444,7 +48542,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.31,
+  "price_eur_foil": 15.2
  },
  {
   "id": "817ffbb6-5e7c-4498-af65-9e3d0cc5bcd6",
@@ -46489,7 +48589,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.62,
+  "price_eur_foil": 9.36
  },
  {
   "id": "6a1796e1-30c5-4e55-bec8-7013512606b0",
@@ -46534,7 +48636,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.34,
+  "price_eur_foil": 24.26
  },
  {
   "id": "fcd2f288-9d05-465a-bb3e-2a444a027096",
@@ -46579,7 +48683,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.03,
+  "price_eur_foil": 5.22
  },
  {
   "id": "9b103e50-8bac-41d4-966e-a5d42132bc12",
@@ -46624,7 +48730,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.78,
+  "price_eur_foil": 10.33
  },
  {
   "id": "ab1b24dd-ab23-41b0-a074-e77e8d9c5564",
@@ -46669,7 +48777,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.32,
+  "price_eur_foil": 25.31
  },
  {
   "id": "86fd126f-7672-4d83-93df-c61184d2fcf4",
@@ -46714,7 +48824,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 32.17,
+  "price_eur_foil": 65.66
  },
  {
   "id": "d869c60b-3aa2-4a90-aa93-5d4c5afd1672",
@@ -46759,7 +48871,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.63,
+  "price_eur_foil": 7.57
  },
  {
   "id": "d285d6fa-b618-4558-b1e6-d148e0927cb5",
@@ -46804,7 +48918,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.68,
+  "price_eur_foil": 6.74
  },
  {
   "id": "99ad3e31-815c-409f-8fe5-d13a3f5d2b65",
@@ -46849,7 +48965,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.82,
+  "price_eur_foil": 7.74
  },
  {
   "id": "d7964800-1392-4bb8-84e2-c9f3938ceac3",
@@ -46894,7 +49012,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.19,
+  "price_eur_foil": 41.03
  },
  {
   "id": "8ff58500-479d-48d2-b84e-ff3cdb9d0154",
@@ -46939,7 +49059,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.15,
+  "price_eur_foil": 8.68
  },
  {
   "id": "ea207686-faf2-4e60-a613-a6752a3d1ddf",
@@ -46984,7 +49106,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.16,
+  "price_eur_foil": 4.89
  },
  {
   "id": "790d1050-025a-4792-8e89-24b14278eec5",
@@ -47029,7 +49153,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.51,
+  "price_eur_foil": 13.04
  },
  {
   "id": "f99f3a14-3a7c-4c1c-b747-c6b1144ef1f1",
@@ -47074,7 +49200,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.56,
+  "price_eur_foil": 21.49
  },
  {
   "id": "f28bd4d2-b2cf-48f1-ba11-956c12284550",
@@ -47119,7 +49247,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.99,
+  "price_eur_foil": 5.92
  },
  {
   "id": "59156e99-5514-4eb3-b976-bb6cfe354d12",
@@ -47164,7 +49294,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.82,
+  "price_eur_foil": 12.5
  },
  {
   "id": "863dc1bd-8554-42ba-8d49-d99ea969103d",
@@ -47209,7 +49341,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.79,
+  "price_eur_foil": 16.13
  },
  {
   "id": "0429bba6-d496-49ac-b849-fb8274f86880",
@@ -47254,7 +49388,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.87,
+  "price_eur_foil": 10.66
  },
  {
   "id": "3cc379aa-6810-421d-a317-026867c4d245",
@@ -47299,7 +49435,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.04,
+  "price_eur_foil": 19.98
  },
  {
   "id": "f988af75-acf4-41bb-b4c5-58492fd1f6a0",
@@ -47344,7 +49482,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.84,
+  "price_eur_foil": 18.7
  },
  {
   "id": "9e3f57b6-0d03-4176-8c2a-0937437fb62e",
@@ -47389,7 +49529,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.21,
+  "price_eur_foil": 10.92
  },
  {
   "id": "a1d3d33d-4cd9-4009-82c9-adb2e1ec45cb",
@@ -47434,7 +49576,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.49,
+  "price_eur_foil": 16.62
  },
  {
   "id": "c4c34b33-4b03-4225-ac22-a34efe173b42",
@@ -47479,7 +49623,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.78,
+  "price_eur_foil": 10.39
  },
  {
   "id": "c976f89d-768a-4cee-b0ac-90f854bfe94f",
@@ -47524,7 +49670,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.7,
+  "price_eur_foil": 10.34
  },
  {
   "id": "b82f08c2-3944-437d-9af6-f1e9088e02bb",
@@ -47569,7 +49717,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.49,
+  "price_eur_foil": 9.53
  },
  {
   "id": "cbcde2c1-e973-4ec0-b333-d71fa7452ef1",
@@ -47614,7 +49764,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "42605473-e37d-46b3-8979-31cc6b21bc3c",
@@ -47659,7 +49811,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.56,
+  "price_eur_foil": 11.59
  },
  {
   "id": "3ae96898-3a72-428a-93e8-93ded3662669",
@@ -47704,7 +49858,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.51,
+  "price_eur_foil": 9.1
  },
  {
   "id": "28eb294b-4cab-4c34-ae29-20aac9799471",
@@ -47749,7 +49905,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.48,
+  "price_eur_foil": 5.56
  },
  {
   "id": "ef6a2ef4-4aa1-4037-89d5-50c4a6579371",
@@ -47794,7 +49952,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.19,
+  "price_eur_foil": 8.95
  },
  {
   "id": "7cb5acb6-14af-4e17-8e6c-b44122bd81e4",
@@ -47839,7 +49999,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 41.95,
+  "price_eur_foil": 138.19
  },
  {
   "id": "8fc42c17-a12b-42db-bb01-3e444ac2a376",
@@ -47884,7 +50046,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.48,
+  "price_eur_foil": 8.75
  },
  {
   "id": "de8067cc-3de3-43b2-8fcf-6dce6f4f7db1",
@@ -47929,7 +50093,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.79,
+  "price_eur_foil": 9.34
  },
  {
   "id": "2b2a676e-901f-4e0e-87c6-69820f319d7f",
@@ -47974,7 +50140,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.3,
+  "price_eur_foil": 19.37
  },
  {
   "id": "40658fd0-78a6-44e5-9351-512e6bdcf637",
@@ -48019,7 +50187,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.6,
+  "price_eur_foil": 7.95
  },
  {
   "id": "f7f9977f-b2dc-46bb-b961-097675cdcb45",
@@ -48064,7 +50234,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.82,
+  "price_eur_foil": 10.33
  },
  {
   "id": "3c8d6eaa-e6d1-4a52-98fb-9cb4d876cc0b",
@@ -48109,7 +50281,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.87,
+  "price_eur_foil": 9.81
  },
  {
   "id": "cdf7fb4a-acb5-4fae-a44c-c437e5b82ec4",
@@ -48154,7 +50328,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.49,
+  "price_eur_foil": 14.82
  },
  {
   "id": "70def31c-e328-4f1f-a165-a43f94401c65",
@@ -48199,7 +50375,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.01,
+  "price_eur_foil": 5.99
  },
  {
   "id": "e5aa0b07-9ebb-46d7-a80f-2e644dbd9d36",
@@ -48244,7 +50422,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.81,
+  "price_eur_foil": 22.42
  },
  {
   "id": "79070b71-3737-4d9a-8193-b2d7bf8d876b",
@@ -48289,7 +50469,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.86,
+  "price_eur_foil": 8.61
  },
  {
   "id": "40cce7b4-1d5d-4d91-90c5-71b79b5be1ac",
@@ -48334,7 +50516,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.32,
+  "price_eur_foil": 11.49
  },
  {
   "id": "5ee02af5-cb6c-43a3-8a1d-7e8630a90739",
@@ -48379,7 +50563,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.71,
+  "price_eur_foil": 5.09
  },
  {
   "id": "5957ab2d-55ed-4160-8c78-8c70009c39d8",
@@ -48424,7 +50610,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.65,
+  "price_eur_foil": 9.04
  },
  {
   "id": "3732c276-3635-46e0-a46e-1b433501d3fd",
@@ -48469,7 +50657,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.98,
+  "price_eur_foil": 7.01
  },
  {
   "id": "50467632-dddf-45ef-900e-9718f364cf9b",
@@ -48514,7 +50704,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.59,
+  "price_eur_foil": 6.98
  },
  {
   "id": "dbd01ef3-0b06-46a3-97f9-eaff2a539a4a",
@@ -48559,7 +50751,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.67,
+  "price_eur_foil": 6.49
  },
  {
   "id": "25d28011-f0a6-4d7b-ab87-aae0fe354d9e",
@@ -48604,7 +50798,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.77,
+  "price_eur_foil": 10.75
  },
  {
   "id": "1b9a92f8-2044-4554-aec9-00b410dada35",
@@ -48649,7 +50845,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.43,
+  "price_eur_foil": 7.76
  },
  {
   "id": "bb17f0c0-4738-42a0-94e1-27344f13735f",
@@ -48694,7 +50892,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.05,
+  "price_eur_foil": 10.41
  },
  {
   "id": "0208a5a9-3a6f-44c5-9e46-24bdf924753c",
@@ -48739,7 +50939,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.57,
+  "price_eur_foil": 11.13
  },
  {
   "id": "366fbdb4-56b4-4dd1-8cc7-565786c71c24",
@@ -48784,7 +50986,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.43,
+  "price_eur_foil": 8.64
  },
  {
   "id": "165a50ba-5ead-45aa-be8a-9bdd9766da66",
@@ -48829,7 +51033,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.81,
+  "price_eur_foil": 31.14
  },
  {
   "id": "b4b78fba-cde2-4ab9-bc96-51d0fc5b29cf",
@@ -48874,7 +51080,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.21,
+  "price_eur_foil": 9.84
  },
  {
   "id": "6c752ee2-81b0-468a-a54b-740c22f2334e",
@@ -48919,7 +51127,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.04,
+  "price_eur_foil": 9.37
  },
  {
   "id": "50716867-4370-4c2f-aae5-9d791a5d5a2e",
@@ -48964,7 +51174,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 8.95,
+  "price_eur_foil": 17.39
  },
  {
   "id": "8c9eaf03-0af1-496f-b3d9-37938a8dc6dd",
@@ -49009,7 +51221,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.79,
+  "price_eur_foil": 3.8
  },
  {
   "id": "7d143a13-a627-4b64-9356-253a2f9ddf98",
@@ -49054,7 +51268,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.28,
+  "price_eur_foil": 25.56
  },
  {
   "id": "6bf0cce3-ba72-4f7f-8b65-01e5dcd3299f",
@@ -49099,7 +51315,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 4.26,
+  "price_eur_foil": 20.71
  },
  {
   "id": "db9830c7-1f40-4ff2-8e99-7c6393d4a968",
@@ -49144,7 +51362,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.21,
+  "price_eur_foil": 7.95
  },
  {
   "id": "c53b7098-02c6-4977-8871-334f3fd4ee1f",
@@ -49189,7 +51409,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.62,
+  "price_eur_foil": 5.36
  },
  {
   "id": "75180e47-064e-4dd6-adcf-d4fb497a445b",
@@ -49231,7 +51453,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/482/cloud-planets-champion?utm_source=api",
   "treatments": [
    "Extended Art"
-  ]
+  ],
+  "price_eur": 17.65,
+  "price_eur_foil": null
  },
  {
   "id": "0f462d81-bb1b-4d44-8952-6dff52970792",
@@ -49276,7 +51500,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 9.13,
+  "price_eur_foil": 26.58
  },
  {
   "id": "1b4d8a51-2307-4ed6-af25-c48946219096",
@@ -49321,7 +51547,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.76,
+  "price_eur_foil": 25.04
  },
  {
   "id": "df51bf51-839a-4b4d-a6c2-431c9ebff875",
@@ -49366,7 +51594,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.32,
+  "price_eur_foil": 8.45
  },
  {
   "id": "8e6e21d2-e282-4f56-8e6b-929176b264b3",
@@ -49411,7 +51641,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.49,
+  "price_eur_foil": 10.14
  },
  {
   "id": "6136d21e-e6fa-4aaf-9eca-3847fa2c65fd",
@@ -49456,7 +51688,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.66,
+  "price_eur_foil": 19.01
  },
  {
   "id": "e5220843-4964-4abe-b397-a909be8ed8e0",
@@ -49501,7 +51735,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.76,
+  "price_eur_foil": 7.29
  },
  {
   "id": "8e2d8e83-1fd4-4c99-ae84-b450e3650cb7",
@@ -49546,7 +51782,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.06,
+  "price_eur_foil": 9.36
  },
  {
   "id": "db013d39-3681-4ed0-8671-d1d2452df9de",
@@ -49591,7 +51829,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.06,
+  "price_eur_foil": 8.54
  },
  {
   "id": "a50f113e-be5d-4251-8605-67f54fbe9b3f",
@@ -49636,7 +51876,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.11,
+  "price_eur_foil": 5.64
  },
  {
   "id": "2790a23d-00ff-47b7-badd-9dd68042bb99",
@@ -49681,7 +51923,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.0,
+  "price_eur_foil": 5.49
  },
  {
   "id": "22dd493f-e481-4563-8f87-c5bdbfd54fdd",
@@ -49726,7 +51970,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.03,
+  "price_eur_foil": 17.21
  },
  {
   "id": "8d5aaba7-1d36-4a0f-ad3e-70dca5944c53",
@@ -49771,7 +52017,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.78,
+  "price_eur_foil": 10.68
  },
  {
   "id": "ab39a24e-c73b-4d62-b7a0-c4ea968768c9",
@@ -49816,7 +52064,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.8,
+  "price_eur_foil": 8.27
  },
  {
   "id": "06b7ca77-7194-4a0b-a650-4afd7afb50eb",
@@ -49861,7 +52111,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 18.19,
+  "price_eur_foil": 44.33
  },
  {
   "id": "98067c9a-d81e-4f5c-b55a-28872331fce8",
@@ -49906,7 +52158,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.31,
+  "price_eur_foil": 38.48
  },
  {
   "id": "0c665905-183b-401f-b83c-a312d032e061",
@@ -49951,7 +52205,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 18.9,
+  "price_eur_foil": 35.52
  },
  {
   "id": "81d0f2e4-8b22-4c9b-ad01-fd0818fe7372",
@@ -49996,7 +52252,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.87,
+  "price_eur_foil": 5.2
  },
  {
   "id": "8717cde9-eaee-4926-ab6e-02bb58421d05",
@@ -50041,7 +52299,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.3,
+  "price_eur_foil": 13.27
  },
  {
   "id": "926953df-e1f8-4d3e-a05d-93657143da04",
@@ -50086,7 +52346,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.58,
+  "price_eur_foil": 8.74
  },
  {
   "id": "3f77c0f4-7a1b-496e-b030-55627446dfe3",
@@ -50131,7 +52393,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.88,
+  "price_eur_foil": 16.46
  },
  {
   "id": "5d49c95e-2398-4646-b9f1-44d0b73fc157",
@@ -50176,7 +52440,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.22,
+  "price_eur_foil": 11.45
  },
  {
   "id": "f67652be-9b37-41d0-93db-ba26f8a23186",
@@ -50221,7 +52487,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.65,
+  "price_eur_foil": 24.46
  },
  {
   "id": "b03e29e2-cfda-4284-8d30-0686c01e861e",
@@ -50263,7 +52531,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/505/sephiroth-planets-heir?utm_source=api",
   "treatments": [
    "Extended Art"
-  ]
+  ],
+  "price_eur": 11.26,
+  "price_eur_foil": null
  },
  {
   "id": "7224bb1b-167c-47e5-8314-84aebca054b6",
@@ -50308,7 +52578,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 3.25,
+  "price_eur_foil": 21.11
  },
  {
   "id": "d1e01457-1696-4313-b21e-36e088735b1f",
@@ -50353,7 +52625,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.75,
+  "price_eur_foil": 7.82
  },
  {
   "id": "075dd582-61b7-45e9-9dcf-0b544b733e61",
@@ -50398,7 +52672,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.06,
+  "price_eur_foil": 9.73
  },
  {
   "id": "fef02132-34e6-4f3a-ac60-af3221a782b3",
@@ -50443,7 +52719,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 2.9,
+  "price_eur_foil": 12.26
  },
  {
   "id": "e0c5f3d5-ca17-4d4c-8de4-3559d6c6fe94",
@@ -50488,7 +52766,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.08,
+  "price_eur_foil": 6.21
  },
  {
   "id": "fe0aa7d7-73e7-4c8c-92b5-b923817ce461",
@@ -50533,7 +52813,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 10.18,
+  "price_eur_foil": 29.53
  },
  {
   "id": "cfe3a1fa-d885-48c0-aa47-bfd8d340bf8e",
@@ -50578,7 +52860,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.56,
+  "price_eur_foil": 13.78
  },
  {
   "id": "e7922b5a-6e75-4910-93ad-37e322073d35",
@@ -50623,7 +52907,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.88,
+  "price_eur_foil": 29.75
  },
  {
   "id": "0cfc4614-f6c1-4247-ab96-5bd41006ad85",
@@ -50668,7 +52954,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 67.74,
+  "price_eur_foil": 115.02
  },
  {
   "id": "fd5de0c8-6af9-4b0a-be9d-19af1e7bd7c3",
@@ -50713,7 +53001,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.2,
+  "price_eur_foil": 9.46
  },
  {
   "id": "e11df7e8-e154-4fe2-b8d6-a452d0e0d7d5",
@@ -50758,7 +53048,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1.02,
+  "price_eur_foil": 4.82
  },
  {
   "id": "cf41b2a8-0f8f-48fd-a430-056a2f669615",
@@ -50803,7 +53095,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 13.96,
+  "price_eur_foil": 23.0
  },
  {
   "id": "2eaffe7a-0e04-4c19-942b-695a0c350ef0",
@@ -50848,7 +53142,9 @@ const CARDS_DATA = [
   "treatments": [
    "Extended Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 0.89,
+  "price_eur_foil": 13.18
  },
  {
   "id": "024a8033-fb41-40a4-b71d-0aa533e0f378",
@@ -50892,7 +53188,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 48.58
  },
  {
   "id": "f0b73ab0-b8eb-4a6f-a8d9-25d56fdf740a",
@@ -50936,7 +53234,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 309.04
  },
  {
   "id": "9f347fa7-301f-4bc5-954c-b910a840a23b",
@@ -50980,7 +53280,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 19.54
  },
  {
   "id": "8cbeb01f-965f-4aa2-9e75-31718cc574e3",
@@ -51024,7 +53326,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 46.94
  },
  {
   "id": "bbd46c0d-cd9d-4e48-b6bf-f619e141100c",
@@ -51068,7 +53372,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 25.38
  },
  {
   "id": "34bd7a66-afb1-4a6b-80b3-fce1bb361d88",
@@ -51112,7 +53418,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 14.65
  },
  {
   "id": "7d95f911-91c3-41ee-a709-c579c723eede",
@@ -51156,7 +53464,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 18.59
  },
  {
   "id": "a8bfc03f-227c-4a5d-b172-067ea5860bf9",
@@ -51200,7 +53510,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.63
  },
  {
   "id": "a951cc35-bd29-467f-b28c-5d57340e7450",
@@ -51244,7 +53556,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "db95465a-2a58-44d7-9439-edd18c9505f0",
@@ -51288,7 +53602,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 529.45
  },
  {
   "id": "15ea1113-7360-462d-91b8-22d5110cbf5a",
@@ -51332,7 +53648,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 28.05
  },
  {
   "id": "8e3b09a9-631d-4174-8390-a82db0a3d68d",
@@ -51376,7 +53694,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 19.25
  },
  {
   "id": "57f83eb3-d9d3-4565-b898-4ba1da768172",
@@ -51420,7 +53740,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 94.71
  },
  {
   "id": "6687a6e8-f674-4db8-81eb-5ad28b7890f7",
@@ -51464,7 +53786,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 15.08
  },
  {
   "id": "516105c2-462e-44e8-b412-5e9eb27ba040",
@@ -51508,7 +53832,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.68
  },
  {
   "id": "3afa1696-e242-469f-b3ae-99109c4b36e0",
@@ -51552,7 +53878,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 9.97
  },
  {
   "id": "0a38194e-44bb-4f79-9797-03cb733808d0",
@@ -51596,7 +53924,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 9.17
  },
  {
   "id": "9cbdcfad-dd4f-4405-9379-eb11c6e4d4f5",
@@ -51640,7 +53970,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 7.74
  },
  {
   "id": "17e88e4e-d8f0-4598-bfd4-006469c6f26e",
@@ -51684,7 +54016,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 83.03
  },
  {
   "id": "f1083637-7c43-44e0-8029-ad56cca8cc19",
@@ -51728,7 +54062,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.11
  },
  {
   "id": "ab6954bc-4fbc-4cb9-9c4d-1f46b3fe0085",
@@ -51772,7 +54108,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 18.35
  },
  {
   "id": "7083fa8a-a841-4c69-9443-af35676a7817",
@@ -51816,7 +54154,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 67.86
  },
  {
   "id": "de4c9b6b-27be-45b6-9642-49471aaddcb9",
@@ -51860,7 +54200,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 40.39
  },
  {
   "id": "0b3ba36b-4a15-425c-98ae-37a10b3772bc",
@@ -51904,7 +54246,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 27.72
  },
  {
   "id": "b818aec4-f5a1-411f-ae19-85787cad9032",
@@ -51948,7 +54292,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 27.94
  },
  {
   "id": "21977a0a-7e76-4e1f-9c42-dcc4d63961a1",
@@ -51992,7 +54338,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 151.03
  },
  {
   "id": "d673228a-eec8-4f6e-82fd-10db909ccee2",
@@ -52036,7 +54384,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 27.65
  },
  {
   "id": "2b760674-b6cc-4730-8c88-4e627f60589c",
@@ -52080,7 +54430,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 334.43
  },
  {
   "id": "49543cd4-d976-4d3b-a7d2-6acfbb28b1b5",
@@ -52124,7 +54476,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 31.2
  },
  {
   "id": "51df7137-8bfc-4140-b436-88834bd78b73",
@@ -52168,7 +54522,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 46.88
  },
  {
   "id": "fe9cd860-1b4e-48ec-be30-e0ec4ca75e26",
@@ -52212,7 +54568,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 15.22
  },
  {
   "id": "ed59c09c-b972-4470-bcae-c79866825941",
@@ -52256,7 +54614,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 180.74
  },
  {
   "id": "439b31a8-d6e2-4db4-bac3-c02e2eb11719",
@@ -52300,7 +54660,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.91
  },
  {
   "id": "71b97e69-f198-41ec-9385-015ec2f0160f",
@@ -52343,7 +54705,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 7156.72
  },
  {
   "id": "81690ce7-0651-40e4-9769-baebe10e2cbf",
@@ -52387,7 +54751,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Neon Ink"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1420.97
  },
  {
   "id": "ac3db85f-8cc3-4869-a555-882b62a1726b",
@@ -52431,7 +54797,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Neon Ink"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1515.25
  },
  {
   "id": "156cfd45-1556-4804-becf-039cfff7de3d",
@@ -52475,7 +54843,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Neon Ink"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1534.91
  },
  {
   "id": "e40d85a5-ecfa-4f95-920b-404eb448324f",
@@ -52519,7 +54889,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Neon Ink"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1342.87
  },
  {
   "id": "6ce8744a-ede3-4662-968a-360eb6639f08",
@@ -52564,7 +54936,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Serialized"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "a6d58067-337d-43dc-b4a3-c6acc701d450",
@@ -52607,7 +54981,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.12
  },
  {
   "id": "abd73e52-62f0-4e89-9dc6-90ff0bc2a9b7",
@@ -52650,7 +55026,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.0
  },
  {
   "id": "9da83b07-4978-4af7-be51-8aa8f35ec0bb",
@@ -52692,7 +55070,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/554/beatrix-loyal-general?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.93,
+  "price_eur_foil": null
  },
  {
   "id": "c44e0ad6-9f44-4e4c-8c3b-3ee99409a740",
@@ -52734,7 +55114,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/555/rosa-resolute-white-mage?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 1.45,
+  "price_eur_foil": null
  },
  {
   "id": "b64e4475-f1c6-4d85-b42f-6d84d06855bb",
@@ -52776,7 +55158,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/556/ultimecia-temporal-threat?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 1.12,
+  "price_eur_foil": null
  },
  {
   "id": "a11cb85c-85dd-435c-8303-4d0d18bdb1e9",
@@ -52818,7 +55202,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/557/deadly-embrace?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.31,
+  "price_eur_foil": null
  },
  {
   "id": "c5fdc78e-0815-443c-8c26-35387b6f4f37",
@@ -52860,7 +55246,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/558/seymour-flux?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.48,
+  "price_eur_foil": null
  },
  {
   "id": "05b04b06-9271-4a28-a60e-287df0d1a4d1",
@@ -52902,7 +55290,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/559/judgment-bolt?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.29,
+  "price_eur_foil": null
  },
  {
   "id": "4ad4dce3-6e43-4528-b570-85547d03164e",
@@ -52944,7 +55334,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/560/lightning-security-sergeant?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.5,
+  "price_eur_foil": null
  },
  {
   "id": "1caed9a8-b73b-470e-b9d8-8c3b7cac3eee",
@@ -52986,7 +55378,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/561/xande-dark-mage?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.24,
+  "price_eur_foil": null
  },
  {
   "id": "8b691d42-3498-4d47-9a46-f7c376df8886",
@@ -53028,7 +55422,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/562/magitek-scythe?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 0.22,
+  "price_eur_foil": null
  },
  {
   "id": "b9162d08-a6ba-4e6e-b82c-9b092bd781dd",
@@ -53070,7 +55466,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/fin/563/ultima-weapon?utm_source=api",
   "treatments": [
    "Default"
-  ]
+  ],
+  "price_eur": 4.35,
+  "price_eur_foil": null
  },
  {
   "id": "b358dadc-9cc9-4baf-afec-3b50d0822609",
@@ -53113,7 +55511,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 160.36
  },
  {
   "id": "c7d9c54d-edec-40a8-82d8-b12cee7daa21",
@@ -53156,7 +55556,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 39.94
  },
  {
   "id": "13f4b6f3-736f-4f33-9d05-9bfd0b05b214",
@@ -53199,7 +55601,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 21.98
  },
  {
   "id": "39a038ed-9ed9-4a32-9613-989e4809ec94",
@@ -53242,7 +55646,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 170.51
  },
  {
   "id": "f58e882a-c59f-4f72-91b5-0291f8360a2c",
@@ -53285,7 +55691,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 83.85
  },
  {
   "id": "1ce688fa-1fdb-4acd-b9b0-bf7325a6b8e0",
@@ -53328,7 +55736,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 88.64
  },
  {
   "id": "25ef2d44-c261-4511-b96f-85e7a291e318",
@@ -53371,7 +55781,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 200.87
  },
  {
   "id": "d9228c15-06d1-4701-8619-1ad08d63275a",
@@ -53414,7 +55826,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Chocobo Track Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 150.94
  },
  {
   "id": "dec72b07-8f41-4d42-a455-794bf106302c",
@@ -53458,7 +55872,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 0.75
  },
  {
   "id": "46255a65-b735-4888-85db-3ab2ab3d903c",
@@ -53502,7 +55918,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.27
  },
  {
   "id": "1176ebbf-4130-4e4e-ad49-65101a7357b4",
@@ -53546,7 +55964,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.78
  },
  {
   "id": "0cef98b7-d54a-456e-8240-1c5af3a72a04",
@@ -53590,7 +56010,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 0.96
  },
  {
   "id": "2036f825-ef57-4a40-b45f-0668d9c8ec6a",
@@ -53634,7 +56056,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.63
  },
  {
   "id": "6d24956c-b123-4682-9f89-6821ae45fc00",
@@ -53679,7 +56103,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 20.17,
+  "price_eur_foil": 37.84
  },
  {
   "id": "de3b9b08-f430-4f01-8a42-3a9f1415eee0",
@@ -53722,7 +56148,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.41
  },
  {
   "id": "b8921d64-fdd3-4cdd-9687-983c8d6e0f72",
@@ -53765,7 +56193,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.95
  },
  {
   "id": "90ab9143-23e0-437e-bc51-a46f3497c195",
@@ -53808,7 +56238,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.16
  },
  {
   "id": "a0f6e2d7-58b5-4a7d-8c42-e25185cd173f",
@@ -53851,7 +56283,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.75
  },
  {
   "id": "ace9baac-4aa6-49ef-b85d-514de6e77043",
@@ -53894,7 +56328,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.46
  },
  {
   "id": "b6dc1f5a-a6cc-4ab4-8bb9-e216e24ca735",
@@ -53937,7 +56373,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.12
  },
  {
   "id": "ea5b9fe8-2561-4176-adfd-3fb790250bbc",
@@ -53980,7 +56418,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.31
  },
  {
   "id": "9268ccdb-0b5b-4624-9443-f7b5330ec71f",
@@ -54023,7 +56463,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.58
  },
  {
   "id": "6969ef4f-e27b-40fc-9558-c9281deae80c",
@@ -54068,7 +56510,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 1591.87,
+  "price_eur_foil": 3967.12
  },
  {
   "id": "d7a7b817-90a3-4cb4-bbea-316f98ff0402",
@@ -54111,7 +56555,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 318.03
  },
  {
   "id": "5c0e08d1-ecec-4577-b16e-a8d8478472a0",
@@ -54155,7 +56601,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 43.57
  },
  {
   "id": "67bd0d2c-2fcf-46e2-a303-52e37e086f5d",
@@ -54199,7 +56647,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.08
  },
  {
   "id": "f7bac30c-1401-4a3b-90ae-4ae1709a214a",
@@ -54244,7 +56694,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 12.16
  },
  {
   "id": "b9be30cf-a49b-4358-836f-40441ee92519",
@@ -54288,7 +56740,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 48.13
  },
  {
   "id": "a245ebd2-606c-40dc-981b-d619b00d7a07",
@@ -54332,7 +56786,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 44.86
  },
  {
   "id": "157ca197-0e72-4f9c-9c65-d696232bc6f4",
@@ -54376,7 +56832,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.43
  },
  {
   "id": "a9b212fb-4666-40d5-bd81-ca4446561725",
@@ -54420,7 +56878,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.4
  },
  {
   "id": "995b373a-721f-4a52-83e6-bd94144bcb35",
@@ -54464,7 +56924,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.18
  },
  {
   "id": "8badb69b-27df-4572-ba76-dde6c8ba0279",
@@ -54508,7 +56970,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.56
  },
  {
   "id": "fb059c1d-4fb5-4275-ae70-aec6b80b7535",
@@ -54552,7 +57016,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.06
  },
  {
   "id": "d9120fd0-f958-4ce3-82cd-0500d4549654",
@@ -54596,7 +57062,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 29.1
  },
  {
   "id": "1586fec8-08c5-4bd5-9167-cfae9ac8e2cb",
@@ -54640,7 +57108,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.81
  },
  {
   "id": "395e13e2-1884-4aee-971d-00692b429a88",
@@ -54684,7 +57154,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 24.1
  },
  {
   "id": "4f461671-097a-4cd6-8114-4ec769e66904",
@@ -54728,7 +57200,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 6.9
  },
  {
   "id": "89e3ef53-ccb6-4b8e-a512-c9debf87eecf",
@@ -54772,7 +57246,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.66
  },
  {
   "id": "0f85cda8-f333-4b73-8005-34df32d3ed73",
@@ -54816,7 +57292,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.0
  },
  {
   "id": "329abaf9-b428-4e63-9433-558b384ba698",
@@ -54860,7 +57338,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 11.48
  },
  {
   "id": "246c2602-a8fd-4e01-bf32-5a513ae3c056",
@@ -54904,7 +57384,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 30.04
  },
  {
   "id": "7a948f96-fdd8-4f6c-a737-3d74b7daff71",
@@ -54948,7 +57430,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.31
  },
  {
   "id": "3a27f9fd-d3d9-42c4-be59-9a5d9cfabf6d",
@@ -54992,7 +57476,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.29
  },
  {
   "id": "d5cc0b50-5c09-4c74-b9dc-92bb95781e7f",
@@ -55036,7 +57522,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.05
  },
  {
   "id": "cc6f3187-0563-4843-a914-525446324411",
@@ -55080,7 +57568,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.46
  },
  {
   "id": "22281ba1-d509-4039-83c7-d912a1ce5ac4",
@@ -55124,7 +57614,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.27
  },
  {
   "id": "093948e5-3036-42b4-8682-37b298248916",
@@ -55168,7 +57660,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.53
  },
  {
   "id": "01eee1b7-286c-4df7-aeaf-ada01882e662",
@@ -55212,7 +57706,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 15.91
  },
  {
   "id": "47af882d-2036-4b66-bff0-31b7b8b89749",
@@ -55256,7 +57752,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.88
  },
  {
   "id": "579a2f93-6447-4b02-bbf7-b09ef91bd709",
@@ -55300,7 +57798,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 42.92
  },
  {
   "id": "776062ed-94df-4b2e-a84b-91756b4223bc",
@@ -55344,7 +57844,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 15.97
  },
  {
   "id": "c90cb6f4-d5c7-41c2-91ae-9c864f240804",
@@ -55388,7 +57890,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.78
  },
  {
   "id": "021d0abf-7c1a-4081-9686-fba578120249",
@@ -55432,7 +57936,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 31.33
  },
  {
   "id": "529ae7c1-320d-4625-ad64-c87678d51354",
@@ -55476,7 +57982,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.05
  },
  {
   "id": "d75917b1-0ffb-4bff-b75f-973e26e172df",
@@ -55520,7 +58028,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.24
  },
  {
   "id": "7f31721a-8fd4-46ca-bef9-d24ad4663a58",
@@ -55564,7 +58074,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 40.46
  },
  {
   "id": "13e0ad67-35a6-48f3-83cb-5ffd07daf717",
@@ -55608,7 +58120,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.58
  },
  {
   "id": "4287bbc3-df6b-453f-8d60-a929be013f30",
@@ -55652,7 +58166,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 17.43
  },
  {
   "id": "6c6f6035-32e0-4ea2-b281-79c8e00708a0",
@@ -55696,7 +58212,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 37.07
  },
  {
   "id": "627a0899-e206-4dc0-bc07-6d04d63792df",
@@ -55740,7 +58258,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.95
  },
  {
   "id": "421d443c-bd4c-4768-b801-5241f6b2658b",
@@ -55784,7 +58304,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.19
  },
  {
   "id": "daceda7c-db1d-4847-9c80-13fdfe4d2135",
@@ -55828,7 +58350,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 11.96
  },
  {
   "id": "65290ee9-0fbe-49d5-af48-cfbcde82277f",
@@ -55872,7 +58396,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.51
  },
  {
   "id": "86f7e3b4-959c-4820-9a7b-e5d178d42931",
@@ -55916,7 +58442,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.63
  },
  {
   "id": "87c9a2a6-b755-45a1-a785-792c7f179f18",
@@ -55960,7 +58488,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 18.72
  },
  {
   "id": "14154d2c-911a-433c-8f09-bddd41a2f65e",
@@ -56004,7 +58534,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.7
  },
  {
   "id": "8e0122f1-2d6b-423e-ac62-ffa4822632ed",
@@ -56048,7 +58580,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.44
  },
  {
   "id": "59d7c696-0ffa-4327-9045-eaefefcf4fe0",
@@ -56092,7 +58626,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.55
  },
  {
   "id": "5bb06121-b390-4e3d-8822-4389570b0e15",
@@ -56136,7 +58672,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.82
  },
  {
   "id": "64634ded-8ff9-4f99-afa7-137fc307c0b6",
@@ -56180,7 +58718,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.64
  },
  {
   "id": "5c04ec8b-967e-4ad3-b11b-eebb09821d8f",
@@ -56224,7 +58764,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.69
  },
  {
   "id": "284b33d2-aefd-41dd-867f-9106a3f89698",
@@ -56268,7 +58810,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.84
  },
  {
   "id": "7976e5ae-f2c3-467e-a4d5-b6c609d8aa26",
@@ -56312,7 +58856,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 15.07
  },
  {
   "id": "d4ac428e-8819-475b-b7cf-41083e0448b5",
@@ -56356,7 +58902,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.13
  },
  {
   "id": "010549ae-1289-47ee-a69b-135094f32607",
@@ -56400,7 +58948,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 12.15
  },
  {
   "id": "87d03dd2-afb8-48c8-a0f6-90f282c05d92",
@@ -56444,7 +58994,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 23.05
  },
  {
   "id": "785640aa-047c-449f-8b25-e3ccc2ad06e8",
@@ -56488,7 +59040,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 6.8
  },
  {
   "id": "610e4aad-f7d7-42af-81e3-408989f3f576",
@@ -56532,7 +59086,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 1.75
  },
  {
   "id": "d07ed4e3-8c45-4535-bb0b-3d3a6df673f4",
@@ -56576,7 +59132,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.94
  },
  {
   "id": "1eb2a447-e18e-4318-898d-bc12fdd16172",
@@ -56620,7 +59178,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.87
  },
  {
   "id": "f9b9c711-9525-4206-8582-d9f12cdaa876",
@@ -56664,7 +59224,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.66
  },
  {
   "id": "360102fd-59a0-43a2-bbed-cc5e3b592696",
@@ -56708,7 +59270,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 18.41
  },
  {
   "id": "9eedb34d-9815-48d3-be1b-d08c0adb1448",
@@ -56752,7 +59316,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 50.18
  },
  {
   "id": "6663e103-3356-46d3-80a0-32e28d6dfc95",
@@ -56796,7 +59362,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 20.58
  },
  {
   "id": "dd4da0d3-29c0-4697-877a-a07e3dae3af6",
@@ -56840,7 +59408,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.6
  },
  {
   "id": "c3ffcf44-9cab-4ee0-a5db-4b6366e99863",
@@ -56884,7 +59454,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 6.19
  },
  {
   "id": "5580fc6e-0192-4bd9-aace-ac2040fa729a",
@@ -56928,7 +59500,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.85
  },
  {
   "id": "effc26cf-3e80-4e67-a703-5c3579abc9f4",
@@ -56972,7 +59546,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.34
  },
  {
   "id": "94a7d51d-76ab-4f19-885c-af337c057f81",
@@ -57016,7 +59592,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.65
  },
  {
   "id": "f92b9318-68fb-40c5-88ab-a4139d1c5e42",
@@ -57060,7 +59638,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 8.34
  },
  {
   "id": "f8613b13-fedd-45a9-bb47-0440a4a104e7",
@@ -57104,7 +59684,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 16.62
  },
  {
   "id": "42ad2762-092b-4064-8fc0-be55da1916f8",
@@ -57148,7 +59730,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 10.31
  },
  {
   "id": "bac7dbc9-3e3a-4933-98d1-4a0505c4b1da",
@@ -57192,7 +59776,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 29.31
  },
  {
   "id": "9e575906-0f1e-4f24-aa0b-832fe1bb9613",
@@ -57236,7 +59822,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 30.05
  },
  {
   "id": "48ea4aa3-6514-4518-87d7-4a26ee4d3d3f",
@@ -57280,7 +59868,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.2
  },
  {
   "id": "4cdc9ed5-afce-4d82-9b72-9c42f4031a7f",
@@ -57324,7 +59914,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 22.07
  },
  {
   "id": "7fbcb624-3521-44ec-8bf8-0c628c2a14c7",
@@ -57368,7 +59960,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.24
  },
  {
   "id": "acbb8887-03f7-47b0-9ab0-b887d1c253bc",
@@ -57412,7 +60006,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 10.0
  },
  {
   "id": "8952beec-fd8e-481c-aea7-e3105fb5bcc9",
@@ -57456,7 +60052,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.75
  },
  {
   "id": "a33f6d61-ce5e-42b8-b407-10383cdae5b5",
@@ -57500,7 +60098,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 8.04
  },
  {
   "id": "2b675f4f-e329-4110-828a-f4d3e1358e15",
@@ -57544,7 +60144,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 102.58
  },
  {
   "id": "fe0c1b06-30f2-42bd-bdcb-169fb6bc0b3f",
@@ -57588,7 +60190,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.91
  },
  {
   "id": "7ceec16c-f536-447c-b62a-24873475fcf2",
@@ -57632,7 +60236,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 23.49
  },
  {
   "id": "d77bcdaf-eef4-485a-bf45-40d56815b62e",
@@ -57676,7 +60282,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 13.34
  },
  {
   "id": "bfa67320-b4cb-440b-b017-d7493ef8ad62",
@@ -57720,7 +60328,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 47.73
  },
  {
   "id": "73c66867-8c4a-45dc-bbfd-53777bdc6c0a",
@@ -57764,7 +60374,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.25
  },
  {
   "id": "b894358d-b024-4cf5-a09b-bac8cde72258",
@@ -57808,7 +60420,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 7.16
  },
  {
   "id": "7c84eb88-2e8e-490f-8628-61e8efb8524c",
@@ -57852,7 +60466,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.73
  },
  {
   "id": "7797680e-c2f0-454a-813d-ea285b013d5c",
@@ -57896,7 +60512,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.6
  },
  {
   "id": "dd08f30d-6bb8-45b9-a79c-81ff9578803e",
@@ -57940,7 +60558,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 16.5
  },
  {
   "id": "3e99c91c-7bcb-4405-8cd4-87290710f8c0",
@@ -57984,7 +60604,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 2.35
  },
  {
   "id": "5558304a-3d04-4549-b812-517667fc608a",
@@ -58028,7 +60650,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.27
  },
  {
   "id": "50aa744e-61e8-44c9-817c-0dc6086d736f",
@@ -58072,7 +60696,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.49
  },
  {
   "id": "0b85e76c-6da8-46bc-b9ac-c89b72b5db00",
@@ -58116,7 +60742,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.54
  },
  {
   "id": "c7adec62-2093-4782-8d69-c5d60b561534",
@@ -58160,7 +60788,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.78
  },
  {
   "id": "7cf8d52a-d503-4285-a909-380c3c619f91",
@@ -58204,7 +60834,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 31.9
  },
  {
   "id": "42788e7f-6db5-4a62-882d-0f8f74a94e32",
@@ -58248,7 +60880,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.39
  },
  {
   "id": "1a27b552-a6ad-47d4-b96e-05a8c782b4ae",
@@ -58292,7 +60926,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 28.99
  },
  {
   "id": "166f9d06-c390-4cc8-ad33-3fd14e499527",
@@ -58336,7 +60972,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 7.4
  },
  {
   "id": "df5d6271-5318-42b7-99cf-a3b041b79f3f",
@@ -58380,7 +61018,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 5.96
  },
  {
   "id": "fac06752-6c16-47dc-83a5-14ddc8185653",
@@ -58424,7 +61064,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 14.47
  },
  {
   "id": "361f3cbb-5a9e-4b77-9180-742f25d954cc",
@@ -58468,7 +61110,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 4.38
  },
  {
   "id": "2903fbcf-1f10-4518-9f7f-6b61d9b6552d",
@@ -58512,7 +61156,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 101.49
  },
  {
   "id": "40b66faa-abcb-45e4-85cc-997d29907b4e",
@@ -58556,7 +61202,9 @@ const CARDS_DATA = [
   "treatments": [
    "Default",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 6.38
  },
  {
   "id": "570ca3e8-1563-4cef-8559-776982a78838",
@@ -58602,7 +61250,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 591.76,
+  "price_eur_foil": 5303.5
  },
  {
   "id": "f020aa2f-cc1b-4bb4-bf05-4050ea935d66",
@@ -58648,7 +61298,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 178.56,
+  "price_eur_foil": 2430.44
  },
  {
   "id": "32e03ed1-6d1e-4303-b67c-4a5a4f825e9c",
@@ -58693,7 +61345,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 591.76,
+  "price_eur_foil": 5303.5
  },
  {
   "id": "e9fabb82-d866-4d5b-809b-acd88005bcf7",
@@ -58738,7 +61392,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 3.45
  },
  {
   "id": "076af4bd-1b74-4cf3-b6a0-8ec17d5b0e26",
@@ -58784,7 +61440,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 10.43
  },
  {
   "id": "31572625-b4a8-4ac0-8f08-999d6a6636d7",
@@ -58829,7 +61487,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 26.9
  },
  {
   "id": "bc5376cb-82f6-43c7-bf8b-43515791e082",
@@ -58872,7 +61532,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/rfin/J1/ja/%E5%90%A6%E5%AE%9A%E3%81%AE%E5%8A%9B-(force-of-negation)?utm_source=api",
   "treatments": [
    "Borderless"
-  ]
+  ],
+  "price_eur": 1056.79,
+  "price_eur_foil": null
  },
  {
   "id": "8a5e5463-2451-48b7-a924-a81d2dd99671",
@@ -58918,7 +61580,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 6.42,
+  "price_eur_foil": 38.93
  },
  {
   "id": "9e42aded-44be-4b3a-9b2c-80ae43835e3d",
@@ -58962,7 +61626,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 7.15,
+  "price_eur_foil": 9.12
  },
  {
   "id": "5a763474-5ce9-48cc-aaf8-8ca363df4430",
@@ -59006,7 +61672,9 @@ const CARDS_DATA = [
   "treatments": [
    "Borderless",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": 5.54,
+  "price_eur_foil": 5.85
  },
  {
   "id": "8dc05018-f1c5-4c45-bb32-9a9ccd641f48",
@@ -59050,7 +61718,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "c459f2ec-2aa3-44f6-999f-b1467dd4e27c",
@@ -59094,7 +61764,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "004f2ea4-0477-49b2-ad06-5aac7991103d",
@@ -59138,7 +61810,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "023cebe4-ebe4-4398-9fd7-d3507660040a",
@@ -59182,7 +61856,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "660d8e43-13e1-464b-b251-c7c2d77732ca",
@@ -59226,7 +61902,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "4cecd5c6-d6c8-4cd5-97a3-cddaf051af15",
@@ -59270,7 +61948,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "6afbbdad-aeed-428a-b840-c33f59a18d0b",
@@ -59314,7 +61994,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": 0.13,
+  "price_eur_foil": 1.03
  },
  {
   "id": "af39ce29-47bb-42bf-8d3d-224bdce96a83",
@@ -59358,7 +62040,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "6e886e0b-2ce7-4231-a47c-a39bda50e8fd",
@@ -59402,7 +62086,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "207b3d62-2541-4a51-8152-3c54218ab6f7",
@@ -59446,7 +62132,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "66f569e1-5a37-4801-be01-9c5d44a82427",
@@ -59490,7 +62178,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "fcde6a95-37f1-4bb4-9cea-5b65dbc9c76a",
@@ -59534,7 +62224,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "d0657ce1-bf75-4007-ac1b-0623eb263357",
@@ -59578,7 +62270,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "3308e4bf-950f-4b83-969a-2a95f077552f",
@@ -59622,7 +62316,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "a257329e-28b9-4ab6-ae05-f6ce0070cb35",
@@ -59666,7 +62362,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "5619d240-3832-477b-ad30-8d310c90f555",
@@ -59710,7 +62408,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "c39b8112-6a5c-4080-a884-2b4d6e5276ef",
@@ -59754,7 +62454,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "c82c74c1-fb73-4d4d-808e-2f4d7b97c97d",
@@ -59798,7 +62500,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "7fc68b53-e23d-4762-aa53-e634e856be47",
@@ -59842,7 +62546,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "2d132d9b-00dd-4ab9-b195-1857f3cee37b",
@@ -59886,7 +62592,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "a7758a0b-9e85-4b4a-bf1c-ffcc6761dbad",
@@ -59930,7 +62638,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "295b78dc-b26d-4e92-8f75-916566c4db14",
@@ -59974,7 +62684,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "c2b4e93b-6b27-4dd3-a6dd-a75d6fab14dc",
@@ -60018,7 +62730,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "ddcf50c2-24f5-46b4-bfe9-c636bb51bae5",
@@ -60062,7 +62776,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "187fe54c-7d0c-4225-9d46-3affbead897d",
@@ -60106,7 +62822,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "e27f28ec-d5e7-4415-96cc-b666cdecae08",
@@ -60150,7 +62868,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "1fbc471d-5948-47fc-b7cc-81cc13a4cd15",
@@ -60194,7 +62914,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "8632216a-33c3-4d16-bf25-42e41af53986",
@@ -60238,7 +62960,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "e3c84944-23b8-40d7-9b25-c746b08b4dc4",
@@ -60282,7 +63006,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "54347961-0a41-4f62-b47e-2afa0ca07b21",
@@ -60326,7 +63052,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "19faca08-0eef-4da4-ab6f-c3aed63ac77b",
@@ -60370,7 +63098,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "fe592a5c-5e6e-40ed-8818-f4651bcf2fe8",
@@ -60414,7 +63144,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "4853f6f5-476d-4109-a1c6-f98f4d332db3",
@@ -60458,7 +63190,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "ab0cda01-10b5-4a1b-b2bb-ad8bb296590f",
@@ -60502,7 +63236,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "03165625-1cb9-4e7b-85be-df400adc4487",
@@ -60546,7 +63282,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "81c9d442-d7d5-4911-b0b9-c3206faeab1d",
@@ -60589,7 +63327,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "00686381-e0a5-4cd3-8812-3b4aaefa31fa",
@@ -60632,7 +63372,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "80b24e51-bf2b-4aac-a415-e04eb0738a8b",
@@ -60675,7 +63417,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "2cb73e63-efee-44b4-9257-881b83d704a0",
@@ -60718,7 +63462,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "9558c28a-5200-47f8-b4a7-58ceb6960f4d",
@@ -60761,7 +63507,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "f53d44de-7535-4af1-a184-f457b38eefe2",
@@ -60804,7 +63552,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "b0752d81-a6d1-47fb-8e21-eb2c91d5b607",
@@ -60847,7 +63597,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "5bf4e156-0f17-427b-b581-b71fdf02896f",
@@ -60890,7 +63642,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "17fa0c1f-6737-487c-9101-0bec2e586795",
@@ -60933,7 +63687,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "20a709d5-4be5-487b-bfba-4b1821f2ebd3",
@@ -60976,7 +63732,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "04ae24bf-0b24-4996-afae-7bf9f9d7471c",
@@ -61019,7 +63777,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "e5f4f810-f95a-41ac-9c3b-47254c03e766",
@@ -61062,7 +63822,9 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Surge Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "c4e733b1-4422-4293-bd7c-abb3b37ed8e1",
@@ -61100,7 +63862,9 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/tfin/37/punchcard-punchcard?utm_source=api",
   "treatments": [
    "Full Art"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": null
  },
  {
   "id": "4129b132-ad42-4cdb-a2fd-0a5b69f203ac",
@@ -61145,6 +63909,8 @@ const CARDS_DATA = [
   "treatments": [
    "Full Art",
    "Traditional Foil"
-  ]
+  ],
+  "price_eur": null,
+  "price_eur_foil": 300.0
  }
 ];
