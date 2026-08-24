@@ -94,7 +94,18 @@ const MASTER_VARIANTS = {
   "Wave Foil": { key: "wave", label: "Chocobo Track Foil", short: "Chocobo Track", icon: "⚡", priceKey: "price_foil", badgeClass: "active-wave" },
   "Foil Etched": { key: "etched", label: "Foil Etched", short: "Etched", icon: "\u{1F48E}", priceKey: "price_etched", badgeClass: "active-foil" },
   "Promo": { key: "promo", label: "Promo / Prerelease", short: "Promo", icon: "\u{1F396}️", priceKey: "price_foil", badgeClass: "active-promo" },
-  "Serialized": { key: "serialized", label: "Serialized", short: "Serial", icon: "\u{1F522}", priceKey: "price_foil", badgeClass: "active-serialized" }
+  "Serialized": { key: "serialized", label: "Serialized", short: "Serial", icon: "\u{1F522}", priceKey: "price_foil", badgeClass: "active-serialized" },
+
+  // Art cards do not come in foil - Wizards varnishes them instead. Their two
+  // versions are the plain card and the artist's gold-stamped signature, so
+  // that is what the Available Variants show for them.
+  //
+  // These deliberately REUSE the nonfoil and foil storage keys rather than
+  // introducing new ones: the keys are what the collection is saved under and
+  // what Code.gs syncs, so a count recorded before this change stays attached,
+  // and the Google Sheet needs no new columns and no redeploy.
+  "Basic": { key: "nonfoil", label: "Basic", short: "Basic", icon: "\u{1F4C4}", priceKey: "price_usd", badgeClass: "active-nonfoil" },
+  "Signed": { key: "foil", label: "Signed", short: "Signed", icon: "\u{270D}️", priceKey: "price_foil", badgeClass: "active-foil" }
 };
 
 // Friendly labels for the filter dropdowns, which are generated from the data.
@@ -525,15 +536,40 @@ function variantPrice(card, def) {
   return null;
 }
 
-/** Union of finish keys that any card in the data can actually be printed in. */
+/**
+ * Union of finish keys that any card in the data can actually be printed in.
+ *
+ * Two names can share a key - "Basic" is the art cards' name for nonfoil - so
+ * the label is taken from MASTER_VARIANTS in declaration order rather than from
+ * whichever card happened to be reached first. Otherwise the ownership filter
+ * would read "Has Basic Collected" for all 1,383 cards, because the art card
+ * sets sort to the front of the data.
+ */
 function availableVariantKeys() {
-  const seen = new Map();
+  const present = new Set();
+  CARDS_DATA.forEach(card => {
+    getCardVariantDefs(card).forEach(def => present.add(def.key));
+  });
+
+  const out = [];
+  const used = new Set();
+  Object.keys(MASTER_VARIANTS).forEach(name => {
+    const def = MASTER_VARIANTS[name];
+    if (present.has(def.key) && !used.has(def.key)) {
+      used.add(def.key);
+      out.push(def);
+    }
+  });
+  // A finish the master list has never heard of still gets an entry.
   CARDS_DATA.forEach(card => {
     getCardVariantDefs(card).forEach(def => {
-      if (!seen.has(def.key)) seen.set(def.key, def);
+      if (!used.has(def.key)) {
+        used.add(def.key);
+        out.push(def);
+      }
     });
   });
-  return Array.from(seen.values());
+  return out;
 }
 
 function cardImageSrcset(card) {
@@ -1505,6 +1541,8 @@ function sortFilteredCards(sortBy) {
         return ((isCardOwned(b.id) ? 1 : 0) - (isCardOwned(a.id) ? 1 : 0)) || compareByPrintStyle(a, b);
       case "qty_desc":
         return (getCardTotalQty(b.id) - getCardTotalQty(a.id)) || compareByPrintStyle(a, b);
+      case "game_asc":
+        return (gameRank(a) - gameRank(b)) || compareByPrintStyle(a, b);
       case "number_asc":
         return compareByNumber(a, b);
       case "print_style":
@@ -1527,11 +1565,15 @@ function treatmentRank(card) {
 
 /**
  * What kind of card this is, for the default order: the cards you actually cast
- * come first, then lands, then tokens.
+ * come first, then lands, then tokens, then the two kinds of art card, which
+ * are not playable at all.
  *
  * Grouping by treatment alone put every token and full-art land ahead of most of
  * the playable cards, because all of them are Full Art and Full Art sorts before
  * Default.
+ *
+ * The Art Series (AFIN) and the Scene Box art cards (AFIC) both carry the
+ * Art Card treatment, but they are different products and are kept apart.
  *
  * A double-faced card is judged by its FRONT face, the same way roleKeywords
  * does it: "Land - Town // Sorcery - Adventure" is a land, while
@@ -1540,9 +1582,16 @@ function treatmentRank(card) {
 const KIND_PLAYABLE = 0;
 const KIND_LAND = 1;
 const KIND_TOKEN = 2;
+const KIND_ART_SERIES = 3;
+const KIND_SCENE_ART = 4;
 
 function cardKind(card) {
   const front = (card.type_line || "").toLowerCase().split("//")[0];
+  // The art cards are checked first: their type line is just "Card // Card",
+  // which none of the tests below would catch, so they would pass for playable.
+  // AFIC before the general case, or the Scene Box would land in the Art Series.
+  if (card.set === "AFIC") return KIND_SCENE_ART;
+  if (card.set === "AFIN" || card.treatment === "Art Card") return KIND_ART_SERIES;
   // Emblems live with the tokens - they come out of the same products and are
   // not cards you own to play.
   if (card.set === "TFIN" || card.set === "TFIC"
@@ -1558,6 +1607,18 @@ function setRank(card) {
   return at === -1 ? SET_RELEASE_ORDER.length : at;
 }
 
+/**
+ * Release order of the Final Fantasy games, so sorting runs I to XVI rather
+ * than alphabetically - which would put FF10 between FF1 and FF11.
+ *
+ * The catch-all buckets ("Spin-Off / Multi-Game", "Unknown") are already last
+ * in GAME_ORDER, and anything missing from it sorts after them.
+ */
+function gameRank(card) {
+  const at = GAME_ORDER.indexOf(card.game);
+  return at === -1 ? GAME_ORDER.length : at;
+}
+
 function compareBySet(a, b) {
   const rankDiff = setRank(a) - setRank(b);
   if (rankDiff !== 0) return rankDiff;
@@ -1566,9 +1627,10 @@ function compareBySet(a, b) {
 }
 
 /**
- * The default order: playable cards, then lands, then tokens. Within each of
- * those, group by print style, and within each style run through the sets in
- * release order, starting with FIN.
+ * The default order: playable cards, then lands, then tokens, then the Art
+ * Series, then the Scene Box art cards. Within each of those, group by print
+ * style, and within each style run through the sets in release order, starting
+ * with FIN.
  */
 function compareByPrintStyle(a, b) {
   return (cardKind(a) - cardKind(b))
@@ -2427,6 +2489,27 @@ function registerServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
   // A file:// page cannot register a service worker; skip quietly when testing locally.
   if (location.protocol !== "http:" && location.protocol !== "https:") return;
+
+  // Reload once when a new service worker takes over.
+  //
+  // Without this, the first visit after an upload still runs the JS and card
+  // data the browser had already loaded: the new worker installs, claims
+  // control, and caches the new files - but the page in front of you is the old
+  // one, and only the NEXT visit shows the update. That made every change look
+  // like it had not taken, and made a filter built from new data but matched by
+  // old code return nothing at all.
+  //
+  // Guarded twice: `hadController` is false on the very first registration, when
+  // clients.claim() fires this for a page that is already current, and
+  // `reloading` stops the reload repeating.
+  const hadController = Boolean(navigator.serviceWorker.controller);
+  let reloading = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!hadController || reloading) return;
+    reloading = true;
+    location.reload();
+  });
+
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("sw.js").catch(err => {
       console.info("Service worker registration skipped:", err && err.message);

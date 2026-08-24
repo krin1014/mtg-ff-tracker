@@ -24,8 +24,8 @@ const CARDS_DATA = [
   "collector_number": "0001",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF1",
@@ -51,6 +51,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/1/garland-royal-kidnapper-garland-royal-kidnapper?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -65,8 +66,8 @@ const CARDS_DATA = [
   "collector_number": "0002",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF1",
@@ -92,6 +93,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/2/the-destined-warrior-the-destined-warrior?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -106,8 +108,8 @@ const CARDS_DATA = [
   "collector_number": "0003",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF1",
@@ -133,6 +135,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/3/the-destined-white-mage-the-destined-white-mage?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -147,8 +150,8 @@ const CARDS_DATA = [
   "collector_number": "0004",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF1",
@@ -174,6 +177,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/4/chaos-shrines-black-crystal-chaos-shrines-black-crystal?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -188,8 +192,8 @@ const CARDS_DATA = [
   "collector_number": "0005",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF1",
@@ -215,6 +219,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/5/the-destined-thief-the-destined-thief?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -229,8 +234,8 @@ const CARDS_DATA = [
   "collector_number": "0006",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF1",
@@ -256,6 +261,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/6/the-destined-black-mage-the-destined-black-mage?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -270,8 +276,8 @@ const CARDS_DATA = [
   "collector_number": "0007",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -297,6 +303,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/7/edea-possessed-sorceress-edea-possessed-sorceress?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -311,8 +318,8 @@ const CARDS_DATA = [
   "collector_number": "0008",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -338,6 +345,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/8/fated-clash-fated-clash?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -352,8 +360,8 @@ const CARDS_DATA = [
   "collector_number": "0009",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -379,6 +387,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/9/rinoa-angel-wing-rinoa-angel-wing?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -393,8 +402,8 @@ const CARDS_DATA = [
   "collector_number": "0010",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -420,6 +429,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/10/seifer-balamb-rival-seifer-balamb-rival?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -434,8 +444,8 @@ const CARDS_DATA = [
   "collector_number": "0011",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -461,6 +471,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/11/duelists-flame-duelists-flame?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -475,8 +486,8 @@ const CARDS_DATA = [
   "collector_number": "0012",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -502,6 +513,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/12/squall-gunblade-duelist-squall-gunblade-duelist?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -516,8 +528,8 @@ const CARDS_DATA = [
   "collector_number": "0013",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -543,6 +555,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/13/brilliant-wings-brilliant-wings?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -557,8 +570,8 @@ const CARDS_DATA = [
   "collector_number": "0014",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -584,6 +597,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/14/judgment-of-alexander-judgment-of-alexander?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -598,8 +612,8 @@ const CARDS_DATA = [
   "collector_number": "0015",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -625,6 +639,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/15/mega-flare-mega-flare?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -639,8 +654,8 @@ const CARDS_DATA = [
   "collector_number": "0016",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -666,6 +681,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/16/amarant-coral-amarant-coral?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -680,8 +696,8 @@ const CARDS_DATA = [
   "collector_number": "0017",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -707,6 +723,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/17/vivis-persistence-vivis-persistence?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -721,8 +738,8 @@ const CARDS_DATA = [
   "collector_number": "0018",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -748,6 +765,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/18/search-for-dagger-search-for-dagger?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -762,8 +780,8 @@ const CARDS_DATA = [
   "collector_number": "0019",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -789,6 +807,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/19/noctis-heir-apparent-noctis-heir-apparent?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -803,8 +822,8 @@ const CARDS_DATA = [
   "collector_number": "0020",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -830,6 +849,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/20/fishing-gear-fishing-gear?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -844,8 +864,8 @@ const CARDS_DATA = [
   "collector_number": "0021",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -871,6 +891,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/21/chocobo-camp-chocobo-camp?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -885,8 +906,8 @@ const CARDS_DATA = [
   "collector_number": "0022",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -912,6 +933,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/22/flash-photography-flash-photography?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -926,8 +948,8 @@ const CARDS_DATA = [
   "collector_number": "0023",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -953,6 +975,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/23/campsite-cuisine-campsite-cuisine?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -967,8 +990,8 @@ const CARDS_DATA = [
   "collector_number": "0024",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -994,6 +1017,7 @@ const CARDS_DATA = [
   "scryfall_uri": "https://scryfall.com/card/afic/24/warriors-resolve-warriors-resolve?utm_source=api",
   "treatments": [
    "Art Card",
+   "Scene Card",
    "Traditional Foil"
   ]
  },
@@ -1008,8 +1032,8 @@ const CARDS_DATA = [
   "collector_number": "0001",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1051,8 +1075,8 @@ const CARDS_DATA = [
   "collector_number": "0002",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1094,8 +1118,8 @@ const CARDS_DATA = [
   "collector_number": "0003",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -1137,8 +1161,8 @@ const CARDS_DATA = [
   "collector_number": "0004",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1180,8 +1204,8 @@ const CARDS_DATA = [
   "collector_number": "0005",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1223,8 +1247,8 @@ const CARDS_DATA = [
   "collector_number": "0006",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1266,8 +1290,8 @@ const CARDS_DATA = [
   "collector_number": "0007",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF12",
@@ -1309,8 +1333,8 @@ const CARDS_DATA = [
   "collector_number": "0008",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -1352,8 +1376,8 @@ const CARDS_DATA = [
   "collector_number": "0009",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -1395,8 +1419,8 @@ const CARDS_DATA = [
   "collector_number": "0010",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF11",
@@ -1438,8 +1462,8 @@ const CARDS_DATA = [
   "collector_number": "0011",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -1481,8 +1505,8 @@ const CARDS_DATA = [
   "collector_number": "0012",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1524,8 +1548,8 @@ const CARDS_DATA = [
   "collector_number": "0013",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF2",
@@ -1567,8 +1591,8 @@ const CARDS_DATA = [
   "collector_number": "0014",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -1610,8 +1634,8 @@ const CARDS_DATA = [
   "collector_number": "0015",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -1653,8 +1677,8 @@ const CARDS_DATA = [
   "collector_number": "0016",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF11",
@@ -1696,8 +1720,8 @@ const CARDS_DATA = [
   "collector_number": "0017",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -1739,8 +1763,8 @@ const CARDS_DATA = [
   "collector_number": "0018",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF12",
@@ -1782,8 +1806,8 @@ const CARDS_DATA = [
   "collector_number": "0019",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1825,8 +1849,8 @@ const CARDS_DATA = [
   "collector_number": "0020",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -1868,8 +1892,8 @@ const CARDS_DATA = [
   "collector_number": "0021",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -1911,8 +1935,8 @@ const CARDS_DATA = [
   "collector_number": "0022",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -1954,8 +1978,8 @@ const CARDS_DATA = [
   "collector_number": "0023",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -1997,8 +2021,8 @@ const CARDS_DATA = [
   "collector_number": "0024",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -2040,8 +2064,8 @@ const CARDS_DATA = [
   "collector_number": "0025",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -2083,8 +2107,8 @@ const CARDS_DATA = [
   "collector_number": "0026",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -2126,8 +2150,8 @@ const CARDS_DATA = [
   "collector_number": "0027",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -2169,8 +2193,8 @@ const CARDS_DATA = [
   "collector_number": "0028",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -2212,8 +2236,8 @@ const CARDS_DATA = [
   "collector_number": "0029",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -2255,8 +2279,8 @@ const CARDS_DATA = [
   "collector_number": "0030",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -2298,8 +2322,8 @@ const CARDS_DATA = [
   "collector_number": "0031",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -2341,8 +2365,8 @@ const CARDS_DATA = [
   "collector_number": "0032",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -2384,8 +2408,8 @@ const CARDS_DATA = [
   "collector_number": "0033",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -2427,8 +2451,8 @@ const CARDS_DATA = [
   "collector_number": "0034",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -2470,8 +2494,8 @@ const CARDS_DATA = [
   "collector_number": "0035",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -2513,8 +2537,8 @@ const CARDS_DATA = [
   "collector_number": "0036",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -2556,8 +2580,8 @@ const CARDS_DATA = [
   "collector_number": "0037",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -2599,8 +2623,8 @@ const CARDS_DATA = [
   "collector_number": "0038",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF15",
@@ -2642,8 +2666,8 @@ const CARDS_DATA = [
   "collector_number": "0039",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -2685,8 +2709,8 @@ const CARDS_DATA = [
   "collector_number": "0040",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -2728,8 +2752,8 @@ const CARDS_DATA = [
   "collector_number": "0041",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -2771,8 +2795,8 @@ const CARDS_DATA = [
   "collector_number": "0042",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF16",
@@ -2814,8 +2838,8 @@ const CARDS_DATA = [
   "collector_number": "0043",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF16",
@@ -2857,8 +2881,8 @@ const CARDS_DATA = [
   "collector_number": "0044",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -2900,8 +2924,8 @@ const CARDS_DATA = [
   "collector_number": "0045",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF4",
@@ -2943,8 +2967,8 @@ const CARDS_DATA = [
   "collector_number": "0046",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF6",
@@ -2986,8 +3010,8 @@ const CARDS_DATA = [
   "collector_number": "0047",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF8",
@@ -3029,8 +3053,8 @@ const CARDS_DATA = [
   "collector_number": "0048",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF10",
@@ -3072,8 +3096,8 @@ const CARDS_DATA = [
   "collector_number": "0049",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF9",
@@ -3115,8 +3139,8 @@ const CARDS_DATA = [
   "collector_number": "0050",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -3158,8 +3182,8 @@ const CARDS_DATA = [
   "collector_number": "0051",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
@@ -3201,8 +3225,8 @@ const CARDS_DATA = [
   "collector_number": "0052",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF7",
@@ -3244,8 +3268,8 @@ const CARDS_DATA = [
   "collector_number": "0053",
   "variant": "Basic/Non-foil",
   "avail_variants": [
-   "Non-Foil",
-   "Traditional Foil"
+   "Basic",
+   "Signed"
   ],
   "treatment": "Art Card",
   "game": "FF14",
