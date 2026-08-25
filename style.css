@@ -1889,12 +1889,153 @@ body.modal-open {
   margin-bottom: 10px;
 }
 
-/* Inside the block it is already on a panel; drop the nested frame. */
-.modal-your-copies .acquired-summary {
-  margin: 0 0 12px;
-  padding: 0;
+/* --- Purchase lots ---------------------------------------------------------
+   One row per purchase. Three copies bought on three days at three prices are
+   three rows here, and the totals underneath add them up. */
+.inventory-panel {
+  margin-bottom: 12px;
+}
+
+.inventory-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.inventory-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-card);
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.inventory-table th {
+  text-align: left;
+  padding: 7px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.inventory-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(46, 62, 91, 0.5);
+  vertical-align: middle;
+}
+
+.inventory-table tr:last-child td { border-bottom: none; }
+
+.inventory-table .table-input,
+.inventory-table .table-select {
+  width: 100%;
+  min-width: 72px;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+
+.lot-qty { width: 68px; }
+.lot-price { width: 96px; }
+.lot-date { width: 140px; }
+.lot-variant { min-width: 120px; }
+.lot-condition { min-width: 120px; }
+
+.lot-cost,
+.lot-market {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.lot-move { white-space: nowrap; }
+
+.lot-row td:first-child { padding-left: 10px; }
+
+.lot-remove {
+  width: 34px;
+  text-align: center;
+}
+
+.lot-empty td {
+  padding: 14px 10px;
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.lot-remove-btn {
   background: none;
   border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.lot-remove-btn:hover,
+.lot-remove-btn:focus-visible {
+  color: var(--accent-rose, #F87171);
+  background: rgba(244, 63, 94, 0.12);
+}
+
+/* The aggregate: owned, average cost, total cost, market value, gain / loss. */
+.inventory-totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 10px;
+  padding: 9px 12px;
+  background: var(--bg-elevated, rgba(15, 23, 42, 0.5));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.inventory-total-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.inventory-total-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.inventory-total-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.inventory-gain { margin-left: auto; }
+
+.inventory-note {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
 }
 
 .modal-field-grid {

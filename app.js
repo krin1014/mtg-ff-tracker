@@ -345,27 +345,27 @@ function getActiveUnitPrice(card, variant) {
  * Cards bought at different prices over time are outside what one field can say.
  */
 function cardFinancials(card, entry) {
-  const variants = (entry && entry.variants) || {};
-  const lines = [];
+  const inventory = entryInventory(entry);
 
-  let quantity = 0;
-  let marketValue = 0;      // everything owned, priced at market
-  let costBasis = 0;        // only the finishes with a purchase price recorded
-  let pricedMarket = 0;     // market value of exactly those finishes
+  let quantity = 0;         // every copy held
+  let marketValue = 0;      // every copy held, at today's price
+  let costBasis = 0;        // only the lots with a purchase price recorded
+  let pricedMarket = 0;     // today's price of exactly those lots
   let pricedQty = 0;
   let currency = "usd";
   let sawPrice = false;
   let mixedCurrency = false;
 
-  for (const key in VARIANT_PRICE_ORDER) {
-    const qty = variants[key] || 0;
-    const bought = acquiredFor(entry, key);
-    if (qty <= 0 && bought.price === null && !bought.date) continue;
+  // Per-lot detail, in the order the lots were added.
+  const lots = inventory.map(lot => {
+    const unit = getActiveUnitPrice(card, lot.variant);
+    // A price typed in before any copy is logged still describes one purchase,
+    // so it is costed as a single copy rather than silently doing nothing.
+    const counted = lot.quantity > 0 ? lot.quantity : (lot.purchasePrice !== null ? 1 : 0);
 
-    const unit = getActiveUnitPrice(card, key);
-    if (qty > 0) {
-      quantity += qty;
-      marketValue += qty * unit.value;
+    if (lot.quantity > 0) {
+      quantity += lot.quantity;
+      marketValue += lot.quantity * unit.value;
       if (unit.value > 0) {
         if (!sawPrice) {
           currency = unit.currency;
@@ -376,28 +376,54 @@ function cardFinancials(card, entry) {
       }
     }
 
-    // A purchase counts once a price is recorded, even before a copy is logged,
-    // so typing a price does not silently do nothing.
-    const countedQty = qty > 0 ? qty : (bought.price !== null ? 1 : 0);
-    if (bought.price !== null && countedQty > 0) {
-      costBasis += bought.price * countedQty;
-      pricedMarket += unit.value * countedQty;
-      pricedQty += countedQty;
+    if (lot.purchasePrice !== null && counted > 0) {
+      costBasis += lot.purchasePrice * counted;
+      pricedMarket += unit.value * counted;
+      pricedQty += counted;
     }
 
-    lines.push({
-      key: key,
-      quantity: qty,
+    return {
+      id: lot.id,
+      variant: lot.variant,
+      quantity: lot.quantity,
+      countedQty: counted,
+      purchasePrice: lot.purchasePrice,
+      purchaseDate: lot.purchaseDate,
+      condition: lot.condition,
       unitMarket: unit.value,
       currency: unit.currency,
-      paid: bought.price,
-      date: bought.date,
-      cost: bought.price === null ? 0 : bought.price * countedQty,
-      market: unit.value * countedQty
+      cost: lot.purchasePrice === null ? 0 : lot.purchasePrice * counted,
+      market: unit.value * counted
+    };
+  });
+
+  // Per-finish rollup, kept because the variant table, the tile and the sheet
+  // all still think in finishes. Same numbers, grouped differently.
+  const byKey = {};
+  lots.forEach(lot => {
+    const line = byKey[lot.variant] || (byKey[lot.variant] = {
+      key: lot.variant, quantity: 0, unitMarket: lot.unitMarket,
+      currency: lot.currency, paid: null, date: "", cost: 0, market: 0, lots: 0
     });
-  }
+    line.quantity += lot.quantity;
+    line.cost += lot.cost;
+    line.market += lot.market;
+    line.lots += 1;
+    if (lot.purchasePrice !== null) {
+      // The weighted average across this finish's lots, which is the only
+      // single number that can honestly stand for several different prices.
+      const paidQty = (line.paidQty || 0) + lot.countedQty;
+      line.paid = ((line.paid || 0) * (line.paidQty || 0) + lot.cost) / (paidQty || 1);
+      line.paidQty = paidQty;
+    }
+    if (lot.purchaseDate && (!line.date || lot.purchaseDate < line.date)) {
+      line.date = lot.purchaseDate;
+    }
+  });
+  const lines = Object.keys(byKey).map(key => byKey[key]);
 
   // A finish the price table has never heard of still counts as owned.
+  const variants = (entry && entry.variants) || {};
   for (const key in variants) {
     if (!(key in VARIANT_PRICE_ORDER)) quantity += variants[key] || 0;
   }
@@ -405,13 +431,21 @@ function cardFinancials(card, entry) {
   const netGainLoss = pricedMarket - costBasis;
 
   return {
+    lots: lots,
     lines: lines,
     quantity: quantity,
     marketValue: marketValue,
     costBasis: costBasis,
     pricedMarket: pricedMarket,
     pricedQty: pricedQty,
+    // What one copy cost on average, across the copies that have a price.
+    averageCost: pricedQty > 0 ? costBasis / pricedQty : null,
     currency: currency,
+    // Gain or loss is measured over the copies whose cost is actually known.
+    // Comparing the market value of EVERY copy against the cost of only SOME
+    // reports a profit the moment an unpriced copy is added, which is why this
+    // uses pricedMarket rather than marketValue. With a price on every copy the
+    // two are identical.
     netGainLoss: netGainLoss,
     // Undefined rather than zero when there is nothing to divide by, so a card
     // with no purchase price is not reported as breaking even.
@@ -471,6 +505,9 @@ function createCardEntry() {
     // Only finishes actually bought appear. See migrateAcquired() for how the
     // old single-value shape is carried over.
     acquired: {},
+    // One entry per purchase lot; see normaliseInventory(). variants above is
+    // derived from this, never assigned to directly.
+    inventory: [],
     updatedAt: nowMs()
   };
 }
@@ -543,6 +580,316 @@ function normaliseAcquired(raw) {
   return out;
 }
 
+// ---------------------------------------------------------------------------
+// Inventory: one entry per purchase lot
+//
+// A card held as three copies bought on three days at three prices is three
+// facts, not one. The previous model kept a single price per finish, so a
+// second purchase either overwrote the first or was priced at it - either way
+// the cost basis, the valuation and the gain/loss were wrong.
+//
+//   entry.inventory = [
+//     { id, quantity, purchasePrice, purchaseDate, variant, condition },
+//     ...
+//   ]
+//
+// `variant` is the storage key ("nonfoil", "surge", ...), not the display name.
+// The keys are what the collection is saved under and what Code.gs syncs, so a
+// label change must never be able to detach a lot from its card. Display names
+// are accepted on the way in and converted - variantStorageKey() takes either.
+//
+// entry.variants stays, DERIVED from this array rather than stored beside it.
+// Every chip, filter, table cell, CSV column and sheet column already reads it;
+// deriving keeps them all correct by construction and leaves exactly one place
+// where a quantity can be changed.
+// ---------------------------------------------------------------------------
+
+let lotSequence = 0;
+
+/** Unique enough across devices: time, a counter, and randomness. */
+function makeLotId() {
+  lotSequence = (lotSequence + 1) % 100000;
+  return "lot_" + Date.now().toString(36) + "_" + lotSequence.toString(36) + "_" +
+         Math.random().toString(36).slice(2, 8);
+}
+
+/** One lot, cleaned. Returns null for anything that carries no information. */
+function normaliseLot(raw, fallbackCondition) {
+  if (!raw || typeof raw !== "object") return null;
+
+  const quantity = Math.max(0, parseInt(raw.quantity, 10) || 0);
+  const price = normaliseAcquiredPrice(
+    raw.purchasePrice !== undefined ? raw.purchasePrice : raw.price);
+  const date = normaliseAcquiredDate(
+    raw.purchaseDate !== undefined ? raw.purchaseDate : raw.date);
+
+  // A lot with no copies and no price is not a purchase, it is a leftover.
+  if (quantity === 0 && price === null && !date) return null;
+
+  return {
+    id: typeof raw.id === "string" && raw.id ? raw.id : makeLotId(),
+    quantity: quantity,
+    purchasePrice: price,
+    purchaseDate: date,
+    variant: variantStorageKey(raw.variant),
+    condition: typeof raw.condition === "string" && raw.condition
+      ? raw.condition
+      : (fallbackCondition || DEFAULT_CONDITION)
+  };
+}
+
+/**
+ * The inventory for an entry, from whatever shape the source used.
+ *
+ * Three sources, in order of preference:
+ *   1. entry.inventory - the current shape.
+ *   2. entry.variants + entry.acquired - the per-finish shape. Each owned
+ *      finish becomes one lot carrying that finish's recorded price, so no
+ *      figure is lost and the numbers do not move at the moment of migration.
+ *   3. Nothing.
+ *
+ * A price recorded against a finish with no copies logged becomes a zero
+ * quantity lot rather than being dropped - it was deliberately typed in.
+ */
+function normaliseInventory(raw) {
+  const condition = typeof raw.condition === "string" && raw.condition
+    ? raw.condition : DEFAULT_CONDITION;
+
+  if (Array.isArray(raw.inventory)) {
+    const out = [];
+    const seen = {};
+    for (let i = 0; i < raw.inventory.length; i++) {
+      const lot = normaliseLot(raw.inventory[i], condition);
+      if (!lot) continue;
+      // Two lots sharing an id would make edit and delete ambiguous.
+      if (seen[lot.id]) lot.id = makeLotId();
+      seen[lot.id] = true;
+      out.push(lot);
+    }
+    return out;
+  }
+
+  const variants = raw.variants && typeof raw.variants === "object" ? raw.variants : {};
+  const acquired = normaliseAcquired(raw);
+  const out = [];
+  const keys = {};
+  for (const key in variants) keys[key] = true;
+  for (const key in acquired) keys[key] = true;
+
+  for (const key in keys) {
+    const quantity = Math.max(0, parseInt(variants[key], 10) || 0);
+    const record = acquired[key] || {};
+    const price = record.price === undefined ? null : record.price;
+    const date = record.date || "";
+    if (quantity === 0 && price === null && !date) continue;
+    out.push({
+      id: makeLotId(),
+      quantity: quantity,
+      purchasePrice: price,
+      purchaseDate: date,
+      variant: key,
+      condition: condition
+    });
+  }
+  return out;
+}
+
+/**
+ * The per-finish { price, date } summary, derived from the lots.
+ *
+ * Kept only so an older device and the sheet's paid_* / bought_* columns still
+ * show something sensible. Two lots of the same finish collapse to their
+ * quantity-weighted average price and their earliest date, which is the honest
+ * one-number answer to "what did these cost". Nothing reads it back as truth -
+ * normaliseInventory only consults it when there is no inventory array at all.
+ */
+function summariseAcquired(inventory) {
+  const totals = {};
+  for (let i = 0; i < inventory.length; i++) {
+    const lot = inventory[i];
+    if (lot.purchasePrice === null && !lot.purchaseDate) continue;
+    const bucket = totals[lot.variant] || (totals[lot.variant] = {
+      cost: 0, qty: 0, date: ""
+    });
+    if (lot.purchasePrice !== null) {
+      const count = lot.quantity > 0 ? lot.quantity : 1;
+      bucket.cost += lot.purchasePrice * count;
+      bucket.qty += count;
+    }
+    if (lot.purchaseDate && (!bucket.date || lot.purchaseDate < bucket.date)) {
+      bucket.date = lot.purchaseDate;
+    }
+  }
+
+  const out = {};
+  for (const key in totals) {
+    const bucket = totals[key];
+    out[key] = {
+      price: bucket.qty > 0 ? Math.round((bucket.cost / bucket.qty) * 100) / 100 : null,
+      date: bucket.date
+    };
+  }
+  return out;
+}
+
+/** The per-finish quantity map that the rest of the app reads. */
+function deriveVariants(inventory) {
+  const out = { nonfoil: 0, foil: 0, surge: 0, wave: 0, etched: 0, promo: 0, serialized: 0 };
+  for (let i = 0; i < inventory.length; i++) {
+    const lot = inventory[i];
+    out[lot.variant] = (out[lot.variant] || 0) + lot.quantity;
+  }
+  return out;
+}
+
+/**
+ * Put entry.variants back in step with entry.inventory.
+ *
+ * Called after every write. Nothing else may assign to entry.variants - it is
+ * a projection, and two writable copies of the same number is how they drift.
+ */
+function syncEntryVariants(entry) {
+  entry.variants = deriveVariants(entry.inventory || []);
+  return entry;
+}
+
+function entryInventory(entry) {
+  return (entry && entry.inventory) || [];
+}
+
+/** The lots for one finish, oldest first. */
+function lotsForVariant(entry, variantKey) {
+  const key = variantStorageKey(variantKey);
+  return entryInventory(entry).filter(lot => lot.variant === key);
+}
+
+// ---------------------------------------------------------------------------
+// Inventory mutation
+//
+// Every one of these ends the same way: sync the derived quantity map, refresh
+// the derived per-finish summary, save, redraw. Anything that changes a lot
+// must go through here so those four steps cannot be forgotten.
+// ---------------------------------------------------------------------------
+
+function commitInventory(cardId, entry, force) {
+  syncEntryVariants(entry);
+  entry.acquired = summariseAcquired(entry.inventory);
+
+  // Nothing owned and nothing recorded: clear what described the copies, the
+  // same rule removal has always followed.
+  if (!entry.inventory.length) {
+    entry.serialNumbers = {};
+    entry.location = "";
+    entry.condition = DEFAULT_CONDITION;
+  }
+
+  saveCollectionState();
+  refreshCardUI(cardId);
+  if (modalCardId === cardId) refreshInventoryPanel(cardId, force);
+}
+
+/** Add a lot. Returns its id so the UI can focus the row it just made. */
+function addInventoryLot(cardId, patch) {
+  const card = cardsById.get(cardId);
+  const entry = editCard(cardId);
+  const defs = card ? getCardVariantDefs(card) : [];
+  const fallbackVariant = defs.length ? defs[0].key : "nonfoil";
+
+  const lot = normaliseLot({
+    quantity: patch && patch.quantity !== undefined ? patch.quantity : 1,
+    purchasePrice: patch ? patch.purchasePrice : null,
+    purchaseDate: patch ? patch.purchaseDate : "",
+    variant: patch && patch.variant ? patch.variant : fallbackVariant,
+    condition: (patch && patch.condition) || entry.condition
+  }, entry.condition);
+
+  // normaliseLot rejects a lot with no copies and no price; an explicit "add a
+  // copy" always means at least one.
+  const created = lot || normaliseLot({ quantity: 1, variant: fallbackVariant }, entry.condition);
+  entry.inventory.push(created);
+  commitInventory(cardId, entry, true);
+  return created.id;
+}
+
+function updateInventoryLot(cardId, lotId, patch) {
+  const entry = editCard(cardId);
+  const lot = entry.inventory.find(item => item.id === lotId);
+  if (!lot) return;
+
+  if (patch.quantity !== undefined) lot.quantity = Math.max(0, parseInt(patch.quantity, 10) || 0);
+  if (patch.purchasePrice !== undefined) lot.purchasePrice = normaliseAcquiredPrice(patch.purchasePrice);
+  if (patch.purchaseDate !== undefined) lot.purchaseDate = normaliseAcquiredDate(patch.purchaseDate);
+  if (patch.variant !== undefined) lot.variant = variantStorageKey(patch.variant);
+  if (patch.condition !== undefined) lot.condition = patch.condition || DEFAULT_CONDITION;
+
+  // Emptied of both copies and price, it is no longer a purchase. Losing a row
+  // changes the shape of the panel, so that redraw cannot wait for focus.
+  let dropped = false;
+  if (lot.quantity === 0 && lot.purchasePrice === null && !lot.purchaseDate) {
+    entry.inventory = entry.inventory.filter(item => item.id !== lotId);
+    dropped = true;
+  }
+  commitInventory(cardId, entry, dropped);
+}
+
+function removeInventoryLot(cardId, lotId) {
+  const entry = editCard(cardId);
+  entry.inventory = entry.inventory.filter(item => item.id !== lotId);
+  commitInventory(cardId, entry, true);
+}
+
+/**
+ * Set the total quantity of one finish, reconciling the lots underneath.
+ *
+ * This is what the tile chips, the modal steppers and the table cells drive.
+ * Adding goes to the newest lot that has no price recorded, so casual counting
+ * does not litter the breakdown with one-copy lots; only if there is no such
+ * lot is one created. Removing takes from the unpriced lots first, newest
+ * first, and only then from priced ones - a recorded purchase is the last
+ * thing to be destroyed.
+ */
+function reconcileVariantQuantity(entry, variantKey, target) {
+  const key = variantStorageKey(variantKey);
+  const mine = entry.inventory.filter(lot => lot.variant === key);
+  const current = mine.reduce((sum, lot) => sum + lot.quantity, 0);
+  let delta = Math.max(0, target) - current;
+
+  if (delta > 0) {
+    const open = mine.filter(lot => lot.purchasePrice === null && !lot.purchaseDate);
+    if (open.length) {
+      open[open.length - 1].quantity += delta;
+    } else {
+      entry.inventory.push(normaliseLot(
+        { quantity: delta, variant: key, condition: entry.condition }, entry.condition));
+    }
+    return;
+  }
+
+  // Stepping a finish to zero is a removal, and removal takes everything with
+  // it - the purchase records included. Keeping a priced lot behind at zero
+  // copies would leave the entry non-empty forever, which is exactly what used
+  // to strand a removed card's location and condition in the sheet.
+  if (target <= 0) {
+    entry.inventory = entry.inventory.filter(lot => lot.variant !== key);
+    return;
+  }
+
+  let owed = -delta;
+  const order = mine.filter(lot => lot.purchasePrice === null && !lot.purchaseDate).reverse()
+    .concat(mine.filter(lot => lot.purchasePrice !== null || lot.purchaseDate).reverse());
+  for (let i = 0; i < order.length && owed > 0; i++) {
+    const take = Math.min(order[i].quantity, owed);
+    order[i].quantity -= take;
+    owed -= take;
+  }
+
+  // Reduced but not removed: a lot emptied of copies keeps its place only if it
+  // still records a price. A price entered before the first copy is logged is
+  // deliberate data and lives in exactly that shape.
+  entry.inventory = entry.inventory.filter(
+    lot => lot.quantity > 0 || lot.purchasePrice !== null || lot.purchaseDate);
+}
+
 /** The purchase record for one finish, or an empty one. Never null. */
 function acquiredFor(entry, variantKey) {
   const all = (entry && entry.acquired) || {};
@@ -564,6 +911,7 @@ const EMPTY_CARD_ENTRY = Object.freeze({
   condition: DEFAULT_CONDITION,
   location: "",
   acquired: Object.freeze({}),
+  inventory: Object.freeze([]),
   updatedAt: 0
 });
 
@@ -579,9 +927,10 @@ function editCard(cardId) {
     entry = createCardEntry();
     collection.cards[cardId] = entry;
   }
-  if (!entry.variants) entry.variants = createCardEntry().variants;
+  if (!Array.isArray(entry.inventory)) entry.inventory = normaliseInventory(entry);
   if (!entry.serialNumbers) entry.serialNumbers = {};
   if (!entry.condition) entry.condition = DEFAULT_CONDITION;
+  syncEntryVariants(entry);
   entry.updatedAt = nowMs();
   return entry;
 }
@@ -613,6 +962,7 @@ function isEmptyEntry(entry) {
   }
   // A price typed in before the first copy is logged is real data, not an empty
   // entry - do not prune it away.
+  if (entryInventory(entry).length) return false;
   const acquired = entry.acquired || {};
   for (const key in acquired) {
     const record = acquired[key];
@@ -682,20 +1032,28 @@ function normaliseCollection(raw) {
 function normaliseEntry(raw) {
   if (!raw || typeof raw !== "object") return null;
   const base = createCardEntry();
+
+  // Lots first, then the quantity map from them. Reading a pre-inventory entry
+  // builds the lots out of variants + acquired, so the figures on screen do not
+  // move at the moment a device upgrades.
+  base.inventory = normaliseInventory(raw);
+  syncEntryVariants(base);
+
+  // A finish key the price table has never heard of still counts as owned, and
+  // deriveVariants only knows the seven it lists. Carry the rest across.
   const variants = raw.variants && typeof raw.variants === "object" ? raw.variants : {};
-  for (const key in base.variants) {
-    base.variants[key] = Math.max(0, parseInt(variants[key], 10) || 0);
-  }
-  // Preserve any finish key we do not recognise rather than discarding data.
   for (const key in variants) {
     if (!(key in base.variants)) {
       base.variants[key] = Math.max(0, parseInt(variants[key], 10) || 0);
     }
   }
+
   base.serialNumbers = raw.serialNumbers && typeof raw.serialNumbers === "object" ? Object.assign({}, raw.serialNumbers) : {};
   base.condition = typeof raw.condition === "string" && raw.condition ? raw.condition : DEFAULT_CONDITION;
   base.location = typeof raw.location === "string" ? raw.location : "";
-  base.acquired = normaliseAcquired(raw);
+  // Kept as a derived summary so an older device, or a sheet written by an
+  // older script, still sees a price per finish. Never read back as truth.
+  base.acquired = summariseAcquired(base.inventory);
   base.updatedAt = Number(raw.updatedAt) || nowMs();
   return base;
 }
@@ -764,10 +1122,12 @@ function repairRemovedCards() {
       Boolean(entry.location) ||
       (entry.condition && entry.condition !== DEFAULT_CONDITION) ||
       Object.keys(entry.serialNumbers || {}).some(key => entry.serialNumbers[key]) ||
-      Object.keys(entry.acquired || {}).length > 0;
+      Object.keys(entry.acquired || {}).length > 0 ||
+      entryInventory(entry).length > 0;
     if (!hadDetails) continue;
 
     entry.acquired = {};
+    entry.inventory = [];
     entry.serialNumbers = {};
     entry.location = "";
     entry.condition = DEFAULT_CONDITION;
@@ -1900,6 +2260,14 @@ function runAction(target, event) {
       openCardModal(cardId);
       focusPurchasePrice();
       break;
+    case "lot-add":
+      event.preventDefault();
+      focusNewLot(cardId, addInventoryLot(cardId, {}));
+      break;
+    case "lot-remove":
+      event.preventDefault();
+      removeInventoryLot(cardId, target.getAttribute("data-lot-id"));
+      break;
     case "chip-inc":
       event.preventDefault();
       event.stopPropagation();
@@ -1951,6 +2319,7 @@ function handleDelegatedChange(event) {
   const action = target.getAttribute("data-change");
   const cardId = target.getAttribute("data-card-id");
   const vkey = target.getAttribute("data-vkey");
+  const lotId = target.getAttribute("data-lot-id");
 
   switch (action) {
     case "qty":
@@ -1965,11 +2334,22 @@ function handleDelegatedChange(event) {
     case "serial":
       setCardSerial(cardId, target.value);
       break;
-    case "acquired-date":
-      setCardAcquiredDate(cardId, vkey || "nonfoil", target.value);
+    case "lot-qty":
+      updateInventoryLot(cardId, lotId, { quantity: target.value });
       break;
-    case "acquired-price":
-      setCardAcquiredPrice(cardId, vkey || "nonfoil", target.value);
+    case "lot-price":
+      updateInventoryLot(cardId, lotId, { purchasePrice: target.value });
+      showToast("Purchase price saved");
+      break;
+    case "lot-date":
+      updateInventoryLot(cardId, lotId, { purchaseDate: target.value });
+      showToast("Purchase date saved");
+      break;
+    case "lot-variant":
+      updateInventoryLot(cardId, lotId, { variant: target.value });
+      break;
+    case "lot-condition":
+      updateInventoryLot(cardId, lotId, { condition: target.value });
       break;
     default:
       break;
@@ -2654,30 +3034,18 @@ function refreshCardUI(cardId) {
         statusEl.textContent = qty > 0 ? "✓ Collected" : "—";
         statusEl.classList.toggle("is-collected", qty > 0);
       }
-
-      // Removing the last copy clears what was paid for it, so the boxes have
-      // to empty on screen too - otherwise the old figures sit there looking
-      // saved, and typing nothing would put them back on the next edit.
-      const bought = acquiredFor(entry, def.key);
-      const priceEl = modalField("acquired-price", def.key);
-      if (priceEl && document.activeElement !== priceEl) {
-        priceEl.value = bought.price === null ? "" : bought.price.toFixed(2);
-      }
-      const dateEl = modalField("acquired-date", def.key);
-      if (dateEl && document.activeElement !== dateEl) {
-        dateEl.value = bought.date || "";
-      }
     });
-    refreshAcquiredSummary(cardId);
+    // The purchase fields live in the inventory panel now, one row per lot.
+    refreshInventoryPanel(cardId);
   }
 
   refreshPurchaseDisplays(cardId, card, entry);
 }
 
-/** One of the per-finish purchase inputs in the open card window. */
-function modalField(change, variantKey) {
+/** A field on one purchase lot in the open card window. */
+function lotField(change, lotId) {
   return document.querySelector(
-    `#modalContent [data-change="${change}"][data-vkey="${cssEscape(variantKey)}"]`);
+    `#modalContent [data-change="${change}"][data-lot-id="${cssEscape(lotId)}"]`);
 }
 
 /**
@@ -2792,12 +3160,12 @@ function setVariantQuantity(cardId, variantKey, quantity, options) {
   const entry = editCard(cardId);
   const opts = options || {};
   const heldBefore = entryTotalQty(entry);
-  const next = Math.max(0, quantity);
-  entry.variants[variantKey] = next;
+  const lotsBefore = entry.inventory.length;
 
-  if (next === 0 && entry.acquired && entry.acquired[variantKey]) {
-    delete entry.acquired[variantKey];
-  }
+  // The quantity map is derived, so the change is made to the lots underneath
+  // and the map recomputed from them. reconcileVariantQuantity decides which
+  // lots absorb it; see the note there on why unpriced ones go first.
+  reconcileVariantQuantity(entry, variantKey, Math.max(0, quantity));
 
   // Nothing left at all: clear everything that described the copies. Condition,
   // storage location and serial number all describe cards you HAVE, so leaving
@@ -2807,15 +3175,19 @@ function setVariantQuantity(cardId, variantKey, quantity, options) {
   // The entry itself stays, zeroed, with its updatedAt. That zero is what tells
   // your other devices the card is gone; delete it outright and a phone that
   // has not synced would push its old copy back and resurrect the card.
-  if (entryTotalQty(entry) === 0) {
-    entry.acquired = {};
+  if (!entry.inventory.length) {
     entry.serialNumbers = {};
     entry.location = "";
     entry.condition = DEFAULT_CONDITION;
   }
 
+  syncEntryVariants(entry);
+  entry.acquired = summariseAcquired(entry.inventory);
   saveCollectionState();
   refreshCardUI(cardId);
+  // Stepping a quantity can create or destroy a lot, so the panel may be a
+  // different shape; rebuild it rather than trusting the focus guard.
+  if (modalCardId === cardId) refreshInventoryPanel(cardId, lotsBefore !== entry.inventory.length);
 
   // First copy of a card, added from a tile: open the details window with the
   // cursor in that finish's price box. The tile no longer carries an "Add
@@ -2853,43 +3225,6 @@ function setCardLocation(cardId, value) {
 function setCardSerial(cardId, value) {
   editCard(cardId).serialNumbers.serialized = value;
   saveCollectionState("Serial number saved");
-}
-
-function acquiredSlot(cardId, variantKey) {
-  const entry = editCard(cardId);
-  if (!entry.acquired || typeof entry.acquired !== "object") entry.acquired = {};
-  if (!entry.acquired[variantKey]) entry.acquired[variantKey] = { price: null, date: "" };
-  return entry.acquired[variantKey];
-}
-
-/** Drop a finish's record once both halves are empty, so the sheet stays clean. */
-function pruneAcquired(cardId, variantKey) {
-  const entry = editCard(cardId);
-  const record = entry.acquired && entry.acquired[variantKey];
-  if (record && record.price === null && !record.date) delete entry.acquired[variantKey];
-}
-
-function setCardAcquiredDate(cardId, variantKey, value) {
-  acquiredSlot(cardId, variantKey).date = normaliseAcquiredDate(value);
-  pruneAcquired(cardId, variantKey);
-  saveCollectionState("Purchase date saved");
-  refreshAcquiredSummary(cardId);
-}
-
-function setCardAcquiredPrice(cardId, variantKey, value) {
-  acquiredSlot(cardId, variantKey).price = normaliseAcquiredPrice(value);
-  pruneAcquired(cardId, variantKey);
-  saveCollectionState("Purchase price saved");
-  refreshAcquiredSummary(cardId);
-}
-
-/** Redraw the paid-vs-today line in place, without rebuilding the whole modal
- *  (which would blur the field being typed into). */
-function refreshAcquiredSummary(cardId) {
-  const host = document.getElementById("modalAcquiredSummary");
-  const card = cardsById.get(cardId);
-  if (!host || !card || modalCardId !== cardId) return;
-  host.outerHTML = acquiredSummary(card, readCard(cardId));
 }
 
 // ---------------------------------------------------------------------------
@@ -3301,57 +3636,194 @@ function purchaseRow(card, entry) {
  * One line per finish bought, because a non-foil at two dollars and a surge
  * foil at forty are two separate purchases that share nothing but a card name.
  */
-function acquiredSummary(card, entry) {
+/**
+ * Every copy held, one row per purchase lot, with the aggregate underneath.
+ *
+ * This replaces the single price-and-date pair that used to sit in the variant
+ * table. Three copies bought on three days at three prices are three rows here,
+ * and the cost basis adds them up instead of pricing all three at whichever
+ * figure happened to be typed first.
+ */
+function inventoryPanel(card, entry) {
   const totals = cardFinancials(card, entry);
-  const bought = totals.lines.filter(line => line.paid !== null || line.date);
-
-  if (!bought.length) {
-    return `<div id="modalAcquiredSummary" class="acquired-summary is-empty"></div>`;
-  }
-
-  const rows = bought.map(line => {
-    const def = MASTER_VARIANTS_BY_KEY[line.key];
-    const label = def ? def.label : line.key;
-    const count = line.quantity > 0 ? line.quantity : 1;
-    const paidText = line.paid === null ? "--" : money2(line.paid);
-    const each = line.quantity > 1 ? ` <span class="acq-each">&times;${line.quantity}</span>` : "";
-
-    let move = "";
-    if (line.paid !== null && line.unitMarket > 0 && line.currency === "usd") {
-      const delta = (line.unitMarket - line.paid) * count;
-      const pct = line.paid > 0 ? ((line.unitMarket - line.paid) / line.paid) * 100 : null;
-      const up = delta >= 0;
-      const sign = delta > 0 ? "+" : delta < 0 ? "−" : "";
-      const arrow = delta > 0 ? "▲" : delta < 0 ? "▼" : "–";
-      const pctText = pct === null ? "" : ` (${sign}${Math.abs(pct).toFixed(1)}%)`;
-      move = `<span class="acquired-delta ${up ? "is-up" : "is-down"}">${arrow} ${sign}${money2(Math.abs(delta))}${pctText}</span>`;
-    } else if (line.unitMarket > 0) {
-      move = `<span class="acquired-market">worth ${esc(money(line.unitMarket, line.currency))} each</span>`;
-    }
+  const defs = getCardVariantDefs(card);
+  const rows = totals.lots.map(lot => {
+    const def = MASTER_VARIANTS_BY_KEY[lot.variant];
+    const options = defs.map(d =>
+      `<option value="${esc(d.key)}" ${d.key === lot.variant ? "selected" : ""}>${esc(d.label)}</option>`).join("");
+    const move = lot.purchasePrice !== null && lot.unitMarket > 0 && lot.currency === "usd"
+      ? lot.market - lot.cost
+      : null;
 
     return `
-      <div class="acquired-line">
-        <span class="acq-finish">${def ? def.icon : ""} ${esc(label)}</span>
-        <span class="acq-paid">${esc(paidText)}${each}</span>
-        ${line.date ? `<span class="acq-date">${esc(shortDate(line.date))}</span>` : ""}
-        ${move}
-      </div>`;
+      <tr class="lot-row" data-lot-id="${esc(lot.id)}">
+        <td class="lot-variant">
+          ${defs.length > 1
+            ? `<select class="table-select" aria-label="Finish for this purchase"
+                       data-change="lot-variant" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+                 ${options}
+               </select>`
+            : `<span>${def ? def.icon : ""} ${esc(def ? def.label : lot.variant)}</span>`}
+        </td>
+        <td class="lot-qty">
+          <input type="number" min="0" step="1" inputmode="numeric" class="table-input"
+                 value="${lot.quantity}" aria-label="Copies in this purchase"
+                 data-change="lot-qty" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+        </td>
+        <td class="lot-price">
+          <input type="number" min="0" step="0.01" inputmode="decimal"
+                 class="table-input bought-price" placeholder="Paid each"
+                 value="${lot.purchasePrice === null ? "" : esc(lot.purchasePrice.toFixed(2))}"
+                 aria-label="Price paid per copy"
+                 data-change="lot-price" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+        </td>
+        <td class="lot-date">
+          <input type="date" class="table-input bought-date" aria-label="Date bought"
+                 value="${esc(lot.purchaseDate || "")}"
+                 data-change="lot-date" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+        </td>
+        <td class="lot-condition">
+          <select class="table-select" aria-label="Condition of these copies"
+                  data-change="lot-condition" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+            ${CONDITION_OPTIONS.map(opt =>
+              `<option value="${esc(opt)}" ${lot.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
+          </select>
+        </td>
+        <td class="lot-cost" data-lot-cost>${lot.purchasePrice === null ? "—" : esc(money2(lot.cost))}</td>
+        <td class="lot-market" data-lot-market>${esc(money(lot.market, lot.currency))}</td>
+        <td class="lot-move" data-lot-move>${move === null ? "" :
+          `<span class="acquired-delta ${move >= 0 ? "is-up" : "is-down"}">${move >= 0 ? "▲" : "▼"} ${move >= 0 ? "+" : "−"}${esc(money2(Math.abs(move)))}</span>`}</td>
+        <td class="lot-remove">
+          <button type="button" class="lot-remove-btn" data-action="lot-remove"
+                  data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}"
+                  aria-label="Remove this purchase" title="Remove this purchase">×</button>
+        </td>
+      </tr>`;
   }).join("");
 
-  let total = "";
+  const empty = `
+    <tr class="lot-empty"><td colspan="9">
+      No copies recorded yet. Add one to start tracking what you paid.
+    </td></tr>`;
+
+  return `
+    <div id="modalInventoryPanel" class="inventory-panel">
+      <div class="inventory-head">
+        <span>Copies &amp; purchases</span>
+        <button type="button" class="btn btn-outline btn-small" data-action="lot-add"
+                data-card-id="${esc(card.id)}">＋ Add copy / purchase</button>
+      </div>
+      <div class="inventory-table-wrap">
+        <table class="inventory-table">
+          <thead>
+            <tr>
+              <th>Finish</th><th>Qty</th><th>Paid each</th><th>Bought</th>
+              <th>Condition</th><th>Cost</th><th>Value</th><th></th><th></th>
+            </tr>
+          </thead>
+          <tbody>${rows || empty}</tbody>
+        </table>
+      </div>
+      <div id="modalInventoryTotals">${inventoryTotals(totals)}</div>
+    </div>`;
+}
+
+/** The aggregate line under the breakdown. */
+function inventoryTotals(totals) {
+  if (!totals.quantity && !totals.costBasis) return "";
+
+  const cells = [
+    ["Owned", String(totals.quantity)],
+    ["Avg cost", totals.averageCost === null ? "—" : money2(totals.averageCost)],
+    ["Total cost", totals.costBasis > 0 ? money2(totals.costBasis) : "—"],
+    ["Market value", money(totals.marketValue, totals.currency)]
+  ];
+
+  let gain = "";
   if (totals.comparable) {
     const up = totals.netGainLoss >= 0;
     const sign = totals.netGainLoss > 0 ? "+" : totals.netGainLoss < 0 ? "−" : "";
-    const roi = totals.roiPercent === null ? "" : ` (${sign}${Math.abs(totals.roiPercent).toFixed(1)}%)`;
-    total = `
-      <div class="acquired-total">
-        <span>${totals.pricedQty} cop${totals.pricedQty === 1 ? "y" : "ies"} •
-              cost ${money2(totals.costBasis)} • now ${money2(totals.pricedMarket)}</span>
-        <span class="acquired-delta ${up ? "is-up" : "is-down"}">${up ? "▲" : "▼"} ${sign}${money2(Math.abs(totals.netGainLoss))}${roi}</span>
+    const roi = totals.roiPercent === null
+      ? "" : ` (${sign}${Math.abs(totals.roiPercent).toFixed(1)}%)`;
+    gain = `
+      <div class="inventory-total-cell inventory-gain">
+        <span class="inventory-total-label">Gain / loss</span>
+        <span class="acquired-delta ${up ? "is-up" : "is-down"}">
+          ${up ? "▲" : "▼"} ${sign}${money2(Math.abs(totals.netGainLoss))}${roi}
+        </span>
       </div>`;
   }
 
-  return `<div id="modalAcquiredSummary" class="acquired-summary">${rows}${total}</div>`;
+  // Says so plainly rather than quietly comparing unlike things: the gain is
+  // measured over the copies whose cost is known, not over every copy held.
+  const partial = totals.costBasis > 0 && totals.pricedQty < totals.quantity
+    ? `<div class="inventory-note">Gain / loss covers the ${totals.pricedQty} of
+       ${totals.quantity} copies with a price recorded.</div>`
+    : "";
+
+  return `
+    <div class="inventory-totals">
+      ${cells.map(([label, value]) => `
+        <div class="inventory-total-cell">
+          <span class="inventory-total-label">${esc(label)}</span>
+          <span class="inventory-total-value">${esc(value)}</span>
+        </div>`).join("")}
+      ${gain}
+    </div>
+    ${partial}`;
+}
+
+/** Redraw the panel in place, without rebuilding the modal around it. */
+function refreshInventoryPanel(cardId, force) {
+  const host = document.getElementById("modalInventoryPanel");
+  const card = cardsById.get(cardId);
+  if (!host || !card || modalCardId !== cardId) return;
+
+  // Not while a field in it is being typed into - that would drop the caret
+  // mid-edit - unless a row has been added or deleted, in which case the panel
+  // is a different shape and has to be rebuilt whatever has focus.
+  //
+  // Without that exception, adding a purchase did nothing at all whenever the
+  // cursor was already sitting in a price box, which is exactly where the tile
+  // prompt puts it.
+  const active = document.activeElement;
+  if (!force && active && host.contains(active)
+      && (active.tagName === "INPUT" || active.tagName === "SELECT")) {
+    // Blocked, but the numbers still moved. Update what is computed and leave
+    // the inputs alone, so the totals keep up with the price being typed
+    // instead of waiting for the cursor to leave the box.
+    refreshInventoryDerived(cardId, card);
+    return;
+  }
+  host.outerHTML = inventoryPanel(card, readCard(cardId));
+}
+
+/**
+ * Redraw only the parts of the panel that are calculated - each row's cost and
+ * value, and the aggregate underneath. The inputs are not touched.
+ */
+function refreshInventoryDerived(cardId, card) {
+  const totals = cardFinancials(card, readCard(cardId));
+  totals.lots.forEach(lot => {
+    const row = document.querySelector(
+      `#modalInventoryPanel .lot-row[data-lot-id="${cssEscape(lot.id)}"]`);
+    if (!row) return;
+    const costEl = row.querySelector("[data-lot-cost]");
+    if (costEl) costEl.textContent = lot.purchasePrice === null ? "—" : money2(lot.cost);
+    const marketEl = row.querySelector("[data-lot-market]");
+    if (marketEl) marketEl.textContent = money(lot.market, lot.currency);
+    const moveEl = row.querySelector("[data-lot-move]");
+    if (moveEl) {
+      const move = lot.purchasePrice !== null && lot.unitMarket > 0 && lot.currency === "usd"
+        ? lot.market - lot.cost : null;
+      moveEl.innerHTML = move === null ? ""
+        : `<span class="acquired-delta ${move >= 0 ? "is-up" : "is-down"}">` +
+          `${move >= 0 ? "▲" : "▼"} ${move >= 0 ? "+" : "−"}` +
+          `${esc(money2(Math.abs(move)))}</span>`;
+    }
+  });
+  const totalsHost = document.getElementById("modalInventoryTotals");
+  if (totalsHost) totalsHost.innerHTML = inventoryTotals(totals);
 }
 
 function priceHistoryMarkup(series) {
@@ -3416,11 +3888,29 @@ function renderPriceHistoryInto(card) {
  * price box rather than the non-foil one that happens to be first in the table.
  */
 function focusPurchasePrice(variantKey) {
-  const field = (variantKey && modalField("acquired-price", variantKey))
-    || document.querySelector("#modalContent .bought-price");
+  const key = variantKey ? variantStorageKey(variantKey) : null;
+
+  // The lot for the finish just added, if there is one; otherwise the first
+  // price box in the panel.
+  let field = null;
+  if (key && modalCardId) {
+    const lots = lotsForVariant(readCard(modalCardId), key);
+    if (lots.length) field = lotField("lot-price", lots[lots.length - 1].id);
+  }
+  focusField(field || document.querySelector("#modalContent .bought-price"));
+}
+
+/** Put the cursor in the price box of a lot that was just created. */
+function focusNewLot(cardId, lotId) {
+  if (!lotId) return;
+  // addInventoryLot redraws the panel, so the row exists by the time we look.
+  focusField(lotField("lot-price", lotId));
+}
+
+function focusField(field) {
   if (!field) return;
   field.focus();
-  field.select();
+  if (typeof field.select === "function") field.select();
   if (typeof field.scrollIntoView === "function") {
     field.scrollIntoView({ block: "center" });
   }
@@ -3444,7 +3934,6 @@ function openCardModal(cardId) {
   const variantRows = getCardVariantDefs(card).map(def => {
     const qty = entry.variants[def.key] || 0;
     const price = variantPrice(card, def);
-    const bought = acquiredFor(entry, def.key);
     return `
       <tr>
         <td><strong>${def.icon} ${esc(def.label)}</strong></td>
@@ -3463,19 +3952,6 @@ function openCardModal(cardId) {
                  aria-label="Serial number"
                  data-change="serial" data-card-id="${esc(card.id)}">`
             : `<span class="variant-status ${qty > 0 ? "is-collected" : ""}" id="modalStatus_${esc(def.key)}">${qty > 0 ? "✓ Collected" : "—"}</span>`}
-        </td>
-        <td class="variant-bought">
-          <div class="bought-fields">
-            <input type="number" min="0" step="0.01" inputmode="decimal"
-                   class="table-input bought-price" placeholder="Paid"
-                   aria-label="Price paid for ${esc(def.label)}"
-                   value="${bought.price === null ? "" : esc(bought.price.toFixed(2))}"
-                   data-change="acquired-price" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}">
-            <input type="date" class="table-input bought-date"
-                   aria-label="Date ${esc(def.label)} was bought"
-                   value="${esc(bought.date || "")}"
-                   data-change="acquired-date" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}">
-          </div>
         </td>
       </tr>`;
   }).join("");
@@ -3503,7 +3979,7 @@ function openCardModal(cardId) {
         <div class="variant-table-wrap">
           <table class="variant-table">
             <thead>
-              <tr><th>Variant Finish</th><th>Est. Price</th><th>Quantity Owned</th><th>Status / Notes</th><th>Paid &amp; when</th></tr>
+              <tr><th>Variant Finish</th><th>Est. Price</th><th>Quantity Owned</th><th>Status / Notes</th></tr>
             </thead>
             <tbody>${variantRows}</tbody>
           </table>
@@ -3516,7 +3992,7 @@ function openCardModal(cardId) {
            the table above. Same section now, directly under the entry fields. -->
       <div class="modal-your-copies">
         <div class="modal-your-copies-title">\u{1F4B0} PURCHASE &amp; STORAGE</div>
-        ${acquiredSummary(card, entry)}
+        ${inventoryPanel(card, entry)}
         <div class="modal-field-grid">
           <div>
             <label class="field-label" for="modalLocationInput">Storage location</label>
@@ -3810,7 +4286,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 7;
+const REQUIRED_SCRIPT_VERSION = 8;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +
@@ -3921,6 +4397,10 @@ function cardsChangedSince(since) {
       serialNumbers: entry.serialNumbers,
       condition: entry.condition,
       location: entry.location,
+      // The lots are the truth. `acquired` and `variants` go with them as
+      // derived summaries so the sheet stays readable and a device still on the
+      // old build sees sensible figures instead of blanks.
+      inventory: entryInventory(entry),
       acquired: entry.acquired || {},
       updatedAt: entry.updatedAt,
       ff_name: card ? displayName(card.ff_name) : "",
