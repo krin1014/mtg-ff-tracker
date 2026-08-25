@@ -855,6 +855,11 @@ const TABLE_COLUMNS = [
 // Column keys the user has switched off, on this device.
 let hiddenColumns = [];
 
+// Whether the tiles show what was paid. Off is a display choice only - nothing
+// is cleared, and the table's Paid column is governed separately by the column
+// picker, so each view keeps the control that suits it.
+let showPurchases = true;
+
 function savePrefs() {
   const prefs = {
     view: currentView,
@@ -864,6 +869,7 @@ function savePrefs() {
     location: activeLocationFilter,
     dashboardOpen: dashboardOpen,
     hiddenColumns: hiddenColumns,
+    showPurchases: showPurchases,
     filters: {}
   };
   FILTER_IDS.forEach(id => { prefs.filters[id] = valueOf(id); });
@@ -885,6 +891,7 @@ function loadPrefs() {
 
   if (prefs.view === "table" || prefs.view === "grid") currentView = prefs.view;
   if (typeof prefs.dashboardOpen === "boolean") dashboardOpen = prefs.dashboardOpen;
+  if (typeof prefs.showPurchases === "boolean") showPurchases = prefs.showPurchases;
   if (Array.isArray(prefs.hiddenColumns)) {
     // Filter against the registry so a key retired in a later version cannot
     // linger and hide nothing, and so the name column can never be lost.
@@ -1566,6 +1573,31 @@ function toggleDashboard() {
   savePrefs();
 }
 
+/**
+ * Show or hide the paid block on every tile.
+ *
+ * One class on the grid rather than a re-render: the blocks are already in the
+ * markup, so switching them off is instant and nothing has to be rebuilt when
+ * they come back.
+ */
+function applyPurchaseVisibility() {
+  const grid = document.getElementById("binderGridView");
+  if (grid) grid.classList.toggle("hide-purchases", !showPurchases);
+
+  const btn = document.getElementById("purchaseToggleBtn");
+  if (btn) {
+    btn.style.display = currentView === "grid" ? "" : "none";
+    btn.setAttribute("aria-pressed", String(showPurchases));
+    btn.classList.toggle("is-off", !showPurchases);
+  }
+}
+
+function togglePurchaseDisplay() {
+  showPurchases = !showPurchases;
+  applyPurchaseVisibility();
+  savePrefs();
+}
+
 // ---------------------------------------------------------------------------
 // Table columns
 //
@@ -1744,6 +1776,9 @@ function initEventListeners() {
 
   const dashboardToggle = document.getElementById("dashboardToggle");
   if (dashboardToggle) dashboardToggle.addEventListener("click", toggleDashboard);
+
+  const purchaseToggle = document.getElementById("purchaseToggleBtn");
+  if (purchaseToggle) purchaseToggle.addEventListener("click", togglePurchaseDisplay);
 
   const columnBtn = document.getElementById("columnPickerBtn");
   if (columnBtn) columnBtn.addEventListener("click", () => toggleColumnPicker());
@@ -1974,9 +2009,10 @@ function applyViewMode() {
   if (btnText) btnText.textContent = isGrid ? "Table View" : "Binder View";
   if (btnIcon) btnIcon.textContent = isGrid ? "☷" : "▦";
 
-  // The column picker belongs to the table; hide the button in binder view.
+  // Each view carries its own density control.
   renderColumnPicker();
   toggleColumnPicker(false);
+  applyPurchaseVisibility();
 }
 
 // ---------------------------------------------------------------------------
@@ -2392,14 +2428,20 @@ function renderVariantChips(card, entry) {
 }
 
 /**
- * The two optional notes on a tile: the original MTG name for a flavour
- * reprint, and why this card matched the current search.
+ * The tile's second line: where the card is from, then the two optional notes -
+ * the original MTG name for a flavour reprint, and why it matched the search.
+ *
+ * Set, number and game are plain text rather than badges. As pills they took
+ * roughly 150px of a 277px tile and pushed the treatment off the end of the
+ * line; as text they take about 90px and leave the badge line above free for
+ * the print identity, which is the part that actually distinguishes two
+ * printings of the same card.
  *
  * Returned as one string with no padding, so the slot that holds it is either
  * genuinely empty or genuinely full.
  */
 function noteLine(card) {
-  const parts = [];
+  const parts = [`<span class="card-origin">${esc(card.set)} #${esc(card.collector_number)} · ${esc(card.game)}</span>`];
   if (card.is_reprint) {
     parts.push(`<span class="card-mtg-subtitle" title="Original MTG name">aka: ${esc(displayName(card.mtg_name))}</span>`);
   }
@@ -2428,15 +2470,6 @@ function renderGridView(cards) {
                ${srcset ? `srcset="${esc(srcset)}"` : ""}
                sizes="(max-width: 520px) 116px, (max-width: 767px) 46vw, (max-width: 900px) 31vw, 285px"
                alt="${esc(name)}" loading="lazy" decoding="async">
-          <!-- Only what a flat scan cannot tell you: the official frame
-               treatment and the finish. Set, number, game and rarity moved to
-               the meta line below, where they no longer cover the artwork -
-               45% of cards carry a treatment badge, so most tiles were wrapping
-               to two rows of pills across the bottom of the art. -->
-          <div class="card-pill-tags">
-            ${card.treatment && card.treatment !== "Default" ? `<span class="tag-badge tag-treatment">${esc(card.treatment)}</span>` : ""}
-            ${card.variant !== "Basic/Non-foil" ? `<span class="tag-badge tag-variant">${esc(variantName(card.variant))}</span>` : ""}
-          </div>
         </div>
 
         <div class="card-info">
@@ -2445,16 +2478,21 @@ function renderGridView(cards) {
             <div class="card-collector">${esc(card.color_identity)}</div>
           </div>
 
+          <!-- The print identity: rarity, official frame treatment, finish.
+               Nothing sits on the artwork any more, and these three are what a
+               flat scan cannot tell you apart. Badges only - the identifiers
+               that are printed on the card itself go in the line below, as
+               plain text, because text is far narrower than a pill. -->
           <div class="card-meta-line">
-            <span class="tag-badge tag-game">${esc(card.game)}</span>
-            <span class="tag-badge tag-set">${esc(card.set)} #${esc(card.collector_number)}</span>
             <span class="tag-badge tag-rarity-${esc(card.rarity.toLowerCase())}">${esc(card.rarity)}</span>
+            ${card.treatment && card.treatment !== "Default" ? `<span class="tag-badge tag-treatment">${esc(card.treatment)}</span>` : ""}
+            ${card.variant !== "Basic/Non-foil" ? `<span class="tag-badge tag-variant">${esc(variantName(card.variant))}</span>` : ""}
           </div>
 
-          <!-- One fixed line, always present, holding whichever of the two
-               optional notes apply. Rendering them only when they exist made
-               every tile in a row as tall as its tallest neighbour, because
-               .card-info stretches; a reserved slot keeps the row level.
+          <!-- One fixed line holding the set, number and game, plus whichever
+               of the two optional notes apply. It was reserved and empty on 95%
+               of tiles; putting the identifiers here costs no extra height and
+               keeps the badge line above from overflowing.
                No whitespace inside, so :empty matches and the phone layout -
                a single column, with no row to level - can drop it. -->
           <div class="card-note-line">${noteLine(card)}</div>
@@ -2486,7 +2524,7 @@ function renderGridView(cards) {
 
           <div class="card-actions-row">
             <button type="button" class="btn-open-modal" data-action="open-modal" data-card-id="${esc(card.id)}">
-              <span>\u{1F50D} Manage Variants &amp; Details</span>
+              <span>\u{1F50D} Manage Variants &amp; Prices</span>
             </button>
           </div>
         </div>
@@ -3215,16 +3253,17 @@ function purchaseRow(card, entry) {
   const totals = cardFinancials(card, entry);
   const paid = totals.costBasis > 0 ? totals.costBasis : null;
 
-  // Nothing recorded: an empty slot rather than a button. The prompt was on all
-  // 1,383 cards including the ones you do not own, where a purchase price means
+  // Nothing recorded: an anchor with no height. The prompt was on all 1,383
+  // cards including the ones you do not own, where a purchase price means
   // nothing. Adding the first copy opens the details window on the price box
   // instead - see setVariantQuantity().
   //
-  // The slot still carries data-purchase-row so refreshPurchaseDisplays() has a
-  // node to replace, and it holds its height so a row of tiles stays level
-  // whether or not a price is recorded.
+  // It stays in the DOM, carrying data-purchase-row, so refreshPurchaseDisplays
+  // still has a node to replace the moment a price is entered. It takes no
+  // space: reserving the block on every unpriced tile left a visible dead band
+  // between the market price and the variant chips.
   if (paid === null) {
-    return `<div class="card-purchase-slot" data-purchase-row aria-hidden="true"></div>`;
+    return `<div class="card-purchase-slot" data-purchase-row hidden></div>`;
   }
 
   const move = purchaseMove(card, entry);
@@ -3457,6 +3496,28 @@ function openCardModal(cardId) {
         </div>
       </div>
 
+      <!-- Your copies: what you paid, and where they physically are. The
+           storage box used to sit far below, past the price history and the
+           card's own facts, while the prices it belongs with were entered in
+           the table above. Same section now, directly under the entry fields. -->
+      <div class="modal-your-copies">
+        <div class="modal-your-copies-title">\u{1F4B0} PURCHASE &amp; STORAGE</div>
+        ${acquiredSummary(card, entry)}
+        <div class="modal-field-grid">
+          <div>
+            <label class="field-label" for="modalLocationInput">Storage location</label>
+            <input id="modalLocationInput" type="text" class="table-input" placeholder="e.g. Binder 1, page 3"
+                   value="${esc(entry.location)}" data-change="location" data-card-id="${esc(card.id)}">
+          </div>
+          <div>
+            <label class="field-label" for="modalConditionSelect">Overall condition</label>
+            <select id="modalConditionSelect" class="table-select" data-change="condition" data-card-id="${esc(card.id)}">
+              ${CONDITION_OPTIONS.map(opt => `<option value="${esc(opt)}" ${entry.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
+            </select>
+          </div>
+        </div>
+      </div>
+
       <div id="modalPriceHistory" class="price-history"></div>
 
       ${card.oracle_text ? `<div class="modal-oracle-box">${esc(card.oracle_text)}</div>` : ""}
@@ -3470,22 +3531,6 @@ function openCardModal(cardId) {
         <div class="modal-meta-item"><strong>Rarity:</strong> ${esc(card.rarity)}</div>
         <div class="modal-meta-item"><strong>Artist:</strong> ${esc(card.artist || "Unknown")}</div>
       </div>
-
-      <div class="modal-field-grid">
-        <div>
-          <label class="field-label" for="modalConditionSelect">Overall condition</label>
-          <select id="modalConditionSelect" class="table-select" data-change="condition" data-card-id="${esc(card.id)}">
-            ${CONDITION_OPTIONS.map(opt => `<option value="${esc(opt)}" ${entry.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
-          </select>
-        </div>
-        <div>
-          <label class="field-label" for="modalLocationInput">Storage location</label>
-          <input id="modalLocationInput" type="text" class="table-input" placeholder="e.g. Binder 1, page 3"
-                 value="${esc(entry.location)}" data-change="location" data-card-id="${esc(card.id)}">
-        </div>
-      </div>
-
-      ${acquiredSummary(card, entry)}
 
       <div class="modal-footer-actions">
         <a href="${esc(card.scryfall_uri)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View on Scryfall ↗</a>

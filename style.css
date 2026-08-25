@@ -709,17 +709,6 @@ body {
   transform: scale(1.04);
 }
 
-.card-pill-tags {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-  z-index: 4;
-}
-
 .tag-badge {
   font-size: 10px;
   font-weight: 700;
@@ -798,13 +787,19 @@ body {
   overflow: hidden;
 }
 
+/* Denser than the table's badges: three of these have to share a 245px line
+   without the treatment name being the one that falls off the end. */
 .card-meta-line .tag-badge {
   flex: 0 0 auto;
-  line-height: 1.4;
+  font-size: 9px;
+  padding: 1px 5px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
 }
 
-/* Reserved single line for the reprint alias and the search match reason.
-   Always rendered, even when empty - that is the whole point of it. */
+/* Set, number and game, plus the reprint alias and the search match reason.
+   Always rendered - a reserved line that was empty on 95% of tiles now carries
+   the identifiers that used to sit on top of the artwork. */
 .card-note-line {
   display: flex;
   align-items: center;
@@ -815,11 +810,20 @@ body {
   white-space: nowrap;
 }
 
+.card-note-line .card-origin,
 .card-note-line .card-mtg-subtitle,
 .card-note-line .match-why {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card-origin {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.2px;
 }
 
 /* Trimmed to sit inside the reserved line; the table view keeps the roomier
@@ -853,7 +857,9 @@ body {
   padding: 6px 10px;
   background: var(--bg-surface);
   border-radius: 6px;
-  margin-bottom: 12px;
+  /* The paid block sits directly under this, so the two read as one unit.
+     12px here plus 8px there left a visible band between them. */
+  margin-bottom: 6px;
   font-family: var(--font-mono);
 }
 
@@ -1708,6 +1714,24 @@ body.modal-open {
   position: relative;
 }
 
+/* A pressed / not-pressed switch, not a menu. Reads as on by default and
+   visibly dims when the thing it governs is hidden. */
+.toggle-btn .icon {
+  display: inline-block;
+  font-size: 9px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.toggle-btn.is-off {
+  color: var(--text-muted);
+  border-style: dashed;
+}
+
+.toggle-btn.is-off .icon {
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+
 .btn.btn-small {
   padding: 6px 10px;
   font-size: 12px;
@@ -1838,6 +1862,32 @@ body.modal-open {
 .serial-input {
   width: 110px;
   font-size: 11px;
+}
+
+/* What you paid and where the copies live, in one block directly under the
+   table those figures are typed into. */
+.modal-your-copies {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.modal-your-copies-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* Inside the block it is already on a panel; drop the nested frame. */
+.modal-your-copies .acquired-summary {
+  margin: 0 0 12px;
+  padding: 0;
+  background: none;
+  border: none;
 }
 
 .modal-field-grid {
@@ -2329,12 +2379,6 @@ body.modal-open {
     height: 100%;
     object-fit: cover;
     object-position: top center;
-  }
-
-  /* Treatment and finish do not fit on a 116px thumbnail. They are the only two
-     badges left on the artwork, and the meta line below now carries the rest. */
-  .card-pill-tags {
-    display: none;
   }
 
   /* A single-column list has no row to keep level, so the reserved note line
@@ -3109,11 +3153,11 @@ body.modal-open {
   font-size: 11px;
 }
 
-/* The empty counterpart of .card-purchase. Same box, no content - it holds the
-   gap so a tile with a price recorded and one without are the same height. */
+/* Anchor only: the place in the tile where the paid block appears once a price
+   is recorded. It carries [hidden] until then; this rule makes sure it can
+   never take up space even if a later selector gives it a display. */
 .card-purchase-slot {
-  height: 34px;
-  margin: 8px 0 0;
+  display: none;
 }
 
 .card-purchase,
@@ -3122,7 +3166,7 @@ body.modal-open {
   align-items: baseline;
   gap: 8px;
   width: 100%;
-  margin: 8px 0 0;
+  margin: 0 0 6px;
   padding: 7px 10px;
   font-size: 12px;
   text-align: left;
@@ -3133,7 +3177,11 @@ body.modal-open {
   cursor: pointer;
 }
 
-.card-purchase { height: 34px; }
+.card-purchase { height: 32px; }
+
+/* Switched off for the whole binder view. Display only - the figures are still
+   recorded, still counted in the dashboard, and still in the card window. */
+.cards-grid.hide-purchases .card-purchase { display: none; }
 
 .card-purchase.is-up, .table-purchase.is-up { border-left-color: #34D399; }
 .card-purchase.is-down, .table-purchase.is-down { border-left-color: #F87171; }
