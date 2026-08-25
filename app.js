@@ -235,6 +235,12 @@ const CURRENCY_SYMBOL = { usd: "$", eur: "€" };
  * the art cards and a couple of promos - only euros - so the symbol has to
  * follow the number rather than being assumed.
  */
+/** Dollars with thousands separators, for the dashboard totals. */
+function usd(value) {
+  const n = typeof value === "number" && isFinite(value) ? value : 0;
+  return `$${n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
 function money(value, currency) {
   if (typeof value !== "number" || !isFinite(value)) return "--";
   return `${CURRENCY_SYMBOL[currency] || "$"}${value.toFixed(2)}`;
@@ -254,6 +260,116 @@ const PRICE_FALLBACK = {
   price_foil: "price_eur_foil",
   price_etched: "price_eur_foil"
 };
+
+// ---------------------------------------------------------------------------
+// Pricing engine
+//
+// One place decides what a finish is worth. The variant-to-price mapping used
+// to exist three times over - MASTER_VARIANTS.priceKey, the dashboard's own
+// inline block, and bestPrice() - and they disagreed, which is what made the
+// paid-versus-market figures wrong: a Surge Foil was valued at the non-foil
+// price because bestPrice() prefers price_usd.
+// ---------------------------------------------------------------------------
+
+/**
+ * The market price of one copy of a card in a given finish.
+ *
+ * Fallbacks, in order:
+ *   Foil Etched                      etched -> foil -> non-foil
+ *   Foil / Surge / Chocobo Track /
+ *     Promo / Serialized / Signed    foil   -> non-foil
+ *   Non-Foil / Basic                 non-foil -> foil
+ *
+ * Each step also falls back from dollars to euros, because the Art Series, the
+ * Scene Box and a few promos have no dollar price at all.
+ *
+ * `variant` may be a MASTER_VARIANTS name ("Surge Foil"), a storage key
+ * ("surge"), or a variant definition object - the three are used in different
+ * parts of the app and all of them end up here.
+ *
+ * Returns { value, currency }. value is 0 when nothing is known, never null,
+ * so arithmetic downstream is always safe.
+ */
+const VARIANT_PRICE_ORDER = {
+  nonfoil: ["price_usd", "price_foil"],
+  foil: ["price_foil", "price_usd"],
+  surge: ["price_foil", "price_usd"],
+  wave: ["price_foil", "price_usd"],
+  promo: ["price_foil", "price_usd"],
+  serialized: ["price_foil", "price_usd"],
+  etched: ["price_etched", "price_foil", "price_usd"]
+};
+
+function variantStorageKey(variant) {
+  if (!variant) return "nonfoil";
+  if (typeof variant === "object") return variant.key || "nonfoil";
+  if (VARIANT_PRICE_ORDER[variant]) return variant;            // already a key
+  const def = MASTER_VARIANTS[variant];                        // a display name
+  return def ? def.key : "nonfoil";
+}
+
+function getActiveUnitPrice(card, variant) {
+  const chain = VARIANT_PRICE_ORDER[variantStorageKey(variant)] || VARIANT_PRICE_ORDER.nonfoil;
+  for (let i = 0; i < chain.length; i++) {
+    const found = cardPrice(card, chain[i]);
+    if (found.value !== null) return found;
+  }
+  return { value: 0, currency: "usd" };
+}
+
+/**
+ * Everything money-related about one card, from what is actually owned.
+ *
+ * This app records a quantity PER FINISH rather than a single chosen variant,
+ * so a card can be two non-foils and a surge foil at once. The market value is
+ * therefore the sum over the finishes owned, each at its own price - not the
+ * quantity multiplied by one "active" price, which would misprice every card
+ * held in more than one finish.
+ *
+ * Purchase price is a single figure per card, so cost is quantity times price.
+ * Cards bought at different prices over time are outside what one field can say.
+ */
+function cardFinancials(card, entry) {
+  const variants = (entry && entry.variants) || {};
+  let quantity = 0;
+  let marketValue = 0;
+  let currency = "usd";
+  let sawPrice = false;
+
+  for (const key in VARIANT_PRICE_ORDER) {
+    const qty = variants[key] || 0;
+    if (qty <= 0) continue;
+    quantity += qty;
+    const unit = getActiveUnitPrice(card, key);
+    if (unit.value > 0 && !sawPrice) {
+      currency = unit.currency;
+      sawPrice = true;
+    }
+    marketValue += qty * unit.value;
+  }
+  // A finish the price table has never heard of still counts as owned.
+  for (const key in variants) {
+    if (!(key in VARIANT_PRICE_ORDER)) quantity += variants[key] || 0;
+  }
+
+  const paid = entry && typeof entry.acquiredPrice === "number" ? entry.acquiredPrice : null;
+  const totalCost = paid === null ? 0 : paid * quantity;
+  const netGainLoss = marketValue - totalCost;
+
+  return {
+    quantity: quantity,
+    unitPaid: paid,
+    totalCost: totalCost,
+    marketValue: marketValue,
+    currency: currency,
+    netGainLoss: netGainLoss,
+    // Undefined rather than zero when there is nothing to divide by, so a card
+    // with no purchase price is not reported as breaking even.
+    roiPercent: totalCost > 0 ? (netGainLoss / totalCost) * 100 : null,
+    // Only meaningful when both sides are the same currency.
+    comparable: paid !== null && quantity > 0 && marketValue > 0 && currency === "usd"
+  };
+}
 
 /** "USD" or "EUR" - so a tile never labels a euro price as dollars. */
 function priceUnit(card, field) {
@@ -601,12 +717,7 @@ function getCardVariantDefs(card) {
 }
 
 function variantPrice(card, def) {
-  const direct = cardPrice(card, def.priceKey);
-  if (direct.value !== null) return direct;
-  if (def.key === "nonfoil") return cardPrice(card, "price_usd");
-  const foil = cardPrice(card, "price_foil");
-  if (foil.value !== null) return foil;
-  return cardPrice(card, "price_usd");
+  return getActiveUnitPrice(card, def);
 }
 
 /**
@@ -2234,6 +2345,9 @@ function updateDashboardStats() {
   let totalFoil = 0;
   let totalSpecial = 0;
   let estimatedValue = 0;
+  let costBasis = 0;
+  let pricedMarketValue = 0;
+  let pricedCount = 0;
 
   const gameStats = {};
   GAME_LIST.forEach(game => { gameStats[game] = { total: 0, owned: 0 }; });
@@ -2251,17 +2365,15 @@ function updateDashboardStats() {
       totalSpecial += (variants.surge || 0) + (variants.wave || 0) + (variants.etched || 0) +
                       (variants.promo || 0) + (variants.serialized || 0);
 
-      const pUsd = typeof card.price_usd === "number" ? card.price_usd : 0;
-      const pFoil = typeof card.price_foil === "number" ? card.price_foil : pUsd;
-      const pEtched = typeof card.price_etched === "number" ? card.price_etched : pFoil;
-
-      estimatedValue += (variants.nonfoil || 0) * pUsd;
-      estimatedValue += (variants.foil || 0) * pFoil;
-      estimatedValue += (variants.surge || 0) * pFoil;
-      estimatedValue += (variants.wave || 0) * pFoil;
-      estimatedValue += (variants.etched || 0) * pEtched;
-      estimatedValue += (variants.promo || 0) * pFoil;
-      estimatedValue += (variants.serialized || 0) * (pFoil > 0 ? pFoil * 5 : SERIALIZED_FALLBACK_USD);
+      // One shared calculation, so the dashboard and the per-card figures can
+      // never disagree about what a finish is worth.
+      const money = cardFinancials(card, entry);
+      estimatedValue += money.marketValue;
+      if (money.totalCost > 0) {
+        costBasis += money.totalCost;
+        pricedMarketValue += money.marketValue;
+        pricedCount++;
+      }
     }
 
     if (gameStats[card.game]) {
@@ -2277,7 +2389,23 @@ function updateDashboardStats() {
   setText("statUniquePct", `${completionPct.toFixed(1)}% unique completion`);
   setText("statTotalCopies", totalCopies.toLocaleString());
   setText("statVariantsBreakdown", `${totalNonFoil} Non-Foil • ${totalFoil} Foil • ${totalSpecial} Special`);
-  setText("statMarketValue", `$${estimatedValue.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
+  setText("statMarketValue", usd(estimatedValue));
+
+  // Portfolio gain / loss. Only the cards with a purchase price recorded are in
+  // the cost basis, so the market value used here is theirs alone - comparing a
+  // whole collection's value against a partial cost would overstate the gain.
+  const net = pricedMarketValue - costBasis;
+  const roi = costBasis > 0 ? (net / costBasis) * 100 : null;
+  const netEl = document.getElementById("statNetGain");
+  if (netEl) {
+    const sign = net > 0 ? "+" : net < 0 ? "−" : "";
+    netEl.textContent = `${sign}${usd(Math.abs(net))}`;
+    netEl.classList.toggle("is-up", net > 0);
+    netEl.classList.toggle("is-down", net < 0);
+  }
+  setText("statNetGainSub", costBasis > 0
+    ? `${usd(costBasis)} spent on ${pricedCount.toLocaleString()} card${pricedCount === 1 ? "" : "s"} • ROI ${roi >= 0 ? "+" : "−"}${Math.abs(roi).toFixed(1)}%`
+    : "Record a purchase price to see gain or loss");
   setText("progressBarPercent", `${completionPct.toFixed(1)}% (${uniqueOwned.toLocaleString()} / ${totalCardsInSet.toLocaleString()})`);
 
   const fill = document.getElementById("progressBarFill");
@@ -2492,20 +2620,32 @@ function sparkline(points, rising, currency) {
  * one that was paid.
  */
 function purchaseMove(card, entry) {
-  const paid = entry.acquiredPrice;
-  if (typeof paid !== "number") return null;
+  const money = cardFinancials(card, entry);
 
-  const market = bestPrice(card);
-  // Purchase prices are typed in without a currency, so they are taken as
-  // dollars. Subtracting a euro market price from a dollar purchase would be
-  // arithmetic on two different things, so it is not done.
-  if (!market || market.value <= 0 || market.currency !== "usd") return null;
+  // Priced against the finishes actually owned. Using the card's headline price
+  // instead - which prefers non-foil - valued a surge foil at the non-foil
+  // price and made every foil purchase look like a loss.
+  if (!money.comparable) {
+    // Nothing owned yet, but a price was recorded: compare one copy, so the
+    // figure still means something before the first copy is logged.
+    const paid = entry.acquiredPrice;
+    if (typeof paid !== "number" || money.quantity > 0) return null;
+    const unit = getActiveUnitPrice(card, "nonfoil");
+    if (unit.value <= 0 || unit.currency !== "usd") return null;
+    return buildMove(paid, unit.value, 1);
+  }
+  return buildMove(money.unitPaid, money.marketValue / money.quantity, money.quantity);
+}
 
-  const delta = market.value - paid;
+function buildMove(paid, unitMarket, quantity) {
+  const delta = unitMarket - paid;
   const pct = paid > 0 ? (delta / paid) * 100 : null;
   return {
     paid: paid,
-    market: market.value,
+    market: unitMarket,
+    quantity: quantity,
+    totalCost: paid * quantity,
+    totalMarket: unitMarket * quantity,
     delta: delta,
     pct: pct,
     up: delta >= 0,

@@ -2895,3 +2895,10 @@ body.modal-open {
 .purchase-move.is-flat { color: var(--text-secondary, #94A3B8); font-weight: 400; }
 
 .col-paid { white-space: nowrap; }
+
+/* Portfolio gain / loss metric card. */
+.metric-card.card-violet { border-color: rgba(167, 139, 250, 0.35); }
+.metric-card.card-violet .metric-icon { color: #A78BFA; }
+
+#statNetGain.is-up { color: #34D399; }
+#statNetGain.is-down { color: #F87171; }
