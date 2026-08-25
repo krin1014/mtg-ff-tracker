@@ -818,6 +818,43 @@ function saveCollectionState(toastMessage = null) {
 const FILTER_IDS = ["filterOwned", "filterGame", "filterSet", "filterVariant",
   "filterTreatment", "filterRarity", "filterColor"];
 
+// Whether the metric cards, progress bar and game pills are showing. The strip
+// above them keeps the headline numbers either way, so this only decides how
+// much vertical space the dashboard takes before the first row of cards.
+let dashboardOpen = true;
+
+/**
+ * The table's columns, in the order they appear in the markup.
+ *
+ * `key` matches the col-<key> class already on every <th> and <td>, so hiding a
+ * column is one CSS rule and needs no re-render. The name column is locked -
+ * a table of unnamed rows is not a view anyone wants.
+ *
+ * The four marked `inName` are also printed inside the name cell by
+ * .col-name-meta, which the stylesheet reveals as soon as any of them is
+ * hidden. Turning them off therefore costs no information.
+ */
+const TABLE_COLUMNS = [
+  { key: "image", label: "Image" },
+  { key: "name", label: "Final Fantasy name", locked: true },
+  { key: "mtg", label: "Original MTG name" },
+  { key: "set", label: "Set", inName: true },
+  { key: "number", label: "Number", inName: true },
+  { key: "game", label: "FF game", inName: true },
+  { key: "rarity", label: "Rarity", inName: true },
+  { key: "avail", label: "Available variants" },
+  { key: "inventory", label: "Collected inventory" },
+  { key: "total", label: "Total" },
+  { key: "condition", label: "Condition" },
+  { key: "price", label: "Price" },
+  { key: "price-foil", label: "Foil price" },
+  { key: "paid", label: "Paid" },
+  { key: "location", label: "Storage location" }
+];
+
+// Column keys the user has switched off, on this device.
+let hiddenColumns = [];
+
 function savePrefs() {
   const prefs = {
     view: currentView,
@@ -825,6 +862,8 @@ function savePrefs() {
     sort: valueOf("sortBySelect"),
     search: valueOf("searchInput"),
     location: activeLocationFilter,
+    dashboardOpen: dashboardOpen,
+    hiddenColumns: hiddenColumns,
     filters: {}
   };
   FILTER_IDS.forEach(id => { prefs.filters[id] = valueOf(id); });
@@ -845,6 +884,13 @@ function loadPrefs() {
   if (!prefs || typeof prefs !== "object") return;
 
   if (prefs.view === "table" || prefs.view === "grid") currentView = prefs.view;
+  if (typeof prefs.dashboardOpen === "boolean") dashboardOpen = prefs.dashboardOpen;
+  if (Array.isArray(prefs.hiddenColumns)) {
+    // Filter against the registry so a key retired in a later version cannot
+    // linger and hide nothing, and so the name column can never be lost.
+    hiddenColumns = prefs.hiddenColumns.filter(key => TABLE_COLUMNS.some(
+      col => col.key === key && !col.locked));
+  }
   if ([24, 60, 120].indexOf(Number(prefs.pageSize)) !== -1) pageSize = Number(prefs.pageSize);
   // "number_asc" was the old default. Nobody picked it deliberately, so move
   // those devices onto the new default rather than pinning them to the old one.
@@ -958,6 +1004,8 @@ document.addEventListener("DOMContentLoaded", () => {
   collapseFiltersOnSmallScreens();
   loadPrefs();
   applyViewMode();
+  applyDashboardState();
+  applyColumnPrefs();
   buildGamePills();
   initEventListeners();
   updateStaticCounts();
@@ -1499,6 +1547,108 @@ function collapseFiltersOnSmallScreens() {
   if (details && isSmallScreen()) details.removeAttribute("open");
 }
 
+/**
+ * Show or hide the dashboard panel.
+ *
+ * The panel is hidden by a CSS sibling rule on the toggle's aria-expanded, so
+ * the attribute is the state - there is no second place for it to drift to.
+ */
+function applyDashboardState() {
+  const toggle = document.getElementById("dashboardToggle");
+  if (!toggle) return;
+  toggle.setAttribute("aria-expanded", String(dashboardOpen));
+  setText("dashboardToggleText", dashboardOpen ? "Hide details" : "Show details");
+}
+
+function toggleDashboard() {
+  dashboardOpen = !dashboardOpen;
+  applyDashboardState();
+  savePrefs();
+}
+
+// ---------------------------------------------------------------------------
+// Table columns
+//
+// Hiding is done with generated CSS rather than by re-rendering the table: the
+// classes are already on every cell, the rows can stay exactly as they are, and
+// an open <input> keeps its focus and its half-typed value.
+// ---------------------------------------------------------------------------
+
+function isColumnHidden(key) {
+  return hiddenColumns.indexOf(key) !== -1;
+}
+
+function applyColumnPrefs() {
+  const table = document.querySelector(".tracker-table");
+  if (table) {
+    // The set / number / game / rarity line inside the name cell is normally
+    // off on desktop. Reveal it the moment any of those four columns is hidden,
+    // so switching them off compacts the table instead of losing the data.
+    const needsFallback = TABLE_COLUMNS.some(col => col.inName && isColumnHidden(col.key));
+    table.classList.toggle("show-name-meta", needsFallback);
+  }
+
+  let style = document.getElementById("columnStyles");
+  if (!style) {
+    style = document.createElement("style");
+    style.id = "columnStyles";
+    document.head.appendChild(style);
+  }
+  style.textContent = hiddenColumns
+    .map(key => `.tracker-table .col-${key} { display: none; }`)
+    .join("\n");
+
+  renderColumnPicker();
+}
+
+function renderColumnPicker() {
+  const picker = document.getElementById("columnPicker");
+  if (picker) picker.style.display = currentView === "table" ? "" : "none";
+
+  const shown = TABLE_COLUMNS.length - hiddenColumns.length;
+  setText("columnPickerCount", `${shown}/${TABLE_COLUMNS.length}`);
+
+  const list = document.getElementById("columnPickerList");
+  if (!list) return;
+  list.innerHTML = TABLE_COLUMNS.map(col => {
+    const on = !isColumnHidden(col.key);
+    return `
+      <label class="column-picker-row ${col.locked ? "is-locked" : ""}">
+        <input type="checkbox" data-column="${esc(col.key)}"
+               ${on ? "checked" : ""} ${col.locked ? "disabled" : ""}>
+        <span>${esc(col.label)}</span>
+        ${col.locked ? `<span class="column-note">always</span>` : ""}
+        ${col.inName ? `<span class="column-note">in name cell</span>` : ""}
+      </label>`;
+  }).join("");
+}
+
+function setColumnVisible(key, visible) {
+  const col = TABLE_COLUMNS.find(item => item.key === key);
+  if (!col || col.locked) return;
+  hiddenColumns = hiddenColumns.filter(item => item !== key);
+  if (!visible) hiddenColumns.push(key);
+  applyColumnPrefs();
+  savePrefs();
+}
+
+function showAllColumns() {
+  hiddenColumns = [];
+  applyColumnPrefs();
+  savePrefs();
+}
+
+function toggleColumnPicker(force) {
+  const btn = document.getElementById("columnPickerBtn");
+  const panel = document.getElementById("columnPickerPanel");
+  if (!btn || !panel) return;
+  const open = force === undefined
+    ? btn.getAttribute("aria-expanded") !== "true"
+    : Boolean(force);
+  btn.setAttribute("aria-expanded", String(open));
+  panel.hidden = !open;
+}
+
 function distinctValues(getter) {
   const seen = new Set();
   CARDS_DATA.forEach(card => {
@@ -1592,6 +1742,27 @@ function initEventListeners() {
 
   document.getElementById("viewToggleBtn").addEventListener("click", toggleViewMode);
 
+  const dashboardToggle = document.getElementById("dashboardToggle");
+  if (dashboardToggle) dashboardToggle.addEventListener("click", toggleDashboard);
+
+  const columnBtn = document.getElementById("columnPickerBtn");
+  if (columnBtn) columnBtn.addEventListener("click", () => toggleColumnPicker());
+  const columnList = document.getElementById("columnPickerList");
+  if (columnList) {
+    columnList.addEventListener("change", event => {
+      const box = event.target.closest("input[data-column]");
+      if (box) setColumnVisible(box.getAttribute("data-column"), box.checked);
+    });
+  }
+  const columnReset = document.getElementById("columnResetBtn");
+  if (columnReset) columnReset.addEventListener("click", showAllColumns);
+
+  // Click anywhere else, or press Escape, and the panel closes.
+  document.addEventListener("click", event => {
+    const picker = document.getElementById("columnPicker");
+    if (picker && !picker.contains(event.target)) toggleColumnPicker(false);
+  });
+
   // Collapsible action menu (mobile)
   const menuToggle = document.getElementById("menuToggleBtn");
   if (menuToggle) {
@@ -1634,6 +1805,7 @@ function initEventListeners() {
     closeModal();
     closeSyncModal();
     closeBindersModal();
+    toggleColumnPicker(false);
   });
 
   // One delegated click handler for every generated control.
@@ -1695,7 +1867,9 @@ function runAction(target, event) {
     case "chip-inc":
       event.preventDefault();
       event.stopPropagation();
-      stepVariant(cardId, vkey, 1);
+      // Only the tile chips ask for the purchase window; stepping inside the
+      // card window or typing in the table should not move the cursor.
+      stepVariant(cardId, vkey, 1, { revealPurchase: true });
       break;
     case "chip-dec":
       event.preventDefault();
@@ -1799,6 +1973,10 @@ function applyViewMode() {
   tableEl.style.display = isGrid ? "none" : "block";
   if (btnText) btnText.textContent = isGrid ? "Table View" : "Binder View";
   if (btnIcon) btnIcon.textContent = isGrid ? "☷" : "▦";
+
+  // The column picker belongs to the table; hide the button in binder view.
+  renderColumnPicker();
+  toggleColumnPicker(false);
 }
 
 // ---------------------------------------------------------------------------
@@ -2213,6 +2391,24 @@ function renderVariantChips(card, entry) {
   }).join("");
 }
 
+/**
+ * The two optional notes on a tile: the original MTG name for a flavour
+ * reprint, and why this card matched the current search.
+ *
+ * Returned as one string with no padding, so the slot that holds it is either
+ * genuinely empty or genuinely full.
+ */
+function noteLine(card) {
+  const parts = [];
+  if (card.is_reprint) {
+    parts.push(`<span class="card-mtg-subtitle" title="Original MTG name">aka: ${esc(displayName(card.mtg_name))}</span>`);
+  }
+  if (matchLabel(card.id)) {
+    parts.push(`<span class="match-why">${esc(matchLabel(card.id))}</span>`);
+  }
+  return parts.join("");
+}
+
 function renderGridView(cards) {
   const gridEl = document.getElementById("binderGridView");
   gridEl.innerHTML = cards.map(card => {
@@ -2230,12 +2426,14 @@ function renderGridView(cards) {
           <img class="card-image"
                src="${esc(card.image_normal || card.image_small)}"
                ${srcset ? `srcset="${esc(srcset)}"` : ""}
-               sizes="(max-width: 520px) 116px, (max-width: 900px) 45vw, 280px"
+               sizes="(max-width: 520px) 116px, (max-width: 767px) 46vw, (max-width: 900px) 31vw, 285px"
                alt="${esc(name)}" loading="lazy" decoding="async">
+          <!-- Only what a flat scan cannot tell you: the official frame
+               treatment and the finish. Set, number, game and rarity moved to
+               the meta line below, where they no longer cover the artwork -
+               45% of cards carry a treatment badge, so most tiles were wrapping
+               to two rows of pills across the bottom of the art. -->
           <div class="card-pill-tags">
-            <span class="tag-badge tag-game">${esc(card.game)}</span>
-            <span class="tag-badge tag-set">${esc(card.set)} #${esc(card.collector_number)}</span>
-            <span class="tag-badge tag-rarity-${esc(card.rarity.toLowerCase())}">${esc(card.rarity)}</span>
             ${card.treatment && card.treatment !== "Default" ? `<span class="tag-badge tag-treatment">${esc(card.treatment)}</span>` : ""}
             ${card.variant !== "Basic/Non-foil" ? `<span class="tag-badge tag-variant">${esc(variantName(card.variant))}</span>` : ""}
           </div>
@@ -2247,9 +2445,19 @@ function renderGridView(cards) {
             <div class="card-collector">${esc(card.color_identity)}</div>
           </div>
 
-          ${card.is_reprint ? `<div class="card-mtg-subtitle" title="Original MTG name">aka: ${esc(displayName(card.mtg_name))}</div>` : ""}
+          <div class="card-meta-line">
+            <span class="tag-badge tag-game">${esc(card.game)}</span>
+            <span class="tag-badge tag-set">${esc(card.set)} #${esc(card.collector_number)}</span>
+            <span class="tag-badge tag-rarity-${esc(card.rarity.toLowerCase())}">${esc(card.rarity)}</span>
+          </div>
 
-          ${matchLabel(card.id) ? `<div class="match-why">${esc(matchLabel(card.id))}</div>` : ""}
+          <!-- One fixed line, always present, holding whichever of the two
+               optional notes apply. Rendering them only when they exist made
+               every tile in a row as tall as its tallest neighbour, because
+               .card-info stretches; a reserved slot keeps the row level.
+               No whitespace inside, so :empty matches and the phone layout -
+               a single column, with no row to level - can drop it. -->
+          <div class="card-note-line">${noteLine(card)}</div>
 
           <div class="card-type" title="${esc(card.type_line)}">${esc(card.type_line)}</div>
 
@@ -2541,8 +2749,10 @@ function goToPage(page) {
  * Only the finish being emptied is cleared - the other finishes of the same
  * card keep their own records.
  */
-function setVariantQuantity(cardId, variantKey, quantity) {
+function setVariantQuantity(cardId, variantKey, quantity, options) {
   const entry = editCard(cardId);
+  const opts = options || {};
+  const heldBefore = entryTotalQty(entry);
   const next = Math.max(0, quantity);
   entry.variants[variantKey] = next;
 
@@ -2567,11 +2777,24 @@ function setVariantQuantity(cardId, variantKey, quantity) {
 
   saveCollectionState();
   refreshCardUI(cardId);
+
+  // First copy of a card, added from a tile: open the details window with the
+  // cursor in that finish's price box. The tile no longer carries an "Add
+  // Purchase Price" button, so this is what keeps the purchase fields reachable
+  // at the moment they are actually wanted.
+  //
+  // Only on the 0 -> owned edge, so adding a second copy does not interrupt,
+  // and only when the window is not already showing this card.
+  if (opts.revealPurchase && heldBefore === 0 && entryTotalQty(entry) > 0
+      && modalCardId !== cardId) {
+    openCardModal(cardId);
+    focusPurchasePrice(variantKey);
+  }
 }
 
-function stepVariant(cardId, variantKey, step) {
+function stepVariant(cardId, variantKey, step, options) {
   const current = readCard(cardId).variants[variantKey] || 0;
-  setVariantQuantity(cardId, variantKey, current + step);
+  setVariantQuantity(cardId, variantKey, current + step, options);
 }
 
 function tableSetVariantQty(cardId, variantKey, value) {
@@ -2705,6 +2928,20 @@ function updateDashboardStats() {
     ? `${usd(costBasis)} spent on ${pricedCount.toLocaleString()} card${pricedCount === 1 ? "" : "s"} • ROI ${roi >= 0 ? "+" : "−"}${Math.abs(roi).toFixed(1)}%`
     : "Record a purchase price to see gain or loss");
   setText("progressBarPercent", `${completionPct.toFixed(1)}% (${uniqueOwned.toLocaleString()} / ${totalCardsInSet.toLocaleString()})`);
+
+  // The collapsed strip. Fed from the same figures as the cards above it, so
+  // hiding the panel can never show you a different number.
+  setText("stripOwned", uniqueOwned.toLocaleString());
+  setText("stripCopies", totalCopies.toLocaleString());
+  setText("stripValue", usd(estimatedValue));
+  setText("stripPct", `${completionPct.toFixed(1)}%`);
+  const stripNet = document.getElementById("stripNet");
+  if (stripNet) {
+    const sign = net > 0 ? "+" : net < 0 ? "−" : "";
+    stripNet.textContent = costBasis > 0 ? `${sign}${usd(Math.abs(net))}` : "—";
+    stripNet.classList.toggle("is-up", costBasis > 0 && net > 0);
+    stripNet.classList.toggle("is-down", costBasis > 0 && net < 0);
+  }
 
   const fill = document.getElementById("progressBarFill");
   if (fill) fill.style.width = `${completionPct}%`;
@@ -2978,12 +3215,16 @@ function purchaseRow(card, entry) {
   const totals = cardFinancials(card, entry);
   const paid = totals.costBasis > 0 ? totals.costBasis : null;
 
+  // Nothing recorded: an empty slot rather than a button. The prompt was on all
+  // 1,383 cards including the ones you do not own, where a purchase price means
+  // nothing. Adding the first copy opens the details window on the price box
+  // instead - see setVariantQuantity().
+  //
+  // The slot still carries data-purchase-row so refreshPurchaseDisplays() has a
+  // node to replace, and it holds its height so a row of tiles stays level
+  // whether or not a price is recorded.
   if (paid === null) {
-    return `
-      <button type="button" class="btn-add-purchase" data-purchase-row data-action="add-purchase"
-              data-card-id="${esc(card.id)}">
-        <span aria-hidden="true">＋</span> Add Purchase Price
-      </button>`;
+    return `<div class="card-purchase-slot" data-purchase-row aria-hidden="true"></div>`;
   }
 
   const move = purchaseMove(card, entry);
@@ -3115,9 +3356,15 @@ function renderPriceHistoryInto(card) {
   loadPriceHistory().then(paint);
 }
 
-/** Put the cursor in the price box and scroll it into view. */
-function focusPurchasePrice() {
-  const field = document.querySelector("#modalContent .bought-price");
+/**
+ * Put the cursor in the price box and scroll it into view.
+ *
+ * Takes the finish so that adding a Surge Foil copy lands in the Surge Foil
+ * price box rather than the non-foil one that happens to be first in the table.
+ */
+function focusPurchasePrice(variantKey) {
+  const field = (variantKey && modalField("acquired-price", variantKey))
+    || document.querySelector("#modalContent .bought-price");
   if (!field) return;
   field.focus();
   field.select();

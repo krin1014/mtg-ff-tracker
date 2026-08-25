@@ -206,6 +206,96 @@ body {
   padding: 0 24px;
 }
 
+/* --- Collapsible dashboard ------------------------------------------------
+   The strip is the toggle. It carries the headline numbers in both states, so
+   collapsing the panel costs no information - it only reclaims the ~340px that
+   the cards, the progress bar and the game pills were holding permanently. */
+.dashboard-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 10px 18px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.dashboard-toggle:hover { border-color: var(--border-light); }
+
+.dashboard-toggle:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+.dashboard-strip {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  min-width: 0;
+}
+
+.strip-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.strip-val {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.strip-val.is-up { color: #34D399; }
+.strip-val.is-down { color: #F87171; }
+.strip-stat-pct .strip-val { color: var(--accent-cyan); }
+
+.strip-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.dashboard-toggle-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.dashboard-chevron {
+  display: inline-block;
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+
+.dashboard-toggle[aria-expanded="false"] .dashboard-chevron {
+  transform: rotate(-90deg);
+}
+
+.dashboard-toggle[aria-expanded="false"] + .dashboard-panel {
+  display: none;
+}
+
 .metric-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -547,10 +637,17 @@ body {
   padding: 0 24px;
 }
 
-/* Visual Binder Grid Mode */
+/* Visual Binder Grid Mode
+   ------------------------------------------------------------------------
+   The column count is stated, not inferred. auto-fill + minmax() used to
+   decide it from the leftover width, which meant a 1920 monitor at 125%
+   scaling (1536 CSS px) missed the five-column threshold by the width of the
+   scrollbar and fell back to four - and because the tracks are 1fr, those
+   four then stretched to 352px each. The cards looked oversized because the
+   280px in the old rule was only a floor. */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 22px;
   margin-bottom: 30px;
 }
@@ -667,11 +764,21 @@ body {
   margin-bottom: 2px;
 }
 
+/* Two lines of space, always. A long flavour name that wrapped used to push
+   its whole row taller, because grid rows stretch to their tallest tile. */
 .card-name {
   font-size: 15px;
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* Two lines at the current line-height. Kept in em so the phone breakpoints,
+     which drop this to 14px and 13px, resize the slot with the text. */
+  height: 2.6em;
 }
 
 .card-collector {
@@ -680,11 +787,54 @@ body {
   color: var(--text-muted);
 }
 
+/* Set / number / game / rarity, moved off the artwork. One line, clipped
+   rather than wrapped, so it cannot change the tile height. */
+.card-meta-line {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 18px;
+  margin: 4px 0 2px;
+  overflow: hidden;
+}
+
+.card-meta-line .tag-badge {
+  flex: 0 0 auto;
+  line-height: 1.4;
+}
+
+/* Reserved single line for the reprint alias and the search match reason.
+   Always rendered, even when empty - that is the whole point of it. */
+.card-note-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 18px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-note-line .card-mtg-subtitle,
+.card-note-line .match-why {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Trimmed to sit inside the reserved line; the table view keeps the roomier
+   version of this badge. */
+.card-note-line .match-why {
+  flex: 0 0 auto;
+  font-size: 9px;
+  padding: 0 5px;
+  line-height: 14px;
+}
+
 .card-mtg-subtitle {
   font-size: 11px;
   color: #93C5FD;
   font-style: italic;
-  margin-bottom: 4px;
 }
 
 .card-type {
@@ -747,10 +897,14 @@ body {
   justify-content: space-between;
 }
 
+/* One row of chips is reserved. 1,378 of 1,383 cards have one or two finishes
+   and never wrap; holding the height stops the five that could from dragging
+   their whole row down with them. */
 .variant-chips-grid {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  min-height: 27px;
 }
 
 .variant-chip {
@@ -1541,6 +1695,111 @@ body.modal-open {
   font-family: var(--font-mono);
 }
 
+/* Set / number / game / rarity live in their own columns by default. Switch any
+   of them off and this line inside the name cell takes over, so hiding them
+   compacts the table rather than losing anything. */
+.tracker-table.show-name-meta .col-name-meta {
+  display: block;
+  margin-top: 3px;
+}
+
+/* --- Column picker --------------------------------------------------------- */
+.column-picker {
+  position: relative;
+}
+
+.btn.btn-small {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.column-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: 2px;
+}
+
+.column-picker-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 60;
+  width: 260px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light, var(--border-color));
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+  padding: 10px;
+}
+
+.column-picker-panel[hidden] { display: none; }
+
+.column-picker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 2px 4px 8px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 6px;
+}
+
+.column-picker-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.column-picker-row:hover { background: var(--bg-surface); }
+
+.column-picker-row.is-locked {
+  cursor: default;
+  color: var(--text-muted);
+}
+
+.column-picker-row input {
+  accent-color: var(--accent-cyan);
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+
+.column-picker-row > span:first-of-type {
+  flex: 1;
+  min-width: 0;
+}
+
+.column-note {
+  flex: 0 0 auto;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
 .tracker-table td.col-price,
 .tracker-table td.col-price-foil {
   font-family: var(--font-mono);
@@ -1744,7 +2003,7 @@ body.modal-open {
 /* --- Laptops / small desktops --------------------------------------------- */
 @media (max-width: 1200px) {
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
   }
 }
@@ -1767,7 +2026,7 @@ body.modal-open {
     padding: 0 18px;
   }
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
   }
   .metric-cards-grid {
@@ -1948,7 +2207,7 @@ body.modal-open {
   }
 
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
 
@@ -2072,8 +2331,20 @@ body.modal-open {
     object-position: top center;
   }
 
-  /* The overlay tags do not fit on a 116px thumbnail; the meta row carries them. */
+  /* Treatment and finish do not fit on a 116px thumbnail. They are the only two
+     badges left on the artwork, and the meta line below now carries the rest. */
   .card-pill-tags {
+    display: none;
+  }
+
+  /* A single-column list has no row to keep level, so the reserved note line
+     earns nothing here - drop it and give the space back. */
+  .card-note-line {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .card-note-line:empty {
     display: none;
   }
 
@@ -2838,6 +3109,13 @@ body.modal-open {
   font-size: 11px;
 }
 
+/* The empty counterpart of .card-purchase. Same box, no content - it holds the
+   gap so a tile with a price recorded and one without are the same height. */
+.card-purchase-slot {
+  height: 34px;
+  margin: 8px 0 0;
+}
+
 .card-purchase,
 .table-purchase {
   display: flex;
@@ -2854,6 +3132,8 @@ body.modal-open {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.card-purchase { height: 34px; }
 
 .card-purchase.is-up, .table-purchase.is-up { border-left-color: #34D399; }
 .card-purchase.is-down, .table-purchase.is-down { border-left-color: #F87171; }
