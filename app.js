@@ -611,6 +611,13 @@ function isEmptyEntry(entry) {
   for (const key in serials) {
     if (serials[key]) return false;
   }
+  // A price typed in before the first copy is logged is real data, not an empty
+  // entry - do not prune it away.
+  const acquired = entry.acquired || {};
+  for (const key in acquired) {
+    const record = acquired[key];
+    if (record && (record.price !== null || record.date)) return false;
+  }
   return true;
 }
 
@@ -2337,7 +2344,49 @@ function refreshCardUI(cardId) {
         statusEl.textContent = qty > 0 ? "✓ Collected" : "—";
         statusEl.classList.toggle("is-collected", qty > 0);
       }
+
+      // Removing the last copy clears what was paid for it, so the boxes have
+      // to empty on screen too - otherwise the old figures sit there looking
+      // saved, and typing nothing would put them back on the next edit.
+      const bought = acquiredFor(entry, def.key);
+      const priceEl = modalField("acquired-price", def.key);
+      if (priceEl && document.activeElement !== priceEl) {
+        priceEl.value = bought.price === null ? "" : bought.price.toFixed(2);
+      }
+      const dateEl = modalField("acquired-date", def.key);
+      if (dateEl && document.activeElement !== dateEl) {
+        dateEl.value = bought.date || "";
+      }
     });
+    refreshAcquiredSummary(cardId);
+  }
+
+  refreshPurchaseDisplays(cardId, card, entry);
+}
+
+/** One of the per-finish purchase inputs in the open card window. */
+function modalField(change, variantKey) {
+  return document.querySelector(
+    `#modalContent [data-change="${change}"][data-vkey="${cssEscape(variantKey)}"]`);
+}
+
+/**
+ * Redraw the paid / gain-loss block on the tile and in the table row.
+ *
+ * Both are summaries of the whole card, so any quantity change moves them - and
+ * clearing a purchase on removal has to take the block away, not leave a stale
+ * one behind.
+ */
+function refreshPurchaseDisplays(cardId, card, entry) {
+  const tile = document.querySelector(`[data-card-tile="${cssEscape(cardId)}"]`);
+  if (tile) {
+    const host = tile.querySelector("[data-purchase-row]");
+    if (host) host.outerHTML = purchaseRow(card, entry);
+  }
+  const row = document.querySelector(`[data-card-row="${cssEscape(cardId)}"]`);
+  if (row) {
+    const cell = row.querySelector(".col-paid");
+    if (cell) cell.innerHTML = purchaseCell(card, entry);
   }
 }
 
@@ -2386,19 +2435,37 @@ function goToPage(page) {
 // Collection mutations
 // ---------------------------------------------------------------------------
 
-function stepVariant(cardId, variantKey, step) {
+/**
+ * Set how many copies of one finish are owned.
+ *
+ * Removing the last copy also clears what was paid for it. A price and a date
+ * describe a copy you HAVE; once it is gone they are stale, and leaving them
+ * behind meant a card you had removed still carried its old cost into the
+ * portfolio totals and still drew a gain/loss line on its tile.
+ *
+ * Only the finish being emptied is cleared - the other finishes of the same
+ * card keep their own records.
+ */
+function setVariantQuantity(cardId, variantKey, quantity) {
   const entry = editCard(cardId);
-  const current = entry.variants[variantKey] || 0;
-  entry.variants[variantKey] = Math.max(0, current + step);
+  const next = Math.max(0, quantity);
+  entry.variants[variantKey] = next;
+
+  if (next === 0 && entry.acquired && entry.acquired[variantKey]) {
+    delete entry.acquired[variantKey];
+  }
+
   saveCollectionState();
   refreshCardUI(cardId);
 }
 
+function stepVariant(cardId, variantKey, step) {
+  const current = readCard(cardId).variants[variantKey] || 0;
+  setVariantQuantity(cardId, variantKey, current + step);
+}
+
 function tableSetVariantQty(cardId, variantKey, value) {
-  const entry = editCard(cardId);
-  entry.variants[variantKey] = Math.max(0, parseInt(value, 10) || 0);
-  saveCollectionState();
-  refreshCardUI(cardId);
+  setVariantQuantity(cardId, variantKey, parseInt(value, 10) || 0);
 }
 
 function setCardCondition(cardId, value) {
@@ -2803,7 +2870,7 @@ function purchaseRow(card, entry) {
 
   if (paid === null) {
     return `
-      <button type="button" class="btn-add-purchase" data-action="add-purchase"
+      <button type="button" class="btn-add-purchase" data-purchase-row data-action="add-purchase"
               data-card-id="${esc(card.id)}">
         <span aria-hidden="true">＋</span> Add Purchase Price
       </button>`;
@@ -2816,7 +2883,7 @@ function purchaseRow(card, entry) {
 
   return `
     <button type="button" class="card-purchase ${move ? (move.up ? "is-up" : "is-down") : ""}"
-            data-action="add-purchase" data-card-id="${esc(card.id)}"
+            data-purchase-row data-action="add-purchase" data-card-id="${esc(card.id)}"
             title="Edit what you paid">
       <span class="purchase-label">Paid${totals.pricedQty > 1 ? ` (${totals.pricedQty} copies)` : ""}</span>
       <span class="purchase-paid">${esc(money2(paid))}</span>
