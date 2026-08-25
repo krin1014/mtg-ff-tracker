@@ -210,7 +210,7 @@ This is an unofficial personal collection tracker, not affiliated with or
 endorsed by any of the above. Card names, images and game text remain the
 property of their respective owners.
 
-**The code is not open source.** It is © 2026 Carin, all rights reserved — see
+**The code is not open source.** It is © 2026 Carin Detzel, all rights reserved — see
 [LICENSE](LICENSE). This repository is public so that the site can be hosted on
 GitHub Pages and so that the code can be read, but no permission is granted to
 use, copy, modify, deploy or distribute it. If you want to do any of those
