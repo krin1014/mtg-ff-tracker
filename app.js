@@ -728,7 +728,70 @@ function loadCollectionState() {
   }
 
   collection = loaded || createEmptyCollection();
+  repairRemovedCards();
   pruneCollection();
+}
+
+/**
+ * One-time repair for cards removed BEFORE removal learned to clear up after
+ * itself.
+ *
+ * setVariantQuantity now wipes the location, condition, serial number and
+ * purchase records when the last copy goes - but only at the moment it goes.
+ * Cards removed before that fix existed still carry every original detail, in
+ * localStorage and, because the sheet mirrors what this device sends, in the
+ * sheet too. Nothing would ever have repaired them: a routine sync only sends
+ * cards edited since the last one, and these were edited long ago.
+ *
+ * Each repaired entry is re-stamped so it goes up on the next sync and clears
+ * the sheet row as well.
+ *
+ * This clears the purchase record too, which also removes a price typed in for
+ * a card not owned yet. That combination is indistinguishable from a removed
+ * card after the fact, and "removed means everything goes" is the rule that was
+ * asked for. Typing a price without owning a copy still works from here on -
+ * only quantity changes clear anything.
+ */
+function repairRemovedCards() {
+  if (localStorage.getItem(REMOVAL_REPAIR_KEY)) return;
+
+  let repaired = 0;
+  for (const id in collection.cards) {
+    const entry = collection.cards[id];
+    if (!entry || entryTotalQty(entry) > 0) continue;
+
+    const hadDetails =
+      Boolean(entry.location) ||
+      (entry.condition && entry.condition !== DEFAULT_CONDITION) ||
+      Object.keys(entry.serialNumbers || {}).some(key => entry.serialNumbers[key]) ||
+      Object.keys(entry.acquired || {}).length > 0;
+    if (!hadDetails) continue;
+
+    entry.acquired = {};
+    entry.serialNumbers = {};
+    entry.location = "";
+    entry.condition = DEFAULT_CONDITION;
+    entry.updatedAt = nowMs();
+    repaired++;
+  }
+
+  try {
+    localStorage.setItem(REMOVAL_REPAIR_KEY, String(nowMs()));
+  } catch (e) {
+    // Out of storage: the repair still ran, it will simply run again next time,
+    // which is harmless because it is idempotent.
+    console.warn("Could not record the removal repair", e);
+  }
+
+  if (repaired > 0) {
+    console.info(`Cleared leftover details on ${repaired} removed card(s).`);
+    collection.updatedAt = nowMs();
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(collection));
+    } catch (e) {
+      console.error("Could not save the removal repair", e);
+    }
+  }
 }
 
 function saveCollectionState(toastMessage = null) {
@@ -2388,6 +2451,38 @@ function refreshPurchaseDisplays(cardId, card, entry) {
     const cell = row.querySelector(".col-paid");
     if (cell) cell.innerHTML = purchaseCell(card, entry);
   }
+  refreshDetailFields(cardId, entry);
+}
+
+/**
+ * Put the condition, location and serial boxes back in step with the entry.
+ *
+ * Removing the last copy clears all three, and without this the old values sit
+ * on screen looking saved - then get written back the next time the field is
+ * touched.
+ */
+function refreshDetailFields(cardId, entry) {
+  const setIfIdle = (el, value) => {
+    if (el && document.activeElement !== el) el.value = value;
+  };
+
+  const row = document.querySelector(`[data-card-row="${cssEscape(cardId)}"]`);
+  if (row) {
+    setIfIdle(row.querySelector('[data-change="location"]'), entry.location || "");
+    setIfIdle(row.querySelector('[data-change="condition"]'), entry.condition || DEFAULT_CONDITION);
+  }
+
+  const modalCondition = document.getElementById("modalConditionSelect");
+  if (modalCondition && modalCondition.getAttribute("data-card-id") === cardId) {
+    setIfIdle(modalCondition, entry.condition || DEFAULT_CONDITION);
+  }
+  const modalLocation = document.getElementById("modalLocationInput");
+  if (modalLocation && modalLocation.getAttribute("data-card-id") === cardId) {
+    setIfIdle(modalLocation, entry.location || "");
+  }
+  const serial = document.querySelector(
+    `#modalContent [data-change="serial"][data-card-id="${cssEscape(cardId)}"]`);
+  setIfIdle(serial, (entry.serialNumbers && entry.serialNumbers.serialized) || "");
 }
 
 /** CSS.escape with a fallback for older mobile browsers. */
@@ -2453,6 +2548,21 @@ function setVariantQuantity(cardId, variantKey, quantity) {
 
   if (next === 0 && entry.acquired && entry.acquired[variantKey]) {
     delete entry.acquired[variantKey];
+  }
+
+  // Nothing left at all: clear everything that described the copies. Condition,
+  // storage location and serial number all describe cards you HAVE, so leaving
+  // them behind meant a card you had removed still sat in the sheet - and still
+  // showed up in its old binder - carrying every original detail.
+  //
+  // The entry itself stays, zeroed, with its updatedAt. That zero is what tells
+  // your other devices the card is gone; delete it outright and a phone that
+  // has not synced would push its old copy back and resurrect the card.
+  if (entryTotalQty(entry) === 0) {
+    entry.acquired = {};
+    entry.serialNumbers = {};
+    entry.location = "";
+    entry.condition = DEFAULT_CONDITION;
   }
 
   saveCollectionState();
@@ -3379,6 +3489,9 @@ function registerServiceWorker() {
 // ===========================================================================
 
 const SYNC_KEY = "ff_mtg_sync_v1";
+
+/** Marks that the one-time repair of already-removed cards has run. */
+const REMOVAL_REPAIR_KEY = "ff_mtg_removal_repair_v1";
 const SYNC_DEBOUNCE_MS = 4000;
 const SYNC_TIMEOUT_MS = 25000;
 
@@ -3391,7 +3504,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 6;
+const REQUIRED_SCRIPT_VERSION = 7;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +
@@ -3400,6 +3513,18 @@ const STALE_SCRIPT_MESSAGE =
   "does not change.";
 
 /** True when the sheet's deployed script is older than this tracker needs. */
+/**
+ * Set once a reply shows the deployed script is behind, and cleared only when a
+ * reply shows it is current again.
+ *
+ * While it is set, this device stops PUSHING. An old script silently ignores
+ * fields it does not know about - the per-finish purchase records, for one - so
+ * pushing into it does not fail, it just quietly drops half the edit and writes
+ * the rest back over the sheet. Holding the changes on the device until the
+ * redeploy is the only lossless option; pulling is still safe and continues.
+ */
+let syncScriptStale = false;
+
 function isScriptStale(result) {
   return !result || Number(result.scriptVersion || 0) < REQUIRED_SCRIPT_VERSION;
 }
@@ -3676,7 +3801,12 @@ function runSync(options) {
   // device knows about, which is also what repairs a sheet whose readable
   // name / set / number columns have gone blank - those values live on the
   // device, so only the device can restore them.
-  const changes = cardsChangedSince(settings.full ? 0 : syncConfig.lastSync);
+  // Nothing is sent while the deployed script is known to be out of date. The
+  // edits stay on the device - they are not lost - and go up as soon as a reply
+  // shows the new version is live.
+  const changes = syncScriptStale
+    ? {}
+    : cardsChangedSince(settings.full ? 0 : syncConfig.lastSync);
 
   /**
    * How far back to ask the sheet for changes.
@@ -3703,8 +3833,19 @@ function runSync(options) {
   })
     .then(result => {
       const adopted = mergeRemoteCards(result.cards, startedAt);
-      syncConfig.lastSync = startedAt;
-      saveSyncConfig();
+
+      // Only move the watermark forward when this device's changes actually
+      // went up. cardsChangedSince() sends what is newer than lastSync, so
+      // advancing it after a push that deliberately sent nothing would step
+      // straight over those edits and never send them again - the sync would
+      // look healthy, with the work silently stranded on this device.
+      //
+      // syncScriptStale is not modified until further down, so it still says
+      // whether the push above carried anything.
+      if (!syncScriptStale) {
+        syncConfig.lastSync = startedAt;
+        saveSyncConfig();
+      }
 
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(collection));
@@ -3721,12 +3862,21 @@ function runSync(options) {
 
       if (isScriptStale(result)) {
         // The sync itself worked, but against old code. Say so loudly rather
-        // than letting fixes appear to do nothing.
+        // than letting fixes appear to do nothing - and stop sending until it
+        // is fixed, so an edit cannot be half-written and half-dropped.
+        syncScriptStale = true;
         setSyncStatus("error", STALE_SCRIPT_MESSAGE);
         if (!settings.silent) showToast("Sheet script is out of date - open Sync", true);
         return true;
       }
 
+      // Back in step. lastSync was left where it was for every held-back sync,
+      // so the changes are still inside the window and the push below sends
+      // them.
+      if (syncScriptStale) {
+        syncScriptStale = false;
+        scheduleSyncPush();
+      }
       setSyncStatus("ok", "");
       if (!settings.silent) {
         const sent = Object.keys(changes).length;
