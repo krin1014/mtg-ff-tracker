@@ -382,9 +382,15 @@ the site keeps showing 404 until you redo one step by hand.
 2. Scroll to the bottom, to the **Danger Zone**
 3. Find **Change repository visibility**, click **Change visibility**, and switch
    it to public
-4. Now redo **Step 5**. Under **Source** it will say **None** again — set it back
-   to **Deploy from a branch**, **main**, **/ (root)**, and click **Save**
+4. Now redo **Step 5**, and check all three settings carefully. **Source** may
+   say **None**, or the folder may have been changed to something like
+   **/docs**. Set it back to **Deploy from a branch**, **main**, **/ (root)**,
+   and click **Save**
 5. Wait 10 minutes, then check the site again
+
+> The folder one is the sneaky one. If it is set to **/docs** but your files are
+> not in a `docs` folder, every build fails and the site stays on 404 — even
+> though the Pages screen looks switched on.
 
 While you are there, click the **Actions** tab. If it offers a green button
 saying **I understand my workflows, go ahead and enable them**, click it — going
