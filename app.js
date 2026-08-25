@@ -1589,6 +1589,7 @@ function applyPurchaseVisibility() {
     btn.style.display = currentView === "grid" ? "" : "none";
     btn.setAttribute("aria-pressed", String(showPurchases));
     btn.classList.toggle("is-off", !showPurchases);
+    setText("purchaseToggleIcon", showPurchases ? "◉" : "○");
   }
 }
 
@@ -3253,17 +3254,30 @@ function purchaseRow(card, entry) {
   const totals = cardFinancials(card, entry);
   const paid = totals.costBasis > 0 ? totals.costBasis : null;
 
-  // Nothing recorded: an anchor with no height. The prompt was on all 1,383
-  // cards including the ones you do not own, where a purchase price means
-  // nothing. Adding the first copy opens the details window on the price box
-  // instead - see setVariantQuantity().
+  // Three states, not two.
   //
-  // It stays in the DOM, carrying data-purchase-row, so refreshPurchaseDisplays
-  // still has a node to replace the moment a price is entered. It takes no
-  // space: reserving the block on every unpriced tile left a visible dead band
-  // between the market price and the variant chips.
+  // Nothing recorded and nothing owned: an anchor with no height. A purchase
+  // price is meaningless on a card you do not have, and prompting for one on
+  // all ~1,300 of those was the dead band that had to go.
+  //
+  // Nothing recorded but the card IS owned: a small prompt. Dropping this
+  // outright went too far - with the Purchases switch on, an owned card with no
+  // price showed nothing at all, so the switch looked broken and there was no
+  // way back to the field from the binder. This is the compact form of it, not
+  // the full-width dashed banner that used to sit on every card.
+  //
+  // Either way the node carries data-purchase-row, so refreshPurchaseDisplays
+  // has something to replace the moment a price is entered.
   if (paid === null) {
-    return `<div class="card-purchase-slot" data-purchase-row hidden></div>`;
+    if (entryTotalQty(entry) === 0) {
+      return `<div class="card-purchase-slot" data-purchase-row hidden></div>`;
+    }
+    return `
+      <button type="button" class="card-purchase-add" data-purchase-row
+              data-action="add-purchase" data-card-id="${esc(card.id)}"
+              title="Record what you paid for this card">
+        <span aria-hidden="true">＋</span> Add purchase price
+      </button>`;
   }
 
   const move = purchaseMove(card, entry);
