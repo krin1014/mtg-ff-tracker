@@ -235,6 +235,21 @@ const CURRENCY_SYMBOL = { usd: "$", eur: "€" };
  * the art cards and a couple of promos - only euros - so the symbol has to
  * follow the number rather than being assumed.
  */
+/** Purchase figures are always dollars - there is no currency picker. */
+function money2(value) {
+  return money(value, "usd");
+}
+
+/** MASTER_VARIANTS indexed by storage key, for looking a finish up by key. */
+const MASTER_VARIANTS_BY_KEY = (function () {
+  const out = {};
+  for (const name in MASTER_VARIANTS) {
+    const def = MASTER_VARIANTS[name];
+    if (!out[def.key]) out[def.key] = def;
+  }
+  return out;
+})();
+
 /** Dollars with thousands separators, for the dashboard totals. */
 function usd(value) {
   const n = typeof value === "number" && isFinite(value) ? value : 0;
@@ -331,43 +346,78 @@ function getActiveUnitPrice(card, variant) {
  */
 function cardFinancials(card, entry) {
   const variants = (entry && entry.variants) || {};
+  const lines = [];
+
   let quantity = 0;
-  let marketValue = 0;
+  let marketValue = 0;      // everything owned, priced at market
+  let costBasis = 0;        // only the finishes with a purchase price recorded
+  let pricedMarket = 0;     // market value of exactly those finishes
+  let pricedQty = 0;
   let currency = "usd";
   let sawPrice = false;
+  let mixedCurrency = false;
 
   for (const key in VARIANT_PRICE_ORDER) {
     const qty = variants[key] || 0;
-    if (qty <= 0) continue;
-    quantity += qty;
+    const bought = acquiredFor(entry, key);
+    if (qty <= 0 && bought.price === null && !bought.date) continue;
+
     const unit = getActiveUnitPrice(card, key);
-    if (unit.value > 0 && !sawPrice) {
-      currency = unit.currency;
-      sawPrice = true;
+    if (qty > 0) {
+      quantity += qty;
+      marketValue += qty * unit.value;
+      if (unit.value > 0) {
+        if (!sawPrice) {
+          currency = unit.currency;
+          sawPrice = true;
+        } else if (unit.currency !== currency) {
+          mixedCurrency = true;
+        }
+      }
     }
-    marketValue += qty * unit.value;
+
+    // A purchase counts once a price is recorded, even before a copy is logged,
+    // so typing a price does not silently do nothing.
+    const countedQty = qty > 0 ? qty : (bought.price !== null ? 1 : 0);
+    if (bought.price !== null && countedQty > 0) {
+      costBasis += bought.price * countedQty;
+      pricedMarket += unit.value * countedQty;
+      pricedQty += countedQty;
+    }
+
+    lines.push({
+      key: key,
+      quantity: qty,
+      unitMarket: unit.value,
+      currency: unit.currency,
+      paid: bought.price,
+      date: bought.date,
+      cost: bought.price === null ? 0 : bought.price * countedQty,
+      market: unit.value * countedQty
+    });
   }
+
   // A finish the price table has never heard of still counts as owned.
   for (const key in variants) {
     if (!(key in VARIANT_PRICE_ORDER)) quantity += variants[key] || 0;
   }
 
-  const paid = entry && typeof entry.acquiredPrice === "number" ? entry.acquiredPrice : null;
-  const totalCost = paid === null ? 0 : paid * quantity;
-  const netGainLoss = marketValue - totalCost;
+  const netGainLoss = pricedMarket - costBasis;
 
   return {
+    lines: lines,
     quantity: quantity,
-    unitPaid: paid,
-    totalCost: totalCost,
     marketValue: marketValue,
+    costBasis: costBasis,
+    pricedMarket: pricedMarket,
+    pricedQty: pricedQty,
     currency: currency,
     netGainLoss: netGainLoss,
     // Undefined rather than zero when there is nothing to divide by, so a card
     // with no purchase price is not reported as breaking even.
-    roiPercent: totalCost > 0 ? (netGainLoss / totalCost) * 100 : null,
-    // Only meaningful when both sides are the same currency.
-    comparable: paid !== null && quantity > 0 && marketValue > 0 && currency === "usd"
+    roiPercent: costBasis > 0 ? (netGainLoss / costBasis) * 100 : null,
+    // Only meaningful when the purchase and the market price are the same unit.
+    comparable: costBasis > 0 && pricedMarket > 0 && currency === "usd" && !mixedCurrency
   };
 }
 
@@ -411,10 +461,16 @@ function createCardEntry() {
     serialNumbers: {},
     condition: DEFAULT_CONDITION,
     location: "",
-    // What YOU paid and when. Typed in by hand, and yours alone - unlike the
-    // Scryfall prices, which are the same for everybody and live in the repo.
-    acquiredDate: "",
-    acquiredPrice: null,
+    // What YOU paid and when, PER FINISH. A card held as a non-foil bought for
+    // two dollars and a surge foil bought for forty is two different purchases,
+    // and one price per card cannot say that - it multiplied the first price
+    // across every copy, whatever finish they were.
+    //
+    //   acquired: { surge: { price: 40, date: "2026-08-12" }, ... }
+    //
+    // Only finishes actually bought appear. See migrateAcquired() for how the
+    // old single-value shape is carried over.
+    acquired: {},
     updatedAt: nowMs()
   };
 }
@@ -448,6 +504,56 @@ function normaliseAcquiredPrice(value) {
 }
 
 /**
+ * Per-finish purchase records, from whatever shape the source used.
+ *
+ * Accepts the current { acquired: { surge: {price, date} } } shape and the
+ * older single acquiredPrice / acquiredDate pair, which is carried onto the
+ * finish most likely to have been the one bought: the one owned in the largest
+ * number, or non-foil when nothing is owned. Nothing is discarded.
+ */
+function normaliseAcquired(raw) {
+  const out = {};
+
+  const source = raw && typeof raw.acquired === "object" && raw.acquired ? raw.acquired : {};
+  for (const key in source) {
+    const record = source[key];
+    if (!record || typeof record !== "object") continue;
+    const price = normaliseAcquiredPrice(record.price);
+    const date = normaliseAcquiredDate(record.date);
+    if (price === null && !date) continue;
+    out[key] = { price: price, date: date };
+  }
+
+  // The old shape, if this entry still carries it and has not been migrated.
+  const legacyPrice = normaliseAcquiredPrice(raw && raw.acquiredPrice);
+  const legacyDate = normaliseAcquiredDate(raw && raw.acquiredDate);
+  if ((legacyPrice !== null || legacyDate) && !Object.keys(out).length) {
+    const variants = (raw && raw.variants) || {};
+    let target = "nonfoil";
+    let most = 0;
+    for (const key in variants) {
+      if ((variants[key] || 0) > most) {
+        most = variants[key];
+        target = key;
+      }
+    }
+    out[target] = { price: legacyPrice, date: legacyDate };
+  }
+
+  return out;
+}
+
+/** The purchase record for one finish, or an empty one. Never null. */
+function acquiredFor(entry, variantKey) {
+  const all = (entry && entry.acquired) || {};
+  const record = all[variantKey];
+  return {
+    price: record && typeof record.price === "number" ? record.price : null,
+    date: record && typeof record.date === "string" ? record.date : ""
+  };
+}
+
+/**
  * A frozen stand-in returned by readCard for cards with no stored state.
  * Frozen so that an accidental write fails loudly rather than silently
  * mutating a shared object.
@@ -457,8 +563,7 @@ const EMPTY_CARD_ENTRY = Object.freeze({
   serialNumbers: Object.freeze({}),
   condition: DEFAULT_CONDITION,
   location: "",
-  acquiredDate: "",
-  acquiredPrice: null,
+  acquired: Object.freeze({}),
   updatedAt: 0
 });
 
@@ -583,8 +688,7 @@ function normaliseEntry(raw) {
   base.serialNumbers = raw.serialNumbers && typeof raw.serialNumbers === "object" ? Object.assign({}, raw.serialNumbers) : {};
   base.condition = typeof raw.condition === "string" && raw.condition ? raw.condition : DEFAULT_CONDITION;
   base.location = typeof raw.location === "string" ? raw.location : "";
-  base.acquiredDate = normaliseAcquiredDate(raw.acquiredDate);
-  base.acquiredPrice = normaliseAcquiredPrice(raw.acquiredPrice);
+  base.acquired = normaliseAcquired(raw);
   base.updatedAt = Number(raw.updatedAt) || nowMs();
   return base;
 }
@@ -1582,10 +1686,10 @@ function handleDelegatedChange(event) {
       setCardSerial(cardId, target.value);
       break;
     case "acquired-date":
-      setCardAcquiredDate(cardId, target.value);
+      setCardAcquiredDate(cardId, vkey || "nonfoil", target.value);
       break;
     case "acquired-price":
-      setCardAcquiredPrice(cardId, target.value);
+      setCardAcquiredPrice(cardId, vkey || "nonfoil", target.value);
       break;
     default:
       break;
@@ -2312,14 +2416,30 @@ function setCardSerial(cardId, value) {
   saveCollectionState("Serial number saved");
 }
 
-function setCardAcquiredDate(cardId, value) {
-  editCard(cardId).acquiredDate = normaliseAcquiredDate(value);
+function acquiredSlot(cardId, variantKey) {
+  const entry = editCard(cardId);
+  if (!entry.acquired || typeof entry.acquired !== "object") entry.acquired = {};
+  if (!entry.acquired[variantKey]) entry.acquired[variantKey] = { price: null, date: "" };
+  return entry.acquired[variantKey];
+}
+
+/** Drop a finish's record once both halves are empty, so the sheet stays clean. */
+function pruneAcquired(cardId, variantKey) {
+  const entry = editCard(cardId);
+  const record = entry.acquired && entry.acquired[variantKey];
+  if (record && record.price === null && !record.date) delete entry.acquired[variantKey];
+}
+
+function setCardAcquiredDate(cardId, variantKey, value) {
+  acquiredSlot(cardId, variantKey).date = normaliseAcquiredDate(value);
+  pruneAcquired(cardId, variantKey);
   saveCollectionState("Purchase date saved");
   refreshAcquiredSummary(cardId);
 }
 
-function setCardAcquiredPrice(cardId, value) {
-  editCard(cardId).acquiredPrice = normaliseAcquiredPrice(value);
+function setCardAcquiredPrice(cardId, variantKey, value) {
+  acquiredSlot(cardId, variantKey).price = normaliseAcquiredPrice(value);
+  pruneAcquired(cardId, variantKey);
   saveCollectionState("Purchase price saved");
   refreshAcquiredSummary(cardId);
 }
@@ -2366,12 +2486,13 @@ function updateDashboardStats() {
                       (variants.promo || 0) + (variants.serialized || 0);
 
       // One shared calculation, so the dashboard and the per-card figures can
-      // never disagree about what a finish is worth.
-      const money = cardFinancials(card, entry);
-      estimatedValue += money.marketValue;
-      if (money.totalCost > 0) {
-        costBasis += money.totalCost;
-        pricedMarketValue += money.marketValue;
+      // never disagree about what a finish is worth. Named `totals` rather than
+      // `money` so it cannot shadow the money() formatter.
+      const totals = cardFinancials(card, entry);
+      estimatedValue += totals.marketValue;
+      if (totals.costBasis > 0) {
+        costBasis += totals.costBasis;
+        pricedMarketValue += totals.pricedMarket;
         pricedCount++;
       }
     }
@@ -2619,35 +2740,28 @@ function sparkline(points, rising, currency) {
  * no market price, or a market price quoted in a different currency from the
  * one that was paid.
  */
+/**
+ * The card's overall purchase position, summed across every finish bought.
+ *
+ * Each finish is costed at its OWN purchase price and valued at its OWN market
+ * price. Multiplying one price across every copy - which is what a single
+ * per-card field forced - mispriced any card held in more than one finish.
+ *
+ * Null when there is nothing honest to say: nothing recorded, no market price,
+ * or a market price quoted in a currency the purchase was not.
+ */
 function purchaseMove(card, entry) {
-  const money = cardFinancials(card, entry);
+  const totals = cardFinancials(card, entry);
+  if (!totals.comparable) return null;
 
-  // Priced against the finishes actually owned. Using the card's headline price
-  // instead - which prefers non-foil - valued a surge foil at the non-foil
-  // price and made every foil purchase look like a loss.
-  if (!money.comparable) {
-    // Nothing owned yet, but a price was recorded: compare one copy, so the
-    // figure still means something before the first copy is logged.
-    const paid = entry.acquiredPrice;
-    if (typeof paid !== "number" || money.quantity > 0) return null;
-    const unit = getActiveUnitPrice(card, "nonfoil");
-    if (unit.value <= 0 || unit.currency !== "usd") return null;
-    return buildMove(paid, unit.value, 1);
-  }
-  return buildMove(money.unitPaid, money.marketValue / money.quantity, money.quantity);
-}
-
-function buildMove(paid, unitMarket, quantity) {
-  const delta = unitMarket - paid;
-  const pct = paid > 0 ? (delta / paid) * 100 : null;
+  const delta = totals.netGainLoss;
   return {
-    paid: paid,
-    market: unitMarket,
-    quantity: quantity,
-    totalCost: paid * quantity,
-    totalMarket: unitMarket * quantity,
+    totalCost: totals.costBasis,
+    totalMarket: totals.pricedMarket,
+    quantity: totals.pricedQty,
+    finishes: totals.lines.filter(line => line.paid !== null).length,
     delta: delta,
-    pct: pct,
+    pct: totals.roiPercent,
     up: delta >= 0,
     // Solid triangles rather than arrows: they read at any size.
     arrow: delta > 0 ? "▲" : delta < 0 ? "▼" : "–",
@@ -2658,20 +2772,21 @@ function buildMove(paid, unitMarket, quantity) {
 /** "▲ +$1.05 (+23.3%)" - the movement on its own, for a tile or a table cell. */
 function purchaseMoveText(move) {
   const pct = move.pct === null ? "" : ` (${move.sign}${Math.abs(move.pct).toFixed(1)}%)`;
-  return `${move.arrow} ${move.sign}${money(Math.abs(move.delta), "usd")}${pct}`;
+  return `${move.arrow} ${move.sign}${money2(Math.abs(move.delta))}${pct}`;
 }
 
 /** The compact form for a table row. */
 function purchaseCell(card, entry) {
-  const paid = entry.acquiredPrice;
-  if (typeof paid !== "number") {
+  const totals = cardFinancials(card, entry);
+  const paid = totals.costBasis > 0 ? totals.costBasis : null;
+  if (paid === null) {
     return `<button type="button" class="btn-add-purchase is-compact" data-action="add-purchase"
              data-card-id="${esc(card.id)}" title="Record what you paid">＋ Add</button>`;
   }
   const move = purchaseMove(card, entry);
   return `<button type="button" class="table-purchase" data-action="add-purchase"
            data-card-id="${esc(card.id)}" title="Edit what you paid">
-      <span class="purchase-paid">${esc(money(paid, "usd"))}</span>
+      <span class="purchase-paid">${esc(money2(paid))}</span>
       ${move ? `<span class="purchase-move ${move.up ? "is-up" : "is-down"}">${esc(purchaseMoveText(move))}</span>` : ""}
     </button>`;
 }
@@ -2683,9 +2798,10 @@ function purchaseCell(card, entry) {
  * the feature is invisible and nobody finds it.
  */
 function purchaseRow(card, entry) {
-  const paid = entry.acquiredPrice;
+  const totals = cardFinancials(card, entry);
+  const paid = totals.costBasis > 0 ? totals.costBasis : null;
 
-  if (typeof paid !== "number") {
+  if (paid === null) {
     return `
       <button type="button" class="btn-add-purchase" data-action="add-purchase"
               data-card-id="${esc(card.id)}">
@@ -2702,46 +2818,69 @@ function purchaseRow(card, entry) {
     <button type="button" class="card-purchase ${move ? (move.up ? "is-up" : "is-down") : ""}"
             data-action="add-purchase" data-card-id="${esc(card.id)}"
             title="Edit what you paid">
-      <span class="purchase-label">Paid</span>
-      <span class="purchase-paid">${esc(money(paid, "usd"))}</span>
+      <span class="purchase-label">Paid${totals.pricedQty > 1 ? ` (${totals.pricedQty} copies)` : ""}</span>
+      <span class="purchase-paid">${esc(money2(paid))}</span>
       ${detail}
     </button>`;
 }
 
 /**
- * What you paid, and how that compares with the card's price today.
+ * What you paid, per finish, and how each has moved.
  *
- * Compared against the card's best current price rather than the price of the
- * particular finish you own: a purchase is one line, not one per finish, and
- * the finish a copy was bought in is not recorded.
+ * One line per finish bought, because a non-foil at two dollars and a surge
+ * foil at forty are two separate purchases that share nothing but a card name.
  */
 function acquiredSummary(card, entry) {
-  const paid = entry.acquiredPrice;
-  const when = entry.acquiredDate;
-  if (typeof paid !== "number" && !when) {
+  const totals = cardFinancials(card, entry);
+  const bought = totals.lines.filter(line => line.paid !== null || line.date);
+
+  if (!bought.length) {
     return `<div id="modalAcquiredSummary" class="acquired-summary is-empty"></div>`;
   }
 
-  const parts = [];
-  if (typeof paid === "number") parts.push(`Paid <strong>${esc(money(paid, "usd"))}</strong>`);
-  if (when) parts.push(`${parts.length ? "on" : "Bought"} <strong>${esc(shortDate(when))}</strong>`);
+  const rows = bought.map(line => {
+    const def = MASTER_VARIANTS_BY_KEY[line.key];
+    const label = def ? def.label : line.key;
+    const count = line.quantity > 0 ? line.quantity : 1;
+    const paidText = line.paid === null ? "--" : money2(line.paid);
+    const each = line.quantity > 1 ? ` <span class="acq-each">&times;${line.quantity}</span>` : "";
 
-  let change = "";
-  const move = purchaseMove(card, entry);
-  if (move) {
-    change =
-      `<span class="acquired-delta ${move.up ? "is-up" : "is-down"}">${esc(purchaseMoveText(move))}</span> ` +
-      `<span class="acquired-market">vs ${esc(money(move.market, "usd"))} today</span>`;
-  } else if (typeof paid === "number") {
-    const market = bestPrice(card);
-    if (market.value > 0) {
-      // A euro market price against a dollar purchase: shown side by side
-      // rather than subtracted, because the two are not the same unit.
-      change = `<span class="acquired-market">market ${esc(money(market.value, market.currency))} today</span>`;
+    let move = "";
+    if (line.paid !== null && line.unitMarket > 0 && line.currency === "usd") {
+      const delta = (line.unitMarket - line.paid) * count;
+      const pct = line.paid > 0 ? ((line.unitMarket - line.paid) / line.paid) * 100 : null;
+      const up = delta >= 0;
+      const sign = delta > 0 ? "+" : delta < 0 ? "−" : "";
+      const arrow = delta > 0 ? "▲" : delta < 0 ? "▼" : "–";
+      const pctText = pct === null ? "" : ` (${sign}${Math.abs(pct).toFixed(1)}%)`;
+      move = `<span class="acquired-delta ${up ? "is-up" : "is-down"}">${arrow} ${sign}${money2(Math.abs(delta))}${pctText}</span>`;
+    } else if (line.unitMarket > 0) {
+      move = `<span class="acquired-market">worth ${esc(money(line.unitMarket, line.currency))} each</span>`;
     }
+
+    return `
+      <div class="acquired-line">
+        <span class="acq-finish">${def ? def.icon : ""} ${esc(label)}</span>
+        <span class="acq-paid">${esc(paidText)}${each}</span>
+        ${line.date ? `<span class="acq-date">${esc(shortDate(line.date))}</span>` : ""}
+        ${move}
+      </div>`;
+  }).join("");
+
+  let total = "";
+  if (totals.comparable) {
+    const up = totals.netGainLoss >= 0;
+    const sign = totals.netGainLoss > 0 ? "+" : totals.netGainLoss < 0 ? "−" : "";
+    const roi = totals.roiPercent === null ? "" : ` (${sign}${Math.abs(totals.roiPercent).toFixed(1)}%)`;
+    total = `
+      <div class="acquired-total">
+        <span>${totals.pricedQty} cop${totals.pricedQty === 1 ? "y" : "ies"} •
+              cost ${money2(totals.costBasis)} • now ${money2(totals.pricedMarket)}</span>
+        <span class="acquired-delta ${up ? "is-up" : "is-down"}">${up ? "▲" : "▼"} ${sign}${money2(Math.abs(totals.netGainLoss))}${roi}</span>
+      </div>`;
   }
 
-  return `<div id="modalAcquiredSummary" class="acquired-summary">${parts.join(" ")} ${change}</div>`;
+  return `<div id="modalAcquiredSummary" class="acquired-summary">${rows}${total}</div>`;
 }
 
 function priceHistoryMarkup(series) {
@@ -2801,7 +2940,7 @@ function renderPriceHistoryInto(card) {
 
 /** Put the cursor in the price box and scroll it into view. */
 function focusPurchasePrice() {
-  const field = document.getElementById("modalAcquiredPrice");
+  const field = document.querySelector("#modalContent .bought-price");
   if (!field) return;
   field.focus();
   field.select();
@@ -2828,6 +2967,7 @@ function openCardModal(cardId) {
   const variantRows = getCardVariantDefs(card).map(def => {
     const qty = entry.variants[def.key] || 0;
     const price = variantPrice(card, def);
+    const bought = acquiredFor(entry, def.key);
     return `
       <tr>
         <td><strong>${def.icon} ${esc(def.label)}</strong></td>
@@ -2846,6 +2986,19 @@ function openCardModal(cardId) {
                  aria-label="Serial number"
                  data-change="serial" data-card-id="${esc(card.id)}">`
             : `<span class="variant-status ${qty > 0 ? "is-collected" : ""}" id="modalStatus_${esc(def.key)}">${qty > 0 ? "✓ Collected" : "—"}</span>`}
+        </td>
+        <td class="variant-bought">
+          <div class="bought-fields">
+            <input type="number" min="0" step="0.01" inputmode="decimal"
+                   class="table-input bought-price" placeholder="Paid"
+                   aria-label="Price paid for ${esc(def.label)}"
+                   value="${bought.price === null ? "" : esc(bought.price.toFixed(2))}"
+                   data-change="acquired-price" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}">
+            <input type="date" class="table-input bought-date"
+                   aria-label="Date ${esc(def.label)} was bought"
+                   value="${esc(bought.date || "")}"
+                   data-change="acquired-date" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}">
+          </div>
         </td>
       </tr>`;
   }).join("");
@@ -2873,7 +3026,7 @@ function openCardModal(cardId) {
         <div class="variant-table-wrap">
           <table class="variant-table">
             <thead>
-              <tr><th>Variant Finish</th><th>Est. Price</th><th>Quantity Owned</th><th>Status / Notes</th></tr>
+              <tr><th>Variant Finish</th><th>Est. Price</th><th>Quantity Owned</th><th>Status / Notes</th><th>Paid &amp; when</th></tr>
             </thead>
             <tbody>${variantRows}</tbody>
           </table>
@@ -2905,19 +3058,6 @@ function openCardModal(cardId) {
           <label class="field-label" for="modalLocationInput">Storage location</label>
           <input id="modalLocationInput" type="text" class="table-input" placeholder="e.g. Binder 1, page 3"
                  value="${esc(entry.location)}" data-change="location" data-card-id="${esc(card.id)}">
-        </div>
-        <div>
-          <label class="field-label" for="modalAcquiredDate">Date purchased</label>
-          <input id="modalAcquiredDate" type="date" class="table-input"
-                 value="${esc(entry.acquiredDate || "")}"
-                 data-change="acquired-date" data-card-id="${esc(card.id)}">
-        </div>
-        <div>
-          <label class="field-label" for="modalAcquiredPrice">Price paid</label>
-          <input id="modalAcquiredPrice" type="number" min="0" step="0.01" inputmode="decimal"
-                 class="table-input" placeholder="0.00"
-                 value="${typeof entry.acquiredPrice === "number" ? esc(entry.acquiredPrice.toFixed(2)) : ""}"
-                 data-change="acquired-price" data-card-id="${esc(card.id)}">
         </div>
       </div>
 
@@ -3184,7 +3324,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 5;
+const REQUIRED_SCRIPT_VERSION = 6;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +
@@ -3283,8 +3423,7 @@ function cardsChangedSince(since) {
       serialNumbers: entry.serialNumbers,
       condition: entry.condition,
       location: entry.location,
-      acquiredDate: entry.acquiredDate || "",
-      acquiredPrice: typeof entry.acquiredPrice === "number" ? entry.acquiredPrice : null,
+      acquired: entry.acquired || {},
       updatedAt: entry.updatedAt,
       ff_name: card ? displayName(card.ff_name) : "",
       set: card ? card.set : "",
@@ -3346,11 +3485,12 @@ function mergeRemoteCards(remoteCards, syncStartedAt) {
       // incoming entry can be silent about them. Keep what this device already
       // knows rather than blanking it; an explicit '' or null still clears.
       if (local) {
-        if (!(raw && Object.prototype.hasOwnProperty.call(raw, "acquiredDate"))) {
-          remote.acquiredDate = local.acquiredDate || "";
-        }
-        if (!(raw && Object.prototype.hasOwnProperty.call(raw, "acquiredPrice"))) {
-          remote.acquiredPrice = typeof local.acquiredPrice === "number" ? local.acquiredPrice : null;
+        const sentAcquired = raw && (
+          Object.prototype.hasOwnProperty.call(raw, "acquired") ||
+          Object.prototype.hasOwnProperty.call(raw, "acquiredPrice") ||
+          Object.prototype.hasOwnProperty.call(raw, "acquiredDate"));
+        if (!sentAcquired) {
+          remote.acquired = local.acquired || {};
         }
       }
       collection.cards[id] = remote;

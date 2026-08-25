@@ -2902,3 +2902,68 @@ body.modal-open {
 
 #statNetGain.is-up { color: #34D399; }
 #statNetGain.is-down { color: #F87171; }
+
+/* --- Per-finish purchase entry (card window variant table) ---------------- */
+.variant-bought { min-width: 150px; }
+
+.bought-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bought-fields .bought-price,
+.bought-fields .bought-date {
+  width: 100%;
+  min-width: 0;
+  font-size: 12px;
+  padding: 4px 6px;
+}
+
+/* --- Per-finish purchase summary ----------------------------------------- */
+.acquired-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.acquired-line + .acquired-line { border-top: 1px dashed var(--border-color, #334155); }
+
+.acq-finish {
+  font-weight: 600;
+  min-width: 9em;
+}
+
+.acq-paid {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.acq-each {
+  font-weight: 400;
+  color: var(--text-secondary, #94A3B8);
+}
+
+.acq-date {
+  color: var(--text-secondary, #94A3B8);
+  font-size: 12px;
+  min-width: 7em;
+}
+
+.acquired-line .acquired-delta { margin-left: auto; }
+
+.acquired-total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 12px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color, #334155);
+  font-size: 13px;
+  font-weight: 600;
+}
