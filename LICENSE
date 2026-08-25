@@ -1,30 +1,55 @@
-MIT License
+Copyright (c) 2026 Carin (github.com/krin1014). All rights reserved.
 
-Copyright (c) 2026 Carin
+PROPRIETARY SOFTWARE - NO LICENCE IS GRANTED
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and its source code, including but not limited to the HTML, CSS,
+JavaScript, Python and Google Apps Script files in this repository and any
+generated data files produced by them (collectively, the "Software"), are the
+exclusive property of the copyright holder.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+No permission is granted to any person to use, copy, modify, merge, publish,
+distribute, sublicense, sell, host, deploy, or create derivative works from the
+Software, in whole or in part, by any means.
+
+The Software is published in a publicly readable repository for the sole
+purposes of viewing and of operating the copyright holder's own hosted
+instance. Public visibility is not an offer of a licence, is not a dedication
+to the public domain, and does not constitute permission to use the Software
+for any purpose.
+
+Any use beyond viewing requires the prior express written permission of the
+copyright holder. To request permission, open an issue on this repository or
+contact the copyright holder directly.
+
+Permission, if granted, is limited to the specific person, purpose, scope and
+duration stated in that written grant, is non-transferable and non-exclusive,
+and may be revoked at any time.
+
+NOTE ON GITHUB'S TERMS OF SERVICE
+
+While this repository is public, GitHub's Terms of Service grant every GitHub
+user a limited right to view this repository and to fork it within GitHub.
+That right comes from GitHub's terms, not from this licence, and cannot be
+removed by this licence while the repository remains public. No such fork
+carries any right to use, run, publish, or distribute the Software outside
+GitHub, and all rights not compelled by those terms are expressly reserved.
+
+NO WARRANTY
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
 NOTE ON DATA AND IMAGES
 
-This licence covers the code in this repository only.
+The reservation of rights above covers the code in this repository only. It
+does not, and cannot, claim ownership of the third-party material the project
+displays.
 
 Card data is sourced from Scryfall (https://scryfall.com). Card images are
 hotlinked from Scryfall's CDN and are not redistributed by this project.

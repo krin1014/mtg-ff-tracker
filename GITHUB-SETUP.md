@@ -374,12 +374,26 @@ the most likely one to have been missed. Upload it again on its own.
 
 ### I accidentally made the repository Private
 
+Turning the repository private switches the website off. **Turning it public
+again does not switch the website back on** — nothing warns you about this, and
+the site keeps showing 404 until you redo one step by hand.
+
 1. Repository page → **Settings**
 2. Scroll to the bottom, to the **Danger Zone**
 3. Find **Change repository visibility**, click **Change visibility**, and switch
    it to public
-4. Then redo **Step 5** — turning the repository private switches the website
-   off, so it needs turning back on
+4. Now redo **Step 5**. Under **Source** it will say **None** again — set it back
+   to **Deploy from a branch**, **main**, **/ (root)**, and click **Save**
+5. Wait 10 minutes, then check the site again
+
+While you are there, click the **Actions** tab. If it offers a green button
+saying **I understand my workflows, go ahead and enable them**, click it — going
+private and back also pauses the weekly price refresh.
+
+> **Why does this happen?** Free GitHub accounts can only publish websites from
+> *public* repositories. Going private removes that permission, so GitHub
+> switches the website off rather than leaving it broken. It does not remember
+> the setting when the permission comes back.
 
 ### My username has capital letters in it
 

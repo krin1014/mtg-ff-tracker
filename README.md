@@ -65,8 +65,7 @@ so your collection syncs between devices.
 | `generate_ff_tracker.py` | Builds `cards_data.js` and the spreadsheet exports from Scryfall |
 | `tools/make_icons.py` | Regenerates the app icons (standard library only) |
 | `tools/check_wiring.py` | Static check that the HTML, CSS and JS agree with each other |
-| `.github/workflows/` | Monthly card data + price refresh |
-| `Old/` | Previous versions, kept for reference |
+| `.github/workflows/` | Weekly card data + price refresh (Mondays, 07:00 UTC) |
 
 ---
 
@@ -101,8 +100,9 @@ This queries the Scryfall API (about 14 paged requests, rate-limited politely)
 and rebuilds the outputs. Records are written in a stable order so that a price
 refresh shows up as a handful of changed lines rather than a reshuffled file.
 
-The scheduled workflow runs `--only-js` on the 1st of each month and commits only
-if something changed.
+The scheduled workflow runs `--only-js` every Monday at 07:00 UTC. `cards_data.js`
+is committed only if something changed; `price_history.js` is committed every run,
+so a flat week still records its reading.
 
 ### Regenerating the icons
 
@@ -207,5 +207,11 @@ this device uses, and when it last synced. It never leaves the device.
 - *Final Fantasy* is © Square Enix.
 
 This is an unofficial personal collection tracker, not affiliated with or
-endorsed by any of the above. The code is MIT licensed — see [LICENSE](LICENSE).
-Card names, images and game text remain the property of their respective owners.
+endorsed by any of the above. Card names, images and game text remain the
+property of their respective owners.
+
+**The code is not open source.** It is © 2026 Carin, all rights reserved — see
+[LICENSE](LICENSE). This repository is public so that the site can be hosted on
+GitHub Pages and so that the code can be read, but no permission is granted to
+use, copy, modify, deploy or distribute it. If you want to do any of those
+things, please open an issue and ask — permission has to be given in writing.
