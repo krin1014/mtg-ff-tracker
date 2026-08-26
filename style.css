@@ -3475,3 +3475,13 @@ body.modal-open {
   font-size: 13px;
   font-weight: 600;
 }
+
+/* A column the phone layout folds away regardless of the switch. Shown so the
+   picker's count and its checkboxes tell the truth about what is on screen. */
+.column-picker-row.is-unavailable {
+  opacity: 0.55;
+}
+.column-picker-row.is-unavailable span:first-of-type {
+  text-decoration: line-through;
+  text-decoration-color: rgba(148, 163, 184, 0.6);
+}

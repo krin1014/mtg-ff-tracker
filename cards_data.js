@@ -61534,7 +61534,8 @@ const CARDS_DATA = [
       "Borderless"
     ],
     "price_eur": 1056.79,
-    "price_eur_foil": null
+    "price_eur_foil": null,
+    "search_en": "Instant If it's not your turn, you may exile a blue card from your hand rather than pay this spell's mana cost.\nCounter target noncreature spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
   },
   {
     "id": "8a5e5463-2451-48b7-a924-a81d2dd99671",
@@ -61582,7 +61583,8 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 6.42,
-    "price_eur_foil": 38.93
+    "price_eur_foil": 38.93,
+    "search_en": "Instant Counter target spell. Its controller may draw up to two cards at the beginning of the next turn's upkeep.\nYou draw a card at the beginning of the next turn's upkeep."
   },
   {
     "id": "9e42aded-44be-4b3a-9b2c-80ae43835e3d",

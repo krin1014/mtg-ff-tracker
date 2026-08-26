@@ -12,7 +12,7 @@
  * revalidates it.
  */
 
-const CACHE_VERSION = "v40";
+const CACHE_VERSION = "v41";
 const SHELL_CACHE = `ff-tracker-shell-${CACHE_VERSION}`;
 const IMAGE_CACHE = `ff-tracker-images-${CACHE_VERSION}`;
 
@@ -89,8 +89,15 @@ self.addEventListener("fetch", event => {
     event.respondWith(
       fetch(request)
         .then(response => {
-          const copy = response.clone();
-          caches.open(SHELL_CACHE).then(cache => cache.put("index.html", copy));
+          // Only a real page becomes the offline copy. This worker's scope is
+          // the whole folder, so a stale bookmark or a mistyped path returns
+          // GitHub Pages' own 404 - and storing that under "index.html" would
+          // replace the app with an error page for the next trip offline,
+          // which is exactly when it is needed.
+          if (response && response.ok && response.type === "basic") {
+            const copy = response.clone();
+            caches.open(SHELL_CACHE).then(cache => cache.put("index.html", copy));
+          }
           return response;
         })
         .catch(() => caches.match("index.html").then(hit => hit || caches.match("./")))

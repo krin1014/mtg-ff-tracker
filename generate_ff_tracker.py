@@ -581,6 +581,33 @@ def _face_values(card: Dict[str, Any], key: str) -> List[str]:
     return values
 
 
+def _has_latin(text: str) -> bool:
+    """Does this string carry anything the search index can keep?
+
+    normaliseForSearch in app.js reduces a term to [a-z0-9], so a string of
+    Japanese characters indexes to nothing at all.
+    """
+    return bool(re.search(r"[A-Za-z]", text or ""))
+
+
+def _faces_preferring(card: Dict[str, Any], first: str, fallback: str) -> List[str]:
+    """Resolve a field face by face, taking `first` where it exists.
+
+    Skipping blanks per FIELD instead of per FACE loses a face outright when
+    Scryfall carries the printed text for only one of them - the record then
+    ships a single face's rules text under a type line that still names both.
+    Scryfall records printed_* only where the card differs from current Oracle
+    wording, so a flavour-named or Japanese double-faced card lands in exactly
+    that shape.
+    """
+    values = []
+    for face in card.get("card_faces") or []:
+        value = face.get(first) or face.get(fallback)
+        if value:
+            values.append(value)
+    return values
+
+
 def _first_image_uris(card: Dict[str, Any]) -> Dict[str, str]:
     """Front-face images. Double-faced cards carry them per face, not top level."""
     if card.get("image_uris"):
@@ -702,15 +729,41 @@ def build_card_records(raw_cards: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         # through to Oracle unchanged.
         type_line = (card.get("printed_type_line")
                      or card.get("type_line")
-                     or " // ".join(_face_values(card, "printed_type_line")
-                                    or _face_values(card, "type_line")))
-        printed = (card.get("printed_text")
-                   or "\n//\n".join(_face_values(card, "printed_text")))
+                     or " // ".join(_faces_preferring(
+                         card, "printed_type_line", "type_line")))
+        # Resolved per face, not per field: a double-faced card can carry the
+        # printed text for one face only, and joining just the faces that have
+        # it drops the other face's rules text entirely.
+        has_printed = bool(card.get("printed_text") or _face_values(card, "printed_text"))
+        printed = ""
+        if has_printed:
+            printed = (card.get("printed_text")
+                       or "\n//\n".join(_faces_preferring(
+                           card, "printed_text", "oracle_text")))
         oracle_text = (printed
                        or card.get("oracle_text")
                        or "\n//\n".join(_face_values(card, "oracle_text")))
         if not printed:
             oracle_text = _repoint_self_reference(oracle_text, mtg_name, ff_name)
+
+        # What the card says in English, when that is not what it displays.
+        #
+        # A Japanese printing shows a Japanese type line and Japanese rules
+        # text, which is right - but the search index keeps only [a-z0-9], so
+        # those cards fell out of every type and rules-text search: two RFIN
+        # promos stopped answering to "instant" despite being instants. This
+        # rides along for the search index to use and is never displayed.
+        # Only where it is actually needed: a card whose displayed text still
+        # has Latin letters indexes fine on its own, and carrying a second copy
+        # of the Oracle wording for all 1,383 would bloat the file for nothing.
+        oracle_type = (card.get("type_line")
+                       or " // ".join(_face_values(card, "type_line")))
+        oracle_rules = (card.get("oracle_text")
+                        or "\n//\n".join(_face_values(card, "oracle_text")))
+        search_en = " ".join(part for part in (
+            oracle_type if oracle_type and not _has_latin(type_line) else "",
+            oracle_rules if oracle_rules and not _has_latin(oracle_text) else "",
+        ) if part).strip()
         flavor_text = card.get("flavor_text") or ""
         if not flavor_text:
             face_flavor = _face_values(card, "flavor_text")
@@ -729,7 +782,6 @@ def build_card_records(raw_cards: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "variant": determine_print_variant(card),
             "avail_variants": _available_variants(card),
             "treatment": determine_treatment(card),
-            "treatments": determine_treatments(card),
             "game": determine_ff_game(card, name_to_game),
             "rarity": (card.get("rarity") or "Unknown").capitalize(),
             "type_line": type_line,
@@ -747,14 +799,21 @@ def build_card_records(raw_cards: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "price_usd": _price(prices, "usd"),
             "price_foil": _price(prices, "usd_foil"),
             "price_etched": _price(prices, "usd_etched"),
+            "scryfall_uri": card.get("scryfall_uri", ""),
+            # NOTE: the key order here is the order cards_data.js already has on
+            # disk. Fields added over time were appended, and matching that keeps
+            # the weekly refresh a diff of prices rather than 16,000 lines of
+            # reshuffled keys with a real change buried somewhere inside.
+            "treatments": determine_treatments(card),
             # Scryfall has NO dollar price for the Art Series, the Scene Box or a
             # handful of promos - only euros. One of those is a Cloud promo worth
             # several hundred. Carrying the euro price means the site can show a
             # real number for them instead of "--".
             "price_eur": _price(prices, "eur"),
             "price_eur_foil": _price(prices, "eur_foil"),
-            "scryfall_uri": card.get("scryfall_uri", ""),
         })
+        if search_en:
+            records[-1]["search_en"] = search_en
 
     # Deterministic order keeps the monthly price-refresh diff readable: a price
     # change should be a one-line diff, not a reshuffled file.
@@ -779,6 +838,11 @@ def export_cards_js(records: List[Dict[str, Any]], output_path: str = OUTPUT_CAR
         " *\n"
         " * Source: Scryfall (https://scryfall.com). Card images are hotlinked from\n"
         " * Scryfall's CDN rather than rehosted.\n"
+        " *\n"
+        ' * "treatment" and "treatments" use Wizards\' official names, as published in\n'
+        " * the Final Fantasy Card Image Gallery. Scryfall does not carry those names,\n"
+        " * so they are derived; the derivation matches Wizards' own data for all 1,258\n"
+        " * cards that can be cross-referenced against it.\n"
         " */\n"
     )
     with open(output_path, "w", encoding="utf-8", newline="\n") as handle:

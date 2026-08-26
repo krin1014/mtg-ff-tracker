@@ -359,20 +359,25 @@ function cardFinancials(card, entry) {
   // Per-lot detail, in the order the lots were added.
   const lots = inventory.map(lot => {
     const unit = getActiveUnitPrice(card, lot.variant);
-    // A price typed in before any copy is logged still describes one purchase,
-    // so it is costed as a single copy rather than silently doing nothing.
-    const counted = lot.quantity > 0 ? lot.quantity : (lot.purchasePrice !== null ? 1 : 0);
+    // Money follows copies. A lot holding no copies is a price with nothing
+    // attached to it - a purchase recorded before the first copy was logged, or
+    // one left behind by an edit - and costing it as a single copy put money in
+    // the totals that no card in the collection answers for.
+    const counted = lot.quantity;
 
     if (lot.quantity > 0) {
       quantity += lot.quantity;
       marketValue += lot.quantity * unit.value;
-      if (unit.value > 0) {
-        if (!sawPrice) {
-          currency = unit.currency;
-          sawPrice = true;
-        } else if (unit.currency !== currency) {
-          mixedCurrency = true;
-        }
+    }
+    // The currency is a property of the card, not of how many are held, so a
+    // lot with no copies still settles it. Reading it only from held lots left
+    // a euro-only card labelled in dollars.
+    if (unit.value > 0) {
+      if (!sawPrice) {
+        currency = unit.currency;
+        sawPrice = true;
+      } else if (unit.currency !== currency) {
+        mixedCurrency = true;
       }
     }
 
@@ -666,7 +671,14 @@ function normaliseInventory(raw) {
       seen[lot.id] = true;
       out.push(lot);
     }
-    return out;
+    // An array that yields no lots is NOT the same as a card with no copies,
+    // and must not be taken at its word: a sheet written before this column
+    // existed hands back an empty one for every row, and an older copy of the
+    // Apps Script seeds it that way unconditionally. Fall through and rebuild
+    // from the quantity map, which is what those rows actually carry.
+    // Nothing is lost on a card that really is empty - its quantity map is all
+    // zeros and its purchase summary blank, so the rebuild returns [] anyway.
+    if (out.length) return out;
   }
 
   const variants = raw.variants && typeof raw.variants === "object" ? raw.variants : {};
@@ -811,10 +823,16 @@ function addInventoryLot(cardId, patch) {
   return created.id;
 }
 
+/** Returns false when the lot is gone - a sync can take it out underneath. */
 function updateInventoryLot(cardId, lotId, patch) {
   const entry = editCard(cardId);
   const lot = entry.inventory.find(item => item.id === lotId);
-  if (!lot) return;
+  if (!lot) {
+    // The row on screen no longer matches the collection. Say so and redraw
+    // rather than reporting a save that did not happen.
+    refreshInventoryPanel(cardId, true);
+    return false;
+  }
 
   if (patch.quantity !== undefined) lot.quantity = Math.max(0, parseInt(patch.quantity, 10) || 0);
   if (patch.purchasePrice !== undefined) lot.purchasePrice = normaliseAcquiredPrice(patch.purchasePrice);
@@ -830,6 +848,7 @@ function updateInventoryLot(cardId, lotId, patch) {
     dropped = true;
   }
   commitInventory(cardId, entry, dropped);
+  return true;
 }
 
 function removeInventoryLot(cardId, lotId) {
@@ -877,17 +896,23 @@ function reconcileVariantQuantity(entry, variantKey, target) {
   let owed = -delta;
   const order = mine.filter(lot => lot.purchasePrice === null && !lot.purchaseDate).reverse()
     .concat(mine.filter(lot => lot.purchasePrice !== null || lot.purchaseDate).reverse());
+  const drained = {};
   for (let i = 0; i < order.length && owed > 0; i++) {
     const take = Math.min(order[i].quantity, owed);
     order[i].quantity -= take;
     owed -= take;
+    // Taken down to nothing: those copies have left the collection, so the
+    // purchase that brought them in goes with them. Leaving it behind at zero
+    // copies keeps charging its price against a card that no longer has them,
+    // which is how a partial sale used to inflate the cost basis for good.
+    if (order[i].quantity === 0) drained[order[i].id] = true;
   }
 
-  // Reduced but not removed: a lot emptied of copies keeps its place only if it
-  // still records a price. A price entered before the first copy is logged is
-  // deliberate data and lives in exactly that shape.
-  entry.inventory = entry.inventory.filter(
-    lot => lot.quantity > 0 || lot.purchasePrice !== null || lot.purchaseDate);
+  // A lot emptied of copies keeps its place only if it still records a price
+  // AND this reduction is not what emptied it - a price entered before the
+  // first copy is logged is deliberate data and lives in exactly that shape.
+  entry.inventory = entry.inventory.filter(lot =>
+    lot.quantity > 0 || (!drained[lot.id] && (lot.purchasePrice !== null || lot.purchaseDate)));
 }
 
 /** The purchase record for one finish, or an empty one. Never null. */
@@ -1210,6 +1235,14 @@ const TABLE_COLUMNS = [
   { key: "price-foil", label: "Foil price" },
   { key: "paid", label: "Paid" },
   { key: "location", label: "Storage location" }
+];
+
+// Folded away below 767px by the stylesheet, whatever the picker says - the
+// table cannot carry fifteen columns on a phone. Kept in step with the phone
+// rule in style.css; set / number / game / rarity reappear in the name cell.
+const PHONE_HIDDEN_COLUMNS = [
+  "mtg", "set", "number", "game", "rarity",
+  "avail", "condition", "price", "price-foil", "location"
 ];
 
 // Column keys the user has switched off, on this device.
@@ -1786,9 +1819,15 @@ function buildSearchIndex() {
       // are left out for the same reason: a card can come in Surge Foil
       // without this particular printing being the surge foil one. Both are
       // reachable through the Treatment filter, which is exact.
+      // search_en carries the English wording for a card that DISPLAYS a
+      // language this index cannot keep - normaliseForSearch reduces a term to
+      // [a-z0-9], so a Japanese type line indexes to nothing and those cards
+      // stopped answering to "instant" despite being instants. Present on the
+      // two RFIN promos and nowhere else.
       meta: normaliseForSearch(
         `${card.type_line} ${card.set} ${number} ${plainNumber} ${derivedTypeWords(card)} ` +
-        `${card.treatment && card.treatment !== "Default" ? card.treatment : ""}`
+        `${card.treatment && card.treatment !== "Default" ? card.treatment : ""} ` +
+        `${card.search_en || ""}`
       ),
       // What the card can DO, ranked above everything else - see MATCH_ROLE.
       role: normaliseForSearch(roleKeywords(card)),
@@ -1797,7 +1836,7 @@ function buildSearchIndex() {
       // italic story quote, so a card can mention a character it has nothing
       // else to do with. Searching "sephi" was returning five cards on that
       // basis alone, none of which were Sephiroth cards.
-      text: normaliseForSearch(card.oracle_text)
+      text: normaliseForSearch(`${card.oracle_text} ${card.search_en || ""}`)
     });
   });
 }
@@ -1998,22 +2037,43 @@ function renderColumnPicker() {
   const picker = document.getElementById("columnPicker");
   if (picker) picker.style.display = currentView === "table" ? "" : "none";
 
-  const shown = TABLE_COLUMNS.length - hiddenColumns.length;
-  setText("columnPickerCount", `${shown}/${TABLE_COLUMNS.length}`);
+  // Below 767px the stylesheet folds ten of these away whatever the checkbox
+  // says - the table cannot carry fifteen columns on a phone. Counting them as
+  // shown made the picker claim 15/15 while ten of its switches did nothing.
+  const narrow = window.matchMedia("(max-width: 767px)").matches;
+  const available = TABLE_COLUMNS.filter(col => !(narrow && PHONE_HIDDEN_COLUMNS.includes(col.key)));
+  const shown = available.filter(col => !isColumnHidden(col.key)).length;
+  setText("columnPickerCount", `${shown}/${available.length}`);
 
   const list = document.getElementById("columnPickerList");
   if (!list) return;
-  list.innerHTML = TABLE_COLUMNS.map(col => {
-    const on = !isColumnHidden(col.key);
-    return `
-      <label class="column-picker-row ${col.locked ? "is-locked" : ""}">
-        <input type="checkbox" data-column="${esc(col.key)}"
-               ${on ? "checked" : ""} ${col.locked ? "disabled" : ""}>
-        <span>${esc(col.label)}</span>
-        ${col.locked ? `<span class="column-note">always</span>` : ""}
-        ${col.inName ? `<span class="column-note">in name cell</span>` : ""}
-      </label>`;
-  }).join("");
+
+  // Rebuilt only when the rows themselves change. Toggling a column used to
+  // redraw the whole list, which destroyed the checkbox that had just been
+  // clicked and threw focus back to the top of the page.
+  const signature = `${narrow}|${TABLE_COLUMNS.map(col => col.key).join(",")}`;
+  if (list.dataset.signature !== signature) {
+    list.dataset.signature = signature;
+    list.innerHTML = TABLE_COLUMNS.map(col => {
+      const off = narrow && PHONE_HIDDEN_COLUMNS.includes(col.key);
+      return `
+        <label class="column-picker-row ${col.locked ? "is-locked" : ""} ${off ? "is-unavailable" : ""}">
+          <input type="checkbox" data-column="${esc(col.key)}"
+                 ${col.locked || off ? "disabled" : ""}>
+          <span>${esc(col.label)}</span>
+          ${col.locked ? `<span class="column-note">always</span>` : ""}
+          ${col.inName ? `<span class="column-note">in name cell</span>` : ""}
+          ${off && !col.inName ? `<span class="column-note">card window only</span>` : ""}
+        </label>`;
+    }).join("");
+  }
+
+  // The checked state is set on the live nodes, so the one being clicked
+  // survives.
+  TABLE_COLUMNS.forEach(col => {
+    const box = list.querySelector(`input[data-column="${cssEscape(col.key)}"]`);
+    if (box) box.checked = !isColumnHidden(col.key);
+  });
 }
 
 function setColumnVisible(key, visible) {
@@ -2204,6 +2264,28 @@ function initEventListeners() {
     toggleColumnPicker(false);
   });
 
+  // A press that is still in progress. A text field commits its `change` from
+  // inside the blur transition, so a redraw triggered by that change would tear
+  // out the very button being pressed before the browser could deliver its
+  // click - which is why adding a second purchase straight from a price box
+  // needed the button pressed twice.
+  document.addEventListener("pointerdown", () => { pointerHeld = true; }, true);
+  ["pointerup", "pointercancel"].forEach(name => {
+    window.addEventListener(name, () => {
+      pointerHeld = false;
+      flushInventoryRefresh();
+    }, true);
+  });
+  // The window itself losing focus, not a field inside it. A capture listener
+  // on window is also handed the blur of every element below it, and clearing
+  // the flag on THAT would defeat the whole point: a field's blur is what
+  // delivers the change in the first place.
+  window.addEventListener("blur", event => {
+    if (event.target !== window) return;
+    pointerHeld = false;
+    flushInventoryRefresh();
+  }, true);
+
   // One delegated click handler for every generated control.
   document.addEventListener("click", handleDelegatedClick);
   // One delegated change handler for generated inputs and selects.
@@ -2337,14 +2419,18 @@ function handleDelegatedChange(event) {
     case "lot-qty":
       updateInventoryLot(cardId, lotId, { quantity: target.value });
       break;
-    case "lot-price":
-      updateInventoryLot(cardId, lotId, { purchasePrice: target.value });
-      showToast("Purchase price saved");
+    case "lot-price": {
+      const ok = updateInventoryLot(cardId, lotId, { purchasePrice: target.value });
+      showToast(ok ? "Purchase price saved"
+        : "That purchase changed on another device - reloaded", !ok);
       break;
-    case "lot-date":
-      updateInventoryLot(cardId, lotId, { purchaseDate: target.value });
-      showToast("Purchase date saved");
+    }
+    case "lot-date": {
+      const ok = updateInventoryLot(cardId, lotId, { purchaseDate: target.value });
+      showToast(ok ? "Purchase date saved"
+        : "That purchase changed on another device - reloaded", !ok);
       break;
+    }
     case "lot-variant":
       updateInventoryLot(cardId, lotId, { variant: target.value });
       break;
@@ -3773,11 +3859,36 @@ function inventoryTotals(totals) {
     ${partial}`;
 }
 
+/**
+ * A press in progress, and a redraw waiting for it to finish.
+ *
+ * The panel is rebuilt by replacing its markup, which detaches every node
+ * inside it. Doing that while a button is held down means the click never
+ * arrives, so a rebuild asked for mid-press is held until the press completes.
+ */
+let pointerHeld = false;
+let pendingInventoryRefresh = null;
+
+function flushInventoryRefresh() {
+  const queued = pendingInventoryRefresh;
+  if (!queued) return;
+  pendingInventoryRefresh = null;
+  // After the click this press is about to produce, not before it.
+  setTimeout(() => refreshInventoryPanel(queued.cardId, queued.force), 0);
+}
+
 /** Redraw the panel in place, without rebuilding the modal around it. */
 function refreshInventoryPanel(cardId, force) {
   const host = document.getElementById("modalInventoryPanel");
   const card = cardsById.get(cardId);
   if (!host || !card || modalCardId !== cardId) return;
+
+  // Mid-press: show the new numbers now and rebuild once the press lands.
+  if (pointerHeld) {
+    pendingInventoryRefresh = { cardId: cardId, force: force };
+    refreshInventoryDerived(cardId, card);
+    return;
+  }
 
   // Not while a field in it is being typed into - that would drop the caret
   // mid-edit - unless a row has been added or deleted, in which case the panel
@@ -4304,6 +4415,11 @@ const STALE_SCRIPT_MESSAGE =
  * pushing into it does not fail, it just quietly drops half the edit and writes
  * the rest back over the sheet. Holding the changes on the device until the
  * redeploy is the only lossless option; pulling is still safe and continues.
+ *
+ * Remembered across reloads. A plain variable resets to false on every page
+ * load, so the first sync of each session would build a full push, hand it to
+ * the old script, and only THEN learn the version was wrong - by which time the
+ * watermark had already stepped over those edits.
  */
 let syncScriptStale = false;
 
@@ -4313,7 +4429,7 @@ function isScriptStale(result) {
 /** Tolerance for the two devices disagreeing about what time it is. */
 const SYNC_CLOCK_GRACE_MS = 10 * 60 * 1000;
 
-let syncConfig = { mode: "unset", url: "", lastSync: 0 };
+let syncConfig = { mode: "unset", url: "", lastSync: 0, scriptStale: false };
 let syncStatus = "idle";      // idle | syncing | ok | error | offline
 let syncMessage = "";
 let syncTimer = null;
@@ -4329,8 +4445,10 @@ function loadSyncConfig() {
       syncConfig = {
         mode: saved.mode === "sheet" || saved.mode === "local" ? saved.mode : "unset",
         url: typeof saved.url === "string" ? saved.url : "",
-        lastSync: Number(saved.lastSync) || 0
+        lastSync: Number(saved.lastSync) || 0,
+        scriptStale: saved.scriptStale === true
       };
+      syncScriptStale = syncConfig.scriptStale;
     }
   } catch (e) {
     console.error("Could not read sync settings", e);
@@ -4443,9 +4561,12 @@ function countPendingChanges() {
  * the sync started, and therefore guarantees they get written back to the sheet
  * with a real timestamp on the next push instead of being re-adopted forever.
  */
+let mergedIntoOpenCard = false;
+
 function mergeRemoteCards(remoteCards, syncStartedAt) {
   if (!remoteCards || typeof remoteCards !== "object") return 0;
   let changed = 0;
+  mergedIntoOpenCard = false;
 
   for (const id in remoteCards) {
     const raw = remoteCards[id];
@@ -4473,6 +4594,11 @@ function mergeRemoteCards(remoteCards, syncStartedAt) {
       }
       collection.cards[id] = remote;
       changed++;
+      // An open card window holds the lot ids it drew with. A merge replaces
+      // the entry wholesale, so those ids can stop existing underneath it - and
+      // an edit typed into a row whose lot has gone is dropped on the floor
+      // while the toast still says it saved. Redraw it against what arrived.
+      if (modalCardId === id) mergedIntoOpenCard = true;
     }
   }
   return changed;
@@ -4619,16 +4745,17 @@ function runSync(options) {
   })
     .then(result => {
       const adopted = mergeRemoteCards(result.cards, startedAt);
+      // What THIS reply says about the deployed script, decided before the
+      // watermark moves. A push that went into an old script did not really
+      // land: the script silently drops the fields it has never heard of.
+      const staleNow = isScriptStale(result);
 
       // Only move the watermark forward when this device's changes actually
       // went up. cardsChangedSince() sends what is newer than lastSync, so
-      // advancing it after a push that deliberately sent nothing would step
-      // straight over those edits and never send them again - the sync would
-      // look healthy, with the work silently stranded on this device.
-      //
-      // syncScriptStale is not modified until further down, so it still says
-      // whether the push above carried anything.
-      if (!syncScriptStale) {
+      // advancing it after a push that was held back - or one the script only
+      // half-accepted - would step straight over those edits and never send
+      // them again. The sync would look healthy with the work stranded.
+      if (!syncScriptStale && !staleNow) {
         syncConfig.lastSync = startedAt;
         saveSyncConfig();
       }
@@ -4642,15 +4769,21 @@ function runSync(options) {
       if (adopted > 0) {
         updateDashboardStats();
         applyFiltersAndRender();
+        if (mergedIntoOpenCard && modalCardId) {
+          mergedIntoOpenCard = false;
+          refreshInventoryPanel(modalCardId, true);
+        }
       } else {
         updateDashboardStats();
       }
 
-      if (isScriptStale(result)) {
+      if (staleNow) {
         // The sync itself worked, but against old code. Say so loudly rather
         // than letting fixes appear to do nothing - and stop sending until it
         // is fixed, so an edit cannot be half-written and half-dropped.
         syncScriptStale = true;
+        syncConfig.scriptStale = true;
+        saveSyncConfig();
         setSyncStatus("error", STALE_SCRIPT_MESSAGE);
         if (!settings.silent) showToast("Sheet script is out of date - open Sync", true);
         return true;
@@ -4659,8 +4792,10 @@ function runSync(options) {
       // Back in step. lastSync was left where it was for every held-back sync,
       // so the changes are still inside the window and the push below sends
       // them.
-      if (syncScriptStale) {
+      if (syncScriptStale || syncConfig.scriptStale) {
         syncScriptStale = false;
+        syncConfig.scriptStale = false;
+        saveSyncConfig();
         scheduleSyncPush();
       }
       setSyncStatus("ok", "");
@@ -4703,6 +4838,10 @@ function flushSyncOnExit() {
   if (syncConfig.mode !== "sheet" || !syncConfig.url) return;
   if (!hasPendingChanges()) return;
   if (typeof navigator.sendBeacon !== "function") return;
+  // The same hold the ordinary sync applies. There is no reply to read here, so
+  // a beacon into an out-of-date script would drop half the edit with nothing
+  // able to notice - and the edits are safe on the device either way.
+  if (syncScriptStale) return;
 
   try {
     const body = JSON.stringify({
@@ -4915,6 +5054,12 @@ function connectSheet() {
   // A different sheet knows nothing about this device's history, so offer
   // everything rather than only what changed since the last sync.
   if (switchingSheets || !syncConfig.lastSync) syncConfig.lastSync = 0;
+  // A different deployment gets to prove itself. The first reply sets this
+  // again if the script behind the new URL is also out of date.
+  if (switchingSheets) {
+    syncScriptStale = false;
+    syncConfig.scriptStale = false;
+  }
   saveSyncConfig();
 
   syncModalView = "connected";
