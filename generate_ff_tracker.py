@@ -546,6 +546,31 @@ def parse_card_data(raw_cards: List[Dict[str, Any]]) -> pd.DataFrame:
 # fetch() and therefore works when opened straight off the filesystem.
 # ---------------------------------------------------------------------------
 
+def _repoint_self_reference(text: str, mtg_name: str, ff_name: str) -> str:
+    """Point a reprint's rules text at the character actually on the card.
+
+    A fallback for the handful of cards Scryfall has no printed_text for. Card
+    text refers to the card by its short name - everything before the first
+    comma - so "Inalla, Archmage Ritualist" is "Inalla" in its own text, and
+    the Final Fantasy printing of it reads "Kuja". Verified against the card
+    face for FCA 0052, which is the only card this currently fires on.
+
+    Deliberately narrow: whole words only, and only when the two short names
+    actually differ. Anything more ambitious would start rewriting rules text
+    that mentions another card by name.
+    """
+    if not text or not mtg_name or not ff_name or mtg_name == ff_name:
+        return text
+    mtg_short = re.split(r"[,(]| // ", mtg_name)[0].strip()
+    ff_short = re.split(r"[,(]| // ", ff_name)[0].strip()
+    if not mtg_short or mtg_short == ff_short:
+        return text
+    updated = re.sub(r"\b%s\b" % re.escape(mtg_short), ff_short, text)
+    if updated != text:
+        print(f"  Rules text repointed: {mtg_short} -> {ff_short} ({ff_name})")
+    return updated
+
+
 def _face_values(card: Dict[str, Any], key: str) -> List[str]:
     """Collect a field from each card face, skipping blanks."""
     values = []
@@ -661,9 +686,31 @@ def build_card_records(raw_cards: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         # Double-faced cards keep type line / mana cost / rules text per face.
         # The old data file left these blank for every DFC; join the faces so
         # the modal and the search actually have something to work with.
-        type_line = card.get("type_line") or " // ".join(_face_values(card, "type_line"))
         mana_cost = card.get("mana_cost") or " // ".join(_face_values(card, "mana_cost"))
-        oracle_text = card.get("oracle_text") or "\n//\n".join(_face_values(card, "oracle_text"))
+
+        # printed_* before the Oracle fields, in every language.
+        #
+        # Oracle text is the rules text filed under a card's MAGIC name, so a
+        # Final Fantasy card that reprints one self-references the wrong
+        # character: "Adeline's power is equal to..." where the card in your
+        # hand reads "Hero of Light's power is equal to...". The printed_*
+        # fields are what is actually on the card, which is the whole point.
+        #
+        # This applies to non-English printings too: a Japanese card shows its
+        # Japanese rules text and type line, matching the Japanese name it
+        # already displays. Most cards have no printed_* fields at all and fall
+        # through to Oracle unchanged.
+        type_line = (card.get("printed_type_line")
+                     or card.get("type_line")
+                     or " // ".join(_face_values(card, "printed_type_line")
+                                    or _face_values(card, "type_line")))
+        printed = (card.get("printed_text")
+                   or "\n//\n".join(_face_values(card, "printed_text")))
+        oracle_text = (printed
+                       or card.get("oracle_text")
+                       or "\n//\n".join(_face_values(card, "oracle_text")))
+        if not printed:
+            oracle_text = _repoint_self_reference(oracle_text, mtg_name, ff_name)
         flavor_text = card.get("flavor_text") or ""
         if not flavor_text:
             face_flavor = _face_values(card, "flavor_text")
