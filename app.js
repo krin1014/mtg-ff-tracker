@@ -219,6 +219,20 @@ function esc(value) {
  * Art cards and some tokens arrive from Scryfall with both faces carrying the
  * same name, producing "Garland // Garland". Collapse those for display.
  */
+/**
+ * The name for a TILE, as opposed to the card window.
+ *
+ * A double-faced card carries both face names - "Sidequest: Play Blitzball //
+ * World Champion, Celestial Weapon" is 61 characters, and no font size fits
+ * that across a 240px tile and stays readable. The tile shows the front of the
+ * card, so it takes the front face's name; the full name is in the tooltip, on
+ * the card window and in the Table view. 114 of 1,383 cards are affected, and
+ * it brings the longest tile name down from 61 characters to 34.
+ */
+function tileName(card) {
+  return displayName(card.ff_name).split(" // ")[0].trim();
+}
+
 function displayName(name) {
   const raw = String(name || "");
   if (raw.includes(" // ")) {
@@ -463,6 +477,31 @@ function cardFinancials(card, entry) {
 /** "USD" or "EUR" - so a tile never labels a euro price as dollars. */
 function priceUnit(card, field) {
   return cardPrice(card, field).currency.toUpperCase();
+}
+
+/**
+ * " EUR" for a card Scryfall only prices in euros, "" for the usual dollars.
+ *
+ * money() already prints the right symbol, so spelling out USD on 1,300 tiles
+ * was a word restating the "$" beside it. The 79 euro-only cards - the Art
+ * Series and several promos - are worth naming outright rather than leaving to
+ * whether someone notices the symbol changed.
+ */
+function priceUnitSuffix(card, field) {
+  const unit = priceUnit(card, field);
+  return unit === "USD" ? "" : ` ${unit}`;
+}
+
+/** Rarity, official frame treatment and finish, as badges. */
+function metaBadges(card) {
+  const parts = [`<span class="tag-badge tag-rarity-${card.rarity.toLowerCase()}">${esc(card.rarity)}</span>`];
+  if (card.treatment && card.treatment !== "Default") {
+    parts.push(`<span class="tag-badge tag-treatment">${esc(card.treatment)}</span>`);
+  }
+  if (card.variant !== "Basic/Non-foil") {
+    parts.push(`<span class="tag-badge tag-variant">${esc(variantName(card.variant))}</span>`);
+  }
+  return parts.join("");
 }
 
 function cardPrice(card, field) {
@@ -1401,7 +1440,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCollectionState();
   loadSyncConfig();
   buildFilterOptions();
-  collapseFiltersOnSmallScreens();
   loadPrefs();
   applyViewMode();
   applyDashboardState();
@@ -1931,6 +1969,23 @@ function applySearchFallback() {
   filteredCards = filteredCards.filter(isStrong);
 }
 
+/**
+ * Show or hide the filter grid.
+ *
+ * aria-expanded on the button is the state, and the panel's `hidden` follows
+ * it - there is no second place for the two to drift apart. Starts closed on
+ * every screen; seven dropdowns laid out permanently cost 96px above the cards
+ * and were open on desktop only because their button used to be hidden there.
+ */
+function toggleFilters(force) {
+  const btn = document.getElementById("filtersToggle");
+  const grid = document.getElementById("filtersGrid");
+  if (!btn || !grid) return;
+  const open = force === undefined ? btn.getAttribute("aria-expanded") !== "true" : Boolean(force);
+  btn.setAttribute("aria-expanded", String(open));
+  grid.hidden = !open;
+}
+
 /** Explanation shown on results that matched nothing visible on the card. */
 function matchLabel(cardId) {
   if (!searchScores.size) return "";
@@ -1938,20 +1993,6 @@ function matchLabel(cardId) {
   return score === undefined ? "" : (MATCH_LABELS[matchTier(score)] || "");
 }
 
-/**
- * The filters live in a <details> that is `open` in the markup, so a desktop
- * visitor sees all seven of them laid out with no clicking. A <details> hides
- * its own contents when it is not open, and the summary is hidden on desktop by
- * the stylesheet - so leaving it closed made the filters invisible AND
- * unreachable on a normal screen.
- *
- * On a phone the summary is visible and the filters would otherwise push the
- * cards off the bottom of the screen, so collapse it there.
- */
-function collapseFiltersOnSmallScreens() {
-  const details = document.getElementById("filtersDetails");
-  if (details && isSmallScreen()) details.removeAttribute("open");
-}
 
 /**
  * Show or hide the dashboard panel.
@@ -2201,6 +2242,12 @@ function initEventListeners() {
   const purchaseToggle = document.getElementById("purchaseToggleBtn");
   if (purchaseToggle) purchaseToggle.addEventListener("click", togglePurchaseDisplay);
 
+  // Filters open and close from the button on the search line. A button and a
+  // hidden panel rather than <details>: the grid has to be a flex item of that
+  // row to be ordered after the sort control.
+  const filtersBtn = document.getElementById("filtersToggle");
+  if (filtersBtn) filtersBtn.addEventListener("click", () => toggleFilters());
+
   const columnBtn = document.getElementById("columnPickerBtn");
   if (columnBtn) columnBtn.addEventListener("click", () => toggleColumnPicker());
   const columnList = document.getElementById("columnPickerList");
@@ -2285,6 +2332,19 @@ function initEventListeners() {
     pointerHeld = false;
     flushInventoryRefresh();
   }, true);
+
+  // A tile name that was shrunk to fit its column has to be re-measured when
+  // the column changes width, or it stays small after the window is widened.
+  // Fonts settle after first paint too, and a name measured against the
+  // fallback face is measured against the wrong widths.
+  let nameFitTimer = null;
+  window.addEventListener("resize", () => {
+    clearTimeout(nameFitTimer);
+    nameFitTimer = setTimeout(() => fitCardNames(), 150);
+  });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => fitCardNames());
+  }
 
   // One delegated click handler for every generated control.
   document.addEventListener("click", handleDelegatedClick);
@@ -2829,7 +2889,6 @@ function updateFilterActiveState() {
 function renderCards() {
   const total = filteredCards.length;
   setText("resultsCount", total.toLocaleString());
-  setText("statFilteredTotal", `Filtered: ${total.toLocaleString()} cards`);
 
   const emptyEl = document.getElementById("emptyState");
   const gridEl = document.getElementById("binderGridView");
@@ -2868,11 +2927,49 @@ function renderCards() {
 
   if (currentView === "grid") {
     renderGridView(pageCards);
+    fitCardNames();
   } else {
     renderTableView(pageCards);
   }
 
   renderPagination(totalPages);
+}
+
+/**
+ * Shrink any tile name that will not fit on its single line.
+ *
+ * The name slot is one line now that the original Magic name has moved to the
+ * card window, and nearly every Final Fantasy name fits across a 240px tile.
+ * The long ones - "Ultima, Origin of Oblivion", "Cid, Timeless Artificer" -
+ * would otherwise be cut off mid-word, so they are stepped down instead.
+ *
+ * Text width scales close enough to linearly with font size that the ratio of
+ * overflow to available width gives the right size in one go; a second pass
+ * catches the rounding. Batched into read and write phases so a page of 120
+ * tiles costs two layouts rather than 240.
+ */
+const NAME_FIT_MIN_PX = 10;
+
+function fitCardNames(scope) {
+  const names = Array.from((scope || document).querySelectorAll(".card-name"));
+  if (!names.length) return;
+
+  // Back to the stylesheet size first, or a name that shrank on a narrow
+  // window would stay small after the window is widened again.
+  names.forEach(el => { el.style.fontSize = ""; });
+
+  for (let pass = 0; pass < 2; pass++) {
+    const plan = names.map(el => {
+      const room = el.clientWidth;
+      const needed = el.scrollWidth;
+      if (!room || needed <= room + 0.5) return 0;
+      const current = parseFloat(getComputedStyle(el).fontSize) || 15;
+      const scaled = Math.floor(current * (room / needed) * 10) / 10;
+      return Math.max(NAME_FIT_MIN_PX, scaled);
+    });
+    if (!plan.some(Boolean)) break;
+    plan.forEach((px, i) => { if (px) names[i].style.fontSize = px + "px"; });
+  }
 }
 
 function renderVariantChips(card, entry) {
@@ -2907,11 +3004,18 @@ function renderVariantChips(card, entry) {
  * Returned as one string with no padding, so the slot that holds it is either
  * genuinely empty or genuinely full.
  */
+/**
+ * Set, number and game, plus the reason a search matched.
+ *
+ * The original Magic name used to sit here too. It is on the card window
+ * instead: the tile displays the Final Fantasy name, which is the name on the
+ * card in your hand, and dropping the second name is what lets almost every
+ * title fit on one line. It stays fully searchable - buildSearchIndex reads
+ * card.mtg_name directly, not this markup - and the Table view still has an
+ * "Original MTG name" column.
+ */
 function noteLine(card) {
   const parts = [`<span class="card-origin">${esc(card.set)} #${esc(card.collector_number)} · ${esc(card.game)}</span>`];
-  if (card.is_reprint) {
-    parts.push(`<span class="card-mtg-subtitle" title="Original MTG name">aka: ${esc(displayName(card.mtg_name))}</span>`);
-  }
   if (matchLabel(card.id)) {
     parts.push(`<span class="match-why">${esc(matchLabel(card.id))}</span>`);
   }
@@ -2941,38 +3045,26 @@ function renderGridView(cards) {
 
         <div class="card-info">
           <div class="card-title-row">
-            <h3 class="card-name" title="${esc(name)}">${esc(name)}</h3>
+            <h3 class="card-name" title="${esc(name)}">${esc(tileName(card))}</h3>
             <div class="card-collector">${esc(card.color_identity)}</div>
           </div>
 
-          <!-- The print identity: rarity, official frame treatment, finish.
-               Nothing sits on the artwork any more, and these three are what a
-               flat scan cannot tell you apart. Badges only - the identifiers
-               that are printed on the card itself go in the line below, as
-               plain text, because text is far narrower than a pill. -->
-          <div class="card-meta-line">
-            <span class="tag-badge tag-rarity-${esc(card.rarity.toLowerCase())}">${esc(card.rarity)}</span>
-            ${card.treatment && card.treatment !== "Default" ? `<span class="tag-badge tag-treatment">${esc(card.treatment)}</span>` : ""}
-            ${card.variant !== "Basic/Non-foil" ? `<span class="tag-badge tag-variant">${esc(variantName(card.variant))}</span>` : ""}
-          </div>
-
-          <!-- One fixed line holding the set, number and game, plus whichever
-               of the two optional notes apply. It was reserved and empty on 95%
-               of tiles; putting the identifiers here costs no extra height and
-               keeps the badge line above from overflowing.
+          <!-- One line carrying the print identity and the identifiers: the
+               rarity, treatment and finish badges - what a flat scan cannot
+               tell apart - followed by the set, number and game as plain text.
+               The badges had a row to themselves before; three short pills do
+               not need 24px of their own.
                No whitespace inside, so :empty matches and the phone layout -
                a single column, with no row to level - can drop it. -->
-          <div class="card-note-line">${noteLine(card)}</div>
-
-          <div class="card-type" title="${esc(card.type_line)}">${esc(card.type_line)}</div>
+          <div class="card-note-line">${metaBadges(card)}${noteLine(card)}</div>
 
           <div class="card-price-row">
             <div class="price-item">
-              <span class="price-label">Normal ${esc(priceUnit(card, "price_usd"))}</span>
+              <span class="price-label">Normal${priceUnitSuffix(card, "price_usd")}</span>
               <span class="price-val">${money(cardPrice(card, "price_usd").value, cardPrice(card, "price_usd").currency)}</span>
             </div>
-            <div class="price-item" style="text-align: right;">
-              <span class="price-label">Foil ${esc(priceUnit(card, "price_foil"))}</span>
+            <div class="price-item">
+              <span class="price-label">Foil${priceUnitSuffix(card, "price_foil")}</span>
               <span class="price-val price-foil">${money(cardPrice(card, "price_foil").value, cardPrice(card, "price_foil").currency)}</span>
             </div>
           </div>
@@ -2980,19 +3072,16 @@ function renderGridView(cards) {
           ${purchaseRow(card, entry)}
 
           <div class="card-variants-hub">
-            <div class="variants-hub-label">
-              <span>Available Variants</span>
-              <span class="hub-owned-count" data-owned-label>${totalQty} Owned</span>
+            <div class="variant-chips-row">
+              <div class="variant-chips-grid" data-chips>
+                ${renderVariantChips(card, entry)}
+              </div>
+              <!-- Always present, owned or not: recording the first copy, its
+                   price and where it is filed is exactly what it opens. -->
+              <button type="button" class="chip-edit" data-action="open-modal" data-card-id="${esc(card.id)}"
+                      title="Edit variants, prices and binder location"
+                      aria-label="Edit variants and prices for ${esc(name)}">\u{270F}\u{FE0F}</button>
             </div>
-            <div class="variant-chips-grid" data-chips>
-              ${renderVariantChips(card, entry)}
-            </div>
-          </div>
-
-          <div class="card-actions-row">
-            <button type="button" class="btn-open-modal" data-action="open-modal" data-card-id="${esc(card.id)}">
-              <span>\u{1F50D} Manage Variants &amp; Prices</span>
-            </button>
           </div>
         </div>
       </article>`;
@@ -3365,32 +3454,16 @@ function updateDashboardStats() {
 
   const completionPct = totalCardsInSet > 0 ? (uniqueOwned / totalCardsInSet) * 100 : 0;
 
-  setText("statTotalSet", totalCardsInSet.toLocaleString());
-  setText("statUniqueOwned", uniqueOwned.toLocaleString());
-  setText("statUniquePct", `${completionPct.toFixed(1)}% unique completion`);
-  setText("statTotalCopies", totalCopies.toLocaleString());
-  setText("statVariantsBreakdown", `${totalNonFoil} Non-Foil • ${totalFoil} Foil • ${totalSpecial} Special`);
-  setText("statMarketValue", usd(estimatedValue));
-
   // Portfolio gain / loss. Only the cards with a purchase price recorded are in
   // the cost basis, so the market value used here is theirs alone - comparing a
   // whole collection's value against a partial cost would overstate the gain.
   const net = pricedMarketValue - costBasis;
   const roi = costBasis > 0 ? (net / costBasis) * 100 : null;
-  const netEl = document.getElementById("statNetGain");
-  if (netEl) {
-    const sign = net > 0 ? "+" : net < 0 ? "−" : "";
-    netEl.textContent = `${sign}${usd(Math.abs(net))}`;
-    netEl.classList.toggle("is-up", net > 0);
-    netEl.classList.toggle("is-down", net < 0);
-  }
-  setText("statNetGainSub", costBasis > 0
-    ? `${usd(costBasis)} spent on ${pricedCount.toLocaleString()} card${pricedCount === 1 ? "" : "s"} • ROI ${roi >= 0 ? "+" : "−"}${Math.abs(roi).toFixed(1)}%`
-    : "Record a purchase price to see gain or loss");
-  setText("progressBarPercent", `${completionPct.toFixed(1)}% (${uniqueOwned.toLocaleString()} / ${totalCardsInSet.toLocaleString()})`);
 
-  // The collapsed strip. Fed from the same figures as the cards above it, so
-  // hiding the panel can never show you a different number.
+  // The strip is the whole summary now. The five metric cards it replaced
+  // restated these same five figures one row lower; what they added that the
+  // strip did not have is the finish breakdown and what the gain is measured
+  // over, and both are on the line below.
   setText("stripOwned", uniqueOwned.toLocaleString());
   setText("stripCopies", totalCopies.toLocaleString());
   setText("stripValue", usd(estimatedValue));
@@ -3403,10 +3476,15 @@ function updateDashboardStats() {
     stripNet.classList.toggle("is-down", costBasis > 0 && net < 0);
   }
 
+  setText("stripBreakdown", [
+    `${totalNonFoil} Non-Foil · ${totalFoil} Foil · ${totalSpecial} Special`,
+    costBasis > 0
+      ? `${usd(costBasis)} spent on ${pricedCount.toLocaleString()} card${pricedCount === 1 ? "" : "s"} · ROI ${roi >= 0 ? "+" : "−"}${Math.abs(roi).toFixed(1)}%`
+      : "no purchase prices recorded yet"
+  ].join("   —   "));
+
   const fill = document.getElementById("progressBarFill");
   if (fill) fill.style.width = `${completionPct}%`;
-  const track = document.getElementById("progressTrack");
-  if (track) track.setAttribute("aria-valuenow", completionPct.toFixed(1));
 
   updateGamePillValues(gameStats);
   refreshLocationUi();

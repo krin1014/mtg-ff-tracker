@@ -210,23 +210,60 @@ body {
    The strip is the toggle. It carries the headline numbers in both states, so
    collapsing the panel costs no information - it only reclaims the ~340px that
    the cards, the progress bar and the game pills were holding permanently. */
+/* The strip carries the whole summary now: the five headline figures, the
+   finish breakdown that used to need a metric card of its own, and the
+   completion bar as a rule along the bottom edge. The five 134px cards it
+   replaced restated these same numbers one row lower. */
 .dashboard-toggle {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px 24px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 10px 18px;
+  /* No bottom padding: the rule below is flush with the bottom edge. */
+  padding: 10px 18px 0;
   margin-bottom: 16px;
   cursor: pointer;
   text-align: left;
   font: inherit;
   color: inherit;
+  overflow: hidden;
   transition: border-color 0.2s ease;
+}
+
+.dashboard-strip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.dashboard-substrip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Flush to the card's bottom edge, and pulled out to its full width - the
+   toggle's own horizontal padding would otherwise inset it. */
+.dashboard-rule {
+  display: block;
+  height: 3px;
+  margin: 2px -18px 0;
+  background: rgba(46, 62, 91, 0.55);
+}
+
+.dashboard-rule-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-emerald), var(--accent-cyan));
+  transition: width 0.35s ease;
 }
 
 .dashboard-toggle:hover { border-color: var(--border-light); }
@@ -405,6 +442,8 @@ body {
   padding: 14px 18px;
 }
 
+/* Ships closed now, so it needs to look like something that opens - without a
+   marker the row reads as a heading with nothing under it. */
 .games-breakdown-title {
   cursor: pointer;
   list-style: none;
@@ -412,10 +451,28 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--text-secondary);
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+}
+
+.games-breakdown-title::after {
+  content: '▾';
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--accent-cyan);
+  transition: transform 0.2s ease;
+}
+
+.games-breakdown-wrapper[open] > .games-breakdown-title::after {
+  transform: rotate(180deg);
+}
+
+/* The gap belongs between the summary and the pills, so it only exists when
+   there are pills to separate it from. */
+.games-breakdown-wrapper[open] > .games-breakdown-title {
+  margin-bottom: 10px;
 }
 
 .games-pills-row {
@@ -491,12 +548,26 @@ body {
   padding: 0 24px;
 }
 
+/* Search, Filters and Sort share one line, and the filter grid drops to a
+   full-width row beneath when opened. All four are direct flex items of this
+   row, which is what lets `order` put the grid last - it sits between the
+   button and the sort control in the markup only because that is where it
+   belongs for the keyboard. */
 .search-sort-bar {
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
   flex-wrap: wrap;
+  align-items: center;
 }
+
+.search-sort-bar > .search-box { order: 1; }
+.search-sort-bar > .filters-summary { order: 2; }
+.search-sort-bar > .sort-box { order: 3; }
+.search-sort-bar > .filters-grid { order: 4; flex: 0 0 100%; }
+
+/* .filters-grid sets display: grid, which outranks the UA rule for [hidden]. */
+.filters-grid[hidden] { display: none; }
 
 .search-box {
   flex: 1;
@@ -760,14 +831,19 @@ body {
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.3;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
+  /* One line. The original Magic name moved to the card window, so a tile no
+     longer has to carry two names - and almost every Final Fantasy name fits
+     across 240px on its own. fitCardNames() in app.js measures the ones that
+     do not and steps the size down until they do, so the slot is a fixed
+     single line rather than a reserved pair.
+     min-height rather than height: the fitted size shrinks the line box, and a
+     fixed height in em would then leave the row short. */
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
   overflow: hidden;
-  /* Two lines at the current line-height. Kept in em so the phone breakpoints,
-     which drop this to 14px and 13px, resize the slot with the text. */
-  height: 2.6em;
+  text-overflow: ellipsis;
+  min-height: 1.3em;
 }
 
 .card-collector {
@@ -778,14 +854,11 @@ body {
 
 /* Set / number / game / rarity, moved off the artwork. One line, clipped
    rather than wrapped, so it cannot change the tile height. */
-.card-meta-line {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  height: 18px;
-  margin: 4px 0 2px;
-  overflow: hidden;
-}
+/* Rarity, treatment and finish used to have a row to themselves above the set
+   and number. They are badges a few characters wide; the row cost 24px to hold
+   them. They share the identifier line now, with the identifiers giving way
+   first when a card carries all three. */
+.card-meta-line { display: none; }
 
 /* Denser than the table's badges: three of these have to share a 245px line
    without the treatment name being the one that falls off the end. */
@@ -803,15 +876,24 @@ body {
 .card-note-line {
   display: flex;
   align-items: center;
-  gap: 6px;
-  height: 18px;
-  margin-bottom: 4px;
+  gap: 5px;
+  min-height: 18px;
+  margin: 4px 0 6px;
   overflow: hidden;
   white-space: nowrap;
 }
 
+/* The badges hold their size; the set / number / game text is what ellipsises
+   when a card carries a treatment and a finish badge as well as a rarity. */
+.card-note-line .tag-badge { flex: 0 0 auto; }
+.card-note-line .card-origin {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .card-note-line .card-origin,
-.card-note-line .card-mtg-subtitle,
 .card-note-line .match-why {
   min-width: 0;
   overflow: hidden;
@@ -835,21 +917,6 @@ body {
   line-height: 14px;
 }
 
-.card-mtg-subtitle {
-  font-size: 11px;
-  color: #93C5FD;
-  font-style: italic;
-}
-
-.card-type {
-  font-size: 12px;
-  color: var(--text-secondary);
-  margin-bottom: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .card-price-row {
   display: flex;
   justify-content: space-between;
@@ -863,15 +930,20 @@ body {
   font-family: var(--font-mono);
 }
 
+/* One line, not two stacked. "$" and the word "Foil" already say what these
+   numbers are, so the NORMAL USD / FOIL USD captions above them were a second
+   line of type restating the labels beside them. */
 .price-item {
   display: flex;
-  flex-direction: column;
+  align-items: baseline;
+  gap: 5px;
 }
 
 .price-label {
   font-size: 9px;
   text-transform: uppercase;
   color: var(--text-muted);
+  letter-spacing: 0.4px;
 }
 
 .price-val {
@@ -884,23 +956,60 @@ body {
 }
 
 /* Variant Quick Hub on Card Item */
+/* The last thing in the tile now that the button below it is gone, so this is
+   what holds the bottom edge down when a tile is shorter than its row. */
 .card-variants-hub {
   background: rgba(11, 15, 25, 0.6);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 8px 10px;
-  margin-bottom: 12px;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
-.variants-hub-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-  margin-bottom: 6px;
+/* "AVAILABLE VARIANTS / n OWNED" said in words what the chips below it and
+   the badge on the artwork both already showed. The row it sat in is now the
+   chips themselves plus the edit control. */
+.variants-hub-label { display: none; }
+
+.variant-chips-row {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.variant-chips-row .variant-chips-grid {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* The way in to variants, purchases and binder location. It replaces the
+   full-width button that used to sit at the bottom of every tile, and it is
+   present whether or not anything is collected - recording the first copy is
+   exactly what it is for. */
+.chip-edit {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 27px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chip-edit:hover,
+.chip-edit:focus-visible {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.12);
 }
 
 /* One row of chips is reserved. 1,378 of 1,383 cards have one or two finishes
@@ -978,12 +1087,9 @@ body {
 }
 
 /* Card Ownership Controls */
-.card-actions-row {
-  margin-top: auto;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
+/* Removed with the "Manage Variants & Prices" button it held: the artwork
+   already opens the card window, and the pencil beside the chips is the
+   labelled way in. */
 
 .btn-open-modal {
   flex: 1;
@@ -1513,15 +1619,22 @@ body.modal-open {
 }
 
 /* --- Filters disclosure --------------------------------------------------- */
-.filters-details {
-  margin-bottom: 4px;
+/* Closed on every screen now. The grid was previously held open on desktop
+   because its summary was hidden there and it would have been unreachable; the
+   Filters button is a real control on the line above, so it is not. */
+.filters-summary[aria-expanded="true"] {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
 }
 
 .filters-summary {
-  display: none; /* desktop shows the grid permanently; see the mobile block */
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  font: inherit;
   list-style: none;
   font-size: 13px;
   font-weight: 700;
@@ -1530,10 +1643,8 @@ body.modal-open {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  margin-bottom: 12px;
 }
 
-.filters-summary::-webkit-details-marker,
 .games-breakdown-title::-webkit-details-marker {
   display: none;
 }
@@ -1545,7 +1656,7 @@ body.modal-open {
   transition: transform 0.2s ease;
 }
 
-.filters-details[open] > .filters-summary::after {
+.filters-summary[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
@@ -2357,22 +2468,28 @@ body.modal-open {
     padding: 12px 40px 12px 38px;
   }
 
-  .sort-box {
-    width: 100%;
+  /* The search field keeps the top line to itself; Filters and Sort share the
+     line below it. Three controls abreast at this width leaves the search box
+     too narrow to read what you have typed. */
+  .search-sort-bar > .search-box {
+    flex: 0 0 100%;
+  }
+
+  .search-sort-bar > .filters-summary {
+    flex: 0 1 auto;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .search-sort-bar > .sort-box {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .sort-box select {
     flex: 1;
+    min-width: 0;
     font-size: 16px;
-  }
-
-  /* Filters collapse behind a disclosure so they do not push the cards down. */
-  .filters-summary {
-    display: flex;
-  }
-
-  .filters-details:not([open]) .filters-grid {
-    display: none;
   }
 
   .filters-grid {
@@ -2415,11 +2532,6 @@ body.modal-open {
 
   .card-name {
     font-size: 13px;
-  }
-
-  .card-type {
-    font-size: 11px;
-    margin-bottom: 8px;
   }
 
   /* --- Table view on a phone ---------------------------------------------
@@ -2559,7 +2671,6 @@ body.modal-open {
   }
 
   .card-variants-hub {
-    margin-bottom: 8px;
     padding: 8px;
   }
 
@@ -2619,7 +2730,7 @@ body.modal-open {
   .controls-section,
   .back-to-top,
   .toast,
-  .card-actions-row,
+  .chip-edit,
   .results-pagination,
   .bottom-pagination {
     display: none !important;

@@ -29,10 +29,12 @@
   <header class="app-header">
     <div class="header-container">
       <div class="brand">
-        <div class="brand-badge">MTG × UNIVERSES BEYOND</div>
         <h1 class="brand-title">FINAL FANTASY COLLECTION TRACKER</h1>
+        <!-- The badge that used to sit above the title reads as the first item
+             of this line instead. Same words, one line rather than three, and
+             the masthead stops costing 127px before a single card is seen. -->
         <p class="brand-subtitle">
-          <span data-total-cards>1,365</span> cards • Final Fantasy flavour names • per-finish variant tracking
+          MTG × Universes Beyond • <span data-total-cards>1,365</span> cards • Final Fantasy flavour names • per-finish variant tracking
         </p>
       </div>
 
@@ -80,81 +82,32 @@
            the headline numbers either way. The choice is remembered. -->
       <button type="button" id="dashboardToggle" class="dashboard-toggle"
               aria-expanded="true" aria-controls="dashboardPanel">
-        <span class="dashboard-strip">
-          <span class="strip-stat"><span class="strip-val" id="stripOwned">0</span><span class="strip-label">owned</span></span>
-          <span class="strip-stat"><span class="strip-val" id="stripCopies">0</span><span class="strip-label">copies</span></span>
-          <span class="strip-stat"><span class="strip-val" id="stripValue">$0.00</span><span class="strip-label">value</span></span>
-          <span class="strip-stat"><span class="strip-val" id="stripNet">$0.00</span><span class="strip-label">gain / loss</span></span>
-          <span class="strip-stat strip-stat-pct"><span class="strip-val" id="stripPct">0.0%</span><span class="strip-label">complete</span></span>
+        <span class="dashboard-strip-row">
+          <span class="dashboard-strip">
+            <span class="strip-stat"><span class="strip-val" id="stripOwned">0</span><span class="strip-label">owned</span></span>
+            <span class="strip-stat"><span class="strip-val" id="stripCopies">0</span><span class="strip-label">copies</span></span>
+            <span class="strip-stat"><span class="strip-val" id="stripValue">$0.00</span><span class="strip-label">value</span></span>
+            <span class="strip-stat"><span class="strip-val" id="stripNet">$0.00</span><span class="strip-label">gain / loss</span></span>
+            <span class="strip-stat strip-stat-pct"><span class="strip-val" id="stripPct">0.0%</span><span class="strip-label">complete</span></span>
+          </span>
+          <span class="dashboard-toggle-hint"><span id="dashboardToggleText">Hide details</span> <span class="dashboard-chevron" aria-hidden="true">▾</span></span>
         </span>
-        <span class="dashboard-toggle-hint"><span id="dashboardToggleText">Hide details</span> <span class="dashboard-chevron" aria-hidden="true">▾</span></span>
+
+        <!-- The one fact the five metric cards carried that the strip did not:
+             which finishes those copies are, and what the gain figure above is
+             actually measured over. -->
+        <span class="dashboard-substrip" id="stripBreakdown">0 Non-Foil · 0 Foil · 0 Special</span>
+
+        <!-- The completion bar, as a rule along the bottom edge. The percentage
+             is printed in the strip two inches away, so the bar does not need a
+             label of its own or a row to sit in. -->
+        <span class="dashboard-rule" aria-hidden="true"><span class="dashboard-rule-fill" id="progressBarFill"></span></span>
       </button>
 
       <div class="dashboard-panel" id="dashboardPanel">
-        <div class="metric-cards-grid">
-          <div class="metric-card card-cyan">
-            <div class="metric-header">
-              <span class="metric-title">TOTAL CARDS IN SET</span>
-              <span class="metric-icon" aria-hidden="true">🎴</span>
-            </div>
-            <div class="metric-value" id="statTotalSet">—</div>
-            <div class="metric-sub" id="statFilteredTotal">Filtered: — cards</div>
-          </div>
-
-          <div class="metric-card card-emerald">
-            <div class="metric-header">
-              <span class="metric-title">UNIQUE PRINTS OWNED</span>
-              <span class="metric-icon" aria-hidden="true">✓</span>
-            </div>
-            <div class="metric-value" id="statUniqueOwned">0</div>
-            <div class="metric-sub" id="statUniquePct">0.0% unique completion</div>
-          </div>
-
-          <div class="metric-card card-blue">
-            <div class="metric-header">
-              <span class="metric-title">TOTAL COPIES OWNED</span>
-              <span class="metric-icon" aria-hidden="true">📚</span>
-            </div>
-            <div class="metric-value" id="statTotalCopies">0</div>
-            <div class="metric-sub" id="statVariantsBreakdown">0 Non-Foil • 0 Foil • 0 Special</div>
-          </div>
-
-          <div class="metric-card card-gold">
-            <div class="metric-header">
-              <span class="metric-title">ESTIMATED MARKET VALUE</span>
-              <span class="metric-icon" aria-hidden="true">💎</span>
-            </div>
-            <div class="metric-value" id="statMarketValue">$0.00</div>
-            <div class="metric-sub" title="Special finishes are estimated at the foil price; serialized cards have no reliable market price.">
-              Rough estimate from Scryfall prices
-            </div>
-          </div>
-
-          <div class="metric-card card-violet">
-            <div class="metric-header">
-              <span class="metric-title">PORTFOLIO GAIN / LOSS</span>
-              <span class="metric-icon" aria-hidden="true">📈</span>
-            </div>
-            <div class="metric-value" id="statNetGain">$0.00</div>
-            <div class="metric-sub" id="statNetGainSub" title="Only cards with a purchase price recorded are counted, on both sides.">
-              Record a purchase price to see gain or loss
-            </div>
-          </div>
-        </div>
-
-        <!-- Overall Completion Bar -->
-        <div class="progress-bar-container">
-          <div class="progress-bar-label">
-            <span>Overall collection completion</span>
-            <span id="progressBarPercent">0.0% (0 / —)</span>
-          </div>
-          <div class="progress-track" id="progressTrack" role="progressbar" aria-label="Overall collection completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-            <div class="progress-fill" id="progressBarFill" style="width: 0%;"></div>
-          </div>
-        </div>
 
         <!-- Game Breakdown Pills -->
-        <details class="games-breakdown-wrapper" open>
+        <details class="games-breakdown-wrapper">
           <summary class="games-breakdown-title">
             <span>PROGRESS BY FINAL FANTASY GAME <span class="dim-hint">(tap to filter)</span></span>
             <button type="button" id="clearGameFilterBtn" class="btn-text" style="display:none;">Clear game filter</button>
@@ -179,36 +132,21 @@
           <button type="button" id="clearSearchBtn" class="search-clear" style="display:none;" aria-label="Clear search">✕</button>
         </div>
 
-        <div class="sort-box">
-          <label for="sortBySelect">Sort by</label>
-          <select id="sortBySelect">
-            <option value="print_style">Print style, then set release</option>
-            <option value="number_asc">Collector number (low → high)</option>
-            <option value="game_asc">Final Fantasy Game (I → XVI)</option>
-            <option value="ff_name_asc">Final Fantasy Name (A → Z)</option>
-            <option value="ff_name_desc">Final Fantasy Name (Z → A)</option>
-            <option value="mtg_name_asc">MTG Name (A → Z)</option>
-            <option value="price_desc">Price: high → low</option>
-            <option value="price_asc">Price: low → high</option>
-            <option value="rarity_desc">Rarity (Mythic → Common)</option>
-            <option value="owned_desc">Owned first</option>
-            <option value="qty_desc">Most copies owned first</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Filter dropdowns are populated from the card data at runtime,
-           so an option can never exist for a value no card has. -->
-      <!-- Open by default so every filter is visible on a normal screen. On a
-           phone, app.js collapses this on load so the filters do not push the
-           cards off the bottom; the summary below is the tap target there. -->
-      <details class="filters-details" id="filtersDetails" open>
-        <summary class="filters-summary">
+        <!-- Filters sit between the search box and the sort control on one
+             line, with the grid dropping to a full-width row beneath when it is
+             opened. A button and a panel rather than <details>/<summary>: the
+             grid has to be a flex item of THIS row to be ordered after the sort
+             control, and Chromium wraps a <details>' contents in a
+             ::details-content box, so `display: contents` on the disclosure
+             hands the row that wrapper - which carries no order of its own and
+             lands first - instead of the grid. -->
+        <button type="button" id="filtersToggle" class="filters-summary"
+                aria-expanded="false" aria-controls="filtersGrid">
           <span>Filters</span>
           <span id="filtersActiveNote" class="filters-active-note" style="display:none;">filters active</span>
-        </summary>
+        </button>
 
-        <div class="filters-grid">
+        <div class="filters-grid" id="filtersGrid" hidden>
           <div class="filter-group">
             <label for="filterOwned">Ownership &amp; collected variant</label>
             <select id="filterOwned"><option value="all">All cards</option></select>
@@ -251,7 +189,25 @@
             </button>
           </div>
         </div>
-      </details>
+
+        <div class="sort-box">
+          <label for="sortBySelect">Sort by</label>
+          <select id="sortBySelect">
+            <option value="print_style">Print style, then set release</option>
+            <option value="number_asc">Collector number (low → high)</option>
+            <option value="game_asc">Final Fantasy Game (I → XVI)</option>
+            <option value="ff_name_asc">Final Fantasy Name (A → Z)</option>
+            <option value="ff_name_desc">Final Fantasy Name (Z → A)</option>
+            <option value="mtg_name_asc">MTG Name (A → Z)</option>
+            <option value="price_desc">Price: high → low</option>
+            <option value="price_asc">Price: low → high</option>
+            <option value="rarity_desc">Rarity (Mythic → Common)</option>
+            <option value="owned_desc">Owned first</option>
+            <option value="qty_desc">Most copies owned first</option>
+          </select>
+        </div>
+      </div>
+
 
       <!-- What is currently narrowing the view, with a one-tap way out of each.
            Always visible, unlike the filters themselves, which collapse on a phone. -->
