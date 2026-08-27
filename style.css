@@ -1504,21 +1504,73 @@ body {
 }
 
 /* Modal Variant Inventory Table */
-.modal-variant-inventory {
+/* ---------------------------------------------------------------------------
+   Card window tiles
+   ---------------------------------------------------------------------------
+   Every block in the window folds. The window is max-height 90vh and scrolls,
+   and on a phone the fields you came to fill in used to sit below a screenful
+   of reference material; folding what you are not using brings them up to meet
+   you. The choice is remembered between cards and between visits.
+   ------------------------------------------------------------------------- */
+.modal-section {
   background: rgba(15, 23, 42, 0.8);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  padding: 14px;
+  /* The header carries its own padding so the whole strip is the click target;
+     the body adds the rest only when it is open. */
+  padding: 0;
+  min-width: 0;
 }
 
-.modal-variant-inventory-title {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--accent-cyan);
-  margin-bottom: 10px;
+.modal-section-head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  min-width: 0;
+}
+
+.modal-section-head::-webkit-details-marker { display: none; }
+
+.modal-section-head:hover { color: var(--text-primary); }
+
+.modal-section.is-accent .modal-section-head { color: var(--accent-cyan); }
+
+.modal-section-chev {
+  flex: 0 0 auto;
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.modal-section[open] > .modal-section-head .modal-section-chev {
+  transform: rotate(90deg);
+}
+
+.modal-section-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal-section-body {
+  padding: 0 14px 14px;
+  min-width: 0;
+}
+
+/* The price-history tile is drawn empty and revealed once there are readings;
+   the box inside it already carries the chart's own frame. */
+#modalPriceHistorySection .price-history {
+  margin: 0;
 }
 
 .variant-table {
@@ -2088,24 +2140,6 @@ body.modal-open {
 .serial-input {
   width: 110px;
   font-size: 11px;
-}
-
-/* What you paid and where the copies live, in one block directly under the
-   table those figures are typed into. */
-.modal-your-copies {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: 12px 14px;
-}
-
-.modal-your-copies-title {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-  margin-bottom: 10px;
 }
 
 /* --- Purchase lots ---------------------------------------------------------

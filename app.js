@@ -1329,6 +1329,7 @@ function savePrefs() {
     dashboardOpen: dashboardOpen,
     hiddenColumns: hiddenColumns,
     showPurchases: showPurchases,
+    modalSections: modalSections,
     filters: {}
   };
   FILTER_IDS.forEach(id => { prefs.filters[id] = valueOf(id); });
@@ -1375,6 +1376,13 @@ function loadPrefs() {
   } else if (prefs.filters && typeof prefs.filters.filterGame === "string"
              && prefs.filters.filterGame !== "all") {
     activeGames = [prefs.filters.filterGame];
+  }
+  if (prefs.modalSections && typeof prefs.modalSections === "object") {
+    Object.keys(MODAL_SECTION_DEFAULTS).forEach(key => {
+      if (typeof prefs.modalSections[key] === "boolean") {
+        modalSections[key] = prefs.modalSections[key];
+      }
+    });
   }
   if (typeof prefs.location === "string") activeLocationFilter = prefs.location;
 }
@@ -2399,6 +2407,24 @@ function initEventListeners() {
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(() => fitCardNames());
   }
+
+  // Folding, for both kinds of <details> in the card window: the tiles, whose
+  // state is remembered between visits, and the purchase slips, whose state
+  // lasts as long as the window is open. `toggle` does not bubble, so this
+  // listens in the capture phase.
+  document.addEventListener("toggle", event => {
+    const el = event.target;
+    if (!el || el.nodeType !== 1) return;
+    if (el.classList.contains("modal-section")) {
+      const key = el.getAttribute("data-section");
+      if (key) setModalSectionOpen(key, el.open);
+    } else if (el.classList.contains("lot-slip")) {
+      const id = el.getAttribute("data-lot-id");
+      if (!id) return;
+      if (el.open) { lotOpened.add(id); lotClosed.delete(id); }
+      else { lotClosed.add(id); lotOpened.delete(id); }
+    }
+  }, true);
 
   // One delegated click handler for every generated control.
   document.addEventListener("click", handleDelegatedClick);
@@ -4268,6 +4294,10 @@ function renderPriceHistoryInto(card) {
     if (!host) return;
     const series = priceSeriesFor(card);
     host.innerHTML = series ? priceHistoryMarkup(series) : "";
+    // The tile is hidden until there is something in it, so a card with too few
+    // readings does not show an empty box with a heading on it.
+    const section = document.getElementById("modalPriceHistorySection");
+    if (section) section.hidden = !series;
   };
 
   if (priceHistoryLoaded()) {
@@ -4310,6 +4340,62 @@ function focusField(field) {
   if (typeof field.scrollIntoView === "function") {
     field.scrollIntoView({ block: "center" });
   }
+}
+
+/**
+ * The card window's tiles, and which of them are folded shut.
+ *
+ * Every block in the window is a tile you can collapse, and the choice is
+ * remembered between cards and between visits. Card text starts shut: it is the
+ * tallest block in the window and the one you are least often there to read,
+ * which is most of the height the window used to spend before you reached the
+ * fields you came to fill in.
+ */
+const MODAL_SECTION_DEFAULTS = {
+  variants: true,
+  purchase: true,
+  history: true,
+  description: false,
+  facts: true
+};
+
+let modalSections = {};
+
+function isModalSectionOpen(key) {
+  return Object.prototype.hasOwnProperty.call(modalSections, key)
+    ? Boolean(modalSections[key])
+    : MODAL_SECTION_DEFAULTS[key] !== false;
+}
+
+function setModalSectionOpen(key, open) {
+  modalSections[key] = Boolean(open);
+  savePrefs();
+}
+
+/**
+ * One collapsible tile.
+ *
+ * `aside` rides on the header rather than in the body, so a figure like the
+ * total copy count is still readable with the tile shut. `hidden` is for a tile
+ * that has to exist for its script to fill in but must not show an empty box
+ * until it does.
+ */
+function modalSection(key, title, body, opts) {
+  const options = opts || {};
+  if (!body) return "";
+  return `
+    <details class="modal-section${options.accent ? " is-accent" : ""}"
+             data-section="${esc(key)}"
+             ${options.id ? `id="${esc(options.id)}"` : ""}
+             ${options.hidden ? "hidden" : ""}
+             ${isModalSectionOpen(key) ? "open" : ""}>
+      <summary class="modal-section-head">
+        <span class="modal-section-chev" aria-hidden="true">▸</span>
+        <span class="modal-section-title">${title}</span>
+        ${options.aside || ""}
+      </summary>
+      <div class="modal-section-body">${body}</div>
+    </details>`;
 }
 
 function openCardModal(cardId) {
@@ -4368,11 +4454,7 @@ function openCardModal(cardId) {
         <div class="modal-type">${esc(card.type_line)}${card.mana_cost ? ` • ${esc(card.mana_cost)}` : ""}</div>
       </div>
 
-      <div class="modal-variant-inventory">
-        <div class="modal-variant-inventory-title">
-          <span>\u{1F451} AVAILABLE PRINT VARIANTS</span>
-          <span class="modal-total-badge" id="modalTotalCopiesBadge" data-card-id="${esc(card.id)}">${totalQty} Total Copies</span>
-        </div>
+      ${modalSection("variants", "\u{1F451} Available print variants", `
         <div class="variant-table-wrap">
           <table class="variant-table">
             <thead>
@@ -4380,15 +4462,13 @@ function openCardModal(cardId) {
             </thead>
             <tbody>${variantRows}</tbody>
           </table>
-        </div>
-      </div>
+        </div>`, {
+          accent: true,
+          // Stays on the header, so the count is readable with the tile shut.
+          aside: `<span class="modal-total-badge" id="modalTotalCopiesBadge" data-card-id="${esc(card.id)}">${totalQty} Total Copies</span>`
+        })}
 
-      <!-- Your copies: what you paid, and where they physically are. The
-           storage box used to sit far below, past the price history and the
-           card's own facts, while the prices it belongs with were entered in
-           the table above. Same section now, directly under the entry fields. -->
-      <div class="modal-your-copies">
-        <div class="modal-your-copies-title">\u{1F4B0} PURCHASE &amp; STORAGE</div>
+      ${modalSection("purchase", "\u{1F4B0} Purchase &amp; storage", `
         ${inventoryPanel(card, entry)}
         <div class="modal-field-grid">
           <div>
@@ -4402,22 +4482,28 @@ function openCardModal(cardId) {
               ${CONDITION_OPTIONS.map(opt => `<option value="${esc(opt)}" ${entry.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
             </select>
           </div>
-        </div>
-      </div>
+        </div>`)}
 
-      <div id="modalPriceHistory" class="price-history"></div>
+      ${modalSection("history", "\u{1F4C8} Price history",
+        `<div id="modalPriceHistory" class="price-history"></div>`,
+        // Hidden until renderPriceHistoryInto finds enough readings to draw.
+        { id: "modalPriceHistorySection", hidden: true })}
 
-      ${card.oracle_text ? `<div class="modal-oracle-box">${esc(card.oracle_text)}</div>` : ""}
-      ${card.flavor_text ? `<div class="modal-flavor-box">${esc(card.flavor_text)}</div>` : ""}
+      ${card.oracle_text || card.flavor_text
+        ? modalSection("description", "\u{1F4DC} Card text", `
+            ${card.oracle_text ? `<div class="modal-oracle-box">${esc(card.oracle_text)}</div>` : ""}
+            ${card.flavor_text ? `<div class="modal-flavor-box">${esc(card.flavor_text)}</div>` : ""}`)
+        : ""}
 
-      <div class="modal-meta-grid">
-        <div class="modal-meta-item"><strong>Set:</strong> ${esc(card.set_name)} (${esc(card.set)})</div>
-        <div class="modal-meta-item"><strong>Collector #:</strong> ${esc(card.collector_number)}</div>
-        <div class="modal-meta-item"><strong>Base printing:</strong> ${esc(card.variant)}</div>
-        <div class="modal-meta-item"><strong>Treatment:</strong> ${esc((card.treatments || [card.treatment]).join(", "))}</div>
-        <div class="modal-meta-item"><strong>Rarity:</strong> ${esc(card.rarity)}</div>
-        <div class="modal-meta-item"><strong>Artist:</strong> ${esc(card.artist || "Unknown")}</div>
-      </div>
+      ${modalSection("facts", "\u{1F3B4} Card facts", `
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item"><strong>Set:</strong> ${esc(card.set_name)} (${esc(card.set)})</div>
+          <div class="modal-meta-item"><strong>Collector #:</strong> ${esc(card.collector_number)}</div>
+          <div class="modal-meta-item"><strong>Base printing:</strong> ${esc(card.variant)}</div>
+          <div class="modal-meta-item"><strong>Treatment:</strong> ${esc((card.treatments || [card.treatment]).join(", "))}</div>
+          <div class="modal-meta-item"><strong>Rarity:</strong> ${esc(card.rarity)}</div>
+          <div class="modal-meta-item"><strong>Artist:</strong> ${esc(card.artist || "Unknown")}</div>
+        </div>`)}
 
       <div class="modal-footer-actions">
         <a href="${esc(card.scryfall_uri)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View on Scryfall ↗</a>
