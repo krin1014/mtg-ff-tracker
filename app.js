@@ -839,7 +839,13 @@ function commitInventory(cardId, entry, force) {
 
   saveCollectionState();
   refreshCardUI(cardId);
-  if (modalCardId === cardId) refreshInventoryPanel(cardId, force);
+  if (modalCardId === cardId) {
+    refreshInventoryPanel(cardId, force);
+    // Emptied - stepped to zero, or the last purchase deleted. The tile has
+    // nothing left in it, so it folds itself away, mirroring the way recording
+    // the first copy opens it.
+    if (!modalPurchaseDefault(entry)) closeModalSection("purchase");
+  }
 }
 
 /** Add a lot. Returns its id so the UI can focus the row it just made. */
@@ -862,6 +868,9 @@ function addInventoryLot(cardId, patch) {
   const created = lot || normaliseLot({ quantity: 1, variant: fallbackVariant }, entry.condition);
   entry.inventory.push(created);
   commitInventory(cardId, entry, true);
+  // Recording a copy is the moment the tile becomes worth reading, whichever
+  // route created the lot. The mirror of the fold-away in commitInventory.
+  if (modalCardId === cardId) openModalSection("purchase");
   return created.id;
 }
 
@@ -2507,15 +2516,6 @@ function runAction(target, event) {
       event.stopPropagation();
       stepVariant(cardId, vkey, -1);
       break;
-    case "modal-step": {
-      event.preventDefault();
-      const step = Number(target.getAttribute("data-step")) || 1;
-      stepVariant(cardId, vkey, step);
-      // Adding a copy from the variants table is the moment you would want to
-      // say what you paid for it, so the purchase tile opens itself.
-      if (step > 0) openModalSection("purchase");
-      break;
-    }
     case "flip-card":
       event.preventDefault();
       flipModalCard();
@@ -3295,22 +3295,11 @@ function refreshCardUI(cardId) {
     });
   }
 
-  const modalTotal = document.getElementById("modalTotalCopiesBadge");
-  if (modalTotal && modalTotal.getAttribute("data-card-id") === cardId) {
-    modalTotal.textContent = `${totalQty} Total Copies`;
-    getCardVariantDefs(card).forEach(def => {
-      const qty = entry.variants[def.key] || 0;
-      const valEl = document.getElementById(`modalVal_${def.key}`);
-      if (valEl) valEl.textContent = String(qty);
-      const statusEl = document.getElementById(`modalStatus_${def.key}`);
-      if (statusEl) {
-        statusEl.textContent = qty > 0 ? "✓ Collected" : "—";
-        statusEl.classList.toggle("is-collected", qty > 0);
-      }
-    });
-    // The purchase fields live in the inventory panel now, one row per lot.
-    refreshInventoryPanel(cardId);
-  }
+  // Gated on the open card, not on an element inside it. This used to hang off
+  // the "Total Copies" badge in the print-variants tile; when that tile was
+  // removed the badge went with it, and the whole block - the purchase panel
+  // redraw included - would have silently stopped running.
+  if (modalCardId === cardId) refreshInventoryPanel(cardId);
 
   refreshPurchaseDisplays(cardId, card, entry);
 }
@@ -3968,6 +3957,30 @@ function purchaseRow(card, entry) {
  * figure happened to be typed first.
  */
 /**
+ * Purchase slips in the card's own finish order, not the order they were typed.
+ *
+ * The lots are stored in the order they were entered, so a card whose foil was
+ * bought first listed Traditional Foil above Non-Foil - the reverse of the
+ * order the same card uses everywhere else, including the tile chips and the
+ * finish dropdown inside these very slips.
+ *
+ * Display only: the stored array keeps its own order, so nothing about this
+ * changes what is saved or synced. Lots of the same finish stay in the order
+ * they were bought, which is the one place entry order is the useful one.
+ */
+function orderLotsByVariant(lots, defs) {
+  const rank = {};
+  defs.forEach((def, index) => { rank[def.key] = index; });
+  // A finish the card does not list sorts after the ones it does, rather than
+  // jumping to the front on an undefined comparison.
+  const place = lot => (lot.variant in rank ? rank[lot.variant] : defs.length);
+  return lots
+    .map((lot, index) => ({ lot: lot, index: index }))
+    .sort((a, b) => (place(a.lot) - place(b.lot)) || (a.index - b.index))
+    .map(item => item.lot);
+}
+
+/**
  * Which purchase slips are folded open.
  *
  * A slip opens by default when it is the only one on the card, or when it has
@@ -4011,7 +4024,7 @@ function inventoryPanel(card, entry) {
   const defs = getCardVariantDefs(card);
   const count = totals.lots.length;
 
-  const rows = totals.lots.map(lot => {
+  const rows = orderLotsByVariant(totals.lots, defs).map(lot => {
     const def = MASTER_VARIANTS_BY_KEY[lot.variant];
     const finishName = def ? def.label : lot.variant;
     const options = defs.map(d =>
@@ -4407,6 +4420,13 @@ function openModalSection(key) {
   if (el && !el.open) el.open = true;
 }
 
+/** Fold a tile away, and remember it for this card. */
+function closeModalSection(key) {
+  modalSections[key] = false;
+  const el = document.querySelector(`.modal-section[data-section="${cssEscape(key)}"]`);
+  if (el && el.open) el.open = false;
+}
+
 /** The tile states worth saving - everything except the per-card ones. */
 function rememberedModalSections() {
   const out = {};
@@ -4461,30 +4481,9 @@ function openCardModal(cardId) {
 
   const hasBack = Boolean(card.back_image);
 
-  const variantRows = getCardVariantDefs(card).map(def => {
-    const qty = entry.variants[def.key] || 0;
-    const price = variantPrice(card, def);
-    return `
-      <tr>
-        <td><strong>${def.icon} ${esc(def.label)}</strong></td>
-        <td class="variant-price">${money(price.value, price.currency)}</td>
-        <td>
-          <div class="stepper-control">
-            <button type="button" class="stepper-btn" data-action="modal-step" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}" data-step="-1" aria-label="Remove one ${esc(def.label)}">−</button>
-            <div class="stepper-val" id="modalVal_${esc(def.key)}">${qty}</div>
-            <button type="button" class="stepper-btn" data-action="modal-step" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}" data-step="1" aria-label="Add one ${esc(def.label)}">+</button>
-          </div>
-        </td>
-        <td>
-          ${def.key === "serialized"
-            ? `<input type="text" class="table-input serial-input" placeholder="# 042 / 500"
-                 value="${esc(entry.serialNumbers.serialized || "")}"
-                 aria-label="Serial number"
-                 data-change="serial" data-card-id="${esc(card.id)}">`
-            : `<span class="variant-status ${qty > 0 ? "is-collected" : ""}" id="modalStatus_${esc(def.key)}">${qty > 0 ? "✓ Collected" : "—"}</span>`}
-        </td>
-      </tr>`;
-  }).join("");
+  // The serial number was the one field in the removed print-variants tile
+  // with nowhere else to live, so it moves in with the other per-card details.
+  const serialDef = getCardVariantDefs(card).find(def => def.key === "serialized");
 
   content.innerHTML = `
     <div class="modal-image-col">
@@ -4501,20 +4500,6 @@ function openCardModal(cardId) {
         <div class="modal-type">${esc(card.type_line)}${card.mana_cost ? ` • ${esc(card.mana_cost)}` : ""}</div>
       </div>
 
-      ${modalSection("variants", "\u{1F451} Available print variants", `
-        <div class="variant-table-wrap">
-          <table class="variant-table">
-            <thead>
-              <tr><th>Variant Finish</th><th>Est. Price</th><th>Quantity Owned</th><th>Status / Notes</th></tr>
-            </thead>
-            <tbody>${variantRows}</tbody>
-          </table>
-        </div>`, {
-          accent: true,
-          // Stays on the header, so the count is readable with the tile shut.
-          aside: `<span class="modal-total-badge" id="modalTotalCopiesBadge" data-card-id="${esc(card.id)}">${totalQty} Total Copies</span>`
-        })}
-
       ${modalSection("purchase", "\u{1F4B0} Purchase &amp; storage", `
         ${inventoryPanel(card, entry)}
         <div class="modal-field-grid">
@@ -4529,6 +4514,13 @@ function openCardModal(cardId) {
               ${CONDITION_OPTIONS.map(opt => `<option value="${esc(opt)}" ${entry.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
             </select>
           </div>
+          ${serialDef ? `
+          <div>
+            <label class="field-label" for="modalSerialInput">Serial number</label>
+            <input id="modalSerialInput" type="text" class="table-input" placeholder="# 042 / 500"
+                   value="${esc(entry.serialNumbers.serialized || "")}"
+                   data-change="serial" data-card-id="${esc(card.id)}">
+          </div>` : ""}
         </div>`)}
 
       ${modalSection("history", "\u{1F4C8} Price history",

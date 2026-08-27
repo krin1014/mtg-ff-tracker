@@ -1573,61 +1573,6 @@ body {
   margin: 0;
 }
 
-.variant-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
-}
-
-.variant-table th {
-  padding: 6px 8px;
-  color: var(--text-secondary);
-  font-size: 10px;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.variant-table td {
-  padding: 8px;
-  border-bottom: 1px solid rgba(46, 62, 91, 0.4);
-  vertical-align: middle;
-}
-
-.stepper-control {
-  display: inline-flex;
-  align-items: center;
-  background: var(--bg-main);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.stepper-btn {
-  background: none;
-  border: none;
-  color: var(--text-secondary);
-  width: 26px;
-  height: 28px;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.stepper-btn:hover {
-  background: var(--bg-surface);
-  color: var(--text-primary);
-}
-
-.stepper-val {
-  width: 32px;
-  text-align: center;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
 /* --------------------------------------------------------------------------
    Empty State & Toast
    -------------------------------------------------------------------------- */
@@ -2112,36 +2057,6 @@ body.modal-open {
   color: var(--accent-gold);
 }
 
-/* --- Modal extras --------------------------------------------------------- */
-.variant-table-wrap {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.variant-price {
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-}
-
-.variant-status {
-  font-weight: 700;
-  color: #64748B;
-}
-
-.variant-status.is-collected {
-  color: #10B981;
-}
-
-.modal-total-badge {
-  font-family: var(--font-mono);
-  color: #34D399;
-}
-
-.serial-input {
-  width: 110px;
-  font-size: 11px;
-}
-
 /* --- Purchase lots ---------------------------------------------------------
    One row per purchase. Three copies bought on three days at three prices are
    three rows here, and the totals underneath add them up. */
@@ -2565,15 +2480,6 @@ body.modal-open {
   .chip-dec {
     width: 28px;
     height: 28px;
-    font-size: 15px;
-  }
-  .stepper-btn {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-  }
-  .stepper-val {
-    width: 44px;
     font-size: 15px;
   }
   .page-btn {
