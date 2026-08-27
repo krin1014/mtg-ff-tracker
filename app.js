@@ -49,7 +49,10 @@ let currentView = "grid"; // 'grid' | 'table'
 let currentPage = 1;
 let pageSize = 60;
 let filteredCards = [];
-let activeGameFilter = "all";
+// Which Final Fantasy games are being shown. Empty means all of them - the
+// same "no filter" state the selects express as "all", kept as an empty list
+// so the membership tests below do not need a special case for it.
+let activeGames = [];
 let activeLocationFilter = "all";
 let locationUiSignature = "";
 let cardsById = new Map();
@@ -862,6 +865,28 @@ function addInventoryLot(cardId, patch) {
   return created.id;
 }
 
+/**
+ * Record today's market price as what was paid for one lot.
+ *
+ * Priced against the lot's own finish, so a foil lot takes the foil price
+ * rather than the card's headline one.
+ */
+function useMarketPriceForLot(cardId, lotId) {
+  const card = cardsById.get(cardId);
+  const entry = readCard(cardId);
+  const lot = entryInventory(entry).find(item => item.id === lotId);
+  if (!card || !lot) return;
+
+  const unit = getActiveUnitPrice(card, lot.variant);
+  if (!unit.value) {
+    showToast("No market price recorded for that finish", true);
+    return;
+  }
+  if (updateInventoryLot(cardId, lotId, { purchasePrice: unit.value })) {
+    showToast(`Paid set to the market price, ${money(unit.value, unit.currency)}`);
+  }
+}
+
 /** Returns false when the lot is gone - a sync can take it out underneath. */
 function updateInventoryLot(cardId, lotId, patch) {
   const entry = editCard(cardId);
@@ -1239,7 +1264,9 @@ function saveCollectionState(toastMessage = null) {
 // UI preferences (view mode, sort, filters, page size)
 // ---------------------------------------------------------------------------
 
-const FILTER_IDS = ["filterOwned", "filterGame", "filterSet", "filterVariant",
+// filterGame is deliberately absent: it takes several values at once and is
+// not a <select>, so it is saved, restored, reset and reported on its own.
+const FILTER_IDS = ["filterOwned", "filterSet", "filterVariant",
   "filterTreatment", "filterRarity", "filterColor"];
 
 // Whether the metric cards, progress bar and game pills are showing. The strip
@@ -1305,6 +1332,7 @@ function savePrefs() {
     filters: {}
   };
   FILTER_IDS.forEach(id => { prefs.filters[id] = valueOf(id); });
+  prefs.games = activeGames.slice();
   try {
     localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
   } catch (e) {
@@ -1338,7 +1366,16 @@ function loadPrefs() {
   if (prefs.filters && typeof prefs.filters === "object") {
     FILTER_IDS.forEach(id => setValue(id, prefs.filters[id]));
   }
-  activeGameFilter = valueOf("filterGame") || "all";
+  // Games were a single value before this became a checklist; a saved string
+  // still restores as the one game it named.
+  if (Array.isArray(prefs.games)) {
+    activeGames = prefs.games.filter(game => typeof game === "string" && game);
+  } else if (typeof prefs.games === "string" && prefs.games && prefs.games !== "all") {
+    activeGames = [prefs.games];
+  } else if (prefs.filters && typeof prefs.filters.filterGame === "string"
+             && prefs.filters.filterGame !== "all") {
+    activeGames = [prefs.filters.filterGame];
+  }
   if (typeof prefs.location === "string") activeLocationFilter = prefs.location;
 }
 
@@ -1445,9 +1482,10 @@ document.addEventListener("DOMContentLoaded", () => {
   applyDashboardState();
   applyColumnPrefs();
   buildGamePills();
+  buildGameFilterList();
   initEventListeners();
   updateStaticCounts();
-  syncGamePillActiveState();
+  syncGameFilterUi();
   applyFiltersAndRender();
   registerServiceWorker();
   requestPersistentStorage();
@@ -1491,7 +1529,8 @@ function buildFilterOptions() {
     .filter(game => HIDDEN_GAMES.indexOf(game) === -1)
     .sort(byCanonicalGameOrder);
   GAME_LIST = games;
-  fillSelect("filterGame", "All Games", games.map(v => ({ value: v, label: GAME_LABELS[v] || v })));
+  // The game filter is a checklist, not a select; buildGameFilterList fills it
+  // once GAME_LIST is known.
 
   const variants = distinctValues(card => card.variant);
   fillSelect("filterVariant", "All Styles", variants.map(v => ({ value: v, label: VARIANT_LABELS[v] || v })));
@@ -1522,11 +1561,16 @@ function buildFilterOptions() {
   }
   fillSelect("filterColor", "All Colors", colorOptions);
 
-  const ownership = [{ value: "owned", label: "Any Variant Owned (Yes)" }];
+  // Owned and Not owned read as a pair, at the top. "Not owned" was there
+  // before as "Missing / Not Collected (No)", but it sat last behind seven
+  // per-finish entries and was easy to miss entirely.
+  const ownership = [
+    { value: "owned", label: "Owned (any variant)" },
+    { value: "unowned", label: "Not owned" }
+  ];
   availableVariantKeys().forEach(def => {
-    ownership.push({ value: `has_${def.key}`, label: `Has ${def.label} Collected` });
+    ownership.push({ value: `has_${def.key}`, label: `Owned: ${def.label}` });
   });
-  ownership.push({ value: "unowned", label: "Missing / Not Collected (No)" });
   fillSelect("filterOwned", "All Cards", ownership);
 }
 
@@ -2201,10 +2245,6 @@ function initEventListeners() {
     const el = document.getElementById(id);
     if (!el) return;
     el.addEventListener("change", () => {
-      if (id === "filterGame") {
-        activeGameFilter = el.value;
-        syncGamePillActiveState();
-      }
       currentPage = 1;
       applyFiltersAndRender();
       savePrefs();
@@ -2226,13 +2266,24 @@ function initEventListeners() {
   document.getElementById("emptyResetBtn").addEventListener("click", resetAllFilters);
 
   document.getElementById("clearGameFilterBtn").addEventListener("click", () => {
-    setValue("filterGame", "all");
-    activeGameFilter = "all";
-    syncGamePillActiveState();
-    currentPage = 1;
-    applyFiltersAndRender();
-    savePrefs();
+    setGames([]);
   });
+
+  const gameBtn = document.getElementById("filterGameBtn");
+  if (gameBtn) gameBtn.addEventListener("click", () => toggleGameFilterPanel());
+  const gameList = document.getElementById("filterGameList");
+  if (gameList) {
+    gameList.addEventListener("change", event => {
+      const box = event.target.closest("input[data-game]");
+      if (!box) return;
+      const game = box.getAttribute("data-game");
+      setGames(box.checked
+        ? activeGames.concat([game])
+        : activeGames.filter(g => g !== game));
+    });
+  }
+  const gameClear = document.getElementById("filterGameClearBtn");
+  if (gameClear) gameClear.addEventListener("click", () => setGames([]));
 
   document.getElementById("viewToggleBtn").addEventListener("click", toggleViewMode);
 
@@ -2262,6 +2313,8 @@ function initEventListeners() {
 
   // Click anywhere else, or press Escape, and the panel closes.
   document.addEventListener("click", event => {
+    const games = document.getElementById("filterGameBox");
+    if (games && !games.contains(event.target)) toggleGameFilterPanel(false);
     const picker = document.getElementById("columnPicker");
     if (picker && !picker.contains(event.target)) toggleColumnPicker(false);
   });
@@ -2308,6 +2361,7 @@ function initEventListeners() {
     closeModal();
     closeSyncModal();
     closeBindersModal();
+    toggleGameFilterPanel(false);
     toggleColumnPicker(false);
   });
 
@@ -2410,6 +2464,10 @@ function runAction(target, event) {
       event.preventDefault();
       removeInventoryLot(cardId, target.getAttribute("data-lot-id"));
       break;
+    case "lot-use-market":
+      event.preventDefault();
+      useMarketPriceForLot(cardId, target.getAttribute("data-lot-id"));
+      break;
     case "chip-inc":
       event.preventDefault();
       event.stopPropagation();
@@ -2507,10 +2565,10 @@ function resetAllFilters() {
   document.getElementById("clearSearchBtn").style.display = "none";
   FILTER_IDS.forEach(id => setValue(id, "all"));
   setValue("sortBySelect", "print_style");
-  activeGameFilter = "all";
+  activeGames = [];
   activeLocationFilter = "all";
   locationUiSignature = "";
-  syncGamePillActiveState();
+  syncGameFilterUi();
   currentPage = 1;
   applyFiltersAndRender();
   savePrefs();
@@ -2549,7 +2607,6 @@ function applyViewMode() {
 function applyFiltersAndRender() {
   const query = valueOf("searchInput").trim().toLowerCase();
   const ownedFilter = valueOf("filterOwned");
-  const gameFilter = valueOf("filterGame");
   const setFilter = valueOf("filterSet");
   const variantFilter = valueOf("filterVariant");
   const treatmentFilter = valueOf("filterTreatment");
@@ -2591,7 +2648,8 @@ function applyFiltersAndRender() {
       }
     }
 
-    if (gameFilter !== "all" && card.game !== gameFilter) return false;
+    // Empty means every game, so no membership test is needed for "all".
+    if (activeGames.length && activeGames.indexOf(card.game) === -1) return false;
     if (setFilter !== "all" && card.set !== setFilter) return false;
     if (variantFilter !== "all" && card.variant !== variantFilter) return false;
     // Match against the full treatment list, not just the frame, so picking
@@ -2809,6 +2867,14 @@ function activeFilterChips() {
     chips.push({ key: id, label: option ? option.textContent.trim() : el.value });
   });
 
+  // Games are not in FILTER_IDS - the selection is a list, not a select value -
+  // so its chip is built here. One chip for the whole selection rather than one
+  // per game, because the ✕ clears the lot, which is what "remove this filter"
+  // means for the others too.
+  if (activeGames.length) {
+    chips.push({ key: "filterGame", label: `Game: ${activeGames.join(", ")}` });
+  }
+
   if (activeLocationFilter !== "all") {
     chips.push({ key: "location", label: `\u{1F4D2} ${locationFilterLabel()}` });
   }
@@ -2857,12 +2923,11 @@ function clearOneFilter(key) {
   } else if (key === "location") {
     activeLocationFilter = "all";
     if (isBindersModalOpen()) renderBindersModal();
+  } else if (key === "filterGame") {
+    activeGames = [];
+    syncGameFilterUi();
   } else {
     setValue(key, "all");
-    if (key === "filterGame") {
-      activeGameFilter = "all";
-      syncGamePillActiveState();
-    }
   }
 
   currentPage = 1;
@@ -2873,6 +2938,7 @@ function clearOneFilter(key) {
 /** Highlight the reset control whenever a filter is actually narrowing results. */
 function updateFilterActiveState() {
   const anyFilter = FILTER_IDS.some(id => valueOf(id) !== "all") ||
+    activeGames.length > 0 ||
     activeLocationFilter !== "all" ||
     valueOf("searchInput").trim() !== "";
   const btn = document.getElementById("resetFiltersBtn");
@@ -3516,27 +3582,88 @@ function updateGamePillValues(gameStats) {
     const pct = data.total > 0 ? (data.owned / data.total) * 100 : 0;
     setText(`pillStat_${cssId(game)}`, `${data.owned}/${data.total}`);
     setText(`pillPct_${cssId(game)}`, `${pct.toFixed(0)}%`);
+    // The checklist shows the same figures as the pill, so picking games to
+    // filter by does not mean guessing which ones you have anything from.
+    setText(`gameCount_${cssId(game)}`, `${data.owned}/${data.total}`);
   });
 }
 
+/** A pill toggles its own game in or out of the selection. */
 function selectGamePill(game) {
-  activeGameFilter = activeGameFilter === game ? "all" : game;
-  setValue("filterGame", activeGameFilter);
-  syncGamePillActiveState();
+  setGames(activeGames.indexOf(game) === -1
+    ? activeGames.concat([game])
+    : activeGames.filter(g => g !== game));
+}
+
+/**
+ * The one way the game selection changes.
+ *
+ * Every route in - a pill, a checkbox, "Select all", the chip's ✕, Reset -
+ * comes through here, so the pills, the checklist and the button label cannot
+ * drift apart from what is actually being filtered.
+ */
+function setGames(games) {
+  // Keep the canonical game order rather than the order they were clicked in,
+  // so the chip and the button read FF6, FF7 rather than FF7, FF6.
+  const wanted = new Set(games);
+  activeGames = GAME_LIST.filter(game => wanted.has(game));
+  syncGameFilterUi();
   currentPage = 1;
   applyFiltersAndRender();
   savePrefs();
 }
 
-function syncGamePillActiveState() {
+/** Redraw everything that shows which games are chosen. */
+function syncGameFilterUi() {
+  const chosen = new Set(activeGames);
+
   document.querySelectorAll(".game-pill").forEach(pill => {
-    const isActive = pill.getAttribute("data-game") === activeGameFilter;
+    const isActive = chosen.has(pill.getAttribute("data-game"));
     pill.classList.toggle("active", isActive);
     pill.setAttribute("aria-pressed", String(isActive));
   });
+
+  document.querySelectorAll("#filterGameList input[data-game]").forEach(box => {
+    box.checked = chosen.has(box.getAttribute("data-game"));
+  });
+
+  const btn = document.getElementById("filterGameBtn");
+  if (btn) btn.classList.toggle("has-selection", activeGames.length > 0);
+  setText("filterGameBtnText", gameSelectionLabel());
+
   const clearBtn = document.getElementById("clearGameFilterBtn");
-  if (clearBtn) clearBtn.style.display = activeGameFilter !== "all" ? "inline-block" : "none";
+  if (clearBtn) clearBtn.style.display = activeGames.length ? "inline-block" : "none";
 }
+
+/** "All games", the one game's name, or how many are chosen. */
+function gameSelectionLabel() {
+  if (!activeGames.length) return "All games";
+  if (activeGames.length === 1) return GAME_LABELS[activeGames[0]] || activeGames[0];
+  return `${activeGames.length} games`;
+}
+
+/** Fill the checklist. Called once the game list is known. */
+function buildGameFilterList() {
+  const list = document.getElementById("filterGameList");
+  if (!list) return;
+  list.innerHTML = GAME_LIST.map(game => `
+    <label class="filter-multi-row">
+      <input type="checkbox" data-game="${esc(game)}">
+      <span>${esc(GAME_LABELS[game] || game)}</span>
+      <span class="filter-multi-count" id="gameCount_${esc(cssId(game))}"></span>
+    </label>`).join("");
+}
+
+function toggleGameFilterPanel(force) {
+  const btn = document.getElementById("filterGameBtn");
+  const panel = document.getElementById("filterGamePanel");
+  if (!btn || !panel) return;
+  const open = force === undefined ? btn.getAttribute("aria-expanded") !== "true" : Boolean(force);
+  btn.setAttribute("aria-expanded", String(open));
+  panel.hidden = !open;
+}
+
+
 
 // ---------------------------------------------------------------------------
 // Card Detail / Multi-Variant Modal
@@ -3835,11 +3962,27 @@ function inventoryPanel(card, entry) {
                  data-change="lot-qty" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
         </td>
         <td class="lot-price">
-          <input type="number" min="0" step="0.01" inputmode="decimal"
-                 class="table-input bought-price" placeholder="Paid each"
-                 value="${lot.purchasePrice === null ? "" : esc(lot.purchasePrice.toFixed(2))}"
-                 aria-label="Price paid per copy"
-                 data-change="lot-price" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+          <div class="lot-price-cell">
+            <input type="number" min="0" step="0.01" inputmode="decimal"
+                   class="table-input bought-price" placeholder="0.00"
+                   value="${lot.purchasePrice === null ? "" : esc(lot.purchasePrice.toFixed(2))}"
+                   aria-label="Price paid per copy"
+                   data-change="lot-price" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+            <!-- One click to fill in today's market price for this finish -
+                 the usual case for a card bought at or near the going rate,
+                 and for one you already own and are only valuing. Disabled
+                 when Scryfall has no price for the finish, because there is
+                 nothing to copy in. -->
+            <button type="button" class="lot-price-market" data-action="lot-use-market"
+                    data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}"
+                    ${lot.unitMarket > 0 ? "" : "disabled"}
+                    title="${lot.unitMarket > 0
+                      ? `Use the current market price, ${esc(money(lot.unitMarket, lot.currency))}`
+                      : "No market price for this finish"}"
+                    aria-label="Use the current market price for this purchase">
+              ${lot.unitMarket > 0 ? esc(money(lot.unitMarket, lot.currency)) : "—"}
+            </button>
+          </div>
         </td>
         <td class="lot-date">
           <input type="date" class="table-input bought-date" aria-label="Date bought"

@@ -442,37 +442,18 @@ body {
   padding: 14px 18px;
 }
 
-/* Ships closed now, so it needs to look like something that opens - without a
-   marker the row reads as a heading with nothing under it. */
+/* A heading, not a control. The pills below it are always shown whenever the
+   dashboard panel is open, which is the only thing that collapses them. */
 .games-breakdown-title {
-  cursor: pointer;
-  list-style: none;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--text-secondary);
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-}
-
-.games-breakdown-title::after {
-  content: '▾';
-  margin-left: auto;
-  font-size: 12px;
-  color: var(--accent-cyan);
-  transition: transform 0.2s ease;
-}
-
-.games-breakdown-wrapper[open] > .games-breakdown-title::after {
-  transform: rotate(180deg);
-}
-
-/* The gap belongs between the summary and the pills, so it only exists when
-   there are pills to separate it from. */
-.games-breakdown-wrapper[open] > .games-breakdown-title {
-  margin-bottom: 10px;
 }
 
 .games-pills-row {
@@ -658,12 +639,136 @@ body {
   gap: 6px;
 }
 
-.filter-group label {
+/* Direct children only. The game checklist inside this group is built from
+   <label> rows, and they are content, not headings. */
+.filter-group > label,
+.filter-group-label {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--text-secondary);
+}
+
+/* ---- Multi-select filter (Final Fantasy game) --------------------------
+   A checklist behind a control shaped like the selects beside it, so the row
+   of filters keeps one visual rhythm while this one takes several answers. */
+.filter-multi {
+  position: relative;
+}
+
+.filter-multi-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-multi-btn::after {
+  content: '▾';
+  margin-left: auto;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+.filter-multi-btn[aria-expanded="true"] {
+  border-color: var(--accent-cyan);
+}
+
+.filter-multi-btn[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+  color: var(--accent-cyan);
+}
+
+.filter-multi-btn > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Anything narrowing the view is worth showing as chosen, not merely set. */
+.filter-multi-btn.has-selection {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.filter-multi-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 60;
+  width: max(100%, 268px);
+  max-height: 46vh;
+  overflow-y: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light, var(--border-color));
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+  padding: 10px;
+}
+
+.filter-multi-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 2px 4px 8px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 6px;
+}
+
+.filter-multi-head .btn-text {
+  white-space: nowrap;
+}
+
+.filter-multi-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-multi-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.filter-multi-row:hover {
+  background: var(--bg-surface);
+}
+
+.filter-multi-row input {
+  flex: 0 0 auto;
+  accent-color: var(--accent-cyan);
+}
+
+.filter-multi-row .filter-multi-count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
 }
 
 .filter-group select {
@@ -1645,10 +1750,6 @@ body.modal-open {
   border-radius: 10px;
 }
 
-.games-breakdown-title::-webkit-details-marker {
-  display: none;
-}
-
 .filters-summary::after {
   content: '▾';
   margin-left: auto;
@@ -2060,7 +2161,53 @@ body.modal-open {
 }
 
 .lot-qty { width: 68px; }
-.lot-price { width: 96px; }
+.lot-price { width: 104px; }
+
+/* The market button sits UNDER the field, not beside it. The table divides a
+   fixed width between nine columns, so a column's stated width is only a
+   suggestion - side by side, the field was squeezed to 14px and could not be
+   typed in. Stacked, both stay full width whatever the table decides. */
+.lot-price-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.lot-price-cell .table-input {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Shows the price it will write, so it reads as "use this figure" rather than
+   an unlabelled icon. */
+.lot-price-market {
+  width: 100%;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px dashed var(--border-light, var(--border-color));
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.lot-price-market:hover:not(:disabled),
+.lot-price-market:focus-visible:not(:disabled) {
+  border-style: solid;
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.lot-price-market:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 .lot-date { width: 140px; }
 .lot-variant { min-width: 120px; }
 .lot-condition { min-width: 120px; }

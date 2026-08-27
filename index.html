@@ -106,14 +106,21 @@
 
       <div class="dashboard-panel" id="dashboardPanel">
 
-        <!-- Game Breakdown Pills -->
-        <details class="games-breakdown-wrapper">
-          <summary class="games-breakdown-title">
+        <!-- Game Breakdown Pills
+
+             Not a disclosure of its own. It is the only thing left in the
+             dashboard panel, and that panel already opens and closes from
+             "Show details" above - so a second collapse inside it meant two
+             clicks to reach the pills and nothing to show for the first.
+             Being a plain block also frees "Clear game filter": as a button
+             inside a <summary>, pressing it toggled the disclosure as well. -->
+        <div class="games-breakdown-wrapper">
+          <div class="games-breakdown-title">
             <span>PROGRESS BY FINAL FANTASY GAME <span class="dim-hint">(tap to filter)</span></span>
             <button type="button" id="clearGameFilterBtn" class="btn-text" style="display:none;">Clear game filter</button>
-          </summary>
+          </div>
           <div class="games-pills-row" id="gamePillsRow"></div>
-        </details>
+        </div>
 
       </div><!-- /dashboard-panel -->
 
@@ -152,9 +159,26 @@
             <select id="filterOwned"><option value="all">All cards</option></select>
           </div>
 
+          <!-- Games are the one filter you routinely want more than one of -
+               "show me VI and VII" - so this is a checklist rather than a
+               single-choice dropdown. The pills in the dashboard drive the
+               same selection, and the two always agree. -->
           <div class="filter-group">
-            <label for="filterGame">FF game</label>
-            <select id="filterGame"><option value="all">All games</option></select>
+            <span class="filter-group-label" id="filterGameLabel">FF game</span>
+            <div class="filter-multi" id="filterGameBox">
+              <button type="button" id="filterGameBtn" class="filter-multi-btn"
+                      aria-expanded="false" aria-controls="filterGamePanel"
+                      aria-describedby="filterGameLabel">
+                <span id="filterGameBtnText">All games</span>
+              </button>
+              <div class="filter-multi-panel" id="filterGamePanel" hidden>
+                <div class="filter-multi-head">
+                  <span>Final Fantasy games</span>
+                  <button type="button" id="filterGameClearBtn" class="btn-text">Show all</button>
+                </div>
+                <div class="filter-multi-list" id="filterGameList"></div>
+              </div>
+            </div>
           </div>
 
           <div class="filter-group">
