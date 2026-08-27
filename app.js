@@ -1329,7 +1329,7 @@ function savePrefs() {
     dashboardOpen: dashboardOpen,
     hiddenColumns: hiddenColumns,
     showPurchases: showPurchases,
-    modalSections: modalSections,
+    modalSections: rememberedModalSections(),
     filters: {}
   };
   FILTER_IDS.forEach(id => { prefs.filters[id] = valueOf(id); });
@@ -1379,6 +1379,7 @@ function loadPrefs() {
   }
   if (prefs.modalSections && typeof prefs.modalSections === "object") {
     Object.keys(MODAL_SECTION_DEFAULTS).forEach(key => {
+      if (MODAL_SECTION_PER_CARD.indexOf(key) !== -1) return;
       if (typeof prefs.modalSections[key] === "boolean") {
         modalSections[key] = prefs.modalSections[key];
       }
@@ -2506,10 +2507,15 @@ function runAction(target, event) {
       event.stopPropagation();
       stepVariant(cardId, vkey, -1);
       break;
-    case "modal-step":
+    case "modal-step": {
       event.preventDefault();
-      stepVariant(cardId, vkey, Number(target.getAttribute("data-step")) || 1);
+      const step = Number(target.getAttribute("data-step")) || 1;
+      stepVariant(cardId, vkey, step);
+      // Adding a copy from the variants table is the moment you would want to
+      // say what you paid for it, so the purchase tile opens itself.
+      if (step > 0) openModalSection("purchase");
       break;
+    }
     case "flip-card":
       event.preventDefault();
       flipModalCard();
@@ -4353,11 +4359,27 @@ function focusField(field) {
  */
 const MODAL_SECTION_DEFAULTS = {
   variants: true,
-  purchase: true,
+  // Recomputed for every card - see modalPurchaseDefault. There is nothing to
+  // read in this tile on a card you own no copies of.
+  purchase: false,
   history: true,
   description: false,
-  facts: true
+  facts: false
 };
+
+/**
+ * Tiles whose open state belongs to the CARD, not to a preference.
+ *
+ * Purchase & storage is decided by whether the card has anything recorded, so
+ * it is recomputed each time a card window opens and is deliberately not
+ * carried between cards or saved between visits.
+ */
+const MODAL_SECTION_PER_CARD = ["purchase"];
+
+/** Open the purchase tile when there is something in it worth reading. */
+function modalPurchaseDefault(entry) {
+  return entryInventory(entry).length > 0;
+}
 
 let modalSections = {};
 
@@ -4370,6 +4392,28 @@ function isModalSectionOpen(key) {
 function setModalSectionOpen(key, open) {
   modalSections[key] = Boolean(open);
   savePrefs();
+}
+
+/**
+ * Open a tile that is already on screen, and remember it for this card.
+ *
+ * Used when something the user just did makes a tile worth reading - adding a
+ * copy, for instance. Setting the <details> open does not fire a click, so the
+ * stored state is updated here rather than waiting for the toggle listener.
+ */
+function openModalSection(key) {
+  modalSections[key] = true;
+  const el = document.querySelector(`.modal-section[data-section="${cssEscape(key)}"]`);
+  if (el && !el.open) el.open = true;
+}
+
+/** The tile states worth saving - everything except the per-card ones. */
+function rememberedModalSections() {
+  const out = {};
+  Object.keys(modalSections).forEach(key => {
+    if (MODAL_SECTION_PER_CARD.indexOf(key) === -1) out[key] = modalSections[key];
+  });
+  return out;
 }
 
 /**
@@ -4409,6 +4453,9 @@ function openCardModal(cardId) {
   const name = displayName(card.ff_name);
 
   if (modalCardId !== cardId) resetLotFolds();
+  // Decided by the card rather than remembered: a card with nothing recorded
+  // opens with this tile shut, and recording the first copy opens it.
+  modalSections.purchase = modalPurchaseDefault(entry);
   modalCardId = cardId;
   modalShowingBack = false;
 
