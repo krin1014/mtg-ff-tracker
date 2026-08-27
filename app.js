@@ -3935,83 +3935,137 @@ function purchaseRow(card, entry) {
  * and the cost basis adds them up instead of pricing all three at whichever
  * figure happened to be typed first.
  */
+/**
+ * Which purchase slips are folded open.
+ *
+ * A slip opens by default when it is the only one on the card, or when it has
+ * no price recorded yet - the two cases where you almost certainly came here to
+ * type something. Anything the user opens or closes by hand overrides that, and
+ * is remembered across the panel redraws that editing causes.
+ */
+let lotOpened = new Set();
+let lotClosed = new Set();
+
+function resetLotFolds() {
+  lotOpened = new Set();
+  lotClosed = new Set();
+}
+
+function isLotOpen(lot, lotCount) {
+  if (lotClosed.has(lot.id)) return false;
+  if (lotOpened.has(lot.id)) return true;
+  return lotCount === 1 || lot.purchasePrice === null;
+}
+
+/** "▲ +$19.82" for a lot that has moved, or "" when there is nothing to say. */
+function lotMoveMarkup(lot) {
+  const move = lot.purchasePrice !== null && lot.unitMarket > 0 && lot.currency === "usd"
+    ? lot.market - lot.cost
+    : null;
+  if (move === null) return "";
+  return `<span class="acquired-delta ${move >= 0 ? "is-up" : "is-down"}">` +
+    `${move >= 0 ? "▲" : "▼"} ${move >= 0 ? "+" : "−"}${esc(money2(Math.abs(move)))}</span>`;
+}
+
+/** What one folded slip says about itself: paid each, or that nothing is recorded. */
+function lotPaidSummary(lot) {
+  return lot.purchasePrice === null
+    ? "no price"
+    : `${money(lot.purchasePrice, lot.currency)} ea`;
+}
+
 function inventoryPanel(card, entry) {
   const totals = cardFinancials(card, entry);
   const defs = getCardVariantDefs(card);
+  const count = totals.lots.length;
+
   const rows = totals.lots.map(lot => {
     const def = MASTER_VARIANTS_BY_KEY[lot.variant];
+    const finishName = def ? def.label : lot.variant;
     const options = defs.map(d =>
       `<option value="${esc(d.key)}" ${d.key === lot.variant ? "selected" : ""}>${esc(d.label)}</option>`).join("");
-    const move = lot.purchasePrice !== null && lot.unitMarket > 0 && lot.currency === "usd"
-      ? lot.market - lot.cost
-      : null;
 
     return `
-      <tr class="lot-row" data-lot-id="${esc(lot.id)}">
-        <td class="lot-variant">
-          ${defs.length > 1
-            ? `<select class="table-select" aria-label="Finish for this purchase"
-                       data-change="lot-variant" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
-                 ${options}
-               </select>`
-            : `<span>${def ? def.icon : ""} ${esc(def ? def.label : lot.variant)}</span>`}
-        </td>
-        <td class="lot-qty">
-          <input type="number" min="0" step="1" inputmode="numeric" class="table-input"
-                 value="${lot.quantity}" aria-label="Copies in this purchase"
-                 data-change="lot-qty" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
-        </td>
-        <td class="lot-price">
-          <div class="lot-price-cell">
-            <input type="number" min="0" step="0.01" inputmode="decimal"
-                   class="table-input bought-price" placeholder="0.00"
-                   value="${lot.purchasePrice === null ? "" : esc(lot.purchasePrice.toFixed(2))}"
-                   aria-label="Price paid per copy"
-                   data-change="lot-price" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
-            <!-- One click to fill in today's market price for this finish -
-                 the usual case for a card bought at or near the going rate,
-                 and for one you already own and are only valuing. Disabled
-                 when Scryfall has no price for the finish, because there is
-                 nothing to copy in. -->
-            <button type="button" class="lot-price-market" data-action="lot-use-market"
+      <details class="lot-slip lot-row" data-lot-id="${esc(lot.id)}" ${isLotOpen(lot, count) ? "open" : ""}>
+        <summary class="lot-summary">
+          <span class="lot-chev" aria-hidden="true">▸</span>
+          <span class="lot-sum-name" data-sum-name>${esc(def ? def.icon + " " : "")}${esc(finishName)}</span>
+          <span class="lot-sum-qty" data-sum-qty>×${lot.quantity}</span>
+          <span class="lot-sum-paid" data-sum-paid>${esc(lotPaidSummary(lot))}</span>
+          <span class="lot-sum-move" data-lot-move>${lotMoveMarkup(lot)}</span>
+        </summary>
+
+        <div class="lot-body">
+          <!-- Finish and quantity share the top line: they are the two things
+               that identify a purchase, and pairing them saves the whole row
+               that quantity used to occupy among the fields below. -->
+          <div class="lot-top">
+            ${defs.length > 1
+              ? `<select class="table-select lot-finish" aria-label="Finish for this purchase"
+                         data-change="lot-variant" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+                   ${options}
+                 </select>`
+              : `<span class="lot-finish-fixed">${esc(def ? def.icon : "")} ${esc(finishName)}</span>`}
+            <span class="lot-qty-wrap">
+              <label for="lotQty_${esc(lot.id)}">Qty</label>
+              <input type="number" min="0" step="1" inputmode="numeric" class="table-input"
+                     id="lotQty_${esc(lot.id)}" value="${lot.quantity}"
+                     data-change="lot-qty" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+            </span>
+            <button type="button" class="lot-remove-btn" data-action="lot-remove"
                     data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}"
-                    ${lot.unitMarket > 0 ? "" : "disabled"}
-                    title="${lot.unitMarket > 0
-                      ? `Use the current market price, ${esc(money(lot.unitMarket, lot.currency))}`
-                      : "No market price for this finish"}"
-                    aria-label="Use the current market price for this purchase">
-              ${lot.unitMarket > 0 ? esc(money(lot.unitMarket, lot.currency)) : "—"}
-            </button>
+                    aria-label="Remove this purchase" title="Remove this purchase">×</button>
           </div>
-        </td>
-        <td class="lot-date">
-          <input type="date" class="table-input bought-date" aria-label="Date bought"
-                 value="${esc(lot.purchaseDate || "")}"
-                 data-change="lot-date" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
-        </td>
-        <td class="lot-condition">
-          <select class="table-select" aria-label="Condition of these copies"
-                  data-change="lot-condition" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
-            ${CONDITION_OPTIONS.map(opt =>
-              `<option value="${esc(opt)}" ${lot.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
-          </select>
-        </td>
-        <td class="lot-cost" data-lot-cost>${lot.purchasePrice === null ? "—" : esc(money2(lot.cost))}</td>
-        <td class="lot-market" data-lot-market>${esc(money(lot.market, lot.currency))}</td>
-        <td class="lot-move" data-lot-move>${move === null ? "" :
-          `<span class="acquired-delta ${move >= 0 ? "is-up" : "is-down"}">${move >= 0 ? "▲" : "▼"} ${move >= 0 ? "+" : "−"}${esc(money2(Math.abs(move)))}</span>`}</td>
-        <td class="lot-remove">
-          <button type="button" class="lot-remove-btn" data-action="lot-remove"
-                  data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}"
-                  aria-label="Remove this purchase" title="Remove this purchase">×</button>
-        </td>
-      </tr>`;
+
+          <div class="lot-fields">
+            <span class="lot-field">
+              <span class="lot-field-label">Paid each</span>
+              <span class="lot-price-cell">
+                <input type="number" min="0" step="0.01" inputmode="decimal"
+                       class="table-input bought-price" placeholder="0.00"
+                       value="${lot.purchasePrice === null ? "" : esc(lot.purchasePrice.toFixed(2))}"
+                       aria-label="Price paid per copy"
+                       data-change="lot-price" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+                <button type="button" class="lot-price-market" data-action="lot-use-market"
+                        data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}"
+                        ${lot.unitMarket > 0 ? "" : "disabled"}
+                        title="${lot.unitMarket > 0
+                          ? `Use the current market price, ${esc(money(lot.unitMarket, lot.currency))}`
+                          : "No market price for this finish"}"
+                        aria-label="Use the current market price for this purchase">
+                  ${lot.unitMarket > 0 ? esc(money(lot.unitMarket, lot.currency)) : "—"}
+                </button>
+              </span>
+            </span>
+
+            <span class="lot-field">
+              <span class="lot-field-label">Bought</span>
+              <input type="date" class="table-input bought-date" aria-label="Date bought"
+                     value="${esc(lot.purchaseDate || "")}"
+                     data-change="lot-date" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+            </span>
+
+            <span class="lot-field">
+              <span class="lot-field-label">Condition</span>
+              <select class="table-select" aria-label="Condition of these copies"
+                      data-change="lot-condition" data-card-id="${esc(card.id)}" data-lot-id="${esc(lot.id)}">
+                ${CONDITION_OPTIONS.map(opt =>
+                  `<option value="${esc(opt)}" ${lot.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
+              </select>
+            </span>
+          </div>
+
+          <div class="lot-money">
+            <span>Cost <b data-lot-cost>${lot.purchasePrice === null ? "—" : esc(money2(lot.cost))}</b></span>
+            <span>Value <b data-lot-market>${esc(money(lot.market, lot.currency))}</b></span>
+            <span data-lot-move-full>${lotMoveMarkup(lot)}</span>
+          </div>
+        </div>
+      </details>`;
   }).join("");
 
   const empty = `
-    <tr class="lot-empty"><td colspan="9">
-      No copies recorded yet. Add one to start tracking what you paid.
-    </td></tr>`;
+    <p class="lot-empty">No copies recorded yet. Add one to start tracking what you paid.</p>`;
 
   return `
     <div id="modalInventoryPanel" class="inventory-panel">
@@ -4020,22 +4074,10 @@ function inventoryPanel(card, entry) {
         <button type="button" class="btn btn-outline btn-small" data-action="lot-add"
                 data-card-id="${esc(card.id)}">＋ Add copy / purchase</button>
       </div>
-      <div class="inventory-table-wrap">
-        <table class="inventory-table">
-          <thead>
-            <tr>
-              <th>Finish</th><th>Qty</th><th>Paid each</th><th>Bought</th>
-              <th>Condition</th><th>Cost</th><th>Value</th><th></th><th></th>
-            </tr>
-          </thead>
-          <tbody>${rows || empty}</tbody>
-        </table>
-      </div>
+      <div class="lot-list">${rows || empty}</div>
       <div id="modalInventoryTotals">${inventoryTotals(totals)}</div>
     </div>`;
 }
-
-/** The aggregate line under the breakdown. */
 function inventoryTotals(totals) {
   if (!totals.quantity && !totals.costBasis) return "";
 
@@ -4080,6 +4122,17 @@ function inventoryTotals(totals) {
     ${partial}`;
 }
 
+/** Record which slips are open right now, so a redraw can put them back. */
+function captureLotFolds(host) {
+  if (!host) return;
+  host.querySelectorAll(".lot-slip[data-lot-id]").forEach(slip => {
+    const id = slip.getAttribute("data-lot-id");
+    if (!id) return;
+    if (slip.open) { lotOpened.add(id); lotClosed.delete(id); }
+    else { lotClosed.add(id); lotOpened.delete(id); }
+  });
+}
+
 /**
  * A press in progress, and a redraw waiting for it to finish.
  *
@@ -4103,6 +4156,10 @@ function refreshInventoryPanel(cardId, force) {
   const host = document.getElementById("modalInventoryPanel");
   const card = cardsById.get(cardId);
   if (!host || !card || modalCardId !== cardId) return;
+
+  // Which slips are folded open is user state, and a rebuild would reset every
+  // <details> to its default. Remember it before the markup is replaced.
+  captureLotFolds(host);
 
   // Mid-press: show the new numbers now and rebuild once the press lands.
   if (pointerHeld) {
@@ -4144,15 +4201,22 @@ function refreshInventoryDerived(cardId, card) {
     if (costEl) costEl.textContent = lot.purchasePrice === null ? "—" : money2(lot.cost);
     const marketEl = row.querySelector("[data-lot-market]");
     if (marketEl) marketEl.textContent = money(lot.market, lot.currency);
-    const moveEl = row.querySelector("[data-lot-move]");
-    if (moveEl) {
-      const move = lot.purchasePrice !== null && lot.unitMarket > 0 && lot.currency === "usd"
-        ? lot.market - lot.cost : null;
-      moveEl.innerHTML = move === null ? ""
-        : `<span class="acquired-delta ${move >= 0 ? "is-up" : "is-down"}">` +
-          `${move >= 0 ? "▲" : "▼"} ${move >= 0 ? "+" : "−"}` +
-          `${esc(money2(Math.abs(move)))}</span>`;
-    }
+    // The gain figure appears twice - once on the folded line, once in the open
+    // body - so both hooks are updated rather than only the first match.
+    const moveMarkup = lotMoveMarkup(lot);
+    row.querySelectorAll("[data-lot-move], [data-lot-move-full]").forEach(el => {
+      el.innerHTML = moveMarkup;
+    });
+
+    // The folded line restates the finish, the count and what was paid, and a
+    // slip can be edited while it is open and then folded, so it has to keep up.
+    const def = MASTER_VARIANTS_BY_KEY[lot.variant];
+    const nameEl = row.querySelector("[data-sum-name]");
+    if (nameEl) nameEl.textContent = `${def ? def.icon + " " : ""}${def ? def.label : lot.variant}`;
+    const qtyEl = row.querySelector("[data-sum-qty]");
+    if (qtyEl) qtyEl.textContent = `×${lot.quantity}`;
+    const paidEl = row.querySelector("[data-sum-paid]");
+    if (paidEl) paidEl.textContent = lotPaidSummary(lot);
   });
   const totalsHost = document.getElementById("modalInventoryTotals");
   if (totalsHost) totalsHost.innerHTML = inventoryTotals(totals);
@@ -4258,6 +4322,7 @@ function openCardModal(cardId) {
   const content = document.getElementById("modalContent");
   const name = displayName(card.ff_name);
 
+  if (modalCardId !== cardId) resetLotFolds();
   modalCardId = cardId;
   modalShowingBack = false;
 

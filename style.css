@@ -1436,10 +1436,17 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
+/* min-width: 0 is the whole reason this window ever scrolled sideways.
+   A grid item defaults to min-width: auto - "never shrink me below my widest
+   contents" - so this column refused the 495px it was allotted, demanded the
+   809px its purchases table wanted, and stretched the modal 284px past its own
+   edge. The two inner overflow-x wrappers never engaged because they had grown
+   to fit as well, so there was nothing left for them to scroll. */
 .modal-details-col {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
 }
 
 .modal-title {
@@ -2119,71 +2126,188 @@ body.modal-open {
   color: var(--text-secondary);
 }
 
-.inventory-table-wrap {
-  overflow-x: auto;
+/* ---------------------------------------------------------------------------
+   Copies & purchases - folding slips
+   ---------------------------------------------------------------------------
+   This was a nine-column table. The card window gives the panel 463px on a
+   desktop and 279px on a small phone, and the table wanted 777px, so it scrolled
+   sideways inside a window that was itself already 284px too wide. A row that
+   reflows has no column budget to blow.
+
+   Folded, a slip is one line; three of them line up and read as a table anyway,
+   because every slip is the same width and the right-hand figures are fixed
+   size. Open, it is finish + quantity on one line, the three fields below, and
+   the money along the bottom.
+   ------------------------------------------------------------------------- */
+
+.lot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lot-slip {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   background: var(--bg-card);
+  /* Slips are the one thing here allowed to be narrow; without this the finish
+     name refuses to ellipsise and pushes the slip wider than the panel. */
+  min-width: 0;
 }
 
-.inventory-table {
-  width: 100%;
-  border-collapse: collapse;
+.lot-slip[open] {
+  border-color: var(--border-light, var(--border-color));
+}
+
+.lot-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
   font-size: 12px;
+  cursor: pointer;
+  list-style: none;
+  min-width: 0;
 }
 
-.inventory-table th {
-  text-align: left;
-  padding: 7px 8px;
+.lot-summary::-webkit-details-marker { display: none; }
+
+.lot-summary:hover { background: rgba(56, 189, 248, 0.06); }
+
+.lot-chev {
+  flex: 0 0 auto;
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.lot-slip[open] .lot-chev { transform: rotate(90deg); }
+
+/* The name gives way first; the figures beside it are the point of the line. */
+.lot-sum-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.lot-sum-qty,
+.lot-sum-paid,
+.lot-sum-move {
+  flex: 0 0 auto;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.lot-sum-qty { color: var(--text-secondary); }
+.lot-sum-paid { color: var(--text-muted); }
+
+.lot-body {
+  padding: 0 10px 10px;
+  border-top: 1px solid rgba(46, 62, 91, 0.6);
+  padding-top: 10px;
+}
+
+/* Finish and quantity share this line. Pairing them is what saves the row that
+   quantity had to itself among the fields below. */
+.lot-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  min-width: 0;
+}
+
+.lot-top .lot-finish {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.lot-finish-fixed {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lot-qty-wrap {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lot-qty-wrap label {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--text-muted);
-  border-bottom: 1px solid var(--border-color);
-  white-space: nowrap;
 }
 
-.inventory-table td {
-  padding: 6px 8px;
-  border-bottom: 1px solid rgba(46, 62, 91, 0.5);
-  vertical-align: middle;
+.lot-qty-wrap .table-input { width: 56px; }
+
+/* Three fields, as many across as will fit. The 130px floor is set by the date
+   picker, which is the widest control and cannot be shrunk below about 118px. */
+.lot-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  align-items: start;
 }
 
-.inventory-table tr:last-child td { border-bottom: none; }
-
-.inventory-table .table-input,
-.inventory-table .table-select {
-  width: 100%;
-  min-width: 72px;
-  padding: 4px 6px;
-  font-size: 12px;
-}
-
-.lot-qty { width: 68px; }
-.lot-price { width: 104px; }
-
-/* The market button sits UNDER the field, not beside it. The table divides a
-   fixed width between nine columns, so a column's stated width is only a
-   suggestion - side by side, the field was squeezed to 14px and could not be
-   typed in. Stacked, both stay full width whatever the table decides. */
-.lot-price-cell {
+.lot-field {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 4px;
+  gap: 3px;
+  min-width: 0;
+}
+
+.lot-field-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.lot-field .table-input,
+.lot-field .table-select {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Kept as a hook for refreshInventoryDerived, which finds a slip by
+   .lot-row[data-lot-id] to update its figures in place. No styling of its own. */
+.lot-row { /* selector hook */ }
+
+/* The field and its one-click market price. In the table these had to stack
+   because the column was 74px; a slip gives them a whole grid track, so they
+   sit side by side and the field is typeable again. */
+.lot-price-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
 }
 
 .lot-price-cell .table-input {
-  width: 100%;
-  min-width: 0;
+  flex: 1 1 auto;
+  min-width: 56px;
 }
 
 /* Shows the price it will write, so it reads as "use this figure" rather than
    an unlabelled icon. */
 .lot-price-market {
-  width: 100%;
-  padding: 4px 6px;
+  flex: 0 0 auto;
+  padding: 6px 8px;
   border-radius: 6px;
   border: 1px dashed var(--border-light, var(--border-color));
   background: transparent;
@@ -2208,32 +2332,34 @@ body.modal-open {
   opacity: 0.4;
   cursor: not-allowed;
 }
-.lot-date { width: 140px; }
-.lot-variant { min-width: 120px; }
-.lot-condition { min-width: 120px; }
 
-.lot-cost,
-.lot-market {
+.lot-money {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(46, 62, 91, 0.6);
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-  text-align: right;
+  font-size: 11px;
+  color: var(--text-muted);
 }
 
-.lot-move { white-space: nowrap; }
-
-.lot-row td:first-child { padding-left: 10px; }
-
-.lot-remove {
-  width: 34px;
-  text-align: center;
+.lot-money b {
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
-.lot-empty td {
+.lot-empty {
+  margin: 0;
   padding: 14px 10px;
   text-align: center;
   color: var(--text-muted);
   font-style: italic;
+  font-size: 12px;
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
 }
 
 .lot-remove-btn {
