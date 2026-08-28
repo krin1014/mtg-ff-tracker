@@ -1567,6 +1567,91 @@ body {
   min-width: 0;
 }
 
+/* --- Modal extras --------------------------------------------------------- */
+.variant-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.variant-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.variant-table th {
+  padding: 6px 8px;
+  color: var(--text-secondary);
+  font-size: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.variant-table td {
+  padding: 8px;
+  border-bottom: 1px solid rgba(46, 62, 91, 0.4);
+  vertical-align: middle;
+}
+
+.stepper-control {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stepper-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  width: 26px;
+  height: 28px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepper-btn:hover {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.stepper-val {
+  width: 32px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.variant-price {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.variant-status {
+  font-weight: 700;
+  color: #64748B;
+}
+
+.variant-status.is-collected {
+  color: #10B981;
+}
+
+.modal-total-badge {
+  font-family: var(--font-mono);
+  color: #34D399;
+}
+
+.serial-input {
+  width: 110px;
+  font-size: 11px;
+}
+
 /* The price-history tile is drawn empty and revealed once there are readings;
    the box inside it already carries the chart's own frame. */
 #modalPriceHistorySection .price-history {

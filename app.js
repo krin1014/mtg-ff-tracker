@@ -2516,6 +2516,15 @@ function runAction(target, event) {
       event.stopPropagation();
       stepVariant(cardId, vkey, -1);
       break;
+    case "modal-step": {
+      event.preventDefault();
+      const step = Number(target.getAttribute("data-step")) || 1;
+      stepVariant(cardId, vkey, step);
+      // Adding a copy here is the moment you would want to say what you paid
+      // for it, so the purchase tile opens itself.
+      if (step > 0) openModalSection("purchase");
+      break;
+    }
     case "flip-card":
       event.preventDefault();
       flipModalCard();
@@ -3295,11 +3304,23 @@ function refreshCardUI(cardId) {
     });
   }
 
-  // Gated on the open card, not on an element inside it. This used to hang off
-  // the "Total Copies" badge in the print-variants tile; when that tile was
-  // removed the badge went with it, and the whole block - the purchase panel
-  // redraw included - would have silently stopped running.
-  if (modalCardId === cardId) refreshInventoryPanel(cardId);
+  // Gated on the open card, not on an element inside it. Keying this off the
+  // "Total Copies" badge meant that removing the print-variants tile silently
+  // stopped the purchase panel redrawing too; the card id cannot go missing.
+  if (modalCardId === cardId) {
+    setText("modalTotalCopiesBadge", `${totalQty} Total Copies`);
+    getCardVariantDefs(card).forEach(def => {
+      const qty = entry.variants[def.key] || 0;
+      const valEl = document.getElementById(`modalVal_${def.key}`);
+      if (valEl) valEl.textContent = String(qty);
+      const statusEl = document.getElementById(`modalStatus_${def.key}`);
+      if (statusEl) {
+        statusEl.textContent = qty > 0 ? "✓ Collected" : "—";
+        statusEl.classList.toggle("is-collected", qty > 0);
+      }
+    });
+    refreshInventoryPanel(cardId);
+  }
 
   refreshPurchaseDisplays(cardId, card, entry);
 }
@@ -4481,9 +4502,30 @@ function openCardModal(cardId) {
 
   const hasBack = Boolean(card.back_image);
 
-  // The serial number was the one field in the removed print-variants tile
-  // with nowhere else to live, so it moves in with the other per-card details.
-  const serialDef = getCardVariantDefs(card).find(def => def.key === "serialized");
+  const variantRows = getCardVariantDefs(card).map(def => {
+    const qty = entry.variants[def.key] || 0;
+    const price = variantPrice(card, def);
+    return `
+      <tr>
+        <td><strong>${def.icon} ${esc(def.label)}</strong></td>
+        <td class="variant-price">${money(price.value, price.currency)}</td>
+        <td>
+          <div class="stepper-control">
+            <button type="button" class="stepper-btn" data-action="modal-step" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}" data-step="-1" aria-label="Remove one ${esc(def.label)}">−</button>
+            <div class="stepper-val" id="modalVal_${esc(def.key)}">${qty}</div>
+            <button type="button" class="stepper-btn" data-action="modal-step" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}" data-step="1" aria-label="Add one ${esc(def.label)}">+</button>
+          </div>
+        </td>
+        <td>
+          ${def.key === "serialized"
+            ? `<input type="text" class="table-input serial-input" placeholder="# 042 / 500"
+                 value="${esc(entry.serialNumbers.serialized || "")}"
+                 aria-label="Serial number"
+                 data-change="serial" data-card-id="${esc(card.id)}">`
+            : `<span class="variant-status ${qty > 0 ? "is-collected" : ""}" id="modalStatus_${esc(def.key)}">${qty > 0 ? "✓ Collected" : "—"}</span>`}
+        </td>
+      </tr>`;
+  }).join("");
 
   content.innerHTML = `
     <div class="modal-image-col">
@@ -4500,6 +4542,20 @@ function openCardModal(cardId) {
         <div class="modal-type">${esc(card.type_line)}${card.mana_cost ? ` • ${esc(card.mana_cost)}` : ""}</div>
       </div>
 
+      ${modalSection("variants", "\u{1F451} Available print variants", `
+        <div class="variant-table-wrap">
+          <table class="variant-table">
+            <thead>
+              <tr><th>Variant Finish</th><th>Est. Price</th><th>Quantity Owned</th><th>Status / Notes</th></tr>
+            </thead>
+            <tbody>${variantRows}</tbody>
+          </table>
+        </div>`, {
+          accent: true,
+          // Stays on the header, so the count is readable with the tile shut.
+          aside: `<span class="modal-total-badge" id="modalTotalCopiesBadge" data-card-id="${esc(card.id)}">${totalQty} Total Copies</span>`
+        })}
+
       ${modalSection("purchase", "\u{1F4B0} Purchase &amp; storage", `
         ${inventoryPanel(card, entry)}
         <div class="modal-field-grid">
@@ -4514,13 +4570,6 @@ function openCardModal(cardId) {
               ${CONDITION_OPTIONS.map(opt => `<option value="${esc(opt)}" ${entry.condition === opt ? "selected" : ""}>${esc(opt)}</option>`).join("")}
             </select>
           </div>
-          ${serialDef ? `
-          <div>
-            <label class="field-label" for="modalSerialInput">Serial number</label>
-            <input id="modalSerialInput" type="text" class="table-input" placeholder="# 042 / 500"
-                   value="${esc(entry.serialNumbers.serialized || "")}"
-                   data-change="serial" data-card-id="${esc(card.id)}">
-          </div>` : ""}
         </div>`)}
 
       ${modalSection("history", "\u{1F4C8} Price history",
