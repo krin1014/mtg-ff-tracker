@@ -98,7 +98,7 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -142,7 +142,7 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.44,
+    "price_eur": 0.46,
     "price_eur_foil": null
   },
   {
@@ -274,7 +274,7 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.5,
+    "price_eur": 0.49,
     "price_eur_foil": null
   },
   {
@@ -1156,7 +1156,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.69,
+    "price_eur": 1.58,
     "price_eur_foil": null
   },
   {
@@ -1201,7 +1201,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.13,
+    "price_eur": 1.19,
     "price_eur_foil": null
   },
   {
@@ -1246,7 +1246,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.56,
+    "price_eur": 1.76,
     "price_eur_foil": null
   },
   {
@@ -1291,7 +1291,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.22,
+    "price_eur": 1.33,
     "price_eur_foil": null
   },
   {
@@ -1336,7 +1336,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.33,
+    "price_eur": 1.41,
     "price_eur_foil": null
   },
   {
@@ -1381,7 +1381,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.82,
+    "price_eur": 0.68,
     "price_eur_foil": null
   },
   {
@@ -1426,7 +1426,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.98,
+    "price_eur": 1.04,
     "price_eur_foil": null
   },
   {
@@ -1561,7 +1561,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.94,
+    "price_eur": 0.83,
     "price_eur_foil": null
   },
   {
@@ -1606,7 +1606,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.24,
+    "price_eur": 1.41,
     "price_eur_foil": null
   },
   {
@@ -1696,7 +1696,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.51,
+    "price_eur": 1.7,
     "price_eur_foil": null
   },
   {
@@ -1741,7 +1741,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.08,
+    "price_eur": 1.24,
     "price_eur_foil": null
   },
   {
@@ -1786,7 +1786,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.97,
+    "price_eur": 1.0,
     "price_eur_foil": null
   },
   {
@@ -1831,7 +1831,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.28,
+    "price_eur": 2.93,
     "price_eur_foil": null
   },
   {
@@ -1876,7 +1876,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.09,
+    "price_eur": 1.07,
     "price_eur_foil": null
   },
   {
@@ -1921,7 +1921,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.22,
+    "price_eur": 1.1,
     "price_eur_foil": null
   },
   {
@@ -1966,7 +1966,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.49,
+    "price_eur": 1.83,
     "price_eur_foil": null
   },
   {
@@ -2011,7 +2011,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.95,
+    "price_eur": 1.82,
     "price_eur_foil": null
   },
   {
@@ -2056,7 +2056,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.75,
+    "price_eur": 1.74,
     "price_eur_foil": null
   },
   {
@@ -2146,7 +2146,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.14,
+    "price_eur": 2.03,
     "price_eur_foil": null
   },
   {
@@ -2236,7 +2236,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.24,
+    "price_eur": 2.37,
     "price_eur_foil": null
   },
   {
@@ -2281,7 +2281,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.92,
+    "price_eur": 0.86,
     "price_eur_foil": null
   },
   {
@@ -2326,7 +2326,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.46,
+    "price_eur": 1.5,
     "price_eur_foil": null
   },
   {
@@ -2416,7 +2416,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.96,
+    "price_eur": 1.81,
     "price_eur_foil": null
   },
   {
@@ -2461,7 +2461,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.99,
+    "price_eur": 2.84,
     "price_eur_foil": null
   },
   {
@@ -2551,7 +2551,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 0.67,
+    "price_eur": 1.0,
     "price_eur_foil": null
   },
   {
@@ -2596,7 +2596,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.3,
+    "price_eur": 3.51,
     "price_eur_foil": null
   },
   {
@@ -2641,7 +2641,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 4.61,
+    "price_eur": 4.52,
     "price_eur_foil": null
   },
   {
@@ -2686,7 +2686,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.47,
+    "price_eur": 1.38,
     "price_eur_foil": null
   },
   {
@@ -2731,7 +2731,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 4.34,
+    "price_eur": 4.0,
     "price_eur_foil": null
   },
   {
@@ -2776,7 +2776,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.25,
+    "price_eur": 1.55,
     "price_eur_foil": null
   },
   {
@@ -2821,7 +2821,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.41,
+    "price_eur": 1.47,
     "price_eur_foil": null
   },
   {
@@ -2866,7 +2866,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.63,
+    "price_eur": 1.69,
     "price_eur_foil": null
   },
   {
@@ -2911,7 +2911,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.26,
+    "price_eur": 1.41,
     "price_eur_foil": null
   },
   {
@@ -2956,7 +2956,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.16,
+    "price_eur": 1.15,
     "price_eur_foil": null
   },
   {
@@ -3001,7 +3001,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.27,
+    "price_eur": 1.78,
     "price_eur_foil": null
   },
   {
@@ -3046,7 +3046,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 4.38,
+    "price_eur": 4.11,
     "price_eur_foil": null
   },
   {
@@ -3091,7 +3091,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.31,
+    "price_eur": 1.4,
     "price_eur_foil": null
   },
   {
@@ -3136,7 +3136,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.12,
+    "price_eur": 2.02,
     "price_eur_foil": null
   },
   {
@@ -3181,7 +3181,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.56,
+    "price_eur": 2.32,
     "price_eur_foil": null
   },
   {
@@ -3226,7 +3226,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.26,
+    "price_eur": 2.22,
     "price_eur_foil": null
   },
   {
@@ -3316,7 +3316,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 5.31,
+    "price_eur": 5.34,
     "price_eur_foil": null
   },
   {
@@ -3361,7 +3361,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.45,
+    "price_eur": 1.54,
     "price_eur_foil": null
   },
   {
@@ -3406,7 +3406,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.72,
+    "price_eur": 2.63,
     "price_eur_foil": null
   },
   {
@@ -3451,7 +3451,7 @@ const CARDS_DATA = [
       "Art Card",
       "Traditional Foil"
     ],
-    "price_eur": 4.51,
+    "price_eur": 4.26,
     "price_eur_foil": null
   },
   {
@@ -3491,16 +3491,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/b/0b9579d8-bc8f-4d74-bfc1-dcdd42568f79.jpg?1783906395",
     "image_large": "https://cards.scryfall.io/large/front/0/b/0b9579d8-bc8f-4d74-bfc1-dcdd42568f79.jpg?1783906395",
     "back_image": "",
-    "price_usd": 5.55,
-    "price_foil": 25.88,
+    "price_usd": 5.27,
+    "price_foil": 28.19,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/1/adeline-resplendent-cathar?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 3.49,
-    "price_eur_foil": 22.98
+    "price_eur": 3.72,
+    "price_eur_foil": 23.98
   },
   {
     "id": "9af0b8d6-f41b-4aa3-ae32-1ef2d1d4bade",
@@ -3539,15 +3539,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/a/9af0b8d6-f41b-4aa3-ae32-1ef2d1d4bade.jpg?1783906394",
     "image_large": "https://cards.scryfall.io/large/front/9/a/9af0b8d6-f41b-4aa3-ae32-1ef2d1d4bade.jpg?1783906394",
     "back_image": "",
-    "price_usd": 42.18,
-    "price_foil": 370.71,
+    "price_usd": 42.44,
+    "price_foil": 373.85,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/2/ranger-captain-of-eos?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 35.38,
+    "price_eur": 34.81,
     "price_eur_foil": 300.52
   },
   {
@@ -3587,16 +3587,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/084d7a61-ef18-42e3-8485-76ae9a36ef7b.jpg?1783906394",
     "image_large": "https://cards.scryfall.io/large/front/0/8/084d7a61-ef18-42e3-8485-76ae9a36ef7b.jpg?1783906394",
     "back_image": "",
-    "price_usd": 7.35,
-    "price_foil": 43.82,
+    "price_usd": 5.89,
+    "price_foil": 48.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/3/sram-senior-edificer?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 4.85,
-    "price_eur_foil": 20.85
+    "price_eur": 4.93,
+    "price_eur_foil": 21.73
   },
   {
     "id": "e1e48b21-1a4f-4708-a4b4-e2e296df924c",
@@ -3635,16 +3635,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e1e48b21-1a4f-4708-a4b4-e2e296df924c.jpg?1783906394",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e1e48b21-1a4f-4708-a4b4-e2e296df924c.jpg?1783906394",
     "back_image": "",
-    "price_usd": 2.47,
-    "price_foil": 5.18,
+    "price_usd": 2.76,
+    "price_foil": 4.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/4/counterspell?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 3.07,
-    "price_eur_foil": 4.25
+    "price_eur": 3.1,
+    "price_eur_foil": 3.89
   },
   {
     "id": "98294441-b5a1-4b59-9325-80d0ff913ebd",
@@ -3683,15 +3683,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/8/98294441-b5a1-4b59-9325-80d0ff913ebd.jpg?1783906394",
     "image_large": "https://cards.scryfall.io/large/front/9/8/98294441-b5a1-4b59-9325-80d0ff913ebd.jpg?1783906394",
     "back_image": "",
-    "price_usd": 26.19,
-    "price_foil": 280.91,
+    "price_usd": 26.1,
+    "price_foil": 283.91,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/5/urza-lord-high-artificer?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 20.21,
+    "price_eur": 20.3,
     "price_eur_foil": 218.6
   },
   {
@@ -3731,16 +3731,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/9/d9aa060d-8682-4803-9ab9-052250e3d794.jpg?1783906394",
     "image_large": "https://cards.scryfall.io/large/front/d/9/d9aa060d-8682-4803-9ab9-052250e3d794.jpg?1783906394",
     "back_image": "",
-    "price_usd": 1.77,
-    "price_foil": 11.81,
+    "price_usd": 1.63,
+    "price_foil": 12.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/6/venser-shaper-savant?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.1,
-    "price_eur_foil": 10.72
+    "price_eur": 1.11,
+    "price_eur_foil": 10.75
   },
   {
     "id": "24b2833e-6c08-4f33-8481-f65f2a063c60",
@@ -3779,16 +3779,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/24b2833e-6c08-4f33-8481-f65f2a063c60.jpg?1783906393",
     "image_large": "https://cards.scryfall.io/large/front/2/4/24b2833e-6c08-4f33-8481-f65f2a063c60.jpg?1783906393",
     "back_image": "",
-    "price_usd": 17.44,
-    "price_foil": 61.94,
+    "price_usd": 19.16,
+    "price_foil": 63.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/7/bolass-citadel?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 10.33,
-    "price_eur_foil": 40.8
+    "price_eur": 10.17,
+    "price_eur_foil": 40.27
   },
   {
     "id": "7cc0cfe1-7f13-4b1b-9a37-33ef457d3c62",
@@ -3827,16 +3827,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/c/7cc0cfe1-7f13-4b1b-9a37-33ef457d3c62.jpg?1783906393",
     "image_large": "https://cards.scryfall.io/large/front/7/c/7cc0cfe1-7f13-4b1b-9a37-33ef457d3c62.jpg?1783906393",
     "back_image": "",
-    "price_usd": 10.27,
-    "price_foil": 43.73,
+    "price_usd": 9.73,
+    "price_foil": 45.0,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/8/dark-ritual?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 9.19,
-    "price_eur_foil": 35.29
+    "price_eur": 9.51,
+    "price_eur_foil": 38.29
   },
   {
     "id": "2430f223-edb2-402b-a85b-5d328323992d",
@@ -3875,16 +3875,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/2430f223-edb2-402b-a85b-5d328323992d.jpg?1783906394",
     "image_large": "https://cards.scryfall.io/large/front/2/4/2430f223-edb2-402b-a85b-5d328323992d.jpg?1783906394",
     "back_image": "",
-    "price_usd": 0.67,
-    "price_foil": 2.18,
+    "price_usd": 0.42,
+    "price_foil": 2.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/9/fatal-push?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.84,
-    "price_eur_foil": 3.08
+    "price_eur": 0.74,
+    "price_eur_foil": 2.86
   },
   {
     "id": "5b40815d-0104-461e-b193-fcf5e1f35299",
@@ -3924,15 +3924,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/b/5b40815d-0104-461e-b193-fcf5e1f35299.jpg?1783906394",
     "back_image": "",
     "price_usd": 1.24,
-    "price_foil": 6.03,
+    "price_foil": 6.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/10/syr-konrad-the-grim?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.67,
-    "price_eur_foil": 2.79
+    "price_eur": 0.61,
+    "price_eur_foil": 2.81
   },
   {
     "id": "6ed83401-0b7e-48c7-b1a4-8e97aec29960",
@@ -3971,15 +3971,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/e/6ed83401-0b7e-48c7-b1a4-8e97aec29960.jpg?1783906392",
     "image_large": "https://cards.scryfall.io/large/front/6/e/6ed83401-0b7e-48c7-b1a4-8e97aec29960.jpg?1783906392",
     "back_image": "",
-    "price_usd": 26.59,
-    "price_foil": 138.41,
+    "price_usd": 26.84,
+    "price_foil": 140.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/11/yawgmoth-thran-physician?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 28.66,
+    "price_eur": 29.09,
     "price_eur_foil": 92.61
   },
   {
@@ -4019,15 +4019,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f6cbc754-8aed-4c32-857c-ea639943b5d2.jpg?1783906392",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f6cbc754-8aed-4c32-857c-ea639943b5d2.jpg?1783906392",
     "back_image": "",
-    "price_usd": 110.25,
-    "price_foil": 433.61,
+    "price_usd": 113.69,
+    "price_foil": 441.85,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/12/ancient-copper-dragon?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 92.05,
+    "price_eur": 97.69,
     "price_eur_foil": 405.06
   },
   {
@@ -4067,16 +4067,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/2/b24b733e-f98a-4ae1-9e54-eb416dea7cf6.jpg?1783906391",
     "image_large": "https://cards.scryfall.io/large/front/b/2/b24b733e-f98a-4ae1-9e54-eb416dea7cf6.jpg?1783906391",
     "back_image": "",
-    "price_usd": 4.03,
-    "price_foil": 22.18,
+    "price_usd": 3.48,
+    "price_foil": 22.66,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/13/godo-bandit-warlord?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.21,
-    "price_eur_foil": 20.27
+    "price_eur": 2.06,
+    "price_eur_foil": 20.35
   },
   {
     "id": "fbd25e79-d29b-4b51-9653-3932c980b931",
@@ -4115,16 +4115,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/b/fbd25e79-d29b-4b51-9653-3932c980b931.jpg?1783906391",
     "image_large": "https://cards.scryfall.io/large/front/f/b/fbd25e79-d29b-4b51-9653-3932c980b931.jpg?1783906391",
     "back_image": "",
-    "price_usd": 30.23,
-    "price_foil": 145.94,
+    "price_usd": 29.76,
+    "price_foil": 153.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/14/purphoros-god-of-the-forge?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 23.3,
-    "price_eur_foil": 130.2
+    "price_eur": 22.97,
+    "price_eur_foil": 153.25
   },
   {
     "id": "ea8e1f76-bd26-4037-8556-e348d50bfd95",
@@ -4163,7 +4163,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/a/ea8e1f76-bd26-4037-8556-e348d50bfd95.jpg?1783906390",
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea8e1f76-bd26-4037-8556-e348d50bfd95.jpg?1783906390",
     "back_image": "",
-    "price_usd": 11.45,
+    "price_usd": 11.75,
     "price_foil": 46.99,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/15/azusa-lost-but-seeking?utm_source=api",
@@ -4171,7 +4171,7 @@ const CARDS_DATA = [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 8.82,
+    "price_eur": 8.89,
     "price_eur_foil": 34.95
   },
   {
@@ -4211,16 +4211,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/f/5f2b2373-9052-4246-a644-1f5b723ea9f1.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/5/f/5f2b2373-9052-4246-a644-1f5b723ea9f1.jpg?1783906389",
     "back_image": "",
-    "price_usd": 29.24,
-    "price_foil": 125.37,
+    "price_usd": 28.64,
+    "price_foil": 130.55,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/16/nyxbloom-ancient?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 20.58,
-    "price_eur_foil": 72.28
+    "price_eur": 20.4,
+    "price_eur_foil": 96.94
   },
   {
     "id": "c02bef17-a293-4f77-8043-104864de4eaa",
@@ -4259,16 +4259,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/0/c02bef17-a293-4f77-8043-104864de4eaa.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/c/0/c02bef17-a293-4f77-8043-104864de4eaa.jpg?1783906389",
     "back_image": "",
-    "price_usd": 5.49,
-    "price_foil": 35.33,
+    "price_usd": 4.43,
+    "price_foil": 35.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/17/jodah-the-unifier?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.61,
-    "price_eur_foil": 25.37
+    "price_eur": 2.37,
+    "price_eur_foil": 25.3
   },
   {
     "id": "87eff269-c8d7-479e-ade4-383b8622e70d",
@@ -4307,16 +4307,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/7/87eff269-c8d7-479e-ade4-383b8622e70d.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/8/7/87eff269-c8d7-479e-ade4-383b8622e70d.jpg?1783906389",
     "back_image": "",
-    "price_usd": 11.88,
-    "price_foil": 70.14,
+    "price_usd": 11.37,
+    "price_foil": 70.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/18/tymna-the-weaver?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 9.66,
-    "price_eur_foil": 46.26
+    "price_eur": 9.58,
+    "price_eur_foil": 49.07
   },
   {
     "id": "6e1a948f-2d7f-4398-9f56-90dac6897c69",
@@ -4355,16 +4355,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/e/6e1a948f-2d7f-4398-9f56-90dac6897c69.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/6/e/6e1a948f-2d7f-4398-9f56-90dac6897c69.jpg?1783906389",
     "back_image": "",
-    "price_usd": 2.33,
-    "price_foil": 13.34,
+    "price_usd": 2.24,
+    "price_foil": 14.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/19/winota-joiner-of-forces?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.71,
-    "price_eur_foil": 11.61
+    "price_eur": 1.89,
+    "price_eur_foil": 12.08
   },
   {
     "id": "3f0cbff1-4b4e-4d60-b114-20bd3e977b25",
@@ -4403,16 +4403,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/f/3f0cbff1-4b4e-4d60-b114-20bd3e977b25.jpg?1783906388",
     "image_large": "https://cards.scryfall.io/large/front/3/f/3f0cbff1-4b4e-4d60-b114-20bd3e977b25.jpg?1783906388",
     "back_image": "",
-    "price_usd": 1.71,
-    "price_foil": 11.06,
+    "price_usd": 1.79,
+    "price_foil": 11.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/20/traxos-scourge-of-kroog?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.03,
-    "price_eur_foil": 10.17
+    "price_eur": 1.09,
+    "price_eur_foil": 10.31
   },
   {
     "id": "fc9c542d-ff46-4193-9972-68287879a8a0",
@@ -4451,16 +4451,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fc9c542d-ff46-4193-9972-68287879a8a0.jpg?1783906388",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fc9c542d-ff46-4193-9972-68287879a8a0.jpg?1783906388",
     "back_image": "",
-    "price_usd": 35.2,
-    "price_foil": 135.22,
+    "price_usd": 34.74,
+    "price_foil": 140.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/21/akromas-will?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 25.27,
-    "price_eur_foil": 131.95
+    "price_eur": 23.75,
+    "price_eur_foil": 151.89
   },
   {
     "id": "210ff924-215e-4ae8-8706-5af3891c6605",
@@ -4499,16 +4499,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/1/210ff924-215e-4ae8-8706-5af3891c6605.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/2/1/210ff924-215e-4ae8-8706-5af3891c6605.jpg?1783906389",
     "back_image": "",
-    "price_usd": 0.54,
-    "price_foil": 2.77,
+    "price_usd": 0.6,
+    "price_foil": 2.71,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/22/danitha-capashen-paragon?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.22,
-    "price_eur_foil": 1.22
+    "price_eur": 0.27,
+    "price_eur_foil": 1.21
   },
   {
     "id": "d51b956a-acca-4aee-92ff-bd90a9814988",
@@ -4547,16 +4547,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/5/d51b956a-acca-4aee-92ff-bd90a9814988.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/d/5/d51b956a-acca-4aee-92ff-bd90a9814988.jpg?1783906389",
     "back_image": "",
-    "price_usd": 4.55,
-    "price_foil": 28.16,
+    "price_usd": 4.6,
+    "price_foil": 28.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/23/kenrith-the-returned-king?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 3.01,
-    "price_eur_foil": 20.33
+    "price_eur": 2.99,
+    "price_eur_foil": 18.99
   },
   {
     "id": "450ec0a6-839b-4a35-a79b-ae358408a17c",
@@ -4595,16 +4595,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/5/450ec0a6-839b-4a35-a79b-ae358408a17c.jpg?1783906388",
     "image_large": "https://cards.scryfall.io/large/front/4/5/450ec0a6-839b-4a35-a79b-ae358408a17c.jpg?1783906388",
     "back_image": "",
-    "price_usd": 5.76,
-    "price_foil": 28.49,
+    "price_usd": 5.9,
+    "price_foil": 29.37,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/24/loran-of-the-third-path?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 4.05,
-    "price_eur_foil": 28.14
+    "price_eur": 4.01,
+    "price_eur_foil": 31.14
   },
   {
     "id": "232b5c18-0a0a-425d-89aa-de2db833a22c",
@@ -4643,15 +4643,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/3/232b5c18-0a0a-425d-89aa-de2db833a22c.jpg?1783906387",
     "image_large": "https://cards.scryfall.io/large/front/2/3/232b5c18-0a0a-425d-89aa-de2db833a22c.jpg?1783906387",
     "back_image": "",
-    "price_usd": 2.54,
-    "price_foil": 14.97,
+    "price_usd": 2.9,
+    "price_foil": 14.98,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/25/mangara-the-diplomat?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.45,
+    "price_eur": 2.17,
     "price_eur_foil": 11.86
   },
   {
@@ -4691,16 +4691,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/1/711135d0-7769-4154-873a-e2505f8795f0.jpg?1783906389",
     "image_large": "https://cards.scryfall.io/large/front/7/1/711135d0-7769-4154-873a-e2505f8795f0.jpg?1783906389",
     "back_image": "",
-    "price_usd": 1.53,
-    "price_foil": 10.4,
+    "price_usd": 1.01,
+    "price_foil": 10.56,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/26/stroke-of-midnight?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.53,
-    "price_eur_foil": 4.0
+    "price_eur": 0.56,
+    "price_eur_foil": 4.04
   },
   {
     "id": "ae94ab2a-5a6b-4358-ad7f-bdc9a98a9ac0",
@@ -4739,16 +4739,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/e/ae94ab2a-5a6b-4358-ad7f-bdc9a98a9ac0.jpg?1783906386",
     "image_large": "https://cards.scryfall.io/large/front/a/e/ae94ab2a-5a6b-4358-ad7f-bdc9a98a9ac0.jpg?1783906386",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.75,
+    "price_usd": 0.28,
+    "price_foil": 0.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/27/wall-of-omens?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.68
+    "price_eur": 0.22,
+    "price_eur_foil": 0.58
   },
   {
     "id": "c14f8bce-d5b3-4d01-8346-8a4923ec03d9",
@@ -4787,16 +4787,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/1/c14f8bce-d5b3-4d01-8346-8a4923ec03d9.jpg?1783906385",
     "image_large": "https://cards.scryfall.io/large/front/c/1/c14f8bce-d5b3-4d01-8346-8a4923ec03d9.jpg?1783906385",
     "back_image": "",
-    "price_usd": 1.68,
-    "price_foil": 5.44,
+    "price_usd": 1.59,
+    "price_foil": 5.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/28/brainstorm?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.27,
-    "price_eur_foil": 5.27
+    "price_eur": 2.25,
+    "price_eur_foil": 4.84
   },
   {
     "id": "7b182d1f-be0f-4b97-bca3-083483f7713c",
@@ -4835,16 +4835,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/b/7b182d1f-be0f-4b97-bca3-083483f7713c.jpg?1783906387",
     "image_large": "https://cards.scryfall.io/large/front/7/b/7b182d1f-be0f-4b97-bca3-083483f7713c.jpg?1783906387",
     "back_image": "",
-    "price_usd": 5.55,
-    "price_foil": 17.73,
+    "price_usd": 6.32,
+    "price_foil": 17.78,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/29/cryptic-command?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 4.33,
-    "price_eur_foil": 14.58
+    "price_eur": 4.24,
+    "price_eur_foil": 14.78
   },
   {
     "id": "44ede007-b6db-4396-8b25-9e2621cfeec4",
@@ -4883,16 +4883,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/44ede007-b6db-4396-8b25-9e2621cfeec4.jpg?1783906386",
     "image_large": "https://cards.scryfall.io/large/front/4/4/44ede007-b6db-4396-8b25-9e2621cfeec4.jpg?1783906386",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.94,
+    "price_usd": 0.39,
+    "price_foil": 0.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/30/laboratory-maniac?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.37,
-    "price_eur_foil": 0.67
+    "price_eur": 0.42,
+    "price_eur_foil": 0.57
   },
   {
     "id": "cd212de7-25f6-4b3b-a35b-df7d87fe205b",
@@ -4931,16 +4931,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/d/cd212de7-25f6-4b3b-a35b-df7d87fe205b.jpg?1783906385",
     "image_large": "https://cards.scryfall.io/large/front/c/d/cd212de7-25f6-4b3b-a35b-df7d87fe205b.jpg?1783906385",
     "back_image": "",
-    "price_usd": 110.25,
-    "price_foil": 405.95,
+    "price_usd": 112.82,
+    "price_foil": 414.92,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/31/rhystic-study?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 68.63,
-    "price_eur_foil": 360.45
+    "price_eur": 68.35,
+    "price_eur_foil": 345.16
   },
   {
     "id": "9ca8fdd4-7e62-4475-9aed-c227ab3977f7",
@@ -4979,16 +4979,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/c/9ca8fdd4-7e62-4475-9aed-c227ab3977f7.jpg?1783906384",
     "image_large": "https://cards.scryfall.io/large/front/9/c/9ca8fdd4-7e62-4475-9aed-c227ab3977f7.jpg?1783906384",
     "back_image": "",
-    "price_usd": 2.12,
-    "price_foil": 15.16,
+    "price_usd": 2.09,
+    "price_foil": 15.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/32/teferi-mage-of-zhalfir?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.42,
-    "price_eur_foil": 12.26
+    "price_eur": 1.4,
+    "price_eur_foil": 11.94
   },
   {
     "id": "a4e0b297-6d33-4e2b-b497-aa952dcf2141",
@@ -5027,7 +5027,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a4e0b297-6d33-4e2b-b497-aa952dcf2141.jpg?1783906385",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a4e0b297-6d33-4e2b-b497-aa952dcf2141.jpg?1783906385",
     "back_image": "",
-    "price_usd": 0.51,
+    "price_usd": 0.55,
     "price_foil": 1.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/33/deadly-dispute?utm_source=api",
@@ -5035,8 +5035,8 @@ const CARDS_DATA = [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.53,
-    "price_eur_foil": 1.34
+    "price_eur": 0.54,
+    "price_eur_foil": 1.05
   },
   {
     "id": "a2ec8e5e-ada8-4cd7-b43d-157568356a80",
@@ -5075,16 +5075,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/2/a2ec8e5e-ada8-4cd7-b43d-157568356a80.jpg?1783906385",
     "image_large": "https://cards.scryfall.io/large/front/a/2/a2ec8e5e-ada8-4cd7-b43d-157568356a80.jpg?1783906385",
     "back_image": "",
-    "price_usd": 16.38,
-    "price_foil": 43.68,
+    "price_usd": 16.4,
+    "price_foil": 44.67,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/34/diabolic-intent?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 11.37,
-    "price_eur_foil": 29.95
+    "price_eur": 11.15,
+    "price_eur_foil": 31.66
   },
   {
     "id": "f1de9d89-4cbf-453b-ab6d-88090bd7a204",
@@ -5123,16 +5123,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/1/f1de9d89-4cbf-453b-ab6d-88090bd7a204.jpg?1783906384",
     "image_large": "https://cards.scryfall.io/large/front/f/1/f1de9d89-4cbf-453b-ab6d-88090bd7a204.jpg?1783906384",
     "back_image": "",
-    "price_usd": 5.04,
-    "price_foil": 34.72,
+    "price_usd": 5.2,
+    "price_foil": 35.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/35/gix-yawgmoth-praetor?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 5.43,
-    "price_eur_foil": 31.11
+    "price_eur": 5.25,
+    "price_eur_foil": 35.04
   },
   {
     "id": "45393005-78c7-4056-9ce6-310264922af3",
@@ -5171,16 +5171,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/5/45393005-78c7-4056-9ce6-310264922af3.jpg?1783906384",
     "image_large": "https://cards.scryfall.io/large/front/4/5/45393005-78c7-4056-9ce6-310264922af3.jpg?1783906384",
     "back_image": "",
-    "price_usd": 3.62,
-    "price_foil": 19.01,
+    "price_usd": 3.23,
+    "price_foil": 19.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/36/krrik-son-of-yawgmoth?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.97,
-    "price_eur_foil": 11.93
+    "price_eur": 1.89,
+    "price_eur_foil": 12.49
   },
   {
     "id": "e6628dee-54b1-4e04-90b2-3b327a2de090",
@@ -5219,16 +5219,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/6/e6628dee-54b1-4e04-90b2-3b327a2de090.jpg?1783906384",
     "image_large": "https://cards.scryfall.io/large/front/e/6/e6628dee-54b1-4e04-90b2-3b327a2de090.jpg?1783906384",
     "back_image": "",
-    "price_usd": 3.42,
-    "price_foil": 11.83,
+    "price_usd": 3.17,
+    "price_foil": 11.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/37/varragoth-bloodsky-sire?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 3.39,
-    "price_eur_foil": 9.89
+    "price_eur": 3.06,
+    "price_eur_foil": 10.41
   },
   {
     "id": "7c3aeedd-d41b-44c9-9b0a-e5952202f632",
@@ -5267,16 +5267,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/c/7c3aeedd-d41b-44c9-9b0a-e5952202f632.jpg?1783906383",
     "image_large": "https://cards.scryfall.io/large/front/7/c/7c3aeedd-d41b-44c9-9b0a-e5952202f632.jpg?1783906383",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.41,
+    "price_usd": 0.35,
+    "price_foil": 0.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/38/captain-lannery-storm?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
-    "price_eur_foil": 0.56
+    "price_eur": 0.17,
+    "price_eur_foil": 0.51
   },
   {
     "id": "686150d8-1d01-4c4f-8e4d-61ada78d6859",
@@ -5315,16 +5315,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/8/686150d8-1d01-4c4f-8e4d-61ada78d6859.jpg?1783906384",
     "image_large": "https://cards.scryfall.io/large/front/6/8/686150d8-1d01-4c4f-8e4d-61ada78d6859.jpg?1783906384",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.83,
+    "price_usd": 0.27,
+    "price_foil": 0.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/39/light-up-the-stage?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.19,
-    "price_eur_foil": 0.82
+    "price_eur": 0.23,
+    "price_eur_foil": 0.75
   },
   {
     "id": "e89794ab-6070-4916-936f-2b42fe41d31b",
@@ -5363,16 +5363,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/8/e89794ab-6070-4916-936f-2b42fe41d31b.jpg?1783906382",
     "image_large": "https://cards.scryfall.io/large/front/e/8/e89794ab-6070-4916-936f-2b42fe41d31b.jpg?1783906382",
     "back_image": "",
-    "price_usd": 0.69,
-    "price_foil": 1.92,
+    "price_usd": 0.77,
+    "price_foil": 1.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/40/lightning-bolt?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.44,
-    "price_eur_foil": 2.81
+    "price_eur": 1.43,
+    "price_eur_foil": 2.75
   },
   {
     "id": "8a139398-4d42-4715-8a5a-c446bf665a2e",
@@ -5411,16 +5411,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/a/8a139398-4d42-4715-8a5a-c446bf665a2e.jpg?1783906381",
     "image_large": "https://cards.scryfall.io/large/front/8/a/8a139398-4d42-4715-8a5a-c446bf665a2e.jpg?1783906381",
     "back_image": "",
-    "price_usd": 5.05,
-    "price_foil": 14.11,
+    "price_usd": 5.28,
+    "price_foil": 14.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/41/mizzixs-mastery?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 6.55,
-    "price_eur_foil": 13.98
+    "price_eur": 6.09,
+    "price_eur_foil": 18.16
   },
   {
     "id": "cc30e027-8cb8-4b06-a24a-6ad49d6a2cf3",
@@ -5459,16 +5459,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/c/cc30e027-8cb8-4b06-a24a-6ad49d6a2cf3.jpg?1783906382",
     "image_large": "https://cards.scryfall.io/large/front/c/c/cc30e027-8cb8-4b06-a24a-6ad49d6a2cf3.jpg?1783906382",
     "back_image": "",
-    "price_usd": 13.96,
-    "price_foil": 131.78,
+    "price_usd": 14.71,
+    "price_foil": 132.38,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/42/najeela-the-blade-blossom?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 10.4,
-    "price_eur_foil": 92.12
+    "price_eur": 10.57,
+    "price_eur_foil": 105.49
   },
   {
     "id": "a71d1ec3-2d7a-4749-8936-8bf7a8b83d84",
@@ -5507,16 +5507,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/7/a71d1ec3-2d7a-4749-8936-8bf7a8b83d84.jpg?1783906379",
     "image_large": "https://cards.scryfall.io/large/front/a/7/a71d1ec3-2d7a-4749-8936-8bf7a8b83d84.jpg?1783906379",
     "back_image": "",
-    "price_usd": 41.88,
-    "price_foil": 168.18,
+    "price_usd": 38.65,
+    "price_foil": 168.38,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/43/ragavan-nimble-pilferer?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 29.81,
-    "price_eur_foil": 121.13
+    "price_eur": 29.53,
+    "price_eur_foil": 158.04
   },
   {
     "id": "dd28c05c-9473-4df8-9bb3-70593f2c5a50",
@@ -5555,16 +5555,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/d/dd28c05c-9473-4df8-9bb3-70593f2c5a50.jpg?1783906382",
     "image_large": "https://cards.scryfall.io/large/front/d/d/dd28c05c-9473-4df8-9bb3-70593f2c5a50.jpg?1783906382",
     "back_image": "",
-    "price_usd": 2.83,
-    "price_foil": 20.77,
+    "price_usd": 2.86,
+    "price_foil": 21.01,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/44/carpet-of-flowers?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.24,
-    "price_eur_foil": 18.97
+    "price_eur": 2.38,
+    "price_eur_foil": 18.95
   },
   {
     "id": "f36f237f-6b44-4513-ba5d-fe6b4936f78e",
@@ -5603,16 +5603,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/3/f36f237f-6b44-4513-ba5d-fe6b4936f78e.jpg?1783906380",
     "image_large": "https://cards.scryfall.io/large/front/f/3/f36f237f-6b44-4513-ba5d-fe6b4936f78e.jpg?1783906380",
     "back_image": "",
-    "price_usd": 1.23,
-    "price_foil": 4.32,
+    "price_usd": 1.45,
+    "price_foil": 4.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/45/farseek?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.91,
-    "price_eur_foil": 2.78
+    "price_eur": 0.98,
+    "price_eur_foil": 2.44
   },
   {
     "id": "e983925b-de9c-4a09-8bff-913301aff269",
@@ -5652,15 +5652,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/9/e983925b-de9c-4a09-8bff-913301aff269.jpg?1783906381",
     "back_image": "",
     "price_usd": 0.29,
-    "price_foil": 0.42,
+    "price_foil": 0.37,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/46/fynn-the-fangbearer?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.64
+    "price_eur": 0.11,
+    "price_eur_foil": 0.66
   },
   {
     "id": "d349901d-f9a6-4f09-a881-531c695cf1c4",
@@ -5699,7 +5699,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/3/d349901d-f9a6-4f09-a881-531c695cf1c4.jpg?1783906381",
     "image_large": "https://cards.scryfall.io/large/front/d/3/d349901d-f9a6-4f09-a881-531c695cf1c4.jpg?1783906381",
     "back_image": "",
-    "price_usd": 0.52,
+    "price_usd": 0.68,
     "price_foil": 2.13,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/47/natures-claim?utm_source=api",
@@ -5707,8 +5707,8 @@ const CARDS_DATA = [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.5,
-    "price_eur_foil": 1.7
+    "price_eur": 0.56,
+    "price_eur_foil": 1.45
   },
   {
     "id": "972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a",
@@ -5747,15 +5747,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/7/972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a.jpg?1783906380",
     "image_large": "https://cards.scryfall.io/large/front/9/7/972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a.jpg?1783906380",
     "back_image": "",
-    "price_usd": 4.83,
-    "price_foil": 22.22,
+    "price_usd": 4.4,
+    "price_foil": 22.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/48/primeval-titan?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 4.36,
+    "price_eur": 4.19,
     "price_eur_foil": 21.51
   },
   {
@@ -5795,15 +5795,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/e/be326fe9-4ed8-4f64-934c-9955edea5fdb.jpg?1783906381",
     "image_large": "https://cards.scryfall.io/large/front/b/e/be326fe9-4ed8-4f64-934c-9955edea5fdb.jpg?1783906381",
     "back_image": "",
-    "price_usd": 30.78,
-    "price_foil": 294.97,
+    "price_usd": 30.53,
+    "price_foil": 328.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/49/atraxa-grand-unifier?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 25.03,
+    "price_eur": 26.1,
     "price_eur_foil": 228.57
   },
   {
@@ -5843,7 +5843,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/7/07889f56-740f-4d17-9b0e-8d8e9e327f31.jpg?1783906380",
     "image_large": "https://cards.scryfall.io/large/front/0/7/07889f56-740f-4d17-9b0e-8d8e9e327f31.jpg?1783906380",
     "back_image": "",
-    "price_usd": 1.93,
+    "price_usd": 1.84,
     "price_foil": 11.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/50/bruse-tarl-boorish-herder?utm_source=api",
@@ -5851,8 +5851,8 @@ const CARDS_DATA = [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.87,
-    "price_eur_foil": 9.07
+    "price_eur": 1.95,
+    "price_eur_foil": 9.22
   },
   {
     "id": "ba332954-ed8c-48d7-8d85-971c7b71dccf",
@@ -5891,16 +5891,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/a/ba332954-ed8c-48d7-8d85-971c7b71dccf.jpg?1783906378",
     "image_large": "https://cards.scryfall.io/large/front/b/a/ba332954-ed8c-48d7-8d85-971c7b71dccf.jpg?1783906378",
     "back_image": "",
-    "price_usd": 1.86,
-    "price_foil": 4.92,
+    "price_usd": 2.21,
+    "price_foil": 5.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/51/dovins-veto?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.25,
-    "price_eur_foil": 3.35
+    "price_eur": 1.31,
+    "price_eur_foil": 3.22
   },
   {
     "id": "786a3daa-41a6-4cf3-97bc-c59e1c7cd674",
@@ -5939,16 +5939,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/8/786a3daa-41a6-4cf3-97bc-c59e1c7cd674.jpg?1783906379",
     "image_large": "https://cards.scryfall.io/large/front/7/8/786a3daa-41a6-4cf3-97bc-c59e1c7cd674.jpg?1783906379",
     "back_image": "",
-    "price_usd": 1.58,
-    "price_foil": 10.32,
+    "price_usd": 1.6,
+    "price_foil": 10.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/52/inalla-archmage-ritualist?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.08,
-    "price_eur_foil": 6.83
+    "price_eur": 1.06,
+    "price_eur_foil": 6.94
   },
   {
     "id": "92e0c1a4-e6f3-494d-9238-913af54dbffb",
@@ -5987,15 +5987,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/2/92e0c1a4-e6f3-494d-9238-913af54dbffb.jpg?1783906378",
     "image_large": "https://cards.scryfall.io/large/front/9/2/92e0c1a4-e6f3-494d-9238-913af54dbffb.jpg?1783906378",
     "back_image": "",
-    "price_usd": 3.49,
-    "price_foil": 20.15,
+    "price_usd": 3.33,
+    "price_foil": 20.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/53/ishai-ojutai-dragonspeaker?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.81,
+    "price_eur": 2.97,
     "price_eur_foil": 17.12
   },
   {
@@ -6035,16 +6035,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/3/a3baaf97-171a-40c0-a1dc-74ae05db0e25.jpg?1783906378",
     "image_large": "https://cards.scryfall.io/large/front/a/3/a3baaf97-171a-40c0-a1dc-74ae05db0e25.jpg?1783906378",
     "back_image": "",
-    "price_usd": 8.5,
-    "price_foil": 71.86,
+    "price_usd": 9.18,
+    "price_foil": 75.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/54/isshin-two-heavens-as-one?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 6.72,
-    "price_eur_foil": 54.07
+    "price_eur": 6.78,
+    "price_eur_foil": 55.32
   },
   {
     "id": "e141f975-945e-4e2c-ac04-6083b5bdaf16",
@@ -6083,16 +6083,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e141f975-945e-4e2c-ac04-6083b5bdaf16.jpg?1783906378",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e141f975-945e-4e2c-ac04-6083b5bdaf16.jpg?1783906378",
     "back_image": "",
-    "price_usd": 16.15,
-    "price_foil": 127.05,
+    "price_usd": 16.69,
+    "price_foil": 135.13,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/55/kinnan-bonder-prodigy?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 10.85,
-    "price_eur_foil": 63.44
+    "price_eur": 10.75,
+    "price_eur_foil": 80.91
   },
   {
     "id": "b1a273c4-008a-41a0-84b8-38654303265d",
@@ -6131,16 +6131,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/1/b1a273c4-008a-41a0-84b8-38654303265d.jpg?1783906378",
     "image_large": "https://cards.scryfall.io/large/front/b/1/b1a273c4-008a-41a0-84b8-38654303265d.jpg?1783906378",
     "back_image": "",
-    "price_usd": 2.72,
-    "price_foil": 24.75,
+    "price_usd": 3.26,
+    "price_foil": 25.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/56/kraum-ludevics-opus?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.56,
-    "price_eur_foil": 19.36
+    "price_eur": 2.45,
+    "price_eur_foil": 19.65
   },
   {
     "id": "752e16fc-8ee1-41f7-9495-6ab8029c9353",
@@ -6179,16 +6179,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/752e16fc-8ee1-41f7-9495-6ab8029c9353.jpg?1783906376",
     "image_large": "https://cards.scryfall.io/large/front/7/5/752e16fc-8ee1-41f7-9495-6ab8029c9353.jpg?1783906376",
     "back_image": "",
-    "price_usd": 2.42,
-    "price_foil": 16.74,
+    "price_usd": 2.49,
+    "price_foil": 17.55,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/57/muldrotha-the-gravetide?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.38,
-    "price_eur_foil": 10.72
+    "price_eur": 2.37,
+    "price_eur_foil": 10.8
   },
   {
     "id": "5f13417d-3fe1-4357-b826-cb48dd111247",
@@ -6227,16 +6227,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/f/5f13417d-3fe1-4357-b826-cb48dd111247.jpg?1783906376",
     "image_large": "https://cards.scryfall.io/large/front/5/f/5f13417d-3fe1-4357-b826-cb48dd111247.jpg?1783906376",
     "back_image": "",
-    "price_usd": 18.7,
-    "price_foil": 157.33,
+    "price_usd": 19.43,
+    "price_foil": 162.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/58/thrasios-triton-hero?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 15.74,
-    "price_eur_foil": 118.07
+    "price_eur": 15.59,
+    "price_eur_foil": 134.42
   },
   {
     "id": "958077e8-a226-4cb5-839f-35557051c953",
@@ -6275,16 +6275,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/5/958077e8-a226-4cb5-839f-35557051c953.jpg?1783906376",
     "image_large": "https://cards.scryfall.io/large/front/9/5/958077e8-a226-4cb5-839f-35557051c953.jpg?1783906376",
     "back_image": "",
-    "price_usd": 10.07,
-    "price_foil": 67.44,
+    "price_usd": 11.08,
+    "price_foil": 70.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/59/vial-smasher-the-fierce?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 8.51,
-    "price_eur_foil": 45.73
+    "price_eur": 8.85,
+    "price_eur_foil": 49.22
   },
   {
     "id": "6b26622f-7bf5-4a07-b109-4bcb13fdb010",
@@ -6323,16 +6323,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/b/6b26622f-7bf5-4a07-b109-4bcb13fdb010.jpg?1783906375",
     "image_large": "https://cards.scryfall.io/large/front/6/b/6b26622f-7bf5-4a07-b109-4bcb13fdb010.jpg?1783906375",
     "back_image": "",
-    "price_usd": 3.85,
-    "price_foil": 24.42,
+    "price_usd": 3.67,
+    "price_foil": 24.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/60/yuriko-the-tigers-shadow?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 2.57,
-    "price_eur_foil": 20.96
+    "price_eur": 2.05,
+    "price_eur_foil": 20.91
   },
   {
     "id": "d170adf6-eb5e-4094-9917-3b68be92e8b9",
@@ -6371,16 +6371,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d170adf6-eb5e-4094-9917-3b68be92e8b9.jpg?1783906376",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d170adf6-eb5e-4094-9917-3b68be92e8b9.jpg?1783906376",
     "back_image": "",
-    "price_usd": 7.51,
-    "price_foil": 32.98,
+    "price_usd": 8.59,
+    "price_foil": 33.71,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/61/chromatic-lantern?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 5.24,
-    "price_eur_foil": 19.12
+    "price_eur": 5.17,
+    "price_eur_foil": 17.97
   },
   {
     "id": "d0e53c71-6a58-4ea1-a550-f3cbd749eafd",
@@ -6419,7 +6419,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/0/d0e53c71-6a58-4ea1-a550-f3cbd749eafd.jpg?1783906375",
     "image_large": "https://cards.scryfall.io/large/front/d/0/d0e53c71-6a58-4ea1-a550-f3cbd749eafd.jpg?1783906375",
     "back_image": "",
-    "price_usd": 1.56,
+    "price_usd": 1.48,
     "price_foil": 7.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/62/smugglers-copter?utm_source=api",
@@ -6427,8 +6427,8 @@ const CARDS_DATA = [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 1.45,
-    "price_eur_foil": 7.57
+    "price_eur": 1.23,
+    "price_eur_foil": 7.92
   },
   {
     "id": "bcf0d751-5c47-4531-add4-acd07b82adf5",
@@ -6467,16 +6467,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/c/bcf0d751-5c47-4531-add4-acd07b82adf5.jpg?1783906375",
     "image_large": "https://cards.scryfall.io/large/front/b/c/bcf0d751-5c47-4531-add4-acd07b82adf5.jpg?1783906375",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 5.44,
+    "price_usd": 0.32,
+    "price_foil": 5.61,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/63/strixhaven-stadium?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.52
+    "price_eur": 0.2,
+    "price_eur_foil": 0.5
   },
   {
     "id": "2670653e-fcaa-46e3-b3bf-cb8e8b981a9c",
@@ -6515,16 +6515,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/6/2670653e-fcaa-46e3-b3bf-cb8e8b981a9c.jpg?1783906374",
     "image_large": "https://cards.scryfall.io/large/front/2/6/2670653e-fcaa-46e3-b3bf-cb8e8b981a9c.jpg?1783906374",
     "back_image": "",
-    "price_usd": 8.39,
-    "price_foil": 23.3,
+    "price_usd": 8.21,
+    "price_foil": 23.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fca/64/command-beacon?utm_source=api",
     "treatments": [
       "Showcase",
       "Traditional Foil"
     ],
-    "price_eur": 7.21,
-    "price_eur_foil": 15.86
+    "price_eur": 7.17,
+    "price_eur_foil": 15.81
   },
   {
     "id": "30584c53-533b-4dc7-b07c-8600164a99b3",
@@ -6561,16 +6561,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/0/30584c53-533b-4dc7-b07c-8600164a99b3.jpg?1783906375",
     "image_large": "https://cards.scryfall.io/large/front/3/0/30584c53-533b-4dc7-b07c-8600164a99b3.jpg?1783906375",
     "back_image": "",
-    "price_usd": 1.63,
-    "price_foil": 0.47,
+    "price_usd": 1.5,
+    "price_foil": 0.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/1/celes-rune-knight?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.47,
-    "price_eur_foil": 0.38
+    "price_eur": 0.49,
+    "price_eur_foil": 0.46
   },
   {
     "id": "07b4e4f8-6a31-4533-be51-668ce3ddc84f",
@@ -6607,16 +6607,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/7/07b4e4f8-6a31-4533-be51-668ce3ddc84f.jpg?1783906375",
     "image_large": "https://cards.scryfall.io/large/front/0/7/07b4e4f8-6a31-4533-be51-668ce3ddc84f.jpg?1783906375",
     "back_image": "",
-    "price_usd": 1.59,
-    "price_foil": 0.59,
+    "price_usd": 1.53,
+    "price_foil": 0.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/2/cloud-ex-soldier?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.88,
-    "price_eur_foil": 0.49
+    "price_eur": 0.66,
+    "price_eur_foil": 0.45
   },
   {
     "id": "f90eb8ef-ad70-4d6c-9958-e6153f8599bc",
@@ -6653,16 +6653,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f90eb8ef-ad70-4d6c-9958-e6153f8599bc.jpg?1783906373",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f90eb8ef-ad70-4d6c-9958-e6153f8599bc.jpg?1783906373",
     "back_image": "",
-    "price_usd": 0.6,
-    "price_foil": 0.35,
+    "price_usd": 0.68,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/3/graha-tia-scion-reborn?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.43,
-    "price_eur_foil": 0.45
+    "price_eur": 0.44,
+    "price_eur_foil": 0.35
   },
   {
     "id": "5aa1a2d7-6133-41a9-9662-9008d1309935",
@@ -6699,16 +6699,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/a/5aa1a2d7-6133-41a9-9662-9008d1309935.jpg?1783906373",
     "image_large": "https://cards.scryfall.io/large/front/5/a/5aa1a2d7-6133-41a9-9662-9008d1309935.jpg?1783906373",
     "back_image": "",
-    "price_usd": 1.39,
-    "price_foil": 0.42,
+    "price_usd": 1.33,
+    "price_foil": 0.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/4/terra-herald-of-hope?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.46,
-    "price_eur_foil": 0.31
+    "price_eur": 0.69,
+    "price_eur_foil": 0.33
   },
   {
     "id": "2cfd4494-346c-4cbc-8072-e267254cefcc",
@@ -6745,7 +6745,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/c/2cfd4494-346c-4cbc-8072-e267254cefcc.jpg?1783906372",
     "image_large": "https://cards.scryfall.io/large/front/2/c/2cfd4494-346c-4cbc-8072-e267254cefcc.jpg?1783906372",
     "back_image": "",
-    "price_usd": 2.56,
+    "price_usd": 2.61,
     "price_foil": 0.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/5/tidus-yunas-guardian?utm_source=api",
@@ -6753,8 +6753,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.57,
-    "price_eur_foil": 0.59
+    "price_eur": 1.65,
+    "price_eur_foil": 0.49
   },
   {
     "id": "31513afc-329c-4913-8fcd-945c39ec82b2",
@@ -6791,15 +6791,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/1/31513afc-329c-4913-8fcd-945c39ec82b2.jpg?1783906372",
     "image_large": "https://cards.scryfall.io/large/front/3/1/31513afc-329c-4913-8fcd-945c39ec82b2.jpg?1783906372",
     "back_image": "",
-    "price_usd": 3.25,
-    "price_foil": 0.69,
+    "price_usd": 2.9,
+    "price_foil": 0.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/6/tifa-martial-artist?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.36,
+    "price_eur": 1.23,
     "price_eur_foil": 0.52
   },
   {
@@ -6837,16 +6837,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/7/c7f2c2d5-e052-49e8-b5de-712858c2ea78.jpg?1783906373",
     "image_large": "https://cards.scryfall.io/large/front/c/7/c7f2c2d5-e052-49e8-b5de-712858c2ea78.jpg?1783906373",
     "back_image": "",
-    "price_usd": 4.56,
-    "price_foil": 3.27,
+    "price_usd": 5.76,
+    "price_foil": 3.75,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/7/yshtola-nights-blessed?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.29,
-    "price_eur_foil": 1.0
+    "price_eur": 2.55,
+    "price_eur_foil": 1.1
   },
   {
     "id": "930da933-4263-40ff-96af-4bd9e797249e",
@@ -6883,16 +6883,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/930da933-4263-40ff-96af-4bd9e797249e.jpg?1783906371",
     "image_large": "https://cards.scryfall.io/large/front/9/3/930da933-4263-40ff-96af-4bd9e797249e.jpg?1783906371",
     "back_image": "",
-    "price_usd": 3.13,
-    "price_foil": 0.73,
+    "price_usd": 3.1,
+    "price_foil": 0.67,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/8/yuna-grand-summoner?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.91,
-    "price_eur_foil": 0.66
+    "price_eur": 0.97,
+    "price_eur_foil": 0.67
   },
   {
     "id": "ba96f831-02cb-4a74-a2e4-7f76444e3cd7",
@@ -6929,7 +6929,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/a/ba96f831-02cb-4a74-a2e4-7f76444e3cd7.jpg?1783906371",
     "image_large": "https://cards.scryfall.io/large/front/b/a/ba96f831-02cb-4a74-a2e4-7f76444e3cd7.jpg?1783906371",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/9/alisaie-leveilleur?utm_source=api",
@@ -6937,7 +6937,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.38,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -6975,7 +6975,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/b/cb82d614-13d8-40ec-9213-8e6852d37c9c.jpg?1783906371",
     "image_large": "https://cards.scryfall.io/large/front/c/b/cb82d614-13d8-40ec-9213-8e6852d37c9c.jpg?1783906371",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/10/auron-venerated-guardian?utm_source=api",
@@ -6983,7 +6983,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.32,
+    "price_eur": 0.31,
     "price_eur_foil": null
   },
   {
@@ -7021,7 +7021,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d1031ce5-063f-4c38-a6a9-abc15d254dfc.jpg?1783906370",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d1031ce5-063f-4c38-a6a9-abc15d254dfc.jpg?1783906370",
     "back_image": "",
-    "price_usd": 3.77,
+    "price_usd": 3.39,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/11/champions-from-beyond?utm_source=api",
@@ -7029,7 +7029,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.63,
+    "price_eur": 1.71,
     "price_eur_foil": null
   },
   {
@@ -7067,7 +7067,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/8/e874e435-7ade-4299-9803-1358c0f07a8f.jpg?1783906370",
     "image_large": "https://cards.scryfall.io/large/front/e/8/e874e435-7ade-4299-9803-1358c0f07a8f.jpg?1783906370",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/12/chocobo-knights?utm_source=api",
@@ -7075,7 +7075,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.4,
+    "price_eur": 0.42,
     "price_eur_foil": null
   },
   {
@@ -7113,7 +7113,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/f/afa9e3e6-a633-46ad-b52a-48574b2f3d07.jpg?1783906369",
     "image_large": "https://cards.scryfall.io/large/front/a/f/afa9e3e6-a633-46ad-b52a-48574b2f3d07.jpg?1783906369",
     "back_image": "",
-    "price_usd": 0.4,
+    "price_usd": 0.42,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/13/cid-freeflier-pilot?utm_source=api",
@@ -7121,7 +7121,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.74,
+    "price_eur": 0.88,
     "price_eur_foil": null
   },
   {
@@ -7159,7 +7159,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/e/1eb10082-4f0a-41f9-9a70-0d3c7ead249f.jpg?1783906371",
     "image_large": "https://cards.scryfall.io/large/front/1/e/1eb10082-4f0a-41f9-9a70-0d3c7ead249f.jpg?1783906371",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/14/clouds-limit-break?utm_source=api",
@@ -7167,7 +7167,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.3,
+    "price_eur": 0.29,
     "price_eur_foil": null
   },
   {
@@ -7205,7 +7205,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/d/cde3765f-e25c-4d16-b361-448167ed8736.jpg?1783906369",
     "image_large": "https://cards.scryfall.io/large/front/c/d/cde3765f-e25c-4d16-b361-448167ed8736.jpg?1783906369",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.17,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/15/coin-of-fate?utm_source=api",
@@ -7213,7 +7213,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.14,
+    "price_eur": 0.09,
     "price_eur_foil": null
   },
   {
@@ -7251,7 +7251,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/1/a1e779b4-32dd-406b-8b68-48f6df458005.jpg?1783906370",
     "image_large": "https://cards.scryfall.io/large/front/a/1/a1e779b4-32dd-406b-8b68-48f6df458005.jpg?1783906370",
     "back_image": "",
-    "price_usd": 0.17,
+    "price_usd": 0.19,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/16/cyan-vengeful-samurai?utm_source=api",
@@ -7259,7 +7259,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.18,
+    "price_eur": 0.34,
     "price_eur_foil": null
   },
   {
@@ -7297,7 +7297,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/7/27ec595f-406b-4539-8d2e-eb98df1a0fc9.jpg?1783906369",
     "image_large": "https://cards.scryfall.io/large/front/2/7/27ec595f-406b-4539-8d2e-eb98df1a0fc9.jpg?1783906369",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/17/dancers-chakrams?utm_source=api",
@@ -7305,7 +7305,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -7343,7 +7343,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d16553a3-65c3-4dec-af92-123d1e5dce10.jpg?1783906368",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d16553a3-65c3-4dec-af92-123d1e5dce10.jpg?1783906368",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/18/elena-turk-recruit?utm_source=api",
@@ -7351,7 +7351,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -7389,7 +7389,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/7/4742c222-1f29-4e1a-a545-798d175255ca.jpg?1783906368",
     "image_large": "https://cards.scryfall.io/large/front/4/7/4742c222-1f29-4e1a-a545-798d175255ca.jpg?1783906368",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/19/gatta-and-luzzu?utm_source=api",
@@ -7397,7 +7397,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -7443,7 +7443,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -7481,7 +7481,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/e/8e216baf-0e3c-4173-a852-5c5aeb3a9d79.jpg?1783906367",
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e216baf-0e3c-4173-a852-5c5aeb3a9d79.jpg?1783906367",
     "back_image": "",
-    "price_usd": 0.16,
+    "price_usd": 0.2,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/21/heidegger-shinra-executive?utm_source=api",
@@ -7527,7 +7527,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/0/2073f387-9cdd-4184-8704-e6031c934b6d.jpg?1783906367",
     "image_large": "https://cards.scryfall.io/large/front/2/0/2073f387-9cdd-4184-8704-e6031c934b6d.jpg?1783906367",
     "back_image": "",
-    "price_usd": 0.16,
+    "price_usd": 0.18,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/22/helitrooper?utm_source=api",
@@ -7535,7 +7535,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -7573,7 +7573,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/3/134ef3cd-01ac-4d60-a277-df7ab7b8f88c.jpg?1783906367",
     "image_large": "https://cards.scryfall.io/large/front/1/3/134ef3cd-01ac-4d60-a277-df7ab7b8f88c.jpg?1783906367",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/23/lord-jyscal-guado?utm_source=api",
@@ -7581,7 +7581,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.18,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -7619,7 +7619,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/1/917e9267-010d-450c-ab98-6f861250c437.jpg?1783906366",
     "image_large": "https://cards.scryfall.io/large/front/9/1/917e9267-010d-450c-ab98-6f861250c437.jpg?1783906366",
     "back_image": "",
-    "price_usd": 0.42,
+    "price_usd": 0.37,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/24/protection-magic?utm_source=api",
@@ -7627,7 +7627,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.45,
+    "price_eur": 0.47,
     "price_eur_foil": null
   },
   {
@@ -7665,7 +7665,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/d/dddad2c2-bd19-42bd-aad6-bbf23ccef269.jpg?1783906364",
     "image_large": "https://cards.scryfall.io/large/front/d/d/dddad2c2-bd19-42bd-aad6-bbf23ccef269.jpg?1783906364",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.19,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/25/soldier-military-program?utm_source=api",
@@ -7673,7 +7673,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.29,
     "price_eur_foil": null
   },
   {
@@ -7711,7 +7711,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/1/c14098d6-28ae-492f-8ffc-7d115d83ce6a.jpg?1783906365",
     "image_large": "https://cards.scryfall.io/large/front/c/1/c14098d6-28ae-492f-8ffc-7d115d83ce6a.jpg?1783906365",
     "back_image": "",
-    "price_usd": 0.39,
+    "price_usd": 0.37,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/26/summon:-good-king-mog-xii?utm_source=api",
@@ -7719,7 +7719,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.38,
+    "price_eur": 0.4,
     "price_eur_foil": null
   },
   {
@@ -7765,7 +7765,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.35,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -7803,7 +7803,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/d/cdbc2d28-ea35-47c6-af7e-07924e9d5794.jpg?1783906365",
     "image_large": "https://cards.scryfall.io/large/front/c/d/cdbc2d28-ea35-47c6-af7e-07924e9d5794.jpg?1783906365",
     "back_image": "",
-    "price_usd": 1.17,
+    "price_usd": 1.05,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/28/summon:-yojimbo?utm_source=api",
@@ -7811,7 +7811,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.08,
+    "price_eur": 2.02,
     "price_eur_foil": null
   },
   {
@@ -7857,7 +7857,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -7895,7 +7895,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/93176e85-2343-43a8-8578-69699b464b86.jpg?1783906365",
     "image_large": "https://cards.scryfall.io/large/front/9/3/93176e85-2343-43a8-8578-69699b464b86.jpg?1783906365",
     "back_image": "",
-    "price_usd": 9.03,
+    "price_usd": 9.77,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/30/tataru-taru?utm_source=api",
@@ -7903,7 +7903,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 7.52,
+    "price_eur": 7.68,
     "price_eur_foil": null
   },
   {
@@ -7941,7 +7941,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/c/cc74ea74-05cf-4a33-84df-94ec34e816fe.jpg?1783906364",
     "image_large": "https://cards.scryfall.io/large/front/c/c/cc74ea74-05cf-4a33-84df-94ec34e816fe.jpg?1783906364",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.16,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/31/thancred-waters?utm_source=api",
@@ -7987,7 +7987,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8fdb8414-2f08-42fb-ae0a-c7f0af1e144e.jpg?1783906364",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8fdb8414-2f08-42fb-ae0a-c7f0af1e144e.jpg?1783906364",
     "back_image": "",
-    "price_usd": 0.46,
+    "price_usd": 0.4,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/32/ultimate-magic:-holy?utm_source=api",
@@ -7995,7 +7995,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.74,
+    "price_eur": 0.76,
     "price_eur_foil": null
   },
   {
@@ -8033,7 +8033,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/5/65331e86-1ff3-45e4-b789-7afec4ca9bd5.jpg?1783906363",
     "image_large": "https://cards.scryfall.io/large/front/6/5/65331e86-1ff3-45e4-b789-7afec4ca9bd5.jpg?1783906363",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/33/alphinaud-leveilleur?utm_source=api",
@@ -8041,7 +8041,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.39,
+    "price_eur": 0.34,
     "price_eur_foil": null
   },
   {
@@ -8079,7 +8079,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/7/771808d9-d0c8-418b-ab6c-1ae6fc07ca20.jpg?1783906363",
     "image_large": "https://cards.scryfall.io/large/front/7/7/771808d9-d0c8-418b-ab6c-1ae6fc07ca20.jpg?1783906363",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.19,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/34/blitzball-stadium?utm_source=api",
@@ -8087,7 +8087,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -8125,7 +8125,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/b/9b3cfc13-db4e-4ec3-8444-f715bcd43be6.jpg?1783906363",
     "image_large": "https://cards.scryfall.io/large/front/9/b/9b3cfc13-db4e-4ec3-8444-f715bcd43be6.jpg?1783906363",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/35/blue-mages-cane?utm_source=api",
@@ -8133,7 +8133,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -8171,7 +8171,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e04a05e5-7bff-46a4-aae1-6713977e6e30.jpg?1783906363",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e04a05e5-7bff-46a4-aae1-6713977e6e30.jpg?1783906363",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.4,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/36/hermes-overseer-of-elpis?utm_source=api",
@@ -8179,7 +8179,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.46,
+    "price_eur": 0.53,
     "price_eur_foil": null
   },
   {
@@ -8225,7 +8225,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -8263,7 +8263,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/c/9c0b1d5d-2b10-4dde-bb95-8cbf780cca97.jpg?1783906362",
     "image_large": "https://cards.scryfall.io/large/front/9/c/9c0b1d5d-2b10-4dde-bb95-8cbf780cca97.jpg?1783906362",
     "back_image": "",
-    "price_usd": 0.38,
+    "price_usd": 0.39,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/38/lulu-stern-guardian?utm_source=api",
@@ -8271,7 +8271,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.76,
+    "price_eur": 0.8,
     "price_eur_foil": null
   },
   {
@@ -8309,7 +8309,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/d/9d860089-fb88-4736-b7f4-b605551bedc8.jpg?1783906362",
     "image_large": "https://cards.scryfall.io/large/front/9/d/9d860089-fb88-4736-b7f4-b605551bedc8.jpg?1783906362",
     "back_image": "",
-    "price_usd": 0.37,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/39/oaka-traveling-merchant?utm_source=api",
@@ -8317,7 +8317,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.51,
+    "price_eur": 0.56,
     "price_eur_foil": null
   },
   {
@@ -8355,7 +8355,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/3/6301c10c-8c27-4595-a0a7-30c621332b2c.jpg?1783906361",
     "image_large": "https://cards.scryfall.io/large/front/6/3/6301c10c-8c27-4595-a0a7-30c621332b2c.jpg?1783906361",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/40/observed-stasis?utm_source=api",
@@ -8363,7 +8363,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.34,
     "price_eur_foil": null
   },
   {
@@ -8401,7 +8401,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/3/d377cc5f-f6eb-4ed0-a358-af22245f3550.jpg?1783906360",
     "image_large": "https://cards.scryfall.io/large/front/d/3/d377cc5f-f6eb-4ed0-a358-af22245f3550.jpg?1783906360",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/41/rikku-resourceful-guardian?utm_source=api",
@@ -8409,7 +8409,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.41,
+    "price_eur": 0.4,
     "price_eur_foil": null
   },
   {
@@ -8447,7 +8447,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e0474d99-48e5-4e60-8cd6-537a10bcfea5.jpg?1783906359",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e0474d99-48e5-4e60-8cd6-537a10bcfea5.jpg?1783906359",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/42/summon:-valefor?utm_source=api",
@@ -8455,7 +8455,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.29,
+    "price_eur": 0.35,
     "price_eur_foil": null
   },
   {
@@ -8493,7 +8493,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/c/6cb18871-dd23-4ce8-a535-16adefae63c0.jpg?1783906359",
     "image_large": "https://cards.scryfall.io/large/front/6/c/6cb18871-dd23-4ce8-a535-16adefae63c0.jpg?1783906359",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/43/espers-to-magicite?utm_source=api",
@@ -8501,7 +8501,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.39,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -8547,7 +8547,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.92,
+    "price_eur": 2.87,
     "price_eur_foil": null
   },
   {
@@ -8585,7 +8585,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/080fc2be-d463-4e8e-ba42-8f3cb0c95ed3.jpg?1783906359",
     "image_large": "https://cards.scryfall.io/large/front/0/8/080fc2be-d463-4e8e-ba42-8f3cb0c95ed3.jpg?1783906359",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/45/the-falcon-airship-restored?utm_source=api",
@@ -8593,7 +8593,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -8639,7 +8639,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.58,
+    "price_eur": 0.65,
     "price_eur_foil": null
   },
   {
@@ -8677,7 +8677,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/0/30be9a07-5803-4bef-9313-391c926bfcec.jpg?1783906358",
     "image_large": "https://cards.scryfall.io/large/front/3/0/30be9a07-5803-4bef-9313-391c926bfcec.jpg?1783906358",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.17,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/47/interceptor-shadows-hound?utm_source=api",
@@ -8685,7 +8685,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.18,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -8723,7 +8723,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e1e53ff2-c321-4fc8-b4d7-eb253d670c5b.jpg?1783906360",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e1e53ff2-c321-4fc8-b4d7-eb253d670c5b.jpg?1783906360",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/48/reapers-scythe?utm_source=api",
@@ -8769,7 +8769,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/3/f3140950-1ce2-41b8-91f9-da53bfbee963.jpg?1783906358",
     "image_large": "https://cards.scryfall.io/large/front/f/3/f3140950-1ce2-41b8-91f9-da53bfbee963.jpg?1783906358",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/49/rejoin-the-fight?utm_source=api",
@@ -8777,7 +8777,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.29,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -8815,7 +8815,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/8/f88d81d9-8ded-4c20-8237-2218046595fb.jpg?1783906358",
     "image_large": "https://cards.scryfall.io/large/front/f/8/f88d81d9-8ded-4c20-8237-2218046595fb.jpg?1783906358",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/50/shadow-mysterious-assassin?utm_source=api",
@@ -8823,7 +8823,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -8861,7 +8861,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/9/69dadb0c-413e-4658-9cdc-23a65df7a800.jpg?1783906357",
     "image_large": "https://cards.scryfall.io/large/front/6/9/69dadb0c-413e-4658-9cdc-23a65df7a800.jpg?1783906357",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.2,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/51/siegfried-famed-swordsman?utm_source=api",
@@ -8869,7 +8869,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -8907,7 +8907,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/6/66392b0e-8691-42a4-bc84-03b017174a73.jpg?1783906356",
     "image_large": "https://cards.scryfall.io/large/front/6/6/66392b0e-8691-42a4-bc84-03b017174a73.jpg?1783906356",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/52/transpose?utm_source=api",
@@ -8915,7 +8915,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.63,
+    "price_eur": 0.65,
     "price_eur_foil": null
   },
   {
@@ -8953,7 +8953,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/0/20a87dbc-5deb-42ae-9097-806e9a27466f.jpg?1783906357",
     "image_large": "https://cards.scryfall.io/large/front/2/0/20a87dbc-5deb-42ae-9097-806e9a27466f.jpg?1783906357",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/53/avalanche-of-sector-7?utm_source=api",
@@ -8999,7 +8999,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/e/3e0f6c53-6bbf-4d4c-bbbf-4dab22297527.jpg?1783906357",
     "image_large": "https://cards.scryfall.io/large/front/3/e/3e0f6c53-6bbf-4d4c-bbbf-4dab22297527.jpg?1783906357",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/54/cait-sith-fortune-teller?utm_source=api",
@@ -9007,7 +9007,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.32,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -9045,7 +9045,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/9/89175ce1-0746-4ba1-970e-617d134b0527.jpg?1783906357",
     "image_large": "https://cards.scryfall.io/large/front/8/9/89175ce1-0746-4ba1-970e-617d134b0527.jpg?1783906357",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/55/gau-feral-youth?utm_source=api",
@@ -9053,7 +9053,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.38,
     "price_eur_foil": null
   },
   {
@@ -9091,7 +9091,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/d/0db05dc8-03f8-4ab4-9ca3-2aaaa0099eb4.jpg?1783906356",
     "image_large": "https://cards.scryfall.io/large/front/0/d/0db05dc8-03f8-4ab4-9ca3-2aaaa0099eb4.jpg?1783906356",
     "back_image": "",
-    "price_usd": 1.6,
+    "price_usd": 1.52,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/56/gogo-mysterious-mime?utm_source=api",
@@ -9099,7 +9099,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.37,
+    "price_eur": 2.33,
     "price_eur_foil": null
   },
   {
@@ -9137,7 +9137,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/3/43bacd07-fdaf-4ce4-bf7a-dda55a99d460.jpg?1783906355",
     "image_large": "https://cards.scryfall.io/large/front/4/3/43bacd07-fdaf-4ce4-bf7a-dda55a99d460.jpg?1783906355",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.18,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/57/sabin-master-monk?utm_source=api",
@@ -9145,7 +9145,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -9183,7 +9183,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/6/46f1179d-6e48-46ed-ab41-abddace7b5d4.jpg?1783906354",
     "image_large": "https://cards.scryfall.io/large/front/4/6/46f1179d-6e48-46ed-ab41-abddace7b5d4.jpg?1783906354",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/58/snort?utm_source=api",
@@ -9191,7 +9191,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.33,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -9229,7 +9229,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/8/a8c971d0-9ac4-4b34-ae19-1152c1c9dac1.jpg?1783906354",
     "image_large": "https://cards.scryfall.io/large/front/a/8/a8c971d0-9ac4-4b34-ae19-1152c1c9dac1.jpg?1783906354",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/59/strago-and-relm?utm_source=api",
@@ -9237,7 +9237,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -9275,7 +9275,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/f/7f0298b4-c7ca-49b8-baaa-b9fad4c2bfd5.jpg?1783906354",
     "image_large": "https://cards.scryfall.io/large/front/7/f/7f0298b4-c7ca-49b8-baaa-b9fad4c2bfd5.jpg?1783906354",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/60/summon:-esper-valigarmanda?utm_source=api",
@@ -9283,7 +9283,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.26,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -9321,7 +9321,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/a/ba934866-efd0-4126-b1ff-9c7e82b73bd6.jpg?1783906353",
     "image_large": "https://cards.scryfall.io/large/front/b/a/ba934866-efd0-4126-b1ff-9c7e82b73bd6.jpg?1783906353",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/61/summon:-kujata?utm_source=api",
@@ -9329,7 +9329,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.25,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -9367,7 +9367,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/5/b5b0f0fd-574a-4ae7-ab55-b815112d6b3a.jpg?1783906353",
     "image_large": "https://cards.scryfall.io/large/front/b/5/b5b0f0fd-574a-4ae7-ab55-b815112d6b3a.jpg?1783906353",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/62/ultimate-magic:-meteor?utm_source=api",
@@ -9413,7 +9413,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/1/31aed8e9-44be-4e7c-85ac-a084eaecaea7.jpg?1783906353",
     "image_large": "https://cards.scryfall.io/large/front/3/1/31aed8e9-44be-4e7c-85ac-a084eaecaea7.jpg?1783906353",
     "back_image": "",
-    "price_usd": 0.18,
+    "price_usd": 0.17,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/63/umaro-raging-yeti?utm_source=api",
@@ -9421,7 +9421,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -9459,7 +9459,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/e/9e53d0b2-eeb0-4d54-86e5-723e05aaf6da.jpg?1783906353",
     "image_large": "https://cards.scryfall.io/large/front/9/e/9e53d0b2-eeb0-4d54-86e5-723e05aaf6da.jpg?1783906353",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/64/vincent-vengeful-atoner?utm_source=api",
@@ -9467,7 +9467,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.4,
+    "price_eur": 0.47,
     "price_eur_foil": null
   },
   {
@@ -9505,7 +9505,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/1/117bb5db-4a1c-4704-b0b5-c67b45ac2f52.jpg?1783906353",
     "image_large": "https://cards.scryfall.io/large/front/1/1/117bb5db-4a1c-4704-b0b5-c67b45ac2f52.jpg?1783906353",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/65/yuffie-materia-hunter?utm_source=api",
@@ -9513,7 +9513,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.3,
+    "price_eur": 0.4,
     "price_eur_foil": null
   },
   {
@@ -9551,7 +9551,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/99155fae-507a-4eab-918a-bdee021e2262.jpg?1783906352",
     "image_large": "https://cards.scryfall.io/large/front/9/9/99155fae-507a-4eab-918a-bdee021e2262.jpg?1783906352",
     "back_image": "",
-    "price_usd": 0.42,
+    "price_usd": 0.44,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/66/bugenhagen-wise-elder?utm_source=api",
@@ -9559,7 +9559,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.94,
+    "price_eur": 0.86,
     "price_eur_foil": null
   },
   {
@@ -9597,7 +9597,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/8/48b4101b-3428-4b6b-818a-6097a093e9b5.jpg?1783906352",
     "image_large": "https://cards.scryfall.io/large/front/4/8/48b4101b-3428-4b6b-818a-6097a093e9b5.jpg?1783906352",
     "back_image": "",
-    "price_usd": 0.9,
+    "price_usd": 0.86,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/67/lifestreams-blessing?utm_source=api",
@@ -9605,7 +9605,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.03,
+    "price_eur": 1.0,
     "price_eur_foil": null
   },
   {
@@ -9643,7 +9643,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f6a4267b-aa76-4dec-bc72-252236c44968.jpg?1783906351",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f6a4267b-aa76-4dec-bc72-252236c44968.jpg?1783906351",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/68/maester-seymour?utm_source=api",
@@ -9651,7 +9651,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -9689,7 +9689,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/0/107ffe2e-47eb-43de-bc9e-c68013b62912.jpg?1783906351",
     "image_large": "https://cards.scryfall.io/large/front/1/0/107ffe2e-47eb-43de-bc9e-c68013b62912.jpg?1783906351",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/69/professor-hojo?utm_source=api",
@@ -9697,7 +9697,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -9735,7 +9735,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/1/51188b1d-cb45-40f7-a3c2-5652b0679e02.jpg?1783906351",
     "image_large": "https://cards.scryfall.io/large/front/5/1/51188b1d-cb45-40f7-a3c2-5652b0679e02.jpg?1783906351",
     "back_image": "",
-    "price_usd": 9.16,
+    "price_usd": 8.95,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/70/sphere-grid?utm_source=api",
@@ -9743,7 +9743,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 8.77,
+    "price_eur": 8.45,
     "price_eur_foil": null
   },
   {
@@ -9789,7 +9789,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -9827,7 +9827,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/7/176401fb-f87c-4085-9dac-e6c8a843e32e.jpg?1783906350",
     "image_large": "https://cards.scryfall.io/large/front/1/7/176401fb-f87c-4085-9dac-e6c8a843e32e.jpg?1783906350",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/72/summoning-materia?utm_source=api",
@@ -9835,7 +9835,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.49,
     "price_eur_foil": null
   },
   {
@@ -9873,7 +9873,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/f/0f4f6de2-1c3d-4f3b-b999-70879f9cbb26.jpg?1783906349",
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f4f6de2-1c3d-4f3b-b999-70879f9cbb26.jpg?1783906349",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/73/tromell-seymours-butler?utm_source=api",
@@ -9881,7 +9881,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.56,
+    "price_eur": 0.53,
     "price_eur_foil": null
   },
   {
@@ -9919,7 +9919,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/0/5044eedb-f7d9-4b65-aa5b-fb494d00facd.jpg?1783906349",
     "image_large": "https://cards.scryfall.io/large/front/5/0/5044eedb-f7d9-4b65-aa5b-fb494d00facd.jpg?1783906349",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/74/yunas-decision?utm_source=api",
@@ -9927,7 +9927,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -9973,7 +9973,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -10011,7 +10011,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/0/d041a51c-9a28-4b32-9da3-0f06807959f1.jpg?1783906349",
     "image_large": "https://cards.scryfall.io/large/front/d/0/d041a51c-9a28-4b32-9da3-0f06807959f1.jpg?1783906349",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/76/aerith-last-ancient?utm_source=api",
@@ -10057,7 +10057,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9fc1ac8a-bbd4-4d17-81d9-fd04876084b1.jpg?1783906348",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9fc1ac8a-bbd4-4d17-81d9-fd04876084b1.jpg?1783906348",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/77/ardbert-warrior-of-darkness?utm_source=api",
@@ -10065,7 +10065,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.44,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -10103,7 +10103,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/3/63e84ece-b129-457d-84ed-b4280120f08b.jpg?1783906347",
     "image_large": "https://cards.scryfall.io/large/front/6/3/63e84ece-b129-457d-84ed-b4280120f08b.jpg?1783906347",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/78/banon-the-returners-leader?utm_source=api",
@@ -10111,7 +10111,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.29,
     "price_eur_foil": null
   },
   {
@@ -10149,7 +10149,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/e/2e37fd36-84f0-4869-bfae-da4b97c9725d.jpg?1783906346",
     "image_large": "https://cards.scryfall.io/large/front/2/e/2e37fd36-84f0-4869-bfae-da4b97c9725d.jpg?1783906346",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.18,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/79/barret-avalanche-leader?utm_source=api",
@@ -10157,7 +10157,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -10195,7 +10195,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/9/098a8025-6454-45d8-abe3-2c3dada3f582.jpg?1783906346",
     "image_large": "https://cards.scryfall.io/large/front/0/9/098a8025-6454-45d8-abe3-2c3dada3f582.jpg?1783906346",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.17,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/80/edgar-master-machinist?utm_source=api",
@@ -10203,7 +10203,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -10241,7 +10241,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/d/dd3141de-633e-48e3-a89f-a91339f5e882.jpg?1783906347",
     "image_large": "https://cards.scryfall.io/large/front/d/d/dd3141de-633e-48e3-a89f-a91339f5e882.jpg?1783906347",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/81/emet-selch-of-the-third-seat?utm_source=api",
@@ -10249,7 +10249,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.52,
+    "price_eur": 0.58,
     "price_eur_foil": null
   },
   {
@@ -10287,7 +10287,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/8/7812c768-8417-4689-9a51-f577c1cf5dc0.jpg?1783906346",
     "image_large": "https://cards.scryfall.io/large/front/7/8/7812c768-8417-4689-9a51-f577c1cf5dc0.jpg?1783906346",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.18,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/82/estinien-varlineau?utm_source=api",
@@ -10295,7 +10295,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.18,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -10333,7 +10333,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/0/60aed76e-2265-471d-8e41-1d8605603b78.jpg?1783906347",
     "image_large": "https://cards.scryfall.io/large/front/6/0/60aed76e-2265-471d-8e41-1d8605603b78.jpg?1783906347",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.17,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/83/hildibrand-manderville-gentlemans-rise?utm_source=api",
@@ -10379,7 +10379,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/1/21cfc161-11b8-4253-a872-3b08a13b6991.jpg?1783906346",
     "image_large": "https://cards.scryfall.io/large/front/2/1/21cfc161-11b8-4253-a872-3b08a13b6991.jpg?1783906346",
     "back_image": "",
-    "price_usd": 0.39,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/84/kefka-dancing-mad?utm_source=api",
@@ -10387,7 +10387,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.62,
+    "price_eur": 0.72,
     "price_eur_foil": null
   },
   {
@@ -10425,7 +10425,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/42006bd4-f6f0-4638-a50e-46d9d7a54b6e.jpg?1783906346",
     "image_large": "https://cards.scryfall.io/large/front/4/2/42006bd4-f6f0-4638-a50e-46d9d7a54b6e.jpg?1783906346",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/85/kimahri-valiant-guardian?utm_source=api",
@@ -10433,7 +10433,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.26,
+    "price_eur": 0.4,
     "price_eur_foil": null
   },
   {
@@ -10471,7 +10471,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/2/125dd19b-98a0-49d9-a870-63214255e12a.jpg?1783906345",
     "image_large": "https://cards.scryfall.io/large/front/1/2/125dd19b-98a0-49d9-a870-63214255e12a.jpg?1783906345",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/86/krile-baldesion?utm_source=api",
@@ -10517,7 +10517,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/42cd66f2-0704-4c8e-b5de-6df93f4a8bed.jpg?1783906344",
     "image_large": "https://cards.scryfall.io/large/front/4/2/42cd66f2-0704-4c8e-b5de-6df93f4a8bed.jpg?1783906344",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/87/locke-treasure-hunter?utm_source=api",
@@ -10525,7 +10525,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -10563,7 +10563,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/7/97845ece-ceef-468c-a4e3-6fde1413c9f0.jpg?1783906345",
     "image_large": "https://cards.scryfall.io/large/front/9/7/97845ece-ceef-468c-a4e3-6fde1413c9f0.jpg?1783906345",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/88/lyse-hext?utm_source=api",
@@ -10571,7 +10571,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.46,
+    "price_eur": 0.38,
     "price_eur_foil": null
   },
   {
@@ -10617,7 +10617,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -10655,7 +10655,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/b/0b876b1e-fcf4-4e5c-81b0-1080ac8099ed.jpg?1783906343",
     "image_large": "https://cards.scryfall.io/large/front/0/b/0b876b1e-fcf4-4e5c-81b0-1080ac8099ed.jpg?1783906343",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/90/papalymo-totolymo?utm_source=api",
@@ -10663,7 +10663,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -10701,7 +10701,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/0/10407b26-be28-4628-9567-746681e5c834.jpg?1783906343",
     "image_large": "https://cards.scryfall.io/large/front/1/0/10407b26-be28-4628-9567-746681e5c834.jpg?1783906343",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/91/red-xiii-proud-warrior?utm_source=api",
@@ -10709,7 +10709,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.31,
     "price_eur_foil": null
   },
   {
@@ -10747,7 +10747,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/f/df919eb8-9eff-4777-9c46-94c795cda918.jpg?1783906343",
     "image_large": "https://cards.scryfall.io/large/front/d/f/df919eb8-9eff-4777-9c46-94c795cda918.jpg?1783906343",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/92/sephiroth-fallen-hero?utm_source=api",
@@ -10755,7 +10755,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.5,
+    "price_eur": 0.45,
     "price_eur_foil": null
   },
   {
@@ -10793,7 +10793,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/e/5e3e5b0f-c702-4671-ad95-ab0cda1ab83d.jpg?1783906343",
     "image_large": "https://cards.scryfall.io/large/front/5/e/5e3e5b0f-c702-4671-ad95-ab0cda1ab83d.jpg?1783906343",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/93/setzer-wandering-gambler?utm_source=api",
@@ -10801,7 +10801,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -10839,7 +10839,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/f/6f2cec5d-50ea-4d0f-8925-eba06222d015.jpg?1783906342",
     "image_large": "https://cards.scryfall.io/large/front/6/f/6f2cec5d-50ea-4d0f-8925-eba06222d015.jpg?1783906342",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/94/shelinda-yevon-acolyte?utm_source=api",
@@ -10885,7 +10885,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fc0474b7-3d32-49b4-80c7-822de6cdbfa6.jpg?1783906341",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fc0474b7-3d32-49b4-80c7-822de6cdbfa6.jpg?1783906341",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/95/sin-unending-cataclysm?utm_source=api",
@@ -10893,7 +10893,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.34,
+    "price_eur": 0.35,
     "price_eur_foil": null
   },
   {
@@ -10931,7 +10931,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/44d44107-da15-41b9-8dfb-6335c1cbd83a.jpg?1783906341",
     "image_large": "https://cards.scryfall.io/large/front/4/4/44d44107-da15-41b9-8dfb-6335c1cbd83a.jpg?1783906341",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/96/urianger-augurelt?utm_source=api",
@@ -10939,7 +10939,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -10977,7 +10977,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f7fcef4-99fc-4df2-b0f5-4398f71b2fcf.jpg?1783906341",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f7fcef4-99fc-4df2-b0f5-4398f71b2fcf.jpg?1783906341",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/97/wakka-devoted-guardian?utm_source=api",
@@ -10985,7 +10985,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -11023,7 +11023,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/1/019615fa-4bec-41e8-9c4c-2c6f91bdefb2.jpg?1783906341",
     "image_large": "https://cards.scryfall.io/large/front/0/1/019615fa-4bec-41e8-9c4c-2c6f91bdefb2.jpg?1783906341",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.37,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/98/conformer-shuriken?utm_source=api",
@@ -11031,7 +11031,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.29,
+    "price_eur": 0.49,
     "price_eur_foil": null
   },
   {
@@ -11069,7 +11069,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/99fd1cd5-4740-4a0f-b773-3d3b66861d77.jpg?1783906340",
     "image_large": "https://cards.scryfall.io/large/front/9/9/99fd1cd5-4740-4a0f-b773-3d3b66861d77.jpg?1783906340",
     "back_image": "",
-    "price_usd": 0.67,
+    "price_usd": 0.63,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/99/the-warring-triad?utm_source=api",
@@ -11077,7 +11077,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.99,
+    "price_eur": 1.13,
     "price_eur_foil": null
   },
   {
@@ -11162,16 +11162,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/2/92ef9285-e2dc-40fc-86fa-6913bbc405db.jpg?1783906339",
     "image_large": "https://cards.scryfall.io/large/front/9/2/92ef9285-e2dc-40fc-86fa-6913bbc405db.jpg?1783906339",
     "back_image": "",
-    "price_usd": 7.42,
-    "price_foil": 11.18,
+    "price_usd": 7.35,
+    "price_foil": 11.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/101/champions-from-beyond?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.13,
-    "price_eur_foil": 3.8
+    "price_eur": 1.96,
+    "price_eur_foil": 3.01
   },
   {
     "id": "ea58b5ff-7c16-4edf-a27f-b05459c8923f",
@@ -11209,16 +11209,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/a/ea58b5ff-7c16-4edf-a27f-b05459c8923f.jpg?1783906340",
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea58b5ff-7c16-4edf-a27f-b05459c8923f.jpg?1783906340",
     "back_image": "",
-    "price_usd": 0.96,
-    "price_foil": 1.6,
+    "price_usd": 0.94,
+    "price_foil": 1.71,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/102/chocobo-knights?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.83,
-    "price_eur_foil": 1.16
+    "price_eur": 0.89,
+    "price_eur_foil": 1.22
   },
   {
     "id": "8d49825c-8264-40a5-9afc-c2601f95ec26",
@@ -11256,16 +11256,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/d/8d49825c-8264-40a5-9afc-c2601f95ec26.jpg?1783906338",
     "image_large": "https://cards.scryfall.io/large/front/8/d/8d49825c-8264-40a5-9afc-c2601f95ec26.jpg?1783906338",
     "back_image": "",
-    "price_usd": 0.72,
-    "price_foil": 1.53,
+    "price_usd": 0.74,
+    "price_foil": 1.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/103/clouds-limit-break?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.66,
-    "price_eur_foil": 1.44
+    "price_eur": 0.83,
+    "price_eur_foil": 1.32
   },
   {
     "id": "652be579-44ad-4656-975b-5e336a9e21c8",
@@ -11303,16 +11303,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/5/652be579-44ad-4656-975b-5e336a9e21c8.jpg?1783906338",
     "image_large": "https://cards.scryfall.io/large/front/6/5/652be579-44ad-4656-975b-5e336a9e21c8.jpg?1783906338",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.62,
+    "price_usd": 0.3,
+    "price_foil": 0.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/104/coin-of-fate?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.3,
-    "price_eur_foil": 0.7
+    "price_eur": 0.29,
+    "price_eur_foil": 0.69
   },
   {
     "id": "13764c53-57cc-4418-8a15-cdb72f6f3b0e",
@@ -11350,16 +11350,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/3/13764c53-57cc-4418-8a15-cdb72f6f3b0e.jpg?1783906338",
     "image_large": "https://cards.scryfall.io/large/front/1/3/13764c53-57cc-4418-8a15-cdb72f6f3b0e.jpg?1783906338",
     "back_image": "",
-    "price_usd": 1.24,
-    "price_foil": 1.88,
+    "price_usd": 1.12,
+    "price_foil": 1.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/105/dancers-chakrams?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.44,
-    "price_eur_foil": 1.44
+    "price_eur": 0.46,
+    "price_eur_foil": 1.43
   },
   {
     "id": "4fe4000f-e7aa-48e7-a0be-8cc1c2698ad0",
@@ -11398,15 +11398,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/f/4fe4000f-e7aa-48e7-a0be-8cc1c2698ad0.jpg?1783906339",
     "back_image": "",
     "price_usd": 0.36,
-    "price_foil": 0.47,
+    "price_foil": 0.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/106/helitrooper?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.37,
-    "price_eur_foil": 0.73
+    "price_eur": 0.47,
+    "price_eur_foil": 0.66
   },
   {
     "id": "2d4f9623-fd04-4377-b7cf-fbd896ebe03f",
@@ -11444,16 +11444,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/d/2d4f9623-fd04-4377-b7cf-fbd896ebe03f.jpg?1783906337",
     "image_large": "https://cards.scryfall.io/large/front/2/d/2d4f9623-fd04-4377-b7cf-fbd896ebe03f.jpg?1783906337",
     "back_image": "",
-    "price_usd": 1.23,
-    "price_foil": 2.55,
+    "price_usd": 1.28,
+    "price_foil": 2.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/107/protection-magic?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.18,
-    "price_eur_foil": 2.91
+    "price_eur": 1.04,
+    "price_eur_foil": 2.83
   },
   {
     "id": "fda5e860-2d9c-4c7a-981a-86c58e59cd14",
@@ -11492,7 +11492,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/d/fda5e860-2d9c-4c7a-981a-86c58e59cd14.jpg?1783906338",
     "back_image": "",
     "price_usd": 0.54,
-    "price_foil": 0.99,
+    "price_foil": 0.97,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/108/soldier-military-program?utm_source=api",
     "treatments": [
@@ -11500,7 +11500,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.49,
-    "price_eur_foil": 0.98
+    "price_eur_foil": 1.09
   },
   {
     "id": "c539c201-64c2-475c-b934-8a738d071b02",
@@ -11538,16 +11538,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/5/c539c201-64c2-475c-b934-8a738d071b02.jpg?1783906339",
     "image_large": "https://cards.scryfall.io/large/front/c/5/c539c201-64c2-475c-b934-8a738d071b02.jpg?1783906339",
     "back_image": "",
-    "price_usd": 0.62,
-    "price_foil": 1.61,
+    "price_usd": 0.55,
+    "price_foil": 1.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/109/summoners-sending?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.69,
-    "price_eur_foil": 1.07
+    "price_eur": 0.61,
+    "price_eur_foil": 1.19
   },
   {
     "id": "6c85ce70-7080-430e-8560-81bc09ca329e",
@@ -11585,16 +11585,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/c/6c85ce70-7080-430e-8560-81bc09ca329e.jpg?1783906337",
     "image_large": "https://cards.scryfall.io/large/front/6/c/6c85ce70-7080-430e-8560-81bc09ca329e.jpg?1783906337",
     "back_image": "",
-    "price_usd": 2.64,
-    "price_foil": 3.57,
+    "price_usd": 2.85,
+    "price_foil": 3.78,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/110/ultimate-magic:-holy?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.89,
-    "price_eur_foil": 3.37
+    "price_eur": 1.94,
+    "price_eur_foil": 3.17
   },
   {
     "id": "931c1983-f606-4dc2-8d0b-3a7160ee0d06",
@@ -11632,7 +11632,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/931c1983-f606-4dc2-8d0b-3a7160ee0d06.jpg?1783906335",
     "image_large": "https://cards.scryfall.io/large/front/9/3/931c1983-f606-4dc2-8d0b-3a7160ee0d06.jpg?1783906335",
     "back_image": "",
-    "price_usd": 0.41,
+    "price_usd": 0.38,
     "price_foil": 0.75,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/111/blitzball-stadium?utm_source=api",
@@ -11640,8 +11640,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.49,
-    "price_eur_foil": 0.96
+    "price_eur": 0.44,
+    "price_eur_foil": 1.0
   },
   {
     "id": "1b3188ab-feb9-4486-bda0-1b80f128f7d2",
@@ -11679,7 +11679,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/b/1b3188ab-feb9-4486-bda0-1b80f128f7d2.jpg?1783906336",
     "image_large": "https://cards.scryfall.io/large/front/1/b/1b3188ab-feb9-4486-bda0-1b80f128f7d2.jpg?1783906336",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.32,
     "price_foil": 0.72,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/112/blue-mages-cane?utm_source=api",
@@ -11687,7 +11687,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.55,
+    "price_eur": 0.51,
     "price_eur_foil": 0.7
   },
   {
@@ -11726,16 +11726,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/b/abfa939d-3914-44ec-979c-731e9413ba3a.jpg?1783906335",
     "image_large": "https://cards.scryfall.io/large/front/a/b/abfa939d-3914-44ec-979c-731e9413ba3a.jpg?1783906335",
     "back_image": "",
-    "price_usd": 0.65,
-    "price_foil": 1.5,
+    "price_usd": 0.61,
+    "price_foil": 1.56,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/113/observed-stasis?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.71,
-    "price_eur_foil": 1.72
+    "price_eur": 0.75,
+    "price_eur_foil": 1.53
   },
   {
     "id": "f02cfc75-d0da-403f-835f-9a614e5ed836",
@@ -11773,7 +11773,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/0/f02cfc75-d0da-403f-835f-9a614e5ed836.jpg?1783906336",
     "image_large": "https://cards.scryfall.io/large/front/f/0/f02cfc75-d0da-403f-835f-9a614e5ed836.jpg?1783906336",
     "back_image": "",
-    "price_usd": 0.67,
+    "price_usd": 0.65,
     "price_foil": 1.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/114/espers-to-magicite?utm_source=api",
@@ -11781,8 +11781,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.74,
-    "price_eur_foil": 1.54
+    "price_eur": 0.6,
+    "price_eur_foil": 1.41
   },
   {
     "id": "a34f241d-4420-4549-b702-b224027ebee7",
@@ -11820,15 +11820,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/3/a34f241d-4420-4549-b702-b224027ebee7.jpg?1783906335",
     "image_large": "https://cards.scryfall.io/large/front/a/3/a34f241d-4420-4549-b702-b224027ebee7.jpg?1783906335",
     "back_image": "",
-    "price_usd": 4.6,
-    "price_foil": 6.33,
+    "price_usd": 4.39,
+    "price_foil": 5.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/115/eye-of-nidhogg?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.42,
+    "price_eur": 4.24,
     "price_eur_foil": 7.74
   },
   {
@@ -11867,16 +11867,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/1/81313ac5-ee30-4ac4-ad5f-e9dbda46b2b0.jpg?1783906334",
     "image_large": "https://cards.scryfall.io/large/front/8/1/81313ac5-ee30-4ac4-ad5f-e9dbda46b2b0.jpg?1783906334",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.66,
+    "price_usd": 0.35,
+    "price_foil": 0.59,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/116/the-falcon-airship-restored?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.52,
-    "price_eur_foil": 0.95
+    "price_eur": 0.46,
+    "price_eur_foil": 0.92
   },
   {
     "id": "723d9139-d75e-42e9-8ffc-5df053096839",
@@ -11914,7 +11914,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/2/723d9139-d75e-42e9-8ffc-5df053096839.jpg?1783906334",
     "image_large": "https://cards.scryfall.io/large/front/7/2/723d9139-d75e-42e9-8ffc-5df053096839.jpg?1783906334",
     "back_image": "",
-    "price_usd": 0.44,
+    "price_usd": 0.42,
     "price_foil": 1.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/117/reapers-scythe?utm_source=api",
@@ -11922,7 +11922,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.43,
+    "price_eur": 0.47,
     "price_eur_foil": 0.85
   },
   {
@@ -11961,16 +11961,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/2/32f42de9-2eb3-4c11-aed1-7c0fb8768af1.jpg?1783906333",
     "image_large": "https://cards.scryfall.io/large/front/3/2/32f42de9-2eb3-4c11-aed1-7c0fb8768af1.jpg?1783906333",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.62,
+    "price_usd": 0.33,
+    "price_foil": 0.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/118/rejoin-the-fight?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.51,
-    "price_eur_foil": 0.98
+    "price_eur": 0.54,
+    "price_eur_foil": 0.94
   },
   {
     "id": "51cb61ab-0508-4668-8680-051d38df7ccb",
@@ -12009,15 +12009,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/1/51cb61ab-0508-4668-8680-051d38df7ccb.jpg?1783906332",
     "back_image": "",
     "price_usd": 1.54,
-    "price_foil": 3.45,
+    "price_foil": 3.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/119/transpose?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.16,
-    "price_eur_foil": 2.17
+    "price_eur": 1.29,
+    "price_eur_foil": 2.32
   },
   {
     "id": "2fbe13c7-af6c-43f4-b947-f32ea48a0edb",
@@ -12055,16 +12055,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/f/2fbe13c7-af6c-43f4-b947-f32ea48a0edb.jpg?1783906334",
     "image_large": "https://cards.scryfall.io/large/front/2/f/2fbe13c7-af6c-43f4-b947-f32ea48a0edb.jpg?1783906334",
     "back_image": "",
-    "price_usd": 1.29,
-    "price_foil": 2.22,
+    "price_usd": 1.11,
+    "price_foil": 2.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/120/snort?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.76,
-    "price_eur_foil": 0.84
+    "price_eur": 0.63,
+    "price_eur_foil": 0.82
   },
   {
     "id": "809276a9-4804-422f-abb0-ba302f329e6e",
@@ -12102,16 +12102,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/0/809276a9-4804-422f-abb0-ba302f329e6e.jpg?1783906333",
     "image_large": "https://cards.scryfall.io/large/front/8/0/809276a9-4804-422f-abb0-ba302f329e6e.jpg?1783906333",
     "back_image": "",
-    "price_usd": 0.48,
-    "price_foil": 1.1,
+    "price_usd": 0.51,
+    "price_foil": 1.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/121/ultimate-magic:-meteor?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.49,
-    "price_eur_foil": 1.02
+    "price_eur": 0.46,
+    "price_eur_foil": 0.99
   },
   {
     "id": "d1d50fa8-e92c-4531-b773-b9ef406e8c44",
@@ -12149,16 +12149,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d1d50fa8-e92c-4531-b773-b9ef406e8c44.jpg?1783906332",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d1d50fa8-e92c-4531-b773-b9ef406e8c44.jpg?1783906332",
     "back_image": "",
-    "price_usd": 2.52,
-    "price_foil": 5.92,
+    "price_usd": 2.55,
+    "price_foil": 5.91,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/122/lifestreams-blessing?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.26,
-    "price_eur_foil": 2.6
+    "price_eur": 1.36,
+    "price_eur_foil": 2.68
   },
   {
     "id": "064a1fc2-6983-4ebf-a0bc-524bc77682c2",
@@ -12196,16 +12196,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/6/064a1fc2-6983-4ebf-a0bc-524bc77682c2.jpg?1783906332",
     "image_large": "https://cards.scryfall.io/large/front/0/6/064a1fc2-6983-4ebf-a0bc-524bc77682c2.jpg?1783906332",
     "back_image": "",
-    "price_usd": 12.79,
-    "price_foil": 19.41,
+    "price_usd": 13.07,
+    "price_foil": 19.08,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/123/sphere-grid?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 9.82,
-    "price_eur_foil": 11.09
+    "price_eur": 9.98,
+    "price_eur_foil": 11.14
   },
   {
     "id": "cb916f4e-1aa4-4092-9dc6-7ba59fb87a05",
@@ -12243,7 +12243,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/b/cb916f4e-1aa4-4092-9dc6-7ba59fb87a05.jpg?1783906332",
     "image_large": "https://cards.scryfall.io/large/front/c/b/cb916f4e-1aa4-4092-9dc6-7ba59fb87a05.jpg?1783906332",
     "back_image": "",
-    "price_usd": 0.58,
+    "price_usd": 0.54,
     "price_foil": 1.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/124/summoning-materia?utm_source=api",
@@ -12251,8 +12251,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.49,
-    "price_eur_foil": 1.49
+    "price_eur": 0.58,
+    "price_eur_foil": 1.44
   },
   {
     "id": "599bea5b-ec99-441b-99d4-08dd1ec97f1c",
@@ -12290,16 +12290,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/599bea5b-ec99-441b-99d4-08dd1ec97f1c.jpg?1783906332",
     "image_large": "https://cards.scryfall.io/large/front/5/9/599bea5b-ec99-441b-99d4-08dd1ec97f1c.jpg?1783906332",
     "back_image": "",
-    "price_usd": 0.96,
-    "price_foil": 1.62,
+    "price_usd": 0.95,
+    "price_foil": 1.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/125/yunas-decision?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.8,
-    "price_eur_foil": 1.82
+    "price_eur": 0.87,
+    "price_eur_foil": 1.96
   },
   {
     "id": "76c0645f-d44c-4ad3-9e90-9d6187e44eb4",
@@ -12337,16 +12337,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/76c0645f-d44c-4ad3-9e90-9d6187e44eb4.jpg?1783906332",
     "image_large": "https://cards.scryfall.io/large/front/7/6/76c0645f-d44c-4ad3-9e90-9d6187e44eb4.jpg?1783906332",
     "back_image": "",
-    "price_usd": 0.49,
-    "price_foil": 1.14,
+    "price_usd": 0.51,
+    "price_foil": 1.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/126/yunas-whistle?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.53,
-    "price_eur_foil": 1.18
+    "price_eur": 0.54,
+    "price_eur_foil": 1.15
   },
   {
     "id": "0c184913-bde3-4310-af3f-58a7fba77041",
@@ -12384,16 +12384,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0c184913-bde3-4310-af3f-58a7fba77041.jpg?1783906330",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0c184913-bde3-4310-af3f-58a7fba77041.jpg?1783906330",
     "back_image": "",
-    "price_usd": 1.36,
-    "price_foil": 2.95,
+    "price_usd": 1.39,
+    "price_foil": 2.77,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/127/conformer-shuriken?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.88,
-    "price_eur_foil": 2.08
+    "price_eur": 0.97,
+    "price_eur_foil": 2.18
   },
   {
     "id": "c934a62e-d327-44ce-9155-7dc424daec36",
@@ -12431,16 +12431,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c934a62e-d327-44ce-9155-7dc424daec36.jpg?1783906329",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c934a62e-d327-44ce-9155-7dc424daec36.jpg?1783906329",
     "back_image": "",
-    "price_usd": 1.0,
-    "price_foil": 1.93,
+    "price_usd": 1.11,
+    "price_foil": 1.82,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/128/wrecking-ball-arm?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.98,
-    "price_eur_foil": 1.68
+    "price_eur": 0.93,
+    "price_eur_foil": 1.85
   },
   {
     "id": "de9e594c-fe46-4c24-8e64-a5929472453d",
@@ -12478,8 +12478,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/e/de9e594c-fe46-4c24-8e64-a5929472453d.jpg?1783906330",
     "image_large": "https://cards.scryfall.io/large/front/d/e/de9e594c-fe46-4c24-8e64-a5929472453d.jpg?1783906330",
     "back_image": "",
-    "price_usd": 3.0,
-    "price_foil": 11.71,
+    "price_usd": 2.42,
+    "price_foil": 11.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/129/alisaie-leveilleur?utm_source=api",
     "treatments": [
@@ -12487,7 +12487,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 1.12,
-    "price_eur_foil": 7.09
+    "price_eur_foil": 6.14
   },
   {
     "id": "12646217-db83-4b47-8f79-388c925dce77",
@@ -12525,16 +12525,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/2/12646217-db83-4b47-8f79-388c925dce77.jpg?1783906330",
     "image_large": "https://cards.scryfall.io/large/front/1/2/12646217-db83-4b47-8f79-388c925dce77.jpg?1783906330",
     "back_image": "",
-    "price_usd": 1.33,
-    "price_foil": 7.27,
+    "price_usd": 1.37,
+    "price_foil": 7.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/130/auron-venerated-guardian?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.49,
-    "price_eur_foil": 4.74
+    "price_eur": 1.46,
+    "price_eur_foil": 4.6
   },
   {
     "id": "73e1ba99-2a8b-43de-b03c-196a1907ca19",
@@ -12572,16 +12572,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/3/73e1ba99-2a8b-43de-b03c-196a1907ca19.jpg?1783906330",
     "image_large": "https://cards.scryfall.io/large/front/7/3/73e1ba99-2a8b-43de-b03c-196a1907ca19.jpg?1783906330",
     "back_image": "",
-    "price_usd": 1.82,
-    "price_foil": 9.75,
+    "price_usd": 1.9,
+    "price_foil": 9.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/131/cid-freeflier-pilot?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.79,
-    "price_eur_foil": 5.7
+    "price_eur": 1.6,
+    "price_eur_foil": 5.59
   },
   {
     "id": "b0d7df49-9e4c-4724-8e76-441d84b6c01f",
@@ -12619,15 +12619,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/0/b0d7df49-9e4c-4724-8e76-441d84b6c01f.jpg?1783906328",
     "image_large": "https://cards.scryfall.io/large/front/b/0/b0d7df49-9e4c-4724-8e76-441d84b6c01f.jpg?1783906328",
     "back_image": "",
-    "price_usd": 0.39,
-    "price_foil": 2.19,
+    "price_usd": 0.36,
+    "price_foil": 2.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/132/cyan-vengeful-samurai?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.4,
     "price_eur_foil": 1.16
   },
   {
@@ -12666,7 +12666,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/3/c392f20f-4ad0-4302-9b12-15131e8fc9a3.jpg?1783906329",
     "image_large": "https://cards.scryfall.io/large/front/c/3/c392f20f-4ad0-4302-9b12-15131e8fc9a3.jpg?1783906329",
     "back_image": "",
-    "price_usd": 0.59,
+    "price_usd": 0.6,
     "price_foil": 5.13,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/133/elena-turk-recruit?utm_source=api",
@@ -12674,8 +12674,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.76,
-    "price_eur_foil": 5.09
+    "price_eur": 0.75,
+    "price_eur_foil": 5.08
   },
   {
     "id": "ff6b510b-a425-48c8-b67e-276fba2f0ef0",
@@ -12713,16 +12713,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/f/ff6b510b-a425-48c8-b67e-276fba2f0ef0.jpg?1783906328",
     "image_large": "https://cards.scryfall.io/large/front/f/f/ff6b510b-a425-48c8-b67e-276fba2f0ef0.jpg?1783906328",
     "back_image": "",
-    "price_usd": 0.47,
-    "price_foil": 2.79,
+    "price_usd": 0.45,
+    "price_foil": 2.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/134/gatta-and-luzzu?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.99,
-    "price_eur_foil": 1.84
+    "price_eur": 1.01,
+    "price_eur_foil": 1.54
   },
   {
     "id": "e5226e79-646b-4488-9a19-0549e15ba6ad",
@@ -12760,15 +12760,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e5226e79-646b-4488-9a19-0549e15ba6ad.jpg?1783906327",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e5226e79-646b-4488-9a19-0549e15ba6ad.jpg?1783906327",
     "back_image": "",
-    "price_usd": 0.42,
-    "price_foil": 1.53,
+    "price_usd": 0.41,
+    "price_foil": 1.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/135/general-leo-cristophe?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.5,
+    "price_eur": 0.49,
     "price_eur_foil": 1.68
   },
   {
@@ -12808,14 +12808,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/d/ad2547e0-b3bb-45df-a0ee-1af4bd80c834.jpg?1783906327",
     "back_image": "",
     "price_usd": 0.33,
-    "price_foil": 1.47,
+    "price_foil": 1.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/136/heidegger-shinra-executive?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.57,
+    "price_eur": 0.56,
     "price_eur_foil": 1.22
   },
   {
@@ -12854,15 +12854,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/d/bd61145b-5177-4b7e-8ac2-f07e6cf4863a.jpg?1783906327",
     "image_large": "https://cards.scryfall.io/large/front/b/d/bd61145b-5177-4b7e-8ac2-f07e6cf4863a.jpg?1783906327",
     "back_image": "",
-    "price_usd": 0.38,
-    "price_foil": 1.75,
+    "price_usd": 0.39,
+    "price_foil": 1.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/137/lord-jyscal-guado?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.57,
+    "price_eur": 0.54,
     "price_eur_foil": 1.9
   },
   {
@@ -12901,16 +12901,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/c/8c832508-e6f8-4581-8424-744f4e24fad2.jpg?1783906327",
     "image_large": "https://cards.scryfall.io/large/front/8/c/8c832508-e6f8-4581-8424-744f4e24fad2.jpg?1783906327",
     "back_image": "",
-    "price_usd": 11.31,
-    "price_foil": 32.48,
+    "price_usd": 13.14,
+    "price_foil": 33.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/138/tataru-taru?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 9.48,
-    "price_eur_foil": 25.19
+    "price_eur": 9.49,
+    "price_eur_foil": 24.94
   },
   {
     "id": "bcd85c4e-c674-4753-ae82-80293554fdc5",
@@ -12948,16 +12948,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/c/bcd85c4e-c674-4753-ae82-80293554fdc5.jpg?1783906327",
     "image_large": "https://cards.scryfall.io/large/front/b/c/bcd85c4e-c674-4753-ae82-80293554fdc5.jpg?1783906327",
     "back_image": "",
-    "price_usd": 0.42,
-    "price_foil": 2.66,
+    "price_usd": 0.44,
+    "price_foil": 2.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/139/thancred-waters?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.57,
-    "price_eur_foil": 1.94
+    "price_eur": 0.5,
+    "price_eur_foil": 1.72
   },
   {
     "id": "37e4ab61-bf18-4f9f-ba78-3e08a21aaf4d",
@@ -12995,16 +12995,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/7/37e4ab61-bf18-4f9f-ba78-3e08a21aaf4d.jpg?1783906327",
     "image_large": "https://cards.scryfall.io/large/front/3/7/37e4ab61-bf18-4f9f-ba78-3e08a21aaf4d.jpg?1783906327",
     "back_image": "",
-    "price_usd": 1.19,
-    "price_foil": 6.14,
+    "price_usd": 1.13,
+    "price_foil": 6.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/140/alphinaud-leveilleur?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.78,
-    "price_eur_foil": 3.78
+    "price_eur": 0.65,
+    "price_eur_foil": 3.7
   },
   {
     "id": "ebacdfc9-7459-45b7-b563-572bdab27702",
@@ -13042,16 +13042,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/b/ebacdfc9-7459-45b7-b563-572bdab27702.jpg?1783906326",
     "image_large": "https://cards.scryfall.io/large/front/e/b/ebacdfc9-7459-45b7-b563-572bdab27702.jpg?1783906326",
     "back_image": "",
-    "price_usd": 1.97,
-    "price_foil": 6.58,
+    "price_usd": 2.09,
+    "price_foil": 6.61,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/141/hermes-overseer-of-elpis?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.43,
-    "price_eur_foil": 4.92
+    "price_eur": 1.36,
+    "price_eur_foil": 4.88
   },
   {
     "id": "11f0886a-fbc0-4060-b506-a0b0f9de8b0b",
@@ -13089,15 +13089,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/1/11f0886a-fbc0-4060-b506-a0b0f9de8b0b.jpg?1783906326",
     "image_large": "https://cards.scryfall.io/large/front/1/1/11f0886a-fbc0-4060-b506-a0b0f9de8b0b.jpg?1783906326",
     "back_image": "",
-    "price_usd": 1.06,
-    "price_foil": 4.56,
+    "price_usd": 0.93,
+    "price_foil": 4.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/142/hraesvelgr-of-the-first-brood?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.91,
+    "price_eur": 0.83,
     "price_eur_foil": 3.69
   },
   {
@@ -13136,16 +13136,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/1/61844cbe-f4b3-45c6-bf4c-76542de4b195.jpg?1783906326",
     "image_large": "https://cards.scryfall.io/large/front/6/1/61844cbe-f4b3-45c6-bf4c-76542de4b195.jpg?1783906326",
     "back_image": "",
-    "price_usd": 2.78,
-    "price_foil": 13.0,
+    "price_usd": 2.69,
+    "price_foil": 13.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/143/lulu-stern-guardian?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.48,
-    "price_eur_foil": 8.27
+    "price_eur": 2.41,
+    "price_eur_foil": 8.67
   },
   {
     "id": "d292e7d4-deab-47f8-bc6d-d7cbb01a3268",
@@ -13183,15 +13183,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/2/d292e7d4-deab-47f8-bc6d-d7cbb01a3268.jpg?1783906324",
     "image_large": "https://cards.scryfall.io/large/front/d/2/d292e7d4-deab-47f8-bc6d-d7cbb01a3268.jpg?1783906324",
     "back_image": "",
-    "price_usd": 1.1,
-    "price_foil": 4.83,
+    "price_usd": 1.11,
+    "price_foil": 5.05,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/144/oaka-traveling-merchant?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.32,
+    "price_eur": 1.36,
     "price_eur_foil": 3.79
   },
   {
@@ -13230,16 +13230,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f993e3dd-f275-452b-b883-b9d420a91ded.jpg?1783906323",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f993e3dd-f275-452b-b883-b9d420a91ded.jpg?1783906323",
     "back_image": "",
-    "price_usd": 2.01,
-    "price_foil": 8.53,
+    "price_usd": 2.2,
+    "price_foil": 8.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/145/rikku-resourceful-guardian?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.44,
-    "price_eur_foil": 5.01
+    "price_eur": 1.29,
+    "price_eur_foil": 5.13
   },
   {
     "id": "fede6d1c-461e-456f-8cdb-7acac69d30ae",
@@ -13277,7 +13277,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fede6d1c-461e-456f-8cdb-7acac69d30ae.jpg?1783906324",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fede6d1c-461e-456f-8cdb-7acac69d30ae.jpg?1783906324",
     "back_image": "",
-    "price_usd": 1.97,
+    "price_usd": 1.99,
     "price_foil": 7.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/146/fandaniel-telophoroi-ascian?utm_source=api",
@@ -13285,8 +13285,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.35,
-    "price_eur_foil": 5.17
+    "price_eur": 1.22,
+    "price_eur_foil": 4.53
   },
   {
     "id": "cf820446-9cea-426e-ad34-977cf3833cf7",
@@ -13325,15 +13325,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/c/f/cf820446-9cea-426e-ad34-977cf3833cf7.jpg?1783906324",
     "back_image": "",
     "price_usd": 0.42,
-    "price_foil": 2.53,
+    "price_foil": 2.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/147/interceptor-shadows-hound?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.58,
-    "price_eur_foil": 1.17
+    "price_eur": 0.55,
+    "price_eur_foil": 1.11
   },
   {
     "id": "d2a400d2-cf8e-4be8-9eb8-46af1aa73698",
@@ -13371,15 +13371,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/2/d2a400d2-cf8e-4be8-9eb8-46af1aa73698.jpg?1783906324",
     "image_large": "https://cards.scryfall.io/large/front/d/2/d2a400d2-cf8e-4be8-9eb8-46af1aa73698.jpg?1783906324",
     "back_image": "",
-    "price_usd": 0.91,
-    "price_foil": 6.16,
+    "price_usd": 0.84,
+    "price_foil": 6.19,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/148/shadow-mysterious-assassin?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.02,
+    "price_eur": 1.12,
     "price_eur_foil": 3.82
   },
   {
@@ -13418,8 +13418,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/b/dba36096-75dd-47d6-b222-970b7450098c.jpg?1783906322",
     "image_large": "https://cards.scryfall.io/large/front/d/b/dba36096-75dd-47d6-b222-970b7450098c.jpg?1783906322",
     "back_image": "",
-    "price_usd": 0.43,
-    "price_foil": 3.67,
+    "price_usd": 0.41,
+    "price_foil": 3.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/149/siegfried-famed-swordsman?utm_source=api",
     "treatments": [
@@ -13427,7 +13427,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.48,
-    "price_eur_foil": 2.24
+    "price_eur_foil": 2.15
   },
   {
     "id": "9c7bf45f-88f4-4b5f-a816-ae096e177ff0",
@@ -13465,15 +13465,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/c/9c7bf45f-88f4-4b5f-a816-ae096e177ff0.jpg?1783906322",
     "image_large": "https://cards.scryfall.io/large/front/9/c/9c7bf45f-88f4-4b5f-a816-ae096e177ff0.jpg?1783906322",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 4.06,
+    "price_usd": 0.35,
+    "price_foil": 4.13,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/150/avalanche-of-sector-7?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.56,
+    "price_eur": 0.43,
     "price_eur_foil": 2.59
   },
   {
@@ -13512,16 +13512,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/6/26742bbb-38b1-43c1-8b33-80a79c8ddcce.jpg?1783906322",
     "image_large": "https://cards.scryfall.io/large/front/2/6/26742bbb-38b1-43c1-8b33-80a79c8ddcce.jpg?1783906322",
     "back_image": "",
-    "price_usd": 1.12,
-    "price_foil": 5.31,
+    "price_usd": 1.3,
+    "price_foil": 5.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/151/cait-sith-fortune-teller?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.74,
-    "price_eur_foil": 3.98
+    "price_eur": 0.87,
+    "price_eur_foil": 4.13
   },
   {
     "id": "c7f4920b-cbf6-407c-ae02-6f6cc047187d",
@@ -13559,15 +13559,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/7/c7f4920b-cbf6-407c-ae02-6f6cc047187d.jpg?1783906321",
     "image_large": "https://cards.scryfall.io/large/front/c/7/c7f4920b-cbf6-407c-ae02-6f6cc047187d.jpg?1783906321",
     "back_image": "",
-    "price_usd": 0.43,
-    "price_foil": 2.26,
+    "price_usd": 0.41,
+    "price_foil": 2.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/152/gau-feral-youth?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.77,
+    "price_eur": 0.68,
     "price_eur_foil": 4.34
   },
   {
@@ -13606,16 +13606,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/b/ebf0b7b3-2e9a-4fb1-aaad-ff1567a4993c.jpg?1783906321",
     "image_large": "https://cards.scryfall.io/large/front/e/b/ebf0b7b3-2e9a-4fb1-aaad-ff1567a4993c.jpg?1783906321",
     "back_image": "",
-    "price_usd": 4.76,
-    "price_foil": 20.03,
+    "price_usd": 5.11,
+    "price_foil": 20.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/153/gogo-mysterious-mime?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.25,
-    "price_eur_foil": 11.39
+    "price_eur": 4.12,
+    "price_eur_foil": 11.51
   },
   {
     "id": "d34e4b6f-9b6d-4599-be08-05dc5a2a38a4",
@@ -13653,7 +13653,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/3/d34e4b6f-9b6d-4599-be08-05dc5a2a38a4.jpg?1783906321",
     "image_large": "https://cards.scryfall.io/large/front/d/3/d34e4b6f-9b6d-4599-be08-05dc5a2a38a4.jpg?1783906321",
     "back_image": "",
-    "price_usd": 0.42,
+    "price_usd": 0.39,
     "price_foil": 2.13,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/154/sabin-master-monk?utm_source=api",
@@ -13661,8 +13661,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.34,
-    "price_eur_foil": 2.02
+    "price_eur": 0.35,
+    "price_eur_foil": 1.86
   },
   {
     "id": "8b880c1a-b82d-42ae-aaaf-22cdc81fe891",
@@ -13700,16 +13700,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/b/8b880c1a-b82d-42ae-aaaf-22cdc81fe891.jpg?1783906321",
     "image_large": "https://cards.scryfall.io/large/front/8/b/8b880c1a-b82d-42ae-aaaf-22cdc81fe891.jpg?1783906321",
     "back_image": "",
-    "price_usd": 0.48,
-    "price_foil": 2.01,
+    "price_usd": 0.47,
+    "price_foil": 2.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/155/strago-and-relm?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.53,
-    "price_eur_foil": 2.51
+    "price_eur": 0.49,
+    "price_eur_foil": 2.31
   },
   {
     "id": "85b5e0a7-8d3c-4d79-b507-8d4ce9a04328",
@@ -13747,15 +13747,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/5/85b5e0a7-8d3c-4d79-b507-8d4ce9a04328.jpg?1783906320",
     "image_large": "https://cards.scryfall.io/large/front/8/5/85b5e0a7-8d3c-4d79-b507-8d4ce9a04328.jpg?1783906320",
     "back_image": "",
-    "price_usd": 0.34,
-    "price_foil": 1.71,
+    "price_usd": 0.31,
+    "price_foil": 1.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/156/umaro-raging-yeti?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.45,
+    "price_eur": 0.44,
     "price_eur_foil": 1.38
   },
   {
@@ -13795,14 +13795,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/6/96c957b1-ef31-4575-9003-fe4a649d303b.jpg?1783906320",
     "back_image": "",
     "price_usd": 2.75,
-    "price_foil": 11.96,
+    "price_foil": 11.98,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/157/vincent-vengeful-atoner?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.39,
+    "price_eur": 1.43,
     "price_eur_foil": 7.26
   },
   {
@@ -13841,16 +13841,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/3504bbeb-b4f0-4b43-9ab9-ff456f080b7f.jpg?1783906319",
     "image_large": "https://cards.scryfall.io/large/front/3/5/3504bbeb-b4f0-4b43-9ab9-ff456f080b7f.jpg?1783906319",
     "back_image": "",
-    "price_usd": 1.12,
-    "price_foil": 5.28,
+    "price_usd": 1.02,
+    "price_foil": 5.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/158/yuffie-materia-hunter?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.81,
-    "price_eur_foil": 3.76
+    "price_eur": 0.77,
+    "price_eur_foil": 3.86
   },
   {
     "id": "df25ab56-3f87-4d63-915d-dacfbad17a4f",
@@ -13888,16 +13888,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/f/df25ab56-3f87-4d63-915d-dacfbad17a4f.jpg?1783906319",
     "image_large": "https://cards.scryfall.io/large/front/d/f/df25ab56-3f87-4d63-915d-dacfbad17a4f.jpg?1783906319",
     "back_image": "",
-    "price_usd": 2.36,
-    "price_foil": 12.72,
+    "price_usd": 2.49,
+    "price_foil": 13.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/159/bugenhagen-wise-elder?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.67,
-    "price_eur_foil": 6.09
+    "price_eur": 1.52,
+    "price_eur_foil": 6.18
   },
   {
     "id": "5861c54a-6385-46d2-8daa-83fd717d6928",
@@ -13935,16 +13935,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/8/5861c54a-6385-46d2-8daa-83fd717d6928.jpg?1783906320",
     "image_large": "https://cards.scryfall.io/large/front/5/8/5861c54a-6385-46d2-8daa-83fd717d6928.jpg?1783906320",
     "back_image": "",
-    "price_usd": 1.4,
-    "price_foil": 6.34,
+    "price_usd": 1.29,
+    "price_foil": 6.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/160/maester-seymour?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.54,
-    "price_eur_foil": 3.84
+    "price_eur": 1.5,
+    "price_eur_foil": 4.1
   },
   {
     "id": "1c43fe9e-7869-4f11-8fc1-b11caa8c3636",
@@ -13982,15 +13982,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/c/1c43fe9e-7869-4f11-8fc1-b11caa8c3636.jpg?1783906318",
     "image_large": "https://cards.scryfall.io/large/front/1/c/1c43fe9e-7869-4f11-8fc1-b11caa8c3636.jpg?1783906318",
     "back_image": "",
-    "price_usd": 0.52,
-    "price_foil": 4.47,
+    "price_usd": 0.55,
+    "price_foil": 4.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/161/professor-hojo?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.66,
+    "price_eur": 0.58,
     "price_eur_foil": 3.7
   },
   {
@@ -14029,16 +14029,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/a/0ab4ee8a-acf7-46ec-a32a-befe1e0e7d58.jpg?1783906318",
     "image_large": "https://cards.scryfall.io/large/front/0/a/0ab4ee8a-acf7-46ec-a32a-befe1e0e7d58.jpg?1783906318",
     "back_image": "",
-    "price_usd": 1.71,
-    "price_foil": 5.03,
+    "price_usd": 1.75,
+    "price_foil": 5.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/162/tromell-seymours-butler?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.25,
-    "price_eur_foil": 3.96
+    "price_eur": 1.02,
+    "price_eur_foil": 4.09
   },
   {
     "id": "82518d3f-9557-416b-9b4d-dfe3ffa57f88",
@@ -14076,15 +14076,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/2/82518d3f-9557-416b-9b4d-dfe3ffa57f88.jpg?1783906318",
     "image_large": "https://cards.scryfall.io/large/front/8/2/82518d3f-9557-416b-9b4d-dfe3ffa57f88.jpg?1783906318",
     "back_image": "",
-    "price_usd": 1.61,
-    "price_foil": 10.23,
+    "price_usd": 1.86,
+    "price_foil": 10.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/163/aerith-last-ancient?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.18,
+    "price_eur": 1.4,
     "price_eur_foil": 6.99
   },
   {
@@ -14123,16 +14123,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/6/866400d8-c94b-4b1a-ba5a-20f9d92476db.jpg?1783906318",
     "image_large": "https://cards.scryfall.io/large/front/8/6/866400d8-c94b-4b1a-ba5a-20f9d92476db.jpg?1783906318",
     "back_image": "",
-    "price_usd": 2.52,
-    "price_foil": 10.29,
+    "price_usd": 2.44,
+    "price_foil": 10.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/164/ardbert-warrior-of-darkness?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.34,
-    "price_eur_foil": 7.19
+    "price_eur": 1.24,
+    "price_eur_foil": 7.21
   },
   {
     "id": "9f860c20-cf00-449b-85cb-d53227162ccf",
@@ -14170,15 +14170,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f860c20-cf00-449b-85cb-d53227162ccf.jpg?1783906317",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f860c20-cf00-449b-85cb-d53227162ccf.jpg?1783906317",
     "back_image": "",
-    "price_usd": 1.7,
-    "price_foil": 2.23,
+    "price_usd": 1.66,
+    "price_foil": 2.17,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/165/banon-the-returners-leader?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.68,
+    "price_eur": 0.6,
     "price_eur_foil": 2.59
   },
   {
@@ -14217,16 +14217,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/e/6ee716c6-a4be-4237-bdef-f812baffa6d5.jpg?1783906316",
     "image_large": "https://cards.scryfall.io/large/front/6/e/6ee716c6-a4be-4237-bdef-f812baffa6d5.jpg?1783906316",
     "back_image": "",
-    "price_usd": 0.47,
-    "price_foil": 2.47,
+    "price_usd": 0.41,
+    "price_foil": 2.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/166/barret-avalanche-leader?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.46,
-    "price_eur_foil": 1.37
+    "price_eur": 0.44,
+    "price_eur_foil": 1.64
   },
   {
     "id": "736a3102-6f0f-47ba-9ca6-f7574ec85a10",
@@ -14264,16 +14264,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/3/736a3102-6f0f-47ba-9ca6-f7574ec85a10.jpg?1783906317",
     "image_large": "https://cards.scryfall.io/large/front/7/3/736a3102-6f0f-47ba-9ca6-f7574ec85a10.jpg?1783906317",
     "back_image": "",
-    "price_usd": 2.62,
-    "price_foil": 7.91,
+    "price_usd": 2.75,
+    "price_foil": 7.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/167/celes-rune-knight?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 3.6,
-    "price_eur_foil": 9.39
+    "price_eur": 3.4,
+    "price_eur_foil": 10.46
   },
   {
     "id": "955189c4-cfbc-47be-9681-cfffab403443",
@@ -14311,16 +14311,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/5/955189c4-cfbc-47be-9681-cfffab403443.jpg?1783906316",
     "image_large": "https://cards.scryfall.io/large/front/9/5/955189c4-cfbc-47be-9681-cfffab403443.jpg?1783906316",
     "back_image": "",
-    "price_usd": 5.2,
-    "price_foil": 16.43,
+    "price_usd": 4.97,
+    "price_foil": 16.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/168/cloud-ex-soldier?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 3.83,
-    "price_eur_foil": 13.5
+    "price_eur": 3.72,
+    "price_eur_foil": 13.76
   },
   {
     "id": "db64bbb0-aa7a-4e6d-b424-9930d55e6853",
@@ -14358,15 +14358,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/b/db64bbb0-aa7a-4e6d-b424-9930d55e6853.jpg?1783906316",
     "image_large": "https://cards.scryfall.io/large/front/d/b/db64bbb0-aa7a-4e6d-b424-9930d55e6853.jpg?1783906316",
     "back_image": "",
-    "price_usd": 0.45,
-    "price_foil": 2.97,
+    "price_usd": 0.47,
+    "price_foil": 2.98,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/169/edgar-master-machinist?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.63,
+    "price_eur": 0.55,
     "price_eur_foil": 1.91
   },
   {
@@ -14405,15 +14405,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/8/584394a0-9d72-4fe3-bcfe-bfaceac12e98.jpg?1783906314",
     "image_large": "https://cards.scryfall.io/large/front/5/8/584394a0-9d72-4fe3-bcfe-bfaceac12e98.jpg?1783906314",
     "back_image": "",
-    "price_usd": 1.75,
-    "price_foil": 7.14,
+    "price_usd": 1.7,
+    "price_foil": 6.72,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/170/emet-selch-of-the-third-seat?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.6,
+    "price_eur": 1.63,
     "price_eur_foil": 7.75
   },
   {
@@ -14452,16 +14452,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/421df8fe-e812-4bf2-9aae-b7b47627a884.jpg?1783906314",
     "image_large": "https://cards.scryfall.io/large/front/4/2/421df8fe-e812-4bf2-9aae-b7b47627a884.jpg?1783906314",
     "back_image": "",
-    "price_usd": 0.39,
-    "price_foil": 2.42,
+    "price_usd": 0.35,
+    "price_foil": 2.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/171/estinien-varlineau?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.41,
-    "price_eur_foil": 4.79
+    "price_eur": 0.42,
+    "price_eur_foil": 4.62
   },
   {
     "id": "a5ec8a4e-92fd-49bd-8d9c-c83dd853ca01",
@@ -14499,16 +14499,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/5/a5ec8a4e-92fd-49bd-8d9c-c83dd853ca01.jpg?1783906315",
     "image_large": "https://cards.scryfall.io/large/front/a/5/a5ec8a4e-92fd-49bd-8d9c-c83dd853ca01.jpg?1783906315",
     "back_image": "",
-    "price_usd": 1.47,
-    "price_foil": 3.95,
+    "price_usd": 1.41,
+    "price_foil": 3.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/172/graha-tia-scion-reborn?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.63,
-    "price_eur_foil": 3.2
+    "price_eur": 1.56,
+    "price_eur_foil": 3.05
   },
   {
     "id": "66f4c958-48ec-4cdd-a210-ede6322ee28f",
@@ -14546,16 +14546,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/6/66f4c958-48ec-4cdd-a210-ede6322ee28f.jpg?1783906314",
     "image_large": "https://cards.scryfall.io/large/front/6/6/66f4c958-48ec-4cdd-a210-ede6322ee28f.jpg?1783906314",
     "back_image": "",
-    "price_usd": 0.45,
-    "price_foil": 3.04,
+    "price_usd": 0.43,
+    "price_foil": 3.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/173/hildibrand-manderville-gentlemans-rise?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.42,
-    "price_eur_foil": 2.38
+    "price_eur": 0.68,
+    "price_eur_foil": 2.29
   },
   {
     "id": "76f9dd01-0adb-4dbd-9930-fb6546e569ab",
@@ -14593,15 +14593,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/76f9dd01-0adb-4dbd-9930-fb6546e569ab.jpg?1783906313",
     "image_large": "https://cards.scryfall.io/large/front/7/6/76f9dd01-0adb-4dbd-9930-fb6546e569ab.jpg?1783906313",
     "back_image": "",
-    "price_usd": 2.03,
-    "price_foil": 8.05,
+    "price_usd": 1.9,
+    "price_foil": 7.99,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/174/kefka-dancing-mad?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.76,
+    "price_eur": 1.5,
     "price_eur_foil": 5.58
   },
   {
@@ -14640,16 +14640,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/0/402780a2-ae0b-448d-a93a-e5ef6f7160d4.jpg?1783906314",
     "image_large": "https://cards.scryfall.io/large/front/4/0/402780a2-ae0b-448d-a93a-e5ef6f7160d4.jpg?1783906314",
     "back_image": "",
-    "price_usd": 0.63,
-    "price_foil": 6.38,
+    "price_usd": 0.57,
+    "price_foil": 6.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/175/kimahri-valiant-guardian?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.65,
-    "price_eur_foil": 5.63
+    "price_eur": 0.59,
+    "price_eur_foil": 5.46
   },
   {
     "id": "170dcae0-3cf4-4f96-80a7-d70a5c15193c",
@@ -14687,15 +14687,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/7/170dcae0-3cf4-4f96-80a7-d70a5c15193c.jpg?1783906313",
     "image_large": "https://cards.scryfall.io/large/front/1/7/170dcae0-3cf4-4f96-80a7-d70a5c15193c.jpg?1783906313",
     "back_image": "",
-    "price_usd": 0.96,
-    "price_foil": 2.1,
+    "price_usd": 1.0,
+    "price_foil": 2.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/176/krile-baldesion?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.39,
+    "price_eur": 0.49,
     "price_eur_foil": 2.87
   },
   {
@@ -14734,15 +14734,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/0/d089946c-87c5-4135-8372-ed7b8a03548c.jpg?1783906312",
     "image_large": "https://cards.scryfall.io/large/front/d/0/d089946c-87c5-4135-8372-ed7b8a03548c.jpg?1783906312",
     "back_image": "",
-    "price_usd": 0.97,
-    "price_foil": 4.43,
+    "price_usd": 0.86,
+    "price_foil": 4.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/177/locke-treasure-hunter?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.95,
+    "price_eur": 0.83,
     "price_eur_foil": 3.08
   },
   {
@@ -14781,7 +14781,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/2/227ada0a-e1b5-44ed-8303-d6449069599f.jpg?1783906314",
     "image_large": "https://cards.scryfall.io/large/front/2/2/227ada0a-e1b5-44ed-8303-d6449069599f.jpg?1783906314",
     "back_image": "",
-    "price_usd": 1.42,
+    "price_usd": 1.35,
     "price_foil": 9.95,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/178/lyse-hext?utm_source=api",
@@ -14789,8 +14789,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.59,
-    "price_eur_foil": 6.33
+    "price_eur": 1.66,
+    "price_eur_foil": 6.36
   },
   {
     "id": "572b31b6-ae09-43a7-a8d4-8f0f99f5cd8e",
@@ -14828,8 +14828,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/7/572b31b6-ae09-43a7-a8d4-8f0f99f5cd8e.jpg?1783906312",
     "image_large": "https://cards.scryfall.io/large/front/5/7/572b31b6-ae09-43a7-a8d4-8f0f99f5cd8e.jpg?1783906312",
     "back_image": "",
-    "price_usd": 0.58,
-    "price_foil": 4.9,
+    "price_usd": 0.61,
+    "price_foil": 4.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/179/mog-moogle-warrior?utm_source=api",
     "treatments": [
@@ -14837,7 +14837,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.73,
-    "price_eur_foil": 3.66
+    "price_eur_foil": 3.53
   },
   {
     "id": "7a3ebe5c-d34a-4e47-a060-76f6700af12d",
@@ -14875,16 +14875,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/a/7a3ebe5c-d34a-4e47-a060-76f6700af12d.jpg?1783906313",
     "image_large": "https://cards.scryfall.io/large/front/7/a/7a3ebe5c-d34a-4e47-a060-76f6700af12d.jpg?1783906313",
     "back_image": "",
-    "price_usd": 0.61,
-    "price_foil": 5.56,
+    "price_usd": 0.71,
+    "price_foil": 5.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/180/papalymo-totolymo?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.73,
-    "price_eur_foil": 3.28
+    "price_eur": 0.76,
+    "price_eur_foil": 2.78
   },
   {
     "id": "46ae057f-ae57-4c22-be68-2ef6a26e4e6c",
@@ -14922,16 +14922,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/6/46ae057f-ae57-4c22-be68-2ef6a26e4e6c.jpg?1783906311",
     "image_large": "https://cards.scryfall.io/large/front/4/6/46ae057f-ae57-4c22-be68-2ef6a26e4e6c.jpg?1783906311",
     "back_image": "",
-    "price_usd": 1.66,
-    "price_foil": 6.4,
+    "price_usd": 1.7,
+    "price_foil": 6.71,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/181/red-xiii-proud-warrior?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.22,
-    "price_eur_foil": 5.95
+    "price_eur": 1.29,
+    "price_eur_foil": 6.52
   },
   {
     "id": "42edc09b-29e7-41d1-ad4b-b904f2976a66",
@@ -14969,15 +14969,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/42edc09b-29e7-41d1-ad4b-b904f2976a66.jpg?1783906312",
     "image_large": "https://cards.scryfall.io/large/front/4/2/42edc09b-29e7-41d1-ad4b-b904f2976a66.jpg?1783906312",
     "back_image": "",
-    "price_usd": 2.84,
-    "price_foil": 16.1,
+    "price_usd": 2.83,
+    "price_foil": 16.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/182/sephiroth-fallen-hero?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.35,
+    "price_eur": 2.26,
     "price_eur_foil": 11.72
   },
   {
@@ -15016,16 +15016,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/e/0e5b6968-fff2-4227-9442-d2b5225b29e5.jpg?1783906311",
     "image_large": "https://cards.scryfall.io/large/front/0/e/0e5b6968-fff2-4227-9442-d2b5225b29e5.jpg?1783906311",
     "back_image": "",
-    "price_usd": 0.46,
-    "price_foil": 2.41,
+    "price_usd": 0.41,
+    "price_foil": 2.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/183/setzer-wandering-gambler?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.49,
-    "price_eur_foil": 2.55
+    "price_eur": 0.44,
+    "price_eur_foil": 2.16
   },
   {
     "id": "d87bd7f7-b56d-4cc0-98cc-2d035865c7b6",
@@ -15063,7 +15063,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/8/d87bd7f7-b56d-4cc0-98cc-2d035865c7b6.jpg?1783906310",
     "image_large": "https://cards.scryfall.io/large/front/d/8/d87bd7f7-b56d-4cc0-98cc-2d035865c7b6.jpg?1783906310",
     "back_image": "",
-    "price_usd": 0.48,
+    "price_usd": 0.46,
     "price_foil": 2.67,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/184/shelinda-yevon-acolyte?utm_source=api",
@@ -15071,7 +15071,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.6,
+    "price_eur": 0.63,
     "price_eur_foil": 2.73
   },
   {
@@ -15110,15 +15110,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/e/8e6e92aa-43bc-4be5-97a5-0817e7c3c9a9.jpg?1783906309",
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e6e92aa-43bc-4be5-97a5-0817e7c3c9a9.jpg?1783906309",
     "back_image": "",
-    "price_usd": 1.59,
-    "price_foil": 5.44,
+    "price_usd": 1.74,
+    "price_foil": 5.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/185/sin-unending-cataclysm?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.93,
+    "price_eur": 1.03,
     "price_eur_foil": 5.69
   },
   {
@@ -15157,16 +15157,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e0946131-2cda-4850-912e-cb8a8124685b.jpg?1783906309",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e0946131-2cda-4850-912e-cb8a8124685b.jpg?1783906309",
     "back_image": "",
-    "price_usd": 3.36,
-    "price_foil": 9.52,
+    "price_usd": 3.44,
+    "price_foil": 9.57,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/186/terra-herald-of-hope?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.74,
-    "price_eur_foil": 9.55
+    "price_eur": 2.73,
+    "price_eur_foil": 9.1
   },
   {
     "id": "77248a4b-0823-4d33-8355-30d0ed158796",
@@ -15204,16 +15204,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/7/77248a4b-0823-4d33-8355-30d0ed158796.jpg?1783906310",
     "image_large": "https://cards.scryfall.io/large/front/7/7/77248a4b-0823-4d33-8355-30d0ed158796.jpg?1783906310",
     "back_image": "",
-    "price_usd": 5.14,
-    "price_foil": 10.16,
+    "price_usd": 4.69,
+    "price_foil": 10.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/187/tidus-yunas-guardian?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.97,
-    "price_eur_foil": 8.82
+    "price_eur": 5.14,
+    "price_eur_foil": 8.93
   },
   {
     "id": "40df262f-e567-4be2-99e4-6b62e864d259",
@@ -15251,15 +15251,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/0/40df262f-e567-4be2-99e4-6b62e864d259.jpg?1783906308",
     "image_large": "https://cards.scryfall.io/large/front/4/0/40df262f-e567-4be2-99e4-6b62e864d259.jpg?1783906308",
     "back_image": "",
-    "price_usd": 5.83,
-    "price_foil": 20.16,
+    "price_usd": 6.14,
+    "price_foil": 20.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/188/tifa-martial-artist?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 5.45,
+    "price_eur": 5.47,
     "price_eur_foil": 11.07
   },
   {
@@ -15298,16 +15298,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/b/ebbd957a-db0f-4f3c-8269-801feb6a53db.jpg?1783906308",
     "image_large": "https://cards.scryfall.io/large/front/e/b/ebbd957a-db0f-4f3c-8269-801feb6a53db.jpg?1783906308",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 3.43,
+    "price_usd": 0.37,
+    "price_foil": 3.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/189/urianger-augurelt?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.51,
-    "price_eur_foil": 1.43
+    "price_eur": 0.5,
+    "price_eur_foil": 1.59
   },
   {
     "id": "c959214d-1a61-4995-b477-46d9298ae692",
@@ -15345,15 +15345,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c959214d-1a61-4995-b477-46d9298ae692.jpg?1783906308",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c959214d-1a61-4995-b477-46d9298ae692.jpg?1783906308",
     "back_image": "",
-    "price_usd": 0.76,
-    "price_foil": 3.42,
+    "price_usd": 0.71,
+    "price_foil": 3.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/190/wakka-devoted-guardian?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.02,
+    "price_eur": 0.94,
     "price_eur_foil": 2.43
   },
   {
@@ -15392,16 +15392,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/b/0bda4de9-d0ec-4d27-b92b-8a76779747cf.jpg?1783906309",
     "image_large": "https://cards.scryfall.io/large/front/0/b/0bda4de9-d0ec-4d27-b92b-8a76779747cf.jpg?1783906309",
     "back_image": "",
-    "price_usd": 17.55,
-    "price_foil": 39.7,
+    "price_usd": 18.31,
+    "price_foil": 44.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/191/yshtola-nights-blessed?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 10.54,
-    "price_eur_foil": 27.16
+    "price_eur": 9.77,
+    "price_eur_foil": 27.74
   },
   {
     "id": "bbd454a8-b8d0-4755-bd60-321d51589904",
@@ -15439,16 +15439,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/b/bbd454a8-b8d0-4755-bd60-321d51589904.jpg?1783906307",
     "image_large": "https://cards.scryfall.io/large/front/b/b/bbd454a8-b8d0-4755-bd60-321d51589904.jpg?1783906307",
     "back_image": "",
-    "price_usd": 4.06,
-    "price_foil": 11.49,
+    "price_usd": 4.17,
+    "price_foil": 11.82,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/192/yuna-grand-summoner?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.06,
-    "price_eur_foil": 11.02
+    "price_eur": 4.01,
+    "price_eur_foil": 11.76
   },
   {
     "id": "59c9633d-484c-4bce-ac86-696791afd6a4",
@@ -15486,16 +15486,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/59c9633d-484c-4bce-ac86-696791afd6a4.jpg?1783906307",
     "image_large": "https://cards.scryfall.io/large/front/5/9/59c9633d-484c-4bce-ac86-696791afd6a4.jpg?1783906307",
     "back_image": "",
-    "price_usd": 2.77,
-    "price_foil": 10.1,
+    "price_usd": 3.41,
+    "price_foil": 10.17,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/193/the-warring-triad?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.5,
-    "price_eur_foil": 7.69
+    "price_eur": 2.43,
+    "price_eur_foil": 7.72
   },
   {
     "id": "3aabb93a-7fa2-4fb5-a683-db1d274ac367",
@@ -15533,16 +15533,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/a/3aabb93a-7fa2-4fb5-a683-db1d274ac367.jpg?1783906306",
     "image_large": "https://cards.scryfall.io/large/front/3/a/3aabb93a-7fa2-4fb5-a683-db1d274ac367.jpg?1783906306",
     "back_image": "",
-    "price_usd": 7.2,
-    "price_foil": 9.47,
+    "price_usd": 7.96,
+    "price_foil": 9.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/194/summon:-good-king-mog-xii?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.68,
-    "price_eur_foil": 7.19
+    "price_eur": 4.56,
+    "price_eur_foil": 7.61
   },
   {
     "id": "92c0bfc2-ba98-48b6-82a4-95a2321c8df4",
@@ -15580,16 +15580,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/2/92c0bfc2-ba98-48b6-82a4-95a2321c8df4.jpg?1783906306",
     "image_large": "https://cards.scryfall.io/large/front/9/2/92c0bfc2-ba98-48b6-82a4-95a2321c8df4.jpg?1783906306",
     "back_image": "",
-    "price_usd": 6.53,
-    "price_foil": 12.88,
+    "price_usd": 6.76,
+    "price_foil": 13.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/195/summon:-ixion?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 5.91,
-    "price_eur_foil": 8.2
+    "price_eur": 5.39,
+    "price_eur_foil": 8.31
   },
   {
     "id": "fb7f1e73-183f-4041-907d-700e248ac5af",
@@ -15627,16 +15627,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/b/fb7f1e73-183f-4041-907d-700e248ac5af.jpg?1783906307",
     "image_large": "https://cards.scryfall.io/large/front/f/b/fb7f1e73-183f-4041-907d-700e248ac5af.jpg?1783906307",
     "back_image": "",
-    "price_usd": 9.95,
-    "price_foil": 19.81,
+    "price_usd": 10.45,
+    "price_foil": 18.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/196/summon:-yojimbo?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 12.18,
-    "price_eur_foil": 17.25
+    "price_eur": 12.04,
+    "price_eur_foil": 17.94
   },
   {
     "id": "c95c1a97-4c9e-4d38-8b12-193f8ff0d556",
@@ -15674,16 +15674,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c95c1a97-4c9e-4d38-8b12-193f8ff0d556.jpg?1783906306",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c95c1a97-4c9e-4d38-8b12-193f8ff0d556.jpg?1783906306",
     "back_image": "",
-    "price_usd": 6.38,
-    "price_foil": 9.71,
+    "price_usd": 6.34,
+    "price_foil": 9.84,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/197/summon:-valefor?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 5.33,
-    "price_eur_foil": 8.53
+    "price_eur": 5.29,
+    "price_eur_foil": 8.37
   },
   {
     "id": "e34b664c-2e80-4672-83ae-51babf28cf6c",
@@ -15721,16 +15721,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/3/e34b664c-2e80-4672-83ae-51babf28cf6c.jpg?1783906304",
     "image_large": "https://cards.scryfall.io/large/front/e/3/e34b664c-2e80-4672-83ae-51babf28cf6c.jpg?1783906304",
     "back_image": "",
-    "price_usd": 3.44,
-    "price_foil": 6.11,
+    "price_usd": 3.63,
+    "price_foil": 6.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/198/summon:-esper-valigarmanda?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.43,
-    "price_eur_foil": 4.86
+    "price_eur": 3.37,
+    "price_eur_foil": 5.01
   },
   {
     "id": "a469904f-f144-4e70-b689-c7869e40bcb2",
@@ -15768,15 +15768,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a469904f-f144-4e70-b689-c7869e40bcb2.jpg?1783906305",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a469904f-f144-4e70-b689-c7869e40bcb2.jpg?1783906305",
     "back_image": "",
-    "price_usd": 2.44,
-    "price_foil": 5.21,
+    "price_usd": 2.42,
+    "price_foil": 5.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/199/summon:-kujata?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.52,
+    "price_eur": 2.42,
     "price_eur_foil": 4.19
   },
   {
@@ -15815,16 +15815,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/3/83ba525d-d38e-4e68-9516-b6239a1b0b09.jpg?1783906305",
     "image_large": "https://cards.scryfall.io/large/front/8/3/83ba525d-d38e-4e68-9516-b6239a1b0b09.jpg?1783906305",
     "back_image": "",
-    "price_usd": 3.95,
-    "price_foil": 7.27,
+    "price_usd": 3.98,
+    "price_foil": 7.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/200/summon:-magus-sisters?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.48,
-    "price_eur_foil": 4.89
+    "price_eur": 3.81,
+    "price_eur_foil": 5.43
   },
   {
     "id": "d30dd823-9a04-4e3d-89c6-0fc5afc9efa4",
@@ -15862,16 +15862,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/3/d30dd823-9a04-4e3d-89c6-0fc5afc9efa4.jpg?1783906304",
     "image_large": "https://cards.scryfall.io/large/front/d/3/d30dd823-9a04-4e3d-89c6-0fc5afc9efa4.jpg?1783906304",
     "back_image": "",
-    "price_usd": 33.95,
-    "price_foil": 47.85,
+    "price_usd": 35.0,
+    "price_foil": 47.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/201/celes-rune-knight?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 23.45,
-    "price_eur_foil": 36.61
+    "price_eur": 25.4,
+    "price_eur_foil": 39.64
   },
   {
     "id": "15ce92a3-0d51-4c8e-bbce-d225021b4c35",
@@ -15909,16 +15909,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/5/15ce92a3-0d51-4c8e-bbce-d225021b4c35.jpg?1783906303",
     "image_large": "https://cards.scryfall.io/large/front/1/5/15ce92a3-0d51-4c8e-bbce-d225021b4c35.jpg?1783906303",
     "back_image": "",
-    "price_usd": 69.84,
-    "price_foil": 100.62,
+    "price_usd": 71.34,
+    "price_foil": 103.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/202/cloud-ex-soldier?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 46.9,
-    "price_eur_foil": 81.39
+    "price_eur": 47.56,
+    "price_eur_foil": 83.5
   },
   {
     "id": "24a80798-8ff1-41b9-9ffe-a48d1add8538",
@@ -15956,16 +15956,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/24a80798-8ff1-41b9-9ffe-a48d1add8538.jpg?1783906302",
     "image_large": "https://cards.scryfall.io/large/front/2/4/24a80798-8ff1-41b9-9ffe-a48d1add8538.jpg?1783906302",
     "back_image": "",
-    "price_usd": 14.33,
-    "price_foil": 17.91,
+    "price_usd": 14.56,
+    "price_foil": 17.89,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/203/graha-tia-scion-reborn?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 11.5,
-    "price_eur_foil": 16.25
+    "price_eur": 11.3,
+    "price_eur_foil": 16.82
   },
   {
     "id": "901bd4dc-ebd3-40af-9fb0-57a8719329a4",
@@ -16003,16 +16003,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/0/901bd4dc-ebd3-40af-9fb0-57a8719329a4.jpg?1783906302",
     "image_large": "https://cards.scryfall.io/large/front/9/0/901bd4dc-ebd3-40af-9fb0-57a8719329a4.jpg?1783906302",
     "back_image": "",
-    "price_usd": 54.69,
-    "price_foil": 85.97,
+    "price_usd": 53.26,
+    "price_foil": 89.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/204/terra-herald-of-hope?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 39.56,
-    "price_eur_foil": 63.03
+    "price_eur": 41.46,
+    "price_eur_foil": 64.94
   },
   {
     "id": "7f4af6c8-c419-42a9-ae5e-c3b73ea5eeea",
@@ -16050,16 +16050,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/f/7f4af6c8-c419-42a9-ae5e-c3b73ea5eeea.jpg?1783906302",
     "image_large": "https://cards.scryfall.io/large/front/7/f/7f4af6c8-c419-42a9-ae5e-c3b73ea5eeea.jpg?1783906302",
     "back_image": "",
-    "price_usd": 40.88,
-    "price_foil": 55.55,
+    "price_usd": 40.77,
+    "price_foil": 56.6,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/205/tidus-yunas-guardian?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 29.26,
-    "price_eur_foil": 47.44
+    "price_eur": 29.48,
+    "price_eur_foil": 47.6
   },
   {
     "id": "33743b2c-9e30-458d-ada5-fd1cd5b25a5a",
@@ -16097,16 +16097,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/3/33743b2c-9e30-458d-ada5-fd1cd5b25a5a.jpg?1783906302",
     "image_large": "https://cards.scryfall.io/large/front/3/3/33743b2c-9e30-458d-ada5-fd1cd5b25a5a.jpg?1783906302",
     "back_image": "",
-    "price_usd": 39.72,
-    "price_foil": 59.63,
+    "price_usd": 39.19,
+    "price_foil": 59.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/206/tifa-martial-artist?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 27.71,
-    "price_eur_foil": 45.09
+    "price_eur": 28.48,
+    "price_eur_foil": 46.21
   },
   {
     "id": "514ad860-dff2-45f2-ad5c-77c776c1cf74",
@@ -16144,16 +16144,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/1/514ad860-dff2-45f2-ad5c-77c776c1cf74.jpg?1783906302",
     "image_large": "https://cards.scryfall.io/large/front/5/1/514ad860-dff2-45f2-ad5c-77c776c1cf74.jpg?1783906302",
     "back_image": "",
-    "price_usd": 198.79,
-    "price_foil": 312.28,
+    "price_usd": 202.32,
+    "price_foil": 321.55,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/207/yshtola-nights-blessed?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 127.36,
-    "price_eur_foil": 254.76
+    "price_eur": 149.17,
+    "price_eur_foil": 341.68
   },
   {
     "id": "e562a30c-038e-44bb-ae07-0c3d0e8a1393",
@@ -16191,16 +16191,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e562a30c-038e-44bb-ae07-0c3d0e8a1393.jpg?1783906301",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e562a30c-038e-44bb-ae07-0c3d0e8a1393.jpg?1783906301",
     "back_image": "",
-    "price_usd": 42.76,
-    "price_foil": 63.48,
+    "price_usd": 42.49,
+    "price_foil": 63.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/208/yuna-grand-summoner?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 41.33,
-    "price_eur_foil": 63.05
+    "price_eur": 41.49,
+    "price_eur_foil": 62.53
   },
   {
     "id": "f1c9e178-24ec-41cb-a6e2-9e9222dec4c2",
@@ -16238,7 +16238,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/1/f1c9e178-24ec-41cb-a6e2-9e9222dec4c2.jpg?1783906303",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 237.88,
+    "price_foil": 238.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/209/celes-rune-knight?utm_source=api",
     "treatments": [
@@ -16246,7 +16246,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 180.88
+    "price_eur_foil": 174.52
   },
   {
     "id": "c22ebe7c-dcfe-4cb2-b6c4-2b4eaa1e635d",
@@ -16284,7 +16284,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/c/2/c22ebe7c-dcfe-4cb2-b6c4-2b4eaa1e635d.jpg?1783906302",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 484.69,
+    "price_foil": 488.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/210/cloud-ex-soldier?utm_source=api",
     "treatments": [
@@ -16292,7 +16292,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 335.71
+    "price_eur_foil": 354.5
   },
   {
     "id": "4dd910c1-9d74-4f08-bc36-51fa504f9017",
@@ -16330,7 +16330,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/d/4dd910c1-9d74-4f08-bc36-51fa504f9017.jpg?1783906301",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 87.63,
+    "price_foil": 87.11,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/211/graha-tia-scion-reborn?utm_source=api",
     "treatments": [
@@ -16338,7 +16338,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 58.01
+    "price_eur_foil": 64.4
   },
   {
     "id": "bb077546-d0f6-4b74-bc59-3c6a50fbc4f2",
@@ -16376,7 +16376,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/b/bb077546-d0f6-4b74-bc59-3c6a50fbc4f2.jpg?1783906300",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 357.66,
+    "price_foil": 352.83,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/212/terra-herald-of-hope?utm_source=api",
     "treatments": [
@@ -16384,7 +16384,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 340.03
+    "price_eur_foil": 346.3
   },
   {
     "id": "5c40cf0f-2eee-4c56-8c5d-fd70e11dc3cc",
@@ -16422,7 +16422,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/c/5c40cf0f-2eee-4c56-8c5d-fd70e11dc3cc.jpg?1783906299",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 245.46,
+    "price_foil": 248.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/213/tidus-yunas-guardian?utm_source=api",
     "treatments": [
@@ -16430,7 +16430,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 159.41
+    "price_eur_foil": 163.26
   },
   {
     "id": "ec975a48-5919-4666-9c60-b9fbe986f18c",
@@ -16468,7 +16468,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/c/ec975a48-5919-4666-9c60-b9fbe986f18c.jpg?1783906299",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 365.31,
+    "price_foil": 367.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/214/tifa-martial-artist?utm_source=api",
     "treatments": [
@@ -16476,7 +16476,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 239.25
+    "price_eur_foil": 242.16
   },
   {
     "id": "58cca3dc-eac8-4ef6-a2c0-d46d9240d06b",
@@ -16514,7 +16514,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/8/58cca3dc-eac8-4ef6-a2c0-d46d9240d06b.jpg?1783906299",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1016.89,
+    "price_foil": 1077.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/215/yshtola-nights-blessed?utm_source=api",
     "treatments": [
@@ -16560,7 +16560,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/8/2819652e-c944-4c5d-a098-2d15e232366e.jpg?1783906298",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 325.94,
+    "price_foil": 328.19,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/216/yuna-grand-summoner?utm_source=api",
     "treatments": [
@@ -16568,7 +16568,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 269.24
+    "price_eur_foil": 270.62
   },
   {
     "id": "3219a87c-1b92-4777-ac5d-c78f3ddf35d2",
@@ -16605,16 +16605,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/2/3219a87c-1b92-4777-ac5d-c78f3ddf35d2.jpg?1783906300",
     "image_large": "https://cards.scryfall.io/large/front/3/2/3219a87c-1b92-4777-ac5d-c78f3ddf35d2.jpg?1783906300",
     "back_image": "",
-    "price_usd": 5.18,
-    "price_foil": 3.4,
+    "price_usd": 5.06,
+    "price_foil": 3.55,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/217/secret-rendezvous?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 6.9,
-    "price_eur_foil": 5.0
+    "price_eur": 6.61,
+    "price_eur_foil": 4.74
   },
   {
     "id": "d325fef9-2422-4b35-8b3d-4ed3b2553392",
@@ -16652,15 +16652,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/3/d325fef9-2422-4b35-8b3d-4ed3b2553392.jpg?1783906299",
     "back_image": "",
     "price_usd": 6.99,
-    "price_foil": 6.64,
+    "price_foil": 6.76,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/218/secret-rendezvous?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 6.97,
-    "price_eur_foil": 6.44
+    "price_eur": 7.14,
+    "price_eur_foil": 6.78
   },
   {
     "id": "1fed38d0-c32c-440c-9d99-ca3b48a34791",
@@ -16697,8 +16697,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/f/1fed38d0-c32c-440c-9d99-ca3b48a34791.jpg?1783906296",
     "image_large": "https://cards.scryfall.io/large/front/1/f/1fed38d0-c32c-440c-9d99-ca3b48a34791.jpg?1783906296",
     "back_image": "",
-    "price_usd": 3.23,
-    "price_foil": 2.43,
+    "price_usd": 3.07,
+    "price_foil": 2.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/219/secret-rendezvous?utm_source=api",
     "treatments": [
@@ -16706,7 +16706,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 2.53,
-    "price_eur_foil": 3.29
+    "price_eur_foil": 3.1
   },
   {
     "id": "8adf7d34-186d-4823-a746-150d71b53739",
@@ -16743,7 +16743,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/a/8adf7d34-186d-4823-a746-150d71b53739.jpg?1783906297",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.92,
+    "price_foil": 1.96,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/220/celes-rune-knight?utm_source=api",
     "treatments": [
@@ -16751,7 +16751,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.87
+    "price_eur_foil": 2.58
   },
   {
     "id": "5a186ba3-94c1-4eab-8d4f-42a320bfa073",
@@ -16788,7 +16788,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/a/5a186ba3-94c1-4eab-8d4f-42a320bfa073.jpg?1783906297",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 6.47,
+    "price_foil": 6.83,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/221/cloud-ex-soldier?utm_source=api",
     "treatments": [
@@ -16796,7 +16796,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 5.64
+    "price_eur_foil": 5.32
   },
   {
     "id": "214453a2-9dcb-4bab-853f-5b56bbcbe4f8",
@@ -16833,7 +16833,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/1/214453a2-9dcb-4bab-853f-5b56bbcbe4f8.jpg?1783906296",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.04,
+    "price_foil": 0.99,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/222/graha-tia-scion-reborn?utm_source=api",
     "treatments": [
@@ -16841,7 +16841,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.17
+    "price_eur_foil": 1.14
   },
   {
     "id": "4f36f28b-b9c9-42a2-a2e5-d1b532e482a3",
@@ -16878,7 +16878,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/f/4f36f28b-b9c9-42a2-a2e5-d1b532e482a3.jpg?1783906296",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 2.29,
+    "price_foil": 2.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/223/terra-herald-of-hope?utm_source=api",
     "treatments": [
@@ -16886,7 +16886,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.81
+    "price_eur_foil": 2.9
   },
   {
     "id": "6021debf-8d5d-40e4-a197-3751b3ef5701",
@@ -16923,7 +16923,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/0/6021debf-8d5d-40e4-a197-3751b3ef5701.jpg?1783906295",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.6,
+    "price_foil": 3.61,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/224/tidus-yunas-guardian?utm_source=api",
     "treatments": [
@@ -16931,7 +16931,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.24
+    "price_eur_foil": 4.42
   },
   {
     "id": "09f09db5-ee5a-4a4b-9dbb-aca0dff04fcf",
@@ -16968,7 +16968,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/9/09f09db5-ee5a-4a4b-9dbb-aca0dff04fcf.jpg?1783906294",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 7.92,
+    "price_foil": 7.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/225/tifa-martial-artist?utm_source=api",
     "treatments": [
@@ -16976,7 +16976,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 5.85
+    "price_eur_foil": 5.9
   },
   {
     "id": "e8df6177-e14d-4dc9-bfc6-5e5f31c2834d",
@@ -17013,7 +17013,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/8/e8df6177-e14d-4dc9-bfc6-5e5f31c2834d.jpg?1783906296",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 9.2,
+    "price_foil": 10.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/226/yshtola-nights-blessed?utm_source=api",
     "treatments": [
@@ -17021,7 +17021,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 9.51
+    "price_eur_foil": 10.03
   },
   {
     "id": "a8d64705-c6ce-4bfa-a444-aa06ea9ee122",
@@ -17058,7 +17058,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/8/a8d64705-c6ce-4bfa-a444-aa06ea9ee122.jpg?1783906295",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.88,
+    "price_foil": 3.92,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/227/yuna-grand-summoner?utm_source=api",
     "treatments": [
@@ -17066,7 +17066,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 5.16
+    "price_eur_foil": 5.68
   },
   {
     "id": "48a8abd6-8b5f-45b6-9f82-f2ce17d86222",
@@ -17104,7 +17104,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/8/48a8abd6-8b5f-45b6-9f82-f2ce17d86222.jpg?1783906294",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.84,
+    "price_foil": 5.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/228/heralds-horn?utm_source=api",
     "treatments": [
@@ -17112,7 +17112,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.37
+    "price_eur_foil": 3.15
   },
   {
     "id": "fd9c99f0-390d-4ab1-ac0a-b18f1b0af12c",
@@ -17149,7 +17149,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/d/fd9c99f0-390d-4ab1-ac0a-b18f1b0af12c.jpg?1783906295",
     "image_large": "https://cards.scryfall.io/large/front/f/d/fd9c99f0-390d-4ab1-ac0a-b18f1b0af12c.jpg?1783906295",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/229/angel-of-the-ruins?utm_source=api",
@@ -17157,7 +17157,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -17195,7 +17195,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/6/c6ff5063-c93f-4b21-8d08-ab0e8e046d39.jpg?1783906295",
     "image_large": "https://cards.scryfall.io/large/front/c/6/c6ff5063-c93f-4b21-8d08-ab0e8e046d39.jpg?1783906295",
     "back_image": "",
-    "price_usd": 1.03,
+    "price_usd": 0.99,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/230/archaeomancers-map?utm_source=api",
@@ -17203,7 +17203,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.41,
+    "price_eur": 1.46,
     "price_eur_foil": null
   },
   {
@@ -17241,7 +17241,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/93e3dbd9-20f6-47a2-8246-c260b2ead9dc.jpg?1783906292",
     "image_large": "https://cards.scryfall.io/large/front/9/3/93e3dbd9-20f6-47a2-8246-c260b2ead9dc.jpg?1783906292",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/231/austere-command?utm_source=api",
@@ -17249,7 +17249,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.44,
+    "price_eur": 0.47,
     "price_eur_foil": null
   },
   {
@@ -17287,7 +17287,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/3/53e3fa87-8de0-4e3a-90bf-780dd0a9fb48.jpg?1783906294",
     "image_large": "https://cards.scryfall.io/large/front/5/3/53e3fa87-8de0-4e3a-90bf-780dd0a9fb48.jpg?1783906294",
     "back_image": "",
-    "price_usd": 4.46,
+    "price_usd": 4.77,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/232/authority-of-the-consuls?utm_source=api",
@@ -17295,7 +17295,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 4.77,
+    "price_eur": 4.82,
     "price_eur_foil": null
   },
   {
@@ -17333,7 +17333,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/e/0ed04a28-2984-4fa6-a11e-f508b7b5446e.jpg?1783906293",
     "image_large": "https://cards.scryfall.io/large/front/0/e/0ed04a28-2984-4fa6-a11e-f508b7b5446e.jpg?1783906293",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.37,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/233/bastion-protector?utm_source=api",
@@ -17379,7 +17379,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/3/032dc879-bf2f-4626-8aac-4d5446421923.jpg?1783906292",
     "image_large": "https://cards.scryfall.io/large/front/0/3/032dc879-bf2f-4626-8aac-4d5446421923.jpg?1783906292",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/234/bronze-guardian?utm_source=api",
@@ -17387,7 +17387,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.38,
     "price_eur_foil": null
   },
   {
@@ -17425,7 +17425,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/1/81096eba-ad0a-4fa8-8d56-5a1ea9a9155b.jpg?1783906290",
     "image_large": "https://cards.scryfall.io/large/front/8/1/81096eba-ad0a-4fa8-8d56-5a1ea9a9155b.jpg?1783906290",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/235/cleansing-nova?utm_source=api",
@@ -17433,7 +17433,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.32,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -17471,7 +17471,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/8/4836e220-5c89-49fc-8918-a51adf026ab4.jpg?1783906290",
     "image_large": "https://cards.scryfall.io/large/front/4/8/4836e220-5c89-49fc-8918-a51adf026ab4.jpg?1783906290",
     "back_image": "",
-    "price_usd": 4.3,
+    "price_usd": 4.67,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/236/clever-concealment?utm_source=api",
@@ -17479,7 +17479,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 5.26,
+    "price_eur": 5.19,
     "price_eur_foil": null
   },
   {
@@ -17517,7 +17517,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/f/af2dcc4d-f4bf-49e4-9103-9b4bc9545ae4.jpg?1783906289",
     "image_large": "https://cards.scryfall.io/large/front/a/f/af2dcc4d-f4bf-49e4-9103-9b4bc9545ae4.jpg?1783906289",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/237/collective-effort?utm_source=api",
@@ -17525,7 +17525,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.15,
     "price_eur_foil": null
   },
   {
@@ -17609,7 +17609,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/d/8d82e20d-09c0-4b16-9b25-4790924aa0b6.jpg?1783906289",
     "image_large": "https://cards.scryfall.io/large/front/8/d/8d82e20d-09c0-4b16-9b25-4790924aa0b6.jpg?1783906289",
     "back_image": "",
-    "price_usd": 3.64,
+    "price_usd": 4.03,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/239/damning-verdict?utm_source=api",
@@ -17617,7 +17617,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 3.56,
+    "price_eur": 3.47,
     "price_eur_foil": null
   },
   {
@@ -17655,7 +17655,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/9/694e5322-b7c9-4f38-97ce-0b03a391a453.jpg?1783906287",
     "image_large": "https://cards.scryfall.io/large/front/6/9/694e5322-b7c9-4f38-97ce-0b03a391a453.jpg?1783906287",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/240/destroy-evil?utm_source=api",
@@ -17663,7 +17663,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -17701,7 +17701,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/e/2ecc0fcb-9141-465c-90b1-7652d3c9a4ab.jpg?1783906290",
     "image_large": "https://cards.scryfall.io/large/front/2/e/2ecc0fcb-9141-465c-90b1-7652d3c9a4ab.jpg?1783906290",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/241/dispatch?utm_source=api",
@@ -17709,7 +17709,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.39,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -17747,7 +17747,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/d/4d8b6418-da30-4c68-b87c-3936eb77620c.jpg?1783906289",
     "image_large": "https://cards.scryfall.io/large/front/4/d/4d8b6418-da30-4c68-b87c-3936eb77620c.jpg?1783906289",
     "back_image": "",
-    "price_usd": 5.67,
+    "price_usd": 5.51,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/242/farewell?utm_source=api",
@@ -17755,7 +17755,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 4.44,
+    "price_eur": 4.35,
     "price_eur_foil": null
   },
   {
@@ -17793,7 +17793,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/3/438a7db0-8005-46ac-8dd1-e7e364fd2ba7.jpg?1783906289",
     "image_large": "https://cards.scryfall.io/large/front/4/3/438a7db0-8005-46ac-8dd1-e7e364fd2ba7.jpg?1783906289",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/243/final-judgment?utm_source=api",
@@ -17801,7 +17801,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.33,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -17839,7 +17839,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/755e0d2b-9a5e-4a13-b085-13c33e120de0.jpg?1783906286",
     "image_large": "https://cards.scryfall.io/large/front/7/5/755e0d2b-9a5e-4a13-b085-13c33e120de0.jpg?1783906286",
     "back_image": "",
-    "price_usd": 0.61,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/244/grateful-apparition?utm_source=api",
@@ -17847,7 +17847,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.18,
     "price_eur_foil": null
   },
   {
@@ -17885,7 +17885,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/4/e464408d-3e50-4a9e-beca-b91e15baacaf.jpg?1783906288",
     "image_large": "https://cards.scryfall.io/large/front/e/4/e464408d-3e50-4a9e-beca-b91e15baacaf.jpg?1783906288",
     "back_image": "",
-    "price_usd": 0.18,
+    "price_usd": 0.19,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/245/lingering-souls?utm_source=api",
@@ -17893,7 +17893,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.12,
+    "price_eur": 0.13,
     "price_eur_foil": null
   },
   {
@@ -17931,7 +17931,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/6/e6fc5c0b-0b64-491d-b312-b9b2133225d9.jpg?1783906286",
     "image_large": "https://cards.scryfall.io/large/front/e/6/e6fc5c0b-0b64-491d-b312-b9b2133225d9.jpg?1783906286",
     "back_image": "",
-    "price_usd": 0.53,
+    "price_usd": 0.62,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/246/luminous-broodmoth?utm_source=api",
@@ -17977,7 +17977,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f129968-0af6-4ae4-a0c3-6f911a7bae22.jpg?1783906286",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f129968-0af6-4ae4-a0c3-6f911a7bae22.jpg?1783906286",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/247/palace-jailer?utm_source=api",
@@ -17985,7 +17985,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -18023,7 +18023,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/b/bba46570-dca2-4849-966a-0972e6a4c506.jpg?1783906287",
     "image_large": "https://cards.scryfall.io/large/front/b/b/bba46570-dca2-4849-966a-0972e6a4c506.jpg?1783906287",
     "back_image": "",
-    "price_usd": 1.29,
+    "price_usd": 1.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/248/path-to-exile?utm_source=api",
@@ -18031,7 +18031,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.57,
+    "price_eur": 1.6,
     "price_eur_foil": null
   },
   {
@@ -18115,7 +18115,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/7/b7f768ce-e30e-4da6-a2e3-3e67315b1766.jpg?1783906284",
     "image_large": "https://cards.scryfall.io/large/front/b/7/b7f768ce-e30e-4da6-a2e3-3e67315b1766.jpg?1783906284",
     "back_image": "",
-    "price_usd": 0.71,
+    "price_usd": 0.75,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/250/puresteel-paladin?utm_source=api",
@@ -18123,7 +18123,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.93,
+    "price_eur": 1.01,
     "price_eur_foil": null
   },
   {
@@ -18161,7 +18161,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fe1d5e11-0c74-4de0-a8be-428af44be684.jpg?1783906283",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe1d5e11-0c74-4de0-a8be-428af44be684.jpg?1783906283",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/251/resourceful-defense?utm_source=api",
@@ -18169,7 +18169,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.33,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -18207,7 +18207,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/99e1d96f-c326-49b2-9a24-6e3e5465047e.jpg?1783906283",
     "image_large": "https://cards.scryfall.io/large/front/9/9/99e1d96f-c326-49b2-9a24-6e3e5465047e.jpg?1783906283",
     "back_image": "",
-    "price_usd": 0.38,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/252/scholar-of-new-horizons?utm_source=api",
@@ -18215,7 +18215,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.41,
+    "price_eur": 0.44,
     "price_eur_foil": null
   },
   {
@@ -18253,7 +18253,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/0/d09a77e7-649c-4f2c-bcd3-0598271e9373.jpg?1783906284",
     "image_large": "https://cards.scryfall.io/large/front/d/0/d09a77e7-649c-4f2c-bcd3-0598271e9373.jpg?1783906284",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/253/secret-rendezvous?utm_source=api",
@@ -18261,7 +18261,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.3,
+    "price_eur": 0.29,
     "price_eur_foil": null
   },
   {
@@ -18299,7 +18299,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e135d544-2a3e-4b22-ae4d-6c2203769e2a.jpg?1783906282",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e135d544-2a3e-4b22-ae4d-6c2203769e2a.jpg?1783906282",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.4,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/254/sun-titan?utm_source=api",
@@ -18307,7 +18307,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.36,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -18345,7 +18345,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/5/25774e8c-bbc1-4a53-926c-7c01c2ac908f.jpg?1783906282",
     "image_large": "https://cards.scryfall.io/large/front/2/5/25774e8c-bbc1-4a53-926c-7c01c2ac908f.jpg?1783906282",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.59,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/255/sunscorch-regent?utm_source=api",
@@ -18391,7 +18391,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/6/06554274-78ee-4bfc-b203-b81cb4639427.jpg?1783906280",
     "image_large": "https://cards.scryfall.io/large/front/0/6/06554274-78ee-4bfc-b203-b81cb4639427.jpg?1783906280",
     "back_image": "",
-    "price_usd": 1.41,
+    "price_usd": 1.43,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/256/swords-to-plowshares?utm_source=api",
@@ -18399,7 +18399,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.11,
+    "price_eur": 2.25,
     "price_eur_foil": null
   },
   {
@@ -18445,7 +18445,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -18483,7 +18483,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a479784c-3f94-4950-8928-6a1e57bb6627.jpg?1783906283",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a479784c-3f94-4950-8928-6a1e57bb6627.jpg?1783906283",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/258/tragic-arrogance?utm_source=api",
@@ -18491,7 +18491,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -18529,7 +18529,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/76c9b6c1-05de-4c16-8ebf-ea68aa110a69.jpg?1783906279",
     "image_large": "https://cards.scryfall.io/large/front/7/6/76c9b6c1-05de-4c16-8ebf-ea68aa110a69.jpg?1783906279",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/259/unfinished-business?utm_source=api",
@@ -18537,7 +18537,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -18575,7 +18575,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/b/5bb0f6ec-6448-40bd-a819-b828b85b2118.jpg?1783906281",
     "image_large": "https://cards.scryfall.io/large/front/5/b/5bb0f6ec-6448-40bd-a819-b828b85b2118.jpg?1783906281",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/260/vanquish-the-horde?utm_source=api",
@@ -18583,7 +18583,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.35,
+    "price_eur": 0.31,
     "price_eur_foil": null
   },
   {
@@ -18621,7 +18621,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/8/e85c555a-f034-4c79-92d8-610527d16529.jpg?1783906279",
     "image_large": "https://cards.scryfall.io/large/front/e/8/e85c555a-f034-4c79-92d8-610527d16529.jpg?1783906279",
     "back_image": "",
-    "price_usd": 0.63,
+    "price_usd": 0.7,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/261/archmage-emeritus?utm_source=api",
@@ -18629,7 +18629,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.38,
+    "price_eur": 1.35,
     "price_eur_foil": null
   },
   {
@@ -18667,7 +18667,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/8/886ce333-44d7-458e-a3bb-a58d1d7fc69b.jpg?1783906278",
     "image_large": "https://cards.scryfall.io/large/front/8/8/886ce333-44d7-458e-a3bb-a58d1d7fc69b.jpg?1783906278",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/262/chasm-skulker?utm_source=api",
@@ -18675,7 +18675,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.36,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -18713,7 +18713,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/766b2e52-6ba1-4222-a9f4-01a2bf3e9443.jpg?1783906278",
     "image_large": "https://cards.scryfall.io/large/front/7/6/766b2e52-6ba1-4222-a9f4-01a2bf3e9443.jpg?1783906278",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/263/dig-through-time?utm_source=api",
@@ -18721,7 +18721,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -18759,7 +18759,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/3/4358fcf2-e07c-4a0f-8f69-5d0f83adeb20.jpg?1783906277",
     "image_large": "https://cards.scryfall.io/large/front/4/3/4358fcf2-e07c-4a0f-8f69-5d0f83adeb20.jpg?1783906277",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/264/hypnotic-sprite-mesmeric-glare?utm_source=api",
@@ -18813,7 +18813,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.02,
+    "price_eur": 1.14,
     "price_eur_foil": null
   },
   {
@@ -18851,7 +18851,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/24c55c03-2c7a-416d-81d6-74a77a103704.jpg?1783906277",
     "image_large": "https://cards.scryfall.io/large/front/2/4/24c55c03-2c7a-416d-81d6-74a77a103704.jpg?1783906277",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/266/into-the-story?utm_source=api",
@@ -18859,7 +18859,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -18897,7 +18897,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fe1023a2-c096-4c62-8627-e865b348ba02.jpg?1783906275",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe1023a2-c096-4c62-8627-e865b348ba02.jpg?1783906275",
     "back_image": "",
-    "price_usd": 2.96,
+    "price_usd": 3.05,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/267/an-offer-you-cant-refuse?utm_source=api",
@@ -18943,7 +18943,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8fdbe10e-4a5c-43ee-abb5-20a8d5be9727.jpg?1783906281",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8fdbe10e-4a5c-43ee-abb5-20a8d5be9727.jpg?1783906281",
     "back_image": "",
-    "price_usd": 2.88,
+    "price_usd": 2.81,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/268/propaganda?utm_source=api",
@@ -18951,7 +18951,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.56,
+    "price_eur": 2.58,
     "price_eur_foil": null
   },
   {
@@ -18989,7 +18989,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/1/31d56cda-ee00-4037-a2e3-e17286750b0b.jpg?1783906275",
     "image_large": "https://cards.scryfall.io/large/front/3/1/31d56cda-ee00-4037-a2e3-e17286750b0b.jpg?1783906275",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/269/pull-from-tomorrow?utm_source=api",
@@ -18997,7 +18997,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -19035,7 +19035,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e1d1c0ab-6f75-4144-baab-59b2194742f9.jpg?1783906278",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e1d1c0ab-6f75-4144-baab-59b2194742f9.jpg?1783906278",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/270/rite-of-replication?utm_source=api",
@@ -19043,7 +19043,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.26,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -19081,7 +19081,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/7/a71d0330-ae9b-48c4-802b-b2383958e0d4.jpg?1783906277",
     "image_large": "https://cards.scryfall.io/large/front/a/7/a71d0330-ae9b-48c4-802b-b2383958e0d4.jpg?1783906277",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/271/sublime-epiphany?utm_source=api",
@@ -19089,7 +19089,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.3,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -19127,7 +19127,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/6/a6a0afd5-f3f9-459e-bd03-1a7a3521b570.jpg?1783906274",
     "image_large": "https://cards.scryfall.io/large/front/a/6/a6a0afd5-f3f9-459e-bd03-1a7a3521b570.jpg?1783906274",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/272/torrential-gearhulk?utm_source=api",
@@ -19135,7 +19135,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.38,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -19173,7 +19173,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/a/aa0ba9cb-e45c-4c23-baab-38e01391ec6b.jpg?1783906272",
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa0ba9cb-e45c-4c23-baab-38e01391ec6b.jpg?1783906272",
     "back_image": "",
-    "price_usd": 0.43,
+    "price_usd": 0.42,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/273/archfiend-of-depravity?utm_source=api",
@@ -19181,7 +19181,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.68,
+    "price_eur": 0.7,
     "price_eur_foil": null
   },
   {
@@ -19227,7 +19227,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.44,
+    "price_eur": 0.43,
     "price_eur_foil": null
   },
   {
@@ -19265,7 +19265,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/d/4d507db6-29a6-4816-8e37-5b6e318d740f.jpg?1783906273",
     "image_large": "https://cards.scryfall.io/large/front/4/d/4d507db6-29a6-4816-8e37-5b6e318d740f.jpg?1783906273",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.38,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/275/crux-of-fate?utm_source=api",
@@ -19273,7 +19273,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.49,
+    "price_eur": 0.48,
     "price_eur_foil": null
   },
   {
@@ -19311,7 +19311,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/3/333c8e71-fe90-408c-aabd-c5b7d83d0f03.jpg?1783906272",
     "image_large": "https://cards.scryfall.io/large/front/3/3/333c8e71-fe90-408c-aabd-c5b7d83d0f03.jpg?1783906272",
     "back_image": "",
-    "price_usd": 0.39,
+    "price_usd": 0.41,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/276/exsanguinate?utm_source=api",
@@ -19319,7 +19319,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.4,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -19357,7 +19357,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/0802be9f-686f-4321-afa4-d472241de653.jpg?1783906273",
     "image_large": "https://cards.scryfall.io/large/front/0/8/0802be9f-686f-4321-afa4-d472241de653.jpg?1783906273",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/277/lethal-scheme?utm_source=api",
@@ -19365,7 +19365,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.26,
+    "price_eur": 0.29,
     "price_eur_foil": null
   },
   {
@@ -19403,7 +19403,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/44b14a83-ba66-4c94-8b67-ebe577024532.jpg?1783906271",
     "image_large": "https://cards.scryfall.io/large/front/4/4/44b14a83-ba66-4c94-8b67-ebe577024532.jpg?1783906271",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/278/morbid-opportunist?utm_source=api",
@@ -19411,7 +19411,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -19449,7 +19449,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/d/dd239710-62ef-43b5-aea2-e82bb385744d.jpg?1783906272",
     "image_large": "https://cards.scryfall.io/large/front/d/d/dd239710-62ef-43b5-aea2-e82bb385744d.jpg?1783906272",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/279/murderous-rider-swift-end?utm_source=api",
@@ -19495,7 +19495,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/7/47dfd4bd-a7a0-40bd-80e8-16c5ddd91091.jpg?1783906273",
     "image_large": "https://cards.scryfall.io/large/front/4/7/47dfd4bd-a7a0-40bd-80e8-16c5ddd91091.jpg?1783906273",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/280/nights-whisper?utm_source=api",
@@ -19541,7 +19541,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/b/8ba8b02a-8a05-40cd-8b83-51fd0cc0a7a5.jpg?1783906270",
     "image_large": "https://cards.scryfall.io/large/front/8/b/8ba8b02a-8a05-40cd-8b83-51fd0cc0a7a5.jpg?1783906270",
     "back_image": "",
-    "price_usd": 4.99,
+    "price_usd": 4.73,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/281/pitiless-plunderer?utm_source=api",
@@ -19549,7 +19549,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 3.09,
+    "price_eur": 3.18,
     "price_eur_foil": null
   },
   {
@@ -19587,7 +19587,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/8/58838b71-404f-41ad-9a9b-2c7f875bab06.jpg?1783906269",
     "image_large": "https://cards.scryfall.io/large/front/5/8/58838b71-404f-41ad-9a9b-2c7f875bab06.jpg?1783906269",
     "back_image": "",
-    "price_usd": 8.08,
+    "price_usd": 8.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/282/reanimate?utm_source=api",
@@ -19595,7 +19595,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 7.93,
+    "price_eur": 7.99,
     "price_eur_foil": null
   },
   {
@@ -19633,7 +19633,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/5/953c7338-e30d-452c-89ff-0c5fca690b2f.jpg?1783906272",
     "image_large": "https://cards.scryfall.io/large/front/9/5/953c7338-e30d-452c-89ff-0c5fca690b2f.jpg?1783906272",
     "back_image": "",
-    "price_usd": 4.24,
+    "price_usd": 4.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/283/rise-of-the-dark-realms?utm_source=api",
@@ -19641,7 +19641,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 3.62,
+    "price_eur": 3.56,
     "price_eur_foil": null
   },
   {
@@ -19679,7 +19679,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/a/4a4192e9-ba32-4801-a7f5-b4dad3559e4e.jpg?1783906270",
     "image_large": "https://cards.scryfall.io/large/front/4/a/4a4192e9-ba32-4801-a7f5-b4dad3559e4e.jpg?1783906270",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/284/sepulchral-primordial?utm_source=api",
@@ -19687,7 +19687,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.34,
+    "price_eur": 0.35,
     "price_eur_foil": null
   },
   {
@@ -19725,7 +19725,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/3/a3b1fc65-3620-4052-a1f8-1779d95029c7.jpg?1783906269",
     "image_large": "https://cards.scryfall.io/large/front/a/3/a3b1fc65-3620-4052-a1f8-1779d95029c7.jpg?1783906269",
     "back_image": "",
-    "price_usd": 6.58,
+    "price_usd": 6.46,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/285/snuff-out?utm_source=api",
@@ -19733,7 +19733,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 7.7,
+    "price_eur": 7.72,
     "price_eur_foil": null
   },
   {
@@ -19771,7 +19771,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/3/73f1aa13-b3bc-480e-826c-6bded7ee1ca6.jpg?1783906269",
     "image_large": "https://cards.scryfall.io/large/front/7/3/73f1aa13-b3bc-480e-826c-6bded7ee1ca6.jpg?1783906269",
     "back_image": "",
-    "price_usd": 0.45,
+    "price_usd": 0.41,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/286/stitch-together?utm_source=api",
@@ -19779,7 +19779,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.88,
+    "price_eur": 0.92,
     "price_eur_foil": null
   },
   {
@@ -19817,7 +19817,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/a/fa6c734a-672b-44cb-9232-5688e3534ccc.jpg?1783906265",
     "image_large": "https://cards.scryfall.io/large/front/f/a/fa6c734a-672b-44cb-9232-5688e3534ccc.jpg?1783906265",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/287/stitchers-supplier?utm_source=api",
@@ -19825,7 +19825,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.36,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -19863,7 +19863,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/0/601be092-2353-4b86-ac01-e8fbdbed29b7.jpg?1783906265",
     "image_large": "https://cards.scryfall.io/large/front/6/0/601be092-2353-4b86-ac01-e8fbdbed29b7.jpg?1783906265",
     "back_image": "",
-    "price_usd": 0.37,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/288/syphon-mind?utm_source=api",
@@ -19909,7 +19909,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/8/484ade24-6c2c-4f7e-b561-da802a80e0bb.jpg?1783906264",
     "image_large": "https://cards.scryfall.io/large/front/4/8/484ade24-6c2c-4f7e-b561-da802a80e0bb.jpg?1783906264",
     "back_image": "",
-    "price_usd": 0.58,
+    "price_usd": 0.59,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/289/anger?utm_source=api",
@@ -19955,7 +19955,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/7/67d41ba2-a908-4613-b275-6ffe4165e48a.jpg?1783906265",
     "image_large": "https://cards.scryfall.io/large/front/6/7/67d41ba2-a908-4613-b275-6ffe4165e48a.jpg?1783906265",
     "back_image": "",
-    "price_usd": 0.5,
+    "price_usd": 0.47,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/290/big-score?utm_source=api",
@@ -20001,7 +20001,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/3/a3579f5c-255d-4b01-9b84-9f5c72cb4178.jpg?1783906265",
     "image_large": "https://cards.scryfall.io/large/front/a/3/a3579f5c-255d-4b01-9b84-9f5c72cb4178.jpg?1783906265",
     "back_image": "",
-    "price_usd": 0.4,
+    "price_usd": 0.39,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/291/chaos-warp?utm_source=api",
@@ -20009,7 +20009,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.55,
+    "price_eur": 0.56,
     "price_eur_foil": null
   },
   {
@@ -20047,7 +20047,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/7/07cc036d-f46e-490d-adbb-d6974c4e10fd.jpg?1783906264",
     "image_large": "https://cards.scryfall.io/large/front/0/7/07cc036d-f46e-490d-adbb-d6974c4e10fd.jpg?1783906264",
     "back_image": "",
-    "price_usd": 0.37,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/292/combustible-gearhulk?utm_source=api",
@@ -20055,7 +20055,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.26,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -20093,7 +20093,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fe233fa7-bc38-45f5-bfe5-da93877f1075.jpg?1783906265",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe233fa7-bc38-45f5-bfe5-da93877f1075.jpg?1783906265",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/293/flayer-of-the-hatebound?utm_source=api",
@@ -20101,7 +20101,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -20139,7 +20139,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/8/a886ed1a-d6a4-46d2-8b97-ee4a533773fb.jpg?1783906272",
     "image_large": "https://cards.scryfall.io/large/front/a/8/a886ed1a-d6a4-46d2-8b97-ee4a533773fb.jpg?1783906272",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/294/furious-rise?utm_source=api",
@@ -20185,7 +20185,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/7/97ff9946-af2c-4568-847e-b828a71d0217.jpg?1783906264",
     "image_large": "https://cards.scryfall.io/large/front/9/7/97ff9946-af2c-4568-847e-b828a71d0217.jpg?1783906264",
     "back_image": "",
-    "price_usd": 2.18,
+    "price_usd": 2.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/295/hellkite-tyrant?utm_source=api",
@@ -20193,7 +20193,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.86,
+    "price_eur": 1.97,
     "price_eur_foil": null
   },
   {
@@ -20231,7 +20231,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/5/d5a53791-d4e9-49e9-9daf-c8b378925afe.jpg?1783906267",
     "image_large": "https://cards.scryfall.io/large/front/d/5/d5a53791-d4e9-49e9-9daf-c8b378925afe.jpg?1783906267",
     "back_image": "",
-    "price_usd": 6.14,
+    "price_usd": 5.98,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/296/professional-face-breaker?utm_source=api",
@@ -20239,7 +20239,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 4.63,
+    "price_eur": 4.76,
     "price_eur_foil": null
   },
   {
@@ -20277,7 +20277,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/0/a0eafd12-c0c9-4fe3-a4bb-40ab7b64e47c.jpg?1783906263",
     "image_large": "https://cards.scryfall.io/large/front/a/0/a0eafd12-c0c9-4fe3-a4bb-40ab7b64e47c.jpg?1783906263",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/297/ruin-grinder?utm_source=api",
@@ -20285,7 +20285,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -20323,7 +20323,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/b/9b5a8df2-2bc0-408c-a9d2-e70c0f56642d.jpg?1783906262",
     "image_large": "https://cards.scryfall.io/large/front/9/b/9b5a8df2-2bc0-408c-a9d2-e70c0f56642d.jpg?1783906262",
     "back_image": "",
-    "price_usd": 1.29,
+    "price_usd": 1.17,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/298/vandalblast?utm_source=api",
@@ -20331,7 +20331,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.57,
+    "price_eur": 1.47,
     "price_eur_foil": null
   },
   {
@@ -20369,7 +20369,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/f/5fc6876d-7441-42ac-b9a1-c10a0f6a387a.jpg?1783906264",
     "image_large": "https://cards.scryfall.io/large/front/5/f/5fc6876d-7441-42ac-b9a1-c10a0f6a387a.jpg?1783906264",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/299/bane-of-progress?utm_source=api",
@@ -20377,7 +20377,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.49,
+    "price_eur": 0.54,
     "price_eur_foil": null
   },
   {
@@ -20423,7 +20423,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.53,
+    "price_eur": 0.56,
     "price_eur_foil": null
   },
   {
@@ -20461,7 +20461,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/c/2ce4ebd2-c3e6-4299-bdb7-8e5eb1834168.jpg?1783906259",
     "image_large": "https://cards.scryfall.io/large/front/2/c/2ce4ebd2-c3e6-4299-bdb7-8e5eb1834168.jpg?1783906259",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/301/duskshell-crawler?utm_source=api",
@@ -20507,7 +20507,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f9b52ee8-3cde-4082-8a6c-0a82caa3505d.jpg?1783906262",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f9b52ee8-3cde-4082-8a6c-0a82caa3505d.jpg?1783906262",
     "back_image": "",
-    "price_usd": 0.58,
+    "price_usd": 0.62,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/302/farseek?utm_source=api",
@@ -20515,7 +20515,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.82,
+    "price_eur": 0.8,
     "price_eur_foil": null
   },
   {
@@ -20553,7 +20553,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/d/ed314c9c-ce86-4782-981f-7956ceca564c.jpg?1783906259",
     "image_large": "https://cards.scryfall.io/large/front/e/d/ed314c9c-ce86-4782-981f-7956ceca564c.jpg?1783906259",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/303/fight-rigging?utm_source=api",
@@ -20561,7 +20561,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.34,
     "price_eur_foil": null
   },
   {
@@ -20599,7 +20599,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/e/de0f3be6-4e5b-4186-af49-fe3dadadcd01.jpg?1783906259",
     "image_large": "https://cards.scryfall.io/large/front/d/e/de0f3be6-4e5b-4186-af49-fe3dadadcd01.jpg?1783906259",
     "back_image": "",
-    "price_usd": 0.39,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/304/forgotten-ancient?utm_source=api",
@@ -20607,7 +20607,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.35,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -20653,7 +20653,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.57,
+    "price_eur": 2.84,
     "price_eur_foil": null
   },
   {
@@ -20691,7 +20691,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/3/236c4e0d-1a54-4024-85ef-4d73028bfb87.jpg?1783906258",
     "image_large": "https://cards.scryfall.io/large/front/2/3/236c4e0d-1a54-4024-85ef-4d73028bfb87.jpg?1783906258",
     "back_image": "",
-    "price_usd": 1.03,
+    "price_usd": 1.01,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/306/gyre-sage?utm_source=api",
@@ -20699,7 +20699,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.5,
+    "price_eur": 1.61,
     "price_eur_foil": null
   },
   {
@@ -20745,7 +20745,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.12,
+    "price_eur": 2.05,
     "price_eur_foil": null
   },
   {
@@ -20783,7 +20783,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/7/978410dd-aace-4a70-8028-6dd11c14156e.jpg?1783906259",
     "image_large": "https://cards.scryfall.io/large/front/9/7/978410dd-aace-4a70-8028-6dd11c14156e.jpg?1783906259",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/308/harmonize?utm_source=api",
@@ -20791,7 +20791,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.19,
+    "price_eur": 0.17,
     "price_eur_foil": null
   },
   {
@@ -20829,7 +20829,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/4/348d4546-3da5-4f78-82f3-9a79d2f9b0d1.jpg?1783906258",
     "image_large": "https://cards.scryfall.io/large/front/3/4/348d4546-3da5-4f78-82f3-9a79d2f9b0d1.jpg?1783906258",
     "back_image": "",
-    "price_usd": 1.17,
+    "price_usd": 1.15,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/309/incubation-druid?utm_source=api",
@@ -20837,7 +20837,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.23,
+    "price_eur": 1.3,
     "price_eur_foil": null
   },
   {
@@ -20875,7 +20875,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/e/be938240-214d-4726-ba2a-aaedc5bbe7ba.jpg?1783906256",
     "image_large": "https://cards.scryfall.io/large/front/b/e/be938240-214d-4726-ba2a-aaedc5bbe7ba.jpg?1783906256",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/310/inspiring-call?utm_source=api",
@@ -20883,7 +20883,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.35,
+    "price_eur": 0.38,
     "price_eur_foil": null
   },
   {
@@ -20921,7 +20921,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/1/01c2b71a-492d-431c-90ba-173781ba8815.jpg?1783906257",
     "image_large": "https://cards.scryfall.io/large/front/0/1/01c2b71a-492d-431c-90ba-173781ba8815.jpg?1783906257",
     "back_image": "",
-    "price_usd": 2.54,
+    "price_usd": 2.56,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/311/natures-lore?utm_source=api",
@@ -20929,7 +20929,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.91,
+    "price_eur": 2.9,
     "price_eur_foil": null
   },
   {
@@ -20967,7 +20967,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/d/ad09a5c2-3081-4d5d-9c0f-037e045e9045.jpg?1783906256",
     "image_large": "https://cards.scryfall.io/large/front/a/d/ad09a5c2-3081-4d5d-9c0f-037e045e9045.jpg?1783906256",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.2,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/312/path-of-discovery?utm_source=api",
@@ -20975,7 +20975,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -21013,7 +21013,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/3/f3b48473-b53d-4c85-b970-7ee09a1eefd2.jpg?1783906256",
     "image_large": "https://cards.scryfall.io/large/front/f/3/f3b48473-b53d-4c85-b970-7ee09a1eefd2.jpg?1783906256",
     "back_image": "",
-    "price_usd": 0.37,
+    "price_usd": 0.4,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/313/rampant-growth?utm_source=api",
@@ -21021,7 +21021,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.56,
+    "price_eur": 0.55,
     "price_eur_foil": null
   },
   {
@@ -21059,7 +21059,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/c/9ce2aa8e-b0c4-4e22-84eb-94b9e5ca6f76.jpg?1783906253",
     "image_large": "https://cards.scryfall.io/large/front/9/c/9ce2aa8e-b0c4-4e22-84eb-94b9e5ca6f76.jpg?1783906253",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/314/rampant-rejuvenator?utm_source=api",
@@ -21067,7 +21067,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.33,
+    "price_eur": 0.44,
     "price_eur_foil": null
   },
   {
@@ -21105,7 +21105,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/b/5bcf7495-a8af-4c7f-a27d-be27748f64e0.jpg?1783906253",
     "image_large": "https://cards.scryfall.io/large/front/5/b/5bcf7495-a8af-4c7f-a27d-be27748f64e0.jpg?1783906253",
     "back_image": "",
-    "price_usd": 5.5,
+    "price_usd": 5.45,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/315/three-visits?utm_source=api",
@@ -21113,7 +21113,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 4.94,
+    "price_eur": 4.93,
     "price_eur_foil": null
   },
   {
@@ -21151,7 +21151,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/d/fd5a8a4c-4d66-48a1-bc3e-caaa2dbb64d4.jpg?1783906253",
     "image_large": "https://cards.scryfall.io/large/front/f/d/fd5a8a4c-4d66-48a1-bc3e-caaa2dbb64d4.jpg?1783906253",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/316/tireless-tracker?utm_source=api",
@@ -21197,7 +21197,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/d/fda23b02-c650-4092-a35d-ae330547c425.jpg?1783906255",
     "image_large": "https://cards.scryfall.io/large/front/f/d/fda23b02-c650-4092-a35d-ae330547c425.jpg?1783906255",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/317/altered-ego?utm_source=api",
@@ -21243,7 +21243,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/a/4ae1ec4a-5367-4663-841b-4038ae30a690.jpg?1783906251",
     "image_large": "https://cards.scryfall.io/large/front/4/a/4ae1ec4a-5367-4663-841b-4038ae30a690.jpg?1783906251",
     "back_image": "",
-    "price_usd": 0.99,
+    "price_usd": 1.09,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/318/baleful-strix?utm_source=api",
@@ -21251,7 +21251,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.34,
+    "price_eur": 1.36,
     "price_eur_foil": null
   },
   {
@@ -21289,7 +21289,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/8/284fe591-88e6-46f0-8b9c-9ec7d143a2d0.jpg?1783906253",
     "image_large": "https://cards.scryfall.io/large/front/2/8/284fe591-88e6-46f0-8b9c-9ec7d143a2d0.jpg?1783906253",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/319/bedevil?utm_source=api",
@@ -21297,7 +21297,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.36,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -21335,7 +21335,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/2/22b8fad5-bb39-4a1b-9f9b-c0c9cf8228bb.jpg?1783906255",
     "image_large": "https://cards.scryfall.io/large/front/2/2/22b8fad5-bb39-4a1b-9f9b-c0c9cf8228bb.jpg?1783906255",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/320/behemoth-sledge?utm_source=api",
@@ -21343,7 +21343,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.25,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -21389,7 +21389,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.18,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -21427,7 +21427,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/7/e7674039-7640-4f70-84e9-d1fa76a59dbe.jpg?1783906257",
     "image_large": "https://cards.scryfall.io/large/front/e/7/e7674039-7640-4f70-84e9-d1fa76a59dbe.jpg?1783906257",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.2,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/322/crackling-doom?utm_source=api",
@@ -21435,7 +21435,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -21473,7 +21473,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/a/dae88c31-77a5-40aa-84be-d74b4545a6ee.jpg?1783906251",
     "image_large": "https://cards.scryfall.io/large/front/d/a/dae88c31-77a5-40aa-84be-d74b4545a6ee.jpg?1783906251",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/323/decimate?utm_source=api",
@@ -21481,7 +21481,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -21519,7 +21519,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/3/33a37435-bd6c-4330-8138-98a2afa36e54.jpg?1783906250",
     "image_large": "https://cards.scryfall.io/large/front/3/3/33a37435-bd6c-4330-8138-98a2afa36e54.jpg?1783906250",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.16,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/324/endless-detour?utm_source=api",
@@ -21565,7 +21565,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/b/4bb9c7e1-46a6-4acf-8415-221d9c9d9d23.jpg?1783906248",
     "image_large": "https://cards.scryfall.io/large/front/4/b/4bb9c7e1-46a6-4acf-8415-221d9c9d9d23.jpg?1783906248",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/325/fathom-mage?utm_source=api",
@@ -21611,7 +21611,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/9/39fe8402-2f70-4498-a0b6-6a9dd0e2848f.jpg?1783906248",
     "image_large": "https://cards.scryfall.io/large/front/3/9/39fe8402-2f70-4498-a0b6-6a9dd0e2848f.jpg?1783906248",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/326/legions-to-ashes?utm_source=api",
@@ -21619,7 +21619,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.26,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -21657,7 +21657,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/f/5f4fa21b-4733-49a6-b751-779b8325c4d2.jpg?1783906252",
     "image_large": "https://cards.scryfall.io/large/front/5/f/5f4fa21b-4733-49a6-b751-779b8325c4d2.jpg?1783906252",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/327/mortify?utm_source=api",
@@ -21665,7 +21665,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -21703,7 +21703,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/1/1131c841-d736-4c97-9c80-7e61fa30079d.jpg?1783906247",
     "image_large": "https://cards.scryfall.io/large/front/1/1/1131c841-d736-4c97-9c80-7e61fa30079d.jpg?1783906247",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/328/priest-of-fell-rites?utm_source=api",
@@ -21711,7 +21711,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -21749,7 +21749,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/930bc0f5-758a-49a7-ab23-5b74802bcddb.jpg?1783906247",
     "image_large": "https://cards.scryfall.io/large/front/9/3/930bc0f5-758a-49a7-ab23-5b74802bcddb.jpg?1783906247",
     "back_image": "",
-    "price_usd": 0.42,
+    "price_usd": 0.51,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/329/ruinous-ultimatum?utm_source=api",
@@ -21757,7 +21757,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.06,
+    "price_eur": 1.12,
     "price_eur_foil": null
   },
   {
@@ -21795,7 +21795,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/b/1b2c1bf2-d03a-4cd5-ab51-26c928949497.jpg?1783906250",
     "image_large": "https://cards.scryfall.io/large/front/1/b/1b2c1bf2-d03a-4cd5-ab51-26c928949497.jpg?1783906250",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/330/vindicate?utm_source=api",
@@ -21803,7 +21803,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.6,
+    "price_eur": 0.56,
     "price_eur_foil": null
   },
   {
@@ -21841,7 +21841,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/1/b1fe4252-f5f8-405a-82c4-2c7b35e7e7fb.jpg?1783906248",
     "image_large": "https://cards.scryfall.io/large/front/b/1/b1fe4252-f5f8-405a-82c4-2c7b35e7e7fb.jpg?1783906248",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/331/void-rend?utm_source=api",
@@ -21849,7 +21849,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.46,
+    "price_eur": 0.45,
     "price_eur_foil": null
   },
   {
@@ -21887,7 +21887,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/c/9ce66ebc-b39f-4b40-9d95-981629a5dd06.jpg?1783906246",
     "image_large": "https://cards.scryfall.io/large/front/9/c/9ce66ebc-b39f-4b40-9d95-981629a5dd06.jpg?1783906246",
     "back_image": "",
-    "price_usd": 0.47,
+    "price_usd": 0.52,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/332/arcane-signet?utm_source=api",
@@ -21895,7 +21895,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.78,
+    "price_eur": 0.72,
     "price_eur_foil": null
   },
   {
@@ -21933,7 +21933,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/4/f4f7cc5b-a52a-470b-8970-260b61c91ad5.jpg?1783906247",
     "image_large": "https://cards.scryfall.io/large/front/f/4/f4f7cc5b-a52a-470b-8970-260b61c91ad5.jpg?1783906247",
     "back_image": "",
-    "price_usd": 0.45,
+    "price_usd": 0.52,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/333/arcane-signet?utm_source=api",
@@ -21941,7 +21941,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.73,
+    "price_eur": 0.68,
     "price_eur_foil": null
   },
   {
@@ -21979,7 +21979,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/d/9df4b5a2-95bf-4268-9d75-6065176651d1.jpg?1785650657",
     "image_large": "https://cards.scryfall.io/large/front/9/d/9df4b5a2-95bf-4268-9d75-6065176651d1.jpg?1785650657",
     "back_image": "",
-    "price_usd": 0.44,
+    "price_usd": 0.43,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/334/arcane-signet?utm_source=api",
@@ -21987,7 +21987,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.6,
+    "price_eur": 0.65,
     "price_eur_foil": null
   },
   {
@@ -22025,7 +22025,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/c/4c861c4c-0520-46d9-b281-63a1188417dc.jpg?1783906247",
     "image_large": "https://cards.scryfall.io/large/front/4/c/4c861c4c-0520-46d9-b281-63a1188417dc.jpg?1783906247",
     "back_image": "",
-    "price_usd": 0.44,
+    "price_usd": 0.51,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/335/arcane-signet?utm_source=api",
@@ -22033,7 +22033,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.72,
+    "price_eur": 0.71,
     "price_eur_foil": null
   },
   {
@@ -22071,7 +22071,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/99fbb6f1-0584-45c2-b4c5-0431447913d4.jpg?1783906242",
     "image_large": "https://cards.scryfall.io/large/front/9/9/99fbb6f1-0584-45c2-b4c5-0431447913d4.jpg?1783906242",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/336/armory-automaton?utm_source=api",
@@ -22079,7 +22079,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -22117,7 +22117,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/2/a207957a-16e4-4830-a101-39bcd4a46e61.jpg?1785650623",
     "image_large": "https://cards.scryfall.io/large/front/a/2/a207957a-16e4-4830-a101-39bcd4a46e61.jpg?1785650623",
     "back_image": "",
-    "price_usd": 1.24,
+    "price_usd": 1.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/337/champions-helm?utm_source=api",
@@ -22125,7 +22125,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.26,
+    "price_eur": 1.23,
     "price_eur_foil": null
   },
   {
@@ -22163,7 +22163,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/5/f50acbb6-b295-4aaa-bd75-7a94b704b945.jpg?1783906242",
     "image_large": "https://cards.scryfall.io/large/front/f/5/f50acbb6-b295-4aaa-bd75-7a94b704b945.jpg?1783906242",
     "back_image": "",
-    "price_usd": 0.69,
+    "price_usd": 0.76,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/338/colossus-hammer?utm_source=api",
@@ -22171,7 +22171,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.88,
+    "price_eur": 0.84,
     "price_eur_foil": null
   },
   {
@@ -22209,7 +22209,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/0851660f-fa02-4f08-b28b-10279c58d4e4.jpg?1783906242",
     "image_large": "https://cards.scryfall.io/large/front/0/8/0851660f-fa02-4f08-b28b-10279c58d4e4.jpg?1783906242",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/339/commanders-sphere?utm_source=api",
@@ -22255,7 +22255,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/e/8e47061a-5505-4fe3-8caa-b0279b26e9b2.jpg?1783906241",
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e47061a-5505-4fe3-8caa-b0279b26e9b2.jpg?1783906241",
     "back_image": "",
-    "price_usd": 0.68,
+    "price_usd": 0.81,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/340/conquerors-flail?utm_source=api",
@@ -22263,7 +22263,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.88,
+    "price_eur": 0.9,
     "price_eur_foil": null
   },
   {
@@ -22301,7 +22301,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/b/5b4ce244-d34f-4e96-9fe5-a0a8cefb92c7.jpg?1783906242",
     "image_large": "https://cards.scryfall.io/large/front/5/b/5b4ce244-d34f-4e96-9fe5-a0a8cefb92c7.jpg?1783906242",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/341/coveted-jewel?utm_source=api",
@@ -22309,7 +22309,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -22347,7 +22347,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/9/49277723-84df-4842-a8e5-cdf1c1aa8161.jpg?1785650614",
     "image_large": "https://cards.scryfall.io/large/front/4/9/49277723-84df-4842-a8e5-cdf1c1aa8161.jpg?1785650614",
     "back_image": "",
-    "price_usd": 4.85,
+    "price_usd": 4.49,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/342/darksteel-plate?utm_source=api",
@@ -22355,7 +22355,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 3.57,
+    "price_eur": 3.65,
     "price_eur_foil": null
   },
   {
@@ -22393,7 +22393,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/d/5d659b0c-dc93-464f-847f-2af075caf145.jpg?1783906240",
     "image_large": "https://cards.scryfall.io/large/front/5/d/5d659b0c-dc93-464f-847f-2af075caf145.jpg?1783906240",
     "back_image": "",
-    "price_usd": 0.37,
+    "price_usd": 0.67,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/343/everflowing-chalice?utm_source=api",
@@ -22439,7 +22439,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/c/bc50f65f-1866-4fa6-b318-1d981845723b.jpg?1783906242",
     "image_large": "https://cards.scryfall.io/large/front/b/c/bc50f65f-1866-4fa6-b318-1d981845723b.jpg?1783906242",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/344/explorers-scope?utm_source=api",
@@ -22447,7 +22447,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.15,
     "price_eur_foil": null
   },
   {
@@ -22485,7 +22485,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f67b38f-275c-459d-ab9c-4851106ec732.jpg?1785650589",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f67b38f-275c-459d-ab9c-4851106ec732.jpg?1785650589",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.39,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/345/heros-blade?utm_source=api",
@@ -22493,7 +22493,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -22531,7 +22531,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/08866f84-406d-4372-9893-ba22690a48ef.jpg?1783906240",
     "image_large": "https://cards.scryfall.io/large/front/0/8/08866f84-406d-4372-9893-ba22690a48ef.jpg?1783906240",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.18,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/346/heros-heirloom?utm_source=api",
@@ -22577,7 +22577,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/c/6c28687d-b96a-4d3c-a6cb-99fbae6a384b.jpg?1783906244",
     "image_large": "https://cards.scryfall.io/large/front/6/c/6c28687d-b96a-4d3c-a6cb-99fbae6a384b.jpg?1783906244",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/347/inspiring-statuary?utm_source=api",
@@ -22585,7 +22585,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -22623,7 +22623,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/f/df087751-b8bf-4db0-a571-fb32f596fc2e.jpg?1783906239",
     "image_large": "https://cards.scryfall.io/large/front/d/f/df087751-b8bf-4db0-a571-fb32f596fc2e.jpg?1783906239",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/348/key-to-the-city?utm_source=api",
@@ -22631,7 +22631,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -22669,7 +22669,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/7/779abd27-985f-4bb9-9330-38d49bf52903.jpg?1783906241",
     "image_large": "https://cards.scryfall.io/large/front/7/7/779abd27-985f-4bb9-9330-38d49bf52903.jpg?1783906241",
     "back_image": "",
-    "price_usd": 4.41,
+    "price_usd": 4.68,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/349/lightning-greaves?utm_source=api",
@@ -22677,7 +22677,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 4.28,
+    "price_eur": 4.49,
     "price_eur_foil": null
   },
   {
@@ -22715,7 +22715,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/9/a9118fbe-f19c-4a65-a6ac-1c8a6308628d.jpg?1783906238",
     "image_large": "https://cards.scryfall.io/large/front/a/9/a9118fbe-f19c-4a65-a6ac-1c8a6308628d.jpg?1783906238",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/350/mask-of-memory?utm_source=api",
@@ -22723,7 +22723,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.3,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -22807,7 +22807,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/1/717b0d6b-fa62-46d2-a061-7161d3255c98.jpg?1783906237",
     "image_large": "https://cards.scryfall.io/large/front/7/1/717b0d6b-fa62-46d2-a061-7161d3255c98.jpg?1783906237",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/352/millikin?utm_source=api",
@@ -22815,7 +22815,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.16,
     "price_eur_foil": null
   },
   {
@@ -22853,7 +22853,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/f/7fdef0b6-a3b9-4752-bce6-53c0140a1693.jpg?1783906237",
     "image_large": "https://cards.scryfall.io/large/front/7/f/7fdef0b6-a3b9-4752-bce6-53c0140a1693.jpg?1783906237",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/353/mind-stone?utm_source=api",
@@ -22861,7 +22861,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -22899,7 +22899,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/d/ed235727-7e60-4b37-8947-4b3613711c4d.jpg?1785650570",
     "image_large": "https://cards.scryfall.io/large/front/e/d/ed235727-7e60-4b37-8947-4b3613711c4d.jpg?1785650570",
     "back_image": "",
-    "price_usd": 1.18,
+    "price_usd": 1.05,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/354/relic-of-legends?utm_source=api",
@@ -22907,7 +22907,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.12,
+    "price_eur": 1.19,
     "price_eur_foil": null
   },
   {
@@ -22945,7 +22945,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/e/4e5d5649-3e30-4aca-80f8-5a7522d366da.jpg?1783906237",
     "image_large": "https://cards.scryfall.io/large/front/4/e/4e5d5649-3e30-4aca-80f8-5a7522d366da.jpg?1783906237",
     "back_image": "",
-    "price_usd": 6.95,
+    "price_usd": 6.99,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/355/skullclamp?utm_source=api",
@@ -22953,7 +22953,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 5.97,
+    "price_eur": 5.78,
     "price_eur_foil": null
   },
   {
@@ -22991,7 +22991,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8fb860f9-3729-436e-adfb-c98c2a389d5d.jpg?1783906236",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8fb860f9-3729-436e-adfb-c98c2a389d5d.jpg?1783906236",
     "back_image": "",
-    "price_usd": 1.61,
+    "price_usd": 1.56,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/356/sol-ring?utm_source=api",
@@ -22999,7 +22999,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.45,
+    "price_eur": 1.5,
     "price_eur_foil": null
   },
   {
@@ -23037,7 +23037,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d105068a-d4f1-4971-b5a0-72806a798497.jpg?1783906235",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d105068a-d4f1-4971-b5a0-72806a798497.jpg?1783906235",
     "back_image": "",
-    "price_usd": 1.5,
+    "price_usd": 1.56,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/357/sol-ring?utm_source=api",
@@ -23045,7 +23045,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.46,
+    "price_eur": 1.59,
     "price_eur_foil": null
   },
   {
@@ -23083,7 +23083,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/a/9a34ac23-e318-4c0b-ab4c-e1eaa0e2547e.jpg?1783906235",
     "image_large": "https://cards.scryfall.io/large/front/9/a/9a34ac23-e318-4c0b-ab4c-e1eaa0e2547e.jpg?1783906235",
     "back_image": "",
-    "price_usd": 1.59,
+    "price_usd": 1.61,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/358/sol-ring?utm_source=api",
@@ -23091,7 +23091,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.35,
+    "price_eur": 1.45,
     "price_eur_foil": null
   },
   {
@@ -23129,7 +23129,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/a/1abcafa9-0f27-482f-95a9-24520f0106b8.jpg?1783906235",
     "image_large": "https://cards.scryfall.io/large/front/1/a/1abcafa9-0f27-482f-95a9-24520f0106b8.jpg?1783906235",
     "back_image": "",
-    "price_usd": 1.54,
+    "price_usd": 1.66,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/359/sol-ring?utm_source=api",
@@ -23137,7 +23137,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.34,
+    "price_eur": 1.68,
     "price_eur_foil": null
   },
   {
@@ -23175,7 +23175,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/4/64d2d473-9157-408a-b088-1489306c1912.jpg?1783906236",
     "image_large": "https://cards.scryfall.io/large/front/6/4/64d2d473-9157-408a-b088-1489306c1912.jpg?1783906236",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/360/solemn-simulacrum?utm_source=api",
@@ -23221,7 +23221,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/b/1beee53e-9380-481e-86a6-d13645a6a5a5.jpg?1783906235",
     "image_large": "https://cards.scryfall.io/large/front/1/b/1beee53e-9380-481e-86a6-d13645a6a5a5.jpg?1783906235",
     "back_image": "",
-    "price_usd": 2.56,
+    "price_usd": 2.5,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/361/swiftfoot-boots?utm_source=api",
@@ -23229,7 +23229,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.45,
+    "price_eur": 2.61,
     "price_eur_foil": null
   },
   {
@@ -23267,7 +23267,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/8/a822129c-0699-40e2-8639-c1a609a5ba3b.jpg?1783906233",
     "image_large": "https://cards.scryfall.io/large/front/a/8/a822129c-0699-40e2-8639-c1a609a5ba3b.jpg?1783906233",
     "back_image": "",
-    "price_usd": 5.13,
+    "price_usd": 5.08,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/362/sword-of-the-animist?utm_source=api",
@@ -23275,7 +23275,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 4.3,
+    "price_eur": 4.33,
     "price_eur_foil": null
   },
   {
@@ -23313,7 +23313,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/2/029fb369-f5ef-4768-8c0b-23d3cfd023d9.jpg?1783906233",
     "image_large": "https://cards.scryfall.io/large/front/0/2/029fb369-f5ef-4768-8c0b-23d3cfd023d9.jpg?1783906233",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/363/talisman-of-conviction?utm_source=api",
@@ -23321,7 +23321,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.36,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -23359,7 +23359,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/7/c7fb7ff7-aef0-4893-a120-e17a082cd07f.jpg?1783906235",
     "image_large": "https://cards.scryfall.io/large/front/c/7/c7fb7ff7-aef0-4893-a120-e17a082cd07f.jpg?1783906235",
     "back_image": "",
-    "price_usd": 1.63,
+    "price_usd": 1.41,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/364/talisman-of-dominance?utm_source=api",
@@ -23405,7 +23405,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/9/79696e14-837f-431a-b5fb-fe3620bb8262.jpg?1783906234",
     "image_large": "https://cards.scryfall.io/large/front/7/9/79696e14-837f-431a-b5fb-fe3620bb8262.jpg?1783906234",
     "back_image": "",
-    "price_usd": 0.44,
+    "price_usd": 0.41,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/365/talisman-of-hierarchy?utm_source=api",
@@ -23413,7 +23413,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.78,
+    "price_eur": 0.81,
     "price_eur_foil": null
   },
   {
@@ -23451,7 +23451,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/f/0f7b46ae-2cd4-407b-a97a-d112a5b6b86b.jpg?1783906232",
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f7b46ae-2cd4-407b-a97a-d112a5b6b86b.jpg?1783906232",
     "back_image": "",
-    "price_usd": 2.0,
+    "price_usd": 1.91,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/366/talisman-of-indulgence?utm_source=api",
@@ -23459,7 +23459,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.92,
+    "price_eur": 1.96,
     "price_eur_foil": null
   },
   {
@@ -23497,7 +23497,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/d/2dc4dfe7-ae80-4a6e-b588-fd497c35fe37.jpg?1783906232",
     "image_large": "https://cards.scryfall.io/large/front/2/d/2dc4dfe7-ae80-4a6e-b588-fd497c35fe37.jpg?1783906232",
     "back_image": "",
-    "price_usd": 0.41,
+    "price_usd": 0.37,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/367/talisman-of-progress?utm_source=api",
@@ -23505,7 +23505,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.48,
+    "price_eur": 0.43,
     "price_eur_foil": null
   },
   {
@@ -23543,7 +23543,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/c/5c617d99-354a-4586-9a09-1671c0e88754.jpg?1783906230",
     "image_large": "https://cards.scryfall.io/large/front/5/c/5c617d99-354a-4586-9a09-1671c0e88754.jpg?1783906230",
     "back_image": "",
-    "price_usd": 2.7,
+    "price_usd": 2.73,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/368/thought-vessel?utm_source=api",
@@ -23551,7 +23551,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.4,
+    "price_eur": 2.26,
     "price_eur_foil": null
   },
   {
@@ -23589,7 +23589,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/08b0d5aa-8d76-4951-a326-0f4078fdfd28.jpg?1783906230",
     "image_large": "https://cards.scryfall.io/large/front/0/8/08b0d5aa-8d76-4951-a326-0f4078fdfd28.jpg?1783906230",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/369/tome-of-legends?utm_source=api",
@@ -23597,7 +23597,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -23635,7 +23635,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/d/fd1f14be-8c7c-471d-93e3-5856f48ff94a.jpg?1786083583",
     "image_large": "https://cards.scryfall.io/large/front/f/d/fd1f14be-8c7c-471d-93e3-5856f48ff94a.jpg?1786083583",
     "back_image": "",
-    "price_usd": 1.34,
+    "price_usd": 1.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/370/trailblazers-boots?utm_source=api",
@@ -23643,7 +23643,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.0,
+    "price_eur": 1.03,
     "price_eur_foil": null
   },
   {
@@ -23681,7 +23681,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/0/50507ec0-72ff-4110-a73c-b6f256ac2e35.jpg?1783906229",
     "image_large": "https://cards.scryfall.io/large/front/5/0/50507ec0-72ff-4110-a73c-b6f256ac2e35.jpg?1783906229",
     "back_image": "",
-    "price_usd": 7.51,
+    "price_usd": 7.5,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/371/walking-ballista?utm_source=api",
@@ -23689,7 +23689,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 7.11,
+    "price_eur": 7.08,
     "price_eur_foil": null
   },
   {
@@ -23727,7 +23727,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/9/69dd3fa7-5498-4b88-bc98-6de8ca5fe007.jpg?1783906229",
     "image_large": "https://cards.scryfall.io/large/front/6/9/69dd3fa7-5498-4b88-bc98-6de8ca5fe007.jpg?1783906229",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/372/wayfarers-bauble?utm_source=api",
@@ -23735,7 +23735,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -23773,7 +23773,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/2/82ce1102-a88c-46ff-9fc1-7153beb50b6a.jpg?1783906231",
     "image_large": "https://cards.scryfall.io/large/front/8/2/82ce1102-a88c-46ff-9fc1-7153beb50b6a.jpg?1783906231",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.4,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/373/arcane-sanctum?utm_source=api",
@@ -23781,7 +23781,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.4,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -23819,7 +23819,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/7/77df073b-49dc-4743-82a3-d595bc938761.jpg?1783906229",
     "image_large": "https://cards.scryfall.io/large/front/7/7/77df073b-49dc-4743-82a3-d595bc938761.jpg?1783906229",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/374/ash-barrens?utm_source=api",
@@ -23827,7 +23827,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.12,
+    "price_eur": 0.14,
     "price_eur_foil": null
   },
   {
@@ -23865,7 +23865,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/2/a2de3346-9647-4540-ba41-e67c24ddf141.jpg?1783906228",
     "image_large": "https://cards.scryfall.io/large/front/a/2/a2de3346-9647-4540-ba41-e67c24ddf141.jpg?1783906228",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/375/battlefield-forge?utm_source=api",
@@ -23873,7 +23873,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.34,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -23911,7 +23911,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/b/abcd3daa-dd34-4d7d-b3ed-839f5e438cd7.jpg?1783906227",
     "image_large": "https://cards.scryfall.io/large/front/a/b/abcd3daa-dd34-4d7d-b3ed-839f5e438cd7.jpg?1783906227",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.38,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/376/bonders-enclave?utm_source=api",
@@ -23919,7 +23919,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.43,
+    "price_eur": 0.44,
     "price_eur_foil": null
   },
   {
@@ -23957,7 +23957,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/2/c2bc3f62-1e3a-4ec3-a83b-f6547d7c7b0d.jpg?1783906229",
     "image_large": "https://cards.scryfall.io/large/front/c/2/c2bc3f62-1e3a-4ec3-a83b-f6547d7c7b0d.jpg?1783906229",
     "back_image": "",
-    "price_usd": 0.43,
+    "price_usd": 0.46,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/377/brushland?utm_source=api",
@@ -23965,7 +23965,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.81,
+    "price_eur": 0.8,
     "price_eur_foil": null
   },
   {
@@ -24003,7 +24003,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/d/5d33aeaa-df27-4c41-9926-79e9dc6a9c69.jpg?1783906227",
     "image_large": "https://cards.scryfall.io/large/front/5/d/5d33aeaa-df27-4c41-9926-79e9dc6a9c69.jpg?1783906227",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/378/canopy-vista?utm_source=api",
@@ -24011,7 +24011,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.29,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -24049,7 +24049,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/9/d9cf2b77-afb0-4c21-bc23-6942ec292035.jpg?1783906226",
     "image_large": "https://cards.scryfall.io/large/front/d/9/d9cf2b77-afb0-4c21-bc23-6942ec292035.jpg?1783906226",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/379/choked-estuary?utm_source=api",
@@ -24057,7 +24057,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.34,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -24095,7 +24095,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/597dd04f-cb3d-4224-8e56-21f66485df47.jpg?1783906225",
     "image_large": "https://cards.scryfall.io/large/front/5/9/597dd04f-cb3d-4224-8e56-21f66485df47.jpg?1783906225",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/380/cinder-glade?utm_source=api",
@@ -24103,7 +24103,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.33,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -24141,7 +24141,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/c/2cddc851-fef6-4a45-818c-97d3dfc4140d.jpg?1783906227",
     "image_large": "https://cards.scryfall.io/large/front/2/c/2cddc851-fef6-4a45-818c-97d3dfc4140d.jpg?1783906227",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/381/clifftop-retreat?utm_source=api",
@@ -24149,7 +24149,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.35,
     "price_eur_foil": null
   },
   {
@@ -24187,7 +24187,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/a/9ac9c12b-5135-4124-b01b-336560907940.jpg?1783906224",
     "image_large": "https://cards.scryfall.io/large/front/9/a/9ac9c12b-5135-4124-b01b-336560907940.jpg?1783906224",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/382/command-tower?utm_source=api",
@@ -24195,7 +24195,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.5,
+    "price_eur": 0.46,
     "price_eur_foil": null
   },
   {
@@ -24233,7 +24233,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/f/bf544abb-c338-4da4-bb77-eddd3aaacc9a.jpg?1783906224",
     "image_large": "https://cards.scryfall.io/large/front/b/f/bf544abb-c338-4da4-bb77-eddd3aaacc9a.jpg?1783906224",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/383/contaminated-aquifer?utm_source=api",
@@ -24241,7 +24241,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.6,
+    "price_eur": 0.52,
     "price_eur_foil": null
   },
   {
@@ -24279,7 +24279,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/c/bcb5a670-7c8f-4b76-82c6-c89abffbb4bd.jpg?1783906224",
     "image_large": "https://cards.scryfall.io/large/front/b/c/bcb5a670-7c8f-4b76-82c6-c89abffbb4bd.jpg?1783906224",
     "back_image": "",
-    "price_usd": 0.37,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/384/darkwater-catacombs?utm_source=api",
@@ -24287,7 +24287,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -24325,7 +24325,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/f/7f6d8cae-face-4bff-8c0a-348cefe1e9dd.jpg?1783906223",
     "image_large": "https://cards.scryfall.io/large/front/7/f/7f6d8cae-face-4bff-8c0a-348cefe1e9dd.jpg?1783906223",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/385/demolition-field?utm_source=api",
@@ -24333,7 +24333,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.29,
     "price_eur_foil": null
   },
   {
@@ -24371,7 +24371,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/0/a0ecbdad-aebf-421d-a71e-e112f8c0e4bb.jpg?1783906223",
     "image_large": "https://cards.scryfall.io/large/front/a/0/a0ecbdad-aebf-421d-a71e-e112f8c0e4bb.jpg?1783906223",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/386/desolate-mire?utm_source=api",
@@ -24379,7 +24379,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -24417,7 +24417,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/44f78cab-06d4-4786-987f-4d0d15654fd5.jpg?1783906223",
     "image_large": "https://cards.scryfall.io/large/front/4/4/44f78cab-06d4-4786-987f-4d0d15654fd5.jpg?1783906223",
     "back_image": "",
-    "price_usd": 0.5,
+    "price_usd": 0.6,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/387/dragonskull-summit?utm_source=api",
@@ -24425,7 +24425,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.9,
+    "price_eur": 0.88,
     "price_eur_foil": null
   },
   {
@@ -24463,7 +24463,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/a/8a47d5f6-e08d-4311-97d0-16f7737b83a0.jpg?1783906222",
     "image_large": "https://cards.scryfall.io/large/front/8/a/8a47d5f6-e08d-4311-97d0-16f7737b83a0.jpg?1783906222",
     "back_image": "",
-    "price_usd": 1.42,
+    "price_usd": 1.5,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/388/drowned-catacomb?utm_source=api",
@@ -24471,7 +24471,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.04,
+    "price_eur": 2.02,
     "price_eur_foil": null
   },
   {
@@ -24509,7 +24509,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/351f791c-4bee-4fce-aee4-d0214ca0c945.jpg?1783906223",
     "image_large": "https://cards.scryfall.io/large/front/3/5/351f791c-4bee-4fce-aee4-d0214ca0c945.jpg?1783906223",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/389/evolving-wilds?utm_source=api",
@@ -24517,7 +24517,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.14,
     "price_eur_foil": null
   },
   {
@@ -24555,7 +24555,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/7/47c2b572-b54a-444c-8d74-b005e94d751f.jpg?1783906222",
     "image_large": "https://cards.scryfall.io/large/front/4/7/47c2b572-b54a-444c-8d74-b005e94d751f.jpg?1783906222",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/390/exotic-orchard?utm_source=api",
@@ -24563,7 +24563,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -24601,7 +24601,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/2/5277f73d-b964-4ce6-823d-ce0fbf0a2d28.jpg?1783906225",
     "image_large": "https://cards.scryfall.io/large/front/5/2/5277f73d-b964-4ce6-823d-ce0fbf0a2d28.jpg?1783906225",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/391/fetid-heath?utm_source=api",
@@ -24609,7 +24609,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.49,
+    "price_eur": 0.47,
     "price_eur_foil": null
   },
   {
@@ -24647,7 +24647,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/c/bcab849e-336d-490f-8dd2-0936fba2afbe.jpg?1783906222",
     "image_large": "https://cards.scryfall.io/large/front/b/c/bcab849e-336d-490f-8dd2-0936fba2afbe.jpg?1783906222",
     "back_image": "",
-    "price_usd": 0.96,
+    "price_usd": 0.91,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/392/fire-lit-thicket?utm_source=api",
@@ -24655,7 +24655,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.55,
+    "price_eur": 1.48,
     "price_eur_foil": null
   },
   {
@@ -24693,7 +24693,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/b/7b280a73-9246-4da4-8fc1-a5683edd8aab.jpg?1783906222",
     "image_large": "https://cards.scryfall.io/large/front/7/b/7b280a73-9246-4da4-8fc1-a5683edd8aab.jpg?1783906222",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/393/flooded-grove?utm_source=api",
@@ -24739,7 +24739,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/7/a7659f3f-a26a-4097-88ea-d72c3abb5e1d.jpg?1783906220",
     "image_large": "https://cards.scryfall.io/large/front/a/7/a7659f3f-a26a-4097-88ea-d72c3abb5e1d.jpg?1783906220",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.63,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/394/foreboding-ruins?utm_source=api",
@@ -24747,7 +24747,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -24785,7 +24785,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/a/7ac60dfc-040e-4cc1-a967-3c915770fc8e.jpg?1783906220",
     "image_large": "https://cards.scryfall.io/large/front/7/a/7ac60dfc-040e-4cc1-a967-3c915770fc8e.jpg?1783906220",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/395/forge-of-heroes?utm_source=api",
@@ -24793,7 +24793,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -24831,7 +24831,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/0/1028b210-db71-4bbd-8bd7-59dc4032f426.jpg?1783906219",
     "image_large": "https://cards.scryfall.io/large/front/1/0/1028b210-db71-4bbd-8bd7-59dc4032f426.jpg?1783906219",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/396/fortified-village?utm_source=api",
@@ -24839,7 +24839,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -24877,7 +24877,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/7/67e44005-d0a5-49d2-b2f7-4b991ffbb5ce.jpg?1783906218",
     "image_large": "https://cards.scryfall.io/large/front/6/7/67e44005-d0a5-49d2-b2f7-4b991ffbb5ce.jpg?1783906218",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/397/furycalm-snarl?utm_source=api",
@@ -24885,7 +24885,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -24923,7 +24923,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/d/4d62258f-135b-44ca-a27d-3c2267f408a5.jpg?1783906217",
     "image_large": "https://cards.scryfall.io/large/front/4/d/4d62258f-135b-44ca-a27d-3c2267f408a5.jpg?1783906217",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/398/game-trail?utm_source=api",
@@ -24931,7 +24931,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.4,
+    "price_eur": 0.42,
     "price_eur_foil": null
   },
   {
@@ -25015,7 +25015,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/7/d75d748f-38c3-4a7f-8211-db62d5314180.jpg?1783906217",
     "image_large": "https://cards.scryfall.io/large/front/d/7/d75d748f-38c3-4a7f-8211-db62d5314180.jpg?1783906217",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/400/glacial-fortress?utm_source=api",
@@ -25023,7 +25023,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.41,
+    "price_eur": 0.39,
     "price_eur_foil": null
   },
   {
@@ -25061,7 +25061,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/f/7f33cce1-1484-43da-a825-b090eb5403a4.jpg?1783906217",
     "image_large": "https://cards.scryfall.io/large/front/7/f/7f33cce1-1484-43da-a825-b090eb5403a4.jpg?1783906217",
     "back_image": "",
-    "price_usd": 1.97,
+    "price_usd": 1.94,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/401/graven-cairns?utm_source=api",
@@ -25069,7 +25069,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.79,
+    "price_eur": 2.93,
     "price_eur_foil": null
   },
   {
@@ -25107,7 +25107,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/9/09eeb9f5-4149-47c6-bfd0-472237043672.jpg?1783906217",
     "image_large": "https://cards.scryfall.io/large/front/0/9/09eeb9f5-4149-47c6-bfd0-472237043672.jpg?1783906217",
     "back_image": "",
-    "price_usd": 0.46,
+    "price_usd": 0.42,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/402/high-market?utm_source=api",
@@ -25115,7 +25115,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.83,
+    "price_eur": 0.88,
     "price_eur_foil": null
   },
   {
@@ -25153,7 +25153,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f89d20d-bb8b-4da8-97c7-1058c1b60325.jpg?1783906217",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f89d20d-bb8b-4da8-97c7-1058c1b60325.jpg?1783906217",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/403/hinterland-harbor?utm_source=api",
@@ -25161,7 +25161,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.37,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -25199,7 +25199,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/f/afe2ebec-0310-4b2f-ace4-fb293a1e4837.jpg?1783906218",
     "image_large": "https://cards.scryfall.io/large/front/a/f/afe2ebec-0310-4b2f-ace4-fb293a1e4837.jpg?1783906218",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/404/idyllic-beachfront?utm_source=api",
@@ -25207,7 +25207,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.17,
     "price_eur_foil": null
   },
   {
@@ -25245,7 +25245,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/c/8ca61142-d0ed-42cb-9a51-0e44151f2b44.jpg?1783906218",
     "image_large": "https://cards.scryfall.io/large/front/8/c/8ca61142-d0ed-42cb-9a51-0e44151f2b44.jpg?1783906218",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.41,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/405/isolated-chapel?utm_source=api",
@@ -25253,7 +25253,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.49,
+    "price_eur": 0.5,
     "price_eur_foil": null
   },
   {
@@ -25291,7 +25291,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/f/cf5f5ffc-fad0-4f7b-b2a3-cc10ca445d40.jpg?1783906216",
     "image_large": "https://cards.scryfall.io/large/front/c/f/cf5f5ffc-fad0-4f7b-b2a3-cc10ca445d40.jpg?1783906216",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.37,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/406/jungle-shrine?utm_source=api",
@@ -25299,7 +25299,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.25,
     "price_eur_foil": null
   },
   {
@@ -25337,7 +25337,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/e/de5279fc-2532-4e66-bc44-ca395e106ab0.jpg?1783906215",
     "image_large": "https://cards.scryfall.io/large/front/d/e/de5279fc-2532-4e66-bc44-ca395e106ab0.jpg?1783906215",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/407/mossfire-valley?utm_source=api",
@@ -25345,7 +25345,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -25383,7 +25383,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/9/e99933e3-9237-45e8-b067-44367fc21430.jpg?1783906216",
     "image_large": "https://cards.scryfall.io/large/front/e/9/e99933e3-9237-45e8-b067-44367fc21430.jpg?1783906216",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/408/nesting-grounds?utm_source=api",
@@ -25391,7 +25391,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.17,
     "price_eur_foil": null
   },
   {
@@ -25429,7 +25429,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/9/790d5244-5042-4b84-b16d-be0f87d11fad.jpg?1783906215",
     "image_large": "https://cards.scryfall.io/large/front/7/9/790d5244-5042-4b84-b16d-be0f87d11fad.jpg?1783906215",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.33,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/409/nomad-outpost?utm_source=api",
@@ -25437,7 +25437,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -25475,7 +25475,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/d/2d0812ef-a3b7-49d0-b1b8-ec0c8891b887.jpg?1783906214",
     "image_large": "https://cards.scryfall.io/large/front/2/d/2d0812ef-a3b7-49d0-b1b8-ec0c8891b887.jpg?1783906214",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/410/overflowing-basin?utm_source=api",
@@ -25483,7 +25483,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.21,
     "price_eur_foil": null
   },
   {
@@ -25521,7 +25521,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/d/4dd83a5d-1908-4141-8449-fac5e77cd6c0.jpg?1783906213",
     "image_large": "https://cards.scryfall.io/large/front/4/d/4dd83a5d-1908-4141-8449-fac5e77cd6c0.jpg?1783906213",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/411/path-of-ancestry?utm_source=api",
@@ -25529,7 +25529,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.19,
+    "price_eur": 0.17,
     "price_eur_foil": null
   },
   {
@@ -25567,7 +25567,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/1/f1ac3b7f-a1db-49df-ba02-fc80cb2f70af.jpg?1783906212",
     "image_large": "https://cards.scryfall.io/large/front/f/1/f1ac3b7f-a1db-49df-ba02-fc80cb2f70af.jpg?1783906212",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/412/port-town?utm_source=api",
@@ -25613,7 +25613,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/e/ce3a0ad9-6b7a-470c-8e49-4121fea72c89.jpg?1783906213",
     "image_large": "https://cards.scryfall.io/large/front/c/e/ce3a0ad9-6b7a-470c-8e49-4121fea72c89.jpg?1783906213",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/413/prairie-stream?utm_source=api",
@@ -25621,7 +25621,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.25,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -25659,7 +25659,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/7/977bf5a1-81f2-4c5b-a227-347bf8e19554.jpg?1783906212",
     "image_large": "https://cards.scryfall.io/large/front/9/7/977bf5a1-81f2-4c5b-a227-347bf8e19554.jpg?1783906212",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/414/radiant-grove?utm_source=api",
@@ -25667,7 +25667,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.15,
+    "price_eur": 0.12,
     "price_eur_foil": null
   },
   {
@@ -25705,7 +25705,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/8/b8cd0293-d140-4f80-804c-019957c1f49a.jpg?1783906211",
     "image_large": "https://cards.scryfall.io/large/front/b/8/b8cd0293-d140-4f80-804c-019957c1f49a.jpg?1783906211",
     "back_image": "",
-    "price_usd": 0.42,
+    "price_usd": 0.49,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/415/rogues-passage?utm_source=api",
@@ -25751,7 +25751,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/3/73a2e070-f375-4558-a982-01f6f4e902e9.jpg?1783906211",
     "image_large": "https://cards.scryfall.io/large/front/7/3/73a2e070-f375-4558-a982-01f6f4e902e9.jpg?1783906211",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.36,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/416/rootbound-crag?utm_source=api",
@@ -25759,7 +25759,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.43,
+    "price_eur": 0.44,
     "price_eur_foil": null
   },
   {
@@ -25797,7 +25797,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/d/3d575770-cb81-4353-b49e-cdaca7a5162f.jpg?1783906211",
     "image_large": "https://cards.scryfall.io/large/front/3/d/3d575770-cb81-4353-b49e-cdaca7a5162f.jpg?1783906211",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.63,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/417/rugged-prairie?utm_source=api",
@@ -25805,7 +25805,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.35,
+    "price_eur": 0.36,
     "price_eur_foil": null
   },
   {
@@ -25843,7 +25843,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/b/eb18e293-a58b-4a49-b601-88a30ffa9b99.jpg?1783906211",
     "image_large": "https://cards.scryfall.io/large/front/e/b/eb18e293-a58b-4a49-b601-88a30ffa9b99.jpg?1783906211",
     "back_image": "",
-    "price_usd": 0.17,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/418/sacred-peaks?utm_source=api",
@@ -25851,7 +25851,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.11,
+    "price_eur": 0.12,
     "price_eur_foil": null
   },
   {
@@ -25889,7 +25889,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a4e3f65d-8d73-4fd1-9de4-813ba6e40940.jpg?1783906211",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a4e3f65d-8d73-4fd1-9de4-813ba6e40940.jpg?1783906211",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/419/scavenger-grounds?utm_source=api",
@@ -25897,7 +25897,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.34,
+    "price_eur": 0.33,
     "price_eur_foil": null
   },
   {
@@ -25935,7 +25935,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a4fa7ef6-4a14-4820-b646-8945ff3b4786.jpg?1783906210",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a4fa7ef6-4a14-4820-b646-8945ff3b4786.jpg?1783906210",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.3,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/420/seaside-citadel?utm_source=api",
@@ -25943,7 +25943,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.27,
+    "price_eur": 0.28,
     "price_eur_foil": null
   },
   {
@@ -25981,7 +25981,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/d/4d02658c-bbe8-4673-8b44-0b24e0155a85.jpg?1783906210",
     "image_large": "https://cards.scryfall.io/large/front/4/d/4d02658c-bbe8-4673-8b44-0b24e0155a85.jpg?1783906210",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.28,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/421/shadowblood-ridge?utm_source=api",
@@ -25989,7 +25989,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.26,
     "price_eur_foil": null
   },
   {
@@ -26027,7 +26027,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/4/e45eff2e-c624-4c59-b192-a9d7dc2eeeba.jpg?1783906211",
     "image_large": "https://cards.scryfall.io/large/front/e/4/e45eff2e-c624-4c59-b192-a9d7dc2eeeba.jpg?1783906211",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/422/shineshadow-snarl?utm_source=api",
@@ -26035,7 +26035,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.22,
     "price_eur_foil": null
   },
   {
@@ -26073,7 +26073,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/9/0972c465-0369-4ac2-9912-2898fad1bdba.jpg?1783906210",
     "image_large": "https://cards.scryfall.io/large/front/0/9/0972c465-0369-4ac2-9912-2898fad1bdba.jpg?1783906210",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/423/skycloud-expanse?utm_source=api",
@@ -26081,7 +26081,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -26127,7 +26127,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.23,
     "price_eur_foil": null
   },
   {
@@ -26165,7 +26165,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/d/7ddf0ca3-dc64-47ac-87b9-4bd85b173885.jpg?1783906208",
     "image_large": "https://cards.scryfall.io/large/front/7/d/7ddf0ca3-dc64-47ac-87b9-4bd85b173885.jpg?1783906208",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/425/smoldering-marsh?utm_source=api",
@@ -26173,7 +26173,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.31,
     "price_eur_foil": null
   },
   {
@@ -26211,7 +26211,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/0/60057719-f597-4f2e-a75c-663f98a08573.jpg?1783906209",
     "image_large": "https://cards.scryfall.io/large/front/6/0/60057719-f597-4f2e-a75c-663f98a08573.jpg?1783906209",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.35,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/426/spire-of-industry?utm_source=api",
@@ -26219,7 +26219,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.28,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -26257,7 +26257,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/35b403ee-62cc-4f67-911e-4bf26e495374.jpg?1783906205",
     "image_large": "https://cards.scryfall.io/large/front/3/5/35b403ee-62cc-4f67-911e-4bf26e495374.jpg?1783906205",
     "back_image": "",
-    "price_usd": 1.19,
+    "price_usd": 1.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/427/sulfurous-springs?utm_source=api",
@@ -26265,7 +26265,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 1.62,
+    "price_eur": 1.67,
     "price_eur_foil": null
   },
   {
@@ -26303,7 +26303,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/1/81e28e36-893f-4b34-aef7-5f2c15dc231c.jpg?1783906207",
     "image_large": "https://cards.scryfall.io/large/front/8/1/81e28e36-893f-4b34-aef7-5f2c15dc231c.jpg?1783906207",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/428/sungrass-prairie?utm_source=api",
@@ -26311,7 +26311,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.3,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -26349,7 +26349,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/e/3eb96a33-46db-4d84-9a7f-9bb6a19a1a93.jpg?1783906205",
     "image_large": "https://cards.scryfall.io/large/front/3/e/3eb96a33-46db-4d84-9a7f-9bb6a19a1a93.jpg?1783906205",
     "back_image": "",
-    "price_usd": 0.34,
+    "price_usd": 0.38,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/429/sunken-hollow?utm_source=api",
@@ -26357,7 +26357,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.4,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -26395,7 +26395,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/d/2dbd21b1-d6cf-4d10-8a31-aa52208c95d7.jpg?1783906206",
     "image_large": "https://cards.scryfall.io/large/front/2/d/2dbd21b1-d6cf-4d10-8a31-aa52208c95d7.jpg?1783906206",
     "back_image": "",
-    "price_usd": 3.17,
+    "price_usd": 3.11,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/430/sunken-ruins?utm_source=api",
@@ -26403,7 +26403,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 3.48,
+    "price_eur": 3.39,
     "price_eur_foil": null
   },
   {
@@ -26441,7 +26441,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/b/4b163c67-2e88-4181-90c9-3f15eba59d03.jpg?1783906206",
     "image_large": "https://cards.scryfall.io/large/front/4/b/4b163c67-2e88-4181-90c9-3f15eba59d03.jpg?1783906206",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.24,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/431/sunlit-marsh?utm_source=api",
@@ -26449,7 +26449,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.14,
+    "price_eur": 0.12,
     "price_eur_foil": null
   },
   {
@@ -26487,7 +26487,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/b/5b0275b1-64bc-4c78-ac1a-9bd31399b946.jpg?1783906205",
     "image_large": "https://cards.scryfall.io/large/front/5/b/5b0275b1-64bc-4c78-ac1a-9bd31399b946.jpg?1783906205",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.39,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/432/sunpetal-grove?utm_source=api",
@@ -26495,7 +26495,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.66,
+    "price_eur": 0.64,
     "price_eur_foil": null
   },
   {
@@ -26533,7 +26533,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/4/84b648e4-d9c2-426f-8b2a-ef88e9eb25ac.jpg?1783906206",
     "image_large": "https://cards.scryfall.io/large/front/8/4/84b648e4-d9c2-426f-8b2a-ef88e9eb25ac.jpg?1783906206",
     "back_image": "",
-    "price_usd": 0.28,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/433/sunscorched-divide?utm_source=api",
@@ -26541,7 +26541,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -26579,7 +26579,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/e/defd23e2-9459-45b1-ba18-3661b220fac6.jpg?1783906204",
     "image_large": "https://cards.scryfall.io/large/front/d/e/defd23e2-9459-45b1-ba18-3661b220fac6.jpg?1783906204",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.18,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/434/tangled-islet?utm_source=api",
@@ -26587,7 +26587,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.21,
+    "price_eur": 0.16,
     "price_eur_foil": null
   },
   {
@@ -26625,7 +26625,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fc99e7b0-0f2c-4a2b-938b-abd31b71cd4f.jpg?1783906205",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fc99e7b0-0f2c-4a2b-938b-abd31b71cd4f.jpg?1783906205",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.2,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/435/temple-of-enlightenment?utm_source=api",
@@ -26633,7 +26633,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.29,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -26671,7 +26671,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/e/3ede4ff9-b0f6-4075-b7ad-3ec90497d0f6.jpg?1783906204",
     "image_large": "https://cards.scryfall.io/large/front/3/e/3ede4ff9-b0f6-4075-b7ad-3ec90497d0f6.jpg?1783906204",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/436/temple-of-mystery?utm_source=api",
@@ -26679,7 +26679,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.19,
+    "price_eur": 0.24,
     "price_eur_foil": null
   },
   {
@@ -26717,7 +26717,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/4/04dc78e1-50d8-493a-9c1f-9c1d95343fff.jpg?1783906203",
     "image_large": "https://cards.scryfall.io/large/front/0/4/04dc78e1-50d8-493a-9c1f-9c1d95343fff.jpg?1783906203",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.27,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/437/temple-of-plenty?utm_source=api",
@@ -26763,7 +26763,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/1/f1cb4775-8e14-4c83-a417-40d1432ac90a.jpg?1783906202",
     "image_large": "https://cards.scryfall.io/large/front/f/1/f1cb4775-8e14-4c83-a417-40d1432ac90a.jpg?1783906202",
     "back_image": "",
-    "price_usd": 0.33,
+    "price_usd": 0.25,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/438/temple-of-the-false-god?utm_source=api",
@@ -26771,7 +26771,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.16,
     "price_eur_foil": null
   },
   {
@@ -26809,7 +26809,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/2/c219a41a-d5f4-42f3-841c-2518be583198.jpg?1783906202",
     "image_large": "https://cards.scryfall.io/large/front/c/2/c219a41a-d5f4-42f3-841c-2518be583198.jpg?1783906202",
     "back_image": "",
-    "price_usd": 1.72,
+    "price_usd": 1.83,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/439/underground-river?utm_source=api",
@@ -26817,7 +26817,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 2.37,
+    "price_eur": 2.38,
     "price_eur_foil": null
   },
   {
@@ -26855,7 +26855,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/353758ce-419f-4f6a-93f4-42a746c4a26d.jpg?1783906202",
     "image_large": "https://cards.scryfall.io/large/front/3/5/353758ce-419f-4f6a-93f4-42a746c4a26d.jpg?1783906202",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/440/vineglimmer-snarl?utm_source=api",
@@ -26901,7 +26901,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/7/672b6ef0-a21a-4bf0-9058-58d9a353ed57.jpg?1783906201",
     "image_large": "https://cards.scryfall.io/large/front/6/7/672b6ef0-a21a-4bf0-9058-58d9a353ed57.jpg?1783906201",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/441/wooded-ridgeline?utm_source=api",
@@ -26909,7 +26909,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.19,
     "price_eur_foil": null
   },
   {
@@ -26947,8 +26947,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/8/b81c3f08-9319-4265-a75b-5b12b09aba89.jpg?1783904658",
     "image_large": "https://cards.scryfall.io/large/front/b/8/b81c3f08-9319-4265-a75b-5b12b09aba89.jpg?1783904658",
     "back_image": "",
-    "price_usd": 6.01,
-    "price_foil": 6.51,
+    "price_usd": 6.27,
+    "price_foil": 6.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/442/garland-royal-kidnapper?utm_source=api",
     "treatments": [
@@ -26956,8 +26956,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 5.33,
-    "price_eur_foil": 6.51
+    "price_eur": 6.27,
+    "price_eur_foil": 7.12
   },
   {
     "id": "743ee254-07f1-4d13-9ec7-6cb6358b9303",
@@ -26994,8 +26994,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/4/743ee254-07f1-4d13-9ec7-6cb6358b9303.jpg?1783904658",
     "image_large": "https://cards.scryfall.io/large/front/7/4/743ee254-07f1-4d13-9ec7-6cb6358b9303.jpg?1783904658",
     "back_image": "",
-    "price_usd": 3.81,
-    "price_foil": 2.06,
+    "price_usd": 3.75,
+    "price_foil": 1.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/443/the-destined-warrior?utm_source=api",
     "treatments": [
@@ -27003,8 +27003,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.41,
-    "price_eur_foil": 3.43
+    "price_eur": 3.46,
+    "price_eur_foil": 3.21
   },
   {
     "id": "8b52f14c-e6b9-4ad0-8515-6644b201e2ea",
@@ -27041,8 +27041,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/b/8b52f14c-e6b9-4ad0-8515-6644b201e2ea.jpg?1783904657",
     "image_large": "https://cards.scryfall.io/large/front/8/b/8b52f14c-e6b9-4ad0-8515-6644b201e2ea.jpg?1783904657",
     "back_image": "",
-    "price_usd": 12.11,
-    "price_foil": 12.84,
+    "price_usd": 12.07,
+    "price_foil": 13.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/444/the-destined-white-mage?utm_source=api",
     "treatments": [
@@ -27050,8 +27050,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 12.03,
-    "price_eur_foil": 12.81
+    "price_eur": 13.68,
+    "price_eur_foil": 14.63
   },
   {
     "id": "417d0d15-4c90-45dc-86f8-4c17fc2dd3f4",
@@ -27088,8 +27088,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/1/417d0d15-4c90-45dc-86f8-4c17fc2dd3f4.jpg?1783904656",
     "image_large": "https://cards.scryfall.io/large/front/4/1/417d0d15-4c90-45dc-86f8-4c17fc2dd3f4.jpg?1783904656",
     "back_image": "",
-    "price_usd": 4.09,
-    "price_foil": 4.31,
+    "price_usd": 4.22,
+    "price_foil": 4.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/445/chaos-shrines-black-crystal?utm_source=api",
     "treatments": [
@@ -27098,7 +27098,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 3.66,
-    "price_eur_foil": 3.87
+    "price_eur_foil": 3.89
   },
   {
     "id": "de95250d-294d-4a0e-8049-e0a877078e2e",
@@ -27136,7 +27136,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/e/de95250d-294d-4a0e-8049-e0a877078e2e.jpg?1783904655",
     "back_image": "",
     "price_usd": 3.73,
-    "price_foil": 2.85,
+    "price_foil": 2.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/446/the-destined-thief?utm_source=api",
     "treatments": [
@@ -27144,8 +27144,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.13,
-    "price_eur_foil": 3.46
+    "price_eur": 3.17,
+    "price_eur_foil": 3.23
   },
   {
     "id": "cbba90d0-c45e-4ef1-ba0e-a2160533e27f",
@@ -27182,8 +27182,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/b/cbba90d0-c45e-4ef1-ba0e-a2160533e27f.jpg?1783904654",
     "image_large": "https://cards.scryfall.io/large/front/c/b/cbba90d0-c45e-4ef1-ba0e-a2160533e27f.jpg?1783904654",
     "back_image": "",
-    "price_usd": 18.96,
-    "price_foil": 17.42,
+    "price_usd": 18.94,
+    "price_foil": 17.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/447/the-destined-black-mage?utm_source=api",
     "treatments": [
@@ -27191,8 +27191,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 15.19,
-    "price_eur_foil": 13.01
+    "price_eur": 14.99,
+    "price_eur_foil": 13.97
   },
   {
     "id": "6db60c73-5943-49da-9a8a-f4a382a1c0f0",
@@ -27230,7 +27230,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/d/6db60c73-5943-49da-9a8a-f4a382a1c0f0.jpg?1783904655",
     "back_image": "",
     "price_usd": 9.42,
-    "price_foil": 8.85,
+    "price_foil": 9.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/448/edea-possessed-sorceress?utm_source=api",
     "treatments": [
@@ -27238,8 +27238,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 8.36,
-    "price_eur_foil": 8.68
+    "price_eur": 8.45,
+    "price_eur_foil": 9.76
   },
   {
     "id": "bd84f688-a2bb-4f1e-ae24-1a5cf8a05445",
@@ -27276,8 +27276,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/d/bd84f688-a2bb-4f1e-ae24-1a5cf8a05445.jpg?1783904654",
     "image_large": "https://cards.scryfall.io/large/front/b/d/bd84f688-a2bb-4f1e-ae24-1a5cf8a05445.jpg?1783904654",
     "back_image": "",
-    "price_usd": 8.21,
-    "price_foil": 6.9,
+    "price_usd": 8.14,
+    "price_foil": 6.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/449/fated-clash?utm_source=api",
     "treatments": [
@@ -27285,8 +27285,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 7.12,
-    "price_eur_foil": 7.03
+    "price_eur": 7.19,
+    "price_eur_foil": 7.04
   },
   {
     "id": "76a9b08e-53f7-48d7-a024-3e2bf2318391",
@@ -27323,8 +27323,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/76a9b08e-53f7-48d7-a024-3e2bf2318391.jpg?1783904654",
     "image_large": "https://cards.scryfall.io/large/front/7/6/76a9b08e-53f7-48d7-a024-3e2bf2318391.jpg?1783904654",
     "back_image": "",
-    "price_usd": 8.35,
-    "price_foil": 9.31,
+    "price_usd": 8.48,
+    "price_foil": 8.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/450/rinoa-angel-wing?utm_source=api",
     "treatments": [
@@ -27332,8 +27332,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 6.38,
-    "price_eur_foil": 6.45
+    "price_eur": 6.97,
+    "price_eur_foil": 6.58
   },
   {
     "id": "8a24c7c8-18c6-4e0d-b49b-05c19deaf31e",
@@ -27371,7 +27371,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/a/8a24c7c8-18c6-4e0d-b49b-05c19deaf31e.jpg?1783904653",
     "back_image": "",
     "price_usd": 2.91,
-    "price_foil": 2.13,
+    "price_foil": 2.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/451/seifer-balamb-rival?utm_source=api",
     "treatments": [
@@ -27379,8 +27379,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 1.96,
-    "price_eur_foil": 1.78
+    "price_eur": 1.98,
+    "price_eur_foil": 2.35
   },
   {
     "id": "230e997e-3736-4afd-8571-1cc1b1d6ed96",
@@ -27417,8 +27417,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/3/230e997e-3736-4afd-8571-1cc1b1d6ed96.jpg?1783904653",
     "image_large": "https://cards.scryfall.io/large/front/2/3/230e997e-3736-4afd-8571-1cc1b1d6ed96.jpg?1783904653",
     "back_image": "",
-    "price_usd": 5.22,
-    "price_foil": 3.87,
+    "price_usd": 5.05,
+    "price_foil": 3.77,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/452/duelists-flame?utm_source=api",
     "treatments": [
@@ -27426,8 +27426,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.67,
-    "price_eur_foil": 3.99
+    "price_eur": 3.77,
+    "price_eur_foil": 4.31
   },
   {
     "id": "682b9f3c-960b-4600-b650-eefd588071d3",
@@ -27464,7 +27464,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/8/682b9f3c-960b-4600-b650-eefd588071d3.jpg?1783904653",
     "image_large": "https://cards.scryfall.io/large/front/6/8/682b9f3c-960b-4600-b650-eefd588071d3.jpg?1783904653",
     "back_image": "",
-    "price_usd": 4.6,
+    "price_usd": 4.55,
     "price_foil": 4.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/453/squall-gunblade-duelist?utm_source=api",
@@ -27473,8 +27473,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.82,
-    "price_eur_foil": 2.99
+    "price_eur": 3.21,
+    "price_eur_foil": 3.17
   },
   {
     "id": "c358af5d-61e3-4c4d-9d7d-2f3e43210339",
@@ -27511,8 +27511,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/3/c358af5d-61e3-4c4d-9d7d-2f3e43210339.jpg?1783904653",
     "image_large": "https://cards.scryfall.io/large/front/c/3/c358af5d-61e3-4c4d-9d7d-2f3e43210339.jpg?1783904653",
     "back_image": "",
-    "price_usd": 33.18,
-    "price_foil": 24.25,
+    "price_usd": 29.59,
+    "price_foil": 23.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/454/brilliant-wings?utm_source=api",
     "treatments": [
@@ -27520,8 +27520,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 29.06,
-    "price_eur_foil": 26.47
+    "price_eur": 29.34,
+    "price_eur_foil": 25.74
   },
   {
     "id": "2327bf49-348c-44e5-9a6b-97ef1c810079",
@@ -27558,8 +27558,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/3/2327bf49-348c-44e5-9a6b-97ef1c810079.jpg?1783904652",
     "image_large": "https://cards.scryfall.io/large/front/2/3/2327bf49-348c-44e5-9a6b-97ef1c810079.jpg?1783904652",
     "back_image": "",
-    "price_usd": 7.82,
-    "price_foil": 5.42,
+    "price_usd": 7.88,
+    "price_foil": 5.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/455/judgment-of-alexander?utm_source=api",
     "treatments": [
@@ -27567,8 +27567,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 5.65,
-    "price_eur_foil": 5.81
+    "price_eur": 4.83,
+    "price_eur_foil": 6.11
   },
   {
     "id": "daecaf9c-f327-435a-963b-a4631b6cca5c",
@@ -27606,7 +27606,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/a/daecaf9c-f327-435a-963b-a4631b6cca5c.jpg?1783904652",
     "back_image": "",
     "price_usd": 1.9,
-    "price_foil": 0.95,
+    "price_foil": 0.89,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/456/mega-flare?utm_source=api",
     "treatments": [
@@ -27615,7 +27615,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 1.41,
-    "price_eur_foil": 1.09
+    "price_eur_foil": 1.08
   },
   {
     "id": "00ef8f06-dfcc-4ffa-a054-b0c81b39dcc0",
@@ -27652,8 +27652,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/0/00ef8f06-dfcc-4ffa-a054-b0c81b39dcc0.jpg?1783904652",
     "image_large": "https://cards.scryfall.io/large/front/0/0/00ef8f06-dfcc-4ffa-a054-b0c81b39dcc0.jpg?1783904652",
     "back_image": "",
-    "price_usd": 3.66,
-    "price_foil": 2.76,
+    "price_usd": 3.57,
+    "price_foil": 2.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/457/amarant-coral?utm_source=api",
     "treatments": [
@@ -27661,8 +27661,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.66,
-    "price_eur_foil": 1.7
+    "price_eur": 2.34,
+    "price_eur_foil": 1.93
   },
   {
     "id": "be6ba2e4-e657-4a2d-8f5f-255376d861b3",
@@ -27699,8 +27699,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/e/be6ba2e4-e657-4a2d-8f5f-255376d861b3.jpg?1783904652",
     "image_large": "https://cards.scryfall.io/large/front/b/e/be6ba2e4-e657-4a2d-8f5f-255376d861b3.jpg?1783904652",
     "back_image": "",
-    "price_usd": 49.34,
-    "price_foil": 51.93,
+    "price_usd": 50.93,
+    "price_foil": 53.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/458/vivis-persistence?utm_source=api",
     "treatments": [
@@ -27708,8 +27708,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 39.19,
-    "price_eur_foil": 38.61
+    "price_eur": 39.47,
+    "price_eur_foil": 39.63
   },
   {
     "id": "9adaef20-1d82-4941-b4bb-a037cf3d63db",
@@ -27747,7 +27747,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/a/9adaef20-1d82-4941-b4bb-a037cf3d63db.jpg?1783904653",
     "back_image": "",
     "price_usd": 4.36,
-    "price_foil": 2.46,
+    "price_foil": 2.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/459/search-for-dagger?utm_source=api",
     "treatments": [
@@ -27755,8 +27755,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 2.85,
-    "price_eur_foil": 2.01
+    "price_eur": 2.83,
+    "price_eur_foil": 2.26
   },
   {
     "id": "c8c69ad3-e999-4beb-85f5-527a00f482da",
@@ -27793,8 +27793,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/8/c8c69ad3-e999-4beb-85f5-527a00f482da.jpg?1783904650",
     "image_large": "https://cards.scryfall.io/large/front/c/8/c8c69ad3-e999-4beb-85f5-527a00f482da.jpg?1783904650",
     "back_image": "",
-    "price_usd": 4.84,
-    "price_foil": 3.2,
+    "price_usd": 4.8,
+    "price_foil": 3.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/460/noctis-heir-apparent?utm_source=api",
     "treatments": [
@@ -27802,8 +27802,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.56,
-    "price_eur_foil": 3.99
+    "price_eur": 4.4,
+    "price_eur_foil": 3.38
   },
   {
     "id": "b2a1b5b3-8d7a-4614-b7f9-d13db5654d03",
@@ -27840,7 +27840,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/2/b2a1b5b3-8d7a-4614-b7f9-d13db5654d03.jpg?1783904650",
     "image_large": "https://cards.scryfall.io/large/front/b/2/b2a1b5b3-8d7a-4614-b7f9-d13db5654d03.jpg?1783904650",
     "back_image": "",
-    "price_usd": 11.75,
+    "price_usd": 11.97,
     "price_foil": 7.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/461/fishing-gear?utm_source=api",
@@ -27850,7 +27850,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 6.54,
-    "price_eur_foil": 5.78
+    "price_eur_foil": 6.82
   },
   {
     "id": "4fcd08ad-4dac-4236-9030-f59e473b3ec7",
@@ -27887,8 +27887,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/f/4fcd08ad-4dac-4236-9030-f59e473b3ec7.jpg?1783904649",
     "image_large": "https://cards.scryfall.io/large/front/4/f/4fcd08ad-4dac-4236-9030-f59e473b3ec7.jpg?1783904649",
     "back_image": "",
-    "price_usd": 8.49,
-    "price_foil": 6.87,
+    "price_usd": 9.2,
+    "price_foil": 7.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/462/chocobo-camp?utm_source=api",
     "treatments": [
@@ -27896,8 +27896,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 6.33,
-    "price_eur_foil": 4.76
+    "price_eur": 5.47,
+    "price_eur_foil": 5.3
   },
   {
     "id": "2bca2cd2-4d4a-44e4-87c3-732692b77921",
@@ -27934,8 +27934,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/b/2bca2cd2-4d4a-44e4-87c3-732692b77921.jpg?1783904649",
     "image_large": "https://cards.scryfall.io/large/front/2/b/2bca2cd2-4d4a-44e4-87c3-732692b77921.jpg?1783904649",
     "back_image": "",
-    "price_usd": 47.03,
-    "price_foil": 49.48,
+    "price_usd": 48.67,
+    "price_foil": 49.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/463/flash-photography?utm_source=api",
     "treatments": [
@@ -27943,8 +27943,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 26.56,
-    "price_eur_foil": 28.56
+    "price_eur": 27.6,
+    "price_eur_foil": 28.19
   },
   {
     "id": "ec6d3402-eed6-44be-a572-9ec0678af403",
@@ -27981,8 +27981,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/c/ec6d3402-eed6-44be-a572-9ec0678af403.jpg?1783904649",
     "image_large": "https://cards.scryfall.io/large/front/e/c/ec6d3402-eed6-44be-a572-9ec0678af403.jpg?1783904649",
     "back_image": "",
-    "price_usd": 14.37,
-    "price_foil": 10.8,
+    "price_usd": 14.12,
+    "price_foil": 11.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/464/campsite-cuisine?utm_source=api",
     "treatments": [
@@ -27990,8 +27990,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 10.75,
-    "price_eur_foil": 10.98
+    "price_eur": 11.52,
+    "price_eur_foil": 11.17
   },
   {
     "id": "7263ef64-dc8d-4a58-91b9-ff4f718e53ae",
@@ -28028,8 +28028,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/2/7263ef64-dc8d-4a58-91b9-ff4f718e53ae.jpg?1783904648",
     "image_large": "https://cards.scryfall.io/large/front/7/2/7263ef64-dc8d-4a58-91b9-ff4f718e53ae.jpg?1783904648",
     "back_image": "",
-    "price_usd": 2.7,
-    "price_foil": 1.58,
+    "price_usd": 2.72,
+    "price_foil": 1.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/465/warriors-resolve?utm_source=api",
     "treatments": [
@@ -28037,8 +28037,8 @@ const CARDS_DATA = [
       "Scene Card",
       "Traditional Foil"
     ],
-    "price_eur": 3.25,
-    "price_eur_foil": 2.06
+    "price_eur": 3.14,
+    "price_eur_foil": 2.03
   },
   {
     "id": "545c98b3-dc78-4070-8dcb-f6a246abce09",
@@ -28075,7 +28075,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/4/545c98b3-dc78-4070-8dcb-f6a246abce09.jpg?1783904647",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 183.71,
+    "price_foil": 181.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/466/tataru-taru?utm_source=api",
     "treatments": [
@@ -28083,7 +28083,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 168.73
+    "price_eur_foil": 154.36
   },
   {
     "id": "99cb1ba3-e16b-414d-8682-fb3b2f350ea2",
@@ -28120,7 +28120,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/9/99cb1ba3-e16b-414d-8682-fb3b2f350ea2.jpg?1783904647",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 116.45,
+    "price_foil": 109.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/467/lulu-stern-guardian?utm_source=api",
     "treatments": [
@@ -28128,7 +28128,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 126.41
+    "price_eur_foil": 120.71
   },
   {
     "id": "b62cd4af-7d7a-4b0b-b2d6-2086281c7b21",
@@ -28165,7 +28165,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/6/b62cd4af-7d7a-4b0b-b2d6-2086281c7b21.jpg?1783904646",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 104.6,
+    "price_foil": 99.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/468/rikku-resourceful-guardian?utm_source=api",
     "treatments": [
@@ -28173,7 +28173,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 73.19
+    "price_eur_foil": 72.77
   },
   {
     "id": "4790a887-26dd-4a5f-9b85-10346cb6328b",
@@ -28210,7 +28210,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/7/4790a887-26dd-4a5f-9b85-10346cb6328b.jpg?1783904647",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 149.88,
+    "price_foil": 149.08,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/469/snapcaster-mage?utm_source=api",
     "treatments": [
@@ -28218,7 +28218,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 124.6
+    "price_eur_foil": 124.76
   },
   {
     "id": "f8417267-c953-4d58-8a9e-af3d0da01509",
@@ -28255,7 +28255,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/8/f8417267-c953-4d58-8a9e-af3d0da01509.jpg?1783904647",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 80.18,
+    "price_foil": 76.67,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/470/yuffie-materia-hunter?utm_source=api",
     "treatments": [
@@ -28263,7 +28263,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 83.91
+    "price_eur_foil": 81.2
   },
   {
     "id": "aa1bd238-a9f5-4145-9668-eb49a3b4c2bf",
@@ -28300,7 +28300,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa1bd238-a9f5-4145-9668-eb49a3b4c2bf.jpg?1783904647",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 124.13,
+    "price_foil": 125.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/471/aerith-last-ancient?utm_source=api",
     "treatments": [
@@ -28308,7 +28308,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 119.36
+    "price_eur_foil": 119.93
   },
   {
     "id": "b39a7df7-12b8-4537-9f17-25dfc6d2a5c6",
@@ -28345,7 +28345,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/3/b39a7df7-12b8-4537-9f17-25dfc6d2a5c6.jpg?1783904646",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 25.51,
+    "price_foil": 25.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/472/barret-avalanche-leader?utm_source=api",
     "treatments": [
@@ -28353,7 +28353,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 38.7
+    "price_eur_foil": 39.56
   },
   {
     "id": "8a38634f-a100-4493-87c3-0ecc51ca565d",
@@ -28390,7 +28390,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/a/8a38634f-a100-4493-87c3-0ecc51ca565d.jpg?1783904646",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 100.82,
+    "price_foil": 94.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/473/emet-selch-of-the-third-seat?utm_source=api",
     "treatments": [
@@ -28398,7 +28398,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 123.61
+    "price_eur_foil": 117.92
   },
   {
     "id": "356432cf-a17c-4147-9d02-921960032d0e",
@@ -28435,7 +28435,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/5/356432cf-a17c-4147-9d02-921960032d0e.jpg?1783904645",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 35.54,
+    "price_foil": 35.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/474/estinien-varlineau?utm_source=api",
     "treatments": [
@@ -28443,7 +28443,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 28.47
+    "price_eur_foil": 30.0
   },
   {
     "id": "af4481b1-43b0-43e6-a9ea-f4ec0a551e61",
@@ -28480,7 +28480,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/f/af4481b1-43b0-43e6-a9ea-f4ec0a551e61.jpg?1783904646",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 34.7,
+    "price_foil": 34.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/475/locke-treasure-hunter?utm_source=api",
     "treatments": [
@@ -28525,7 +28525,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/8/f8ed092f-3a85-45d5-b986-2d400d6e1bad.jpg?1783904643",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 41.11,
+    "price_foil": 40.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/476/mog-moogle-warrior?utm_source=api",
     "treatments": [
@@ -28533,7 +28533,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 51.11
+    "price_eur_foil": 48.94
   },
   {
     "id": "8e036ebd-1749-4c41-9840-8dc5f69d6c86",
@@ -28570,7 +28570,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e036ebd-1749-4c41-9840-8dc5f69d6c86.jpg?1783904644",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 31.15,
+    "price_foil": 31.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/477/wakka-devoted-guardian?utm_source=api",
     "treatments": [
@@ -28578,7 +28578,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 26.15
+    "price_eur_foil": 25.08
   },
   {
     "id": "a8d4a0cf-9bbc-43da-a88c-47cb43fe13af",
@@ -28615,7 +28615,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/8/a8d4a0cf-9bbc-43da-a88c-47cb43fe13af.jpg?1783904643",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.68,
+    "price_foil": 5.66,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/478/plains?utm_source=api",
     "treatments": [
@@ -28623,7 +28623,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.18
+    "price_eur_foil": 3.09
   },
   {
     "id": "95ef40f4-7d88-4fb6-bfdd-8d07c96e4ff8",
@@ -28660,7 +28660,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/5/95ef40f4-7d88-4fb6-bfdd-8d07c96e4ff8.jpg?1783904644",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.36,
+    "price_foil": 3.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/479/island?utm_source=api",
     "treatments": [
@@ -28668,7 +28668,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.46
+    "price_eur_foil": 2.49
   },
   {
     "id": "6c0ea7e6-0659-4944-a997-f46e00340542",
@@ -28713,7 +28713,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.96
+    "price_eur_foil": 2.09
   },
   {
     "id": "9a58d03b-1b47-4d3c-9d8a-18f20c8f978b",
@@ -28750,7 +28750,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/a/9a58d03b-1b47-4d3c-9d8a-18f20c8f978b.jpg?1783904642",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 2.25,
+    "price_foil": 2.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/481/mountain?utm_source=api",
     "treatments": [
@@ -28758,7 +28758,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.83
+    "price_eur_foil": 1.95
   },
   {
     "id": "0a45560e-ce25-45a5-aa43-aa33d1964cd8",
@@ -28795,7 +28795,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/a/0a45560e-ce25-45a5-aa43-aa33d1964cd8.jpg?1783904642",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.21,
+    "price_foil": 4.92,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/482/forest?utm_source=api",
     "treatments": [
@@ -28803,7 +28803,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.92
+    "price_eur_foil": 3.16
   },
   {
     "id": "9f8b95bd-c709-4259-b3fe-92119b92acae",
@@ -28841,7 +28841,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f8b95bd-c709-4259-b3fe-92119b92acae.jpg?1783904642",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 16.87,
+    "price_foil": 17.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/483/birds-of-paradise?utm_source=api",
     "treatments": [
@@ -28849,7 +28849,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 11.77
+    "price_eur_foil": 12.05
   },
   {
     "id": "4a2dfd72-a8f4-4e43-b5de-caf6a129a51a",
@@ -28886,7 +28886,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/a/4a2dfd72-a8f4-4e43-b5de-caf6a129a51a.jpg?1783906200",
     "image_large": "https://cards.scryfall.io/large/front/4/a/4a2dfd72-a8f4-4e43-b5de-caf6a129a51a.jpg?1783906200",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.34,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/484/command-tower?utm_source=api",
@@ -28894,7 +28894,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.47,
+    "price_eur": 0.42,
     "price_eur_foil": null
   },
   {
@@ -28940,7 +28940,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.35,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -28978,7 +28978,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/0/605b2218-0eab-4c9d-a5d8-7fab342137a0.jpg?1783906199",
     "image_large": "https://cards.scryfall.io/large/front/6/0/605b2218-0eab-4c9d-a5d8-7fab342137a0.jpg?1783906199",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.31,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fic/486/command-tower?utm_source=api",
@@ -28986,7 +28986,7 @@ const CARDS_DATA = [
       "Default",
       "Surge Foil"
     ],
-    "price_eur": 0.48,
+    "price_eur": 0.37,
     "price_eur_foil": null
   },
   {
@@ -29024,16 +29024,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/5/95318d85-4a08-47ac-a43d-ea83c0bea81c.jpg?1783906656",
     "image_large": "https://cards.scryfall.io/large/front/9/5/95318d85-4a08-47ac-a43d-ea83c0bea81c.jpg?1783906656",
     "back_image": "",
-    "price_usd": 22.41,
-    "price_foil": 26.18,
+    "price_usd": 21.8,
+    "price_foil": 25.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/1/summon:-bahamut?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 23.33,
-    "price_eur_foil": 31.77
+    "price_eur": 23.57,
+    "price_eur_foil": 29.33
   },
   {
     "id": "d55a4c02-1aa4-454c-9041-84937377a53b",
@@ -29070,16 +29070,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/5/d55a4c02-1aa4-454c-9041-84937377a53b.jpg?1785650765",
     "image_large": "https://cards.scryfall.io/large/front/d/5/d55a4c02-1aa4-454c-9041-84937377a53b.jpg?1785650765",
     "back_image": "",
-    "price_usd": 1.09,
-    "price_foil": 1.77,
+    "price_usd": 1.06,
+    "price_foil": 1.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/2/ultima-origin-of-oblivion?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.65,
-    "price_eur_foil": 1.63
+    "price_eur": 0.69,
+    "price_eur_foil": 1.57
   },
   {
     "id": "1a67a991-1e52-4676-a2e3-2bc7aa943ab3",
@@ -29116,16 +29116,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/a/1a67a991-1e52-4676-a2e3-2bc7aa943ab3.jpg?1783906656",
     "image_large": "https://cards.scryfall.io/large/front/1/a/1a67a991-1e52-4676-a2e3-2bc7aa943ab3.jpg?1783906656",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.3,
+    "price_usd": 0.25,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/3/adelbert-steiner?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.31
+    "price_eur": 0.13,
+    "price_eur_foil": 0.24
   },
   {
     "id": "e86328b6-ded2-41df-8b6e-4a770e7b171e",
@@ -29162,16 +29162,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/8/e86328b6-ded2-41df-8b6e-4a770e7b171e.jpg?1783906655",
     "image_large": "https://cards.scryfall.io/large/front/e/8/e86328b6-ded2-41df-8b6e-4a770e7b171e.jpg?1783906655",
     "back_image": "",
-    "price_usd": 2.89,
-    "price_foil": 2.99,
+    "price_usd": 2.84,
+    "price_foil": 3.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/4/aerith-gainsborough?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.73,
-    "price_eur_foil": 2.32
+    "price_eur": 1.68,
+    "price_eur_foil": 3.26
   },
   {
     "id": "3123d16c-e1e6-4659-a7a3-2ec6efc6bf08",
@@ -29208,16 +29208,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/1/3123d16c-e1e6-4659-a7a3-2ec6efc6bf08.jpg?1783906653",
     "image_large": "https://cards.scryfall.io/large/front/3/1/3123d16c-e1e6-4659-a7a3-2ec6efc6bf08.jpg?1783906653",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.28,
+    "price_usd": 0.18,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/5/aerith-rescue-mission?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.1
+    "price_eur": 0.1,
+    "price_eur_foil": 0.11
   },
   {
     "id": "f2596767-7d19-4110-86ed-3cfc93ac7483",
@@ -29254,16 +29254,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/2/f2596767-7d19-4110-86ed-3cfc93ac7483.jpg?1783906654",
     "image_large": "https://cards.scryfall.io/large/front/f/2/f2596767-7d19-4110-86ed-3cfc93ac7483.jpg?1783906654",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.32,
+    "price_usd": 0.22,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/6/ambrosia-whiteheart?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.23
+    "price_eur": 0.2,
+    "price_eur_foil": 0.2
   },
   {
     "id": "ffe0596f-ef99-4862-9386-0fe455259995",
@@ -29300,8 +29300,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/f/ffe0596f-ef99-4862-9386-0fe455259995.jpg?1783906653",
     "image_large": "https://cards.scryfall.io/large/front/f/f/ffe0596f-ef99-4862-9386-0fe455259995.jpg?1783906653",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.27,
+    "price_usd": 0.22,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/7/ashe-princess-of-dalmasca?utm_source=api",
     "treatments": [
@@ -29309,7 +29309,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.08,
-    "price_eur_foil": 0.34
+    "price_eur_foil": 0.33
   },
   {
     "id": "77d82764-563c-4bc2-b568-625ec7215e0d",
@@ -29346,16 +29346,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/7/77d82764-563c-4bc2-b568-625ec7215e0d.jpg?1783906653",
     "image_large": "https://cards.scryfall.io/large/front/7/7/77d82764-563c-4bc2-b568-625ec7215e0d.jpg?1783906653",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.24,
+    "price_usd": 0.15,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/8/aurons-inspiration?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.18
+    "price_eur": 0.05,
+    "price_eur_foil": 0.15
   },
   {
     "id": "240e1466-bd02-423d-b829-234dcd2bfab2",
@@ -29392,8 +29392,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/240e1466-bd02-423d-b829-234dcd2bfab2.jpg?1783906653",
     "image_large": "https://cards.scryfall.io/large/front/2/4/240e1466-bd02-423d-b829-234dcd2bfab2.jpg?1783906653",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.32,
+    "price_usd": 0.54,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/9/battle-menu?utm_source=api",
     "treatments": [
@@ -29401,7 +29401,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.28
+    "price_eur_foil": 0.24
   },
   {
     "id": "2cf7e8a3-fad7-413d-b17c-7519a9cf5fb5",
@@ -29438,16 +29438,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/c/2cf7e8a3-fad7-413d-b17c-7519a9cf5fb5.jpg?1783906652",
     "image_large": "https://cards.scryfall.io/large/front/2/c/2cf7e8a3-fad7-413d-b17c-7519a9cf5fb5.jpg?1783906652",
     "back_image": "",
-    "price_usd": 22.15,
-    "price_foil": 27.43,
+    "price_usd": 22.19,
+    "price_foil": 27.84,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/10/cloud-midgar-mercenary?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 21.45,
-    "price_eur_foil": 31.49
+    "price_eur": 20.98,
+    "price_eur_foil": 30.9
   },
   {
     "id": "7387bca7-f496-45da-a0ac-6be049303a8f",
@@ -29485,15 +29485,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/3/7387bca7-f496-45da-a0ac-6be049303a8f.jpg?1783906653",
     "back_image": "",
     "price_usd": 0.13,
-    "price_foil": 0.23,
+    "price_foil": 0.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/11/cloudbound-moogle?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.15
+    "price_eur": 0.05,
+    "price_eur_foil": 0.12
   },
   {
     "id": "7604b534-5480-42fa-bc36-bbae730f8582",
@@ -29530,15 +29530,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/7604b534-5480-42fa-bc36-bbae730f8582.jpg?1783906652",
     "image_large": "https://cards.scryfall.io/large/front/7/6/7604b534-5480-42fa-bc36-bbae730f8582.jpg?1783906652",
     "back_image": "",
-    "price_usd": 0.1,
-    "price_foil": 0.24,
+    "price_usd": 0.14,
+    "price_foil": 0.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/12/coeurl?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
+    "price_eur": 0.03,
     "price_eur_foil": 0.15
   },
   {
@@ -29576,16 +29576,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/f/5f51c853-949d-44e9-a3a2-02e1ce69a147.jpg?1783906657",
     "image_large": "https://cards.scryfall.io/large/front/5/f/5f51c853-949d-44e9-a3a2-02e1ce69a147.jpg?1783906657",
     "back_image": "https://cards.scryfall.io/normal/back/5/f/5f51c853-949d-44e9-a3a2-02e1ce69a147.jpg?1783906657",
-    "price_usd": 0.25,
-    "price_foil": 0.27,
+    "price_usd": 0.23,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/13/crystal-fragments-summon:-alexander?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.33
+    "price_eur": 0.13,
+    "price_eur_foil": 0.31
   },
   {
     "id": "d4df4373-0ee6-44e3-81c6-0881c070014c",
@@ -29622,16 +29622,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/4/d4df4373-0ee6-44e3-81c6-0881c070014c.jpg?1783906652",
     "image_large": "https://cards.scryfall.io/large/front/d/4/d4df4373-0ee6-44e3-81c6-0881c070014c.jpg?1783906652",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.25,
+    "price_usd": 0.2,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/14/the-crystals-chosen?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.21
+    "price_eur": 0.08,
+    "price_eur_foil": 0.36
   },
   {
     "id": "f58840dc-c641-4092-8b67-9c0d449af715",
@@ -29668,7 +29668,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/5/f58840dc-c641-4092-8b67-9c0d449af715.jpg?1783906652",
     "image_large": "https://cards.scryfall.io/large/front/f/5/f58840dc-c641-4092-8b67-9c0d449af715.jpg?1783906652",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.23,
     "price_foil": 0.38,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/15/delivery-moogle?utm_source=api",
@@ -29677,7 +29677,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.1,
-    "price_eur_foil": 0.32
+    "price_eur_foil": 0.22
   },
   {
     "id": "8c0f9306-2058-476d-a711-bd37a6e15e42",
@@ -29714,16 +29714,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/c/8c0f9306-2058-476d-a711-bd37a6e15e42.jpg?1783906656",
     "image_large": "https://cards.scryfall.io/large/front/8/c/8c0f9306-2058-476d-a711-bd37a6e15e42.jpg?1783906656",
     "back_image": "https://cards.scryfall.io/normal/back/8/c/8c0f9306-2058-476d-a711-bd37a6e15e42.jpg?1783906656",
-    "price_usd": 0.9,
-    "price_foil": 1.15,
+    "price_usd": 0.78,
+    "price_foil": 1.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/16/dion-bahamuts-dominant-bahamut-warden-of-light?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.47,
-    "price_eur_foil": 0.93
+    "price_eur": 0.53,
+    "price_eur_foil": 1.1
   },
   {
     "id": "96630531-8eb7-4e3e-8d63-60c562a5571b",
@@ -29760,16 +29760,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/6/96630531-8eb7-4e3e-8d63-60c562a5571b.jpg?1783906651",
     "image_large": "https://cards.scryfall.io/large/front/9/6/96630531-8eb7-4e3e-8d63-60c562a5571b.jpg?1783906651",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.33,
+    "price_usd": 0.2,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/17/dragoons-lance?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.31
+    "price_eur": 0.07,
+    "price_eur_foil": 0.29
   },
   {
     "id": "e17c0d27-e88d-4ba9-acbb-3f916cee3d7e",
@@ -29806,16 +29806,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e17c0d27-e88d-4ba9-acbb-3f916cee3d7e.jpg?1783906650",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e17c0d27-e88d-4ba9-acbb-3f916cee3d7e.jpg?1783906650",
     "back_image": "",
-    "price_usd": 0.12,
-    "price_foil": 0.22,
+    "price_usd": 0.1,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/18/dwarven-castle-guard?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.12
+    "price_eur": 0.05,
+    "price_eur_foil": 0.13
   },
   {
     "id": "900cdf11-b42e-4dcc-97c3-2e4d8e406a70",
@@ -29852,16 +29852,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/0/900cdf11-b42e-4dcc-97c3-2e4d8e406a70.jpg?1783906650",
     "image_large": "https://cards.scryfall.io/large/front/9/0/900cdf11-b42e-4dcc-97c3-2e4d8e406a70.jpg?1783906650",
     "back_image": "",
-    "price_usd": 0.11,
-    "price_foil": 0.18,
+    "price_usd": 0.1,
+    "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/19/fate-of-the-sun-cryst?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.06
+    "price_eur": 0.04,
+    "price_eur_foil": 0.05
   },
   {
     "id": "0c730a3b-334e-466b-bb9b-4b41fce2af6d",
@@ -29898,7 +29898,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0c730a3b-334e-466b-bb9b-4b41fce2af6d.jpg?1783906649",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0c730a3b-334e-466b-bb9b-4b41fce2af6d.jpg?1783906649",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.28,
     "price_foil": 0.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/20/from-father-to-son?utm_source=api",
@@ -29906,8 +29906,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.76
+    "price_eur": 0.17,
+    "price_eur_foil": 0.73
   },
   {
     "id": "076a8eca-ed73-4ee9-aab4-d9d43d394ee6",
@@ -29944,16 +29944,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/7/076a8eca-ed73-4ee9-aab4-d9d43d394ee6.jpg?1783906648",
     "image_large": "https://cards.scryfall.io/large/front/0/7/076a8eca-ed73-4ee9-aab4-d9d43d394ee6.jpg?1783906648",
     "back_image": "",
-    "price_usd": 0.16,
-    "price_foil": 0.25,
+    "price_usd": 0.17,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/21/graha-tia?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.13
+    "price_eur": 0.11,
+    "price_eur_foil": 0.17
   },
   {
     "id": "29606c49-e1a4-49c3-883b-9122c08bbbc7",
@@ -29990,7 +29990,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/9/29606c49-e1a4-49c3-883b-9122c08bbbc7.jpg?1783906648",
     "image_large": "https://cards.scryfall.io/large/front/2/9/29606c49-e1a4-49c3-883b-9122c08bbbc7.jpg?1783906648",
     "back_image": "",
-    "price_usd": 0.05,
+    "price_usd": 0.09,
     "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/22/gaelicat?utm_source=api",
@@ -29999,7 +29999,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.06,
-    "price_eur_foil": 0.11
+    "price_eur_foil": 0.07
   },
   {
     "id": "ff976428-2145-4630-aab1-08870b90b2f0",
@@ -30036,16 +30036,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/f/ff976428-2145-4630-aab1-08870b90b2f0.jpg?1783906647",
     "image_large": "https://cards.scryfall.io/large/front/f/f/ff976428-2145-4630-aab1-08870b90b2f0.jpg?1783906647",
     "back_image": "",
-    "price_usd": 1.0,
-    "price_foil": 1.67,
+    "price_usd": 0.78,
+    "price_foil": 1.57,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/23/machinists-arsenal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.33,
-    "price_eur_foil": 0.72
+    "price_eur": 0.35,
+    "price_eur_foil": 0.7
   },
   {
     "id": "59c4a1a2-623c-43b2-8005-ecb5c6436c10",
@@ -30082,16 +30082,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/59c4a1a2-623c-43b2-8005-ecb5c6436c10.jpg?1783906647",
     "image_large": "https://cards.scryfall.io/large/front/5/9/59c4a1a2-623c-43b2-8005-ecb5c6436c10.jpg?1783906647",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.27,
+    "price_usd": 0.11,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/24/magitek-armor?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.17
+    "price_eur": 0.04,
+    "price_eur_foil": 0.16
   },
   {
     "id": "b64dc6d7-dd01-4e66-9099-4c90865448df",
@@ -30128,16 +30128,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/6/b64dc6d7-dd01-4e66-9099-4c90865448df.jpg?1783906647",
     "image_large": "https://cards.scryfall.io/large/front/b/6/b64dc6d7-dd01-4e66-9099-4c90865448df.jpg?1783906647",
     "back_image": "",
-    "price_usd": 0.14,
-    "price_foil": 0.21,
+    "price_usd": 0.1,
+    "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/25/magitek-infantry?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.17
+    "price_eur": 0.04,
+    "price_eur_foil": 0.16
   },
   {
     "id": "6822144f-f0eb-4e10-a217-52cad36d2973",
@@ -30174,16 +30174,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/8/6822144f-f0eb-4e10-a217-52cad36d2973.jpg?1783906647",
     "image_large": "https://cards.scryfall.io/large/front/6/8/6822144f-f0eb-4e10-a217-52cad36d2973.jpg?1783906647",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.42,
+    "price_usd": 0.34,
+    "price_foil": 0.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/26/minwu-white-mage?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.19,
-    "price_eur_foil": 0.41
+    "price_eur": 0.21,
+    "price_eur_foil": 0.47
   },
   {
     "id": "caa838a7-60a9-4791-af5b-194f7574c4c8",
@@ -30220,16 +30220,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/a/caa838a7-60a9-4791-af5b-194f7574c4c8.jpg?1783906647",
     "image_large": "https://cards.scryfall.io/large/front/c/a/caa838a7-60a9-4791-af5b-194f7574c4c8.jpg?1783906647",
     "back_image": "",
-    "price_usd": 0.51,
-    "price_foil": 1.21,
+    "price_usd": 0.79,
+    "price_foil": 1.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/27/moogles-valor?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.34,
-    "price_eur_foil": 0.52
+    "price_eur": 0.36,
+    "price_eur_foil": 0.59
   },
   {
     "id": "446506c5-5e1d-4b42-aef3-ea247d7881ef",
@@ -30266,16 +30266,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/446506c5-5e1d-4b42-aef3-ea247d7881ef.jpg?1783906646",
     "image_large": "https://cards.scryfall.io/large/front/4/4/446506c5-5e1d-4b42-aef3-ea247d7881ef.jpg?1783906646",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.29,
+    "price_usd": 0.19,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/28/paladins-arms?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.11
+    "price_eur": 0.05,
+    "price_eur_foil": 0.09
   },
   {
     "id": "62e299b0-9ef6-49d3-aa79-384325fed89e",
@@ -30312,16 +30312,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/2/62e299b0-9ef6-49d3-aa79-384325fed89e.jpg?1783906645",
     "image_large": "https://cards.scryfall.io/large/front/6/2/62e299b0-9ef6-49d3-aa79-384325fed89e.jpg?1783906645",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.31,
+    "price_usd": 0.16,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/29/phoenix-down?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.15,
-    "price_eur_foil": 0.25
+    "price_eur": 0.16,
+    "price_eur_foil": 0.23
   },
   {
     "id": "494e68e9-ecba-4482-82bc-207ad59144c1",
@@ -30358,16 +30358,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/9/494e68e9-ecba-4482-82bc-207ad59144c1.jpg?1783906646",
     "image_large": "https://cards.scryfall.io/large/front/4/9/494e68e9-ecba-4482-82bc-207ad59144c1.jpg?1783906646",
     "back_image": "",
-    "price_usd": 2.0,
-    "price_foil": 2.5,
+    "price_usd": 2.63,
+    "price_foil": 2.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/30/restoration-magic?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.39,
-    "price_eur_foil": 1.79
+    "price_eur": 1.4,
+    "price_eur_foil": 1.59
   },
   {
     "id": "bdb5452e-d97f-409b-91d0-2664f39b09b8",
@@ -30405,15 +30405,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg?1783906651",
     "back_image": "https://cards.scryfall.io/normal/back/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg?1783906651",
     "price_usd": 0.25,
-    "price_foil": 0.32,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/31/sidequest:-catch-a-fish-cooking-campsite?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.16
+    "price_eur": 0.08,
+    "price_eur_foil": 0.13
   },
   {
     "id": "da6d9529-3cb0-4adc-8209-b9b02db3bf54",
@@ -30451,15 +30451,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/a/da6d9529-3cb0-4adc-8209-b9b02db3bf54.jpg?1783906645",
     "back_image": "",
     "price_usd": 0.16,
-    "price_foil": 0.22,
+    "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/32/slash-of-light?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.12
+    "price_eur": 0.05,
+    "price_eur_foil": 0.11
   },
   {
     "id": "399bb699-e61d-4b41-b6e9-e594cbad6194",
@@ -30497,15 +30497,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/9/399bb699-e61d-4b41-b6e9-e594cbad6194.jpg?1783906643",
     "back_image": "",
     "price_usd": 0.15,
-    "price_foil": 0.24,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/33/snow-villiers?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.15
+    "price_eur": 0.09,
+    "price_eur_foil": 0.12
   },
   {
     "id": "06a972a4-0c1b-4f12-a5a5-fdea47c4cd35",
@@ -30542,16 +30542,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/6/06a972a4-0c1b-4f12-a5a5-fdea47c4cd35.jpg?1783906644",
     "image_large": "https://cards.scryfall.io/large/front/0/6/06a972a4-0c1b-4f12-a5a5-fdea47c4cd35.jpg?1783906644",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.44,
+    "price_usd": 0.32,
+    "price_foil": 0.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/34/stiltzkin-moogle-merchant?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.24,
-    "price_eur_foil": 0.54
+    "price_eur": 0.28,
+    "price_eur_foil": 0.56
   },
   {
     "id": "00546117-018a-4286-bc20-b5446c5be56f",
@@ -30588,16 +30588,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/0/00546117-018a-4286-bc20-b5446c5be56f.jpg?1784182958",
     "image_large": "https://cards.scryfall.io/large/front/0/0/00546117-018a-4286-bc20-b5446c5be56f.jpg?1784182958",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.29,
+    "price_usd": 0.13,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/35/summon:-chocomog?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.16
+    "price_eur": 0.08,
+    "price_eur_foil": 0.14
   },
   {
     "id": "44d23652-077e-4c1f-b640-b284685db911",
@@ -30634,16 +30634,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/44d23652-077e-4c1f-b640-b284685db911.jpg?1783906644",
     "image_large": "https://cards.scryfall.io/large/front/4/4/44d23652-077e-4c1f-b640-b284685db911.jpg?1783906644",
     "back_image": "",
-    "price_usd": 13.78,
-    "price_foil": 14.85,
+    "price_usd": 12.62,
+    "price_foil": 16.11,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/36/summon:-knights-of-round?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 11.26,
-    "price_eur_foil": 14.55
+    "price_eur": 11.42,
+    "price_eur_foil": 14.53
   },
   {
     "id": "e44497a8-067e-454e-a9c0-684f03df55ff",
@@ -30680,16 +30680,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/4/e44497a8-067e-454e-a9c0-684f03df55ff.jpg?1783906643",
     "image_large": "https://cards.scryfall.io/large/front/e/4/e44497a8-067e-454e-a9c0-684f03df55ff.jpg?1783906643",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.32,
+    "price_usd": 0.22,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/37/summon:-primal-garuda?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.13
+    "price_eur": 0.07,
+    "price_eur_foil": 0.18
   },
   {
     "id": "39504a0e-f63f-4907-afd7-c4492f6b8a3b",
@@ -30726,16 +30726,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/9/39504a0e-f63f-4907-afd7-c4492f6b8a3b.jpg?1783906642",
     "image_large": "https://cards.scryfall.io/large/front/3/9/39504a0e-f63f-4907-afd7-c4492f6b8a3b.jpg?1783906642",
     "back_image": "",
-    "price_usd": 0.47,
-    "price_foil": 0.8,
+    "price_usd": 0.44,
+    "price_foil": 0.84,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/38/ultima?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.6,
-    "price_eur_foil": 1.13
+    "price_eur": 0.52,
+    "price_eur_foil": 1.05
   },
   {
     "id": "2625c00d-0a51-4481-bf36-cf13a2546242",
@@ -30772,16 +30772,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/6/2625c00d-0a51-4481-bf36-cf13a2546242.jpg?1783906647",
     "image_large": "https://cards.scryfall.io/large/front/2/6/2625c00d-0a51-4481-bf36-cf13a2546242.jpg?1783906647",
     "back_image": "https://cards.scryfall.io/normal/back/2/6/2625c00d-0a51-4481-bf36-cf13a2546242.jpg?1783906647",
-    "price_usd": 1.81,
-    "price_foil": 1.93,
+    "price_usd": 2.16,
+    "price_foil": 2.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/39/venat-heart-of-hydaelyn-hydaelyn-the-mothercrystal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.87,
-    "price_eur_foil": 1.69
+    "price_eur": 0.91,
+    "price_eur_foil": 1.95
   },
   {
     "id": "c9e6b374-3e44-4df7-b0a3-4ef98dc08267",
@@ -30818,7 +30818,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c9e6b374-3e44-4df7-b0a3-4ef98dc08267.jpg?1783906642",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c9e6b374-3e44-4df7-b0a3-4ef98dc08267.jpg?1783906642",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.18,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/40/weapons-vendor?utm_source=api",
@@ -30826,7 +30826,7 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
+    "price_eur": 0.09,
     "price_eur_foil": 0.14
   },
   {
@@ -30864,16 +30864,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/d/2df6f515-9d21-4769-b1c4-c219611bccbb.jpg?1783906641",
     "image_large": "https://cards.scryfall.io/large/front/2/d/2df6f515-9d21-4769-b1c4-c219611bccbb.jpg?1783906641",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.32,
+    "price_usd": 0.18,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/41/white-auracite?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.25
+    "price_eur": 0.05,
+    "price_eur_foil": 0.21
   },
   {
     "id": "30db372e-0b4c-4e16-9667-bf3fda666f72",
@@ -30910,7 +30910,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/0/30db372e-0b4c-4e16-9667-bf3fda666f72.jpg?1783906642",
     "image_large": "https://cards.scryfall.io/large/front/3/0/30db372e-0b4c-4e16-9667-bf3fda666f72.jpg?1783906642",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.13,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/42/white-mages-staff?utm_source=api",
@@ -30956,16 +30956,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/9/19bd0885-baaa-40f2-9c59-b1ea53807540.jpg?1783906641",
     "image_large": "https://cards.scryfall.io/large/front/1/9/19bd0885-baaa-40f2-9c59-b1ea53807540.jpg?1783906641",
     "back_image": "",
-    "price_usd": 6.26,
-    "price_foil": 7.65,
+    "price_usd": 7.12,
+    "price_foil": 7.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/43/the-wind-crystal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.81,
-    "price_eur_foil": 3.72
+    "price_eur": 3.75,
+    "price_eur_foil": 4.37
   },
   {
     "id": "1867b5cb-2bb0-4f49-b302-036fdffa2344",
@@ -31002,16 +31002,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/8/1867b5cb-2bb0-4f49-b302-036fdffa2344.jpg?1783906640",
     "image_large": "https://cards.scryfall.io/large/front/1/8/1867b5cb-2bb0-4f49-b302-036fdffa2344.jpg?1783906640",
     "back_image": "",
-    "price_usd": 0.15,
-    "price_foil": 0.27,
+    "price_usd": 0.17,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/44/youre-not-alone?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.14
+    "price_eur": 0.02,
+    "price_eur_foil": 0.11
   },
   {
     "id": "f21f9161-5945-40da-8da0-446f6a4a1c23",
@@ -31048,15 +31048,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/2/f21f9161-5945-40da-8da0-446f6a4a1c23.jpg?1783906640",
     "image_large": "https://cards.scryfall.io/large/front/f/2/f21f9161-5945-40da-8da0-446f6a4a1c23.jpg?1783906640",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.34,
+    "price_usd": 0.26,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/45/zack-fair?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.18,
     "price_eur_foil": 0.44
   },
   {
@@ -31094,7 +31094,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/f/bfa4e927-1d6f-4a64-9801-7d168a5ef3f6.jpg?1783906640",
     "image_large": "https://cards.scryfall.io/large/front/b/f/bfa4e927-1d6f-4a64-9801-7d168a5ef3f6.jpg?1783906640",
     "back_image": "",
-    "price_usd": 0.29,
+    "price_usd": 0.31,
     "price_foil": 0.6,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/46/astrologians-planisphere?utm_source=api",
@@ -31102,8 +31102,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.33,
-    "price_eur_foil": 1.36
+    "price_eur": 0.27,
+    "price_eur_foil": 1.6
   },
   {
     "id": "932b865c-bfe7-4bb7-82e9-2403cf0e0522",
@@ -31140,16 +31140,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/932b865c-bfe7-4bb7-82e9-2403cf0e0522.jpg?1783906640",
     "image_large": "https://cards.scryfall.io/large/front/9/3/932b865c-bfe7-4bb7-82e9-2403cf0e0522.jpg?1783906640",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.29,
+    "price_usd": 0.21,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/47/cargo-ship?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.37
+    "price_eur": 0.04,
+    "price_eur_foil": 0.36
   },
   {
     "id": "ec195607-ac30-4931-acfd-f9d8ac8b047f",
@@ -31186,8 +31186,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/c/ec195607-ac30-4931-acfd-f9d8ac8b047f.jpg?1783906638",
     "image_large": "https://cards.scryfall.io/large/front/e/c/ec195607-ac30-4931-acfd-f9d8ac8b047f.jpg?1783906638",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.29,
+    "price_usd": 0.21,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/48/combat-tutorial?utm_source=api",
     "treatments": [
@@ -31195,7 +31195,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.08,
-    "price_eur_foil": 0.13
+    "price_eur_foil": 0.12
   },
   {
     "id": "d92bce20-308e-4841-aaf8-8e20698292e7",
@@ -31232,16 +31232,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/9/d92bce20-308e-4841-aaf8-8e20698292e7.jpg?1783906638",
     "image_large": "https://cards.scryfall.io/large/front/d/9/d92bce20-308e-4841-aaf8-8e20698292e7.jpg?1783906638",
     "back_image": "",
-    "price_usd": 0.11,
-    "price_foil": 0.17,
+    "price_usd": 0.13,
+    "price_foil": 0.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/49/dragoons-wyvern?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.02,
-    "price_eur_foil": 0.05
+    "price_eur": 0.03,
+    "price_eur_foil": 0.07
   },
   {
     "id": "ba752243-2727-4b8a-8e21-e70becfd4ff3",
@@ -31278,7 +31278,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/a/ba752243-2727-4b8a-8e21-e70becfd4ff3.jpg?1783906637",
     "image_large": "https://cards.scryfall.io/large/front/b/a/ba752243-2727-4b8a-8e21-e70becfd4ff3.jpg?1783906637",
     "back_image": "",
-    "price_usd": 0.18,
+    "price_usd": 0.19,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/50/dreams-of-laguna?utm_source=api",
@@ -31286,8 +31286,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.12
+    "price_eur": 0.07,
+    "price_eur_foil": 0.18
   },
   {
     "id": "950ee302-5512-43c5-ac7c-b2b06f4177bf",
@@ -31324,16 +31324,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/5/950ee302-5512-43c5-ac7c-b2b06f4177bf.jpg?1783906638",
     "image_large": "https://cards.scryfall.io/large/front/9/5/950ee302-5512-43c5-ac7c-b2b06f4177bf.jpg?1783906638",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.48,
+    "price_usd": 0.3,
+    "price_foil": 0.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/51/edgar-king-of-figaro?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.61
+    "price_eur": 0.22,
+    "price_eur_foil": 0.55
   },
   {
     "id": "aec83c9a-8ec4-4a5a-b27f-0e74a2b3d21e",
@@ -31370,16 +31370,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/e/aec83c9a-8ec4-4a5a-b27f-0e74a2b3d21e.jpg?1783906636",
     "image_large": "https://cards.scryfall.io/large/front/a/e/aec83c9a-8ec4-4a5a-b27f-0e74a2b3d21e.jpg?1783906636",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.28,
+    "price_usd": 0.19,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/52/eject?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.19
+    "price_eur": 0.11,
+    "price_eur_foil": 0.24
   },
   {
     "id": "896ee6e9-15a9-4974-b576-50f4759fac38",
@@ -31416,16 +31416,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/9/896ee6e9-15a9-4974-b576-50f4759fac38.jpg?1783906637",
     "image_large": "https://cards.scryfall.io/large/front/8/9/896ee6e9-15a9-4974-b576-50f4759fac38.jpg?1783906637",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.28,
+    "price_usd": 0.19,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/53/ether?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.18
+    "price_eur": 0.07,
+    "price_eur_foil": 0.17
   },
   {
     "id": "cce4eb99-d960-4ab7-911a-bb4ea74d1775",
@@ -31462,16 +31462,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/c/cce4eb99-d960-4ab7-911a-bb4ea74d1775.jpg?1783906636",
     "image_large": "https://cards.scryfall.io/large/front/c/c/cce4eb99-d960-4ab7-911a-bb4ea74d1775.jpg?1783906636",
     "back_image": "",
-    "price_usd": 4.14,
-    "price_foil": 5.38,
+    "price_usd": 4.21,
+    "price_foil": 5.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/54/gogo-master-of-mimicry?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 4.18,
-    "price_eur_foil": 4.44
+    "price_eur": 3.7,
+    "price_eur_foil": 4.49
   },
   {
     "id": "ad304c9c-943f-442f-bb82-ff378ad7d7ba",
@@ -31509,14 +31509,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/d/ad304c9c-943f-442f-bb82-ff378ad7d7ba.jpg?1783906636",
     "back_image": "",
     "price_usd": 0.17,
-    "price_foil": 0.26,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/55/ice-flan?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
+    "price_eur": 0.03,
     "price_eur_foil": 0.08
   },
   {
@@ -31554,16 +31554,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/d/9dabd626-7ec3-4913-babb-d5d3fd5e32d5.jpg?1783906635",
     "image_large": "https://cards.scryfall.io/large/front/9/d/9dabd626-7ec3-4913-babb-d5d3fd5e32d5.jpg?1783906635",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.27,
+    "price_usd": 0.21,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/56/ice-magic?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.07
+    "price_eur": 0.06,
+    "price_eur_foil": 0.12
   },
   {
     "id": "ae612312-3a8e-495f-8730-deaaf7505ca1",
@@ -31601,15 +31601,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/e/ae612312-3a8e-495f-8730-deaaf7505ca1.jpg?1783906636",
     "back_image": "",
     "price_usd": 0.17,
-    "price_foil": 0.3,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/57/il-mheg-pixie?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.19
+    "price_eur": 0.1,
+    "price_eur_foil": 0.16
   },
   {
     "id": "1f163763-4802-4a96-a5bc-f3c381db7b5c",
@@ -31646,16 +31646,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/f/1f163763-4802-4a96-a5bc-f3c381db7b5c.jpg?1783906640",
     "image_large": "https://cards.scryfall.io/large/front/1/f/1f163763-4802-4a96-a5bc-f3c381db7b5c.jpg?1783906640",
     "back_image": "https://cards.scryfall.io/normal/back/1/f/1f163763-4802-4a96-a5bc-f3c381db7b5c.jpg?1783906640",
-    "price_usd": 0.42,
-    "price_foil": 1.0,
+    "price_usd": 0.39,
+    "price_foil": 1.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/58/jill-shivas-dominant-shiva-warden-of-ice?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.38,
-    "price_eur_foil": 0.98
+    "price_eur": 0.45,
+    "price_eur_foil": 0.89
   },
   {
     "id": "4a6976f2-0bd5-449a-8fcf-f5a732ce22c1",
@@ -31692,16 +31692,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/a/4a6976f2-0bd5-449a-8fcf-f5a732ce22c1.jpg?1783906634",
     "image_large": "https://cards.scryfall.io/large/front/4/a/4a6976f2-0bd5-449a-8fcf-f5a732ce22c1.jpg?1783906634",
     "back_image": "",
-    "price_usd": 0.42,
-    "price_foil": 0.75,
+    "price_usd": 0.37,
+    "price_foil": 0.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/59/louisoixs-sacrifice?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.3,
-    "price_eur_foil": 0.99
+    "price_eur": 0.28,
+    "price_eur_foil": 1.04
   },
   {
     "id": "ae875471-346c-4a76-b26f-b7205dad5b80",
@@ -31738,16 +31738,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/e/ae875471-346c-4a76-b26f-b7205dad5b80.jpg?1783906634",
     "image_large": "https://cards.scryfall.io/large/front/a/e/ae875471-346c-4a76-b26f-b7205dad5b80.jpg?1783906634",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.44,
+    "price_usd": 0.3,
+    "price_foil": 0.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/60/the-lunar-whale?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.15,
-    "price_eur_foil": 0.49
+    "price_eur": 0.17,
+    "price_eur_foil": 0.43
   },
   {
     "id": "44921b2e-5938-4f63-92b9-0b719a2f8c68",
@@ -31784,8 +31784,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/44921b2e-5938-4f63-92b9-0b719a2f8c68.jpg?1783906635",
     "image_large": "https://cards.scryfall.io/large/front/4/4/44921b2e-5938-4f63-92b9-0b719a2f8c68.jpg?1783906635",
     "back_image": "",
-    "price_usd": 0.27,
-    "price_foil": 0.34,
+    "price_usd": 0.24,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/61/magic-damper?utm_source=api",
     "treatments": [
@@ -31830,16 +31830,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/d/1dd61cf6-2fb5-4cff-ab00-7677ac85774c.jpg?1783906634",
     "image_large": "https://cards.scryfall.io/large/front/1/d/1dd61cf6-2fb5-4cff-ab00-7677ac85774c.jpg?1783906634",
     "back_image": "",
-    "price_usd": 0.44,
-    "price_foil": 0.81,
+    "price_usd": 0.39,
+    "price_foil": 0.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/62/matoya-archon-elder?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.48,
-    "price_eur_foil": 0.63
+    "price_eur": 0.54,
+    "price_eur_foil": 0.8
   },
   {
     "id": "a753abfc-35d3-4faf-ab35-3b51aa778174",
@@ -31876,15 +31876,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/7/a753abfc-35d3-4faf-ab35-3b51aa778174.jpg?1783906633",
     "image_large": "https://cards.scryfall.io/large/front/a/7/a753abfc-35d3-4faf-ab35-3b51aa778174.jpg?1783906633",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.37,
+    "price_usd": 0.27,
+    "price_foil": 0.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/63/memories-returning?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.2,
+    "price_eur": 0.25,
     "price_eur_foil": 0.4
   },
   {
@@ -31922,16 +31922,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/3/e3998132-5746-4dde-9529-97d3ad7d7361.jpg?1783906633",
     "image_large": "https://cards.scryfall.io/large/front/e/3/e3998132-5746-4dde-9529-97d3ad7d7361.jpg?1783906633",
     "back_image": "",
-    "price_usd": 0.16,
-    "price_foil": 0.21,
+    "price_usd": 0.14,
+    "price_foil": 0.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/64/the-prima-vista?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.16
+    "price_eur": 0.06,
+    "price_eur_foil": 0.07
   },
   {
     "id": "a75a6ecc-a6a5-462c-bd92-ae57dde9b965",
@@ -31968,7 +31968,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/7/a75a6ecc-a6a5-462c-bd92-ae57dde9b965.jpg?1783906631",
     "image_large": "https://cards.scryfall.io/large/front/a/7/a75a6ecc-a6a5-462c-bd92-ae57dde9b965.jpg?1783906631",
     "back_image": "",
-    "price_usd": 0.07,
+    "price_usd": 0.05,
     "price_foil": 0.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/65/qiqirn-merchant?utm_source=api",
@@ -32014,16 +32014,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/1/61784cbd-92e9-43c7-a1a8-4004b1bf4dae.jpg?1783906632",
     "image_large": "https://cards.scryfall.io/large/front/6/1/61784cbd-92e9-43c7-a1a8-4004b1bf4dae.jpg?1783906632",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.28,
+    "price_usd": 0.24,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/66/quistis-trepe?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.27
+    "price_eur": 0.09,
+    "price_eur_foil": 0.26
   },
   {
     "id": "6aedac12-3714-4a81-bd4d-1d2555c66f78",
@@ -32060,16 +32060,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/a/6aedac12-3714-4a81-bd4d-1d2555c66f78.jpg?1783906632",
     "image_large": "https://cards.scryfall.io/large/front/6/a/6aedac12-3714-4a81-bd4d-1d2555c66f78.jpg?1783906632",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.34,
+    "price_usd": 0.3,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/67/relms-sketching?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.23
+    "price_eur": 0.18,
+    "price_eur_foil": 0.2
   },
   {
     "id": "ebd733f0-8883-434a-b36c-ef76b091fe8e",
@@ -32106,16 +32106,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/b/ebd733f0-8883-434a-b36c-ef76b091fe8e.jpg?1783906632",
     "image_large": "https://cards.scryfall.io/large/front/e/b/ebd733f0-8883-434a-b36c-ef76b091fe8e.jpg?1783906632",
     "back_image": "",
-    "price_usd": 0.11,
-    "price_foil": 0.26,
+    "price_usd": 0.12,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/68/retrieve-the-esper?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.09
+    "price_eur": 0.02,
+    "price_eur_foil": 0.1
   },
   {
     "id": "4572884d-0c0e-41e7-b219-f76b95fdbd01",
@@ -32152,8 +32152,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/5/4572884d-0c0e-41e7-b219-f76b95fdbd01.jpg?1783906631",
     "image_large": "https://cards.scryfall.io/large/front/4/5/4572884d-0c0e-41e7-b219-f76b95fdbd01.jpg?1783906631",
     "back_image": "",
-    "price_usd": 0.2,
-    "price_foil": 0.28,
+    "price_usd": 0.21,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/69/rook-turret?utm_source=api",
     "treatments": [
@@ -32161,7 +32161,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.07,
-    "price_eur_foil": 0.14
+    "price_eur_foil": 0.13
   },
   {
     "id": "a12ff7c3-6ae0-4098-9240-ff3fd16a5288",
@@ -32198,7 +32198,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/1/a12ff7c3-6ae0-4098-9240-ff3fd16a5288.jpg?1783906631",
     "image_large": "https://cards.scryfall.io/large/front/a/1/a12ff7c3-6ae0-4098-9240-ff3fd16a5288.jpg?1783906631",
     "back_image": "",
-    "price_usd": 0.15,
+    "price_usd": 0.1,
     "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/70/sages-nouliths?utm_source=api",
@@ -32206,7 +32206,7 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
+    "price_eur": 0.05,
     "price_eur_foil": 0.14
   },
   {
@@ -32244,16 +32244,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/1/516940c7-c271-4f64-af75-c7ba98548382.jpg?1783906629",
     "image_large": "https://cards.scryfall.io/large/front/5/1/516940c7-c271-4f64-af75-c7ba98548382.jpg?1783906629",
     "back_image": "",
-    "price_usd": 0.11,
-    "price_foil": 0.14,
+    "price_usd": 0.14,
+    "price_foil": 0.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/71/sahagin?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.11
+    "price_eur": 0.05,
+    "price_eur_foil": 0.1
   },
   {
     "id": "08ab5220-e5c1-472e-8217-97fd60e1773c",
@@ -32290,16 +32290,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/8/08ab5220-e5c1-472e-8217-97fd60e1773c.jpg?1783906630",
     "image_large": "https://cards.scryfall.io/large/front/0/8/08ab5220-e5c1-472e-8217-97fd60e1773c.jpg?1783906630",
     "back_image": "",
-    "price_usd": 0.06,
-    "price_foil": 0.2,
+    "price_usd": 0.07,
+    "price_foil": 0.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/72/scorpion-sentinel?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.07
+    "price_eur": 0.04,
+    "price_eur_foil": 0.05
   },
   {
     "id": "8ac3d2c9-5978-4cfb-a746-c901decff093",
@@ -32336,8 +32336,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/a/8ac3d2c9-5978-4cfb-a746-c901decff093.jpg?1783906635",
     "image_large": "https://cards.scryfall.io/large/front/8/a/8ac3d2c9-5978-4cfb-a746-c901decff093.jpg?1783906635",
     "back_image": "https://cards.scryfall.io/normal/back/8/a/8ac3d2c9-5978-4cfb-a746-c901decff093.jpg?1783906635",
-    "price_usd": 0.16,
-    "price_foil": 0.25,
+    "price_usd": 0.15,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/73/sidequest:-card-collection-magicked-card?utm_source=api",
     "treatments": [
@@ -32345,7 +32345,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.05,
-    "price_eur_foil": 0.15
+    "price_eur_foil": 0.14
   },
   {
     "id": "c96cae63-7625-48e3-aaba-5b1632a8642d",
@@ -32382,16 +32382,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c96cae63-7625-48e3-aaba-5b1632a8642d.jpg?1783906629",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c96cae63-7625-48e3-aaba-5b1632a8642d.jpg?1783906629",
     "back_image": "",
-    "price_usd": 0.16,
-    "price_foil": 0.3,
+    "price_usd": 0.22,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/74/sleep-magic?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.22
+    "price_eur": 0.17,
+    "price_eur_foil": 0.27
   },
   {
     "id": "0d80c511-2f4d-4f77-8143-7b49b2b19fae",
@@ -32428,16 +32428,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/d/0d80c511-2f4d-4f77-8143-7b49b2b19fae.jpg?1783906629",
     "image_large": "https://cards.scryfall.io/large/front/0/d/0d80c511-2f4d-4f77-8143-7b49b2b19fae.jpg?1783906629",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.26,
+    "price_usd": 0.15,
+    "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/75/stolen-uniform?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.15
+    "price_eur": 0.04,
+    "price_eur_foil": 0.16
   },
   {
     "id": "6678501e-6349-4e37-ab4c-a31a3d408d52",
@@ -32474,15 +32474,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/6/6678501e-6349-4e37-ab4c-a31a3d408d52.jpg?1783906629",
     "image_large": "https://cards.scryfall.io/large/front/6/6/6678501e-6349-4e37-ab4c-a31a3d408d52.jpg?1783906629",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.3,
+    "price_usd": 0.14,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/76/stuck-in-summoners-sanctum?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
+    "price_eur": 0.03,
     "price_eur_foil": 0.18
   },
   {
@@ -32520,15 +32520,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/a/ea7f26a9-b203-4ee7-88f1-3d9c77a25bcb.jpg?1783906627",
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea7f26a9-b203-4ee7-88f1-3d9c77a25bcb.jpg?1783906627",
     "back_image": "",
-    "price_usd": 1.02,
-    "price_foil": 1.96,
+    "price_usd": 1.82,
+    "price_foil": 2.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/77/summon:-leviathan?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.96,
+    "price_eur": 0.95,
     "price_eur_foil": 1.38
   },
   {
@@ -32566,7 +32566,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/8/a80511f8-7cb1-4974-afde-8a5cebe13ad7.jpg?1783906628",
     "image_large": "https://cards.scryfall.io/large/front/a/8/a80511f8-7cb1-4974-afde-8a5cebe13ad7.jpg?1783906628",
     "back_image": "",
-    "price_usd": 0.26,
+    "price_usd": 0.27,
     "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/78/summon:-shiva?utm_source=api",
@@ -32574,8 +32574,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.22
+    "price_eur": 0.13,
+    "price_eur_foil": 0.34
   },
   {
     "id": "2270642d-fe2a-4265-aff0-a24a43ebe0a1",
@@ -32612,16 +32612,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/2/2270642d-fe2a-4265-aff0-a24a43ebe0a1.jpg?1783906627",
     "image_large": "https://cards.scryfall.io/large/front/2/2/2270642d-fe2a-4265-aff0-a24a43ebe0a1.jpg?1783906627",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.35,
+    "price_usd": 0.26,
+    "price_foil": 0.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/79/swallowed-by-leviathan?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.19
+    "price_eur": 0.09,
+    "price_eur_foil": 0.2
   },
   {
     "id": "83e1cd8d-5b97-427a-be75-2a1947f9c59b",
@@ -32658,16 +32658,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/3/83e1cd8d-5b97-427a-be75-2a1947f9c59b.jpg?1783906627",
     "image_large": "https://cards.scryfall.io/large/front/8/3/83e1cd8d-5b97-427a-be75-2a1947f9c59b.jpg?1783906627",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.32,
+    "price_usd": 0.22,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/80/syncopate?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.14
+    "price_eur": 0.06,
+    "price_eur_foil": 0.2
   },
   {
     "id": "c2dcfd0a-3f52-4616-a09a-fd2db8b6b93e",
@@ -32704,16 +32704,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/2/c2dcfd0a-3f52-4616-a09a-fd2db8b6b93e.jpg?1783906627",
     "image_large": "https://cards.scryfall.io/large/front/c/2/c2dcfd0a-3f52-4616-a09a-fd2db8b6b93e.jpg?1783906627",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.29,
+    "price_usd": 0.19,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/81/thiefs-knife?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.18
+    "price_eur": 0.08,
+    "price_eur_foil": 0.14
   },
   {
     "id": "aa5086e0-e2f2-498f-9035-1b31e1d21e0a",
@@ -32751,15 +32751,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa5086e0-e2f2-498f-9035-1b31e1d21e0a.jpg?1783906626",
     "back_image": "",
     "price_usd": 0.2,
-    "price_foil": 0.27,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/82/travel-the-overworld?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.17
+    "price_eur": 0.08,
+    "price_eur_foil": 0.18
   },
   {
     "id": "14379198-9a0a-4853-9d51-fb074a24b1c0",
@@ -32796,16 +32796,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/4/14379198-9a0a-4853-9d51-fb074a24b1c0.jpg?1783906626",
     "image_large": "https://cards.scryfall.io/large/front/1/4/14379198-9a0a-4853-9d51-fb074a24b1c0.jpg?1783906626",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.25,
+    "price_usd": 0.2,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/83/ultros-obnoxious-octopus?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.13
+    "price_eur": 0.08,
+    "price_eur_foil": 0.12
   },
   {
     "id": "b40a055f-ea66-44d4-b058-a328a3d10994",
@@ -32843,15 +32843,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/4/b40a055f-ea66-44d4-b058-a328a3d10994.jpg?1783906626",
     "back_image": "",
     "price_usd": 0.21,
-    "price_foil": 0.29,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/84/valkyrie-aerial-unit?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.15
+    "price_eur": 0.09,
+    "price_eur_foil": 0.1
   },
   {
     "id": "e0af8436-797b-4e1f-b21a-d8e93701c3c9",
@@ -32888,16 +32888,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e0af8436-797b-4e1f-b21a-d8e93701c3c9.jpg?1783906626",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e0af8436-797b-4e1f-b21a-d8e93701c3c9.jpg?1783906626",
     "back_image": "",
-    "price_usd": 4.78,
-    "price_foil": 4.92,
+    "price_usd": 3.36,
+    "price_foil": 5.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/85/the-water-crystal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.12,
-    "price_eur_foil": 2.68
+    "price_eur": 2.15,
+    "price_eur_foil": 2.64
   },
   {
     "id": "aef218fa-13a4-4653-95d6-6b3ef1b33a92",
@@ -32934,16 +32934,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/e/aef218fa-13a4-4653-95d6-6b3ef1b33a92.jpg?1783906625",
     "image_large": "https://cards.scryfall.io/large/front/a/e/aef218fa-13a4-4653-95d6-6b3ef1b33a92.jpg?1783906625",
     "back_image": "",
-    "price_usd": 5.06,
-    "price_foil": 7.2,
+    "price_usd": 4.9,
+    "price_foil": 7.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/86/yshtola-rhul?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 4.36,
-    "price_eur_foil": 6.2
+    "price_eur": 4.3,
+    "price_eur_foil": 6.47
   },
   {
     "id": "162a415c-5465-497e-8f4e-c6f09681641d",
@@ -32980,16 +32980,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/6/162a415c-5465-497e-8f4e-c6f09681641d.jpg?1783906624",
     "image_large": "https://cards.scryfall.io/large/front/1/6/162a415c-5465-497e-8f4e-c6f09681641d.jpg?1783906624",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.19,
+    "price_usd": 0.16,
+    "price_foil": 0.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/87/ahriman?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.1
+    "price_eur": 0.05,
+    "price_eur_foil": 0.11
   },
   {
     "id": "58ccdcfc-a669-480f-bded-4273cfaf2045",
@@ -33026,7 +33026,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/8/58ccdcfc-a669-480f-bded-4273cfaf2045.jpg?1783906624",
     "image_large": "https://cards.scryfall.io/large/front/5/8/58ccdcfc-a669-480f-bded-4273cfaf2045.jpg?1783906624",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.25,
     "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/88/al-bhed-salvagers?utm_source=api",
@@ -33034,8 +33034,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.15
+    "price_eur": 0.11,
+    "price_eur_foil": 0.17
   },
   {
     "id": "4627072e-9c72-4084-8021-690777342548",
@@ -33072,16 +33072,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/6/4627072e-9c72-4084-8021-690777342548.jpg?1785650696",
     "image_large": "https://cards.scryfall.io/large/front/4/6/4627072e-9c72-4084-8021-690777342548.jpg?1785650696",
     "back_image": "",
-    "price_usd": 0.81,
-    "price_foil": 1.29,
+    "price_usd": 0.96,
+    "price_foil": 1.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/89/ardyn-the-usurper?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.9,
-    "price_eur_foil": 1.41
+    "price_eur": 0.94,
+    "price_eur_foil": 1.45
   },
   {
     "id": "35e8f140-055f-4fc7-a765-fb030d828214",
@@ -33118,16 +33118,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/35e8f140-055f-4fc7-a765-fb030d828214.jpg?1783906622",
     "image_large": "https://cards.scryfall.io/large/front/3/5/35e8f140-055f-4fc7-a765-fb030d828214.jpg?1783906622",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.45,
+    "price_usd": 0.27,
+    "price_foil": 0.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/90/black-mages-rod?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.26,
-    "price_eur_foil": 0.55
+    "price_eur": 0.28,
+    "price_eur_foil": 0.52
   },
   {
     "id": "026e7167-d665-43d0-a51e-8df2d68cdb5e",
@@ -33164,8 +33164,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/2/026e7167-d665-43d0-a51e-8df2d68cdb5e.jpg?1783906631",
     "image_large": "https://cards.scryfall.io/large/front/0/2/026e7167-d665-43d0-a51e-8df2d68cdb5e.jpg?1783906631",
     "back_image": "https://cards.scryfall.io/normal/back/0/2/026e7167-d665-43d0-a51e-8df2d68cdb5e.jpg?1783906631",
-    "price_usd": 1.09,
-    "price_foil": 1.23,
+    "price_usd": 1.01,
+    "price_foil": 1.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/91/cecil-dark-knight-cecil-redeemed-paladin?utm_source=api",
     "treatments": [
@@ -33173,7 +33173,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 1.04,
-    "price_eur_foil": 1.8
+    "price_eur_foil": 1.6
   },
   {
     "id": "c969bd0f-f174-4e2f-b95c-c9ccd5d0b8ba",
@@ -33210,16 +33210,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c969bd0f-f174-4e2f-b95c-c9ccd5d0b8ba.jpg?1783906622",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c969bd0f-f174-4e2f-b95c-c9ccd5d0b8ba.jpg?1783906622",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.3,
+    "price_usd": 0.25,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/92/circle-of-power?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.13,
-    "price_eur_foil": 0.25
+    "price_eur": 0.17,
+    "price_eur_foil": 0.23
   },
   {
     "id": "688fcf8a-0a44-416a-8086-83acf9a6fe69",
@@ -33256,8 +33256,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/8/688fcf8a-0a44-416a-8086-83acf9a6fe69.jpg?1783906623",
     "image_large": "https://cards.scryfall.io/large/front/6/8/688fcf8a-0a44-416a-8086-83acf9a6fe69.jpg?1783906623",
     "back_image": "",
-    "price_usd": 0.29,
-    "price_foil": 0.34,
+    "price_usd": 0.22,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/93/cornered-by-black-mages?utm_source=api",
     "treatments": [
@@ -33265,7 +33265,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.09,
-    "price_eur_foil": 0.25
+    "price_eur_foil": 0.2
   },
   {
     "id": "2520ab23-a068-4462-b261-2754409b4108",
@@ -33302,16 +33302,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/5/2520ab23-a068-4462-b261-2754409b4108.jpg?1783906622",
     "image_large": "https://cards.scryfall.io/large/front/2/5/2520ab23-a068-4462-b261-2754409b4108.jpg?1783906622",
     "back_image": "",
-    "price_usd": 4.0,
-    "price_foil": 4.85,
+    "price_usd": 4.06,
+    "price_foil": 4.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/94/dark-confidant?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 4.5,
-    "price_eur_foil": 5.15
+    "price_eur": 4.21,
+    "price_eur_foil": 5.3
   },
   {
     "id": "b50dcc7c-260f-4d8c-9a9e-9244ec23a91e",
@@ -33348,16 +33348,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/5/b50dcc7c-260f-4d8c-9a9e-9244ec23a91e.jpg?1783906621",
     "image_large": "https://cards.scryfall.io/large/front/b/5/b50dcc7c-260f-4d8c-9a9e-9244ec23a91e.jpg?1783906621",
     "back_image": "",
-    "price_usd": 0.2,
-    "price_foil": 0.31,
+    "price_usd": 0.23,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/95/dark-knights-greatsword?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.28
+    "price_eur": 0.12,
+    "price_eur_foil": 0.21
   },
   {
     "id": "0f93b6ac-54ce-45d0-8549-19307406e6e5",
@@ -33394,16 +33394,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/f/0f93b6ac-54ce-45d0-8549-19307406e6e5.jpg?1783906621",
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f93b6ac-54ce-45d0-8549-19307406e6e5.jpg?1783906621",
     "back_image": "",
-    "price_usd": 5.16,
-    "price_foil": 5.75,
+    "price_usd": 5.48,
+    "price_foil": 5.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/96/the-darkness-crystal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.78,
-    "price_eur_foil": 4.12
+    "price_eur": 2.82,
+    "price_eur_foil": 4.22
   },
   {
     "id": "13abd96c-d1af-43d0-b3a4-ac3db20e3b51",
@@ -33440,8 +33440,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/3/13abd96c-d1af-43d0-b3a4-ac3db20e3b51.jpg?1783906621",
     "image_large": "https://cards.scryfall.io/large/front/1/3/13abd96c-d1af-43d0-b3a4-ac3db20e3b51.jpg?1783906621",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.25,
+    "price_usd": 0.23,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/97/demon-wall?utm_source=api",
     "treatments": [
@@ -33449,7 +33449,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.09,
-    "price_eur_foil": 0.25
+    "price_eur_foil": 0.24
   },
   {
     "id": "eb98cbc3-749c-44f4-974c-00be1286d69e",
@@ -33486,15 +33486,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/b/eb98cbc3-749c-44f4-974c-00be1286d69e.jpg?1783906621",
     "image_large": "https://cards.scryfall.io/large/front/e/b/eb98cbc3-749c-44f4-974c-00be1286d69e.jpg?1783906621",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.29,
+    "price_usd": 0.21,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/98/evil-reawakened?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.13,
+    "price_eur": 0.08,
     "price_eur_foil": 0.14
   },
   {
@@ -33532,8 +33532,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/7/f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8.jpg?1783906620",
     "image_large": "https://cards.scryfall.io/large/front/f/7/f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8.jpg?1783906620",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.34,
+    "price_usd": 0.26,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/99/fang-fearless-lcie?utm_source=api",
     "treatments": [
@@ -33624,16 +33624,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e1b0739a-dcc4-4034-96d7-69e551b2f36b.jpg?1783906618",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e1b0739a-dcc4-4034-96d7-69e551b2f36b.jpg?1783906618",
     "back_image": "",
-    "price_usd": 0.2,
-    "price_foil": 0.26,
+    "price_usd": 0.22,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/100/fight-on!?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.23
+    "price_eur": 0.07,
+    "price_eur_foil": 0.21
   },
   {
     "id": "bbf01770-6d0f-4015-b4b4-a74a53cb767a",
@@ -33670,16 +33670,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/b/bbf01770-6d0f-4015-b4b4-a74a53cb767a.jpg?1783906619",
     "image_large": "https://cards.scryfall.io/large/front/b/b/bbf01770-6d0f-4015-b4b4-a74a53cb767a.jpg?1783906619",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.25,
+    "price_usd": 0.15,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/101/the-final-days?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.16
+    "price_eur": 0.09,
+    "price_eur_foil": 0.1
   },
   {
     "id": "a4ee8ba5-6a79-4652-b2a4-a3dae804bc28",
@@ -33716,8 +33716,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a4ee8ba5-6a79-4652-b2a4-a3dae804bc28.jpg?1783906618",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a4ee8ba5-6a79-4652-b2a4-a3dae804bc28.jpg?1783906618",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.31,
+    "price_usd": 0.29,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/102/gaius-van-baelsar?utm_source=api",
     "treatments": [
@@ -33725,7 +33725,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.22
+    "price_eur_foil": 0.23
   },
   {
     "id": "8680d052-c07b-4d9b-bda9-b5f69f44f424",
@@ -33762,16 +33762,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/6/8680d052-c07b-4d9b-bda9-b5f69f44f424.jpg?1783906618",
     "image_large": "https://cards.scryfall.io/large/front/8/6/8680d052-c07b-4d9b-bda9-b5f69f44f424.jpg?1783906618",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.32,
+    "price_usd": 0.2,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/103/hecteyes?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.17
+    "price_eur": 0.07,
+    "price_eur_foil": 0.18
   },
   {
     "id": "4ec91fe8-b3da-47fa-b45e-94b62a260aba",
@@ -33808,16 +33808,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/e/4ec91fe8-b3da-47fa-b45e-94b62a260aba.jpg?1783906625",
     "image_large": "https://cards.scryfall.io/large/front/4/e/4ec91fe8-b3da-47fa-b45e-94b62a260aba.jpg?1783906625",
     "back_image": "https://cards.scryfall.io/normal/back/4/e/4ec91fe8-b3da-47fa-b45e-94b62a260aba.jpg?1783906625",
-    "price_usd": 0.35,
-    "price_foil": 0.62,
+    "price_usd": 0.31,
+    "price_foil": 0.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/104/jecht-reluctant-guardian-braskas-final-aeon?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.32,
-    "price_eur_foil": 0.76
+    "price_eur": 0.45,
+    "price_eur_foil": 0.75
   },
   {
     "id": "f8c86be0-e1b3-4a78-9254-238dd936914b",
@@ -33854,16 +33854,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/8/f8c86be0-e1b3-4a78-9254-238dd936914b.jpg?1783906617",
     "image_large": "https://cards.scryfall.io/large/front/f/8/f8c86be0-e1b3-4a78-9254-238dd936914b.jpg?1783906617",
     "back_image": "",
-    "price_usd": 0.29,
-    "price_foil": 0.4,
+    "price_usd": 0.28,
+    "price_foil": 0.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/105/kain-traitorous-dragoon?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.13,
-    "price_eur_foil": 0.51
+    "price_eur": 0.16,
+    "price_eur_foil": 0.5
   },
   {
     "id": "e46d8048-03ce-4e07-ba24-f41ba6140a4e",
@@ -33900,16 +33900,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/4/e46d8048-03ce-4e07-ba24-f41ba6140a4e.jpg?1783906617",
     "image_large": "https://cards.scryfall.io/large/front/e/4/e46d8048-03ce-4e07-ba24-f41ba6140a4e.jpg?1783906617",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.25,
+    "price_usd": 0.16,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/106/malboro?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.16
+    "price_eur": 0.07,
+    "price_eur_foil": 0.1
   },
   {
     "id": "f9d25b34-990d-416c-aef7-1b5a73f19dd4",
@@ -33946,7 +33946,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f9d25b34-990d-416c-aef7-1b5a73f19dd4.jpg?1783906616",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f9d25b34-990d-416c-aef7-1b5a73f19dd4.jpg?1783906616",
     "back_image": "",
-    "price_usd": 0.08,
+    "price_usd": 0.09,
     "price_foil": 0.18,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/107/namazu-trader?utm_source=api",
@@ -33954,8 +33954,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.09
+    "price_eur": 0.03,
+    "price_eur_foil": 0.07
   },
   {
     "id": "a6b5af82-3646-44f9-ac12-1d7fa698f037",
@@ -33992,16 +33992,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/6/a6b5af82-3646-44f9-ac12-1d7fa698f037.jpg?1783906616",
     "image_large": "https://cards.scryfall.io/large/front/a/6/a6b5af82-3646-44f9-ac12-1d7fa698f037.jpg?1783906616",
     "back_image": "",
-    "price_usd": 0.34,
-    "price_foil": 0.83,
+    "price_usd": 0.37,
+    "price_foil": 0.75,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/108/ninjas-blades?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.57
+    "price_eur": 0.33,
+    "price_eur_foil": 0.75
   },
   {
     "id": "ae075e71-d33d-4d6c-b4a5-0b47dd6fd196",
@@ -34038,16 +34038,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/e/ae075e71-d33d-4d6c-b4a5-0b47dd6fd196.jpg?1783906615",
     "image_large": "https://cards.scryfall.io/large/front/a/e/ae075e71-d33d-4d6c-b4a5-0b47dd6fd196.jpg?1783906615",
     "back_image": "",
-    "price_usd": 0.34,
-    "price_foil": 0.44,
+    "price_usd": 0.29,
+    "price_foil": 0.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/109/overkill?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.13,
-    "price_eur_foil": 0.35
+    "price_eur": 0.18,
+    "price_eur_foil": 0.41
   },
   {
     "id": "7a50d2ac-101d-41e1-b400-18fa7d2d7125",
@@ -34084,8 +34084,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/a/7a50d2ac-101d-41e1-b400-18fa7d2d7125.jpg?1783906616",
     "image_large": "https://cards.scryfall.io/large/front/7/a/7a50d2ac-101d-41e1-b400-18fa7d2d7125.jpg?1783906616",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.3,
+    "price_usd": 0.23,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/110/phantom-train?utm_source=api",
     "treatments": [
@@ -34093,7 +34093,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.28
+    "price_eur_foil": 0.23
   },
   {
     "id": "ff2bafe7-4d0f-464d-b7ba-55a54366fc68",
@@ -34130,16 +34130,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/f/ff2bafe7-4d0f-464d-b7ba-55a54366fc68.jpg?1783906615",
     "image_large": "https://cards.scryfall.io/large/front/f/f/ff2bafe7-4d0f-464d-b7ba-55a54366fc68.jpg?1783906615",
     "back_image": "",
-    "price_usd": 0.2,
-    "price_foil": 0.26,
+    "price_usd": 0.13,
+    "price_foil": 0.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/111/poison-the-waters?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.12
+    "price_eur": 0.08,
+    "price_eur_foil": 0.26
   },
   {
     "id": "7475ecf6-23f5-45af-9ef0-ac7923bbc9cb",
@@ -34176,7 +34176,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/4/7475ecf6-23f5-45af-9ef0-ac7923bbc9cb.jpg?1783906614",
     "image_large": "https://cards.scryfall.io/large/front/7/4/7475ecf6-23f5-45af-9ef0-ac7923bbc9cb.jpg?1783906614",
     "back_image": "",
-    "price_usd": 0.11,
+    "price_usd": 0.12,
     "price_foil": 0.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/112/qutrub-forayer?utm_source=api",
@@ -34184,8 +34184,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.02,
-    "price_eur_foil": 0.12
+    "price_eur": 0.03,
+    "price_eur_foil": 0.1
   },
   {
     "id": "b5eb0064-c7c4-4e3e-add2-b86269de3fb9",
@@ -34223,7 +34223,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/5/b5eb0064-c7c4-4e3e-add2-b86269de3fb9.jpg?1783906613",
     "back_image": "",
     "price_usd": 0.21,
-    "price_foil": 0.24,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/113/reno-and-rude?utm_source=api",
     "treatments": [
@@ -34231,7 +34231,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.17
+    "price_eur_foil": 0.18
   },
   {
     "id": "945006ea-c6a1-4ee5-abb2-387c2b6d3123",
@@ -34268,8 +34268,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/4/945006ea-c6a1-4ee5-abb2-387c2b6d3123.jpg?1783906613",
     "image_large": "https://cards.scryfall.io/large/front/9/4/945006ea-c6a1-4ee5-abb2-387c2b6d3123.jpg?1783906613",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.24,
+    "price_usd": 0.19,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/114/resentful-revelation?utm_source=api",
     "treatments": [
@@ -34277,7 +34277,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.1,
-    "price_eur_foil": 0.18
+    "price_eur_foil": 0.17
   },
   {
     "id": "85eaf5e7-77dc-4842-a70c-ce4ac7f724df",
@@ -34314,16 +34314,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/5/85eaf5e7-77dc-4842-a70c-ce4ac7f724df.jpg?1783906617",
     "image_large": "https://cards.scryfall.io/large/front/8/5/85eaf5e7-77dc-4842-a70c-ce4ac7f724df.jpg?1783906617",
     "back_image": "https://cards.scryfall.io/normal/back/8/5/85eaf5e7-77dc-4842-a70c-ce4ac7f724df.jpg?1783906617",
-    "price_usd": 31.86,
-    "price_foil": 36.43,
+    "price_usd": 28.75,
+    "price_foil": 36.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/115/sephiroth-fabled-soldier-sephiroth-one-winged-angel?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 27.58,
-    "price_eur_foil": 37.71
+    "price_eur": 27.8,
+    "price_eur_foil": 35.07
   },
   {
     "id": "cf7df82f-937a-443f-813f-2bcc6944c5c0",
@@ -34360,16 +34360,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/f/cf7df82f-937a-443f-813f-2bcc6944c5c0.jpg?1783906612",
     "image_large": "https://cards.scryfall.io/large/front/c/f/cf7df82f-937a-443f-813f-2bcc6944c5c0.jpg?1783906612",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.22,
+    "price_usd": 0.15,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/116/sephiroths-intervention?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.04
+    "price_eur": 0.07,
+    "price_eur_foil": 0.11
   },
   {
     "id": "f02ce338-4fe2-44b0-a896-3ed7e6c874a3",
@@ -34406,16 +34406,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/0/f02ce338-4fe2-44b0-a896-3ed7e6c874a3.jpg?1783906612",
     "image_large": "https://cards.scryfall.io/large/front/f/0/f02ce338-4fe2-44b0-a896-3ed7e6c874a3.jpg?1783906612",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.22,
+    "price_usd": 0.09,
+    "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/117/shambling-cieth?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.2
+    "price_eur": 0.05,
+    "price_eur_foil": 0.17
   },
   {
     "id": "7367b257-1a8c-4593-a307-7116e36e0342",
@@ -34453,7 +34453,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/3/7367b257-1a8c-4593-a307-7116e36e0342.jpg?1783906612",
     "back_image": "",
     "price_usd": 0.1,
-    "price_foil": 0.27,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/118/shinra-reinforcements?utm_source=api",
     "treatments": [
@@ -34461,7 +34461,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.06,
-    "price_eur_foil": 0.07
+    "price_eur_foil": 0.09
   },
   {
     "id": "c3eb2ae5-10de-4c3d-91c8-8734befc80b2",
@@ -34498,16 +34498,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/3/c3eb2ae5-10de-4c3d-91c8-8734befc80b2.jpg?1783906616",
     "image_large": "https://cards.scryfall.io/large/front/c/3/c3eb2ae5-10de-4c3d-91c8-8734befc80b2.jpg?1783906616",
     "back_image": "https://cards.scryfall.io/normal/back/c/3/c3eb2ae5-10de-4c3d-91c8-8734befc80b2.jpg?1783906616",
-    "price_usd": 0.2,
-    "price_foil": 0.31,
+    "price_usd": 0.19,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/119/sidequest:-hunt-the-mark-yiazmat-ultimate-mark?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.15
+    "price_eur": 0.09,
+    "price_eur_foil": 0.13
   },
   {
     "id": "aa4f6703-21f8-4c29-ad5a-5afb54188ade",
@@ -34544,7 +34544,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/a/aa4f6703-21f8-4c29-ad5a-5afb54188ade.jpg?1783906610",
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa4f6703-21f8-4c29-ad5a-5afb54188ade.jpg?1783906610",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.25,
     "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/120/summon:-anima?utm_source=api",
@@ -34552,8 +34552,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.19
+    "price_eur": 0.09,
+    "price_eur_foil": 0.25
   },
   {
     "id": "8b1b5f06-e34d-44a3-976e-5157c4b7a0f4",
@@ -34590,16 +34590,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/b/8b1b5f06-e34d-44a3-976e-5157c4b7a0f4.jpg?1783906611",
     "image_large": "https://cards.scryfall.io/large/front/8/b/8b1b5f06-e34d-44a3-976e-5157c4b7a0f4.jpg?1783906611",
     "back_image": "",
-    "price_usd": 2.17,
-    "price_foil": 2.19,
+    "price_usd": 1.78,
+    "price_foil": 2.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/121/summon:-primal-odin?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.16,
-    "price_eur_foil": 1.98
+    "price_eur": 1.14,
+    "price_eur_foil": 2.1
   },
   {
     "id": "1a9b8723-4383-4c14-b24d-52863af8703d",
@@ -34636,16 +34636,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/a/1a9b8723-4383-4c14-b24d-52863af8703d.jpg?1783906610",
     "image_large": "https://cards.scryfall.io/large/front/1/a/1a9b8723-4383-4c14-b24d-52863af8703d.jpg?1783906610",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.27,
+    "price_usd": 0.25,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/122/tonberry?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.24
+    "price_eur": 0.12,
+    "price_eur_foil": 0.25
   },
   {
     "id": "274788f4-fbf3-4a15-bdc0-f513a2fde30d",
@@ -34682,7 +34682,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/7/274788f4-fbf3-4a15-bdc0-f513a2fde30d.jpg?1783906610",
     "image_large": "https://cards.scryfall.io/large/front/2/7/274788f4-fbf3-4a15-bdc0-f513a2fde30d.jpg?1783906610",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.16,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/123/undercity-dire-rat?utm_source=api",
@@ -34690,8 +34690,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.11
+    "price_eur": 0.04,
+    "price_eur_foil": 0.13
   },
   {
     "id": "6de6d23b-7d42-41c1-be1c-010fe43ee586",
@@ -34729,15 +34729,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/d/6de6d23b-7d42-41c1-be1c-010fe43ee586.jpg?1783906610",
     "back_image": "",
     "price_usd": 0.09,
-    "price_foil": 0.22,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/124/vaynes-treachery?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.2
+    "price_eur": 0.05,
+    "price_eur_foil": 0.19
   },
   {
     "id": "028ef608-acfe-4e9d-90db-eca4411ba78a",
@@ -34774,16 +34774,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/2/028ef608-acfe-4e9d-90db-eca4411ba78a.jpg?1783906613",
     "image_large": "https://cards.scryfall.io/large/front/0/2/028ef608-acfe-4e9d-90db-eca4411ba78a.jpg?1783906613",
     "back_image": "https://cards.scryfall.io/normal/back/0/2/028ef608-acfe-4e9d-90db-eca4411ba78a.jpg?1783906613",
-    "price_usd": 1.7,
-    "price_foil": 1.67,
+    "price_usd": 1.96,
+    "price_foil": 2.01,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/125/vincent-valentine-galian-beast?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.78,
-    "price_eur_foil": 1.42
+    "price_eur": 1.06,
+    "price_eur_foil": 1.19
   },
   {
     "id": "0502c426-5271-4989-8598-5bc159afe79c",
@@ -34820,16 +34820,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/5/0502c426-5271-4989-8598-5bc159afe79c.jpg?1783906608",
     "image_large": "https://cards.scryfall.io/large/front/0/5/0502c426-5271-4989-8598-5bc159afe79c.jpg?1783906608",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.27,
+    "price_usd": 0.18,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/126/vincents-limit-break?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.11
+    "price_eur": 0.06,
+    "price_eur_foil": 0.08
   },
   {
     "id": "b65ffce4-bb58-418a-9bad-81533a5f2ba2",
@@ -34866,7 +34866,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/6/b65ffce4-bb58-418a-9bad-81533a5f2ba2.jpg?1783906617",
     "image_large": "https://cards.scryfall.io/large/front/b/6/b65ffce4-bb58-418a-9bad-81533a5f2ba2.jpg?1783906617",
     "back_image": "https://cards.scryfall.io/normal/back/b/6/b65ffce4-bb58-418a-9bad-81533a5f2ba2.jpg?1783906617",
-    "price_usd": 0.39,
+    "price_usd": 0.35,
     "price_foil": 0.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/127/zenos-yae-galvus-shinryu-transcendent-rival?utm_source=api",
@@ -34874,8 +34874,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.35,
-    "price_eur_foil": 0.55
+    "price_eur": 0.3,
+    "price_eur_foil": 0.67
   },
   {
     "id": "9ba292d5-5139-42ea-950d-0a638445277f",
@@ -34912,7 +34912,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/b/9ba292d5-5139-42ea-950d-0a638445277f.jpg?1783906608",
     "image_large": "https://cards.scryfall.io/large/front/9/b/9ba292d5-5139-42ea-950d-0a638445277f.jpg?1783906608",
     "back_image": "",
-    "price_usd": 0.62,
+    "price_usd": 0.69,
     "price_foil": 0.91,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/128/zodiark-umbral-god?utm_source=api",
@@ -34920,8 +34920,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.4,
-    "price_eur_foil": 0.73
+    "price_eur": 0.43,
+    "price_eur_foil": 0.76
   },
   {
     "id": "1a504dff-5857-4a61-ab99-616d5df7cf5a",
@@ -34958,16 +34958,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/a/1a504dff-5857-4a61-ab99-616d5df7cf5a.jpg?1783906607",
     "image_large": "https://cards.scryfall.io/large/front/1/a/1a504dff-5857-4a61-ab99-616d5df7cf5a.jpg?1783906607",
     "back_image": "",
-    "price_usd": 0.14,
-    "price_foil": 0.23,
+    "price_usd": 0.16,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/129/barret-wallace?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.13
+    "price_eur": 0.07,
+    "price_eur_foil": 0.1
   },
   {
     "id": "70f47277-ca47-428a-808f-0fb32e820a71",
@@ -35004,8 +35004,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/0/70f47277-ca47-428a-808f-0fb32e820a71.jpg?1783906606",
     "image_large": "https://cards.scryfall.io/large/front/7/0/70f47277-ca47-428a-808f-0fb32e820a71.jpg?1783906606",
     "back_image": "",
-    "price_usd": 0.14,
-    "price_foil": 0.19,
+    "price_usd": 0.15,
+    "price_foil": 0.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/130/blazing-bomb?utm_source=api",
     "treatments": [
@@ -35013,7 +35013,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.05,
-    "price_eur_foil": 0.12
+    "price_eur_foil": 0.11
   },
   {
     "id": "b2e1986c-2852-4843-bdc4-eddb727ba3d4",
@@ -35050,8 +35050,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/2/b2e1986c-2852-4843-bdc4-eddb727ba3d4.jpg?1783906607",
     "image_large": "https://cards.scryfall.io/large/front/b/2/b2e1986c-2852-4843-bdc4-eddb727ba3d4.jpg?1783906607",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.23,
+    "price_usd": 0.12,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/131/call-the-mountain-chocobo?utm_source=api",
     "treatments": [
@@ -35059,7 +35059,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.04,
-    "price_eur_foil": 0.09
+    "price_eur_foil": 0.1
   },
   {
     "id": "8d8d3903-a7f4-4cd8-8d29-b4a173e4fbb2",
@@ -35105,7 +35105,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.1,
-    "price_eur_foil": 0.29
+    "price_eur_foil": 0.24
   },
   {
     "id": "9a069e96-2786-493d-aca8-f70611435dbe",
@@ -35142,16 +35142,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/a/9a069e96-2786-493d-aca8-f70611435dbe.jpg?1783906611",
     "image_large": "https://cards.scryfall.io/large/front/9/a/9a069e96-2786-493d-aca8-f70611435dbe.jpg?1783906611",
     "back_image": "https://cards.scryfall.io/normal/back/9/a/9a069e96-2786-493d-aca8-f70611435dbe.jpg?1783906611",
-    "price_usd": 3.2,
-    "price_foil": 5.41,
+    "price_usd": 3.12,
+    "price_foil": 5.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/133/clive-ifrits-dominant-ifrit-warden-of-inferno?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.59,
-    "price_eur_foil": 4.67
+    "price_eur": 3.74,
+    "price_eur_foil": 4.91
   },
   {
     "id": "13e81e32-7246-46b9-872e-cde77cedd197",
@@ -35188,15 +35188,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/3/13e81e32-7246-46b9-872e-cde77cedd197.jpg?1783906606",
     "image_large": "https://cards.scryfall.io/large/front/1/3/13e81e32-7246-46b9-872e-cde77cedd197.jpg?1783906606",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.25,
+    "price_usd": 0.21,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/134/coral-sword?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
+    "price_eur": 0.08,
     "price_eur_foil": 0.14
   },
   {
@@ -35234,16 +35234,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/a/ea430b17-2014-4b8e-b53f-43bcfc06f7cd.jpg?1783906605",
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea430b17-2014-4b8e-b53f-43bcfc06f7cd.jpg?1783906605",
     "back_image": "",
-    "price_usd": 6.77,
-    "price_foil": 7.28,
+    "price_usd": 6.8,
+    "price_foil": 7.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/135/the-fire-crystal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 4.17,
-    "price_eur_foil": 5.19
+    "price_eur": 4.12,
+    "price_eur_foil": 4.62
   },
   {
     "id": "415ff6a5-61ef-4b37-ae08-e44476300d4a",
@@ -35280,16 +35280,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/1/415ff6a5-61ef-4b37-ae08-e44476300d4a.jpg?1783906604",
     "image_large": "https://cards.scryfall.io/large/front/4/1/415ff6a5-61ef-4b37-ae08-e44476300d4a.jpg?1783906604",
     "back_image": "",
-    "price_usd": 0.7,
-    "price_foil": 1.1,
+    "price_usd": 0.68,
+    "price_foil": 0.92,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/136/fire-magic?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.73,
-    "price_eur_foil": 2.3
+    "price_eur": 0.65,
+    "price_eur_foil": 1.95
   },
   {
     "id": "98366937-d15b-4a66-b9f6-878d50b63871",
@@ -35326,16 +35326,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/8/98366937-d15b-4a66-b9f6-878d50b63871.jpg?1783906604",
     "image_large": "https://cards.scryfall.io/large/front/9/8/98366937-d15b-4a66-b9f6-878d50b63871.jpg?1783906604",
     "back_image": "",
-    "price_usd": 1.06,
-    "price_foil": 1.13,
+    "price_usd": 0.75,
+    "price_foil": 1.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/137/firion-wild-rose-warrior?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.41,
-    "price_eur_foil": 0.68
+    "price_eur": 0.44,
+    "price_eur_foil": 0.71
   },
   {
     "id": "9921f646-e893-44db-ac89-0633c1009788",
@@ -35372,16 +35372,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/9921f646-e893-44db-ac89-0633c1009788.jpg?1783906604",
     "image_large": "https://cards.scryfall.io/large/front/9/9/9921f646-e893-44db-ac89-0633c1009788.jpg?1783906604",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.34,
+    "price_usd": 0.26,
+    "price_foil": 0.42,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/138/freya-crescent?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.53
+    "price_eur": 0.18,
+    "price_eur_foil": 0.44
   },
   {
     "id": "1eb81329-fb7a-4347-b96c-9960a5c48e87",
@@ -35418,16 +35418,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/e/1eb81329-fb7a-4347-b96c-9960a5c48e87.jpg?1783906605",
     "image_large": "https://cards.scryfall.io/large/front/1/e/1eb81329-fb7a-4347-b96c-9960a5c48e87.jpg?1783906605",
     "back_image": "",
-    "price_usd": 0.77,
-    "price_foil": 1.39,
+    "price_usd": 0.94,
+    "price_foil": 1.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/139/gilgamesh-master-at-arms?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.38,
-    "price_eur_foil": 0.75
+    "price_eur": 0.33,
+    "price_eur_foil": 0.67
   },
   {
     "id": "3af9d100-70ee-4c6c-a762-11a0c4f3ef6f",
@@ -35464,7 +35464,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/a/3af9d100-70ee-4c6c-a762-11a0c4f3ef6f.jpg?1783906605",
     "image_large": "https://cards.scryfall.io/large/front/3/a/3af9d100-70ee-4c6c-a762-11a0c4f3ef6f.jpg?1783906605",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.23,
     "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/140/haste-magic?utm_source=api",
@@ -35473,7 +35473,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.09,
-    "price_eur_foil": 0.18
+    "price_eur_foil": 0.25
   },
   {
     "id": "2a8b3e1e-5c10-4360-ac1c-83b2e026278c",
@@ -35510,15 +35510,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/a/2a8b3e1e-5c10-4360-ac1c-83b2e026278c.jpg?1783906603",
     "image_large": "https://cards.scryfall.io/large/front/2/a/2a8b3e1e-5c10-4360-ac1c-83b2e026278c.jpg?1783906603",
     "back_image": "",
-    "price_usd": 0.12,
-    "price_foil": 0.19,
+    "price_usd": 0.08,
+    "price_foil": 0.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/141/hill-gigas?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
+    "price_eur": 0.04,
     "price_eur_foil": 0.07
   },
   {
@@ -35556,8 +35556,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/d/bd2db3f5-fd0d-4817-af90-6bea1f07e16b.jpg?1783906603",
     "image_large": "https://cards.scryfall.io/large/front/b/d/bd2db3f5-fd0d-4817-af90-6bea1f07e16b.jpg?1783906603",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.12,
+    "price_usd": 0.1,
+    "price_foil": 0.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/142/item-shopkeep?utm_source=api",
     "treatments": [
@@ -35565,7 +35565,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.06,
-    "price_eur_foil": 0.15
+    "price_eur_foil": 0.18
   },
   {
     "id": "cd5b9daf-6325-4eb4-a069-4a8cc7807884",
@@ -35602,7 +35602,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/d/cd5b9daf-6325-4eb4-a069-4a8cc7807884.jpg?1783906603",
     "image_large": "https://cards.scryfall.io/large/front/c/d/cd5b9daf-6325-4eb4-a069-4a8cc7807884.jpg?1783906603",
     "back_image": "",
-    "price_usd": 0.21,
+    "price_usd": 0.2,
     "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/143/laughing-mad?utm_source=api",
@@ -35610,8 +35610,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.12
+    "price_eur": 0.1,
+    "price_eur_foil": 0.09
   },
   {
     "id": "98bb716d-ca66-445f-9cb3-0fc656c8ebff",
@@ -35648,16 +35648,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/8/98bb716d-ca66-445f-9cb3-0fc656c8ebff.jpg?1783906602",
     "image_large": "https://cards.scryfall.io/large/front/9/8/98bb716d-ca66-445f-9cb3-0fc656c8ebff.jpg?1783906602",
     "back_image": "",
-    "price_usd": 0.11,
-    "price_foil": 0.24,
+    "price_usd": 0.1,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/144/light-of-judgment?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.08
+    "price_eur": 0.06,
+    "price_eur_foil": 0.06
   },
   {
     "id": "6bc39af4-be19-4889-b930-df7ebf7b9481",
@@ -35694,8 +35694,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/b/6bc39af4-be19-4889-b930-df7ebf7b9481.jpg?1783906602",
     "image_large": "https://cards.scryfall.io/large/front/6/b/6bc39af4-be19-4889-b930-df7ebf7b9481.jpg?1783906602",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.29,
+    "price_usd": 0.23,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/145/mysidian-elder?utm_source=api",
     "treatments": [
@@ -35703,7 +35703,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.12,
-    "price_eur_foil": 0.28
+    "price_eur_foil": 0.3
   },
   {
     "id": "3d3e926a-74af-4996-849f-d31e0fdedeae",
@@ -35740,16 +35740,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/d/3d3e926a-74af-4996-849f-d31e0fdedeae.jpg?1783906601",
     "image_large": "https://cards.scryfall.io/large/front/3/d/3d3e926a-74af-4996-849f-d31e0fdedeae.jpg?1783906601",
     "back_image": "",
-    "price_usd": 4.63,
-    "price_foil": 5.01,
+    "price_usd": 4.28,
+    "price_foil": 5.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/146/nibelheim-aflame?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 4.02,
-    "price_eur_foil": 7.47
+    "price_eur": 3.49,
+    "price_eur_foil": 6.74
   },
   {
     "id": "0343916d-1b65-4e95-aef1-e72dbcebf0c4",
@@ -35786,16 +35786,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/3/0343916d-1b65-4e95-aef1-e72dbcebf0c4.jpg?1783906601",
     "image_large": "https://cards.scryfall.io/large/front/0/3/0343916d-1b65-4e95-aef1-e72dbcebf0c4.jpg?1783906601",
     "back_image": "",
-    "price_usd": 0.33,
-    "price_foil": 0.36,
+    "price_usd": 0.31,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/147/opera-love-song?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.45
+    "price_eur": 0.22,
+    "price_eur_foil": 0.51
   },
   {
     "id": "4c617bcd-05f8-40c2-bb38-489bc863ce6b",
@@ -35832,7 +35832,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/c/4c617bcd-05f8-40c2-bb38-489bc863ce6b.jpg?1783906601",
     "image_large": "https://cards.scryfall.io/large/front/4/c/4c617bcd-05f8-40c2-bb38-489bc863ce6b.jpg?1783906601",
     "back_image": "",
-    "price_usd": 0.17,
+    "price_usd": 0.14,
     "price_foil": 0.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/148/prompto-argentum?utm_source=api",
@@ -35841,7 +35841,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.07,
-    "price_eur_foil": 0.14
+    "price_eur_foil": 0.16
   },
   {
     "id": "c38c98bb-74c9-460f-9997-ea5c5f922347",
@@ -35878,7 +35878,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/3/c38c98bb-74c9-460f-9997-ea5c5f922347.jpg?1783906600",
     "image_large": "https://cards.scryfall.io/large/front/c/3/c38c98bb-74c9-460f-9997-ea5c5f922347.jpg?1783906600",
     "back_image": "",
-    "price_usd": 0.23,
+    "price_usd": 0.28,
     "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/149/queen-brahne?utm_source=api",
@@ -35886,8 +35886,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
-    "price_eur_foil": 0.26
+    "price_eur": 0.19,
+    "price_eur_foil": 0.18
   },
   {
     "id": "3618e283-2df9-4eb9-97b0-96b55ee31cc0",
@@ -35924,8 +35924,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/6/3618e283-2df9-4eb9-97b0-96b55ee31cc0.jpg?1783906600",
     "image_large": "https://cards.scryfall.io/large/front/3/6/3618e283-2df9-4eb9-97b0-96b55ee31cc0.jpg?1783906600",
     "back_image": "",
-    "price_usd": 0.16,
-    "price_foil": 0.28,
+    "price_usd": 0.12,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/150/random-encounter?utm_source=api",
     "treatments": [
@@ -35933,7 +35933,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.05,
-    "price_eur_foil": 0.08
+    "price_eur_foil": 0.13
   },
   {
     "id": "7035d11b-525f-4120-8dcb-610095196681",
@@ -35970,16 +35970,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/0/7035d11b-525f-4120-8dcb-610095196681.jpg?1783906599",
     "image_large": "https://cards.scryfall.io/large/front/7/0/7035d11b-525f-4120-8dcb-610095196681.jpg?1783906599",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.57,
+    "price_usd": 0.39,
+    "price_foil": 0.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/151/raubahn-bull-of-ala-mhigo?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.27,
-    "price_eur_foil": 0.67
+    "price_eur": 0.39,
+    "price_eur_foil": 0.59
   },
   {
     "id": "e0579955-75f9-47a9-8b03-e287d120826a",
@@ -36016,16 +36016,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e0579955-75f9-47a9-8b03-e287d120826a.jpg?1783906600",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e0579955-75f9-47a9-8b03-e287d120826a.jpg?1783906600",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.3,
+    "price_usd": 0.14,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/152/red-mages-rapier?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.19
+    "price_eur": 0.09,
+    "price_eur_foil": 0.17
   },
   {
     "id": "12df1295-8b08-4c8e-bac9-55b4f514c0be",
@@ -36062,16 +36062,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/2/12df1295-8b08-4c8e-bac9-55b4f514c0be.jpg?1783906599",
     "image_large": "https://cards.scryfall.io/large/front/1/2/12df1295-8b08-4c8e-bac9-55b4f514c0be.jpg?1783906599",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.36,
+    "price_usd": 0.28,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/153/sabotender?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.15,
-    "price_eur_foil": 0.22
+    "price_eur": 0.12,
+    "price_eur_foil": 0.19
   },
   {
     "id": "11f1d378-c78c-402a-ac46-2d32598c23e7",
@@ -36108,16 +36108,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/1/11f1d378-c78c-402a-ac46-2d32598c23e7.jpg?1783906598",
     "image_large": "https://cards.scryfall.io/large/front/1/1/11f1d378-c78c-402a-ac46-2d32598c23e7.jpg?1783906598",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.31,
+    "price_usd": 0.24,
+    "price_foil": 0.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/154/samurais-katana?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.18
+    "price_eur": 0.13,
+    "price_eur_foil": 0.14
   },
   {
     "id": "a6e021da-2397-4ad3-a07b-65c701df531a",
@@ -36154,7 +36154,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/6/a6e021da-2397-4ad3-a07b-65c701df531a.jpg?1783906599",
     "image_large": "https://cards.scryfall.io/large/front/a/6/a6e021da-2397-4ad3-a07b-65c701df531a.jpg?1783906599",
     "back_image": "",
-    "price_usd": 0.13,
+    "price_usd": 0.14,
     "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/155/sandworm?utm_source=api",
@@ -36162,8 +36162,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.2
+    "price_eur": 0.02,
+    "price_eur_foil": 0.14
   },
   {
     "id": "9c776984-99ea-4181-ac95-78c41ba9d54f",
@@ -36200,16 +36200,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/c/9c776984-99ea-4181-ac95-78c41ba9d54f.jpg?1783906597",
     "image_large": "https://cards.scryfall.io/large/front/9/c/9c776984-99ea-4181-ac95-78c41ba9d54f.jpg?1783906597",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.46,
+    "price_usd": 0.3,
+    "price_foil": 0.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/156/seifer-almasy?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.57
+    "price_eur": 0.23,
+    "price_eur_foil": 0.69
   },
   {
     "id": "7661003c-bf83-46bb-bcc0-8fbf5819ffa8",
@@ -36246,8 +36246,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/6/7661003c-bf83-46bb-bcc0-8fbf5819ffa8.jpg?1783906597",
     "image_large": "https://cards.scryfall.io/large/front/7/6/7661003c-bf83-46bb-bcc0-8fbf5819ffa8.jpg?1783906597",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.32,
+    "price_usd": 0.24,
+    "price_foil": 0.42,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/157/self-destruct?utm_source=api",
     "treatments": [
@@ -36255,7 +36255,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.15,
-    "price_eur_foil": 0.45
+    "price_eur_foil": 0.35
   },
   {
     "id": "31e2ad37-73cf-4858-8a3a-fc1165cd21a7",
@@ -36292,15 +36292,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/1/31e2ad37-73cf-4858-8a3a-fc1165cd21a7.jpg?1783906601",
     "image_large": "https://cards.scryfall.io/large/front/3/1/31e2ad37-73cf-4858-8a3a-fc1165cd21a7.jpg?1783906601",
     "back_image": "https://cards.scryfall.io/normal/back/3/1/31e2ad37-73cf-4858-8a3a-fc1165cd21a7.jpg?1783906601",
-    "price_usd": 0.24,
-    "price_foil": 0.29,
+    "price_usd": 0.21,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/158/sidequest:-play-blitzball-world-champion-celestial-weapon?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
+    "price_eur": 0.07,
     "price_eur_foil": 0.16
   },
   {
@@ -36338,16 +36338,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/e/7efd7627-0754-4685-9d04-8f5f82f45632.jpg?1783906596",
     "image_large": "https://cards.scryfall.io/large/front/7/e/7efd7627-0754-4685-9d04-8f5f82f45632.jpg?1783906596",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.31,
+    "price_usd": 0.21,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/159/sorceresss-schemes?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.27
+    "price_eur": 0.15,
+    "price_eur_foil": 0.28
   },
   {
     "id": "8ab5429a-1075-49aa-9608-0610080fbf7a",
@@ -36384,16 +36384,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/a/8ab5429a-1075-49aa-9608-0610080fbf7a.jpg?1784182953",
     "image_large": "https://cards.scryfall.io/large/front/8/a/8ab5429a-1075-49aa-9608-0610080fbf7a.jpg?1784182953",
     "back_image": "",
-    "price_usd": 0.27,
-    "price_foil": 0.45,
+    "price_usd": 0.31,
+    "price_foil": 0.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/160/summon:-brynhildr?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.34,
-    "price_eur_foil": 0.69
+    "price_eur": 0.37,
+    "price_eur_foil": 0.8
   },
   {
     "id": "840659ee-1493-4190-a514-c2c9ae14e331",
@@ -36430,16 +36430,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/4/840659ee-1493-4190-a514-c2c9ae14e331.jpg?1783906596",
     "image_large": "https://cards.scryfall.io/large/front/8/4/840659ee-1493-4190-a514-c2c9ae14e331.jpg?1783906596",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.3,
+    "price_usd": 0.24,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/161/summon:-esper-ramuh?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.12
+    "price_eur": 0.11,
+    "price_eur_foil": 0.13
   },
   {
     "id": "d0e5cbd4-401b-4456-80bf-d90beadfd1f8",
@@ -36476,7 +36476,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/0/d0e5cbd4-401b-4456-80bf-d90beadfd1f8.jpg?1784182970",
     "image_large": "https://cards.scryfall.io/large/front/d/0/d0e5cbd4-401b-4456-80bf-d90beadfd1f8.jpg?1784182970",
     "back_image": "",
-    "price_usd": 0.3,
+    "price_usd": 0.32,
     "price_foil": 0.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/162/summon:-gf-cerberus?utm_source=api",
@@ -36484,8 +36484,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.26,
-    "price_eur_foil": 0.74
+    "price_eur": 0.28,
+    "price_eur_foil": 0.69
   },
   {
     "id": "c6c73092-5195-4bdc-b039-a699f6e297b2",
@@ -36522,7 +36522,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/6/c6c73092-5195-4bdc-b039-a699f6e297b2.jpg?1784182974",
     "image_large": "https://cards.scryfall.io/large/front/c/6/c6c73092-5195-4bdc-b039-a699f6e297b2.jpg?1784182974",
     "back_image": "",
-    "price_usd": 0.17,
+    "price_usd": 0.19,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/163/summon:-gf-ifrit?utm_source=api",
@@ -36531,7 +36531,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.05,
-    "price_eur_foil": 0.18
+    "price_eur_foil": 0.19
   },
   {
     "id": "f61693a2-7042-44e0-85ba-9bf12ab94e7e",
@@ -36568,16 +36568,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f61693a2-7042-44e0-85ba-9bf12ab94e7e.jpg?1783906595",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f61693a2-7042-44e0-85ba-9bf12ab94e7e.jpg?1783906595",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.28,
+    "price_usd": 0.25,
+    "price_foil": 0.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/164/suplex?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.34
+    "price_eur": 0.2,
+    "price_eur_foil": 0.32
   },
   {
     "id": "9f2b202c-91da-40ec-8324-6b6be7cb3bc8",
@@ -36614,7 +36614,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f2b202c-91da-40ec-8324-6b6be7cb3bc8.jpg?1783906595",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f2b202c-91da-40ec-8324-6b6be7cb3bc8.jpg?1783906595",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.18,
     "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/165/thunder-magic?utm_source=api",
@@ -36622,7 +36622,7 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
+    "price_eur": 0.11,
     "price_eur_foil": 0.11
   },
   {
@@ -36660,7 +36660,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/9/d9a1de36-7f47-4b28-bb56-38d7e5bed82f.jpg?1783906594",
     "image_large": "https://cards.scryfall.io/large/front/d/9/d9a1de36-7f47-4b28-bb56-38d7e5bed82f.jpg?1783906594",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.37,
     "price_foil": 0.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/166/triple-triad?utm_source=api",
@@ -36668,8 +36668,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.26,
-    "price_eur_foil": 0.67
+    "price_eur": 0.32,
+    "price_eur_foil": 0.56
   },
   {
     "id": "0265fd20-a85d-49ce-b338-4c40843a5b18",
@@ -36706,16 +36706,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/2/0265fd20-a85d-49ce-b338-4c40843a5b18.jpg?1783906594",
     "image_large": "https://cards.scryfall.io/large/front/0/2/0265fd20-a85d-49ce-b338-4c40843a5b18.jpg?1783906594",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.28,
+    "price_usd": 0.2,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/167/unexpected-request?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.09
+    "price_eur": 0.08,
+    "price_eur_foil": 0.08
   },
   {
     "id": "50e1ec29-9de3-4f1b-b818-057e030d475b",
@@ -36752,16 +36752,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/0/50e1ec29-9de3-4f1b-b818-057e030d475b.jpg?1783906593",
     "image_large": "https://cards.scryfall.io/large/front/5/0/50e1ec29-9de3-4f1b-b818-057e030d475b.jpg?1783906593",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.41,
+    "price_usd": 0.36,
+    "price_foil": 0.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/168/vaan-street-thief?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.22,
-    "price_eur_foil": 0.65
+    "price_eur": 0.3,
+    "price_eur_foil": 0.53
   },
   {
     "id": "cb98a7dd-542e-4448-b3bb-ff5d67a36535",
@@ -36798,16 +36798,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/b/cb98a7dd-542e-4448-b3bb-ff5d67a36535.jpg?1783906593",
     "image_large": "https://cards.scryfall.io/large/front/c/b/cb98a7dd-542e-4448-b3bb-ff5d67a36535.jpg?1783906593",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.16,
+    "price_usd": 0.16,
+    "price_foil": 0.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/169/warriors-sword?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.27
+    "price_eur": 0.06,
+    "price_eur_foil": 0.28
   },
   {
     "id": "135d6b27-9168-4513-9d7d-56edae048857",
@@ -36844,15 +36844,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/3/135d6b27-9168-4513-9d7d-56edae048857.jpg?1783906593",
     "image_large": "https://cards.scryfall.io/large/front/1/3/135d6b27-9168-4513-9d7d-56edae048857.jpg?1783906593",
     "back_image": "",
-    "price_usd": 0.29,
-    "price_foil": 0.59,
+    "price_usd": 0.38,
+    "price_foil": 0.66,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/170/zell-dincht?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
+    "price_eur": 0.24,
     "price_eur_foil": 0.89
   },
   {
@@ -36890,16 +36890,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/c/ec91c4e4-711f-464d-bc83-e6813f4fdcdb.jpg?1783906592",
     "image_large": "https://cards.scryfall.io/large/front/e/c/ec91c4e4-711f-464d-bc83-e6813f4fdcdb.jpg?1783906592",
     "back_image": "",
-    "price_usd": 0.15,
-    "price_foil": 0.26,
+    "price_usd": 0.14,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/171/airship-crash?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.1
+    "price_eur": 0.04,
+    "price_eur_foil": 0.11
   },
   {
     "id": "4c139f30-5ecd-48fd-ae7c-ec2cc98889ff",
@@ -36936,16 +36936,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/c/4c139f30-5ecd-48fd-ae7c-ec2cc98889ff.jpg?1783906591",
     "image_large": "https://cards.scryfall.io/large/front/4/c/4c139f30-5ecd-48fd-ae7c-ec2cc98889ff.jpg?1783906591",
     "back_image": "",
-    "price_usd": 3.28,
-    "price_foil": 5.08,
+    "price_usd": 3.68,
+    "price_foil": 5.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/172/ancient-adamantoise?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.9,
-    "price_eur_foil": 5.09
+    "price_eur": 3.26,
+    "price_eur_foil": 5.05
   },
   {
     "id": "e5857b1b-73bc-458e-b26b-7ed8bef785f3",
@@ -36982,7 +36982,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e5857b1b-73bc-458e-b26b-7ed8bef785f3.jpg?1783906591",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e5857b1b-73bc-458e-b26b-7ed8bef785f3.jpg?1783906591",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.18,
     "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/173/balamb-t-rexaur?utm_source=api",
@@ -36990,8 +36990,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.12
+    "price_eur": 0.05,
+    "price_eur_foil": 0.11
   },
   {
     "id": "2ac03e90-1e16-453f-88e4-a0448db73403",
@@ -37028,16 +37028,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/a/2ac03e90-1e16-453f-88e4-a0448db73403.jpg?1783906591",
     "image_large": "https://cards.scryfall.io/large/front/2/a/2ac03e90-1e16-453f-88e4-a0448db73403.jpg?1783906591",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.18,
+    "price_usd": 0.12,
+    "price_foil": 0.17,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/174/bards-bow?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.11
+    "price_eur": 0.02,
+    "price_eur_foil": 0.08
   },
   {
     "id": "d818d574-2832-4a7a-a13b-aa6e695fdaa5",
@@ -37074,16 +37074,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/8/d818d574-2832-4a7a-a13b-aa6e695fdaa5.jpg?1783906591",
     "image_large": "https://cards.scryfall.io/large/front/d/8/d818d574-2832-4a7a-a13b-aa6e695fdaa5.jpg?1783906591",
     "back_image": "",
-    "price_usd": 0.47,
-    "price_foil": 0.6,
+    "price_usd": 0.34,
+    "price_foil": 0.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/175/bartz-and-boko?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.25,
-    "price_eur_foil": 0.63
+    "price_eur": 0.23,
+    "price_eur_foil": 0.73
   },
   {
     "id": "ec8ab637-3d7d-4712-9f83-8920f808f715",
@@ -37120,16 +37120,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/c/ec8ab637-3d7d-4712-9f83-8920f808f715.jpg?1783906590",
     "image_large": "https://cards.scryfall.io/large/front/e/c/ec8ab637-3d7d-4712-9f83-8920f808f715.jpg?1783906590",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.21,
+    "price_usd": 0.15,
+    "price_foil": 0.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/176/blitzball-shot?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.02,
-    "price_eur_foil": 0.14
+    "price_eur": 0.04,
+    "price_eur_foil": 0.16
   },
   {
     "id": "d5273db4-6214-41e4-825a-612fca8bbe03",
@@ -37166,16 +37166,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/5/d5273db4-6214-41e4-825a-612fca8bbe03.jpg?1783906590",
     "image_large": "https://cards.scryfall.io/large/front/d/5/d5273db4-6214-41e4-825a-612fca8bbe03.jpg?1783906590",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.33,
+    "price_usd": 0.2,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/177/cactuar?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.15
+    "price_eur": 0.13,
+    "price_eur_foil": 0.18
   },
   {
     "id": "ff8c8be0-8223-499c-8704-cb68e0a42ce2",
@@ -37213,15 +37213,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/f/ff8c8be0-8223-499c-8704-cb68e0a42ce2.jpg?1783906590",
     "back_image": "",
     "price_usd": 0.17,
-    "price_foil": 0.25,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/178/chocobo-kick?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.19
+    "price_eur": 0.1,
+    "price_eur_foil": 0.15
   },
   {
     "id": "1565813b-6912-42f4-bae0-22136a2d6a92",
@@ -37258,16 +37258,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/5/1565813b-6912-42f4-bae0-22136a2d6a92.jpg?1783906590",
     "image_large": "https://cards.scryfall.io/large/front/1/5/1565813b-6912-42f4-bae0-22136a2d6a92.jpg?1783906590",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.38,
+    "price_usd": 0.32,
+    "price_foil": 0.37,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/179/chocobo-racetrack?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.15,
-    "price_eur_foil": 0.3
+    "price_eur": 0.17,
+    "price_eur_foil": 0.27
   },
   {
     "id": "75c18134-f517-4a68-8640-0426b3cd4f6c",
@@ -37304,8 +37304,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/75c18134-f517-4a68-8640-0426b3cd4f6c.jpg?1783906590",
     "image_large": "https://cards.scryfall.io/large/front/7/5/75c18134-f517-4a68-8640-0426b3cd4f6c.jpg?1783906590",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.26,
+    "price_usd": 0.25,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/180/clash-of-the-eikons?utm_source=api",
     "treatments": [
@@ -37313,7 +37313,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.28
+    "price_eur_foil": 0.3
   },
   {
     "id": "900206f1-7dd6-4db9-a430-73e560fd196b",
@@ -37350,16 +37350,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/0/900206f1-7dd6-4db9-a430-73e560fd196b.jpg?1783906589",
     "image_large": "https://cards.scryfall.io/large/front/9/0/900206f1-7dd6-4db9-a430-73e560fd196b.jpg?1783906589",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.21,
+    "price_usd": 0.16,
+    "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/181/coliseum-behemoth?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.22
+    "price_eur": 0.08,
+    "price_eur_foil": 0.21
   },
   {
     "id": "784287c2-43c5-4210-93ae-cdd33b9acb1b",
@@ -37396,15 +37396,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/8/784287c2-43c5-4210-93ae-cdd33b9acb1b.jpg?1783906588",
     "image_large": "https://cards.scryfall.io/large/front/7/8/784287c2-43c5-4210-93ae-cdd33b9acb1b.jpg?1783906588",
     "back_image": "",
-    "price_usd": 0.2,
-    "price_foil": 0.25,
+    "price_usd": 0.14,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/182/commune-with-beavers?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
+    "price_eur": 0.07,
     "price_eur_foil": 0.13
   },
   {
@@ -37443,15 +37443,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/c/6ce7f494-2a19-4b11-94d4-fc5e5a7068bd.jpg?1783906588",
     "back_image": "",
     "price_usd": 0.28,
-    "price_foil": 0.32,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/183/diamond-weapon?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
-    "price_eur_foil": 0.32
+    "price_eur": 0.13,
+    "price_eur_foil": 0.33
   },
   {
     "id": "d585e218-3dc8-4fbd-8ad2-795fbc9b2155",
@@ -37488,16 +37488,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/5/d585e218-3dc8-4fbd-8ad2-795fbc9b2155.jpg?1783906588",
     "image_large": "https://cards.scryfall.io/large/front/d/5/d585e218-3dc8-4fbd-8ad2-795fbc9b2155.jpg?1783906588",
     "back_image": "",
-    "price_usd": 12.15,
-    "price_foil": 14.26,
+    "price_usd": 13.95,
+    "price_foil": 14.6,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/184/the-earth-crystal?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 7.48,
-    "price_eur_foil": 7.38
+    "price_eur": 7.9,
+    "price_eur_foil": 8.97
   },
   {
     "id": "0f503360-216a-4629-89b2-d32072850aef",
@@ -37534,16 +37534,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/f/0f503360-216a-4629-89b2-d32072850aef.jpg?1783906592",
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f503360-216a-4629-89b2-d32072850aef.jpg?1783906592",
     "back_image": "https://cards.scryfall.io/normal/back/0/f/0f503360-216a-4629-89b2-d32072850aef.jpg?1783906592",
-    "price_usd": 1.63,
-    "price_foil": 1.99,
+    "price_usd": 2.26,
+    "price_foil": 2.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/185/esper-origins-summon:-esper-maduin?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.31,
-    "price_eur_foil": 1.74
+    "price_eur": 1.42,
+    "price_eur_foil": 1.56
   },
   {
     "id": "0ce05634-6c01-4941-a135-904cb4e33ac4",
@@ -37581,15 +37581,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/c/0ce05634-6c01-4941-a135-904cb4e33ac4.jpg?1783906586",
     "back_image": "",
     "price_usd": 0.16,
-    "price_foil": 0.27,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/186/galufs-final-act?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.02,
-    "price_eur_foil": 0.16
+    "price_eur": 0.09,
+    "price_eur_foil": 0.15
   },
   {
     "id": "bc10d648-4053-460f-bc52-9c20477bf6de",
@@ -37626,16 +37626,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/c/bc10d648-4053-460f-bc52-9c20477bf6de.jpg?1783906587",
     "image_large": "https://cards.scryfall.io/large/front/b/c/bc10d648-4053-460f-bc52-9c20477bf6de.jpg?1783906587",
     "back_image": "",
-    "price_usd": 0.14,
-    "price_foil": 0.25,
+    "price_usd": 0.19,
+    "price_foil": 0.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/187/gigantoad?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.02,
-    "price_eur_foil": 0.09
+    "price_eur": 0.03,
+    "price_eur_foil": 0.11
   },
   {
     "id": "b7c3544a-5dd5-423e-8a40-ac4803db8adc",
@@ -37672,16 +37672,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/7/b7c3544a-5dd5-423e-8a40-ac4803db8adc.jpg?1783906586",
     "image_large": "https://cards.scryfall.io/large/front/b/7/b7c3544a-5dd5-423e-8a40-ac4803db8adc.jpg?1783906586",
     "back_image": "",
-    "price_usd": 0.14,
-    "price_foil": 0.23,
+    "price_usd": 0.15,
+    "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/188/goobbue-gardener?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.02,
-    "price_eur_foil": 0.07
+    "price_eur": 0.04,
+    "price_eur_foil": 0.12
   },
   {
     "id": "4dced21f-478c-4500-9484-af5864dea5cc",
@@ -37718,16 +37718,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/d/4dced21f-478c-4500-9484-af5864dea5cc.jpg?1783906586",
     "image_large": "https://cards.scryfall.io/large/front/4/d/4dced21f-478c-4500-9484-af5864dea5cc.jpg?1783906586",
     "back_image": "",
-    "price_usd": 0.16,
-    "price_foil": 0.28,
+    "price_usd": 0.11,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/189/gran-pulse-ochu?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.13
+    "price_eur": 0.05,
+    "price_eur_foil": 0.08
   },
   {
     "id": "020dee17-d85b-44c4-9faa-b1ef977956f4",
@@ -37764,16 +37764,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/2/020dee17-d85b-44c4-9faa-b1ef977956f4.jpg?1783906585",
     "image_large": "https://cards.scryfall.io/large/front/0/2/020dee17-d85b-44c4-9faa-b1ef977956f4.jpg?1783906585",
     "back_image": "",
-    "price_usd": 0.2,
-    "price_foil": 0.26,
+    "price_usd": 0.16,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/190/gysahl-greens?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.12
+    "price_eur": 0.08,
+    "price_eur_foil": 0.16
   },
   {
     "id": "db01c222-8795-47e9-a789-e7f749a3ee7d",
@@ -37811,15 +37811,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/b/db01c222-8795-47e9-a789-e7f749a3ee7d.jpg?1783906585",
     "back_image": "",
     "price_usd": 3.66,
-    "price_foil": 5.47,
+    "price_foil": 4.85,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/191/jumbo-cactuar?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.2,
-    "price_eur_foil": 3.44
+    "price_eur": 2.41,
+    "price_eur_foil": 3.29
   },
   {
     "id": "a182bc66-bfda-4bf5-bd12-3de5dba60945",
@@ -37856,7 +37856,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/1/a182bc66-bfda-4bf5-bd12-3de5dba60945.jpg?1783906585",
     "image_large": "https://cards.scryfall.io/large/front/a/1/a182bc66-bfda-4bf5-bd12-3de5dba60945.jpg?1783906585",
     "back_image": "",
-    "price_usd": 0.14,
+    "price_usd": 0.15,
     "price_foil": 0.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/192/loporrit-scout?utm_source=api",
@@ -37865,7 +37865,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.03,
-    "price_eur_foil": 0.08
+    "price_eur_foil": 0.07
   },
   {
     "id": "d6e1dee0-e2cd-4899-a3ea-7d0df717c9ab",
@@ -37902,7 +37902,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/6/d6e1dee0-e2cd-4899-a3ea-7d0df717c9ab.jpg?1783906584",
     "image_large": "https://cards.scryfall.io/large/front/d/6/d6e1dee0-e2cd-4899-a3ea-7d0df717c9ab.jpg?1783906584",
     "back_image": "",
-    "price_usd": 0.14,
+    "price_usd": 0.23,
     "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/193/prishes-wanderings?utm_source=api",
@@ -37910,7 +37910,7 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
+    "price_eur": 0.04,
     "price_eur_foil": 0.15
   },
   {
@@ -37948,16 +37948,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/f/4f352b5e-9731-4a8e-b872-db5d3bf32211.jpg?1783906584",
     "image_large": "https://cards.scryfall.io/large/front/4/f/4f352b5e-9731-4a8e-b872-db5d3bf32211.jpg?1783906584",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.36,
+    "price_usd": 0.27,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/194/quina-qu-gourmet?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.14
+    "price_eur": 0.11,
+    "price_eur_foil": 0.12
   },
   {
     "id": "c25960e0-5779-4e20-89f3-03950ad9d91c",
@@ -37994,7 +37994,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/2/c25960e0-5779-4e20-89f3-03950ad9d91c.jpg?1783906583",
     "image_large": "https://cards.scryfall.io/large/front/c/2/c25960e0-5779-4e20-89f3-03950ad9d91c.jpg?1783906583",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.3,
     "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/195/reach-the-horizon?utm_source=api",
@@ -38002,7 +38002,7 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.15,
+    "price_eur": 0.11,
     "price_eur_foil": 0.24
   },
   {
@@ -38040,7 +38040,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d1af74e4-38d5-44b5-85e1-4d13f6970453.jpg?1783906582",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d1af74e4-38d5-44b5-85e1-4d13f6970453.jpg?1783906582",
     "back_image": "",
-    "price_usd": 0.36,
+    "price_usd": 0.35,
     "price_foil": 0.56,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/196/a-realm-reborn?utm_source=api",
@@ -38048,8 +38048,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.78
+    "price_eur": 0.27,
+    "price_eur_foil": 0.86
   },
   {
     "id": "19ad36d6-8bf4-490c-9980-b98a470af892",
@@ -38086,16 +38086,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/9/19ad36d6-8bf4-490c-9980-b98a470af892.jpg?1783906584",
     "image_large": "https://cards.scryfall.io/large/front/1/9/19ad36d6-8bf4-490c-9980-b98a470af892.jpg?1783906584",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.65,
+    "price_usd": 0.36,
+    "price_foil": 0.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/197/ride-the-shoopuf?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.18,
-    "price_eur_foil": 0.29
+    "price_eur": 0.15,
+    "price_eur_foil": 0.39
   },
   {
     "id": "40a06165-2835-4610-86a1-7f684992fcf2",
@@ -38132,16 +38132,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/0/40a06165-2835-4610-86a1-7f684992fcf2.jpg?1783906582",
     "image_large": "https://cards.scryfall.io/large/front/4/0/40a06165-2835-4610-86a1-7f684992fcf2.jpg?1783906582",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.28,
+    "price_usd": 0.17,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/198/rydias-return?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.16
+    "price_eur": 0.04,
+    "price_eur_foil": 0.15
   },
   {
     "id": "1e2a3566-1390-457e-8077-d776a8671319",
@@ -38178,16 +38178,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/e/1e2a3566-1390-457e-8077-d776a8671319.jpg?1783906583",
     "image_large": "https://cards.scryfall.io/large/front/1/e/1e2a3566-1390-457e-8077-d776a8671319.jpg?1783906583",
     "back_image": "",
-    "price_usd": 0.65,
-    "price_foil": 1.0,
+    "price_usd": 0.59,
+    "price_foil": 0.96,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/199/sazh-katzroy?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.25,
-    "price_eur_foil": 0.79
+    "price_eur": 0.3,
+    "price_eur_foil": 0.81
   },
   {
     "id": "dda6b4d0-1b60-46b0-b321-b9ffe15afff4",
@@ -38224,16 +38224,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/d/dda6b4d0-1b60-46b0-b321-b9ffe15afff4.jpg?1783906582",
     "image_large": "https://cards.scryfall.io/large/front/d/d/dda6b4d0-1b60-46b0-b321-b9ffe15afff4.jpg?1783906582",
     "back_image": "",
-    "price_usd": 1.24,
-    "price_foil": 1.32,
+    "price_usd": 1.78,
+    "price_foil": 1.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/200/sazhs-chocobo?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.74,
-    "price_eur_foil": 0.95
+    "price_eur": 0.72,
+    "price_eur_foil": 1.18
   },
   {
     "id": "0cbf911c-a721-4b84-8645-d83a0966be18",
@@ -38270,16 +38270,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0cbf911c-a721-4b84-8645-d83a0966be18.jpg?1783906586",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0cbf911c-a721-4b84-8645-d83a0966be18.jpg?1783906586",
     "back_image": "https://cards.scryfall.io/normal/back/0/c/0cbf911c-a721-4b84-8645-d83a0966be18.jpg?1783906586",
-    "price_usd": 0.3,
-    "price_foil": 0.34,
+    "price_usd": 0.32,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/201/sidequest:-raise-a-chocobo-black-chocobo?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.34
+    "price_eur": 0.11,
+    "price_eur_foil": 0.29
   },
   {
     "id": "32eb192b-de6b-4814-8077-628d343d014e",
@@ -38316,16 +38316,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/2/32eb192b-de6b-4814-8077-628d343d014e.jpg?1784182967",
     "image_large": "https://cards.scryfall.io/large/front/3/2/32eb192b-de6b-4814-8077-628d343d014e.jpg?1784182967",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.23,
+    "price_usd": 0.2,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/202/summon:-fat-chocobo?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.18
+    "price_eur": 0.07,
+    "price_eur_foil": 0.09
   },
   {
     "id": "93feb9d5-d004-4598-a448-b3488c869c05",
@@ -38362,16 +38362,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/3/93feb9d5-d004-4598-a448-b3488c869c05.jpg?1783906581",
     "image_large": "https://cards.scryfall.io/large/front/9/3/93feb9d5-d004-4598-a448-b3488c869c05.jpg?1783906581",
     "back_image": "",
-    "price_usd": 0.53,
-    "price_foil": 0.52,
+    "price_usd": 0.63,
+    "price_foil": 0.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/203/summon:-fenrir?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.25,
-    "price_eur_foil": 0.41
+    "price_eur": 0.26,
+    "price_eur_foil": 0.61
   },
   {
     "id": "5ce6ea96-7293-496d-b9c8-8ed6d6109a4d",
@@ -38408,16 +38408,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/c/5ce6ea96-7293-496d-b9c8-8ed6d6109a4d.jpg?1783906580",
     "image_large": "https://cards.scryfall.io/large/front/5/c/5ce6ea96-7293-496d-b9c8-8ed6d6109a4d.jpg?1783906580",
     "back_image": "",
-    "price_usd": 1.84,
-    "price_foil": 2.53,
+    "price_usd": 2.17,
+    "price_foil": 2.56,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/204/summon:-titan?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.48,
-    "price_eur_foil": 2.5
+    "price_eur": 1.5,
+    "price_eur_foil": 2.49
   },
   {
     "id": "d9fda3fc-569d-49f8-a2ed-e0b1d6668426",
@@ -38454,8 +38454,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/9/d9fda3fc-569d-49f8-a2ed-e0b1d6668426.jpg?1783906580",
     "image_large": "https://cards.scryfall.io/large/front/d/9/d9fda3fc-569d-49f8-a2ed-e0b1d6668426.jpg?1783906580",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.78,
+    "price_usd": 0.38,
+    "price_foil": 0.72,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/205/summoners-grimoire?utm_source=api",
     "treatments": [
@@ -38463,7 +38463,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.27,
-    "price_eur_foil": 0.75
+    "price_eur_foil": 0.87
   },
   {
     "id": "fb781323-2746-405d-a9b2-e778c037a6e9",
@@ -38501,15 +38501,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/b/fb781323-2746-405d-a9b2-e778c037a6e9.jpg?1783906580",
     "back_image": "",
     "price_usd": 2.57,
-    "price_foil": 3.85,
+    "price_foil": 3.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/206/tifa-lockhart?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.92,
-    "price_eur_foil": 3.45
+    "price_eur": 2.05,
+    "price_eur_foil": 3.48
   },
   {
     "id": "24d6eab7-22bd-494f-8cbe-204446f24be9",
@@ -38546,16 +38546,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/24d6eab7-22bd-494f-8cbe-204446f24be9.jpg?1783906579",
     "image_large": "https://cards.scryfall.io/large/front/2/4/24d6eab7-22bd-494f-8cbe-204446f24be9.jpg?1783906579",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.75,
+    "price_usd": 0.31,
+    "price_foil": 0.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/207/tifas-limit-break?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
-    "price_eur_foil": 0.29
+    "price_eur": 0.21,
+    "price_eur_foil": 0.45
   },
   {
     "id": "0f5725aa-42bb-4dfd-9c15-135b38b33da3",
@@ -38592,16 +38592,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/f/0f5725aa-42bb-4dfd-9c15-135b38b33da3.jpg?1783906578",
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f5725aa-42bb-4dfd-9c15-135b38b33da3.jpg?1783906578",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.3,
+    "price_usd": 0.25,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/208/torgal-a-fine-hound?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
-    "price_eur_foil": 0.4
+    "price_eur": 0.19,
+    "price_eur_foil": 0.39
   },
   {
     "id": "49cd4efa-4df4-4257-9a42-60330f7781e2",
@@ -38638,16 +38638,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/9/49cd4efa-4df4-4257-9a42-60330f7781e2.jpg?1783906577",
     "image_large": "https://cards.scryfall.io/large/front/4/9/49cd4efa-4df4-4257-9a42-60330f7781e2.jpg?1783906577",
     "back_image": "",
-    "price_usd": 0.26,
-    "price_foil": 0.22,
+    "price_usd": 0.21,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/209/town-greeter?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.25
+    "price_eur": 0.11,
+    "price_eur_foil": 0.23
   },
   {
     "id": "2462df62-fc35-47ed-9571-40452074dc6d",
@@ -38684,16 +38684,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/4/2462df62-fc35-47ed-9571-40452074dc6d.jpg?1783906576",
     "image_large": "https://cards.scryfall.io/large/front/2/4/2462df62-fc35-47ed-9571-40452074dc6d.jpg?1783906576",
     "back_image": "",
-    "price_usd": 17.6,
-    "price_foil": 19.49,
+    "price_usd": 19.67,
+    "price_foil": 19.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/210/traveling-chocobo?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 18.66,
-    "price_eur_foil": 23.46
+    "price_eur": 18.36,
+    "price_eur_foil": 23.82
   },
   {
     "id": "91226c1a-63a0-494e-bcf0-77c2d6f49213",
@@ -38730,16 +38730,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/1/91226c1a-63a0-494e-bcf0-77c2d6f49213.jpg?1783906577",
     "image_large": "https://cards.scryfall.io/large/front/9/1/91226c1a-63a0-494e-bcf0-77c2d6f49213.jpg?1783906577",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.27,
+    "price_usd": 0.2,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/211/vanille-cheerful-lcie?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.17
+    "price_eur": 0.08,
+    "price_eur_foil": 0.18
   },
   {
     "id": "aa192912-c9ee-403f-8a46-a338c9edb4b9",
@@ -38776,16 +38776,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/a/aa192912-c9ee-403f-8a46-a338c9edb4b9.jpg?1783906576",
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa192912-c9ee-403f-8a46-a338c9edb4b9.jpg?1783906576",
     "back_image": "",
-    "price_usd": 2.79,
-    "price_foil": 4.02,
+    "price_usd": 2.83,
+    "price_foil": 3.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/212/absolute-virtue?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.28,
-    "price_eur_foil": 3.84
+    "price_eur": 2.17,
+    "price_eur_foil": 4.22
   },
   {
     "id": "afcaed7d-7ea3-4f2a-a7f5-ee3315226369",
@@ -38822,16 +38822,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/f/afcaed7d-7ea3-4f2a-a7f5-ee3315226369.jpg?1783906576",
     "image_large": "https://cards.scryfall.io/large/front/a/f/afcaed7d-7ea3-4f2a-a7f5-ee3315226369.jpg?1783906576",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.37,
+    "price_usd": 0.29,
+    "price_foil": 0.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/213/balthier-and-fran?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
-    "price_eur_foil": 0.44
+    "price_eur": 0.2,
+    "price_eur_foil": 0.43
   },
   {
     "id": "fe86e41b-b0f6-4aa1-8827-c095c721f304",
@@ -38869,15 +38869,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe86e41b-b0f6-4aa1-8827-c095c721f304.jpg?1783906575",
     "back_image": "",
     "price_usd": 0.32,
-    "price_foil": 0.39,
+    "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/214/black-waltz-no-3?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.45
+    "price_eur": 0.2,
+    "price_eur_foil": 0.28
   },
   {
     "id": "409c305a-52dc-4538-8e72-efcd568eaf49",
@@ -38914,16 +38914,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/0/409c305a-52dc-4538-8e72-efcd568eaf49.jpg?1783906575",
     "image_large": "https://cards.scryfall.io/large/front/4/0/409c305a-52dc-4538-8e72-efcd568eaf49.jpg?1783906575",
     "back_image": "",
-    "price_usd": 0.39,
-    "price_foil": 0.67,
+    "price_usd": 0.43,
+    "price_foil": 0.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/215/choco-seeker-of-paradise?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.32,
-    "price_eur_foil": 1.04
+    "price_eur": 0.34,
+    "price_eur_foil": 0.97
   },
   {
     "id": "7fb99393-d2b6-40a6-8de7-317efdc4c50b",
@@ -38960,16 +38960,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/f/7fb99393-d2b6-40a6-8de7-317efdc4c50b.jpg?1783906575",
     "image_large": "https://cards.scryfall.io/large/front/7/f/7fb99393-d2b6-40a6-8de7-317efdc4c50b.jpg?1783906575",
     "back_image": "",
-    "price_usd": 5.3,
-    "price_foil": 16.33,
+    "price_usd": 5.86,
+    "price_foil": 16.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/216/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 11.98,
-    "price_eur_foil": 19.97
+    "price_eur": 9.02,
+    "price_eur_foil": 19.85
   },
   {
     "id": "a292094a-674a-401f-8776-ba5ebe57c946",
@@ -39006,16 +39006,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/2/a292094a-674a-401f-8776-ba5ebe57c946.jpg?1783906575",
     "image_large": "https://cards.scryfall.io/large/front/a/2/a292094a-674a-401f-8776-ba5ebe57c946.jpg?1783906575",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.22,
+    "price_usd": 0.16,
+    "price_foil": 0.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/217/cloud-of-darkness?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.11
+    "price_eur": 0.06,
+    "price_eur_foil": 0.14
   },
   {
     "id": "75cf4eb8-33e7-4dfc-b890-a7e3b5c1b9d5",
@@ -39052,16 +39052,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/75cf4eb8-33e7-4dfc-b890-a7e3b5c1b9d5.jpg?1783906579",
     "image_large": "https://cards.scryfall.io/large/front/7/5/75cf4eb8-33e7-4dfc-b890-a7e3b5c1b9d5.jpg?1783906579",
     "back_image": "https://cards.scryfall.io/normal/back/7/5/75cf4eb8-33e7-4dfc-b890-a7e3b5c1b9d5.jpg?1783906579",
-    "price_usd": 2.68,
-    "price_foil": 3.85,
+    "price_usd": 2.64,
+    "price_foil": 4.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/218/emet-selch-unsundered-hades-sorcerer-of-eld?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.58,
-    "price_eur_foil": 3.39
+    "price_eur": 2.45,
+    "price_eur_foil": 3.7
   },
   {
     "id": "3d75e8fd-6139-4b10-9ce3-195b47d72e0c",
@@ -39098,7 +39098,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/d/3d75e8fd-6139-4b10-9ce3-195b47d72e0c.jpg?1783906579",
     "image_large": "https://cards.scryfall.io/large/front/3/d/3d75e8fd-6139-4b10-9ce3-195b47d72e0c.jpg?1783906579",
     "back_image": "https://cards.scryfall.io/normal/back/3/d/3d75e8fd-6139-4b10-9ce3-195b47d72e0c.jpg?1783906579",
-    "price_usd": 0.36,
+    "price_usd": 0.24,
     "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/219/the-emperor-of-palamecia-the-lord-master-of-hell?utm_source=api",
@@ -39106,8 +39106,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.18,
-    "price_eur_foil": 0.35
+    "price_eur": 0.14,
+    "price_eur_foil": 0.29
   },
   {
     "id": "1b4bab87-4000-461d-8b58-d34928fee305",
@@ -39144,16 +39144,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/b/1b4bab87-4000-461d-8b58-d34928fee305.jpg?1783906576",
     "image_large": "https://cards.scryfall.io/large/front/1/b/1b4bab87-4000-461d-8b58-d34928fee305.jpg?1783906576",
     "back_image": "https://cards.scryfall.io/normal/back/1/b/1b4bab87-4000-461d-8b58-d34928fee305.jpg?1783906576",
-    "price_usd": 0.23,
-    "price_foil": 0.28,
+    "price_usd": 0.19,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/220/exdeath-void-warlock-neo-exdeath-dimensions-end?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.25
+    "price_eur": 0.08,
+    "price_eur_foil": 0.19
   },
   {
     "id": "dd463dbe-5f2c-4d4f-86f8-ad8ff407af62",
@@ -39190,16 +39190,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/d/dd463dbe-5f2c-4d4f-86f8-ad8ff407af62.jpg?1783906577",
     "image_large": "https://cards.scryfall.io/large/front/d/d/dd463dbe-5f2c-4d4f-86f8-ad8ff407af62.jpg?1783906577",
     "back_image": "https://cards.scryfall.io/normal/back/d/d/dd463dbe-5f2c-4d4f-86f8-ad8ff407af62.jpg?1783906577",
-    "price_usd": 0.2,
-    "price_foil": 0.32,
+    "price_usd": 0.26,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/221/garland-knight-of-cornelia-chaos-the-endless?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.19
+    "price_eur": 0.16,
+    "price_eur_foil": 0.1
   },
   {
     "id": "b883df14-8d7b-4f6a-9a6a-2f71f5b6ddda",
@@ -39236,16 +39236,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/8/b883df14-8d7b-4f6a-9a6a-2f71f5b6ddda.jpg?1783906571",
     "image_large": "https://cards.scryfall.io/large/front/b/8/b883df14-8d7b-4f6a-9a6a-2f71f5b6ddda.jpg?1783906571",
     "back_image": "",
-    "price_usd": 0.29,
-    "price_foil": 0.32,
+    "price_usd": 0.28,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/222/garnet-princess-of-alexandria?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.34
+    "price_eur": 0.13,
+    "price_eur_foil": 0.27
   },
   {
     "id": "6a7784de-a10d-4ce6-98a5-aaf3e85773b6",
@@ -39282,7 +39282,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/a/6a7784de-a10d-4ce6-98a5-aaf3e85773b6.jpg?1783906571",
     "image_large": "https://cards.scryfall.io/large/front/6/a/6a7784de-a10d-4ce6-98a5-aaf3e85773b6.jpg?1783906571",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.16,
     "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/223/giott-king-of-the-dwarves?utm_source=api",
@@ -39290,8 +39290,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.29
+    "price_eur": 0.16,
+    "price_eur_foil": 0.33
   },
   {
     "id": "442957fc-045d-4db6-b82a-445f172d23e4",
@@ -39328,16 +39328,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/4/442957fc-045d-4db6-b82a-445f172d23e4.jpg?1783906571",
     "image_large": "https://cards.scryfall.io/large/front/4/4/442957fc-045d-4db6-b82a-445f172d23e4.jpg?1783906571",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.31,
+    "price_usd": 0.21,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/224/gladiolus-amicitia?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.13,
-    "price_eur_foil": 0.25
+    "price_eur": 0.1,
+    "price_eur_foil": 0.24
   },
   {
     "id": "849f5716-7211-4e93-a220-f88d49f937f4",
@@ -39374,16 +39374,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/4/849f5716-7211-4e93-a220-f88d49f937f4.jpg?1783906570",
     "image_large": "https://cards.scryfall.io/large/front/8/4/849f5716-7211-4e93-a220-f88d49f937f4.jpg?1783906570",
     "back_image": "",
-    "price_usd": 0.49,
-    "price_foil": 1.11,
+    "price_usd": 0.39,
+    "price_foil": 1.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/225/golbez-crystal-collector?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.32,
-    "price_eur_foil": 0.65
+    "price_eur": 0.28,
+    "price_eur_foil": 0.82
   },
   {
     "id": "fbdb68cc-5516-481a-94c5-59f6c69b8a17",
@@ -39420,16 +39420,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/b/fbdb68cc-5516-481a-94c5-59f6c69b8a17.jpg?1783906569",
     "image_large": "https://cards.scryfall.io/large/front/f/b/fbdb68cc-5516-481a-94c5-59f6c69b8a17.jpg?1783906569",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.59,
+    "price_usd": 0.33,
+    "price_foil": 0.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/226/hope-estheim?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.31,
-    "price_eur_foil": 0.65
+    "price_eur": 0.29,
+    "price_eur_foil": 0.74
   },
   {
     "id": "ab4f9721-5b2c-4371-98a5-3f6714265e57",
@@ -39466,16 +39466,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/b/ab4f9721-5b2c-4371-98a5-3f6714265e57.jpg?1783906569",
     "image_large": "https://cards.scryfall.io/large/front/a/b/ab4f9721-5b2c-4371-98a5-3f6714265e57.jpg?1783906569",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.2,
+    "price_usd": 0.21,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/227/ignis-scientia?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.2
+    "price_eur": 0.08,
+    "price_eur_foil": 0.17
   },
   {
     "id": "534f98ee-7bc2-44d6-b49f-f57c051807d5",
@@ -39512,16 +39512,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/3/534f98ee-7bc2-44d6-b49f-f57c051807d5.jpg?1783906569",
     "image_large": "https://cards.scryfall.io/large/front/5/3/534f98ee-7bc2-44d6-b49f-f57c051807d5.jpg?1783906569",
     "back_image": "",
-    "price_usd": 1.35,
-    "price_foil": 1.92,
+    "price_usd": 1.47,
+    "price_foil": 2.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/228/jenova-ancient-calamity?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.58,
-    "price_eur_foil": 2.65
+    "price_eur": 1.8,
+    "price_eur_foil": 2.6
   },
   {
     "id": "457fdbb9-5439-460f-8e37-176f8919362c",
@@ -39558,16 +39558,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/5/457fdbb9-5439-460f-8e37-176f8919362c.jpg?1783906574",
     "image_large": "https://cards.scryfall.io/large/front/4/5/457fdbb9-5439-460f-8e37-176f8919362c.jpg?1783906574",
     "back_image": "https://cards.scryfall.io/normal/back/4/5/457fdbb9-5439-460f-8e37-176f8919362c.jpg?1783906574",
-    "price_usd": 1.28,
-    "price_foil": 2.44,
+    "price_usd": 1.79,
+    "price_foil": 2.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/229/joshua-phoenixs-dominant-phoenix-warden-of-fire?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.94,
-    "price_eur_foil": 1.52
+    "price_eur": 0.96,
+    "price_eur_foil": 2.01
   },
   {
     "id": "f9e64cb6-48f7-41d3-99e7-4b0bc3b33fd7",
@@ -39604,8 +39604,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f9e64cb6-48f7-41d3-99e7-4b0bc3b33fd7.jpg?1783906569",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f9e64cb6-48f7-41d3-99e7-4b0bc3b33fd7.jpg?1783906569",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.31,
+    "price_usd": 0.21,
+    "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/230/judge-magister-gabranth?utm_source=api",
     "treatments": [
@@ -39613,7 +39613,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.21
+    "price_eur_foil": 0.23
   },
   {
     "id": "8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8",
@@ -39650,16 +39650,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8.jpg?1783906572",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8.jpg?1783906572",
     "back_image": "https://cards.scryfall.io/normal/back/8/f/8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8.jpg?1783906572",
-    "price_usd": 5.67,
-    "price_foil": 7.52,
+    "price_usd": 5.95,
+    "price_foil": 7.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/231/kefka-court-mage-kefka-ruler-of-ruin?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 5.56,
-    "price_eur_foil": 9.44
+    "price_eur": 5.73,
+    "price_eur_foil": 8.88
   },
   {
     "id": "008782d2-72b0-4554-b1ce-2db99969a4d8",
@@ -39696,16 +39696,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/0/008782d2-72b0-4554-b1ce-2db99969a4d8.jpg?1783906574",
     "image_large": "https://cards.scryfall.io/large/front/0/0/008782d2-72b0-4554-b1ce-2db99969a4d8.jpg?1783906574",
     "back_image": "https://cards.scryfall.io/normal/back/0/0/008782d2-72b0-4554-b1ce-2db99969a4d8.jpg?1783906574",
-    "price_usd": 1.38,
-    "price_foil": 2.45,
+    "price_usd": 1.46,
+    "price_foil": 2.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/232/kuja-genome-sorcerer-trance-kuja-fate-defied?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.08,
-    "price_eur_foil": 2.04
+    "price_eur": 1.19,
+    "price_eur_foil": 1.87
   },
   {
     "id": "1103da9c-300c-406b-997d-9e5bb7cd02d6",
@@ -39742,16 +39742,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/1/1103da9c-300c-406b-997d-9e5bb7cd02d6.jpg?1783906566",
     "image_large": "https://cards.scryfall.io/large/front/1/1/1103da9c-300c-406b-997d-9e5bb7cd02d6.jpg?1783906566",
     "back_image": "",
-    "price_usd": 9.48,
-    "price_foil": 13.12,
+    "price_usd": 10.06,
+    "price_foil": 13.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/233/lightning-army-of-one?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 8.25,
-    "price_eur_foil": 11.0
+    "price_eur": 7.78,
+    "price_eur_foil": 10.69
   },
   {
     "id": "572feb8c-6976-40a8-8a34-b4db836cca56",
@@ -39788,15 +39788,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/7/572feb8c-6976-40a8-8a34-b4db836cca56.jpg?1783906565",
     "image_large": "https://cards.scryfall.io/large/front/5/7/572feb8c-6976-40a8-8a34-b4db836cca56.jpg?1783906565",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.3,
+    "price_usd": 0.21,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/234/locke-cole?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
+    "price_eur": 0.06,
     "price_eur_foil": 0.2
   },
   {
@@ -39834,8 +39834,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/8/1881a66b-956d-4bab-b578-5b2d3407c972.jpg?1783906565",
     "image_large": "https://cards.scryfall.io/large/front/1/8/1881a66b-956d-4bab-b578-5b2d3407c972.jpg?1783906565",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.48,
+    "price_usd": 0.29,
+    "price_foil": 0.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/235/noctis-prince-of-lucis?utm_source=api",
     "treatments": [
@@ -39843,7 +39843,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.25,
-    "price_eur_foil": 0.5
+    "price_eur_foil": 0.55
   },
   {
     "id": "9a8eb7e6-0c0b-42d0-aa90-2d3d29bc15aa",
@@ -39880,8 +39880,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/a/9a8eb7e6-0c0b-42d0-aa90-2d3d29bc15aa.jpg?1783906564",
     "image_large": "https://cards.scryfall.io/large/front/9/a/9a8eb7e6-0c0b-42d0-aa90-2d3d29bc15aa.jpg?1783906564",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.34,
+    "price_usd": 0.17,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/236/omega-heartless-evolution?utm_source=api",
     "treatments": [
@@ -39889,7 +39889,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.1,
-    "price_eur_foil": 0.17
+    "price_eur_foil": 0.16
   },
   {
     "id": "ba79d293-bf42-48b6-a868-5249f4beeb76",
@@ -39926,16 +39926,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/a/ba79d293-bf42-48b6-a868-5249f4beeb76.jpg?1783906565",
     "image_large": "https://cards.scryfall.io/large/front/b/a/ba79d293-bf42-48b6-a868-5249f4beeb76.jpg?1783906565",
     "back_image": "",
-    "price_usd": 0.24,
-    "price_foil": 0.28,
+    "price_usd": 0.2,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/237/rinoa-heartilly?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.3
+    "price_eur": 0.08,
+    "price_eur_foil": 0.28
   },
   {
     "id": "f5fff00b-c9a0-4e90-abc0-349f8716c885",
@@ -39972,16 +39972,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/5/f5fff00b-c9a0-4e90-abc0-349f8716c885.jpg?1783906564",
     "image_large": "https://cards.scryfall.io/large/front/f/5/f5fff00b-c9a0-4e90-abc0-349f8716c885.jpg?1783906564",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.26,
+    "price_usd": 0.2,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/238/rufus-shinra?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.16
+    "price_eur": 0.05,
+    "price_eur_foil": 0.17
   },
   {
     "id": "99450143-6ab5-463d-9e04-e8e6703a8b92",
@@ -40018,15 +40018,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/99450143-6ab5-463d-9e04-e8e6703a8b92.jpg?1783906564",
     "image_large": "https://cards.scryfall.io/large/front/9/9/99450143-6ab5-463d-9e04-e8e6703a8b92.jpg?1783906564",
     "back_image": "",
-    "price_usd": 0.3,
-    "price_foil": 0.32,
+    "price_usd": 0.29,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/239/rydia-summoner-of-mist?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
+    "price_eur": 0.11,
     "price_eur_foil": 0.27
   },
   {
@@ -40065,14 +40065,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/2/62fa74c0-43ae-445c-8039-ca9d00e9709a.jpg?1783906569",
     "back_image": "https://cards.scryfall.io/normal/back/6/2/62fa74c0-43ae-445c-8039-ca9d00e9709a.jpg?1783906569",
     "price_usd": 0.53,
-    "price_foil": 1.14,
+    "price_foil": 1.19,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/240/serah-farron-crystallized-serah?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.32,
+    "price_eur": 0.38,
     "price_eur_foil": 1.1
   },
   {
@@ -40110,7 +40110,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/f/eff984b2-6ea9-4471-91c5-99c47f87f10b.jpg?1783906563",
     "image_large": "https://cards.scryfall.io/large/front/e/f/eff984b2-6ea9-4471-91c5-99c47f87f10b.jpg?1783906563",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.2,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/241/shantotto-tactician-magician?utm_source=api",
@@ -40119,7 +40119,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.1,
-    "price_eur_foil": 0.19
+    "price_eur_foil": 0.16
   },
   {
     "id": "659be746-bd31-4a70-8cec-7798da78b0b5",
@@ -40156,7 +40156,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/5/659be746-bd31-4a70-8cec-7798da78b0b5.jpg?1783906563",
     "image_large": "https://cards.scryfall.io/large/front/6/5/659be746-bd31-4a70-8cec-7798da78b0b5.jpg?1783906563",
     "back_image": "",
-    "price_usd": 0.32,
+    "price_usd": 0.29,
     "price_foil": 0.82,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/242/sin-spiras-punishment?utm_source=api",
@@ -40164,8 +40164,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.84
+    "price_eur": 0.3,
+    "price_eur_foil": 0.95
   },
   {
     "id": "cc4e5234-fb41-48f7-91f4-039710542bc3",
@@ -40202,16 +40202,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/c/cc4e5234-fb41-48f7-91f4-039710542bc3.jpg?1783906563",
     "image_large": "https://cards.scryfall.io/large/front/c/c/cc4e5234-fb41-48f7-91f4-039710542bc3.jpg?1783906563",
     "back_image": "",
-    "price_usd": 1.32,
-    "price_foil": 1.31,
+    "price_usd": 1.01,
+    "price_foil": 1.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/243/squall-seed-mercenary?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.66,
-    "price_eur_foil": 1.17
+    "price_eur": 0.65,
+    "price_eur_foil": 1.15
   },
   {
     "id": "a67793ef-ef80-4434-9c54-e3fd8a270bbe",
@@ -40248,16 +40248,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/6/a67793ef-ef80-4434-9c54-e3fd8a270bbe.jpg?1783906561",
     "image_large": "https://cards.scryfall.io/large/front/a/6/a67793ef-ef80-4434-9c54-e3fd8a270bbe.jpg?1783906561",
     "back_image": "",
-    "price_usd": 0.29,
-    "price_foil": 0.38,
+    "price_usd": 0.25,
+    "price_foil": 0.37,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/244/tellah-great-sage?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.4
+    "price_eur": 0.2,
+    "price_eur_foil": 0.41
   },
   {
     "id": "fbd447aa-588d-4c4d-925e-a7d3bdf6a65c",
@@ -40294,16 +40294,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/b/fbd447aa-588d-4c4d-925e-a7d3bdf6a65c.jpg?1783906567",
     "image_large": "https://cards.scryfall.io/large/front/f/b/fbd447aa-588d-4c4d-925e-a7d3bdf6a65c.jpg?1783906567",
     "back_image": "https://cards.scryfall.io/normal/back/f/b/fbd447aa-588d-4c4d-925e-a7d3bdf6a65c.jpg?1783906567",
-    "price_usd": 2.02,
-    "price_foil": 4.64,
+    "price_usd": 1.98,
+    "price_foil": 4.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/245/terra-magical-adept-esper-terra?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.43,
-    "price_eur_foil": 5.96
+    "price_eur": 2.2,
+    "price_eur_foil": 6.48
   },
   {
     "id": "aa851d68-a7a4-48c0-9cd7-d3d2e079f3a1",
@@ -40341,15 +40341,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa851d68-a7a4-48c0-9cd7-d3d2e079f3a1.jpg?1783906562",
     "back_image": "",
     "price_usd": 0.23,
-    "price_foil": 0.27,
+    "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/246/tidus-blitzball-star?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.25
+    "price_eur": 0.09,
+    "price_eur_foil": 0.2
   },
   {
     "id": "2d6a2b68-5407-464e-a335-7866fd969c30",
@@ -40386,16 +40386,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/d/2d6a2b68-5407-464e-a335-7866fd969c30.jpg?1783906565",
     "image_large": "https://cards.scryfall.io/large/front/2/d/2d6a2b68-5407-464e-a335-7866fd969c30.jpg?1783906565",
     "back_image": "https://cards.scryfall.io/normal/back/2/d/2d6a2b68-5407-464e-a335-7866fd969c30.jpg?1783906565",
-    "price_usd": 0.27,
-    "price_foil": 0.34,
+    "price_usd": 0.25,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/247/ultimecia-time-sorceress-ultimecia-omnipotent?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.28
+    "price_eur": 0.1,
+    "price_eur_foil": 0.3
   },
   {
     "id": "ecc1027a-8c07-44a0-bdde-fa2844cff694",
@@ -40432,16 +40432,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/c/ecc1027a-8c07-44a0-bdde-fa2844cff694.jpg?1783906561",
     "image_large": "https://cards.scryfall.io/large/front/e/c/ecc1027a-8c07-44a0-bdde-fa2844cff694.jpg?1783906561",
     "back_image": "",
-    "price_usd": 35.59,
-    "price_foil": 49.2,
+    "price_usd": 35.67,
+    "price_foil": 48.95,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/248/vivi-ornitier?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 30.27,
-    "price_eur_foil": 43.96
+    "price_eur": 30.33,
+    "price_eur_foil": 43.06
   },
   {
     "id": "77bc419d-ff69-4e7c-afe6-faca383a5ed7",
@@ -40478,16 +40478,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/7/77bc419d-ff69-4e7c-afe6-faca383a5ed7.jpg?1783906560",
     "image_large": "https://cards.scryfall.io/large/front/7/7/77bc419d-ff69-4e7c-afe6-faca383a5ed7.jpg?1783906560",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.58,
+    "price_usd": 0.28,
+    "price_foil": 0.53,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/249/the-wandering-minstrel?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.28,
-    "price_eur_foil": 1.06
+    "price_eur": 0.29,
+    "price_eur_foil": 0.95
   },
   {
     "id": "35b613ad-86f0-431b-af93-147d21041fde",
@@ -40524,16 +40524,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/35b613ad-86f0-431b-af93-147d21041fde.jpg?1783906559",
     "image_large": "https://cards.scryfall.io/large/front/3/5/35b613ad-86f0-431b-af93-147d21041fde.jpg?1783906559",
     "back_image": "",
-    "price_usd": 3.98,
-    "price_foil": 5.45,
+    "price_usd": 3.76,
+    "price_foil": 5.59,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/250/yuna-hope-of-spira?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 6.3,
-    "price_eur_foil": 9.37
+    "price_eur": 6.65,
+    "price_eur_foil": 8.93
   },
   {
     "id": "e42c7d9d-8685-415b-8c5d-6ab2165863b9",
@@ -40570,16 +40570,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/4/e42c7d9d-8685-415b-8c5d-6ab2165863b9.jpg?1783906559",
     "image_large": "https://cards.scryfall.io/large/front/e/4/e42c7d9d-8685-415b-8c5d-6ab2165863b9.jpg?1783906559",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.27,
+    "price_usd": 0.24,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/251/zidane-tantalus-thief?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.22
+    "price_eur": 0.1,
+    "price_eur_foil": 0.14
   },
   {
     "id": "0a1d6dcd-bd41-4f57-a35b-6613811fe4d4",
@@ -40616,16 +40616,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/a/0a1d6dcd-bd41-4f57-a35b-6613811fe4d4.jpg?1783906558",
     "image_large": "https://cards.scryfall.io/large/front/0/a/0a1d6dcd-bd41-4f57-a35b-6613811fe4d4.jpg?1783906558",
     "back_image": "",
-    "price_usd": 0.14,
-    "price_foil": 0.23,
+    "price_usd": 0.18,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/252/adventurers-airship?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.12
+    "price_eur": 0.03,
+    "price_eur_foil": 0.09
   },
   {
     "id": "038710ca-c756-4e66-a9de-278e676c9f5b",
@@ -40662,16 +40662,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/3/038710ca-c756-4e66-a9de-278e676c9f5b.jpg?1783906559",
     "image_large": "https://cards.scryfall.io/large/front/0/3/038710ca-c756-4e66-a9de-278e676c9f5b.jpg?1783906559",
     "back_image": "",
-    "price_usd": 12.72,
-    "price_foil": 14.08,
+    "price_usd": 11.43,
+    "price_foil": 14.11,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/253/aettir-and-priwen?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 6.15,
-    "price_eur_foil": 8.69
+    "price_eur": 6.11,
+    "price_eur_foil": 8.86
   },
   {
     "id": "92f4ad73-42bf-45c0-8bb6-0b44043c81ef",
@@ -40708,16 +40708,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/2/92f4ad73-42bf-45c0-8bb6-0b44043c81ef.jpg?1783906558",
     "image_large": "https://cards.scryfall.io/large/front/9/2/92f4ad73-42bf-45c0-8bb6-0b44043c81ef.jpg?1783906558",
     "back_image": "",
-    "price_usd": 0.23,
-    "price_foil": 0.3,
+    "price_usd": 0.22,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/254/blitzball?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.19
+    "price_eur": 0.09,
+    "price_eur_foil": 0.23
   },
   {
     "id": "374d7383-a1a7-4eea-91f7-290180e14cc9",
@@ -40754,16 +40754,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/7/374d7383-a1a7-4eea-91f7-290180e14cc9.jpg?1783906560",
     "image_large": "https://cards.scryfall.io/large/front/3/7/374d7383-a1a7-4eea-91f7-290180e14cc9.jpg?1783906560",
     "back_image": "",
-    "price_usd": 50.39,
-    "price_foil": 53.4,
+    "price_usd": 51.44,
+    "price_foil": 53.38,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/255/buster-sword?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 30.0,
-    "price_eur_foil": 33.55
+    "price_eur": 29.83,
+    "price_eur_foil": 32.95
   },
   {
     "id": "a4b05d37-df62-475c-8371-735ed2fa1b05",
@@ -40800,16 +40800,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a4b05d37-df62-475c-8371-735ed2fa1b05.jpg?1783906557",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a4b05d37-df62-475c-8371-735ed2fa1b05.jpg?1783906557",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.27,
+    "price_usd": 0.22,
+    "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/256/elixir?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.06,
-    "price_eur_foil": 0.22
+    "price_eur": 0.08,
+    "price_eur_foil": 0.19
   },
   {
     "id": "d42e5fed-67ac-46d7-a5d4-78f661f3e8b4",
@@ -40846,16 +40846,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/4/d42e5fed-67ac-46d7-a5d4-78f661f3e8b4.jpg?1783906559",
     "image_large": "https://cards.scryfall.io/large/front/d/4/d42e5fed-67ac-46d7-a5d4-78f661f3e8b4.jpg?1783906559",
     "back_image": "",
-    "price_usd": 0.6,
-    "price_foil": 1.17,
+    "price_usd": 0.76,
+    "price_foil": 1.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/257/excalibur-ii?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.4,
-    "price_eur_foil": 0.98
+    "price_eur": 0.36,
+    "price_eur_foil": 0.88
   },
   {
     "id": "f724dde1-84b0-4e3b-a9b8-44cd22bb9f79",
@@ -40892,16 +40892,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/7/f724dde1-84b0-4e3b-a9b8-44cd22bb9f79.jpg?1783906558",
     "image_large": "https://cards.scryfall.io/large/front/f/7/f724dde1-84b0-4e3b-a9b8-44cd22bb9f79.jpg?1783906558",
     "back_image": "",
-    "price_usd": 10.45,
-    "price_foil": 14.25,
+    "price_usd": 11.07,
+    "price_foil": 14.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/258/genji-glove?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 5.26,
-    "price_eur_foil": 7.08
+    "price_eur": 5.46,
+    "price_eur_foil": 7.04
   },
   {
     "id": "ef7011f4-fc08-4b15-973d-d15357cbe744",
@@ -40938,16 +40938,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/f/ef7011f4-fc08-4b15-973d-d15357cbe744.jpg?1783906556",
     "image_large": "https://cards.scryfall.io/large/front/e/f/ef7011f4-fc08-4b15-973d-d15357cbe744.jpg?1783906556",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.29,
+    "price_usd": 0.23,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/259/instant-ramen?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.17,
-    "price_eur_foil": 0.25
+    "price_eur": 0.13,
+    "price_eur_foil": 0.17
   },
   {
     "id": "e48cf6d5-4d32-4b66-80be-3495ecd3e906",
@@ -40984,8 +40984,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/4/e48cf6d5-4d32-4b66-80be-3495ecd3e906.jpg?1783906556",
     "image_large": "https://cards.scryfall.io/large/front/e/4/e48cf6d5-4d32-4b66-80be-3495ecd3e906.jpg?1783906556",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.3,
+    "price_usd": 0.16,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/260/iron-giant?utm_source=api",
     "treatments": [
@@ -40993,7 +40993,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.02,
-    "price_eur_foil": 0.14
+    "price_eur_foil": 0.11
   },
   {
     "id": "04d327a3-1699-4556-b681-a957671ad142",
@@ -41030,7 +41030,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/4/04d327a3-1699-4556-b681-a957671ad142.jpg?1783906556",
     "image_large": "https://cards.scryfall.io/large/front/0/4/04d327a3-1699-4556-b681-a957671ad142.jpg?1783906556",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.19,
     "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/261/lion-heart?utm_source=api",
@@ -41038,8 +41038,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.21
+    "price_eur": 0.06,
+    "price_eur_foil": 0.29
   },
   {
     "id": "d6e1e3e7-20d4-42cb-ad22-60356b9e8fdc",
@@ -41076,16 +41076,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/6/d6e1e3e7-20d4-42cb-ad22-60356b9e8fdc.jpg?1783906555",
     "image_large": "https://cards.scryfall.io/large/front/d/6/d6e1e3e7-20d4-42cb-ad22-60356b9e8fdc.jpg?1783906555",
     "back_image": "",
-    "price_usd": 0.15,
-    "price_foil": 0.27,
+    "price_usd": 0.14,
+    "price_foil": 0.25,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/262/lunatic-pandora?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.1
+    "price_eur": 0.05,
+    "price_eur_foil": 0.13
   },
   {
     "id": "57d07ca0-5618-4a90-a605-ca14a193ce3b",
@@ -41122,8 +41122,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/7/57d07ca0-5618-4a90-a605-ca14a193ce3b.jpg?1783906555",
     "image_large": "https://cards.scryfall.io/large/front/5/7/57d07ca0-5618-4a90-a605-ca14a193ce3b.jpg?1783906555",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.18,
+    "price_usd": 0.09,
+    "price_foil": 0.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/263/magic-pot?utm_source=api",
     "treatments": [
@@ -41131,7 +41131,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.03,
-    "price_eur_foil": 0.27
+    "price_eur_foil": 0.25
   },
   {
     "id": "fc408575-8ef7-4043-b6b7-b38cef7c97d1",
@@ -41168,16 +41168,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fc408575-8ef7-4043-b6b7-b38cef7c97d1.jpg?1783906555",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fc408575-8ef7-4043-b6b7-b38cef7c97d1.jpg?1783906555",
     "back_image": "",
-    "price_usd": 1.14,
-    "price_foil": 1.51,
+    "price_usd": 1.07,
+    "price_foil": 1.66,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/264/the-masamune?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.49,
-    "price_eur_foil": 1.35
+    "price_eur": 0.53,
+    "price_eur_foil": 1.23
   },
   {
     "id": "995033f0-873d-4e46-b0c9-98ec8ef270ff",
@@ -41214,8 +41214,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/995033f0-873d-4e46-b0c9-98ec8ef270ff.jpg?1783906554",
     "image_large": "https://cards.scryfall.io/large/front/9/9/995033f0-873d-4e46-b0c9-98ec8ef270ff.jpg?1783906554",
     "back_image": "",
-    "price_usd": 0.13,
-    "price_foil": 0.21,
+    "price_usd": 0.12,
+    "price_foil": 0.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/265/monks-fist?utm_source=api",
     "treatments": [
@@ -41223,7 +41223,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.04,
-    "price_eur_foil": 0.08
+    "price_eur_foil": 0.09
   },
   {
     "id": "989b52f7-d8a5-4488-9a5d-f14a1d48686d",
@@ -41260,7 +41260,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/8/989b52f7-d8a5-4488-9a5d-f14a1d48686d.jpg?1783906554",
     "image_large": "https://cards.scryfall.io/large/front/9/8/989b52f7-d8a5-4488-9a5d-f14a1d48686d.jpg?1783906554",
     "back_image": "",
-    "price_usd": 0.4,
+    "price_usd": 0.56,
     "price_foil": 0.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/266/pupu-ufo?utm_source=api",
@@ -41269,7 +41269,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.26,
-    "price_eur_foil": 0.47
+    "price_eur_foil": 0.63
   },
   {
     "id": "dc420e79-c483-474f-97cd-e9c6a636c306",
@@ -41306,16 +41306,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/c/dc420e79-c483-474f-97cd-e9c6a636c306.jpg?1783906553",
     "image_large": "https://cards.scryfall.io/large/front/d/c/dc420e79-c483-474f-97cd-e9c6a636c306.jpg?1783906553",
     "back_image": "",
-    "price_usd": 1.67,
-    "price_foil": 2.27,
+    "price_usd": 1.42,
+    "price_foil": 2.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/267/the-regalia?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.9,
-    "price_eur_foil": 1.67
+    "price_eur": 0.92,
+    "price_eur_foil": 1.36
   },
   {
     "id": "e09ee4c9-85ef-4d1e-864b-d659b8e8f51d",
@@ -41352,16 +41352,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e09ee4c9-85ef-4d1e-864b-d659b8e8f51d.jpg?1783906553",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e09ee4c9-85ef-4d1e-864b-d659b8e8f51d.jpg?1783906553",
     "back_image": "",
-    "price_usd": 0.19,
-    "price_foil": 0.3,
+    "price_usd": 1.01,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/268/relentless-x-atm092?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.04,
-    "price_eur_foil": 0.15
+    "price_eur": 0.05,
+    "price_eur_foil": 0.17
   },
   {
     "id": "75761f1e-9449-4c58-8265-8abac71dafc1",
@@ -41398,8 +41398,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/75761f1e-9449-4c58-8265-8abac71dafc1.jpg?1783906553",
     "image_large": "https://cards.scryfall.io/large/front/7/5/75761f1e-9449-4c58-8265-8abac71dafc1.jpg?1783906553",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.32,
+    "price_usd": 0.28,
+    "price_foil": 0.38,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/269/ring-of-the-lucii?utm_source=api",
     "treatments": [
@@ -41452,8 +41452,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.07,
-    "price_eur_foil": 0.22
+    "price_eur": 0.11,
+    "price_eur_foil": 0.19
   },
   {
     "id": "f0da2ee1-986e-4cbf-92eb-d96fdb572ca5",
@@ -41490,8 +41490,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg?1783906552",
     "image_large": "https://cards.scryfall.io/large/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg?1783906552",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.3,
+    "price_usd": 0.3,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/271/adventurers-inn?utm_source=api",
     "treatments": [
@@ -41499,7 +41499,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.11,
-    "price_eur_foil": 0.4
+    "price_eur_foil": 0.34
   },
   {
     "id": "001e9f20-5b15-41cb-bf82-46172decc235",
@@ -41536,16 +41536,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1783906558",
     "image_large": "https://cards.scryfall.io/large/front/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1783906558",
     "back_image": "https://cards.scryfall.io/normal/back/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1783906558",
-    "price_usd": 0.31,
-    "price_foil": 0.43,
+    "price_usd": 0.29,
+    "price_foil": 0.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/272/balamb-garden-seed-academy-balamb-garden-airborne?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.64
+    "price_eur": 0.29,
+    "price_eur_foil": 0.53
   },
   {
     "id": "6e4bf840-802d-47d5-bffd-8ba495e19cf6",
@@ -41582,8 +41582,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/e/6e4bf840-802d-47d5-bffd-8ba495e19cf6.jpg?1783906552",
     "image_large": "https://cards.scryfall.io/large/front/6/e/6e4bf840-802d-47d5-bffd-8ba495e19cf6.jpg?1783906552",
     "back_image": "",
-    "price_usd": 0.16,
-    "price_foil": 0.31,
+    "price_usd": 0.14,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/273/baron-airship-kingdom?utm_source=api",
     "treatments": [
@@ -41591,7 +41591,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.08,
-    "price_eur_foil": 0.14
+    "price_eur_foil": 0.12
   },
   {
     "id": "f73ce8ec-c916-48eb-ae20-c0d6d03d7145",
@@ -41628,8 +41628,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/7/f73ce8ec-c916-48eb-ae20-c0d6d03d7145.jpg?1783906551",
     "image_large": "https://cards.scryfall.io/large/front/f/7/f73ce8ec-c916-48eb-ae20-c0d6d03d7145.jpg?1783906551",
     "back_image": "",
-    "price_usd": 0.59,
-    "price_foil": 0.29,
+    "price_usd": 0.29,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/274/capital-city?utm_source=api",
     "treatments": [
@@ -41637,7 +41637,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.17,
-    "price_eur_foil": 0.26
+    "price_eur_foil": 0.3
   },
   {
     "id": "5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c",
@@ -41674,16 +41674,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/e/5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c.jpg?1783906550",
     "image_large": "https://cards.scryfall.io/large/front/5/e/5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c.jpg?1783906550",
     "back_image": "",
-    "price_usd": 0.35,
-    "price_foil": 0.91,
+    "price_usd": 0.34,
+    "price_foil": 0.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/275/clives-hideaway?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.29,
-    "price_eur_foil": 0.84
+    "price_eur": 0.24,
+    "price_eur_foil": 0.85
   },
   {
     "id": "64db46d4-f91f-49cc-971c-b8e19f0c4ea9",
@@ -41720,7 +41720,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/4/64db46d4-f91f-49cc-971c-b8e19f0c4ea9.jpg?1783906550",
     "image_large": "https://cards.scryfall.io/large/front/6/4/64db46d4-f91f-49cc-971c-b8e19f0c4ea9.jpg?1783906550",
     "back_image": "",
-    "price_usd": 0.18,
+    "price_usd": 0.2,
     "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/276/crossroads-village?utm_source=api",
@@ -41728,8 +41728,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.03,
-    "price_eur_foil": 0.14
+    "price_eur": 0.05,
+    "price_eur_foil": 0.13
   },
   {
     "id": "e28eac1e-adc7-4f8d-b206-bef09ba07d38",
@@ -41766,16 +41766,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/2/e28eac1e-adc7-4f8d-b206-bef09ba07d38.jpg?1783906551",
     "image_large": "https://cards.scryfall.io/large/front/e/2/e28eac1e-adc7-4f8d-b206-bef09ba07d38.jpg?1783906551",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.29,
+    "price_usd": 0.22,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/277/eden-seat-of-the-sanctum?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.14
+    "price_eur": 0.09,
+    "price_eur_foil": 0.19
   },
   {
     "id": "99582781-613e-4a33-aec7-7569b4a961aa",
@@ -41813,7 +41813,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/9/99582781-613e-4a33-aec7-7569b4a961aa.jpg?1783906550",
     "back_image": "",
     "price_usd": 0.19,
-    "price_foil": 0.2,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/278/gohn-town-of-ruin?utm_source=api",
     "treatments": [
@@ -41821,7 +41821,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.09,
-    "price_eur_foil": 0.13
+    "price_eur_foil": 0.16
   },
   {
     "id": "5363c881-443d-43df-afd8-f81e1a1741a2",
@@ -41858,15 +41858,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/3/5363c881-443d-43df-afd8-f81e1a1741a2.jpg?1783906549",
     "image_large": "https://cards.scryfall.io/large/front/5/3/5363c881-443d-43df-afd8-f81e1a1741a2.jpg?1783906549",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.33,
+    "price_usd": 0.28,
+    "price_foil": 0.37,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/279/the-gold-saucer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.17,
+    "price_eur": 0.18,
     "price_eur_foil": 0.26
   },
   {
@@ -41904,16 +41904,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/b/7beccfa6-3e4b-4460-954e-870cb39e462d.jpg?1783906549",
     "image_large": "https://cards.scryfall.io/large/front/7/b/7beccfa6-3e4b-4460-954e-870cb39e462d.jpg?1783906549",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.25,
+    "price_usd": 0.22,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/280/gongaga-reactor-town?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.1,
-    "price_eur_foil": 0.16
+    "price_eur": 0.08,
+    "price_eur_foil": 0.14
   },
   {
     "id": "dfcbc131-fd50-4908-b539-c8e52bb70c58",
@@ -41958,8 +41958,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.11,
-    "price_eur_foil": 0.19
+    "price_eur": 0.09,
+    "price_eur_foil": 0.17
   },
   {
     "id": "07fca511-a65c-4779-82c0-9215b0dcd068",
@@ -41996,16 +41996,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/7/07fca511-a65c-4779-82c0-9215b0dcd068.jpg?1783906548",
     "image_large": "https://cards.scryfall.io/large/front/0/7/07fca511-a65c-4779-82c0-9215b0dcd068.jpg?1783906548",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.25,
+    "price_usd": 0.19,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/282/insomnia-crown-city?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.11
+    "price_eur": 0.07,
+    "price_eur_foil": 0.13
   },
   {
     "id": "068bc755-9d3d-430b-abc5-c775a5415bf9",
@@ -42042,16 +42042,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.jpg?1783906548",
     "image_large": "https://cards.scryfall.io/large/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.jpg?1783906548",
     "back_image": "",
-    "price_usd": 2.0,
-    "price_foil": 2.4,
+    "price_usd": 2.36,
+    "price_foil": 2.1,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/283/ishgard-the-holy-see-faith-&-grief?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.06,
-    "price_eur_foil": 1.64
+    "price_eur": 1.05,
+    "price_eur_foil": 1.95
   },
   {
     "id": "98b2d5b5-f85b-4c42-a0f5-a76f6af304ba",
@@ -42088,16 +42088,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/8/98b2d5b5-f85b-4c42-a0f5-a76f6af304ba.jpg?1783906548",
     "image_large": "https://cards.scryfall.io/large/front/9/8/98b2d5b5-f85b-4c42-a0f5-a76f6af304ba.jpg?1783906548",
     "back_image": "",
-    "price_usd": 1.35,
-    "price_foil": 2.4,
+    "price_usd": 1.15,
+    "price_foil": 2.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/284/jidoor-aristocratic-capital-overture?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.75,
-    "price_eur_foil": 1.6
+    "price_eur": 0.82,
+    "price_eur_foil": 1.63
   },
   {
     "id": "548dd152-f0b6-4e8f-9afc-a4ec1671b648",
@@ -42134,16 +42134,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/4/548dd152-f0b6-4e8f-9afc-a4ec1671b648.jpg?1783906548",
     "image_large": "https://cards.scryfall.io/large/front/5/4/548dd152-f0b6-4e8f-9afc-a4ec1671b648.jpg?1783906548",
     "back_image": "",
-    "price_usd": 2.4,
-    "price_foil": 2.94,
+    "price_usd": 2.89,
+    "price_foil": 3.01,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/285/lindblum-industrial-regency-mage-siege?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.89,
-    "price_eur_foil": 1.98
+    "price_eur": 1.98,
+    "price_eur_foil": 2.24
   },
   {
     "id": "8a837256-6bb4-4a60-962d-d2793548d26c",
@@ -42180,16 +42180,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/a/8a837256-6bb4-4a60-962d-d2793548d26c.jpg?1783906547",
     "image_large": "https://cards.scryfall.io/large/front/8/a/8a837256-6bb4-4a60-962d-d2793548d26c.jpg?1783906547",
     "back_image": "",
-    "price_usd": 1.96,
-    "price_foil": 2.44,
+    "price_usd": 2.24,
+    "price_foil": 2.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/286/midgar-city-of-mako-reactor-raid?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 1.87,
-    "price_eur_foil": 2.31
+    "price_eur": 2.0,
+    "price_eur_foil": 2.34
   },
   {
     "id": "c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1",
@@ -42226,16 +42226,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/4/c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1.jpg?1783906547",
     "image_large": "https://cards.scryfall.io/large/front/c/4/c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1.jpg?1783906547",
     "back_image": "",
-    "price_usd": 0.17,
-    "price_foil": 0.25,
+    "price_usd": 0.15,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/287/rabanastre-royal-city?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.05,
-    "price_eur_foil": 0.12
+    "price_eur": 0.07,
+    "price_eur_foil": 0.15
   },
   {
     "id": "7a745b5e-cdb8-4d05-ac5c-87be69536da6",
@@ -42272,16 +42272,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/a/7a745b5e-cdb8-4d05-ac5c-87be69536da6.jpg?1783906545",
     "image_large": "https://cards.scryfall.io/large/front/7/a/7a745b5e-cdb8-4d05-ac5c-87be69536da6.jpg?1783906545",
     "back_image": "",
-    "price_usd": 0.18,
-    "price_foil": 0.28,
+    "price_usd": 0.21,
+    "price_foil": 0.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/288/sharlayan-nation-of-scholars?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.17
+    "price_eur": 0.09,
+    "price_eur_foil": 0.13
   },
   {
     "id": "fc7d1912-7e27-49ef-bd98-375d975a42b0",
@@ -42318,16 +42318,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.jpg?1783906546",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.jpg?1783906546",
     "back_image": "",
-    "price_usd": 10.05,
-    "price_foil": 15.33,
+    "price_usd": 11.12,
+    "price_foil": 15.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/289/starting-town?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 8.7,
-    "price_eur_foil": 19.53
+    "price_eur": 9.46,
+    "price_eur_foil": 18.38
   },
   {
     "id": "f6285535-bc44-4274-a886-b14d7c7aaba8",
@@ -42364,7 +42364,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f6285535-bc44-4274-a886-b14d7c7aaba8.jpg?1783906545",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f6285535-bc44-4274-a886-b14d7c7aaba8.jpg?1783906545",
     "back_image": "",
-    "price_usd": 0.2,
+    "price_usd": 0.21,
     "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/290/treno-dark-city?utm_source=api",
@@ -42372,8 +42372,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.09,
-    "price_eur_foil": 0.15
+    "price_eur": 0.08,
+    "price_eur_foil": 0.11
   },
   {
     "id": "10e5648e-4884-41e3-95f8-c76f6bca01e2",
@@ -42410,7 +42410,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/0/10e5648e-4884-41e3-95f8-c76f6bca01e2.jpg?1783906545",
     "image_large": "https://cards.scryfall.io/large/front/1/0/10e5648e-4884-41e3-95f8-c76f6bca01e2.jpg?1783906545",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.21,
     "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/291/vector-imperial-capital?utm_source=api",
@@ -42418,8 +42418,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.12,
-    "price_eur_foil": 0.11
+    "price_eur": 0.1,
+    "price_eur_foil": 0.13
   },
   {
     "id": "c74024bd-b383-468d-9cf5-d112a29f6457",
@@ -42456,7 +42456,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/7/c74024bd-b383-468d-9cf5-d112a29f6457.jpg?1783906545",
     "image_large": "https://cards.scryfall.io/large/front/c/7/c74024bd-b383-468d-9cf5-d112a29f6457.jpg?1783906545",
     "back_image": "",
-    "price_usd": 0.19,
+    "price_usd": 0.33,
     "price_foil": 0.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/292/windurst-federation-center?utm_source=api",
@@ -42464,8 +42464,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.08,
-    "price_eur_foil": 0.15
+    "price_eur": 0.12,
+    "price_eur_foil": 0.12
   },
   {
     "id": "881e4c00-3b9a-47a1-bf66-1badda994c88",
@@ -42502,16 +42502,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/8/881e4c00-3b9a-47a1-bf66-1badda994c88.jpg?1783906545",
     "image_large": "https://cards.scryfall.io/large/front/8/8/881e4c00-3b9a-47a1-bf66-1badda994c88.jpg?1783906545",
     "back_image": "",
-    "price_usd": 0.51,
-    "price_foil": 0.85,
+    "price_usd": 0.58,
+    "price_foil": 0.77,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/293/zanarkand-ancient-metropolis-lasting-fayth?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 0.39,
-    "price_eur_foil": 0.74
+    "price_eur": 0.42,
+    "price_eur_foil": 0.69
   },
   {
     "id": "9dd2d666-7c6b-48ce-93dc-c004ebdd1fe9",
@@ -42548,8 +42548,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/d/9dd2d666-7c6b-48ce-93dc-c004ebdd1fe9.jpg?1783906546",
     "image_large": "https://cards.scryfall.io/large/front/9/d/9dd2d666-7c6b-48ce-93dc-c004ebdd1fe9.jpg?1783906546",
     "back_image": "",
-    "price_usd": 0.25,
-    "price_foil": 0.3,
+    "price_usd": 0.21,
+    "price_foil": 0.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/294/plains?utm_source=api",
     "treatments": [
@@ -42557,7 +42557,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.14,
-    "price_eur_foil": 0.28
+    "price_eur_foil": 0.24
   },
   {
     "id": "e623b058-76d2-476b-9ee6-82807f7992c3",
@@ -42594,15 +42594,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/6/e623b058-76d2-476b-9ee6-82807f7992c3.jpg?1783906544",
     "image_large": "https://cards.scryfall.io/large/front/e/6/e623b058-76d2-476b-9ee6-82807f7992c3.jpg?1783906544",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.34,
+    "price_usd": 0.24,
+    "price_foil": 0.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/295/plains?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.71,
+    "price_eur": 0.58,
     "price_eur_foil": null
   },
   {
@@ -42641,14 +42641,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/e/ee86ac2f-f398-4422-8721-8ac859fbf5bc.jpg?1783906544",
     "back_image": "",
     "price_usd": 0.21,
-    "price_foil": 0.37,
+    "price_foil": 0.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/296/plains?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.16,
+    "price_eur": 0.13,
     "price_eur_foil": 0.21
   },
   {
@@ -42686,7 +42686,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/9/b92ec9f6-a56d-40c6-aee2-7d5e1524c985.jpg?1783906542",
     "image_large": "https://cards.scryfall.io/large/front/b/9/b92ec9f6-a56d-40c6-aee2-7d5e1524c985.jpg?1783906542",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.21,
     "price_foil": 0.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/297/island?utm_source=api",
@@ -42694,8 +42694,8 @@ const CARDS_DATA = [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.36
+    "price_eur": 0.12,
+    "price_eur_foil": 0.3
   },
   {
     "id": "eeecf096-87dd-4dcb-953f-700445bf3f3a",
@@ -42732,16 +42732,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/e/eeecf096-87dd-4dcb-953f-700445bf3f3a.jpg?1783906542",
     "image_large": "https://cards.scryfall.io/large/front/e/e/eeecf096-87dd-4dcb-953f-700445bf3f3a.jpg?1783906542",
     "back_image": "",
-    "price_usd": 0.28,
-    "price_foil": 0.34,
+    "price_usd": 0.25,
+    "price_foil": 0.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/298/island?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.22,
-    "price_eur_foil": 0.42
+    "price_eur": 0.19,
+    "price_eur_foil": 0.38
   },
   {
     "id": "347e00db-abcf-4053-aa27-4a5b42e1da55",
@@ -42778,8 +42778,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/4/347e00db-abcf-4053-aa27-4a5b42e1da55.jpg?1783906542",
     "image_large": "https://cards.scryfall.io/large/front/3/4/347e00db-abcf-4053-aa27-4a5b42e1da55.jpg?1783906542",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.26,
+    "price_usd": 0.23,
+    "price_foil": 0.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/299/island?utm_source=api",
     "treatments": [
@@ -42787,7 +42787,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.14,
-    "price_eur_foil": 0.34
+    "price_eur_foil": 0.29
   },
   {
     "id": "f66094ef-059b-4511-aa6e-835906736de4",
@@ -42824,16 +42824,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f66094ef-059b-4511-aa6e-835906736de4.jpg?1783906542",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f66094ef-059b-4511-aa6e-835906736de4.jpg?1783906542",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.47,
+    "price_usd": 0.31,
+    "price_foil": 0.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/300/swamp?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.2,
-    "price_eur_foil": 0.44
+    "price_eur": 0.19,
+    "price_eur_foil": 0.37
   },
   {
     "id": "a7f56d20-16dc-4b7f-98bf-124817a83bae",
@@ -42871,15 +42871,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/7/a7f56d20-16dc-4b7f-98bf-124817a83bae.jpg?1783906542",
     "back_image": "",
     "price_usd": 0.28,
-    "price_foil": 0.39,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/301/swamp?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.19,
-    "price_eur_foil": 0.42
+    "price_eur": 0.15,
+    "price_eur_foil": 0.4
   },
   {
     "id": "08ec1e4f-e284-4216-a022-bd94c4dae02b",
@@ -42917,7 +42917,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/8/08ec1e4f-e284-4216-a022-bd94c4dae02b.jpg?1783906542",
     "back_image": "",
     "price_usd": 0.27,
-    "price_foil": 0.35,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/302/swamp?utm_source=api",
     "treatments": [
@@ -42925,7 +42925,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.17,
-    "price_eur_foil": 0.34
+    "price_eur_foil": 0.3
   },
   {
     "id": "a18ef64b-a9de-4548-b4d5-168758442db7",
@@ -42962,7 +42962,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/1/a18ef64b-a9de-4548-b4d5-168758442db7.jpg?1783906541",
     "image_large": "https://cards.scryfall.io/large/front/a/1/a18ef64b-a9de-4548-b4d5-168758442db7.jpg?1783906541",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.26,
     "price_foil": 0.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/303/mountain?utm_source=api",
@@ -42971,7 +42971,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 0.17,
-    "price_eur_foil": 0.32
+    "price_eur_foil": 0.29
   },
   {
     "id": "d061b9a8-e95d-48ec-a1c9-337433b62dfc",
@@ -43008,16 +43008,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/0/d061b9a8-e95d-48ec-a1c9-337433b62dfc.jpg?1783906540",
     "image_large": "https://cards.scryfall.io/large/front/d/0/d061b9a8-e95d-48ec-a1c9-337433b62dfc.jpg?1783906540",
     "back_image": "",
-    "price_usd": 0.21,
-    "price_foil": 0.28,
+    "price_usd": 0.19,
+    "price_foil": 0.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/304/mountain?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.14,
-    "price_eur_foil": 0.25
+    "price_eur": 0.11,
+    "price_eur_foil": 0.28
   },
   {
     "id": "ea1735b9-fd10-4c9c-b9d3-046d8c22b852",
@@ -43055,15 +43055,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea1735b9-fd10-4c9c-b9d3-046d8c22b852.jpg?1783906539",
     "back_image": "",
     "price_usd": 0.31,
-    "price_foil": 0.42,
+    "price_foil": 0.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/305/mountain?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.18,
-    "price_eur_foil": 0.33
+    "price_eur": 0.19,
+    "price_eur_foil": 0.21
   },
   {
     "id": "be72862d-d71e-4b18-98a6-59019399f631",
@@ -43100,16 +43100,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/e/be72862d-d71e-4b18-98a6-59019399f631.jpg?1783906539",
     "image_large": "https://cards.scryfall.io/large/front/b/e/be72862d-d71e-4b18-98a6-59019399f631.jpg?1783906539",
     "back_image": "",
-    "price_usd": 0.36,
-    "price_foil": 0.47,
+    "price_usd": 0.35,
+    "price_foil": 0.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/306/forest?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.28,
-    "price_eur_foil": 0.58
+    "price_eur": 0.29,
+    "price_eur_foil": 0.48
   },
   {
     "id": "3d08f6a6-316d-45d8-aabe-1760a20903ac",
@@ -43146,16 +43146,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/d/3d08f6a6-316d-45d8-aabe-1760a20903ac.jpg?1783906539",
     "image_large": "https://cards.scryfall.io/large/front/3/d/3d08f6a6-316d-45d8-aabe-1760a20903ac.jpg?1783906539",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.36,
+    "price_usd": 0.32,
+    "price_foil": 0.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/307/forest?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.45
+    "price_eur": 0.22,
+    "price_eur_foil": 0.36
   },
   {
     "id": "c52038c8-5bba-4d8e-845f-30af44300acc",
@@ -43192,16 +43192,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/5/c52038c8-5bba-4d8e-845f-30af44300acc.jpg?1783906539",
     "image_large": "https://cards.scryfall.io/large/front/c/5/c52038c8-5bba-4d8e-845f-30af44300acc.jpg?1783906539",
     "back_image": "",
-    "price_usd": 0.22,
-    "price_foil": 0.36,
+    "price_usd": 0.27,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/308/forest?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.23,
-    "price_eur_foil": 0.38
+    "price_eur": 0.22,
+    "price_eur_foil": 0.26
   },
   {
     "id": "c61feafd-ef09-437c-a12c-fd7d6cb8c15a",
@@ -43238,16 +43238,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/6/c61feafd-ef09-437c-a12c-fd7d6cb8c15a.jpg?1783906539",
     "image_large": "https://cards.scryfall.io/large/front/c/6/c61feafd-ef09-437c-a12c-fd7d6cb8c15a.jpg?1783906539",
     "back_image": "",
-    "price_usd": 1.01,
-    "price_foil": 1.34,
+    "price_usd": 1.16,
+    "price_foil": 1.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/309/wastes?utm_source=api",
     "treatments": [
       "Full Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.34,
-    "price_eur_foil": 0.45
+    "price_eur": 0.26,
+    "price_eur_foil": 0.48
   },
   {
     "id": "b5327e09-2ea0-4365-bb20-087a08da8ce6",
@@ -43285,16 +43285,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/5/b5327e09-2ea0-4365-bb20-087a08da8ce6.jpg?1783906538",
     "image_large": "https://cards.scryfall.io/large/front/b/5/b5327e09-2ea0-4365-bb20-087a08da8ce6.jpg?1783906538",
     "back_image": "",
-    "price_usd": 4.7,
-    "price_foil": 7.97,
+    "price_usd": 5.21,
+    "price_foil": 7.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/310/ishgard-the-holy-see-faith-&-grief?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.69,
-    "price_eur_foil": 4.05
+    "price_eur": 3.23,
+    "price_eur_foil": 4.01
   },
   {
     "id": "72678d58-888e-4d3c-bc2c-78f5b7862e03",
@@ -43332,16 +43332,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/2/72678d58-888e-4d3c-bc2c-78f5b7862e03.jpg?1783906538",
     "image_large": "https://cards.scryfall.io/large/front/7/2/72678d58-888e-4d3c-bc2c-78f5b7862e03.jpg?1783906538",
     "back_image": "",
-    "price_usd": 2.86,
-    "price_foil": 4.09,
+    "price_usd": 2.55,
+    "price_foil": 4.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/311/jidoor-aristocratic-capital-overture?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.89,
-    "price_eur_foil": 2.06
+    "price_eur": 1.83,
+    "price_eur_foil": 2.3
   },
   {
     "id": "b2ae92d9-7047-424e-a482-2311888a8c56",
@@ -43379,16 +43379,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/2/b2ae92d9-7047-424e-a482-2311888a8c56.jpg?1783906536",
     "image_large": "https://cards.scryfall.io/large/front/b/2/b2ae92d9-7047-424e-a482-2311888a8c56.jpg?1783906536",
     "back_image": "",
-    "price_usd": 4.75,
-    "price_foil": 6.56,
+    "price_usd": 5.93,
+    "price_foil": 6.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/312/lindblum-industrial-regency-mage-siege?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.43,
-    "price_eur_foil": 5.09
+    "price_eur": 4.34,
+    "price_eur_foil": 5.34
   },
   {
     "id": "fa605930-a7f0-410d-ac58-f5f0bd8caadf",
@@ -43426,16 +43426,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/a/fa605930-a7f0-410d-ac58-f5f0bd8caadf.jpg?1783906537",
     "image_large": "https://cards.scryfall.io/large/front/f/a/fa605930-a7f0-410d-ac58-f5f0bd8caadf.jpg?1783906537",
     "back_image": "",
-    "price_usd": 4.11,
-    "price_foil": 6.76,
+    "price_usd": 3.97,
+    "price_foil": 6.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/313/midgar-city-of-mako-reactor-raid?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.49,
-    "price_eur_foil": 5.19
+    "price_eur": 4.09,
+    "price_eur_foil": 5.69
   },
   {
     "id": "c64bb94b-c1a7-4dd3-b2dc-b87d306d62ad",
@@ -43473,16 +43473,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/6/c64bb94b-c1a7-4dd3-b2dc-b87d306d62ad.jpg?1783906537",
     "image_large": "https://cards.scryfall.io/large/front/c/6/c64bb94b-c1a7-4dd3-b2dc-b87d306d62ad.jpg?1783906537",
     "back_image": "",
-    "price_usd": 2.0,
-    "price_foil": 3.46,
+    "price_usd": 1.8,
+    "price_foil": 3.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/314/zanarkand-ancient-metropolis-lasting-fayth?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.51,
-    "price_eur_foil": 1.56
+    "price_eur": 2.03,
+    "price_eur_foil": 2.04
   },
   {
     "id": "41ae833d-77ee-4876-8990-591ae0d800ab",
@@ -43520,16 +43520,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/1/41ae833d-77ee-4876-8990-591ae0d800ab.jpg?1783906534",
     "image_large": "https://cards.scryfall.io/large/front/4/1/41ae833d-77ee-4876-8990-591ae0d800ab.jpg?1783906534",
     "back_image": "",
-    "price_usd": 3.07,
-    "price_foil": 7.28,
+    "price_usd": 3.03,
+    "price_foil": 7.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/315/ardyn-the-usurper?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.38,
-    "price_eur_foil": 4.9
+    "price_eur": 2.96,
+    "price_eur_foil": 5.06
   },
   {
     "id": "39f9de73-84a7-483f-927e-91ade20a2d06",
@@ -43567,16 +43567,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/9/39f9de73-84a7-483f-927e-91ade20a2d06.jpg?1783906534",
     "image_large": "https://cards.scryfall.io/large/front/3/9/39f9de73-84a7-483f-927e-91ade20a2d06.jpg?1783906534",
     "back_image": "",
-    "price_usd": 2.96,
-    "price_foil": 5.62,
+    "price_usd": 2.84,
+    "price_foil": 5.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/316/kain-traitorous-dragoon?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.17,
-    "price_eur_foil": 4.56
+    "price_eur": 1.76,
+    "price_eur_foil": 4.54
   },
   {
     "id": "83c82209-47d5-4c4c-b8ec-96ab907e15d3",
@@ -43614,16 +43614,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/3/83c82209-47d5-4c4c-b8ec-96ab907e15d3.jpg?1783906538",
     "image_large": "https://cards.scryfall.io/large/front/8/3/83c82209-47d5-4c4c-b8ec-96ab907e15d3.jpg?1783906538",
     "back_image": "https://cards.scryfall.io/normal/back/8/3/83c82209-47d5-4c4c-b8ec-96ab907e15d3.jpg?1783906538",
-    "price_usd": 69.91,
-    "price_foil": 177.72,
+    "price_usd": 69.56,
+    "price_foil": 175.59,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/317/sephiroth-fabled-soldier-sephiroth-one-winged-angel?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 58.73,
-    "price_eur_foil": 153.69
+    "price_eur": 55.13,
+    "price_eur_foil": 158.95
   },
   {
     "id": "425d5bea-9c9a-4e8a-b4bc-02284fb9b5b4",
@@ -43661,16 +43661,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/425d5bea-9c9a-4e8a-b4bc-02284fb9b5b4.jpg?1783906539",
     "image_large": "https://cards.scryfall.io/large/front/4/2/425d5bea-9c9a-4e8a-b4bc-02284fb9b5b4.jpg?1783906539",
     "back_image": "https://cards.scryfall.io/normal/back/4/2/425d5bea-9c9a-4e8a-b4bc-02284fb9b5b4.jpg?1783906539",
-    "price_usd": 30.0,
-    "price_foil": 66.53,
+    "price_usd": 32.22,
+    "price_foil": 66.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/318/clive-ifrits-dominant-ifrit-warden-of-inferno?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 21.9,
-    "price_eur_foil": 54.44
+    "price_eur": 20.26,
+    "price_eur_foil": 50.19
   },
   {
     "id": "6aaba8b1-1fcb-4a73-894f-f32400352c8c",
@@ -43708,16 +43708,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/a/6aaba8b1-1fcb-4a73-894f-f32400352c8c.jpg?1783906533",
     "image_large": "https://cards.scryfall.io/large/front/6/a/6aaba8b1-1fcb-4a73-894f-f32400352c8c.jpg?1783906533",
     "back_image": "",
-    "price_usd": 1.71,
-    "price_foil": 2.94,
+    "price_usd": 1.62,
+    "price_foil": 2.78,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/319/balthier-and-fran?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.36,
-    "price_eur_foil": 2.81
+    "price_eur": 1.49,
+    "price_eur_foil": 2.82
   },
   {
     "id": "be2af52c-9f38-40e4-a643-06c5f2a9f416",
@@ -43755,16 +43755,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/e/be2af52c-9f38-40e4-a643-06c5f2a9f416.jpg?1783906533",
     "image_large": "https://cards.scryfall.io/large/front/b/e/be2af52c-9f38-40e4-a643-06c5f2a9f416.jpg?1783906533",
     "back_image": "",
-    "price_usd": 34.19,
-    "price_foil": 66.75,
+    "price_usd": 33.3,
+    "price_foil": 67.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/320/lightning-army-of-one?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 34.55,
-    "price_eur_foil": 65.88
+    "price_eur": 33.75,
+    "price_eur_foil": 64.18
   },
   {
     "id": "ada6aeb6-8c9f-4498-9326-b4da0fcb19a3",
@@ -43802,16 +43802,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/d/ada6aeb6-8c9f-4498-9326-b4da0fcb19a3.jpg?1783906533",
     "image_large": "https://cards.scryfall.io/large/front/a/d/ada6aeb6-8c9f-4498-9326-b4da0fcb19a3.jpg?1783906533",
     "back_image": "",
-    "price_usd": 83.36,
-    "price_foil": 186.96,
+    "price_usd": 87.23,
+    "price_foil": 190.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/321/vivi-ornitier?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 60.06,
-    "price_eur_foil": 137.01
+    "price_eur": 64.23,
+    "price_eur_foil": 138.14
   },
   {
     "id": "0cadfe0e-9cdf-4e64-b143-f996c76bf93b",
@@ -43849,15 +43849,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0cadfe0e-9cdf-4e64-b143-f996c76bf93b.jpg?1783906537",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0cadfe0e-9cdf-4e64-b143-f996c76bf93b.jpg?1783906537",
     "back_image": "https://cards.scryfall.io/normal/back/0/c/0cadfe0e-9cdf-4e64-b143-f996c76bf93b.jpg?1783906537",
-    "price_usd": 34.96,
-    "price_foil": 92.75,
+    "price_usd": 37.07,
+    "price_foil": 92.78,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/322/kefka-court-mage-kefka-ruler-of-ruin?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 29.9,
+    "price_eur": 30.4,
     "price_eur_foil": 74.12
   },
   {
@@ -43896,16 +43896,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0cf789e7-045c-4ad1-abc3-23eabda54f02.jpg?1783906538",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0cf789e7-045c-4ad1-abc3-23eabda54f02.jpg?1783906538",
     "back_image": "https://cards.scryfall.io/normal/back/0/c/0cf789e7-045c-4ad1-abc3-23eabda54f02.jpg?1783906538",
-    "price_usd": 30.0,
-    "price_foil": 106.37,
+    "price_usd": 29.68,
+    "price_foil": 107.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/323/terra-magical-adept-esper-terra?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 31.7,
-    "price_eur_foil": 96.9
+    "price_eur": 30.54,
+    "price_eur_foil": 93.11
   },
   {
     "id": "2ac1b165-27ff-47f3-b598-43f7f021093a",
@@ -43943,16 +43943,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/a/2ac1b165-27ff-47f3-b598-43f7f021093a.jpg?1783906532",
     "image_large": "https://cards.scryfall.io/large/front/2/a/2ac1b165-27ff-47f3-b598-43f7f021093a.jpg?1783906532",
     "back_image": "",
-    "price_usd": 4.52,
-    "price_foil": 6.62,
+    "price_usd": 4.09,
+    "price_foil": 6.75,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/324/ultima-origin-of-oblivion?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.07,
-    "price_eur_foil": 4.38
+    "price_eur": 2.13,
+    "price_eur_foil": 4.44
   },
   {
     "id": "2ecefb14-23a2-44f4-a3aa-63c246f744e1",
@@ -43991,15 +43991,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/e/2ecefb14-23a2-44f4-a3aa-63c246f744e1.jpg?1783906532",
     "back_image": "",
     "price_usd": 0.51,
-    "price_foil": 0.67,
+    "price_foil": 0.72,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/325/ambrosia-whiteheart?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.31,
-    "price_eur_foil": 0.83
+    "price_eur": 0.33,
+    "price_eur_foil": 0.67
   },
   {
     "id": "522920b3-e7a4-4097-8321-2dbb326719c6",
@@ -44037,16 +44037,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/2/522920b3-e7a4-4097-8321-2dbb326719c6.jpg?1783906532",
     "image_large": "https://cards.scryfall.io/large/front/5/2/522920b3-e7a4-4097-8321-2dbb326719c6.jpg?1783906532",
     "back_image": "",
-    "price_usd": 3.18,
-    "price_foil": 4.85,
+    "price_usd": 3.93,
+    "price_foil": 4.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/326/moogles-valor?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.94,
-    "price_eur_foil": 2.62
+    "price_eur": 1.84,
+    "price_eur_foil": 1.5
   },
   {
     "id": "8347cb57-7c20-4085-83f3-bee35b55b3f1",
@@ -44084,16 +44084,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/3/8347cb57-7c20-4085-83f3-bee35b55b3f1.jpg?1783906531",
     "image_large": "https://cards.scryfall.io/large/front/8/3/8347cb57-7c20-4085-83f3-bee35b55b3f1.jpg?1783906531",
     "back_image": "",
-    "price_usd": 1.33,
-    "price_foil": 2.81,
+    "price_usd": 1.62,
+    "price_foil": 2.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/327/stiltzkin-moogle-merchant?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.14,
-    "price_eur_foil": 1.98
+    "price_eur": 1.23,
+    "price_eur_foil": 2.18
   },
   {
     "id": "e673fb51-d36c-42fb-91bf-805812522064",
@@ -44131,7 +44131,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/6/e673fb51-d36c-42fb-91bf-805812522064.jpg?1783906531",
     "image_large": "https://cards.scryfall.io/large/front/e/6/e673fb51-d36c-42fb-91bf-805812522064.jpg?1783906531",
     "back_image": "",
-    "price_usd": 2.15,
+    "price_usd": 2.25,
     "price_foil": 3.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/328/ultima?utm_source=api",
@@ -44140,7 +44140,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 3.19,
-    "price_eur_foil": 3.45
+    "price_eur_foil": 3.54
   },
   {
     "id": "a9a432dc-6e53-48d2-8fbe-b01bd2cab6dd",
@@ -44178,16 +44178,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/9/a9a432dc-6e53-48d2-8fbe-b01bd2cab6dd.jpg?1783906536",
     "image_large": "https://cards.scryfall.io/large/front/a/9/a9a432dc-6e53-48d2-8fbe-b01bd2cab6dd.jpg?1783906536",
     "back_image": "https://cards.scryfall.io/normal/back/a/9/a9a432dc-6e53-48d2-8fbe-b01bd2cab6dd.jpg?1783906536",
-    "price_usd": 7.25,
-    "price_foil": 10.23,
+    "price_usd": 7.66,
+    "price_foil": 10.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/329/venat-heart-of-hydaelyn-hydaelyn-the-mothercrystal?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.72,
-    "price_eur_foil": 6.94
+    "price_eur": 4.48,
+    "price_eur_foil": 6.65
   },
   {
     "id": "423134fa-62d9-439c-b123-eeea52f42414",
@@ -44225,16 +44225,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/423134fa-62d9-439c-b123-eeea52f42414.jpg?1783906531",
     "image_large": "https://cards.scryfall.io/large/front/4/2/423134fa-62d9-439c-b123-eeea52f42414.jpg?1783906531",
     "back_image": "",
-    "price_usd": 12.45,
-    "price_foil": 16.81,
+    "price_usd": 14.52,
+    "price_foil": 17.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/330/the-wind-crystal?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 5.95,
-    "price_eur_foil": 8.86
+    "price_eur": 6.2,
+    "price_eur_foil": 8.92
   },
   {
     "id": "fb3c836d-8012-4591-ba4f-e6db6d59b974",
@@ -44273,15 +44273,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/b/fb3c836d-8012-4591-ba4f-e6db6d59b974.jpg?1783906529",
     "back_image": "",
     "price_usd": 0.98,
-    "price_foil": 1.33,
+    "price_foil": 1.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/331/memories-returning?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.79,
-    "price_eur_foil": 1.78
+    "price_eur": 1.13,
+    "price_eur_foil": 1.88
   },
   {
     "id": "0cf03aad-0562-4d29-8c70-dc529c3a3961",
@@ -44319,7 +44319,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0cf03aad-0562-4d29-8c70-dc529c3a3961.jpg?1783906529",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0cf03aad-0562-4d29-8c70-dc529c3a3961.jpg?1783906529",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.29,
     "price_foil": 0.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/332/stolen-uniform?utm_source=api",
@@ -44327,8 +44327,8 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.28,
-    "price_eur_foil": 0.46
+    "price_eur": 0.23,
+    "price_eur_foil": 0.41
   },
   {
     "id": "7572888a-c394-4d9f-b66f-30d91364d265",
@@ -44366,16 +44366,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/7572888a-c394-4d9f-b66f-30d91364d265.jpg?1783906529",
     "image_large": "https://cards.scryfall.io/large/front/7/5/7572888a-c394-4d9f-b66f-30d91364d265.jpg?1783906529",
     "back_image": "",
-    "price_usd": 9.37,
-    "price_foil": 11.56,
+    "price_usd": 10.25,
+    "price_foil": 11.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/333/the-water-crystal?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.59,
-    "price_eur_foil": 6.97
+    "price_eur": 4.61,
+    "price_eur_foil": 7.13
   },
   {
     "id": "378df0f4-5043-461f-8705-9a2c0c3acd43",
@@ -44413,16 +44413,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/7/378df0f4-5043-461f-8705-9a2c0c3acd43.jpg?1783906528",
     "image_large": "https://cards.scryfall.io/large/front/3/7/378df0f4-5043-461f-8705-9a2c0c3acd43.jpg?1783906528",
     "back_image": "",
-    "price_usd": 9.91,
-    "price_foil": 13.85,
+    "price_usd": 10.62,
+    "price_foil": 14.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/334/dark-confidant?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 10.93,
-    "price_eur_foil": 15.85
+    "price_eur": 10.02,
+    "price_eur_foil": 14.96
   },
   {
     "id": "749f2041-0eb5-42c3-b9ac-05a7575cb693",
@@ -44460,16 +44460,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/4/749f2041-0eb5-42c3-b9ac-05a7575cb693.jpg?1783906529",
     "image_large": "https://cards.scryfall.io/large/front/7/4/749f2041-0eb5-42c3-b9ac-05a7575cb693.jpg?1783906529",
     "back_image": "",
-    "price_usd": 12.11,
-    "price_foil": 17.18,
+    "price_usd": 13.29,
+    "price_foil": 16.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/335/the-darkness-crystal?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 7.28,
-    "price_eur_foil": 11.12
+    "price_eur": 6.99,
+    "price_eur_foil": 10.02
   },
   {
     "id": "2eb50ecd-d32f-482b-8e6f-57f68179241b",
@@ -44507,16 +44507,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/e/2eb50ecd-d32f-482b-8e6f-57f68179241b.jpg?1783906528",
     "image_large": "https://cards.scryfall.io/large/front/2/e/2eb50ecd-d32f-482b-8e6f-57f68179241b.jpg?1783906528",
     "back_image": "",
-    "price_usd": 3.52,
-    "price_foil": 4.47,
+    "price_usd": 3.29,
+    "price_foil": 4.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/336/zodiark-umbral-god?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.77,
-    "price_eur_foil": 3.71
+    "price_eur": 1.84,
+    "price_eur_foil": 4.17
   },
   {
     "id": "58306c68-5de8-48f4-9ce5-ea69792af58c",
@@ -44554,16 +44554,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/8/58306c68-5de8-48f4-9ce5-ea69792af58c.jpg?1783906527",
     "image_large": "https://cards.scryfall.io/large/front/5/8/58306c68-5de8-48f4-9ce5-ea69792af58c.jpg?1783906527",
     "back_image": "",
-    "price_usd": 11.97,
-    "price_foil": 17.66,
+    "price_usd": 12.26,
+    "price_foil": 18.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/337/the-fire-crystal?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 8.74,
-    "price_eur_foil": 10.14
+    "price_eur": 8.66,
+    "price_eur_foil": 10.42
   },
   {
     "id": "816f618c-ed6c-4320-9c33-9ae903e32abf",
@@ -44601,16 +44601,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/1/816f618c-ed6c-4320-9c33-9ae903e32abf.jpg?1783906528",
     "image_large": "https://cards.scryfall.io/large/front/8/1/816f618c-ed6c-4320-9c33-9ae903e32abf.jpg?1783906528",
     "back_image": "",
-    "price_usd": 3.49,
-    "price_foil": 5.18,
+    "price_usd": 3.3,
+    "price_foil": 6.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/338/gilgamesh-master-at-arms?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.78,
-    "price_eur_foil": 2.49
+    "price_eur": 1.59,
+    "price_eur_foil": 2.84
   },
   {
     "id": "f6c21de9-7278-4406-8037-afe2c29b271f",
@@ -44648,16 +44648,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f6c21de9-7278-4406-8037-afe2c29b271f.jpg?1783906527",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f6c21de9-7278-4406-8037-afe2c29b271f.jpg?1783906527",
     "back_image": "",
-    "price_usd": 13.08,
-    "price_foil": 23.68,
+    "price_usd": 13.29,
+    "price_foil": 23.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/339/nibelheim-aflame?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 14.65,
-    "price_eur_foil": 17.78
+    "price_eur": 14.47,
+    "price_eur_foil": 21.35
   },
   {
     "id": "5bd84d2c-6f09-4aef-a98b-7b256c7de821",
@@ -44695,16 +44695,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/b/5bd84d2c-6f09-4aef-a98b-7b256c7de821.jpg?1783906527",
     "image_large": "https://cards.scryfall.io/large/front/5/b/5bd84d2c-6f09-4aef-a98b-7b256c7de821.jpg?1783906527",
     "back_image": "",
-    "price_usd": 1.77,
-    "price_foil": 2.56,
+    "price_usd": 1.91,
+    "price_foil": 2.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/340/triple-triad?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.16,
-    "price_eur_foil": 2.16
+    "price_eur": 1.14,
+    "price_eur_foil": 2.02
   },
   {
     "id": "fa15ebf3-7ada-4e86-abc9-85dea83edb8c",
@@ -44742,16 +44742,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/a/fa15ebf3-7ada-4e86-abc9-85dea83edb8c.jpg?1783906527",
     "image_large": "https://cards.scryfall.io/large/front/f/a/fa15ebf3-7ada-4e86-abc9-85dea83edb8c.jpg?1783906527",
     "back_image": "",
-    "price_usd": 0.37,
-    "price_foil": 0.42,
+    "price_usd": 0.36,
+    "price_foil": 0.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/341/clash-of-the-eikons?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.27,
-    "price_eur_foil": 0.61
+    "price_eur": 0.31,
+    "price_eur_foil": 0.52
   },
   {
     "id": "9240303a-73a3-4daf-b5fc-090ce7cbd92a",
@@ -44789,16 +44789,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/2/9240303a-73a3-4daf-b5fc-090ce7cbd92a.jpg?1783906525",
     "image_large": "https://cards.scryfall.io/large/front/9/2/9240303a-73a3-4daf-b5fc-090ce7cbd92a.jpg?1783906525",
     "back_image": "",
-    "price_usd": 19.43,
-    "price_foil": 27.88,
+    "price_usd": 20.6,
+    "price_foil": 27.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/342/the-earth-crystal?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 13.13,
-    "price_eur_foil": 18.21
+    "price_eur": 13.18,
+    "price_eur_foil": 17.84
   },
   {
     "id": "fe80b498-a25d-4f68-ac26-9554c3ee1677",
@@ -44836,16 +44836,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fe80b498-a25d-4f68-ac26-9554c3ee1677.jpg?1783906526",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe80b498-a25d-4f68-ac26-9554c3ee1677.jpg?1783906526",
     "back_image": "",
-    "price_usd": 7.47,
-    "price_foil": 10.87,
+    "price_usd": 7.75,
+    "price_foil": 11.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/343/jumbo-cactuar?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.7,
-    "price_eur_foil": 6.64
+    "price_eur": 4.59,
+    "price_eur_foil": 6.3
   },
   {
     "id": "aa78ab04-6ddf-4a67-8bcf-0da4646a1e48",
@@ -44883,16 +44883,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/a/aa78ab04-6ddf-4a67-8bcf-0da4646a1e48.jpg?1783906527",
     "image_large": "https://cards.scryfall.io/large/front/a/a/aa78ab04-6ddf-4a67-8bcf-0da4646a1e48.jpg?1783906527",
     "back_image": "",
-    "price_usd": 1.52,
-    "price_foil": 2.39,
+    "price_usd": 1.45,
+    "price_foil": 2.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/344/a-realm-reborn?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.74,
-    "price_eur_foil": 1.53
+    "price_eur": 1.08,
+    "price_eur_foil": 1.55
   },
   {
     "id": "66188ecc-ac97-4dcb-ada3-57d86915a911",
@@ -44930,16 +44930,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/6/66188ecc-ac97-4dcb-ada3-57d86915a911.jpg?1783906523",
     "image_large": "https://cards.scryfall.io/large/front/6/6/66188ecc-ac97-4dcb-ada3-57d86915a911.jpg?1783906523",
     "back_image": "",
-    "price_usd": 0.54,
-    "price_foil": 0.72,
+    "price_usd": 0.67,
+    "price_foil": 0.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/345/torgal-a-fine-hound?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.28,
-    "price_eur_foil": 0.62
+    "price_eur": 0.29,
+    "price_eur_foil": 0.55
   },
   {
     "id": "9f80efa6-769f-4205-b69e-9cf0e78b7bcd",
@@ -44977,16 +44977,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/f/9f80efa6-769f-4205-b69e-9cf0e78b7bcd.jpg?1783906524",
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f80efa6-769f-4205-b69e-9cf0e78b7bcd.jpg?1783906524",
     "back_image": "",
-    "price_usd": 5.75,
-    "price_foil": 9.24,
+    "price_usd": 5.56,
+    "price_foil": 9.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/346/jenova-ancient-calamity?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 7.92,
-    "price_eur_foil": 11.33
+    "price_eur": 7.13,
+    "price_eur_foil": 10.59
   },
   {
     "id": "615f1a04-2ad4-443b-a915-2181a6bf13af",
@@ -45024,16 +45024,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/1/615f1a04-2ad4-443b-a915-2181a6bf13af.jpg?1783906524",
     "image_large": "https://cards.scryfall.io/large/front/6/1/615f1a04-2ad4-443b-a915-2181a6bf13af.jpg?1783906524",
     "back_image": "",
-    "price_usd": 0.33,
-    "price_foil": 0.34,
+    "price_usd": 0.34,
+    "price_foil": 0.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/347/omega-heartless-evolution?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.26,
-    "price_eur_foil": 0.39
+    "price_eur": 0.27,
+    "price_eur_foil": 0.36
   },
   {
     "id": "ce15bf1d-debf-4e0f-a69d-a57619d4b0ee",
@@ -45071,16 +45071,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/e/ce15bf1d-debf-4e0f-a69d-a57619d4b0ee.jpg?1783906524",
     "image_large": "https://cards.scryfall.io/large/front/c/e/ce15bf1d-debf-4e0f-a69d-a57619d4b0ee.jpg?1783906524",
     "back_image": "",
-    "price_usd": 1.32,
-    "price_foil": 2.69,
+    "price_usd": 1.68,
+    "price_foil": 2.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/348/sin-spiras-punishment?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.34,
-    "price_eur_foil": 3.39
+    "price_eur": 1.41,
+    "price_eur_foil": 3.23
   },
   {
     "id": "0dcb6a53-ad1b-465b-8d4c-f2c8b2b29e25",
@@ -45118,16 +45118,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/d/0dcb6a53-ad1b-465b-8d4c-f2c8b2b29e25.jpg?1783906523",
     "image_large": "https://cards.scryfall.io/large/front/0/d/0dcb6a53-ad1b-465b-8d4c-f2c8b2b29e25.jpg?1783906523",
     "back_image": "",
-    "price_usd": 1.76,
-    "price_foil": 2.35,
+    "price_usd": 1.66,
+    "price_foil": 2.13,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/349/tellah-great-sage?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.84,
-    "price_eur_foil": 1.81
+    "price_eur": 1.0,
+    "price_eur_foil": 2.2
   },
   {
     "id": "2ceea116-6197-45ec-a5a9-73588744b8a0",
@@ -45165,8 +45165,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/c/2ceea116-6197-45ec-a5a9-73588744b8a0.jpg?1783906523",
     "image_large": "https://cards.scryfall.io/large/front/2/c/2ceea116-6197-45ec-a5a9-73588744b8a0.jpg?1783906523",
     "back_image": "",
-    "price_usd": 18.28,
-    "price_foil": 42.18,
+    "price_usd": 18.76,
+    "price_foil": 44.84,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/350/aettir-and-priwen?utm_source=api",
     "treatments": [
@@ -45174,7 +45174,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 9.25,
-    "price_eur_foil": 13.23
+    "price_eur_foil": 13.52
   },
   {
     "id": "f57d0446-1eae-4b88-b65c-92a14a3f9cef",
@@ -45212,16 +45212,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/5/f57d0446-1eae-4b88-b65c-92a14a3f9cef.jpg?1783906523",
     "image_large": "https://cards.scryfall.io/large/front/f/5/f57d0446-1eae-4b88-b65c-92a14a3f9cef.jpg?1783906523",
     "back_image": "",
-    "price_usd": 97.95,
-    "price_foil": 208.2,
+    "price_usd": 108.32,
+    "price_foil": 203.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/351/buster-sword?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 60.9,
-    "price_eur_foil": 136.87
+    "price_eur": 60.84,
+    "price_eur_foil": 133.34
   },
   {
     "id": "becf759b-e3bc-4281-a1e1-1da9f36247ef",
@@ -45259,16 +45259,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/e/becf759b-e3bc-4281-a1e1-1da9f36247ef.jpg?1783906522",
     "image_large": "https://cards.scryfall.io/large/front/b/e/becf759b-e3bc-4281-a1e1-1da9f36247ef.jpg?1783906522",
     "back_image": "",
-    "price_usd": 1.93,
-    "price_foil": 2.81,
+    "price_usd": 2.16,
+    "price_foil": 2.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/352/excalibur-ii?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.65,
-    "price_eur_foil": 2.75
+    "price_eur": 1.57,
+    "price_eur_foil": 3.33
   },
   {
     "id": "a288efba-7c70-428d-a2b7-571891976f78",
@@ -45306,16 +45306,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/2/a288efba-7c70-428d-a2b7-571891976f78.jpg?1783906523",
     "image_large": "https://cards.scryfall.io/large/front/a/2/a288efba-7c70-428d-a2b7-571891976f78.jpg?1783906523",
     "back_image": "",
-    "price_usd": 7.29,
-    "price_foil": 9.99,
+    "price_usd": 6.77,
+    "price_foil": 9.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/353/the-masamune?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.77,
-    "price_eur_foil": 5.19
+    "price_eur": 3.63,
+    "price_eur_foil": 5.26
   },
   {
     "id": "1a6c87dc-188c-4c75-9026-568263940b90",
@@ -45353,16 +45353,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/a/1a6c87dc-188c-4c75-9026-568263940b90.jpg?1783906526",
     "image_large": "https://cards.scryfall.io/large/front/1/a/1a6c87dc-188c-4c75-9026-568263940b90.jpg?1783906526",
     "back_image": "https://cards.scryfall.io/normal/back/1/a/1a6c87dc-188c-4c75-9026-568263940b90.jpg?1783906526",
-    "price_usd": 1.48,
-    "price_foil": 1.99,
+    "price_usd": 1.39,
+    "price_foil": 1.96,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/354/balamb-garden-seed-academy-balamb-garden-airborne?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.2,
-    "price_eur_foil": 2.29
+    "price_eur": 1.14,
+    "price_eur_foil": 2.53
   },
   {
     "id": "4786e79c-1e64-41bd-87f6-9a33110afa71",
@@ -45400,16 +45400,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/7/4786e79c-1e64-41bd-87f6-9a33110afa71.jpg?1783906522",
     "image_large": "https://cards.scryfall.io/large/front/4/7/4786e79c-1e64-41bd-87f6-9a33110afa71.jpg?1783906522",
     "back_image": "",
-    "price_usd": 0.38,
-    "price_foil": 0.49,
+    "price_usd": 0.41,
+    "price_foil": 0.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/355/eden-seat-of-the-sanctum?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.24,
-    "price_eur_foil": 0.38
+    "price_eur": 0.23,
+    "price_eur_foil": 0.54
   },
   {
     "id": "fd5cb1fc-71b2-4b05-abd3-c90e95c53ad1",
@@ -45447,16 +45447,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/d/fd5cb1fc-71b2-4b05-abd3-c90e95c53ad1.jpg?1783906521",
     "image_large": "https://cards.scryfall.io/large/front/f/d/fd5cb1fc-71b2-4b05-abd3-c90e95c53ad1.jpg?1783906521",
     "back_image": "",
-    "price_usd": 51.71,
-    "price_foil": 105.64,
+    "price_usd": 50.76,
+    "price_foil": 104.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/356/summon:-bahamut?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 49.26,
-    "price_eur_foil": 74.15
+    "price_eur": 48.11,
+    "price_eur_foil": 74.21
   },
   {
     "id": "c2416ecc-bb6b-44f6-8fa6-61d168777f2e",
@@ -45494,16 +45494,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/2/c2416ecc-bb6b-44f6-8fa6-61d168777f2e.jpg?1783906527",
     "image_large": "https://cards.scryfall.io/large/front/c/2/c2416ecc-bb6b-44f6-8fa6-61d168777f2e.jpg?1783906527",
     "back_image": "https://cards.scryfall.io/normal/back/c/2/c2416ecc-bb6b-44f6-8fa6-61d168777f2e.jpg?1783906527",
-    "price_usd": 0.52,
-    "price_foil": 0.59,
+    "price_usd": 0.59,
+    "price_foil": 0.61,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/357/crystal-fragments-summon:-alexander?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.39,
-    "price_eur_foil": 0.69
+    "price_eur": 0.38,
+    "price_eur_foil": 0.56
   },
   {
     "id": "b95481b1-1780-4cf9-b910-dd0a4461f818",
@@ -45541,16 +45541,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/9/b95481b1-1780-4cf9-b910-dd0a4461f818.jpg?1783906520",
     "image_large": "https://cards.scryfall.io/large/front/b/9/b95481b1-1780-4cf9-b910-dd0a4461f818.jpg?1783906520",
     "back_image": "",
-    "price_usd": 0.32,
-    "price_foil": 0.58,
+    "price_usd": 0.34,
+    "price_foil": 0.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/358/summon:-chocomog?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.24,
-    "price_eur_foil": 0.77
+    "price_eur": 0.22,
+    "price_eur_foil": 0.84
   },
   {
     "id": "b8a48466-6dc1-4874-9328-c7358e642f39",
@@ -45588,16 +45588,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/8/b8a48466-6dc1-4874-9328-c7358e642f39.jpg?1783906519",
     "image_large": "https://cards.scryfall.io/large/front/b/8/b8a48466-6dc1-4874-9328-c7358e642f39.jpg?1783906519",
     "back_image": "",
-    "price_usd": 25.21,
-    "price_foil": 33.98,
+    "price_usd": 26.19,
+    "price_foil": 34.42,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/359/summon:-knights-of-round?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 24.11,
-    "price_eur_foil": 31.48
+    "price_eur": 25.83,
+    "price_eur_foil": 29.92
   },
   {
     "id": "f6ee6624-79be-4a76-8c12-80bf31f81ae2",
@@ -45635,16 +45635,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f6ee6624-79be-4a76-8c12-80bf31f81ae2.jpg?1783906519",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f6ee6624-79be-4a76-8c12-80bf31f81ae2.jpg?1783906519",
     "back_image": "",
-    "price_usd": 0.51,
-    "price_foil": 0.68,
+    "price_usd": 0.53,
+    "price_foil": 0.71,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/360/summon:-primal-garuda?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.37,
-    "price_eur_foil": 0.42
+    "price_eur": 0.39,
+    "price_eur_foil": 0.51
   },
   {
     "id": "4c6738f5-55cb-48f0-8e70-296d1c549cd3",
@@ -45682,16 +45682,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/c/4c6738f5-55cb-48f0-8e70-296d1c549cd3.jpg?1783906518",
     "image_large": "https://cards.scryfall.io/large/front/4/c/4c6738f5-55cb-48f0-8e70-296d1c549cd3.jpg?1783906518",
     "back_image": "",
-    "price_usd": 4.87,
-    "price_foil": 7.22,
+    "price_usd": 5.52,
+    "price_foil": 7.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/361/summon:-leviathan?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.41,
-    "price_eur_foil": 5.61
+    "price_eur": 4.62,
+    "price_eur_foil": 5.3
   },
   {
     "id": "340b2b03-1b20-411c-ba30-2be77655290a",
@@ -45729,16 +45729,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/4/340b2b03-1b20-411c-ba30-2be77655290a.jpg?1783906520",
     "image_large": "https://cards.scryfall.io/large/front/3/4/340b2b03-1b20-411c-ba30-2be77655290a.jpg?1783906520",
     "back_image": "",
-    "price_usd": 1.23,
-    "price_foil": 1.25,
+    "price_usd": 1.25,
+    "price_foil": 1.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/362/summon:-shiva?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.31,
-    "price_eur_foil": 0.7
+    "price_eur": 0.44,
+    "price_eur_foil": 0.94
   },
   {
     "id": "20c75373-7db4-4964-8e09-2badce2f0f84",
@@ -45776,16 +45776,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/0/20c75373-7db4-4964-8e09-2badce2f0f84.jpg?1783906522",
     "image_large": "https://cards.scryfall.io/large/front/2/0/20c75373-7db4-4964-8e09-2badce2f0f84.jpg?1783906522",
     "back_image": "https://cards.scryfall.io/normal/back/2/0/20c75373-7db4-4964-8e09-2badce2f0f84.jpg?1783906522",
-    "price_usd": 2.52,
-    "price_foil": 3.57,
+    "price_usd": 2.4,
+    "price_foil": 3.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/363/jecht-reluctant-guardian-braskas-final-aeon?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.49,
-    "price_eur_foil": 3.14
+    "price_eur": 2.09,
+    "price_eur_foil": 3.23
   },
   {
     "id": "d4aa9f4e-cba9-41fa-8c65-3e263988f90d",
@@ -45823,16 +45823,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/4/d4aa9f4e-cba9-41fa-8c65-3e263988f90d.jpg?1783906518",
     "image_large": "https://cards.scryfall.io/large/front/d/4/d4aa9f4e-cba9-41fa-8c65-3e263988f90d.jpg?1783906518",
     "back_image": "",
-    "price_usd": 0.57,
-    "price_foil": 0.65,
+    "price_usd": 0.56,
+    "price_foil": 0.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/364/summon:-anima?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.31,
-    "price_eur_foil": 0.61
+    "price_eur": 0.28,
+    "price_eur_foil": 0.64
   },
   {
     "id": "d8117e64-6e43-4aa8-90df-c5b21fbb9182",
@@ -45870,16 +45870,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/8/d8117e64-6e43-4aa8-90df-c5b21fbb9182.jpg?1783906518",
     "image_large": "https://cards.scryfall.io/large/front/d/8/d8117e64-6e43-4aa8-90df-c5b21fbb9182.jpg?1783906518",
     "back_image": "",
-    "price_usd": 8.04,
-    "price_foil": 11.47,
+    "price_usd": 9.1,
+    "price_foil": 11.0,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/365/summon:-primal-odin?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 5.93,
-    "price_eur_foil": 9.16
+    "price_eur": 5.81,
+    "price_eur_foil": 9.04
   },
   {
     "id": "fac98745-a30e-4f64-be21-302c0d73d4f7",
@@ -45917,16 +45917,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/a/fac98745-a30e-4f64-be21-302c0d73d4f7.jpg?1783906517",
     "image_large": "https://cards.scryfall.io/large/front/f/a/fac98745-a30e-4f64-be21-302c0d73d4f7.jpg?1783906517",
     "back_image": "",
-    "price_usd": 1.79,
-    "price_foil": 2.49,
+    "price_usd": 2.12,
+    "price_foil": 2.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/366/summon:-brynhildr?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.56,
-    "price_eur_foil": 3.25
+    "price_eur": 1.61,
+    "price_eur_foil": 2.89
   },
   {
     "id": "a6edb808-9753-4029-81ed-60a91ebc1d77",
@@ -45964,16 +45964,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/6/a6edb808-9753-4029-81ed-60a91ebc1d77.jpg?1783906518",
     "image_large": "https://cards.scryfall.io/large/front/a/6/a6edb808-9753-4029-81ed-60a91ebc1d77.jpg?1783906518",
     "back_image": "",
-    "price_usd": 0.31,
-    "price_foil": 0.45,
+    "price_usd": 0.33,
+    "price_foil": 0.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/367/summon:-esper-ramuh?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.28,
-    "price_eur_foil": 0.48
+    "price_eur": 0.23,
+    "price_eur_foil": 0.51
   },
   {
     "id": "a5ad1e50-2bf1-4f43-9da4-62a89b521206",
@@ -46011,16 +46011,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/5/a5ad1e50-2bf1-4f43-9da4-62a89b521206.jpg?1783906517",
     "image_large": "https://cards.scryfall.io/large/front/a/5/a5ad1e50-2bf1-4f43-9da4-62a89b521206.jpg?1783906517",
     "back_image": "",
-    "price_usd": 1.55,
-    "price_foil": 3.67,
+    "price_usd": 2.28,
+    "price_foil": 3.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/368/summon:-gf-cerberus?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.53,
-    "price_eur_foil": 2.27
+    "price_eur": 1.3,
+    "price_eur_foil": 2.4
   },
   {
     "id": "25c3ce9a-39e5-4273-ba67-224a837b75e7",
@@ -46058,7 +46058,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/5/25c3ce9a-39e5-4273-ba67-224a837b75e7.jpg?1783906517",
     "image_large": "https://cards.scryfall.io/large/front/2/5/25c3ce9a-39e5-4273-ba67-224a837b75e7.jpg?1783906517",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.33,
     "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/369/summon:-gf-ifrit?utm_source=api",
@@ -46066,8 +46066,8 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.24,
-    "price_eur_foil": 0.46
+    "price_eur": 0.25,
+    "price_eur_foil": 0.53
   },
   {
     "id": "efbe3aa0-ddf1-4db2-ae4c-cfea7b5d09ed",
@@ -46105,16 +46105,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/f/efbe3aa0-ddf1-4db2-ae4c-cfea7b5d09ed.jpg?1783906519",
     "image_large": "https://cards.scryfall.io/large/front/e/f/efbe3aa0-ddf1-4db2-ae4c-cfea7b5d09ed.jpg?1783906519",
     "back_image": "https://cards.scryfall.io/normal/back/e/f/efbe3aa0-ddf1-4db2-ae4c-cfea7b5d09ed.jpg?1783906519",
-    "price_usd": 3.83,
-    "price_foil": 5.31,
+    "price_usd": 4.81,
+    "price_foil": 5.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/370/esper-origins-summon:-esper-maduin?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.34,
-    "price_eur_foil": 4.75
+    "price_eur": 3.66,
+    "price_eur_foil": 4.62
   },
   {
     "id": "a44ae92c-4894-4172-82b3-11e2e94653ef",
@@ -46152,16 +46152,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/4/a44ae92c-4894-4172-82b3-11e2e94653ef.jpg?1783906515",
     "image_large": "https://cards.scryfall.io/large/front/a/4/a44ae92c-4894-4172-82b3-11e2e94653ef.jpg?1783906515",
     "back_image": "",
-    "price_usd": 0.4,
-    "price_foil": 0.54,
+    "price_usd": 0.45,
+    "price_foil": 0.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/371/summon:-fat-chocobo?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.25,
-    "price_eur_foil": 0.58
+    "price_eur": 0.24,
+    "price_eur_foil": 0.56
   },
   {
     "id": "412093fb-15c1-4b36-aa53-9484f955ee2c",
@@ -46199,16 +46199,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/1/412093fb-15c1-4b36-aa53-9484f955ee2c.jpg?1783906513",
     "image_large": "https://cards.scryfall.io/large/front/4/1/412093fb-15c1-4b36-aa53-9484f955ee2c.jpg?1783906513",
     "back_image": "",
-    "price_usd": 2.33,
-    "price_foil": 2.35,
+    "price_usd": 2.08,
+    "price_foil": 2.05,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/372/summon:-fenrir?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.32,
-    "price_eur_foil": 1.33
+    "price_eur": 1.27,
+    "price_eur_foil": 1.46
   },
   {
     "id": "e5881485-7935-427e-911e-843f198d94dc",
@@ -46246,16 +46246,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e5881485-7935-427e-911e-843f198d94dc.jpg?1783906513",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e5881485-7935-427e-911e-843f198d94dc.jpg?1783906513",
     "back_image": "",
-    "price_usd": 6.73,
-    "price_foil": 7.29,
+    "price_usd": 6.9,
+    "price_foil": 7.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/373/summon:-titan?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.77,
-    "price_eur_foil": 5.61
+    "price_eur": 3.94,
+    "price_eur_foil": 5.78
   },
   {
     "id": "fa316d6e-9ea7-4496-a3f3-5023a6952473",
@@ -46293,16 +46293,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/a/fa316d6e-9ea7-4496-a3f3-5023a6952473.jpg?1783906513",
     "image_large": "https://cards.scryfall.io/large/front/f/a/fa316d6e-9ea7-4496-a3f3-5023a6952473.jpg?1783906513",
     "back_image": "",
-    "price_usd": 9.89,
-    "price_foil": 14.21,
+    "price_usd": 10.5,
+    "price_foil": 13.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/374/aerith-gainsborough?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 7.05,
-    "price_eur_foil": 11.43
+    "price_eur": 6.79,
+    "price_eur_foil": 10.93
   },
   {
     "id": "5d8690ec-fded-4801-8eaf-5e5fe3d444ec",
@@ -46340,16 +46340,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/d/5d8690ec-fded-4801-8eaf-5e5fe3d444ec.jpg?1783906513",
     "image_large": "https://cards.scryfall.io/large/front/5/d/5d8690ec-fded-4801-8eaf-5e5fe3d444ec.jpg?1783906513",
     "back_image": "",
-    "price_usd": 39.64,
-    "price_foil": 64.11,
+    "price_usd": 38.01,
+    "price_foil": 63.76,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/375/cloud-midgar-mercenary?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 44.96,
-    "price_eur_foil": 67.58
+    "price_eur": 43.4,
+    "price_eur_foil": 65.09
   },
   {
     "id": "f2309a7e-4ba0-4820-8313-ecd38d32a55f",
@@ -46387,16 +46387,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/2/f2309a7e-4ba0-4820-8313-ecd38d32a55f.jpg?1783906517",
     "image_large": "https://cards.scryfall.io/large/front/f/2/f2309a7e-4ba0-4820-8313-ecd38d32a55f.jpg?1783906517",
     "back_image": "https://cards.scryfall.io/normal/back/f/2/f2309a7e-4ba0-4820-8313-ecd38d32a55f.jpg?1783906517",
-    "price_usd": 4.4,
-    "price_foil": 6.06,
+    "price_usd": 4.69,
+    "price_foil": 5.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/376/dion-bahamuts-dominant-bahamut-warden-of-light?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.81,
-    "price_eur_foil": 5.85
+    "price_eur": 4.22,
+    "price_eur_foil": 6.03
   },
   {
     "id": "054e180d-4e66-426d-adb5-a4fee94b6a67",
@@ -46434,16 +46434,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/5/054e180d-4e66-426d-adb5-a4fee94b6a67.jpg?1783906512",
     "image_large": "https://cards.scryfall.io/large/front/0/5/054e180d-4e66-426d-adb5-a4fee94b6a67.jpg?1783906512",
     "back_image": "",
-    "price_usd": 8.72,
-    "price_foil": 11.91,
+    "price_usd": 9.01,
+    "price_foil": 11.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/377/gogo-master-of-mimicry?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 7.63,
-    "price_eur_foil": 10.33
+    "price_eur": 6.46,
+    "price_eur_foil": 10.49
   },
   {
     "id": "8b67055b-4a0a-4a16-9c83-d493c36fce01",
@@ -46481,16 +46481,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/b/8b67055b-4a0a-4a16-9c83-d493c36fce01.jpg?1783906516",
     "image_large": "https://cards.scryfall.io/large/front/8/b/8b67055b-4a0a-4a16-9c83-d493c36fce01.jpg?1783906516",
     "back_image": "https://cards.scryfall.io/normal/back/8/b/8b67055b-4a0a-4a16-9c83-d493c36fce01.jpg?1783906516",
-    "price_usd": 3.93,
-    "price_foil": 5.0,
+    "price_usd": 3.66,
+    "price_foil": 5.19,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/378/jill-shivas-dominant-shiva-warden-of-ice?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.69,
-    "price_eur_foil": 5.18
+    "price_eur": 3.76,
+    "price_eur_foil": 5.04
   },
   {
     "id": "35090ce1-6fb4-438c-88e9-dd116d550a92",
@@ -46528,16 +46528,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/5/35090ce1-6fb4-438c-88e9-dd116d550a92.jpg?1783906511",
     "image_large": "https://cards.scryfall.io/large/front/3/5/35090ce1-6fb4-438c-88e9-dd116d550a92.jpg?1783906511",
     "back_image": "",
-    "price_usd": 1.88,
-    "price_foil": 2.63,
+    "price_usd": 1.53,
+    "price_foil": 2.66,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/379/ardyn-the-usurper?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.98,
-    "price_eur_foil": 2.96
+    "price_eur": 1.93,
+    "price_eur_foil": 3.02
   },
   {
     "id": "d8c5c414-c7a0-489b-9cb8-1b910aa89b8e",
@@ -46575,16 +46575,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/8/d8c5c414-c7a0-489b-9cb8-1b910aa89b8e.jpg?1783906516",
     "image_large": "https://cards.scryfall.io/large/front/d/8/d8c5c414-c7a0-489b-9cb8-1b910aa89b8e.jpg?1783906516",
     "back_image": "https://cards.scryfall.io/normal/back/d/8/d8c5c414-c7a0-489b-9cb8-1b910aa89b8e.jpg?1783906516",
-    "price_usd": 3.81,
-    "price_foil": 4.56,
+    "price_usd": 3.73,
+    "price_foil": 4.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/380/cecil-dark-knight-cecil-redeemed-paladin?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.27,
-    "price_eur_foil": 4.46
+    "price_eur": 3.45,
+    "price_eur_foil": 4.5
   },
   {
     "id": "dca1a706-9eee-4d75-80ee-fa12257908e3",
@@ -46622,16 +46622,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/c/dca1a706-9eee-4d75-80ee-fa12257908e3.jpg?1783906510",
     "image_large": "https://cards.scryfall.io/large/front/d/c/dca1a706-9eee-4d75-80ee-fa12257908e3.jpg?1783906510",
     "back_image": "",
-    "price_usd": 2.07,
-    "price_foil": 0.52,
+    "price_usd": 0.8,
+    "price_foil": 0.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/381/fang-fearless-lcie?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.21,
-    "price_eur_foil": 0.77
+    "price_eur": 0.39,
+    "price_eur_foil": 0.65
   },
   {
     "id": "0f40e47b-32ed-4846-92b3-cc54e89368fe",
@@ -46716,16 +46716,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/1/f150d6e9-3da6-4655-9c63-dd34525d08a1.jpg?1783906514",
     "image_large": "https://cards.scryfall.io/large/front/f/1/f150d6e9-3da6-4655-9c63-dd34525d08a1.jpg?1783906514",
     "back_image": "https://cards.scryfall.io/normal/back/f/1/f150d6e9-3da6-4655-9c63-dd34525d08a1.jpg?1783906514",
-    "price_usd": 65.24,
-    "price_foil": 114.09,
+    "price_usd": 61.96,
+    "price_foil": 112.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/382/sephiroth-fabled-soldier-sephiroth-one-winged-angel?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 52.35,
-    "price_eur_foil": 94.31
+    "price_eur": 53.46,
+    "price_eur_foil": 94.6
   },
   {
     "id": "221efaa7-ba6e-4f6e-99d1-e258b91091f7",
@@ -46763,16 +46763,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/2/221efaa7-ba6e-4f6e-99d1-e258b91091f7.jpg?1783906515",
     "image_large": "https://cards.scryfall.io/large/front/2/2/221efaa7-ba6e-4f6e-99d1-e258b91091f7.jpg?1783906515",
     "back_image": "https://cards.scryfall.io/normal/back/2/2/221efaa7-ba6e-4f6e-99d1-e258b91091f7.jpg?1783906515",
-    "price_usd": 8.06,
-    "price_foil": 9.4,
+    "price_usd": 8.57,
+    "price_foil": 9.48,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/383/vincent-valentine-galian-beast?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 5.08,
-    "price_eur_foil": 8.96
+    "price_eur": 5.4,
+    "price_eur_foil": 12.96
   },
   {
     "id": "59fc74c0-9a97-44d5-a62e-a2b68880cfac",
@@ -46810,16 +46810,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/59fc74c0-9a97-44d5-a62e-a2b68880cfac.jpg?1783906513",
     "image_large": "https://cards.scryfall.io/large/front/5/9/59fc74c0-9a97-44d5-a62e-a2b68880cfac.jpg?1783906513",
     "back_image": "https://cards.scryfall.io/normal/back/5/9/59fc74c0-9a97-44d5-a62e-a2b68880cfac.jpg?1783906513",
-    "price_usd": 4.23,
-    "price_foil": 5.83,
+    "price_usd": 4.68,
+    "price_foil": 6.11,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/384/zenos-yae-galvus-shinryu-transcendent-rival?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.77,
-    "price_eur_foil": 5.67
+    "price_eur": 3.6,
+    "price_eur_foil": 6.44
   },
   {
     "id": "faf87bad-253a-4c7a-9dd5-c575cb27db9f",
@@ -46857,16 +46857,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/a/faf87bad-253a-4c7a-9dd5-c575cb27db9f.jpg?1783906514",
     "image_large": "https://cards.scryfall.io/large/front/f/a/faf87bad-253a-4c7a-9dd5-c575cb27db9f.jpg?1783906514",
     "back_image": "https://cards.scryfall.io/normal/back/f/a/faf87bad-253a-4c7a-9dd5-c575cb27db9f.jpg?1783906514",
-    "price_usd": 10.23,
-    "price_foil": 13.74,
+    "price_usd": 10.85,
+    "price_foil": 13.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/385/clive-ifrits-dominant-ifrit-warden-of-inferno?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 11.02,
-    "price_eur_foil": 11.8
+    "price_eur": 11.18,
+    "price_eur_foil": 11.74
   },
   {
     "id": "8f1cb5a5-2f52-4a9d-a4fe-9603116b7ad5",
@@ -46904,16 +46904,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8f1cb5a5-2f52-4a9d-a4fe-9603116b7ad5.jpg?1783906507",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8f1cb5a5-2f52-4a9d-a4fe-9603116b7ad5.jpg?1783906507",
     "back_image": "",
-    "price_usd": 3.07,
-    "price_foil": 3.51,
+    "price_usd": 3.32,
+    "price_foil": 3.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/386/firion-wild-rose-warrior?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.74,
-    "price_eur_foil": 3.94
+    "price_eur": 2.7,
+    "price_eur_foil": 3.78
   },
   {
     "id": "d8f9b257-6491-46d2-be41-846ab4c39d5e",
@@ -46951,16 +46951,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/8/d8f9b257-6491-46d2-be41-846ab4c39d5e.jpg?1783906506",
     "image_large": "https://cards.scryfall.io/large/front/d/8/d8f9b257-6491-46d2-be41-846ab4c39d5e.jpg?1783906506",
     "back_image": "",
-    "price_usd": 0.33,
-    "price_foil": 0.35,
+    "price_usd": 0.3,
+    "price_foil": 0.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/387/prompto-argentum?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.25,
-    "price_eur_foil": 0.47
+    "price_eur": 0.24,
+    "price_eur_foil": 0.45
   },
   {
     "id": "90ee46cc-12fc-499f-8c13-a289d5fdbaba",
@@ -46998,16 +46998,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/0/90ee46cc-12fc-499f-8c13-a289d5fdbaba.jpg?1783906506",
     "image_large": "https://cards.scryfall.io/large/front/9/0/90ee46cc-12fc-499f-8c13-a289d5fdbaba.jpg?1783906506",
     "back_image": "",
-    "price_usd": 1.52,
-    "price_foil": 1.69,
+    "price_usd": 1.64,
+    "price_foil": 1.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/388/raubahn-bull-of-ala-mhigo?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.98,
-    "price_eur_foil": 2.0
+    "price_eur": 1.12,
+    "price_eur_foil": 2.09
   },
   {
     "id": "e0863980-7f20-4af0-8a5a-5504b2419f64",
@@ -47046,15 +47046,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/0/e0863980-7f20-4af0-8a5a-5504b2419f64.jpg?1783906506",
     "back_image": "",
     "price_usd": 1.0,
-    "price_foil": 1.36,
+    "price_foil": 1.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/389/seifer-almasy?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.99,
-    "price_eur_foil": 1.54
+    "price_eur": 1.03,
+    "price_eur_foil": 1.75
   },
   {
     "id": "6db5c3de-eb63-40f1-a721-9f2de47ea59e",
@@ -47092,16 +47092,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/d/6db5c3de-eb63-40f1-a721-9f2de47ea59e.jpg?1783906505",
     "image_large": "https://cards.scryfall.io/large/front/6/d/6db5c3de-eb63-40f1-a721-9f2de47ea59e.jpg?1783906505",
     "back_image": "",
-    "price_usd": 1.02,
-    "price_foil": 1.38,
+    "price_usd": 1.1,
+    "price_foil": 1.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/390/vaan-street-thief?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.56,
-    "price_eur_foil": 1.63
+    "price_eur": 1.42,
+    "price_eur_foil": 1.82
   },
   {
     "id": "d402d825-4c2c-46db-b16b-5df583bc5f83",
@@ -47139,16 +47139,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/4/d402d825-4c2c-46db-b16b-5df583bc5f83.jpg?1783906508",
     "image_large": "https://cards.scryfall.io/large/front/d/4/d402d825-4c2c-46db-b16b-5df583bc5f83.jpg?1783906508",
     "back_image": "",
-    "price_usd": 13.58,
-    "price_foil": 17.63,
+    "price_usd": 13.78,
+    "price_foil": 17.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/391/tifa-lockhart?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 10.0,
-    "price_eur_foil": 15.51
+    "price_eur": 9.41,
+    "price_eur_foil": 16.42
   },
   {
     "id": "28cdd11b-7337-4696-b2a0-77236c7b7210",
@@ -47186,16 +47186,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/8/28cdd11b-7337-4696-b2a0-77236c7b7210.jpg?1783906505",
     "image_large": "https://cards.scryfall.io/large/front/2/8/28cdd11b-7337-4696-b2a0-77236c7b7210.jpg?1783906505",
     "back_image": "",
-    "price_usd": 0.43,
-    "price_foil": 0.68,
+    "price_usd": 0.46,
+    "price_foil": 0.67,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/392/vanille-cheerful-lcie?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.32,
-    "price_eur_foil": 0.76
+    "price_eur": 0.36,
+    "price_eur_foil": 0.61
   },
   {
     "id": "c8198264-150f-4f95-9de1-cbc7fa456535",
@@ -47233,16 +47233,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/8/c8198264-150f-4f95-9de1-cbc7fa456535.jpg?1783906503",
     "image_large": "https://cards.scryfall.io/large/front/c/8/c8198264-150f-4f95-9de1-cbc7fa456535.jpg?1783906503",
     "back_image": "",
-    "price_usd": 1.33,
-    "price_foil": 1.42,
+    "price_usd": 1.23,
+    "price_foil": 1.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/393/balthier-and-fran?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.94,
-    "price_eur_foil": 1.99
+    "price_eur": 1.33,
+    "price_eur_foil": 2.21
   },
   {
     "id": "fd537047-d997-4ee1-b259-3ed54b7c5576",
@@ -47280,16 +47280,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/d/fd537047-d997-4ee1-b259-3ed54b7c5576.jpg?1783906508",
     "image_large": "https://cards.scryfall.io/large/front/f/d/fd537047-d997-4ee1-b259-3ed54b7c5576.jpg?1783906508",
     "back_image": "https://cards.scryfall.io/normal/back/f/d/fd537047-d997-4ee1-b259-3ed54b7c5576.jpg?1783906508",
-    "price_usd": 8.78,
-    "price_foil": 10.42,
+    "price_usd": 8.56,
+    "price_foil": 10.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/394/emet-selch-unsundered-hades-sorcerer-of-eld?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 8.27,
-    "price_eur_foil": 10.99
+    "price_eur": 8.82,
+    "price_eur_foil": 10.9
   },
   {
     "id": "95822b03-a49b-4a77-a257-fe0527088177",
@@ -47327,16 +47327,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/5/95822b03-a49b-4a77-a257-fe0527088177.jpg?1783906503",
     "image_large": "https://cards.scryfall.io/large/front/9/5/95822b03-a49b-4a77-a257-fe0527088177.jpg?1783906503",
     "back_image": "",
-    "price_usd": 3.5,
-    "price_foil": 5.3,
+    "price_usd": 3.52,
+    "price_foil": 5.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/395/golbez-crystal-collector?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.21,
-    "price_eur_foil": 5.17
+    "price_eur": 3.25,
+    "price_eur_foil": 4.98
   },
   {
     "id": "5b1fd4c8-7de6-47cb-916a-513d04774f01",
@@ -47374,16 +47374,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/b/5b1fd4c8-7de6-47cb-916a-513d04774f01.jpg?1783906503",
     "image_large": "https://cards.scryfall.io/large/front/5/b/5b1fd4c8-7de6-47cb-916a-513d04774f01.jpg?1783906503",
     "back_image": "",
-    "price_usd": 1.65,
-    "price_foil": 3.64,
+    "price_usd": 2.27,
+    "price_foil": 3.67,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/396/hope-estheim?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 2.05,
-    "price_eur_foil": 3.55
+    "price_eur": 2.35,
+    "price_eur_foil": 3.56
   },
   {
     "id": "04dd9ad9-eab2-447c-b065-078a0b184519",
@@ -47421,16 +47421,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/4/04dd9ad9-eab2-447c-b065-078a0b184519.jpg?1783906508",
     "image_large": "https://cards.scryfall.io/large/front/0/4/04dd9ad9-eab2-447c-b065-078a0b184519.jpg?1783906508",
     "back_image": "https://cards.scryfall.io/normal/back/0/4/04dd9ad9-eab2-447c-b065-078a0b184519.jpg?1783906508",
-    "price_usd": 5.62,
-    "price_foil": 6.82,
+    "price_usd": 5.55,
+    "price_foil": 6.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/397/joshua-phoenixs-dominant-phoenix-warden-of-fire?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.56,
-    "price_eur_foil": 5.03
+    "price_eur": 5.15,
+    "price_eur_foil": 4.86
   },
   {
     "id": "53756218-bcdb-498a-8c61-654183153487",
@@ -47468,16 +47468,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/3/53756218-bcdb-498a-8c61-654183153487.jpg?1783906509",
     "image_large": "https://cards.scryfall.io/large/front/5/3/53756218-bcdb-498a-8c61-654183153487.jpg?1783906509",
     "back_image": "https://cards.scryfall.io/normal/back/5/3/53756218-bcdb-498a-8c61-654183153487.jpg?1783906509",
-    "price_usd": 18.83,
-    "price_foil": 27.62,
+    "price_usd": 19.12,
+    "price_foil": 27.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/398/kefka-court-mage-kefka-ruler-of-ruin?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 14.7,
-    "price_eur_foil": 20.17
+    "price_eur": 14.32,
+    "price_eur_foil": 20.48
   },
   {
     "id": "374877d1-167a-42ea-adf3-a707ea0300e8",
@@ -47515,16 +47515,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/7/374877d1-167a-42ea-adf3-a707ea0300e8.jpg?1783906507",
     "image_large": "https://cards.scryfall.io/large/front/3/7/374877d1-167a-42ea-adf3-a707ea0300e8.jpg?1783906507",
     "back_image": "https://cards.scryfall.io/normal/back/3/7/374877d1-167a-42ea-adf3-a707ea0300e8.jpg?1783906507",
-    "price_usd": 4.79,
-    "price_foil": 5.41,
+    "price_usd": 4.7,
+    "price_foil": 6.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/399/kuja-genome-sorcerer-trance-kuja-fate-defied?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 4.19,
-    "price_eur_foil": 6.65
+    "price_eur": 4.28,
+    "price_eur_foil": 6.88
   },
   {
     "id": "45cb2a76-7d12-41e6-93c7-09922934699c",
@@ -47562,16 +47562,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/5/45cb2a76-7d12-41e6-93c7-09922934699c.jpg?1783906501",
     "image_large": "https://cards.scryfall.io/large/front/4/5/45cb2a76-7d12-41e6-93c7-09922934699c.jpg?1783906501",
     "back_image": "",
-    "price_usd": 25.54,
-    "price_foil": 30.03,
+    "price_usd": 25.67,
+    "price_foil": 30.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/400/lightning-army-of-one?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 19.61,
-    "price_eur_foil": 32.62
+    "price_eur": 19.31,
+    "price_eur_foil": 28.15
   },
   {
     "id": "8d61fe60-0318-4362-8cea-7c6499b8ca70",
@@ -47609,16 +47609,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/d/8d61fe60-0318-4362-8cea-7c6499b8ca70.jpg?1783906501",
     "image_large": "https://cards.scryfall.io/large/front/8/d/8d61fe60-0318-4362-8cea-7c6499b8ca70.jpg?1783906501",
     "back_image": "",
-    "price_usd": 2.8,
-    "price_foil": 4.19,
+    "price_usd": 2.6,
+    "price_foil": 3.84,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/401/noctis-prince-of-lucis?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.63,
-    "price_eur_foil": 3.21
+    "price_eur": 3.22,
+    "price_eur_foil": 3.47
   },
   {
     "id": "883c6111-c921-4cd6-930d-4fa335ef2871",
@@ -47656,16 +47656,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/8/883c6111-c921-4cd6-930d-4fa335ef2871.jpg?1783906500",
     "image_large": "https://cards.scryfall.io/large/front/8/8/883c6111-c921-4cd6-930d-4fa335ef2871.jpg?1783906500",
     "back_image": "",
-    "price_usd": 4.88,
-    "price_foil": 7.83,
+    "price_usd": 5.41,
+    "price_foil": 7.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/402/squall-seed-mercenary?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 3.88,
-    "price_eur_foil": 5.58
+    "price_eur": 4.49,
+    "price_eur_foil": 5.13
   },
   {
     "id": "f39b9892-9b82-4dea-bae0-e1735618341e",
@@ -47703,16 +47703,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/3/f39b9892-9b82-4dea-bae0-e1735618341e.jpg?1783906499",
     "image_large": "https://cards.scryfall.io/large/front/f/3/f39b9892-9b82-4dea-bae0-e1735618341e.jpg?1783906499",
     "back_image": "",
-    "price_usd": 2.1,
-    "price_foil": 3.56,
+    "price_usd": 2.03,
+    "price_foil": 3.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/403/the-wandering-minstrel?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1.74,
-    "price_eur_foil": 3.02
+    "price_eur": 1.84,
+    "price_eur_foil": 2.95
   },
   {
     "id": "8f861d59-f2ce-457f-99f4-48b12ae34fa2",
@@ -47750,7 +47750,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8f861d59-f2ce-457f-99f4-48b12ae34fa2.jpg?1783906499",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8f861d59-f2ce-457f-99f4-48b12ae34fa2.jpg?1783906499",
     "back_image": "",
-    "price_usd": 18.8,
+    "price_usd": 19.75,
     "price_foil": 23.84,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/404/yuna-hope-of-spira?utm_source=api",
@@ -47758,8 +47758,8 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 19.7,
-    "price_eur_foil": 26.4
+    "price_eur": 21.0,
+    "price_eur_foil": 26.25
   },
   {
     "id": "8dca28e1-21f1-4ed7-b294-df2e0c5c9503",
@@ -47797,7 +47797,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/d/8dca28e1-21f1-4ed7-b294-df2e0c5c9503.jpg?1783906499",
     "image_large": "https://cards.scryfall.io/large/front/8/d/8dca28e1-21f1-4ed7-b294-df2e0c5c9503.jpg?1783906499",
     "back_image": "",
-    "price_usd": 0.38,
+    "price_usd": 0.36,
     "price_foil": 0.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/405/zidane-tantalus-thief?utm_source=api",
@@ -47805,8 +47805,8 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 0.47,
-    "price_eur_foil": 0.59
+    "price_eur": 0.33,
+    "price_eur_foil": 0.52
   },
   {
     "id": "28ce1dbc-508c-4d09-8e44-37bf5ebfdc8f",
@@ -47844,16 +47844,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/8/28ce1dbc-508c-4d09-8e44-37bf5ebfdc8f.jpg?1783906500",
     "image_large": "https://cards.scryfall.io/large/front/2/8/28ce1dbc-508c-4d09-8e44-37bf5ebfdc8f.jpg?1783906500",
     "back_image": "",
-    "price_usd": 31.33,
-    "price_foil": 44.61,
+    "price_usd": 31.49,
+    "price_foil": 44.99,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/406/traveling-chocobo?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 31.97,
-    "price_eur_foil": 52.56
+    "price_eur": 31.75,
+    "price_eur_foil": 54.31
   },
   {
     "id": "a3e8d94e-050b-4571-ae12-1e80e6b63611",
@@ -47890,16 +47890,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/3/a3e8d94e-050b-4571-ae12-1e80e6b63611.jpg?1783906500",
     "image_large": "https://cards.scryfall.io/large/front/a/3/a3e8d94e-050b-4571-ae12-1e80e6b63611.jpg?1783906500",
     "back_image": "",
-    "price_usd": 3.95,
-    "price_foil": 6.0,
+    "price_usd": 3.13,
+    "price_foil": 6.1,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/407/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.83,
-    "price_eur_foil": 5.73
+    "price_eur": 3.35,
+    "price_eur_foil": 5.53
   },
   {
     "id": "a9801368-263b-4515-9027-4f1827e7214c",
@@ -47936,16 +47936,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/9/a9801368-263b-4515-9027-4f1827e7214c.jpg?1783906498",
     "image_large": "https://cards.scryfall.io/large/front/a/9/a9801368-263b-4515-9027-4f1827e7214c.jpg?1783906498",
     "back_image": "",
-    "price_usd": 3.44,
-    "price_foil": 6.71,
+    "price_usd": 3.35,
+    "price_foil": 6.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/408/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.06,
-    "price_eur_foil": 6.55
+    "price_eur": 3.63,
+    "price_eur_foil": 6.85
   },
   {
     "id": "2bbab097-acb3-480d-a433-e4f81dde62e4",
@@ -47982,16 +47982,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/b/2bbab097-acb3-480d-a433-e4f81dde62e4.jpg?1783906498",
     "image_large": "https://cards.scryfall.io/large/front/2/b/2bbab097-acb3-480d-a433-e4f81dde62e4.jpg?1783906498",
     "back_image": "",
-    "price_usd": 3.67,
-    "price_foil": 8.3,
+    "price_usd": 3.68,
+    "price_foil": 8.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/409/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.6,
-    "price_eur_foil": 5.32
+    "price_eur": 2.7,
+    "price_eur_foil": 5.68
   },
   {
     "id": "fc4d240f-8920-4f8d-82a2-4cd4da93d6fb",
@@ -48028,16 +48028,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fc4d240f-8920-4f8d-82a2-4cd4da93d6fb.jpg?1783906498",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fc4d240f-8920-4f8d-82a2-4cd4da93d6fb.jpg?1783906498",
     "back_image": "",
-    "price_usd": 2.93,
-    "price_foil": 8.21,
+    "price_usd": 3.13,
+    "price_foil": 8.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/410/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.68,
-    "price_eur_foil": 5.15
+    "price_eur": 3.08,
+    "price_eur_foil": 4.93
   },
   {
     "id": "8200a5e1-0c8b-45a4-b468-03e5067e9f81",
@@ -48074,16 +48074,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/2/8200a5e1-0c8b-45a4-b468-03e5067e9f81.jpg?1783906497",
     "image_large": "https://cards.scryfall.io/large/front/8/2/8200a5e1-0c8b-45a4-b468-03e5067e9f81.jpg?1783906497",
     "back_image": "",
-    "price_usd": 3.61,
-    "price_foil": 7.61,
+    "price_usd": 3.68,
+    "price_foil": 7.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/411/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.83,
-    "price_eur_foil": 5.62
+    "price_eur": 2.7,
+    "price_eur_foil": 7.16
   },
   {
     "id": "5a9b1404-3061-4979-81eb-e056bc212205",
@@ -48120,7 +48120,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/a/5a9b1404-3061-4979-81eb-e056bc212205.jpg?1783906497",
     "image_large": "https://cards.scryfall.io/large/front/5/a/5a9b1404-3061-4979-81eb-e056bc212205.jpg?1783906497",
     "back_image": "",
-    "price_usd": 4.3,
+    "price_usd": 4.29,
     "price_foil": 14.53,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/412/cid-timeless-artificer?utm_source=api",
@@ -48128,8 +48128,8 @@ const CARDS_DATA = [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.96,
-    "price_eur_foil": 10.59
+    "price_eur": 4.07,
+    "price_eur_foil": 10.57
   },
   {
     "id": "cc027995-3d7c-4283-9e0e-eaef5727f2b8",
@@ -48166,16 +48166,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/c/cc027995-3d7c-4283-9e0e-eaef5727f2b8.jpg?1783906497",
     "image_large": "https://cards.scryfall.io/large/front/c/c/cc027995-3d7c-4283-9e0e-eaef5727f2b8.jpg?1783906497",
     "back_image": "",
-    "price_usd": 3.4,
-    "price_foil": 7.99,
+    "price_usd": 3.53,
+    "price_foil": 7.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/413/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.12,
-    "price_eur_foil": 6.68
+    "price_eur": 3.42,
+    "price_eur_foil": 6.8
   },
   {
     "id": "4bd892ea-b5bc-4b57-b317-741113381b50",
@@ -48212,16 +48212,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/b/4bd892ea-b5bc-4b57-b317-741113381b50.jpg?1783906497",
     "image_large": "https://cards.scryfall.io/large/front/4/b/4bd892ea-b5bc-4b57-b317-741113381b50.jpg?1783906497",
     "back_image": "",
-    "price_usd": 3.34,
-    "price_foil": 6.66,
+    "price_usd": 3.59,
+    "price_foil": 6.77,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/414/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.2,
-    "price_eur_foil": 7.97
+    "price_eur": 3.81,
+    "price_eur_foil": 7.84
   },
   {
     "id": "b6776f23-5f5b-4f0a-a00c-1ca8f03ffc5f",
@@ -48258,16 +48258,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/6/b6776f23-5f5b-4f0a-a00c-1ca8f03ffc5f.jpg?1783906496",
     "image_large": "https://cards.scryfall.io/large/front/b/6/b6776f23-5f5b-4f0a-a00c-1ca8f03ffc5f.jpg?1783906496",
     "back_image": "",
-    "price_usd": 3.83,
-    "price_foil": 9.23,
+    "price_usd": 4.27,
+    "price_foil": 9.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/415/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.67,
-    "price_eur_foil": 5.72
+    "price_eur": 3.32,
+    "price_eur_foil": 6.62
   },
   {
     "id": "e564eda2-36dd-4f44-b84b-d0c18a9bdb1e",
@@ -48304,16 +48304,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e564eda2-36dd-4f44-b84b-d0c18a9bdb1e.jpg?1783906496",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e564eda2-36dd-4f44-b84b-d0c18a9bdb1e.jpg?1783906496",
     "back_image": "",
-    "price_usd": 3.45,
-    "price_foil": 4.88,
+    "price_usd": 3.42,
+    "price_foil": 5.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/416/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.25,
-    "price_eur_foil": 5.14
+    "price_eur": 3.2,
+    "price_eur_foil": 4.96
   },
   {
     "id": "3952bbbb-6fe4-4d13-8825-e93df1d048e9",
@@ -48350,16 +48350,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/9/3952bbbb-6fe4-4d13-8825-e93df1d048e9.jpg?1783906495",
     "image_large": "https://cards.scryfall.io/large/front/3/9/3952bbbb-6fe4-4d13-8825-e93df1d048e9.jpg?1783906495",
     "back_image": "",
-    "price_usd": 3.9,
-    "price_foil": 10.07,
+    "price_usd": 3.98,
+    "price_foil": 10.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/417/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.05,
-    "price_eur_foil": 6.7
+    "price_eur": 3.39,
+    "price_eur_foil": 6.63
   },
   {
     "id": "0148fa7c-b6d6-458c-8cdd-a6c4e6dd4e59",
@@ -48396,16 +48396,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/1/0148fa7c-b6d6-458c-8cdd-a6c4e6dd4e59.jpg?1785650681",
     "image_large": "https://cards.scryfall.io/large/front/0/1/0148fa7c-b6d6-458c-8cdd-a6c4e6dd4e59.jpg?1785650681",
     "back_image": "",
-    "price_usd": 3.45,
-    "price_foil": 8.14,
+    "price_usd": 3.84,
+    "price_foil": 8.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/418/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.02,
-    "price_eur_foil": 6.6
+    "price_eur": 3.14,
+    "price_eur_foil": 6.72
   },
   {
     "id": "7d8b2dfc-ecaf-403b-932f-a5efc8b713e6",
@@ -48442,16 +48442,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/d/7d8b2dfc-ecaf-403b-932f-a5efc8b713e6.jpg?1783906493",
     "image_large": "https://cards.scryfall.io/large/front/7/d/7d8b2dfc-ecaf-403b-932f-a5efc8b713e6.jpg?1783906493",
     "back_image": "",
-    "price_usd": 3.36,
-    "price_foil": 9.92,
+    "price_usd": 3.76,
+    "price_foil": 9.85,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/419/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 2.94,
-    "price_eur_foil": 5.94
+    "price_eur": 2.61,
+    "price_eur_foil": 6.1
   },
   {
     "id": "2c1b48ba-b158-4b9d-802c-5cbfdf96dca5",
@@ -48488,16 +48488,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/c/2c1b48ba-b158-4b9d-802c-5cbfdf96dca5.jpg?1783906493",
     "image_large": "https://cards.scryfall.io/large/front/2/c/2c1b48ba-b158-4b9d-802c-5cbfdf96dca5.jpg?1783906493",
     "back_image": "",
-    "price_usd": 4.95,
-    "price_foil": 11.65,
+    "price_usd": 5.02,
+    "price_foil": 11.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/420/cid-timeless-artificer?utm_source=api",
     "treatments": [
       "Default",
       "Traditional Foil"
     ],
-    "price_eur": 3.73,
-    "price_eur_foil": 8.21
+    "price_eur": 3.43,
+    "price_eur_foil": 9.0
   },
   {
     "id": "e6e27054-03e1-424e-92d8-6e77d7683d79",
@@ -48535,7 +48535,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/6/e6e27054-03e1-424e-92d8-6e77d7683d79.jpg?1785650773",
     "image_large": "https://cards.scryfall.io/large/front/e/6/e6e27054-03e1-424e-92d8-6e77d7683d79.jpg?1785650773",
     "back_image": "",
-    "price_usd": 3.47,
+    "price_usd": 3.39,
     "price_foil": 22.92,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/421/ultima-origin-of-oblivion?utm_source=api",
@@ -48543,8 +48543,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.31,
-    "price_eur_foil": 15.2
+    "price_eur": 2.27,
+    "price_eur_foil": 14.86
   },
   {
     "id": "817ffbb6-5e7c-4498-af65-9e3d0cc5bcd6",
@@ -48582,15 +48582,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/1/817ffbb6-5e7c-4498-af65-9e3d0cc5bcd6.jpg?1783906493",
     "image_large": "https://cards.scryfall.io/large/front/8/1/817ffbb6-5e7c-4498-af65-9e3d0cc5bcd6.jpg?1783906493",
     "back_image": "",
-    "price_usd": 1.76,
-    "price_foil": 15.04,
+    "price_usd": 1.86,
+    "price_foil": 15.08,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/422/adelbert-steiner?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.62,
+    "price_eur": 1.6,
     "price_eur_foil": 9.36
   },
   {
@@ -48629,15 +48629,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/a/6a1796e1-30c5-4e55-bec8-7013512606b0.jpg?1783906493",
     "image_large": "https://cards.scryfall.io/large/front/6/a/6a1796e1-30c5-4e55-bec8-7013512606b0.jpg?1783906493",
     "back_image": "",
-    "price_usd": 6.2,
-    "price_foil": 37.85,
+    "price_usd": 5.81,
+    "price_foil": 38.08,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/423/aerith-gainsborough?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.34,
+    "price_eur": 4.88,
     "price_eur_foil": 24.26
   },
   {
@@ -48676,7 +48676,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/c/fcd2f288-9d05-465a-bb3e-2a444a027096.jpg?1783906494",
     "image_large": "https://cards.scryfall.io/large/front/f/c/fcd2f288-9d05-465a-bb3e-2a444a027096.jpg?1783906494",
     "back_image": "",
-    "price_usd": 0.86,
+    "price_usd": 0.9,
     "price_foil": 7.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/424/ambrosia-whiteheart?utm_source=api",
@@ -48723,16 +48723,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/b/9b103e50-8bac-41d4-966e-a5d42132bc12.jpg?1783906492",
     "image_large": "https://cards.scryfall.io/large/front/9/b/9b103e50-8bac-41d4-966e-a5d42132bc12.jpg?1783906492",
     "back_image": "",
-    "price_usd": 2.21,
-    "price_foil": 16.07,
+    "price_usd": 2.4,
+    "price_foil": 16.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/425/ashe-princess-of-dalmasca?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.78,
-    "price_eur_foil": 10.33
+    "price_eur": 1.82,
+    "price_eur_foil": 10.51
   },
   {
     "id": "ab1b24dd-ab23-41b0-a074-e77e8d9c5564",
@@ -48770,16 +48770,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/b/ab1b24dd-ab23-41b0-a074-e77e8d9c5564.jpg?1783906491",
     "image_large": "https://cards.scryfall.io/large/front/a/b/ab1b24dd-ab23-41b0-a074-e77e8d9c5564.jpg?1783906491",
     "back_image": "",
-    "price_usd": 6.74,
-    "price_foil": 37.42,
+    "price_usd": 6.7,
+    "price_foil": 37.9,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/426/beatrix-loyal-general?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.32,
-    "price_eur_foil": 25.31
+    "price_eur": 4.18,
+    "price_eur_foil": 25.0
   },
   {
     "id": "86fd126f-7672-4d83-93df-c61184d2fcf4",
@@ -48817,7 +48817,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/6/86fd126f-7672-4d83-93df-c61184d2fcf4.jpg?1783906491",
     "image_large": "https://cards.scryfall.io/large/front/8/6/86fd126f-7672-4d83-93df-c61184d2fcf4.jpg?1783906491",
     "back_image": "",
-    "price_usd": 31.15,
+    "price_usd": 31.06,
     "price_foil": 50.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/427/cloud-midgar-mercenary?utm_source=api",
@@ -48825,7 +48825,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 32.17,
+    "price_eur": 32.22,
     "price_eur_foil": 65.66
   },
   {
@@ -48864,15 +48864,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/8/d869c60b-3aa2-4a90-aa93-5d4c5afd1672.jpg?1783906495",
     "image_large": "https://cards.scryfall.io/large/front/d/8/d869c60b-3aa2-4a90-aa93-5d4c5afd1672.jpg?1783906495",
     "back_image": "https://cards.scryfall.io/normal/back/d/8/d869c60b-3aa2-4a90-aa93-5d4c5afd1672.jpg?1783906495",
-    "price_usd": 2.52,
-    "price_foil": 11.43,
+    "price_usd": 2.57,
+    "price_foil": 11.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/428/dion-bahamuts-dominant-bahamut-warden-of-light?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.63,
+    "price_eur": 2.0,
     "price_eur_foil": 7.57
   },
   {
@@ -48911,15 +48911,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/2/d285d6fa-b618-4558-b1e6-d148e0927cb5.jpg?1783906490",
     "image_large": "https://cards.scryfall.io/large/front/d/2/d285d6fa-b618-4558-b1e6-d148e0927cb5.jpg?1783906490",
     "back_image": "",
-    "price_usd": 0.91,
-    "price_foil": 19.87,
+    "price_usd": 0.9,
+    "price_foil": 19.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/429/graha-tia?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.68,
+    "price_eur": 0.63,
     "price_eur_foil": 6.74
   },
   {
@@ -48958,16 +48958,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/9/99ad3e31-815c-409f-8fe5-d13a3f5d2b65.jpg?1783906490",
     "image_large": "https://cards.scryfall.io/large/front/9/9/99ad3e31-815c-409f-8fe5-d13a3f5d2b65.jpg?1783906490",
     "back_image": "",
-    "price_usd": 2.18,
-    "price_foil": 10.84,
+    "price_usd": 2.07,
+    "price_foil": 11.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/430/minwu-white-mage?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.82,
-    "price_eur_foil": 7.74
+    "price_eur": 0.92,
+    "price_eur_foil": 8.01
   },
   {
     "id": "d7964800-1392-4bb8-84e2-c9f3938ceac3",
@@ -49005,16 +49005,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/7/d7964800-1392-4bb8-84e2-c9f3938ceac3.jpg?1783906490",
     "image_large": "https://cards.scryfall.io/large/front/d/7/d7964800-1392-4bb8-84e2-c9f3938ceac3.jpg?1783906490",
     "back_image": "",
-    "price_usd": 9.06,
-    "price_foil": 78.67,
+    "price_usd": 9.22,
+    "price_foil": 79.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/431/rosa-resolute-white-mage?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 5.19,
-    "price_eur_foil": 41.03
+    "price_eur": 4.88,
+    "price_eur_foil": 49.27
   },
   {
     "id": "8ff58500-479d-48d2-b84e-ff3cdb9d0154",
@@ -49052,7 +49052,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8ff58500-479d-48d2-b84e-ff3cdb9d0154.jpg?1783906488",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8ff58500-479d-48d2-b84e-ff3cdb9d0154.jpg?1783906488",
     "back_image": "",
-    "price_usd": 0.84,
+    "price_usd": 0.85,
     "price_foil": 8.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/432/snow-villiers?utm_source=api",
@@ -49060,7 +49060,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.15,
+    "price_eur": 0.99,
     "price_eur_foil": 8.68
   },
   {
@@ -49099,15 +49099,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/a/ea207686-faf2-4e60-a613-a6752a3d1ddf.jpg?1783906488",
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea207686-faf2-4e60-a613-a6752a3d1ddf.jpg?1783906488",
     "back_image": "",
-    "price_usd": 1.08,
-    "price_foil": 5.28,
+    "price_usd": 1.09,
+    "price_foil": 5.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/433/stiltzkin-moogle-merchant?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.16,
+    "price_eur": 0.95,
     "price_eur_foil": 4.89
   },
   {
@@ -49146,15 +49146,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/9/790d1050-025a-4792-8e89-24b14278eec5.jpg?1783906492",
     "image_large": "https://cards.scryfall.io/large/front/7/9/790d1050-025a-4792-8e89-24b14278eec5.jpg?1783906492",
     "back_image": "https://cards.scryfall.io/normal/back/7/9/790d1050-025a-4792-8e89-24b14278eec5.jpg?1783906492",
-    "price_usd": 3.71,
-    "price_foil": 15.17,
+    "price_usd": 4.22,
+    "price_foil": 15.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/434/venat-heart-of-hydaelyn-hydaelyn-the-mothercrystal?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.51,
+    "price_eur": 2.49,
     "price_eur_foil": 13.04
   },
   {
@@ -49193,7 +49193,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f99f3a14-3a7c-4c1c-b747-c6b1144ef1f1.jpg?1783906487",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f99f3a14-3a7c-4c1c-b747-c6b1144ef1f1.jpg?1783906487",
     "back_image": "",
-    "price_usd": 4.98,
+    "price_usd": 4.94,
     "price_foil": 47.98,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/435/zack-fair?utm_source=api",
@@ -49240,16 +49240,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/2/f28bd4d2-b2cf-48f1-ba11-956c12284550.jpg?1783906487",
     "image_large": "https://cards.scryfall.io/large/front/f/2/f28bd4d2-b2cf-48f1-ba11-956c12284550.jpg?1783906487",
     "back_image": "",
-    "price_usd": 1.21,
-    "price_foil": 10.66,
+    "price_usd": 1.24,
+    "price_foil": 10.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/436/edgar-king-of-figaro?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.99,
-    "price_eur_foil": 5.92
+    "price_eur": 0.91,
+    "price_eur_foil": 6.07
   },
   {
     "id": "59156e99-5514-4eb3-b976-bb6cfe354d12",
@@ -49287,7 +49287,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/59156e99-5514-4eb3-b976-bb6cfe354d12.jpg?1783906488",
     "image_large": "https://cards.scryfall.io/large/front/5/9/59156e99-5514-4eb3-b976-bb6cfe354d12.jpg?1783906488",
     "back_image": "",
-    "price_usd": 7.93,
+    "price_usd": 7.95,
     "price_foil": 14.06,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/437/gogo-master-of-mimicry?utm_source=api",
@@ -49295,7 +49295,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 7.82,
+    "price_eur": 8.62,
     "price_eur_foil": 12.5
   },
   {
@@ -49334,16 +49334,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/6/863dc1bd-8554-42ba-8d49-d99ea969103d.jpg?1783906492",
     "image_large": "https://cards.scryfall.io/large/front/8/6/863dc1bd-8554-42ba-8d49-d99ea969103d.jpg?1783906492",
     "back_image": "https://cards.scryfall.io/normal/back/8/6/863dc1bd-8554-42ba-8d49-d99ea969103d.jpg?1783906492",
-    "price_usd": 2.53,
-    "price_foil": 19.09,
+    "price_usd": 2.52,
+    "price_foil": 20.08,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/438/jill-shivas-dominant-shiva-warden-of-ice?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.79,
-    "price_eur_foil": 16.13
+    "price_eur": 1.86,
+    "price_eur_foil": 16.02
   },
   {
     "id": "0429bba6-d496-49ac-b849-fb8274f86880",
@@ -49381,16 +49381,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/4/0429bba6-d496-49ac-b849-fb8274f86880.jpg?1783906487",
     "image_large": "https://cards.scryfall.io/large/front/0/4/0429bba6-d496-49ac-b849-fb8274f86880.jpg?1783906487",
     "back_image": "",
-    "price_usd": 3.04,
-    "price_foil": 14.94,
+    "price_usd": 2.98,
+    "price_foil": 15.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/439/matoya-archon-elder?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.87,
-    "price_eur_foil": 10.66
+    "price_eur": 1.86,
+    "price_eur_foil": 10.79
   },
   {
     "id": "3cc379aa-6810-421d-a317-026867c4d245",
@@ -49428,15 +49428,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/c/3cc379aa-6810-421d-a317-026867c4d245.jpg?1783906485",
     "image_large": "https://cards.scryfall.io/large/front/3/c/3cc379aa-6810-421d-a317-026867c4d245.jpg?1783906485",
     "back_image": "",
-    "price_usd": 2.58,
-    "price_foil": 36.96,
+    "price_usd": 2.47,
+    "price_foil": 42.72,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/440/quistis-trepe?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.04,
+    "price_eur": 2.06,
     "price_eur_foil": 19.98
   },
   {
@@ -49475,7 +49475,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/9/f988af75-acf4-41bb-b4c5-58492fd1f6a0.jpg?1783906485",
     "image_large": "https://cards.scryfall.io/large/front/f/9/f988af75-acf4-41bb-b4c5-58492fd1f6a0.jpg?1783906485",
     "back_image": "",
-    "price_usd": 4.24,
+    "price_usd": 4.63,
     "price_foil": 30.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/441/ultimecia-temporal-threat?utm_source=api",
@@ -49483,7 +49483,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.84,
+    "price_eur": 5.36,
     "price_eur_foil": 18.7
   },
   {
@@ -49522,15 +49522,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/e/9e3f57b6-0d03-4176-8c2a-0937437fb62e.jpg?1783906484",
     "image_large": "https://cards.scryfall.io/large/front/9/e/9e3f57b6-0d03-4176-8c2a-0937437fb62e.jpg?1783906484",
     "back_image": "",
-    "price_usd": 1.2,
-    "price_foil": 15.1,
+    "price_usd": 1.16,
+    "price_foil": 14.76,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/442/ultros-obnoxious-octopus?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.21,
+    "price_eur": 1.09,
     "price_eur_foil": 10.92
   },
   {
@@ -49569,7 +49569,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/1/a1d3d33d-4cd9-4009-82c9-adb2e1ec45cb.jpg?1783906483",
     "image_large": "https://cards.scryfall.io/large/front/a/1/a1d3d33d-4cd9-4009-82c9-adb2e1ec45cb.jpg?1783906483",
     "back_image": "",
-    "price_usd": 11.31,
+    "price_usd": 11.28,
     "price_foil": 25.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/443/yshtola-rhul?utm_source=api",
@@ -49577,8 +49577,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 9.49,
-    "price_eur_foil": 16.62
+    "price_eur": 9.53,
+    "price_eur_foil": 17.72
   },
   {
     "id": "c4c34b33-4b03-4225-ac22-a34efe173b42",
@@ -49616,16 +49616,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/4/c4c34b33-4b03-4225-ac22-a34efe173b42.jpg?1785650710",
     "image_large": "https://cards.scryfall.io/large/front/c/4/c4c34b33-4b03-4225-ac22-a34efe173b42.jpg?1785650710",
     "back_image": "",
-    "price_usd": 2.25,
-    "price_foil": 10.74,
+    "price_usd": 2.29,
+    "price_foil": 10.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/444/ardyn-the-usurper?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.78,
-    "price_eur_foil": 10.39
+    "price_eur": 1.74,
+    "price_eur_foil": 10.09
   },
   {
     "id": "c976f89d-768a-4cee-b0ac-90f854bfe94f",
@@ -49663,16 +49663,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/9/c976f89d-768a-4cee-b0ac-90f854bfe94f.jpg?1783906487",
     "image_large": "https://cards.scryfall.io/large/front/c/9/c976f89d-768a-4cee-b0ac-90f854bfe94f.jpg?1783906487",
     "back_image": "https://cards.scryfall.io/normal/back/c/9/c976f89d-768a-4cee-b0ac-90f854bfe94f.jpg?1783906487",
-    "price_usd": 2.82,
-    "price_foil": 16.56,
+    "price_usd": 2.79,
+    "price_foil": 16.99,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/445/cecil-dark-knight-cecil-redeemed-paladin?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 3.7,
-    "price_eur_foil": 10.34
+    "price_eur": 3.55,
+    "price_eur_foil": 10.31
   },
   {
     "id": "b82f08c2-3944-437d-9af6-f1e9088e02bb",
@@ -49710,7 +49710,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/8/b82f08c2-3944-437d-9af6-f1e9088e02bb.jpg?1783906482",
     "image_large": "https://cards.scryfall.io/large/front/b/8/b82f08c2-3944-437d-9af6-f1e9088e02bb.jpg?1783906482",
     "back_image": "",
-    "price_usd": 1.4,
+    "price_usd": 1.24,
     "price_foil": 15.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/446/fang-fearless-lcie?utm_source=api",
@@ -49718,7 +49718,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.49,
+    "price_eur": 1.38,
     "price_eur_foil": 9.53
   },
   {
@@ -49804,16 +49804,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/2/42605473-e37d-46b3-8979-31cc6b21bc3c.jpg?1783906482",
     "image_large": "https://cards.scryfall.io/large/front/4/2/42605473-e37d-46b3-8979-31cc6b21bc3c.jpg?1783906482",
     "back_image": "",
-    "price_usd": 2.02,
-    "price_foil": 20.05,
+    "price_usd": 1.9,
+    "price_foil": 20.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/447/gaius-van-baelsar?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.56,
-    "price_eur_foil": 11.59
+    "price_eur": 1.42,
+    "price_eur_foil": 11.98
   },
   {
     "id": "3ae96898-3a72-428a-93e8-93ded3662669",
@@ -49851,15 +49851,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/a/3ae96898-3a72-428a-93e8-93ded3662669.jpg?1783906486",
     "image_large": "https://cards.scryfall.io/large/front/3/a/3ae96898-3a72-428a-93e8-93ded3662669.jpg?1783906486",
     "back_image": "https://cards.scryfall.io/normal/back/3/a/3ae96898-3a72-428a-93e8-93ded3662669.jpg?1783906486",
-    "price_usd": 1.25,
-    "price_foil": 7.91,
+    "price_usd": 1.23,
+    "price_foil": 7.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/448/jecht-reluctant-guardian-braskas-final-aeon?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.51,
+    "price_eur": 1.1,
     "price_eur_foil": 9.1
   },
   {
@@ -49898,15 +49898,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/8/28eb294b-4cab-4c34-ae29-20aac9799471.jpg?1783906481",
     "image_large": "https://cards.scryfall.io/large/front/2/8/28eb294b-4cab-4c34-ae29-20aac9799471.jpg?1783906481",
     "back_image": "",
-    "price_usd": 1.24,
-    "price_foil": 4.35,
+    "price_usd": 1.22,
+    "price_foil": 4.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/449/kain-traitorous-dragoon?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.48,
+    "price_eur": 1.27,
     "price_eur_foil": 5.56
   },
   {
@@ -49945,16 +49945,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/f/ef6a2ef4-4aa1-4037-89d5-50c4a6579371.jpg?1783906480",
     "image_large": "https://cards.scryfall.io/large/front/e/f/ef6a2ef4-4aa1-4037-89d5-50c4a6579371.jpg?1783906480",
     "back_image": "",
-    "price_usd": 1.67,
-    "price_foil": 17.73,
+    "price_usd": 1.61,
+    "price_foil": 18.04,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/450/reno-and-rude?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.19,
-    "price_eur_foil": 8.95
+    "price_eur": 1.04,
+    "price_eur_foil": 8.84
   },
   {
     "id": "7cb5acb6-14af-4e17-8e6c-b44122bd81e4",
@@ -49992,7 +49992,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/c/7cb5acb6-14af-4e17-8e6c-b44122bd81e4.jpg?1783906487",
     "image_large": "https://cards.scryfall.io/large/front/7/c/7cb5acb6-14af-4e17-8e6c-b44122bd81e4.jpg?1783906487",
     "back_image": "https://cards.scryfall.io/normal/back/7/c/7cb5acb6-14af-4e17-8e6c-b44122bd81e4.jpg?1783906487",
-    "price_usd": 40.54,
+    "price_usd": 39.66,
     "price_foil": 164.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/451/sephiroth-fabled-soldier-sephiroth-one-winged-angel?utm_source=api",
@@ -50000,7 +50000,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 41.95,
+    "price_eur": 42.35,
     "price_eur_foil": 138.19
   },
   {
@@ -50039,7 +50039,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/f/8fc42c17-a12b-42db-bb01-3e444ac2a376.jpg?1783906480",
     "image_large": "https://cards.scryfall.io/large/front/8/f/8fc42c17-a12b-42db-bb01-3e444ac2a376.jpg?1783906480",
     "back_image": "",
-    "price_usd": 2.49,
+    "price_usd": 2.6,
     "price_foil": 13.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/452/seymour-flux?utm_source=api",
@@ -50047,7 +50047,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.48,
+    "price_eur": 1.43,
     "price_eur_foil": 8.75
   },
   {
@@ -50086,7 +50086,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/e/de8067cc-3de3-43b2-8fcf-6dce6f4f7db1.jpg?1783906484",
     "image_large": "https://cards.scryfall.io/large/front/d/e/de8067cc-3de3-43b2-8fcf-6dce6f4f7db1.jpg?1783906484",
     "back_image": "https://cards.scryfall.io/normal/back/d/e/de8067cc-3de3-43b2-8fcf-6dce6f4f7db1.jpg?1783906484",
-    "price_usd": 1.05,
+    "price_usd": 1.14,
     "price_foil": 19.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/453/sidequest:-hunt-the-mark-yiazmat-ultimate-mark?utm_source=api",
@@ -50094,8 +50094,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.79,
-    "price_eur_foil": 9.34
+    "price_eur": 0.69,
+    "price_eur_foil": 9.25
   },
   {
     "id": "2b2a676e-901f-4e0e-87c6-69820f319d7f",
@@ -50133,8 +50133,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/b/2b2a676e-901f-4e0e-87c6-69820f319d7f.jpg?1783906483",
     "image_large": "https://cards.scryfall.io/large/front/2/b/2b2a676e-901f-4e0e-87c6-69820f319d7f.jpg?1783906483",
     "back_image": "https://cards.scryfall.io/normal/back/2/b/2b2a676e-901f-4e0e-87c6-69820f319d7f.jpg?1783906483",
-    "price_usd": 5.5,
-    "price_foil": 26.12,
+    "price_usd": 5.88,
+    "price_foil": 26.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/454/vincent-valentine-galian-beast?utm_source=api",
     "treatments": [
@@ -50142,7 +50142,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 4.3,
-    "price_eur_foil": 19.37
+    "price_eur_foil": 19.3
   },
   {
     "id": "40658fd0-78a6-44e5-9351-512e6bdcf637",
@@ -50180,16 +50180,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/0/40658fd0-78a6-44e5-9351-512e6bdcf637.jpg?1783906484",
     "image_large": "https://cards.scryfall.io/large/front/4/0/40658fd0-78a6-44e5-9351-512e6bdcf637.jpg?1783906484",
     "back_image": "https://cards.scryfall.io/normal/back/4/0/40658fd0-78a6-44e5-9351-512e6bdcf637.jpg?1783906484",
-    "price_usd": 2.36,
-    "price_foil": 19.59,
+    "price_usd": 2.57,
+    "price_foil": 19.07,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/455/zenos-yae-galvus-shinryu-transcendent-rival?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.6,
-    "price_eur_foil": 7.95
+    "price_eur": 1.46,
+    "price_eur_foil": 8.1
   },
   {
     "id": "f7f9977f-b2dc-46bb-b961-097675cdcb45",
@@ -50227,16 +50227,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/7/f7f9977f-b2dc-46bb-b961-097675cdcb45.jpg?1783906478",
     "image_large": "https://cards.scryfall.io/large/front/f/7/f7f9977f-b2dc-46bb-b961-097675cdcb45.jpg?1783906478",
     "back_image": "",
-    "price_usd": 2.51,
-    "price_foil": 6.89,
+    "price_usd": 2.58,
+    "price_foil": 6.95,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/456/zodiark-umbral-god?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.82,
-    "price_eur_foil": 10.33
+    "price_eur": 2.14,
+    "price_eur_foil": 10.34
   },
   {
     "id": "3c8d6eaa-e6d1-4a52-98fb-9cb4d876cc0b",
@@ -50274,7 +50274,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/c/3c8d6eaa-e6d1-4a52-98fb-9cb4d876cc0b.jpg?1783906477",
     "image_large": "https://cards.scryfall.io/large/front/3/c/3c8d6eaa-e6d1-4a52-98fb-9cb4d876cc0b.jpg?1783906477",
     "back_image": "",
-    "price_usd": 0.89,
+    "price_usd": 1.03,
     "price_foil": 13.69,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/457/barret-wallace?utm_source=api",
@@ -50282,7 +50282,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.87,
+    "price_eur": 0.7,
     "price_eur_foil": 9.81
   },
   {
@@ -50321,16 +50321,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/d/cdf7fb4a-acb5-4fae-a44c-c437e5b82ec4.jpg?1783906482",
     "image_large": "https://cards.scryfall.io/large/front/c/d/cdf7fb4a-acb5-4fae-a44c-c437e5b82ec4.jpg?1783906482",
     "back_image": "https://cards.scryfall.io/normal/back/c/d/cdf7fb4a-acb5-4fae-a44c-c437e5b82ec4.jpg?1783906482",
-    "price_usd": 9.41,
-    "price_foil": 16.88,
+    "price_usd": 9.29,
+    "price_foil": 17.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/458/clive-ifrits-dominant-ifrit-warden-of-inferno?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 7.49,
-    "price_eur_foil": 14.82
+    "price_eur": 7.05,
+    "price_eur_foil": 15.09
   },
   {
     "id": "70def31c-e328-4f1f-a165-a43f94401c65",
@@ -50368,7 +50368,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/0/70def31c-e328-4f1f-a165-a43f94401c65.jpg?1783906477",
     "image_large": "https://cards.scryfall.io/large/front/7/0/70def31c-e328-4f1f-a165-a43f94401c65.jpg?1783906477",
     "back_image": "",
-    "price_usd": 1.86,
+    "price_usd": 2.58,
     "price_foil": 10.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/459/firion-wild-rose-warrior?utm_source=api",
@@ -50376,8 +50376,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 5.01,
-    "price_eur_foil": 5.99
+    "price_eur": 3.52,
+    "price_eur_foil": 6.91
   },
   {
     "id": "e5aa0b07-9ebb-46d7-a80f-2e644dbd9d36",
@@ -50415,16 +50415,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e5aa0b07-9ebb-46d7-a80f-2e644dbd9d36.jpg?1783906476",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e5aa0b07-9ebb-46d7-a80f-2e644dbd9d36.jpg?1783906476",
     "back_image": "",
-    "price_usd": 3.23,
-    "price_foil": 22.21,
+    "price_usd": 3.27,
+    "price_foil": 21.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/460/freya-crescent?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.81,
-    "price_eur_foil": 22.42
+    "price_eur": 2.89,
+    "price_eur_foil": 23.22
   },
   {
     "id": "79070b71-3737-4d9a-8193-b2d7bf8d876b",
@@ -50462,16 +50462,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/9/79070b71-3737-4d9a-8193-b2d7bf8d876b.jpg?1783906476",
     "image_large": "https://cards.scryfall.io/large/front/7/9/79070b71-3737-4d9a-8193-b2d7bf8d876b.jpg?1783906476",
     "back_image": "",
-    "price_usd": 2.14,
-    "price_foil": 13.02,
+    "price_usd": 2.17,
+    "price_foil": 13.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/461/gilgamesh-master-at-arms?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.86,
-    "price_eur_foil": 8.61
+    "price_eur": 1.46,
+    "price_eur_foil": 9.32
   },
   {
     "id": "40cce7b4-1d5d-4d91-90c5-71b79b5be1ac",
@@ -50509,7 +50509,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/0/40cce7b4-1d5d-4d91-90c5-71b79b5be1ac.jpg?1783906476",
     "image_large": "https://cards.scryfall.io/large/front/4/0/40cce7b4-1d5d-4d91-90c5-71b79b5be1ac.jpg?1783906476",
     "back_image": "",
-    "price_usd": 2.5,
+    "price_usd": 2.85,
     "price_foil": 16.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/462/lightning-security-sergeant?utm_source=api",
@@ -50517,7 +50517,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.32,
+    "price_eur": 2.26,
     "price_eur_foil": 11.49
   },
   {
@@ -50557,15 +50557,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/e/5ee02af5-cb6c-43a3-8a1d-7e8630a90739.jpg?1783906476",
     "back_image": "",
     "price_usd": 0.75,
-    "price_foil": 10.21,
+    "price_foil": 10.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/463/prompto-argentum?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.71,
-    "price_eur_foil": 5.09
+    "price_eur": 0.67,
+    "price_eur_foil": 5.11
   },
   {
     "id": "5957ab2d-55ed-4160-8c78-8c70009c39d8",
@@ -50603,16 +50603,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/9/5957ab2d-55ed-4160-8c78-8c70009c39d8.jpg?1783906476",
     "image_large": "https://cards.scryfall.io/large/front/5/9/5957ab2d-55ed-4160-8c78-8c70009c39d8.jpg?1783906476",
     "back_image": "",
-    "price_usd": 2.01,
-    "price_foil": 23.11,
+    "price_usd": 2.19,
+    "price_foil": 23.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/464/queen-brahne?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.65,
-    "price_eur_foil": 9.04
+    "price_eur": 1.34,
+    "price_eur_foil": 8.92
   },
   {
     "id": "3732c276-3635-46e0-a46e-1b433501d3fd",
@@ -50650,15 +50650,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/7/3732c276-3635-46e0-a46e-1b433501d3fd.jpg?1783906476",
     "image_large": "https://cards.scryfall.io/large/front/3/7/3732c276-3635-46e0-a46e-1b433501d3fd.jpg?1783906476",
     "back_image": "",
-    "price_usd": 1.22,
-    "price_foil": 8.43,
+    "price_usd": 1.17,
+    "price_foil": 8.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/465/raubahn-bull-of-ala-mhigo?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.98,
+    "price_eur": 1.36,
     "price_eur_foil": 7.01
   },
   {
@@ -50697,15 +50697,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/0/50467632-dddf-45ef-900e-9718f364cf9b.jpg?1783906475",
     "image_large": "https://cards.scryfall.io/large/front/5/0/50467632-dddf-45ef-900e-9718f364cf9b.jpg?1783906475",
     "back_image": "",
-    "price_usd": 1.15,
-    "price_foil": 6.25,
+    "price_usd": 1.19,
+    "price_foil": 6.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/466/seifer-almasy?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.59,
+    "price_eur": 1.53,
     "price_eur_foil": 6.98
   },
   {
@@ -50745,15 +50745,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/b/dbd01ef3-0b06-46a3-97f9-eaff2a539a4a.jpg?1783906475",
     "back_image": "",
     "price_usd": 1.13,
-    "price_foil": 4.91,
+    "price_foil": 4.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/467/vaan-street-thief?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.67,
-    "price_eur_foil": 6.49
+    "price_eur": 1.44,
+    "price_eur_foil": 6.43
   },
   {
     "id": "25d28011-f0a6-4d7b-ab87-aae0fe354d9e",
@@ -50791,7 +50791,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/5/25d28011-f0a6-4d7b-ab87-aae0fe354d9e.jpg?1783906475",
     "image_large": "https://cards.scryfall.io/large/front/2/5/25d28011-f0a6-4d7b-ab87-aae0fe354d9e.jpg?1783906475",
     "back_image": "",
-    "price_usd": 1.98,
+    "price_usd": 1.93,
     "price_foil": 19.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/468/zell-dincht?utm_source=api",
@@ -50799,7 +50799,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.77,
+    "price_eur": 1.72,
     "price_eur_foil": 10.75
   },
   {
@@ -50838,16 +50838,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/b/1b9a92f8-2044-4554-aec9-00b410dada35.jpg?1783906473",
     "image_large": "https://cards.scryfall.io/large/front/1/b/1b9a92f8-2044-4554-aec9-00b410dada35.jpg?1783906473",
     "back_image": "",
-    "price_usd": 2.8,
-    "price_foil": 12.31,
+    "price_usd": 2.86,
+    "price_foil": 12.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/469/bartz-and-boko?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.43,
-    "price_eur_foil": 7.76
+    "price_eur": 1.41,
+    "price_eur_foil": 7.92
   },
   {
     "id": "bb17f0c0-4738-42a0-94e1-27344f13735f",
@@ -50885,16 +50885,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/b/bb17f0c0-4738-42a0-94e1-27344f13735f.jpg?1783906473",
     "image_large": "https://cards.scryfall.io/large/front/b/b/bb17f0c0-4738-42a0-94e1-27344f13735f.jpg?1783906473",
     "back_image": "",
-    "price_usd": 3.23,
-    "price_foil": 27.15,
+    "price_usd": 3.09,
+    "price_foil": 28.05,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/470/diamond-weapon?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.05,
-    "price_eur_foil": 10.41
+    "price_eur": 2.12,
+    "price_eur_foil": 10.98
   },
   {
     "id": "0208a5a9-3a6f-44c5-9e46-24bdf924753c",
@@ -50932,16 +50932,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/2/0208a5a9-3a6f-44c5-9e46-24bdf924753c.jpg?1783906472",
     "image_large": "https://cards.scryfall.io/large/front/0/2/0208a5a9-3a6f-44c5-9e46-24bdf924753c.jpg?1783906472",
     "back_image": "",
-    "price_usd": 2.94,
-    "price_foil": 20.47,
+    "price_usd": 2.93,
+    "price_foil": 21.17,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/471/quina-qu-gourmet?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.57,
-    "price_eur_foil": 11.13
+    "price_eur": 2.49,
+    "price_eur_foil": 11.54
   },
   {
     "id": "366fbdb4-56b4-4dd1-8cc7-565786c71c24",
@@ -50979,16 +50979,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/6/366fbdb4-56b4-4dd1-8cc7-565786c71c24.jpg?1783906473",
     "image_large": "https://cards.scryfall.io/large/front/3/6/366fbdb4-56b4-4dd1-8cc7-565786c71c24.jpg?1783906473",
     "back_image": "",
-    "price_usd": 2.98,
-    "price_foil": 20.14,
+    "price_usd": 2.92,
+    "price_foil": 20.83,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/472/sazh-katzroy?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.43,
-    "price_eur_foil": 8.64
+    "price_eur": 2.16,
+    "price_eur_foil": 9.36
   },
   {
     "id": "165a50ba-5ead-45aa-be8a-9bdd9766da66",
@@ -51026,16 +51026,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/6/165a50ba-5ead-45aa-be8a-9bdd9766da66.jpg?1783906473",
     "image_large": "https://cards.scryfall.io/large/front/1/6/165a50ba-5ead-45aa-be8a-9bdd9766da66.jpg?1783906473",
     "back_image": "",
-    "price_usd": 7.95,
-    "price_foil": 38.21,
+    "price_usd": 8.15,
+    "price_foil": 38.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/473/tifa-lockhart?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 6.81,
-    "price_eur_foil": 31.14
+    "price_eur": 6.58,
+    "price_eur_foil": 31.89
   },
   {
     "id": "b4b78fba-cde2-4ab9-bc96-51d0fc5b29cf",
@@ -51073,16 +51073,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/4/b4b78fba-cde2-4ab9-bc96-51d0fc5b29cf.jpg?1783906471",
     "image_large": "https://cards.scryfall.io/large/front/b/4/b4b78fba-cde2-4ab9-bc96-51d0fc5b29cf.jpg?1783906471",
     "back_image": "",
-    "price_usd": 1.54,
-    "price_foil": 19.3,
+    "price_usd": 1.83,
+    "price_foil": 22.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/474/torgal-a-fine-hound?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.21,
-    "price_eur_foil": 9.84
+    "price_eur": 1.3,
+    "price_eur_foil": 10.14
   },
   {
     "id": "6c752ee2-81b0-468a-a54b-740c22f2334e",
@@ -51120,15 +51120,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/c/6c752ee2-81b0-468a-a54b-740c22f2334e.jpg?1783906471",
     "image_large": "https://cards.scryfall.io/large/front/6/c/6c752ee2-81b0-468a-a54b-740c22f2334e.jpg?1783906471",
     "back_image": "",
-    "price_usd": 1.08,
-    "price_foil": 18.18,
+    "price_usd": 1.07,
+    "price_foil": 18.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/475/vanille-cheerful-lcie?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.04,
+    "price_eur": 1.59,
     "price_eur_foil": 9.37
   },
   {
@@ -51167,7 +51167,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/0/50716867-4370-4c2f-aae5-9d791a5d5a2e.jpg?1783906470",
     "image_large": "https://cards.scryfall.io/large/front/5/0/50716867-4370-4c2f-aae5-9d791a5d5a2e.jpg?1783906470",
     "back_image": "",
-    "price_usd": 12.43,
+    "price_usd": 12.39,
     "price_foil": 31.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/476/absolute-virtue?utm_source=api",
@@ -51175,8 +51175,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 8.95,
-    "price_eur_foil": 17.39
+    "price_eur": 9.18,
+    "price_eur_foil": 18.2
   },
   {
     "id": "8c9eaf03-0af1-496f-b3d9-37938a8dc6dd",
@@ -51214,16 +51214,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/c/8c9eaf03-0af1-496f-b3d9-37938a8dc6dd.jpg?1783906470",
     "image_large": "https://cards.scryfall.io/large/front/8/c/8c9eaf03-0af1-496f-b3d9-37938a8dc6dd.jpg?1783906470",
     "back_image": "",
-    "price_usd": 0.89,
-    "price_foil": 8.76,
+    "price_usd": 0.87,
+    "price_foil": 9.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/477/balthier-and-fran?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.79,
-    "price_eur_foil": 3.8
+    "price_eur": 0.94,
+    "price_eur_foil": 3.69
   },
   {
     "id": "7d143a13-a627-4b64-9356-253a2f9ddf98",
@@ -51261,8 +51261,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/d/7d143a13-a627-4b64-9356-253a2f9ddf98.jpg?1783906469",
     "image_large": "https://cards.scryfall.io/large/front/7/d/7d143a13-a627-4b64-9356-253a2f9ddf98.jpg?1783906469",
     "back_image": "",
-    "price_usd": 5.31,
-    "price_foil": 36.75,
+    "price_usd": 4.98,
+    "price_foil": 36.96,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/478/black-waltz-no-3?utm_source=api",
     "treatments": [
@@ -51270,7 +51270,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 5.28,
-    "price_eur_foil": 25.56
+    "price_eur_foil": 38.14
   },
   {
     "id": "6bf0cce3-ba72-4f7f-8b65-01e5dcd3299f",
@@ -51308,7 +51308,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/b/6bf0cce3-ba72-4f7f-8b65-01e5dcd3299f.jpg?1783906469",
     "image_large": "https://cards.scryfall.io/large/front/6/b/6bf0cce3-ba72-4f7f-8b65-01e5dcd3299f.jpg?1783906469",
     "back_image": "",
-    "price_usd": 5.0,
+    "price_usd": 5.35,
     "price_foil": 23.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/479/choco-seeker-of-paradise?utm_source=api",
@@ -51316,8 +51316,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 4.26,
-    "price_eur_foil": 20.71
+    "price_eur": 3.8,
+    "price_eur_foil": 21.24
   },
   {
     "id": "db9830c7-1f40-4ff2-8e99-7c6393d4a968",
@@ -51355,7 +51355,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/b/db9830c7-1f40-4ff2-8e99-7c6393d4a968.jpg?1783906468",
     "image_large": "https://cards.scryfall.io/large/front/d/b/db9830c7-1f40-4ff2-8e99-7c6393d4a968.jpg?1783906468",
     "back_image": "",
-    "price_usd": 4.04,
+    "price_usd": 4.36,
     "price_foil": 11.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/480/cid-timeless-artificer?utm_source=api",
@@ -51363,8 +51363,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 3.21,
-    "price_eur_foil": 7.95
+    "price_eur": 3.29,
+    "price_eur_foil": 10.09
   },
   {
     "id": "c53b7098-02c6-4977-8871-334f3fd4ee1f",
@@ -51402,7 +51402,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/5/c53b7098-02c6-4977-8871-334f3fd4ee1f.jpg?1783906468",
     "image_large": "https://cards.scryfall.io/large/front/c/5/c53b7098-02c6-4977-8871-334f3fd4ee1f.jpg?1783906468",
     "back_image": "",
-    "price_usd": 0.69,
+    "price_usd": 0.68,
     "price_foil": 8.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/481/cloud-of-darkness?utm_source=api",
@@ -51410,8 +51410,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.62,
-    "price_eur_foil": 5.36
+    "price_eur": 0.7,
+    "price_eur_foil": 5.23
   },
   {
     "id": "75180e47-064e-4dd6-adcf-d4fb497a445b",
@@ -51447,14 +51447,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/5/75180e47-064e-4dd6-adcf-d4fb497a445b.jpg?1783906469",
     "image_large": "https://cards.scryfall.io/large/front/7/5/75180e47-064e-4dd6-adcf-d4fb497a445b.jpg?1783906469",
     "back_image": "",
-    "price_usd": 18.23,
+    "price_usd": 18.2,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/482/cloud-planets-champion?utm_source=api",
     "treatments": [
       "Extended Art"
     ],
-    "price_eur": 17.65,
+    "price_eur": 19.38,
     "price_eur_foil": null
   },
   {
@@ -51493,16 +51493,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/f/0f462d81-bb1b-4d44-8952-6dff52970792.jpg?1783906472",
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f462d81-bb1b-4d44-8952-6dff52970792.jpg?1783906472",
     "back_image": "https://cards.scryfall.io/normal/back/0/f/0f462d81-bb1b-4d44-8952-6dff52970792.jpg?1783906472",
-    "price_usd": 10.13,
-    "price_foil": 21.88,
+    "price_usd": 10.06,
+    "price_foil": 21.96,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/483/emet-selch-unsundered-hades-sorcerer-of-eld?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 9.13,
-    "price_eur_foil": 26.58
+    "price_eur": 9.14,
+    "price_eur_foil": 28.28
   },
   {
     "id": "1b4d8a51-2307-4ed6-af25-c48946219096",
@@ -51540,7 +51540,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/b/1b4d8a51-2307-4ed6-af25-c48946219096.jpg?1783906471",
     "image_large": "https://cards.scryfall.io/large/front/1/b/1b4d8a51-2307-4ed6-af25-c48946219096.jpg?1783906471",
     "back_image": "https://cards.scryfall.io/normal/back/1/b/1b4d8a51-2307-4ed6-af25-c48946219096.jpg?1783906471",
-    "price_usd": 5.29,
+    "price_usd": 4.76,
     "price_foil": 42.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/484/the-emperor-of-palamecia-the-lord-master-of-hell?utm_source=api",
@@ -51548,8 +51548,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.76,
-    "price_eur_foil": 25.04
+    "price_eur": 3.0,
+    "price_eur_foil": 27.17
   },
   {
     "id": "df51bf51-839a-4b4d-a6c2-431c9ebff875",
@@ -51587,7 +51587,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/f/df51bf51-839a-4b4d-a6c2-431c9ebff875.jpg?1783906470",
     "image_large": "https://cards.scryfall.io/large/front/d/f/df51bf51-839a-4b4d-a6c2-431c9ebff875.jpg?1783906470",
     "back_image": "https://cards.scryfall.io/normal/back/d/f/df51bf51-839a-4b4d-a6c2-431c9ebff875.jpg?1783906470",
-    "price_usd": 1.5,
+    "price_usd": 1.46,
     "price_foil": 12.38,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/485/exdeath-void-warlock-neo-exdeath-dimensions-end?utm_source=api",
@@ -51595,7 +51595,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.32,
+    "price_eur": 1.18,
     "price_eur_foil": 8.45
   },
   {
@@ -51634,7 +51634,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/e/8e6e21d2-e282-4f56-8e6b-929176b264b3.jpg?1783906471",
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e6e21d2-e282-4f56-8e6b-929176b264b3.jpg?1783906471",
     "back_image": "https://cards.scryfall.io/normal/back/8/e/8e6e21d2-e282-4f56-8e6b-929176b264b3.jpg?1783906471",
-    "price_usd": 1.12,
+    "price_usd": 1.21,
     "price_foil": 12.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/486/garland-knight-of-cornelia-chaos-the-endless?utm_source=api",
@@ -51642,7 +51642,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.49,
+    "price_eur": 1.34,
     "price_eur_foil": 10.14
   },
   {
@@ -51681,16 +51681,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/1/6136d21e-e6fa-4aaf-9eca-3847fa2c65fd.jpg?1783906466",
     "image_large": "https://cards.scryfall.io/large/front/6/1/6136d21e-e6fa-4aaf-9eca-3847fa2c65fd.jpg?1783906466",
     "back_image": "",
-    "price_usd": 3.48,
-    "price_foil": 27.6,
+    "price_usd": 3.47,
+    "price_foil": 27.91,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/487/garnet-princess-of-alexandria?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.66,
-    "price_eur_foil": 19.01
+    "price_eur": 2.99,
+    "price_eur_foil": 19.9
   },
   {
     "id": "e5220843-4964-4abe-b397-a909be8ed8e0",
@@ -51728,15 +51728,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/5/e5220843-4964-4abe-b397-a909be8ed8e0.jpg?1783906465",
     "image_large": "https://cards.scryfall.io/large/front/e/5/e5220843-4964-4abe-b397-a909be8ed8e0.jpg?1783906465",
     "back_image": "",
-    "price_usd": 2.48,
-    "price_foil": 12.38,
+    "price_usd": 3.76,
+    "price_foil": 16.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/488/giott-king-of-the-dwarves?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.76,
+    "price_eur": 0.72,
     "price_eur_foil": 7.29
   },
   {
@@ -51775,16 +51775,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/e/8e2d8e83-1fd4-4c99-ae84-b450e3650cb7.jpg?1783906466",
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e2d8e83-1fd4-4c99-ae84-b450e3650cb7.jpg?1783906466",
     "back_image": "",
-    "price_usd": 1.38,
-    "price_foil": 11.75,
+    "price_usd": 1.44,
+    "price_foil": 11.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/489/gladiolus-amicitia?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.06,
-    "price_eur_foil": 9.36
+    "price_eur": 1.03,
+    "price_eur_foil": 9.88
   },
   {
     "id": "db013d39-3681-4ed0-8671-d1d2452df9de",
@@ -51822,15 +51822,15 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/b/db013d39-3681-4ed0-8671-d1d2452df9de.jpg?1783906463",
     "image_large": "https://cards.scryfall.io/large/front/d/b/db013d39-3681-4ed0-8671-d1d2452df9de.jpg?1783906463",
     "back_image": "",
-    "price_usd": 2.09,
-    "price_foil": 9.57,
+    "price_usd": 2.11,
+    "price_foil": 9.61,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/490/golbez-crystal-collector?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.06,
+    "price_eur": 1.05,
     "price_eur_foil": 8.54
   },
   {
@@ -51869,7 +51869,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/5/a50f113e-be5d-4251-8605-67f54fbe9b3f.jpg?1783906463",
     "image_large": "https://cards.scryfall.io/large/front/a/5/a50f113e-be5d-4251-8605-67f54fbe9b3f.jpg?1783906463",
     "back_image": "",
-    "price_usd": 1.73,
+    "price_usd": 1.8,
     "price_foil": 7.59,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/491/hope-estheim?utm_source=api",
@@ -51877,7 +51877,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.11,
+    "price_eur": 1.17,
     "price_eur_foil": 5.64
   },
   {
@@ -51916,16 +51916,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/7/2790a23d-00ff-47b7-badd-9dd68042bb99.jpg?1783906464",
     "image_large": "https://cards.scryfall.io/large/front/2/7/2790a23d-00ff-47b7-badd-9dd68042bb99.jpg?1783906464",
     "back_image": "",
-    "price_usd": 1.29,
-    "price_foil": 8.98,
+    "price_usd": 1.45,
+    "price_foil": 9.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/492/ignis-scientia?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.0,
-    "price_eur_foil": 5.49
+    "price_eur": 1.01,
+    "price_eur_foil": 5.81
   },
   {
     "id": "22dd493f-e481-4563-8f87-c5bdbfd54fdd",
@@ -51963,16 +51963,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/2/2/22dd493f-e481-4563-8f87-c5bdbfd54fdd.jpg?1783906463",
     "image_large": "https://cards.scryfall.io/large/front/2/2/22dd493f-e481-4563-8f87-c5bdbfd54fdd.jpg?1783906463",
     "back_image": "",
-    "price_usd": 4.94,
-    "price_foil": 33.94,
+    "price_usd": 5.09,
+    "price_foil": 34.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/493/jenova-ancient-calamity?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 7.03,
-    "price_eur_foil": 17.21
+    "price_eur": 6.23,
+    "price_eur_foil": 18.88
   },
   {
     "id": "8d5aaba7-1d36-4a0f-ad3e-70dca5944c53",
@@ -52010,7 +52010,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/d/8d5aaba7-1d36-4a0f-ad3e-70dca5944c53.jpg?1783906467",
     "image_large": "https://cards.scryfall.io/large/front/8/d/8d5aaba7-1d36-4a0f-ad3e-70dca5944c53.jpg?1783906467",
     "back_image": "https://cards.scryfall.io/normal/back/8/d/8d5aaba7-1d36-4a0f-ad3e-70dca5944c53.jpg?1783906467",
-    "price_usd": 3.04,
+    "price_usd": 3.03,
     "price_foil": 12.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/494/joshua-phoenixs-dominant-phoenix-warden-of-fire?utm_source=api",
@@ -52018,7 +52018,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.78,
+    "price_eur": 2.91,
     "price_eur_foil": 10.68
   },
   {
@@ -52057,7 +52057,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/b/ab39a24e-c73b-4d62-b7a0-c4ea968768c9.jpg?1783906462",
     "image_large": "https://cards.scryfall.io/large/front/a/b/ab39a24e-c73b-4d62-b7a0-c4ea968768c9.jpg?1783906462",
     "back_image": "",
-    "price_usd": 1.75,
+    "price_usd": 1.83,
     "price_foil": 9.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/495/judge-magister-gabranth?utm_source=api",
@@ -52065,8 +52065,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.8,
-    "price_eur_foil": 8.27
+    "price_eur": 2.43,
+    "price_eur_foil": 9.12
   },
   {
     "id": "06b7ca77-7194-4a0b-a650-4afd7afb50eb",
@@ -52104,16 +52104,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/6/06b7ca77-7194-4a0b-a650-4afd7afb50eb.jpg?1783906466",
     "image_large": "https://cards.scryfall.io/large/front/0/6/06b7ca77-7194-4a0b-a650-4afd7afb50eb.jpg?1783906466",
     "back_image": "https://cards.scryfall.io/normal/back/0/6/06b7ca77-7194-4a0b-a650-4afd7afb50eb.jpg?1783906466",
-    "price_usd": 13.49,
-    "price_foil": 36.19,
+    "price_usd": 13.51,
+    "price_foil": 36.33,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/496/kefka-court-mage-kefka-ruler-of-ruin?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 18.19,
-    "price_eur_foil": 44.33
+    "price_eur": 15.81,
+    "price_eur_foil": 57.69
   },
   {
     "id": "98067c9a-d81e-4f5c-b55a-28872331fce8",
@@ -52151,8 +52151,8 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/8/98067c9a-d81e-4f5c-b55a-28872331fce8.jpg?1783906467",
     "image_large": "https://cards.scryfall.io/large/front/9/8/98067c9a-d81e-4f5c-b55a-28872331fce8.jpg?1783906467",
     "back_image": "https://cards.scryfall.io/normal/back/9/8/98067c9a-d81e-4f5c-b55a-28872331fce8.jpg?1783906467",
-    "price_usd": 5.37,
-    "price_foil": 43.29,
+    "price_usd": 5.98,
+    "price_foil": 44.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/497/kuja-genome-sorcerer-trance-kuja-fate-defied?utm_source=api",
     "treatments": [
@@ -52160,7 +52160,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 5.31,
-    "price_eur_foil": 38.48
+    "price_eur_foil": 41.24
   },
   {
     "id": "0c665905-183b-401f-b83c-a312d032e061",
@@ -52198,16 +52198,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0c665905-183b-401f-b83c-a312d032e061.jpg?1783906461",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0c665905-183b-401f-b83c-a312d032e061.jpg?1783906461",
     "back_image": "",
-    "price_usd": 18.18,
-    "price_foil": 36.19,
+    "price_usd": 18.06,
+    "price_foil": 36.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/498/lightning-army-of-one?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 18.9,
-    "price_eur_foil": 35.52
+    "price_eur": 19.54,
+    "price_eur_foil": 34.6
   },
   {
     "id": "81d0f2e4-8b22-4c9b-ad01-fd0818fe7372",
@@ -52245,7 +52245,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/1/81d0f2e4-8b22-4c9b-ad01-fd0818fe7372.jpg?1783906461",
     "image_large": "https://cards.scryfall.io/large/front/8/1/81d0f2e4-8b22-4c9b-ad01-fd0818fe7372.jpg?1783906461",
     "back_image": "",
-    "price_usd": 1.85,
+    "price_usd": 1.7,
     "price_foil": 10.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/499/locke-cole?utm_source=api",
@@ -52253,8 +52253,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.87,
-    "price_eur_foil": 5.2
+    "price_eur": 0.8,
+    "price_eur_foil": 5.16
   },
   {
     "id": "8717cde9-eaee-4926-ab6e-02bb58421d05",
@@ -52292,16 +52292,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/7/8717cde9-eaee-4926-ab6e-02bb58421d05.jpg?1783906460",
     "image_large": "https://cards.scryfall.io/large/front/8/7/8717cde9-eaee-4926-ab6e-02bb58421d05.jpg?1783906460",
     "back_image": "",
-    "price_usd": 2.57,
-    "price_foil": 15.53,
+    "price_usd": 2.49,
+    "price_foil": 15.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/500/noctis-prince-of-lucis?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.3,
-    "price_eur_foil": 13.27
+    "price_eur": 2.01,
+    "price_eur_foil": 12.96
   },
   {
     "id": "926953df-e1f8-4d3e-a05d-93657143da04",
@@ -52340,15 +52340,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/2/926953df-e1f8-4d3e-a05d-93657143da04.jpg?1783906460",
     "back_image": "",
     "price_usd": 0.57,
-    "price_foil": 6.11,
+    "price_foil": 6.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/501/omega-heartless-evolution?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.58,
-    "price_eur_foil": 8.74
+    "price_eur": 0.57,
+    "price_eur_foil": 8.34
   },
   {
     "id": "3f77c0f4-7a1b-496e-b030-55627446dfe3",
@@ -52386,16 +52386,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/3/f/3f77c0f4-7a1b-496e-b030-55627446dfe3.jpg?1783906457",
     "image_large": "https://cards.scryfall.io/large/front/3/f/3f77c0f4-7a1b-496e-b030-55627446dfe3.jpg?1783906457",
     "back_image": "",
-    "price_usd": 1.97,
-    "price_foil": 17.4,
+    "price_usd": 2.02,
+    "price_foil": 18.1,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/502/rinoa-heartilly?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.88,
-    "price_eur_foil": 16.46
+    "price_eur": 1.55,
+    "price_eur_foil": 16.99
   },
   {
     "id": "5d49c95e-2398-4646-b9f1-44d0b73fc157",
@@ -52433,16 +52433,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/d/5d49c95e-2398-4646-b9f1-44d0b73fc157.jpg?1783906457",
     "image_large": "https://cards.scryfall.io/large/front/5/d/5d49c95e-2398-4646-b9f1-44d0b73fc157.jpg?1783906457",
     "back_image": "",
-    "price_usd": 1.4,
-    "price_foil": 24.83,
+    "price_usd": 1.39,
+    "price_foil": 26.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/503/rufus-shinra?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.22,
-    "price_eur_foil": 11.45
+    "price_eur": 1.06,
+    "price_eur_foil": 11.82
   },
   {
     "id": "f67652be-9b37-41d0-93db-ba26f8a23186",
@@ -52480,16 +52480,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/6/f67652be-9b37-41d0-93db-ba26f8a23186.jpg?1783906458",
     "image_large": "https://cards.scryfall.io/large/front/f/6/f67652be-9b37-41d0-93db-ba26f8a23186.jpg?1783906458",
     "back_image": "",
-    "price_usd": 3.65,
-    "price_foil": 35.29,
+    "price_usd": 3.75,
+    "price_foil": 35.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/504/rydia-summoner-of-mist?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 2.65,
-    "price_eur_foil": 24.46
+    "price_eur": 2.35,
+    "price_eur_foil": 24.92
   },
   {
     "id": "b03e29e2-cfda-4284-8d30-0686c01e861e",
@@ -52525,14 +52525,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/0/b03e29e2-cfda-4284-8d30-0686c01e861e.jpg?1783906458",
     "image_large": "https://cards.scryfall.io/large/front/b/0/b03e29e2-cfda-4284-8d30-0686c01e861e.jpg?1783906458",
     "back_image": "",
-    "price_usd": 11.69,
+    "price_usd": 12.19,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/505/sephiroth-planets-heir?utm_source=api",
     "treatments": [
       "Extended Art"
     ],
-    "price_eur": 11.26,
+    "price_eur": 10.8,
     "price_eur_foil": null
   },
   {
@@ -52571,7 +52571,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/7/2/7224bb1b-167c-47e5-8314-84aebca054b6.jpg?1783906461",
     "image_large": "https://cards.scryfall.io/large/front/7/2/7224bb1b-167c-47e5-8314-84aebca054b6.jpg?1783906461",
     "back_image": "https://cards.scryfall.io/normal/back/7/2/7224bb1b-167c-47e5-8314-84aebca054b6.jpg?1783906461",
-    "price_usd": 4.87,
+    "price_usd": 4.86,
     "price_foil": 53.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/506/serah-farron-crystallized-serah?utm_source=api",
@@ -52579,8 +52579,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 3.25,
-    "price_eur_foil": 21.11
+    "price_eur": 2.88,
+    "price_eur_foil": 22.47
   },
   {
     "id": "d1e01457-1696-4313-b21e-36e088735b1f",
@@ -52618,16 +52618,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/d/1/d1e01457-1696-4313-b21e-36e088735b1f.jpg?1783906458",
     "image_large": "https://cards.scryfall.io/large/front/d/1/d1e01457-1696-4313-b21e-36e088735b1f.jpg?1783906458",
     "back_image": "",
-    "price_usd": 1.33,
-    "price_foil": 9.9,
+    "price_usd": 1.32,
+    "price_foil": 10.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/507/shantotto-tactician-magician?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.75,
-    "price_eur_foil": 7.82
+    "price_eur": 0.7,
+    "price_eur_foil": 7.98
   },
   {
     "id": "075dd582-61b7-45e9-9dcf-0b544b733e61",
@@ -52665,16 +52665,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/7/075dd582-61b7-45e9-9dcf-0b544b733e61.jpg?1783906457",
     "image_large": "https://cards.scryfall.io/large/front/0/7/075dd582-61b7-45e9-9dcf-0b544b733e61.jpg?1783906457",
     "back_image": "",
-    "price_usd": 1.14,
-    "price_foil": 10.88,
+    "price_usd": 1.26,
+    "price_foil": 11.27,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/508/sin-spiras-punishment?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.06,
-    "price_eur_foil": 9.73
+    "price_eur": 0.9,
+    "price_eur_foil": 9.96
   },
   {
     "id": "fef02132-34e6-4f3a-ac60-af3221a782b3",
@@ -52712,7 +52712,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fef02132-34e6-4f3a-ac60-af3221a782b3.jpg?1783906456",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fef02132-34e6-4f3a-ac60-af3221a782b3.jpg?1783906456",
     "back_image": "",
-    "price_usd": 3.02,
+    "price_usd": 3.0,
     "price_foil": 16.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/509/squall-seed-mercenary?utm_source=api",
@@ -52721,7 +52721,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": 2.9,
-    "price_eur_foil": 12.26
+    "price_eur_foil": 13.54
   },
   {
     "id": "e0c5f3d5-ca17-4d4c-8de4-3559d6c6fe94",
@@ -52759,7 +52759,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/0/e0c5f3d5-ca17-4d4c-8de4-3559d6c6fe94.jpg?1783906456",
     "image_large": "https://cards.scryfall.io/large/front/e/0/e0c5f3d5-ca17-4d4c-8de4-3559d6c6fe94.jpg?1783906456",
     "back_image": "",
-    "price_usd": 1.01,
+    "price_usd": 0.99,
     "price_foil": 4.95,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/510/tellah-great-sage?utm_source=api",
@@ -52767,7 +52767,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.08,
+    "price_eur": 1.18,
     "price_eur_foil": 6.21
   },
   {
@@ -52806,16 +52806,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/e/fe0aa7d7-73e7-4c8c-92b5-b923817ce461.jpg?1783906462",
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe0aa7d7-73e7-4c8c-92b5-b923817ce461.jpg?1783906462",
     "back_image": "https://cards.scryfall.io/normal/back/f/e/fe0aa7d7-73e7-4c8c-92b5-b923817ce461.jpg?1783906462",
-    "price_usd": 13.17,
-    "price_foil": 37.05,
+    "price_usd": 13.0,
+    "price_foil": 37.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/511/terra-magical-adept-esper-terra?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 10.18,
-    "price_eur_foil": 29.53
+    "price_eur": 10.03,
+    "price_eur_foil": 28.93
   },
   {
     "id": "cfe3a1fa-d885-48c0-aa47-bfd8d340bf8e",
@@ -52853,7 +52853,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/f/cfe3a1fa-d885-48c0-aa47-bfd8d340bf8e.jpg?1783906456",
     "image_large": "https://cards.scryfall.io/large/front/c/f/cfe3a1fa-d885-48c0-aa47-bfd8d340bf8e.jpg?1783906456",
     "back_image": "",
-    "price_usd": 1.53,
+    "price_usd": 1.61,
     "price_foil": 15.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/512/tidus-blitzball-star?utm_source=api",
@@ -52861,7 +52861,7 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.56,
+    "price_eur": 1.78,
     "price_eur_foil": 13.78
   },
   {
@@ -52900,16 +52900,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/7/e7922b5a-6e75-4910-93ad-37e322073d35.jpg?1783906460",
     "image_large": "https://cards.scryfall.io/large/front/e/7/e7922b5a-6e75-4910-93ad-37e322073d35.jpg?1783906460",
     "back_image": "https://cards.scryfall.io/normal/back/e/7/e7922b5a-6e75-4910-93ad-37e322073d35.jpg?1783906460",
-    "price_usd": 2.8,
-    "price_foil": 27.63,
+    "price_usd": 2.96,
+    "price_foil": 28.47,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/513/ultimecia-time-sorceress-ultimecia-omnipotent?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.88,
-    "price_eur_foil": 29.75
+    "price_eur": 1.98,
+    "price_eur_foil": 31.05
   },
   {
     "id": "0cfc4614-f6c1-4247-ab96-5bd41006ad85",
@@ -52947,16 +52947,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/c/0cfc4614-f6c1-4247-ab96-5bd41006ad85.jpg?1783906455",
     "image_large": "https://cards.scryfall.io/large/front/0/c/0cfc4614-f6c1-4247-ab96-5bd41006ad85.jpg?1783906455",
     "back_image": "",
-    "price_usd": 56.77,
-    "price_foil": 140.89,
+    "price_usd": 55.82,
+    "price_foil": 141.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/514/vivi-ornitier?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 67.74,
-    "price_eur_foil": 115.02
+    "price_eur": 64.2,
+    "price_eur_foil": 114.95
   },
   {
     "id": "fd5de0c8-6af9-4b0a-be9d-19af1e7bd7c3",
@@ -52995,14 +52995,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/d/fd5de0c8-6af9-4b0a-be9d-19af1e7bd7c3.jpg?1783906452",
     "back_image": "",
     "price_usd": 1.06,
-    "price_foil": 15.54,
+    "price_foil": 15.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/515/the-wandering-minstrel?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.2,
+    "price_eur": 1.18,
     "price_eur_foil": 9.46
   },
   {
@@ -53041,16 +53041,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/e/1/e11df7e8-e154-4fe2-b8d6-a452d0e0d7d5.jpg?1783906452",
     "image_large": "https://cards.scryfall.io/large/front/e/1/e11df7e8-e154-4fe2-b8d6-a452d0e0d7d5.jpg?1783906452",
     "back_image": "",
-    "price_usd": 1.28,
-    "price_foil": 6.62,
+    "price_usd": 1.29,
+    "price_foil": 6.81,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/516/xande-dark-mage?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 1.02,
-    "price_eur_foil": 4.82
+    "price_eur": 0.81,
+    "price_eur_foil": 5.08
   },
   {
     "id": "cf41b2a8-0f8f-48fd-a430-056a2f669615",
@@ -53088,7 +53088,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/f/cf41b2a8-0f8f-48fd-a430-056a2f669615.jpg?1783906452",
     "image_large": "https://cards.scryfall.io/large/front/c/f/cf41b2a8-0f8f-48fd-a430-056a2f669615.jpg?1783906452",
     "back_image": "",
-    "price_usd": 10.28,
+    "price_usd": 10.27,
     "price_foil": 22.78,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/517/yuna-hope-of-spira?utm_source=api",
@@ -53096,8 +53096,8 @@ const CARDS_DATA = [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 13.96,
-    "price_eur_foil": 23.0
+    "price_eur": 16.33,
+    "price_eur_foil": 22.53
   },
   {
     "id": "2eaffe7a-0e04-4c19-942b-695a0c350ef0",
@@ -53136,14 +53136,14 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/e/2eaffe7a-0e04-4c19-942b-695a0c350ef0.jpg?1783906452",
     "back_image": "",
     "price_usd": 1.41,
-    "price_foil": 12.29,
+    "price_foil": 12.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/518/zidane-tantalus-thief?utm_source=api",
     "treatments": [
       "Extended Art",
       "Traditional Foil"
     ],
-    "price_eur": 0.89,
+    "price_eur": 0.99,
     "price_eur_foil": 13.18
   },
   {
@@ -53182,7 +53182,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/2/024a8033-fb41-40a4-b71d-0aa533e0f378.jpg?1783906451",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 83.16,
+    "price_foil": 83.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/519/aerith-gainsborough?utm_source=api",
     "treatments": [
@@ -53190,7 +53190,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 48.58
+    "price_eur_foil": 49.3
   },
   {
     "id": "f0b73ab0-b8eb-4a6f-a8d9-25d56fdf740a",
@@ -53228,7 +53228,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/0/f0b73ab0-b8eb-4a6f-a8d9-25d56fdf740a.jpg?1783906451",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 348.91,
+    "price_foil": 361.95,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/520/cloud-midgar-mercenary?utm_source=api",
     "treatments": [
@@ -53274,7 +53274,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/f/9f347fa7-301f-4bc5-954c-b910a840a23b.jpg?1783906454",
     "back_image": "https://cards.scryfall.io/normal/back/9/f/9f347fa7-301f-4bc5-954c-b910a840a23b.jpg?1783906454",
     "price_usd": null,
-    "price_foil": 25.15,
+    "price_foil": 24.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/521/dion-bahamuts-dominant-bahamut-warden-of-light?utm_source=api",
     "treatments": [
@@ -53282,7 +53282,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 19.54
+    "price_eur_foil": 18.48
   },
   {
     "id": "8cbeb01f-965f-4aa2-9e75-31718cc574e3",
@@ -53320,7 +53320,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/c/8cbeb01f-965f-4aa2-9e75-31718cc574e3.jpg?1783906450",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 56.01,
+    "price_foil": 56.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/522/gogo-master-of-mimicry?utm_source=api",
     "treatments": [
@@ -53328,7 +53328,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 46.94
+    "price_eur_foil": 49.03
   },
   {
     "id": "bbd46c0d-cd9d-4e48-b6bf-f619e141100c",
@@ -53366,7 +53366,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/b/bbd46c0d-cd9d-4e48-b6bf-f619e141100c.jpg?1783906455",
     "back_image": "https://cards.scryfall.io/normal/back/b/b/bbd46c0d-cd9d-4e48-b6bf-f619e141100c.jpg?1783906455",
     "price_usd": null,
-    "price_foil": 30.13,
+    "price_foil": 30.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/523/jill-shivas-dominant-shiva-warden-of-ice?utm_source=api",
     "treatments": [
@@ -53374,7 +53374,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 25.38
+    "price_eur_foil": 27.47
   },
   {
     "id": "34bd7a66-afb1-4a6b-80b3-fce1bb361d88",
@@ -53412,7 +53412,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/4/34bd7a66-afb1-4a6b-80b3-fce1bb361d88.jpg?1783906451",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 16.53,
+    "price_foil": 16.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/524/ardyn-the-usurper?utm_source=api",
     "treatments": [
@@ -53420,7 +53420,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 14.65
+    "price_eur_foil": 15.41
   },
   {
     "id": "7d95f911-91c3-41ee-a709-c579c723eede",
@@ -53458,7 +53458,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/d/7d95f911-91c3-41ee-a709-c579c723eede.jpg?1783906454",
     "back_image": "https://cards.scryfall.io/normal/back/7/d/7d95f911-91c3-41ee-a709-c579c723eede.jpg?1783906454",
     "price_usd": null,
-    "price_foil": 25.64,
+    "price_foil": 25.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/525/cecil-dark-knight-cecil-redeemed-paladin?utm_source=api",
     "treatments": [
@@ -53466,7 +53466,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 18.59
+    "price_eur_foil": 17.8
   },
   {
     "id": "a8bfc03f-227c-4a5d-b172-067ea5860bf9",
@@ -53504,7 +53504,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/8/a8bfc03f-227c-4a5d-b172-067ea5860bf9.jpg?1783906447",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.54,
+    "price_foil": 5.83,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/526/fang-fearless-lcie?utm_source=api",
     "treatments": [
@@ -53512,7 +53512,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.63
+    "price_eur_foil": 3.3
   },
   {
     "id": "a951cc35-bd29-467f-b28c-5d57340e7450",
@@ -53596,7 +53596,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/b/db95465a-2a58-44d7-9439-edd18c9505f0.jpg?1783906453",
     "back_image": "https://cards.scryfall.io/normal/back/d/b/db95465a-2a58-44d7-9439-edd18c9505f0.jpg?1783906453",
     "price_usd": null,
-    "price_foil": 886.96,
+    "price_foil": 886.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/527/sephiroth-fabled-soldier-sephiroth-one-winged-angel?utm_source=api",
     "treatments": [
@@ -53604,7 +53604,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 529.45
+    "price_eur_foil": 499.63
   },
   {
     "id": "15ea1113-7360-462d-91b8-22d5110cbf5a",
@@ -53642,7 +53642,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/5/15ea1113-7360-462d-91b8-22d5110cbf5a.jpg?1783906452",
     "back_image": "https://cards.scryfall.io/normal/back/1/5/15ea1113-7360-462d-91b8-22d5110cbf5a.jpg?1783906452",
     "price_usd": null,
-    "price_foil": 47.59,
+    "price_foil": 49.15,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/528/vincent-valentine-galian-beast?utm_source=api",
     "treatments": [
@@ -53650,7 +53650,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 28.05
+    "price_eur_foil": 27.94
   },
   {
     "id": "8e3b09a9-631d-4174-8390-a82db0a3d68d",
@@ -53688,7 +53688,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e3b09a9-631d-4174-8390-a82db0a3d68d.jpg?1783906451",
     "back_image": "https://cards.scryfall.io/normal/back/8/e/8e3b09a9-631d-4174-8390-a82db0a3d68d.jpg?1783906451",
     "price_usd": null,
-    "price_foil": 27.47,
+    "price_foil": 28.61,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/529/zenos-yae-galvus-shinryu-transcendent-rival?utm_source=api",
     "treatments": [
@@ -53696,7 +53696,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 19.25
+    "price_eur_foil": 20.43
   },
   {
     "id": "57f83eb3-d9d3-4565-b898-4ba1da768172",
@@ -53734,7 +53734,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/7/57f83eb3-d9d3-4565-b898-4ba1da768172.jpg?1783906451",
     "back_image": "https://cards.scryfall.io/normal/back/5/7/57f83eb3-d9d3-4565-b898-4ba1da768172.jpg?1783906451",
     "price_usd": null,
-    "price_foil": 100.84,
+    "price_foil": 101.57,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/530/clive-ifrits-dominant-ifrit-warden-of-inferno?utm_source=api",
     "treatments": [
@@ -53742,7 +53742,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 94.71
+    "price_eur_foil": 88.39
   },
   {
     "id": "6687a6e8-f674-4db8-81eb-5ad28b7890f7",
@@ -53780,7 +53780,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/6/6687a6e8-f674-4db8-81eb-5ad28b7890f7.jpg?1783906445",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 20.14,
+    "price_foil": 20.44,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/531/firion-wild-rose-warrior?utm_source=api",
     "treatments": [
@@ -53788,7 +53788,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 15.08
+    "price_eur_foil": 15.01
   },
   {
     "id": "516105c2-462e-44e8-b412-5e9eb27ba040",
@@ -53826,7 +53826,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/1/516105c2-462e-44e8-b412-5e9eb27ba040.jpg?1783906445",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 2.42,
+    "price_foil": 2.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/532/prompto-argentum?utm_source=api",
     "treatments": [
@@ -53834,7 +53834,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.68
+    "price_eur_foil": 1.6
   },
   {
     "id": "3afa1696-e242-469f-b3ae-99109c4b36e0",
@@ -53872,7 +53872,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/a/3afa1696-e242-469f-b3ae-99109c4b36e0.jpg?1783906444",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 13.81,
+    "price_foil": 14.0,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/533/raubahn-bull-of-ala-mhigo?utm_source=api",
     "treatments": [
@@ -53880,7 +53880,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 9.97
+    "price_eur_foil": 9.96
   },
   {
     "id": "0a38194e-44bb-4f79-9797-03cb733808d0",
@@ -53918,7 +53918,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/a/0a38194e-44bb-4f79-9797-03cb733808d0.jpg?1783906443",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 11.25,
+    "price_foil": 11.39,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/534/seifer-almasy?utm_source=api",
     "treatments": [
@@ -53926,7 +53926,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 9.17
+    "price_eur_foil": 9.87
   },
   {
     "id": "9cbdcfad-dd4f-4405-9379-eb11c6e4d4f5",
@@ -53964,7 +53964,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/c/9cbdcfad-dd4f-4405-9379-eb11c6e4d4f5.jpg?1783906442",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 11.13,
+    "price_foil": 11.01,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/535/vaan-street-thief?utm_source=api",
     "treatments": [
@@ -53972,7 +53972,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 7.74
+    "price_eur_foil": 7.71
   },
   {
     "id": "17e88e4e-d8f0-4598-bfd4-006469c6f26e",
@@ -54010,7 +54010,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/7/17e88e4e-d8f0-4598-bfd4-006469c6f26e.jpg?1783906443",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 124.88,
+    "price_foil": 122.53,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/536/tifa-lockhart?utm_source=api",
     "treatments": [
@@ -54018,7 +54018,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 83.03
+    "price_eur_foil": 80.44
   },
   {
     "id": "f1083637-7c43-44e0-8029-ad56cca8cc19",
@@ -54056,7 +54056,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/1/f1083637-7c43-44e0-8029-ad56cca8cc19.jpg?1783906443",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 7.3,
+    "price_foil": 7.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/537/vanille-cheerful-lcie?utm_source=api",
     "treatments": [
@@ -54064,7 +54064,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.11
+    "price_eur_foil": 3.1
   },
   {
     "id": "ab6954bc-4fbc-4cb9-9c4d-1f46b3fe0085",
@@ -54102,7 +54102,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/b/ab6954bc-4fbc-4cb9-9c4d-1f46b3fe0085.jpg?1783906442",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 27.47,
+    "price_foil": 26.83,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/538/balthier-and-fran?utm_source=api",
     "treatments": [
@@ -54110,7 +54110,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 18.35
+    "price_eur_foil": 19.27
   },
   {
     "id": "7083fa8a-a841-4c69-9443-af35676a7817",
@@ -54148,7 +54148,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/0/7083fa8a-a841-4c69-9443-af35676a7817.jpg?1783906447",
     "back_image": "https://cards.scryfall.io/normal/back/7/0/7083fa8a-a841-4c69-9443-af35676a7817.jpg?1783906447",
     "price_usd": null,
-    "price_foil": 74.02,
+    "price_foil": 78.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/539/emet-selch-unsundered-hades-sorcerer-of-eld?utm_source=api",
     "treatments": [
@@ -54156,7 +54156,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 67.86
+    "price_eur_foil": 66.32
   },
   {
     "id": "de4c9b6b-27be-45b6-9642-49471aaddcb9",
@@ -54194,7 +54194,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/e/de4c9b6b-27be-45b6-9642-49471aaddcb9.jpg?1783906444",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 46.76,
+    "price_foil": 47.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/540/golbez-crystal-collector?utm_source=api",
     "treatments": [
@@ -54202,7 +54202,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 40.39
+    "price_eur_foil": 41.31
   },
   {
     "id": "0b3ba36b-4a15-425c-98ae-37a10b3772bc",
@@ -54240,7 +54240,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/b/0b3ba36b-4a15-425c-98ae-37a10b3772bc.jpg?1783906442",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 42.95,
+    "price_foil": 41.86,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/541/hope-estheim?utm_source=api",
     "treatments": [
@@ -54248,7 +54248,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 27.72
+    "price_eur_foil": 28.73
   },
   {
     "id": "b818aec4-f5a1-411f-ae19-85787cad9032",
@@ -54286,7 +54286,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/8/b818aec4-f5a1-411f-ae19-85787cad9032.jpg?1783906447",
     "back_image": "https://cards.scryfall.io/normal/back/b/8/b818aec4-f5a1-411f-ae19-85787cad9032.jpg?1783906447",
     "price_usd": null,
-    "price_foil": 30.4,
+    "price_foil": 29.92,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/542/joshua-phoenixs-dominant-phoenix-warden-of-fire?utm_source=api",
     "treatments": [
@@ -54294,7 +54294,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 27.94
+    "price_eur_foil": 26.34
   },
   {
     "id": "21977a0a-7e76-4e1f-9c42-dcc4d63961a1",
@@ -54332,7 +54332,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/1/21977a0a-7e76-4e1f-9c42-dcc4d63961a1.jpg?1783906446",
     "back_image": "https://cards.scryfall.io/normal/back/2/1/21977a0a-7e76-4e1f-9c42-dcc4d63961a1.jpg?1783906446",
     "price_usd": null,
-    "price_foil": 170.61,
+    "price_foil": 170.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/543/kefka-court-mage-kefka-ruler-of-ruin?utm_source=api",
     "treatments": [
@@ -54340,7 +54340,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 151.03
+    "price_eur_foil": 136.44
   },
   {
     "id": "d673228a-eec8-4f6e-82fd-10db909ccee2",
@@ -54378,7 +54378,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/6/d673228a-eec8-4f6e-82fd-10db909ccee2.jpg?1783906446",
     "back_image": "https://cards.scryfall.io/normal/back/d/6/d673228a-eec8-4f6e-82fd-10db909ccee2.jpg?1783906446",
     "price_usd": null,
-    "price_foil": 52.33,
+    "price_foil": 52.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/544/kuja-genome-sorcerer-trance-kuja-fate-defied?utm_source=api",
     "treatments": [
@@ -54386,7 +54386,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 27.65
+    "price_eur_foil": 28.11
   },
   {
     "id": "2b760674-b6cc-4730-8c88-4e627f60589c",
@@ -54424,7 +54424,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/b/2b760674-b6cc-4730-8c88-4e627f60589c.jpg?1783906440",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 278.64,
+    "price_foil": 280.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/545/lightning-army-of-one?utm_source=api",
     "treatments": [
@@ -54470,7 +54470,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/9/49543cd4-d976-4d3b-a7d2-6acfbb28b1b5.jpg?1783906440",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 42.74,
+    "price_foil": 42.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/546/noctis-prince-of-lucis?utm_source=api",
     "treatments": [
@@ -54478,7 +54478,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 31.2
+    "price_eur_foil": 31.39
   },
   {
     "id": "51df7137-8bfc-4140-b436-88834bd78b73",
@@ -54516,7 +54516,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/1/51df7137-8bfc-4140-b436-88834bd78b73.jpg?1783906439",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 83.27,
+    "price_foil": 82.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/547/squall-seed-mercenary?utm_source=api",
     "treatments": [
@@ -54524,7 +54524,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 46.88
+    "price_eur_foil": 41.39
   },
   {
     "id": "fe9cd860-1b4e-48ec-be30-e0ec4ca75e26",
@@ -54562,7 +54562,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe9cd860-1b4e-48ec-be30-e0ec4ca75e26.jpg?1783906437",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 32.95,
+    "price_foil": 33.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/548/the-wandering-minstrel?utm_source=api",
     "treatments": [
@@ -54570,7 +54570,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 15.22
+    "price_eur_foil": 24.92
   },
   {
     "id": "ed59c09c-b972-4470-bcae-c79866825941",
@@ -54608,7 +54608,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/d/ed59c09c-b972-4470-bcae-c79866825941.jpg?1783906437",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 158.35,
+    "price_foil": 161.69,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/549/yuna-hope-of-spira?utm_source=api",
     "treatments": [
@@ -54616,7 +54616,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 180.74
+    "price_eur_foil": 177.07
   },
   {
     "id": "439b31a8-d6e2-4db4-bac3-c02e2eb11719",
@@ -54654,7 +54654,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/3/439b31a8-d6e2-4db4-bac3-c02e2eb11719.jpg?1783906437",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.31,
+    "price_foil": 3.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/550/zidane-tantalus-thief?utm_source=api",
     "treatments": [
@@ -54662,7 +54662,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.91
+    "price_eur_foil": 1.88
   },
   {
     "id": "71b97e69-f198-41ec-9385-015ec2f0160f",
@@ -54699,7 +54699,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/1/71b97e69-f198-41ec-9385-015ec2f0160f.jpg?1783906437",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5950.0,
+    "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/551/ja/traveling-chocobo?utm_source=api",
     "treatments": [
@@ -54745,7 +54745,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/1/81690ce7-0651-40e4-9769-baebe10e2cbf.jpg?1783906438",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1825.75,
+    "price_foil": 1836.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/551a/traveling-chocobo?utm_source=api",
     "treatments": [
@@ -54799,7 +54799,7 @@ const CARDS_DATA = [
       "Neon Ink"
     ],
     "price_eur": null,
-    "price_eur_foil": 1515.25
+    "price_eur_foil": 1447.73
   },
   {
     "id": "156cfd45-1556-4804-becf-039cfff7de3d",
@@ -54891,7 +54891,7 @@ const CARDS_DATA = [
       "Neon Ink"
     ],
     "price_eur": null,
-    "price_eur_foil": 1342.87
+    "price_eur_foil": 1328.46
   },
   {
     "id": "6ce8744a-ede3-4662-968a-360eb6639f08",
@@ -54975,7 +54975,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/6/a6d58067-337d-43dc-b4a3-c6acc701d450.jpg?1783906437",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.41,
+    "price_foil": 1.34,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/552/cloud-planets-champion?utm_source=api",
     "treatments": [
@@ -54983,7 +54983,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.12
+    "price_eur_foil": 2.02
   },
   {
     "id": "abd73e52-62f0-4e89-9dc6-90ff0bc2a9b7",
@@ -55020,7 +55020,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/b/abd73e52-62f0-4e89-9dc6-90ff0bc2a9b7.jpg?1783906437",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 0.54,
+    "price_foil": 0.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/553/sephiroth-planets-heir?utm_source=api",
     "treatments": [
@@ -55028,7 +55028,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.0
+    "price_eur_foil": 1.09
   },
   {
     "id": "9da83b07-4978-4af7-be51-8aa8f35ec0bb",
@@ -55064,14 +55064,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/d/9da83b07-4978-4af7-be51-8aa8f35ec0bb.jpg?1783906435",
     "image_large": "https://cards.scryfall.io/large/front/9/d/9da83b07-4978-4af7-be51-8aa8f35ec0bb.jpg?1783906435",
     "back_image": "",
-    "price_usd": 0.78,
+    "price_usd": 0.82,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/554/beatrix-loyal-general?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.93,
+    "price_eur": 0.83,
     "price_eur_foil": null
   },
   {
@@ -55108,14 +55108,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/4/c44e0ad6-9f44-4e4c-8c3b-3ee99409a740.jpg?1783906436",
     "image_large": "https://cards.scryfall.io/large/front/c/4/c44e0ad6-9f44-4e4c-8c3b-3ee99409a740.jpg?1783906436",
     "back_image": "",
-    "price_usd": 3.51,
+    "price_usd": 3.42,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/555/rosa-resolute-white-mage?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 1.45,
+    "price_eur": 1.62,
     "price_eur_foil": null
   },
   {
@@ -55152,14 +55152,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/6/b64e4475-f1c6-4d85-b42f-6d84d06855bb.jpg?1783906436",
     "image_large": "https://cards.scryfall.io/large/front/b/6/b64e4475-f1c6-4d85-b42f-6d84d06855bb.jpg?1783906436",
     "back_image": "",
-    "price_usd": 0.47,
+    "price_usd": 0.45,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/556/ultimecia-temporal-threat?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 1.12,
+    "price_eur": 1.07,
     "price_eur_foil": null
   },
   {
@@ -55196,14 +55196,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/a/1/a11cb85c-85dd-435c-8303-4d0d18bdb1e9.jpg?1783906435",
     "image_large": "https://cards.scryfall.io/large/front/a/1/a11cb85c-85dd-435c-8303-4d0d18bdb1e9.jpg?1783906435",
     "back_image": "",
-    "price_usd": 0.22,
+    "price_usd": 0.21,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/557/deadly-embrace?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.31,
+    "price_eur": 0.41,
     "price_eur_foil": null
   },
   {
@@ -55240,14 +55240,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/c/5/c5fdc78e-0815-443c-8c26-35387b6f4f37.jpg?1783906434",
     "image_large": "https://cards.scryfall.io/large/front/c/5/c5fdc78e-0815-443c-8c26-35387b6f4f37.jpg?1783906434",
     "back_image": "",
-    "price_usd": 0.31,
+    "price_usd": 0.29,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/558/seymour-flux?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.48,
+    "price_eur": 0.43,
     "price_eur_foil": null
   },
   {
@@ -55284,14 +55284,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/0/5/05b04b06-9271-4a28-a60e-287df0d1a4d1.jpg?1783906432",
     "image_large": "https://cards.scryfall.io/large/front/0/5/05b04b06-9271-4a28-a60e-287df0d1a4d1.jpg?1783906432",
     "back_image": "",
-    "price_usd": 0.25,
+    "price_usd": 0.22,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/559/judgment-bolt?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.29,
+    "price_eur": 0.2,
     "price_eur_foil": null
   },
   {
@@ -55328,14 +55328,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/4/a/4ad4dce3-6e43-4528-b570-85547d03164e.jpg?1783906431",
     "image_large": "https://cards.scryfall.io/large/front/4/a/4ad4dce3-6e43-4528-b570-85547d03164e.jpg?1783906431",
     "back_image": "",
-    "price_usd": 0.35,
+    "price_usd": 0.32,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/560/lightning-security-sergeant?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.5,
+    "price_eur": 0.46,
     "price_eur_foil": null
   },
   {
@@ -55372,14 +55372,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/1/c/1caed9a8-b73b-470e-b9d8-8c3b7cac3eee.jpg?1783906432",
     "image_large": "https://cards.scryfall.io/large/front/1/c/1caed9a8-b73b-470e-b9d8-8c3b7cac3eee.jpg?1783906432",
     "back_image": "",
-    "price_usd": 0.24,
+    "price_usd": 0.23,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/561/xande-dark-mage?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.24,
+    "price_eur": 0.3,
     "price_eur_foil": null
   },
   {
@@ -55416,14 +55416,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/8/b/8b691d42-3498-4d47-9a46-f7c376df8886.jpg?1783906432",
     "image_large": "https://cards.scryfall.io/large/front/8/b/8b691d42-3498-4d47-9a46-f7c376df8886.jpg?1783906432",
     "back_image": "",
-    "price_usd": 0.27,
+    "price_usd": 0.26,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/562/magitek-scythe?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 0.22,
+    "price_eur": 0.27,
     "price_eur_foil": null
   },
   {
@@ -55460,14 +55460,14 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/b/9/b9162d08-a6ba-4e6e-b82c-9b092bd781dd.jpg?1783906432",
     "image_large": "https://cards.scryfall.io/large/front/b/9/b9162d08-a6ba-4e6e-b82c-9b092bd781dd.jpg?1783906432",
     "back_image": "",
-    "price_usd": 5.27,
+    "price_usd": 6.03,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/563/ultima-weapon?utm_source=api",
     "treatments": [
       "Default"
     ],
-    "price_eur": 4.35,
+    "price_eur": 4.08,
     "price_eur_foil": null
   },
   {
@@ -55505,7 +55505,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/3/b358dadc-9cc9-4baf-afec-3b50d0822609.jpg?1783904641",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 191.36,
+    "price_foil": 190.53,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/564/cloud-midgar-mercenary?utm_source=api",
     "treatments": [
@@ -55513,7 +55513,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 160.36
+    "price_eur_foil": 154.15
   },
   {
     "id": "c7d9c54d-edec-40a8-82d8-b12cee7daa21",
@@ -55550,7 +55550,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/c/7/c7d9c54d-edec-40a8-82d8-b12cee7daa21.jpg?1783904642",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 24.42,
+    "price_foil": 24.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/565/stiltzkin-moogle-merchant?utm_source=api",
     "treatments": [
@@ -55558,7 +55558,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 39.94
+    "price_eur_foil": 37.65
   },
   {
     "id": "13f4b6f3-736f-4f33-9d05-9bfd0b05b214",
@@ -55595,7 +55595,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/3/13f4b6f3-736f-4f33-9d05-9bfd0b05b214.jpg?1783904642",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 34.38,
+    "price_foil": 34.79,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/566/a-realm-reborn?utm_source=api",
     "treatments": [
@@ -55603,7 +55603,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 21.98
+    "price_eur_foil": 22.03
   },
   {
     "id": "39a038ed-9ed9-4a32-9613-989e4809ec94",
@@ -55640,7 +55640,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/9/39a038ed-9ed9-4a32-9613-989e4809ec94.jpg?1783904641",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 168.57,
+    "price_foil": 165.81,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/567/tifa-lockhart?utm_source=api",
     "treatments": [
@@ -55648,7 +55648,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 170.51
+    "price_eur_foil": 170.1
   },
   {
     "id": "f58e882a-c59f-4f72-91b5-0291f8360a2c",
@@ -55685,7 +55685,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/5/f58e882a-c59f-4f72-91b5-0291f8360a2c.jpg?1783904641",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 119.18,
+    "price_foil": 117.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/568/traveling-chocobo?utm_source=api",
     "treatments": [
@@ -55693,7 +55693,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 83.85
+    "price_eur_foil": 88.82
   },
   {
     "id": "1ce688fa-1fdb-4acd-b9b0-bf7325a6b8e0",
@@ -55730,7 +55730,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/c/1ce688fa-1fdb-4acd-b9b0-bf7325a6b8e0.jpg?1783904641",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 97.21,
+    "price_foil": 96.59,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/569/choco-seeker-of-paradise?utm_source=api",
     "treatments": [
@@ -55738,7 +55738,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 88.64
+    "price_eur_foil": 91.95
   },
   {
     "id": "25ef2d44-c261-4511-b96f-85e7a291e318",
@@ -55775,7 +55775,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/5/25ef2d44-c261-4511-b96f-85e7a291e318.jpg?1783904640",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 228.5,
+    "price_foil": 227.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/570/vivi-ornitier?utm_source=api",
     "treatments": [
@@ -55783,7 +55783,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 200.87
+    "price_eur_foil": 203.9
   },
   {
     "id": "d9228c15-06d1-4701-8619-1ad08d63275a",
@@ -55820,7 +55820,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/9/d9228c15-06d1-4701-8619-1ad08d63275a.jpg?1783904639",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 183.05,
+    "price_foil": 180.02,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/571/yuna-hope-of-spira?utm_source=api",
     "treatments": [
@@ -55828,7 +55828,7 @@ const CARDS_DATA = [
       "Chocobo Track Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 150.94
+    "price_eur_foil": 143.2
   },
   {
     "id": "dec72b07-8f41-4d42-a455-794bf106302c",
@@ -55866,7 +55866,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/e/dec72b07-8f41-4d42-a455-794bf106302c.jpg?1783906432",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 0.83,
+    "price_foil": 0.81,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/572/plains?utm_source=api",
     "treatments": [
@@ -55874,7 +55874,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 0.75
+    "price_eur_foil": 0.54
   },
   {
     "id": "46255a65-b735-4888-85db-3ab2ab3d903c",
@@ -55912,7 +55912,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/6/46255a65-b735-4888-85db-3ab2ab3d903c.jpg?1783906430",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.62,
+    "price_foil": 1.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/573/island?utm_source=api",
     "treatments": [
@@ -55920,7 +55920,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.27
+    "price_eur_foil": 1.17
   },
   {
     "id": "1176ebbf-4130-4e4e-ad49-65101a7357b4",
@@ -55958,7 +55958,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/1/1176ebbf-4130-4e4e-ad49-65101a7357b4.jpg?1783906430",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 2.3,
+    "price_foil": 2.24,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/574/swamp?utm_source=api",
     "treatments": [
@@ -55966,7 +55966,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.78
+    "price_eur_foil": 1.5
   },
   {
     "id": "0cef98b7-d54a-456e-8240-1c5af3a72a04",
@@ -56004,7 +56004,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/c/0cef98b7-d54a-456e-8240-1c5af3a72a04.jpg?1783906431",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.21,
+    "price_foil": 1.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/575/mountain?utm_source=api",
     "treatments": [
@@ -56012,7 +56012,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 0.96
+    "price_eur_foil": 0.84
   },
   {
     "id": "2036f825-ef57-4a40-b45f-0668d9c8ec6a",
@@ -56058,7 +56058,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.63
+    "price_eur_foil": 1.52
   },
   {
     "id": "6d24956c-b123-4682-9f89-6821ae45fc00",
@@ -56096,16 +56096,16 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/d/6d24956c-b123-4682-9f89-6821ae45fc00.jpg?1783906430",
     "image_large": "https://cards.scryfall.io/large/front/6/d/6d24956c-b123-4682-9f89-6821ae45fc00.jpg?1783906430",
     "back_image": "",
-    "price_usd": 29.31,
-    "price_foil": 49.0,
+    "price_usd": 29.25,
+    "price_foil": 49.74,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/577/yshtola-rhul?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 20.17,
-    "price_eur_foil": 37.84
+    "price_eur": 18.95,
+    "price_eur_foil": 36.24
   },
   {
     "id": "de3b9b08-f430-4f01-8a42-3a9f1415eee0",
@@ -56142,7 +56142,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/e/de3b9b08-f430-4f01-8a42-3a9f1415eee0.jpg?1783906430",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.39,
+    "price_foil": 3.57,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/578/phoenix-down?utm_source=api",
     "treatments": [
@@ -56187,7 +56187,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/8/b8921d64-fdd3-4cdd-9687-983c8d6e0f72.jpg?1783906431",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.29,
+    "price_foil": 3.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/579/white-auracite?utm_source=api",
     "treatments": [
@@ -56195,7 +56195,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.95
+    "price_eur_foil": 1.96
   },
   {
     "id": "90ab9143-23e0-437e-bc51-a46f3497c195",
@@ -56232,7 +56232,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/0/90ab9143-23e0-437e-bc51-a46f3497c195.jpg?1783906429",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 9.12,
+    "price_foil": 9.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/580/zack-fair?utm_source=api",
     "treatments": [
@@ -56240,7 +56240,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 5.16
+    "price_eur_foil": 5.04
   },
   {
     "id": "a0f6e2d7-58b5-4a7d-8c42-e25185cd173f",
@@ -56277,7 +56277,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/0/a0f6e2d7-58b5-4a7d-8c42-e25185cd173f.jpg?1783906430",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.31,
+    "price_foil": 4.42,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/581/astrologians-planisphere?utm_source=api",
     "treatments": [
@@ -56285,7 +56285,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.75
+    "price_eur_foil": 4.5
   },
   {
     "id": "ace9baac-4aa6-49ef-b85d-514de6e77043",
@@ -56322,7 +56322,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/c/ace9baac-4aa6-49ef-b85d-514de6e77043.jpg?1783906429",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.28,
+    "price_foil": 1.29,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/582/sages-nouliths?utm_source=api",
     "treatments": [
@@ -56330,7 +56330,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 1.46
+    "price_eur_foil": 1.54
   },
   {
     "id": "b6dc1f5a-a6cc-4ab4-8bb9-e216e24ca735",
@@ -56367,7 +56367,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/6/b6dc1f5a-a6cc-4ab4-8bb9-e216e24ca735.jpg?1783906426",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.78,
+    "price_foil": 4.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/583/circle-of-power?utm_source=api",
     "treatments": [
@@ -56375,7 +56375,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.12
+    "price_eur_foil": 3.2
   },
   {
     "id": "ea5b9fe8-2561-4176-adfd-3fb790250bbc",
@@ -56412,7 +56412,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/a/ea5b9fe8-2561-4176-adfd-3fb790250bbc.jpg?1783906425",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.07,
+    "price_foil": 3.97,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/584/barret-wallace?utm_source=api",
     "treatments": [
@@ -56457,7 +56457,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/2/9268ccdb-0b5b-4624-9443-f7b5330ec71f.jpg?1783906426",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.53,
+    "price_foil": 3.54,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/fin/585/laughing-mad?utm_source=api",
     "treatments": [
@@ -56465,7 +56465,7 @@ const CARDS_DATA = [
       "Surge Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.58
+    "price_eur_foil": 2.46
   },
   {
     "id": "6969ef4f-e27b-40fc-9558-c9281deae80c",
@@ -56503,7 +56503,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/6/9/6969ef4f-e27b-40fc-9558-c9281deae80c.jpg?1787484697",
     "image_large": "https://cards.scryfall.io/large/front/6/9/6969ef4f-e27b-40fc-9558-c9281deae80c.jpg?1787484697",
     "back_image": "",
-    "price_usd": 1400.33,
+    "price_usd": 1477.32,
     "price_foil": 4531.42,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pf25/9/tifa-lockhart?utm_source=api",
@@ -56511,7 +56511,7 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 1591.87,
+    "price_eur": 1446.75,
     "price_eur_foil": 3967.12
   },
   {
@@ -56557,7 +56557,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 318.03
+    "price_eur_foil": 317.83
   },
   {
     "id": "5c0e08d1-ecec-4577-b16e-a8d8478472a0",
@@ -56595,7 +56595,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/c/5c0e08d1-ecec-4577-b16e-a8d8478472a0.jpg?1783906200",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 49.76,
+    "price_foil": 50.45,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/1s/summon:-bahamut?utm_source=api",
     "treatments": [
@@ -56641,7 +56641,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/7/67bd0d2c-2fcf-46e2-a303-52e37e086f5d.jpg?1785650769",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 11.08,
+    "price_foil": 11.52,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/2s/ultima-origin-of-oblivion?utm_source=api",
     "treatments": [
@@ -56688,7 +56688,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/7/f7bac30c-1401-4a3b-90ae-4ae1709a214a.jpg?1785258657",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 22.15,
+    "price_foil": 22.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/4s/aerith-gainsborough?utm_source=api",
     "treatments": [
@@ -56696,7 +56696,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 12.16
+    "price_eur_foil": 11.75
   },
   {
     "id": "b9be30cf-a49b-4358-836f-40441ee92519",
@@ -56742,7 +56742,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 48.13
+    "price_eur_foil": 45.12
   },
   {
     "id": "a245ebd2-606c-40dc-981b-d619b00d7a07",
@@ -56780,7 +56780,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/2/a245ebd2-606c-40dc-981b-d619b00d7a07.jpg?1783906205",
     "back_image": "https://cards.scryfall.io/normal/back/a/2/a245ebd2-606c-40dc-981b-d619b00d7a07.jpg?1783906205",
     "price_usd": null,
-    "price_foil": 6.06,
+    "price_foil": 6.05,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/16s/dion-bahamuts-dominant-bahamut-warden-of-light?utm_source=api",
     "treatments": [
@@ -56826,7 +56826,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/5/157ca197-0e72-4f9c-9c65-d696232bc6f4.jpg?1783906198",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.53,
+    "price_foil": 3.57,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/20s/from-father-to-son?utm_source=api",
     "treatments": [
@@ -56872,7 +56872,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/9/a9b212fb-4666-40d5-bd81-ca4446561725.jpg?1783906198",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 17.95,
+    "price_foil": 17.98,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/23s/machinists-arsenal?utm_source=api",
     "treatments": [
@@ -56926,7 +56926,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.18
+    "price_eur_foil": 2.26
   },
   {
     "id": "8badb69b-27df-4572-ba76-dde6c8ba0279",
@@ -56964,7 +56964,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/b/8badb69b-27df-4572-ba76-dde6c8ba0279.jpg?1783906197",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 8.92,
+    "price_foil": 8.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/27s/moogles-valor?utm_source=api",
     "treatments": [
@@ -57018,7 +57018,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.06
+    "price_eur_foil": 3.07
   },
   {
     "id": "d9120fd0-f958-4ce3-82cd-0500d4549654",
@@ -57102,7 +57102,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/5/1586fec8-08c5-4bd5-9167-cfae9ac8e2cb.jpg?1783906195",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 10.4,
+    "price_foil": 10.32,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/38s/ultima?utm_source=api",
     "treatments": [
@@ -57148,7 +57148,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/9/395e13e2-1884-4aee-971d-00692b429a88.jpg?1783906199",
     "back_image": "https://cards.scryfall.io/normal/back/3/9/395e13e2-1884-4aee-971d-00692b429a88.jpg?1783906199",
     "price_usd": null,
-    "price_foil": 7.41,
+    "price_foil": 7.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/39s/venat-heart-of-hydaelyn-hydaelyn-the-mothercrystal?utm_source=api",
     "treatments": [
@@ -57194,7 +57194,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/f/4f461671-097a-4cd6-8114-4ec769e66904.jpg?1783906194",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 15.23,
+    "price_foil": 14.97,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/43s/the-wind-crystal?utm_source=api",
     "treatments": [
@@ -57240,7 +57240,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/9/89e3ef53-ccb6-4b8e-a512-c9debf87eecf.jpg?1783906194",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.83,
+    "price_foil": 5.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/46s/astrologians-planisphere?utm_source=api",
     "treatments": [
@@ -57286,7 +57286,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/f/0f85cda8-f333-4b73-8005-34df32d3ed73.jpg?1783906194",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.03,
+    "price_foil": 5.1,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/51s/edgar-king-of-figaro?utm_source=api",
     "treatments": [
@@ -57294,7 +57294,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.0
+    "price_eur_foil": 1.99
   },
   {
     "id": "329abaf9-b428-4e63-9433-558b384ba698",
@@ -57332,7 +57332,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/2/329abaf9-b428-4e63-9433-558b384ba698.jpg?1783906192",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 18.68,
+    "price_foil": 18.76,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/54s/gogo-master-of-mimicry?utm_source=api",
     "treatments": [
@@ -57378,7 +57378,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/4/246c2602-a8fd-4e01-bf32-5a513ae3c056.jpg?1783906198",
     "back_image": "https://cards.scryfall.io/normal/back/2/4/246c2602-a8fd-4e01-bf32-5a513ae3c056.jpg?1783906198",
     "price_usd": null,
-    "price_foil": 6.13,
+    "price_foil": 6.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/58s/jill-shivas-dominant-shiva-warden-of-ice?utm_source=api",
     "treatments": [
@@ -57386,7 +57386,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 30.04
+    "price_eur_foil": 28.23
   },
   {
     "id": "7a948f96-fdd8-4f6c-a737-3d74b7daff71",
@@ -57424,7 +57424,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/a/7a948f96-fdd8-4f6c-a737-3d74b7daff71.jpg?1783906191",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 11.48,
+    "price_foil": 11.46,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/59s/louisoixs-sacrifice?utm_source=api",
     "treatments": [
@@ -57470,7 +57470,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/a/3a27f9fd-d3d9-42c4-be59-9a5d9cfabf6d.jpg?1783906190",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.05,
+    "price_foil": 4.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/60s/the-lunar-whale?utm_source=api",
     "treatments": [
@@ -57478,7 +57478,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.29
+    "price_eur_foil": 3.36
   },
   {
     "id": "d5cc0b50-5c09-4c74-b9dc-92bb95781e7f",
@@ -57516,7 +57516,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/5/d5cc0b50-5c09-4c74-b9dc-92bb95781e7f.jpg?1783906191",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.53,
+    "price_foil": 5.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/62s/matoya-archon-elder?utm_source=api",
     "treatments": [
@@ -57562,7 +57562,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/c/c/cc6f3187-0563-4843-a914-525446324411.jpg?1783906190",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.09,
+    "price_foil": 4.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/63s/memories-returning?utm_source=api",
     "treatments": [
@@ -57570,7 +57570,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.46
+    "price_eur_foil": 2.69
   },
   {
     "id": "22281ba1-d509-4039-83c7-d912a1ce5ac4",
@@ -57608,7 +57608,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/2/22281ba1-d509-4039-83c7-d912a1ce5ac4.jpg?1783906185",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 6.1,
+    "price_foil": 6.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/77s/summon:-leviathan?utm_source=api",
     "treatments": [
@@ -57654,7 +57654,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/9/093948e5-3036-42b4-8682-37b298248916.jpg?1783906187",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 10.35,
+    "price_foil": 10.19,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/85s/the-water-crystal?utm_source=api",
     "treatments": [
@@ -57662,7 +57662,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.53
+    "price_eur_foil": 4.63
   },
   {
     "id": "01eee1b7-286c-4df7-aeaf-ada01882e662",
@@ -57700,7 +57700,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/1/01eee1b7-286c-4df7-aeaf-ada01882e662.jpg?1783906184",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 24.2,
+    "price_foil": 26.69,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/86s/yshtola-rhul?utm_source=api",
     "treatments": [
@@ -57746,7 +57746,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/7/47af882d-2036-4b66-bff0-31b7b8b89749.jpg?1785650703",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 7.34,
+    "price_foil": 7.57,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/89s/ardyn-the-usurper?utm_source=api",
     "treatments": [
@@ -57754,7 +57754,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.88
+    "price_eur_foil": 4.73
   },
   {
     "id": "579a2f93-6447-4b02-bbf7-b09ef91bd709",
@@ -57800,7 +57800,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 42.92
+    "price_eur_foil": 47.86
   },
   {
     "id": "776062ed-94df-4b2e-a84b-91756b4223bc",
@@ -57930,7 +57930,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/2/021d0abf-7c1a-4081-9686-fba578120249.jpg?1783906188",
     "back_image": "https://cards.scryfall.io/normal/back/0/2/021d0abf-7c1a-4081-9686-fba578120249.jpg?1783906188",
     "price_usd": null,
-    "price_foil": 5.8,
+    "price_foil": 5.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/104s/jecht-reluctant-guardian-braskas-final-aeon?utm_source=api",
     "treatments": [
@@ -57976,7 +57976,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/2/529ae7c1-320d-4625-ad64-c87678d51354.jpg?1783906182",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.89,
+    "price_foil": 5.8,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/105s/kain-traitorous-dragoon?utm_source=api",
     "treatments": [
@@ -58022,7 +58022,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/7/d75917b1-0ffb-4bff-b75f-973e26e172df.jpg?1783906182",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.72,
+    "price_foil": 4.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/108s/ninjas-blades?utm_source=api",
     "treatments": [
@@ -58068,7 +58068,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/f/7f31721a-8fd4-46ca-bef9-d24ad4663a58.jpg?1783906186",
     "back_image": "https://cards.scryfall.io/normal/back/7/f/7f31721a-8fd4-46ca-bef9-d24ad4663a58.jpg?1783906186",
     "price_usd": null,
-    "price_foil": 99.22,
+    "price_foil": 100.2,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/115s/sephiroth-fabled-soldier-sephiroth-one-winged-angel?utm_source=api",
     "treatments": [
@@ -58076,7 +58076,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 40.46
+    "price_eur_foil": 40.66
   },
   {
     "id": "13e0ad67-35a6-48f3-83cb-5ffd07daf717",
@@ -58114,7 +58114,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/3/13e0ad67-35a6-48f3-83cb-5ffd07daf717.jpg?1783906180",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 10.99,
+    "price_foil": 11.03,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/121s/summon:-primal-odin?utm_source=api",
     "treatments": [
@@ -58122,7 +58122,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.58
+    "price_eur_foil": 4.44
   },
   {
     "id": "4287bbc3-df6b-453f-8d60-a929be013f30",
@@ -58160,7 +58160,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/2/4287bbc3-df6b-453f-8d60-a929be013f30.jpg?1783906185",
     "back_image": "https://cards.scryfall.io/normal/back/4/2/4287bbc3-df6b-453f-8d60-a929be013f30.jpg?1783906185",
     "price_usd": null,
-    "price_foil": 12.6,
+    "price_foil": 12.73,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/125s/vincent-valentine-galian-beast?utm_source=api",
     "treatments": [
@@ -58206,7 +58206,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/c/6c6f6035-32e0-4ea2-b281-79c8e00708a0.jpg?1783906187",
     "back_image": "https://cards.scryfall.io/normal/back/6/c/6c6f6035-32e0-4ea2-b281-79c8e00708a0.jpg?1783906187",
     "price_usd": null,
-    "price_foil": 8.71,
+    "price_foil": 8.85,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/127s/zenos-yae-galvus-shinryu-transcendent-rival?utm_source=api",
     "treatments": [
@@ -58252,7 +58252,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/2/627a0899-e206-4dc0-bc07-6d04d63792df.jpg?1783906181",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 14.07,
+    "price_foil": 13.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/128s/zodiark-umbral-god?utm_source=api",
     "treatments": [
@@ -58344,7 +58344,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/a/daceda7c-db1d-4847-9c80-13fdfe4d2135.jpg?1783906177",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 16.34,
+    "price_foil": 16.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/135s/the-fire-crystal?utm_source=api",
     "treatments": [
@@ -58390,7 +58390,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/5/65290ee9-0fbe-49d5-af48-cfbcde82277f.jpg?1783906177",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.61,
+    "price_foil": 4.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/137s/firion-wild-rose-warrior?utm_source=api",
     "treatments": [
@@ -58436,7 +58436,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/6/86f7e3b4-959c-4820-9a7b-e5d178d42931.jpg?1783906176",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 7.84,
+    "price_foil": 8.05,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/139s/gilgamesh-master-at-arms?utm_source=api",
     "treatments": [
@@ -58482,7 +58482,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/7/87c9a2a6-b755-45a1-a785-792c7f179f18.jpg?1783906176",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 24.73,
+    "price_foil": 24.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/146s/nibelheim-aflame?utm_source=api",
     "treatments": [
@@ -58528,7 +58528,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/4/14154d2c-911a-433c-8f09-bddd41a2f65e.jpg?1783906175",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.65,
+    "price_foil": 4.82,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/151s/raubahn-bull-of-ala-mhigo?utm_source=api",
     "treatments": [
@@ -58536,7 +58536,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.7
+    "price_eur_foil": 2.57
   },
   {
     "id": "8e0122f1-2d6b-423e-ac62-ffa4822632ed",
@@ -58574,7 +58574,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/e/8e0122f1-2d6b-423e-ac62-ffa4822632ed.jpg?1783906175",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.17,
+    "price_foil": 4.26,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/156s/seifer-almasy?utm_source=api",
     "treatments": [
@@ -58620,7 +58620,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/9/59d7c696-0ffa-4327-9045-eaefefcf4fe0.jpg?1783906174",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.36,
+    "price_foil": 3.37,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/160s/summon:-brynhildr?utm_source=api",
     "treatments": [
@@ -58666,7 +58666,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/b/5bb06121-b390-4e3d-8822-4389570b0e15.jpg?1783906173",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.27,
+    "price_foil": 3.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/162s/summon:-gf-cerberus?utm_source=api",
     "treatments": [
@@ -58712,7 +58712,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/4/64634ded-8ff9-4f99-afa7-137fc307c0b6.jpg?1783906173",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.49,
+    "price_foil": 5.97,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/166s/triple-triad?utm_source=api",
     "treatments": [
@@ -58720,7 +58720,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.64
+    "price_eur_foil": 2.54
   },
   {
     "id": "5c04ec8b-967e-4ad3-b11b-eebb09821d8f",
@@ -58758,7 +58758,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/c/5c04ec8b-967e-4ad3-b11b-eebb09821d8f.jpg?1783906173",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.83,
+    "price_foil": 3.95,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/168s/vaan-street-thief?utm_source=api",
     "treatments": [
@@ -58812,7 +58812,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.84
+    "price_eur_foil": 3.98
   },
   {
     "id": "7976e5ae-f2c3-467e-a4d5-b6c609d8aa26",
@@ -58850,7 +58850,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/9/7976e5ae-f2c3-467e-a4d5-b6c609d8aa26.jpg?1783906173",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 33.65,
+    "price_foil": 33.83,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/172s/ancient-adamantoise?utm_source=api",
     "treatments": [
@@ -58896,7 +58896,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/4/d4ac428e-8819-475b-b7cf-41083e0448b5.jpg?1783906172",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.81,
+    "price_foil": 4.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/175s/bartz-and-boko?utm_source=api",
     "treatments": [
@@ -58904,7 +58904,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.13
+    "price_eur_foil": 3.09
   },
   {
     "id": "010549ae-1289-47ee-a69b-135094f32607",
@@ -58942,7 +58942,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/1/010549ae-1289-47ee-a69b-135094f32607.jpg?1783906172",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 21.29,
+    "price_foil": 21.77,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/184s/the-earth-crystal?utm_source=api",
     "treatments": [
@@ -58988,7 +58988,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/7/87d03dd2-afb8-48c8-a0f6-90f282c05d92.jpg?1783906176",
     "back_image": "https://cards.scryfall.io/normal/back/8/7/87d03dd2-afb8-48c8-a0f6-90f282c05d92.jpg?1783906176",
     "price_usd": null,
-    "price_foil": 9.2,
+    "price_foil": 9.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/185s/esper-origins-summon:-esper-maduin?utm_source=api",
     "treatments": [
@@ -59034,7 +59034,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/8/785640aa-047c-449f-8b25-e3ccc2ad06e8.jpg?1783906170",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 19.91,
+    "price_foil": 20.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/191s/jumbo-cactuar?utm_source=api",
     "treatments": [
@@ -59080,7 +59080,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/1/610e4aad-f7d7-42af-81e3-408989f3f576.jpg?1783906168",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.2,
+    "price_foil": 3.3,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/196s/a-realm-reborn?utm_source=api",
     "treatments": [
@@ -59126,7 +59126,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/0/d07ed4e3-8c45-4535-bb0b-3d3a6df673f4.jpg?1783906167",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 8.28,
+    "price_foil": 7.7,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/199s/sazh-katzroy?utm_source=api",
     "treatments": [
@@ -59172,7 +59172,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/e/1eb2a447-e18e-4318-898d-bc12fdd16172.jpg?1783906167",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.38,
+    "price_foil": 5.43,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/204s/summon:-titan?utm_source=api",
     "treatments": [
@@ -59180,7 +59180,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.87
+    "price_eur_foil": 4.8
   },
   {
     "id": "f9b9c711-9525-4206-8582-d9f12cdaa876",
@@ -59218,7 +59218,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/9/f9b9c711-9525-4206-8582-d9f12cdaa876.jpg?1783906167",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 10.95,
+    "price_foil": 11.62,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/205s/summoners-grimoire?utm_source=api",
     "treatments": [
@@ -59310,7 +59310,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/e/9eedb34d-9815-48d3-be1b-d08c0adb1448.jpg?1783906166",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 72.68,
+    "price_foil": 71.41,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/210s/traveling-chocobo?utm_source=api",
     "treatments": [
@@ -59356,7 +59356,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/6/6/6663e103-3356-46d3-80a0-32e28d6dfc95.jpg?1783906164",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 41.11,
+    "price_foil": 39.64,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/212s/absolute-virtue?utm_source=api",
     "treatments": [
@@ -59402,7 +59402,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/d/dd4da0d3-29c0-4697-877a-a07e3dae3af6.jpg?1783906164",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 2.44,
+    "price_foil": 2.35,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/213s/balthier-and-fran?utm_source=api",
     "treatments": [
@@ -59448,7 +59448,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/c/3/c3ffcf44-9cab-4ee0-a5db-4b6366e99863.jpg?1783906164",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 8.94,
+    "price_foil": 9.08,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/215s/choco-seeker-of-paradise?utm_source=api",
     "treatments": [
@@ -59494,7 +59494,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/5/5580fc6e-0192-4bd9-aace-ac2040fa729a.jpg?1783906167",
     "back_image": "https://cards.scryfall.io/normal/back/5/5/5580fc6e-0192-4bd9-aace-ac2040fa729a.jpg?1783906167",
     "price_usd": null,
-    "price_foil": 22.54,
+    "price_foil": 22.4,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/218s/emet-selch-unsundered-hades-sorcerer-of-eld?utm_source=api",
     "treatments": [
@@ -59540,7 +59540,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/f/effc26cf-3e80-4e67-a703-5c3579abc9f4.jpg?1783906163",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 4.74,
+    "price_foil": 4.88,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/225s/golbez-crystal-collector?utm_source=api",
     "treatments": [
@@ -59586,7 +59586,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/4/94a7d51d-76ab-4f19-885c-af337c057f81.jpg?1783906161",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 9.02,
+    "price_foil": 8.94,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/226s/hope-estheim?utm_source=api",
     "treatments": [
@@ -59678,7 +59678,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/8/f8613b13-fedd-45a9-bb47-0440a4a104e7.jpg?1783906165",
     "back_image": "https://cards.scryfall.io/normal/back/f/8/f8613b13-fedd-45a9-bb47-0440a4a104e7.jpg?1783906165",
     "price_usd": null,
-    "price_foil": 6.86,
+    "price_foil": 6.96,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/229s/joshua-phoenixs-dominant-phoenix-warden-of-fire?utm_source=api",
     "treatments": [
@@ -59724,7 +59724,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/2/42ad2762-092b-4064-8fc0-be55da1916f8.jpg?1783906164",
     "back_image": "https://cards.scryfall.io/normal/back/4/2/42ad2762-092b-4064-8fc0-be55da1916f8.jpg?1783906164",
     "price_usd": null,
-    "price_foil": 30.23,
+    "price_foil": 30.51,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/231s/kefka-court-mage-kefka-ruler-of-ruin?utm_source=api",
     "treatments": [
@@ -59732,7 +59732,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 10.31
+    "price_eur_foil": 9.99
   },
   {
     "id": "bac7dbc9-3e3a-4933-98d1-4a0505c4b1da",
@@ -59770,7 +59770,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/a/bac7dbc9-3e3a-4933-98d1-4a0505c4b1da.jpg?1783906164",
     "back_image": "https://cards.scryfall.io/normal/back/b/a/bac7dbc9-3e3a-4933-98d1-4a0505c4b1da.jpg?1783906164",
     "price_usd": null,
-    "price_foil": 12.52,
+    "price_foil": 12.65,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/232s/kuja-genome-sorcerer-trance-kuja-fate-defied?utm_source=api",
     "treatments": [
@@ -59816,7 +59816,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/9/e/9e575906-0f1e-4f24-aa0b-832fe1bb9613.jpg?1783906159",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 41.95,
+    "price_foil": 42.97,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/233s/lightning-army-of-one?utm_source=api",
     "treatments": [
@@ -59824,7 +59824,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 30.05
+    "price_eur_foil": 28.86
   },
   {
     "id": "48ea4aa3-6514-4518-87d7-4a26ee4d3d3f",
@@ -59862,7 +59862,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/8/48ea4aa3-6514-4518-87d7-4a26ee4d3d3f.jpg?1783906158",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 8.36,
+    "price_foil": 8.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/235s/noctis-prince-of-lucis?utm_source=api",
     "treatments": [
@@ -59908,7 +59908,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/c/4cdc9ed5-afce-4d82-9b72-9c42f4031a7f.jpg?1783906162",
     "back_image": "https://cards.scryfall.io/normal/back/4/c/4cdc9ed5-afce-4d82-9b72-9c42f4031a7f.jpg?1783906162",
     "price_usd": null,
-    "price_foil": 8.98,
+    "price_foil": 9.09,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/240s/serah-farron-crystallized-serah?utm_source=api",
     "treatments": [
@@ -59954,7 +59954,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/f/7fbcb624-3521-44ec-8bf8-0c628c2a14c7.jpg?1783906157",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.63,
+    "price_foil": 5.68,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/242s/sin-spiras-punishment?utm_source=api",
     "treatments": [
@@ -59962,7 +59962,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.24
+    "price_eur_foil": 2.33
   },
   {
     "id": "acbb8887-03f7-47b0-9ab0-b887d1c253bc",
@@ -60000,7 +60000,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/c/acbb8887-03f7-47b0-9ab0-b887d1c253bc.jpg?1783906157",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 11.85,
+    "price_foil": 12.16,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/243s/squall-seed-mercenary?utm_source=api",
     "treatments": [
@@ -60046,7 +60046,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/9/8952beec-fd8e-481c-aea7-e3105fb5bcc9.jpg?1783906156",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 3.13,
+    "price_foil": 3.23,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/244s/tellah-great-sage?utm_source=api",
     "treatments": [
@@ -60092,7 +60092,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/a/3/a33f6d61-ce5e-42b8-b407-10383cdae5b5.jpg?1783906160",
     "back_image": "https://cards.scryfall.io/normal/back/a/3/a33f6d61-ce5e-42b8-b407-10383cdae5b5.jpg?1783906160",
     "price_usd": null,
-    "price_foil": 37.31,
+    "price_foil": 37.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/245s/terra-magical-adept-esper-terra?utm_source=api",
     "treatments": [
@@ -60100,7 +60100,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 8.04
+    "price_eur_foil": 7.63
   },
   {
     "id": "2b675f4f-e329-4110-828a-f4d3e1358e15",
@@ -60138,7 +60138,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/b/2b675f4f-e329-4110-828a-f4d3e1358e15.jpg?1783906155",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 90.58,
+    "price_foil": 90.01,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/248s/vivi-ornitier?utm_source=api",
     "treatments": [
@@ -60184,7 +60184,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/f/e/fe0c1b06-30f2-42bd-bdcb-169fb6bc0b3f.jpg?1783906153",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 6.57,
+    "price_foil": 6.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/249s/the-wandering-minstrel?utm_source=api",
     "treatments": [
@@ -60192,7 +60192,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 5.91
+    "price_eur_foil": 6.15
   },
   {
     "id": "7ceec16c-f536-447c-b62a-24873475fcf2",
@@ -60230,7 +60230,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/c/7ceec16c-f536-447c-b62a-24873475fcf2.jpg?1783906153",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 22.69,
+    "price_foil": 22.0,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/250s/yuna-hope-of-spira?utm_source=api",
     "treatments": [
@@ -60238,7 +60238,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 23.49
+    "price_eur_foil": 22.98
   },
   {
     "id": "d77bcdaf-eef4-485a-bf45-40d56815b62e",
@@ -60276,7 +60276,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/7/d77bcdaf-eef4-485a-bf45-40d56815b62e.jpg?1783906151",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 19.23,
+    "price_foil": 20.93,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/253s/aettir-and-priwen?utm_source=api",
     "treatments": [
@@ -60284,7 +60284,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 13.34
+    "price_eur_foil": 14.06
   },
   {
     "id": "bfa67320-b4cb-440b-b017-d7493ef8ad62",
@@ -60322,7 +60322,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/f/bfa67320-b4cb-440b-b017-d7493ef8ad62.jpg?1783906152",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 85.61,
+    "price_foil": 86.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/255s/buster-sword?utm_source=api",
     "treatments": [
@@ -60368,7 +60368,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/3/73c66867-8c4a-45dc-bbfd-53777bdc6c0a.jpg?1783906150",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 5.61,
+    "price_foil": 5.58,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/257s/excalibur-ii?utm_source=api",
     "treatments": [
@@ -60414,7 +60414,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/b/8/b894358d-b024-4cf5-a09b-bac8cde72258.jpg?1783906150",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 25.28,
+    "price_foil": 25.0,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/258s/genji-glove?utm_source=api",
     "treatments": [
@@ -60422,7 +60422,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 7.16
+    "price_eur_foil": 7.48
   },
   {
     "id": "7c84eb88-2e8e-490f-8628-61e8efb8524c",
@@ -60460,7 +60460,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/7/c/7c84eb88-2e8e-490f-8628-61e8efb8524c.jpg?1783906149",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 8.23,
+    "price_foil": 8.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/264s/the-masamune?utm_source=api",
     "treatments": [
@@ -60552,7 +60552,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/d/d/dd08f30d-6bb8-45b9-a79c-81ff9578803e.jpg?1783906156",
     "back_image": "https://cards.scryfall.io/normal/back/d/d/dd08f30d-6bb8-45b9-a79c-81ff9578803e.jpg?1783906156",
     "price_usd": null,
-    "price_foil": 13.57,
+    "price_foil": 14.22,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/272s/balamb-garden-seed-academy-balamb-garden-airborne?utm_source=api",
     "treatments": [
@@ -60560,7 +60560,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 16.5
+    "price_eur_foil": 26.83
   },
   {
     "id": "3e99c91c-7bcb-4405-8cd4-87290710f8c0",
@@ -60598,7 +60598,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/e/3e99c91c-7bcb-4405-8cd4-87290710f8c0.jpg?1783906150",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 6.44,
+    "price_foil": 6.36,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/275s/clives-hideaway?utm_source=api",
     "treatments": [
@@ -60606,7 +60606,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 2.35
+    "price_eur_foil": 2.24
   },
   {
     "id": "5558304a-3d04-4549-b812-517667fc608a",
@@ -60644,7 +60644,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/5/5558304a-3d04-4549-b812-517667fc608a.jpg?1783906150",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 6.57,
+    "price_foil": 6.63,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/283s/ishgard-the-holy-see-faith-&-grief?utm_source=api",
     "treatments": [
@@ -60690,7 +60690,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/5/0/50aa744e-61e8-44c9-817c-0dc6086d736f.jpg?1783906147",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 11.6,
+    "price_foil": 12.49,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/284s/jidoor-aristocratic-capital-overture?utm_source=api",
     "treatments": [
@@ -60736,7 +60736,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/b/0b85e76c-6da8-46bc-b9ac-c89b72b5db00.jpg?1783906148",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 7.45,
+    "price_foil": 7.6,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/285s/lindblum-industrial-regency-mage-siege?utm_source=api",
     "treatments": [
@@ -60744,7 +60744,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.54
+    "price_eur_foil": 4.48
   },
   {
     "id": "c7adec62-2093-4782-8d69-c5d60b561534",
@@ -60782,7 +60782,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/c/7/c7adec62-2093-4782-8d69-c5d60b561534.jpg?1783906147",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 12.09,
+    "price_foil": 12.14,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/286s/midgar-city-of-mako-reactor-raid?utm_source=api",
     "treatments": [
@@ -60874,7 +60874,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/4/2/42788e7f-6db5-4a62-882d-0f8f74a94e32.jpg?1783906147",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 10.55,
+    "price_foil": 10.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pfin/293s/zanarkand-ancient-metropolis-lasting-fayth?utm_source=api",
     "treatments": [
@@ -60920,7 +60920,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/1/a/1a27b552-a6ad-47d4-b96e-05a8c782b4ae.jpg?1783903410",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 42.16,
+    "price_foil": 31.59,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pmei/2026-3/zack-fair?utm_source=api",
     "treatments": [
@@ -60928,7 +60928,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 28.99
+    "price_eur_foil": 27.3
   },
   {
     "id": "166f9d06-c390-4cc8-ad33-3fd14e499527",
@@ -60957,16 +60957,17 @@ const CARDS_DATA = [
       "foil"
     ],
     "promo_types": [
+      "resale",
       "mediainsert",
       "universesbeyond",
       "ffviii"
     ],
-    "image_small": "https://cards.scryfall.io/small/front/1/6/166f9d06-c390-4cc8-ad33-3fd14e499527.jpg?1783906093",
-    "image_normal": "https://cards.scryfall.io/normal/front/1/6/166f9d06-c390-4cc8-ad33-3fd14e499527.jpg?1783906093",
-    "image_large": "https://cards.scryfall.io/large/front/1/6/166f9d06-c390-4cc8-ad33-3fd14e499527.jpg?1783906093",
+    "image_small": "https://cards.scryfall.io/small/front/1/6/166f9d06-c390-4cc8-ad33-3fd14e499527.jpg?1788002599",
+    "image_normal": "https://cards.scryfall.io/normal/front/1/6/166f9d06-c390-4cc8-ad33-3fd14e499527.jpg?1788002599",
+    "image_large": "https://cards.scryfall.io/large/front/1/6/166f9d06-c390-4cc8-ad33-3fd14e499527.jpg?1788002599",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.18,
+    "price_foil": 1.21,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pmei/2025-11/ultimecia-temporal-threat?utm_source=api",
     "treatments": [
@@ -60974,7 +60975,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 7.4
+    "price_eur_foil": 6.58
   },
   {
     "id": "df5d6271-5318-42b7-99cf-a3b041b79f3f",
@@ -61003,16 +61004,17 @@ const CARDS_DATA = [
       "foil"
     ],
     "promo_types": [
+      "resale",
       "ffxiii",
       "mediainsert",
       "universesbeyond"
     ],
-    "image_small": "https://cards.scryfall.io/small/front/d/f/df5d6271-5318-42b7-99cf-a3b041b79f3f.jpg?1783906094",
-    "image_normal": "https://cards.scryfall.io/normal/front/d/f/df5d6271-5318-42b7-99cf-a3b041b79f3f.jpg?1783906094",
-    "image_large": "https://cards.scryfall.io/large/front/d/f/df5d6271-5318-42b7-99cf-a3b041b79f3f.jpg?1783906094",
+    "image_small": "https://cards.scryfall.io/small/front/d/f/df5d6271-5318-42b7-99cf-a3b041b79f3f.jpg?1788002603",
+    "image_normal": "https://cards.scryfall.io/normal/front/d/f/df5d6271-5318-42b7-99cf-a3b041b79f3f.jpg?1788002603",
+    "image_large": "https://cards.scryfall.io/large/front/d/f/df5d6271-5318-42b7-99cf-a3b041b79f3f.jpg?1788002603",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.04,
+    "price_foil": 1.0,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pmei/2025-12/lightning-security-sergeant?utm_source=api",
     "treatments": [
@@ -61020,7 +61022,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 5.96
+    "price_eur_foil": 6.02
   },
   {
     "id": "fac06752-6c16-47dc-83a5-14ddc8185653",
@@ -61049,16 +61051,17 @@ const CARDS_DATA = [
       "foil"
     ],
     "promo_types": [
+      "resale",
       "mediainsert",
       "universesbeyond",
       "ffvii"
     ],
-    "image_small": "https://cards.scryfall.io/small/front/f/a/fac06752-6c16-47dc-83a5-14ddc8185653.jpg?1783906093",
-    "image_normal": "https://cards.scryfall.io/normal/front/f/a/fac06752-6c16-47dc-83a5-14ddc8185653.jpg?1783906093",
-    "image_large": "https://cards.scryfall.io/large/front/f/a/fac06752-6c16-47dc-83a5-14ddc8185653.jpg?1783906093",
+    "image_small": "https://cards.scryfall.io/small/front/f/a/fac06752-6c16-47dc-83a5-14ddc8185653.jpg?1788002591",
+    "image_normal": "https://cards.scryfall.io/normal/front/f/a/fac06752-6c16-47dc-83a5-14ddc8185653.jpg?1788002591",
+    "image_large": "https://cards.scryfall.io/large/front/f/a/fac06752-6c16-47dc-83a5-14ddc8185653.jpg?1788002591",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 2.08,
+    "price_foil": 2.17,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pmei/2025-13/cloud-planets-champion?utm_source=api",
     "treatments": [
@@ -61066,7 +61069,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 14.47
+    "price_eur_foil": 14.07
   },
   {
     "id": "361f3cbb-5a9e-4b77-9180-742f25d954cc",
@@ -61095,16 +61098,17 @@ const CARDS_DATA = [
       "foil"
     ],
     "promo_types": [
+      "resale",
       "mediainsert",
       "universesbeyond",
       "ffvii"
     ],
-    "image_small": "https://cards.scryfall.io/small/front/3/6/361f3cbb-5a9e-4b77-9180-742f25d954cc.jpg?1783985268",
-    "image_normal": "https://cards.scryfall.io/normal/front/3/6/361f3cbb-5a9e-4b77-9180-742f25d954cc.jpg?1783985268",
-    "image_large": "https://cards.scryfall.io/large/front/3/6/361f3cbb-5a9e-4b77-9180-742f25d954cc.jpg?1783985268",
+    "image_small": "https://cards.scryfall.io/small/front/3/6/361f3cbb-5a9e-4b77-9180-742f25d954cc.jpg?1788002606",
+    "image_normal": "https://cards.scryfall.io/normal/front/3/6/361f3cbb-5a9e-4b77-9180-742f25d954cc.jpg?1788002606",
+    "image_large": "https://cards.scryfall.io/large/front/3/6/361f3cbb-5a9e-4b77-9180-742f25d954cc.jpg?1788002606",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 1.13,
+    "price_foil": 0.97,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pmei/2025-14/sephiroth-planets-heir?utm_source=api",
     "treatments": [
@@ -61112,7 +61116,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 4.38
+    "price_eur_foil": 4.6
   },
   {
     "id": "2903fbcf-1f10-4518-9f7f-6b61d9b6552d",
@@ -61150,7 +61154,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/2/9/2903fbcf-1f10-4518-9f7f-6b61d9b6552d.jpg?1783904639",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 40.79,
+    "price_foil": 40.12,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pmei/2025-21/cloud-midgar-mercenary?utm_source=api",
     "treatments": [
@@ -61158,7 +61162,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 101.49
+    "price_eur_foil": 102.39
   },
   {
     "id": "40b66faa-abcb-45e4-85cc-997d29907b4e",
@@ -61187,13 +61191,14 @@ const CARDS_DATA = [
       "foil"
     ],
     "promo_types": [
+      "resale",
       "mediainsert",
       "universesbeyond",
       "ffix"
     ],
-    "image_small": "https://cards.scryfall.io/small/front/4/0/40b66faa-abcb-45e4-85cc-997d29907b4e.jpg?1785258736",
-    "image_normal": "https://cards.scryfall.io/normal/front/4/0/40b66faa-abcb-45e4-85cc-997d29907b4e.jpg?1785258736",
-    "image_large": "https://cards.scryfall.io/large/front/4/0/40b66faa-abcb-45e4-85cc-997d29907b4e.jpg?1785258736",
+    "image_small": "https://cards.scryfall.io/small/front/4/0/40b66faa-abcb-45e4-85cc-997d29907b4e.jpg?1788003044",
+    "image_normal": "https://cards.scryfall.io/normal/front/4/0/40b66faa-abcb-45e4-85cc-997d29907b4e.jpg?1788003044",
+    "image_large": "https://cards.scryfall.io/large/front/4/0/40b66faa-abcb-45e4-85cc-997d29907b4e.jpg?1788003044",
     "back_image": "",
     "price_usd": null,
     "price_foil": 0.26,
@@ -61204,7 +61209,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 6.38
+    "price_eur_foil": 6.09
   },
   {
     "id": "570ca3e8-1563-4cef-8559-776982a78838",
@@ -61251,7 +61256,7 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 591.76,
+    "price_eur": 575.24,
     "price_eur_foil": 5303.5
   },
   {
@@ -61291,7 +61296,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/f/0/f020aa2f-cc1b-4bb4-bf05-4050ea935d66.jpg?1783906657",
     "image_large": "https://cards.scryfall.io/large/front/f/0/f020aa2f-cc1b-4bb4-bf05-4050ea935d66.jpg?1783906657",
     "back_image": "",
-    "price_usd": 298.28,
+    "price_usd": 312.89,
     "price_foil": 3806.66,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/ppro/2025-3/aerith-gainsborough?utm_source=api",
@@ -61299,7 +61304,7 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 178.56,
+    "price_eur": 177.17,
     "price_eur_foil": 2430.44
   },
   {
@@ -61346,7 +61351,7 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 591.76,
+    "price_eur": 575.24,
     "price_eur_foil": 5303.5
   },
   {
@@ -61386,7 +61391,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/e/9/e9fabb82-d866-4d5b-809b-acd88005bcf7.jpg?1783906425",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 7.69,
+    "price_foil": 7.5,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pss5/1/ultima?utm_source=api",
     "treatments": [
@@ -61394,7 +61399,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 3.45
+    "price_eur_foil": 3.54
   },
   {
     "id": "076af4bd-1b74-4cf3-b6a0-8ec17d5b0e26",
@@ -61434,7 +61439,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/0/7/076af4bd-1b74-4cf3-b6a0-8ec17d5b0e26.jpg?1783906425",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 23.88,
+    "price_foil": 24.28,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pss5/2/squall-seed-mercenary?utm_source=api",
     "treatments": [
@@ -61442,7 +61447,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 10.43
+    "price_eur_foil": 10.45
   },
   {
     "id": "31572625-b4a8-4ac0-8f08-999d6a6636d7",
@@ -61481,7 +61486,7 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/3/1/31572625-b4a8-4ac0-8f08-999d6a6636d7.jpg?1783904638",
     "back_image": "",
     "price_usd": null,
-    "price_foil": 43.33,
+    "price_foil": 43.87,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/pw25/16/yuna-grand-summoner?utm_source=api",
     "treatments": [
@@ -61489,7 +61494,7 @@ const CARDS_DATA = [
       "Traditional Foil"
     ],
     "price_eur": null,
-    "price_eur_foil": 26.9
+    "price_eur_foil": 26.46
   },
   {
     "id": "bc5376cb-82f6-43c7-bf8b-43515791e082",
@@ -61575,15 +61580,15 @@ const CARDS_DATA = [
     "image_large": "https://cards.scryfall.io/large/front/8/a/8a5e5463-2451-48b7-a924-a81d2dd99671.jpg?1783906138",
     "back_image": "",
     "price_usd": 13.48,
-    "price_foil": 79.02,
+    "price_foil": 81.31,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/rfin/J2/ja/%E7%A7%98%E5%84%80%E3%81%AE%E5%90%A6%E5%AE%9A-(arcane-denial)?utm_source=api",
     "treatments": [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 6.42,
-    "price_eur_foil": 38.93,
+    "price_eur": 6.54,
+    "price_eur_foil": 39.62,
     "search_en": "Instant Counter target spell. Its controller may draw up to two cards at the beginning of the next turn's upkeep.\nYou draw a card at the beginning of the next turn's upkeep."
   },
   {
@@ -61621,7 +61626,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/9/e/9e42aded-44be-4b3a-9b2c-80ae43835e3d.jpg?1783906670",
     "image_large": "https://cards.scryfall.io/large/front/9/e/9e42aded-44be-4b3a-9b2c-80ae43835e3d.jpg?1783906670",
     "back_image": "",
-    "price_usd": 11.1,
+    "price_usd": 11.44,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/sld/1866/colossus-hammer?utm_source=api",
@@ -61629,8 +61634,8 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 7.15,
-    "price_eur_foil": 9.12
+    "price_eur": 7.07,
+    "price_eur_foil": 9.5
   },
   {
     "id": "5a763474-5ce9-48cc-aaf8-8ca363df4430",
@@ -61667,7 +61672,7 @@ const CARDS_DATA = [
     "image_normal": "https://cards.scryfall.io/normal/front/5/a/5a763474-5ce9-48cc-aaf8-8ca363df4430.jpg?1783906668",
     "image_large": "https://cards.scryfall.io/large/front/5/a/5a763474-5ce9-48cc-aaf8-8ca363df4430.jpg?1783906668",
     "back_image": "",
-    "price_usd": 5.68,
+    "price_usd": 5.56,
     "price_foil": null,
     "price_etched": null,
     "scryfall_uri": "https://scryfall.com/card/sld/1871/lightning-bolt?utm_source=api",
@@ -61675,8 +61680,8 @@ const CARDS_DATA = [
       "Borderless",
       "Traditional Foil"
     ],
-    "price_eur": 5.54,
-    "price_eur_foil": 5.85
+    "price_eur": 4.34,
+    "price_eur_foil": 5.9
   },
   {
     "id": "8dc05018-f1c5-4c45-bb32-9a9ccd641f48",
@@ -61997,7 +62002,7 @@ const CARDS_DATA = [
       "Full Art",
       "Surge Foil"
     ],
-    "price_eur": 0.13,
+    "price_eur": 0.11,
     "price_eur_foil": 1.03
   },
   {
