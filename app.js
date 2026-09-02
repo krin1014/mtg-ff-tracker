@@ -555,8 +555,83 @@ function createCardEntry() {
     // One entry per purchase lot; see normaliseInventory(). variants above is
     // derived from this, never assigned to directly.
     inventory: [],
+    // What you want but do not have yet. Kept on the ENTRY rather than on the
+    // card, because cards_data.js is regenerated from Scryfall every Monday and
+    // anything written onto a card object is wiped by that. The entry is the
+    // only per-card thing that is yours.
+    wishlist: null,
     updatedAt: nowMs()
   };
+}
+
+// ---------------------------------------------------------------------------
+// Wishlist
+// ---------------------------------------------------------------------------
+
+const WISHLIST_PRIORITIES = ["Low", "Normal", "High"];
+const DEFAULT_WISHLIST_PRIORITY = "Normal";
+
+/** The stored shape, or null when the card is not wanted. */
+function normaliseWishlist(raw) {
+  if (!raw || typeof raw !== "object" || raw.active !== true) return null;
+  const price = normaliseAcquiredPrice(raw.targetPrice);
+  return {
+    active: true,
+    targetVariant: variantStorageKey(raw.targetVariant || "nonfoil"),
+    targetPrice: price,
+    priority: WISHLIST_PRIORITIES.indexOf(raw.priority) !== -1
+      ? raw.priority : DEFAULT_WISHLIST_PRIORITY,
+    note: typeof raw.note === "string" ? raw.note.slice(0, 200) : ""
+  };
+}
+
+function entryWishlist(entry) {
+  return (entry && entry.wishlist) || null;
+}
+
+function isWishlisted(cardId) {
+  return Boolean(entryWishlist(readCard(cardId)));
+}
+
+function wishlistCount() {
+  let n = 0;
+  for (const id in collection.cards) {
+    if (entryWishlist(collection.cards[id])) n++;
+  }
+  return n;
+}
+
+/** The finish a wishlisted card is wanted in, falling back to what it comes in. */
+function wishlistVariantDef(card, wish) {
+  const defs = getCardVariantDefs(card);
+  const wanted = wish && wish.targetVariant;
+  return defs.find(def => def.key === wanted) || defs[0] || null;
+}
+
+/** What it would cost to buy every wishlisted card in the finish wanted. */
+function wishlistTotals() {
+  let items = 0;
+  let cost = 0;
+  let priced = 0;
+  let withTarget = 0;
+  let targetCost = 0;
+  CARDS_DATA.forEach(card => {
+    const wish = entryWishlist(collection.cards[card.id]);
+    if (!wish) return;
+    items++;
+    const def = wishlistVariantDef(card, wish);
+    const unit = getActiveUnitPrice(card, def ? def.key : "nonfoil");
+    if (unit.value > 0) {
+      cost += unit.value;
+      priced++;
+    }
+    if (wish.targetPrice !== null) {
+      withTarget++;
+      targetCost += wish.targetPrice;
+    }
+  });
+  return { items: items, cost: cost, priced: priced,
+           withTarget: withTarget, targetCost: targetCost };
 }
 
 /**
@@ -988,6 +1063,118 @@ function reconcileVariantQuantity(entry, variantKey, target) {
     lot.quantity > 0 || (!drained[lot.id] && (lot.purchasePrice !== null || lot.purchaseDate)));
 }
 
+/** "Wishlist (4)", or just "Wishlist" when nothing is on it. */
+function wishlistOptionLabel() {
+  const n = wishlistCount();
+  return n ? `Wishlist (${n})` : "Wishlist";
+}
+
+/**
+ * Keep the count in the filter and the summary bar in step with the list.
+ *
+ * Rebuilding the whole ownership dropdown would lose the current selection, so
+ * only the one option's text is rewritten.
+ */
+function refreshWishlistUi() {
+  const select = document.getElementById("filterOwned");
+  if (select) {
+    const option = Array.prototype.find.call(select.options,
+      opt => opt.value === "wishlist");
+    if (option) option.textContent = wishlistOptionLabel();
+  }
+  renderWishlistSummary();
+}
+
+/**
+ * The strip, when the wishlist view is on.
+ *
+ * The collection figures answer "what do I have"; in this view the question is
+ * "what would finishing it cost", so the strip is replaced rather than added
+ * to. Estimated cost prices each wanted card in the finish actually wanted - a
+ * surge foil is not a non-foil - and says how many it could not price.
+ */
+function renderWishlistSummary() {
+  const host = document.getElementById("wishlistSummary");
+  const dash = document.querySelector(".dashboard-section");
+  if (!host || !dash) return;
+
+  const on = valueOf("filterOwned") === "wishlist";
+  host.hidden = !on;
+  dash.classList.toggle("is-wishlist", on);
+  if (!on) return;
+
+  const totals = wishlistTotals();
+  const unpriced = totals.items - totals.priced;
+  setText("wishCount", String(totals.items));
+  setText("wishCost", usd(totals.cost));
+  setText("wishTargetCost", totals.withTarget ? usd(totals.targetCost) : "—");
+  setText("wishNote", unpriced
+    ? `${unpriced} of ${totals.items} have no market price to add up`
+    : (totals.withTarget
+        ? `${totals.withTarget} of ${totals.items} have a target price set`
+        : "No target prices set"));
+}
+
+/**
+ * Turn wanting a card on or off, or change what is wanted.
+ *
+ * The single writer, so the tile star, the card window and "move to owned" can
+ * never disagree about the shape they are storing.
+ */
+function setWishlist(cardId, patch) {
+  const entry = editCard(cardId);
+  const current = entryWishlist(entry);
+
+  if (patch === null) {
+    entry.wishlist = null;
+  } else {
+    entry.wishlist = normaliseWishlist(Object.assign(
+      { active: true, targetVariant: "nonfoil", targetPrice: null,
+        priority: DEFAULT_WISHLIST_PRIORITY },
+      current || {},
+      patch || {}
+    ));
+  }
+
+  saveCollectionState();
+  refreshCardUI(cardId);
+  refreshWishlistUi();
+  // Leaving the wishlist while the wishlist view is showing means this card no
+  // longer belongs on screen at all.
+  if (valueOf("filterOwned") === "wishlist" && Boolean(current) !== Boolean(entry.wishlist)) {
+    applyFiltersAndRender();
+  }
+  return entry.wishlist;
+}
+
+function toggleWishlist(cardId) {
+  return setWishlist(cardId, isWishlisted(cardId) ? null : {});
+}
+
+/**
+ * Move a wanted card into the collection.
+ *
+ * Records one copy in the finish that was wanted, at the target price if one
+ * was set, drops it off the wishlist, and opens the card window on the new
+ * purchase so the rest of the detail can be filled in.
+ */
+function wishlistToOwned(cardId) {
+  const card = cardsById.get(cardId);
+  const wish = entryWishlist(readCard(cardId));
+  if (!card || !wish) return;
+
+  const def = wishlistVariantDef(card, wish);
+  const lotId = addInventoryLot(cardId, {
+    quantity: 1,
+    variant: def ? def.key : "nonfoil",
+    purchasePrice: wish.targetPrice
+  });
+  setWishlist(cardId, null);
+  showToast(`Moved to your collection - ${def ? def.label : "Non-Foil"}`);
+  openCardModal(cardId);
+  focusNewLot(cardId, lotId);
+}
+
 /** The purchase record for one finish, or an empty one. Never null. */
 function acquiredFor(entry, variantKey) {
   const all = (entry && entry.acquired) || {};
@@ -1051,6 +1238,9 @@ function isCardOwned(cardId) {
 /** True when an entry holds nothing worth persisting. */
 function isEmptyEntry(entry) {
   if (!entry) return true;
+  // Wanting a card you do not own is the whole point of a wishlist, so an entry
+  // that holds only that is not empty.
+  if (entryWishlist(entry)) return false;
   if (entryTotalQty(entry) > 0) return false;
   if (entry.location) return false;
   if (entry.condition && entry.condition !== DEFAULT_CONDITION) return false;
@@ -1152,6 +1342,7 @@ function normaliseEntry(raw) {
   // Kept as a derived summary so an older device, or a sheet written by an
   // older script, still sees a price per finish. Never read back as truth.
   base.acquired = summariseAcquired(base.inventory);
+  base.wishlist = normaliseWishlist(raw.wishlist);
   base.updatedAt = Number(raw.updatedAt) || nowMs();
   return base;
 }
@@ -1504,6 +1695,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initEventListeners();
   updateStaticCounts();
   syncGameFilterUi();
+  refreshWishlistUi();
   applyFiltersAndRender();
   registerServiceWorker();
   requestPersistentStorage();
@@ -1584,7 +1776,8 @@ function buildFilterOptions() {
   // per-finish entries and was easy to miss entirely.
   const ownership = [
     { value: "owned", label: "Owned (any variant)" },
-    { value: "unowned", label: "Not owned" }
+    { value: "unowned", label: "Not owned" },
+    { value: "wishlist", label: wishlistOptionLabel() }
   ];
   availableVariantKeys().forEach(def => {
     ownership.push({ value: `has_${def.key}`, label: `Owned: ${def.label}` });
@@ -1848,27 +2041,53 @@ function derivedTypeWords(card) {
   return (!alreadySaysToken && isTokenProduct) ? "token" : "";
 }
 
-function roleKeywords(card) {
-  const rules = (card.oracle_text || "").toLowerCase();
-  const roles = [];
+/**
+ * Can this card actually lead a deck?
+ *
+ * Eligibility is decided by the FRONT face, so only the part before the "//"
+ * counts. "Sidequest: Hunt the Mark // Yiazmat" has a legendary creature on the
+ * back and an Enchantment on the front; it cannot be a commander. A token can
+ * never be one either, however legendary it says it is - this set has two,
+ * Angelo and Darkstar.
+ *
+ * Deliberately NOT a plain `type_line.includes("legendary creature")` test.
+ * That reads the back face, counts both tokens, and misses the ones written the
+ * other way round - "Legendary Artifact Creature", "Legendary Enchantment
+ * Creature" - which are perfectly good commanders. Substring-matching the whole
+ * type line gets 574 cards; this gets 581, and they are the right 581.
+ */
+function isPlayableCommander(card) {
+  if (!card) return false;
 
-  // A double-faced card's eligibility is decided by its FRONT face, so only look
-  // at the part before the "//". "Sidequest: Hunt the Mark // Yiazmat" has a
-  // legendary creature on the back, but an Enchantment front - it cannot lead a
-  // deck. A token can never be a commander either, however legendary it says it
-  // is (the set contains two: Angelo and Darkstar).
-  const frontType = (card.type_line || "").toLowerCase().split("//")[0];
-
-  const isLegendaryCreature =
-    frontType.indexOf("legendary") !== -1 &&
-    frontType.indexOf("creature") !== -1 &&
-    frontType.indexOf("token") === -1;
-
-  if (isLegendaryCreature || rules.indexOf("can be your commander") !== -1) {
-    roles.push("commander");
+  // If a future data refresh ever carries Scryfall's own flags, believe them
+  // over anything inferred from the text. Neither is present today.
+  if (card.is_commander === true) return true;
+  if (card.legalities && card.legalities.commander === "legal"
+      && (card.type_line || "").toLowerCase().indexOf("legendary") !== -1
+      && (card.type_line || "").toLowerCase().indexOf("creature") !== -1) {
+    return true;
   }
 
-  return roles.join(" ");
+  const frontType = (card.type_line || "").toLowerCase().split("//")[0];
+  if (frontType.indexOf("token") !== -1) return false;
+
+  const legendary = frontType.indexOf("legendary") !== -1;
+  if (legendary && frontType.indexOf("creature") !== -1) return true;
+  // Not in this set today, but they exist in Magic and cost nothing to allow.
+  if (legendary && frontType.indexOf("planeswalker") !== -1) return true;
+  if (legendary && frontType.indexOf("vehicle") !== -1) return true;
+
+  // The catch-all the rules themselves provide.
+  return (card.oracle_text || "").toLowerCase().indexOf("can be your commander") !== -1;
+}
+
+/** Whether the query is asking about commanders at all. */
+function isCommanderQuery(query) {
+  return String(query || "").toLowerCase().indexOf("commander") !== -1;
+}
+
+function roleKeywords(card) {
+  return isPlayableCommander(card) ? "commander" : "";
 }
 
 /** Card id -> match quality, for the current search only. */
@@ -2265,6 +2484,7 @@ function initEventListeners() {
     el.addEventListener("change", () => {
       currentPage = 1;
       applyFiltersAndRender();
+      if (id === "filterOwned") renderWishlistSummary();
       savePrefs();
     });
   });
@@ -2500,6 +2720,16 @@ function runAction(target, event) {
       event.preventDefault();
       removeInventoryLot(cardId, target.getAttribute("data-lot-id"));
       break;
+    case "toggle-wish":
+      event.preventDefault();
+      event.stopPropagation();
+      toggleWishlist(cardId);
+      break;
+    case "wish-to-owned":
+      event.preventDefault();
+      event.stopPropagation();
+      wishlistToOwned(cardId);
+      break;
     case "lot-use-market":
       event.preventDefault();
       useMarketPriceForLot(cardId, target.getAttribute("data-lot-id"));
@@ -2571,6 +2801,22 @@ function handleDelegatedChange(event) {
       break;
     case "location":
       setCardLocation(cardId, target.value);
+      break;
+    case "wish-active":
+      setWishlist(cardId, target.checked ? {} : null);
+      openCardModal(cardId);
+      showToast(target.checked ? "Added to your wishlist" : "Removed from your wishlist");
+      break;
+    case "wish-variant":
+      setWishlist(cardId, { targetVariant: target.value });
+      openCardModal(cardId);
+      break;
+    case "wish-price":
+      setWishlist(cardId, { targetPrice: target.value });
+      showToast("Target price saved");
+      break;
+    case "wish-priority":
+      setWishlist(cardId, { priority: target.value });
       break;
     case "serial":
       setCardSerial(cardId, target.value);
@@ -2677,6 +2923,7 @@ function applyFiltersAndRender() {
 
     if (ownedFilter === "owned" && !owned) return false;
     if (ownedFilter === "unowned" && owned) return false;
+    if (ownedFilter === "wishlist" && !entryWishlist(entry)) return false;
     if (ownedVariantKey && (entry.variants[ownedVariantKey] || 0) <= 0) return false;
 
     if (locationFilter !== "all") {
@@ -2714,23 +2961,42 @@ function applyFiltersAndRender() {
     return true;
   });
 
-  if (terms.length) applySearchFallback();
+  // The weak-match fallback is deliberately skipped for a commander search.
+  // It exists to hide rules-text noise behind stronger matches, and here the
+  // strong matches are the 588 cards that can lead a deck - which would bury
+  // every card that merely says the word, the exact thing this search is
+  // supposed to surface. The two-tier sort below separates them instead.
+  if (terms.length && !isCommanderQuery(query)) applySearchFallback();
 
-  sortFilteredCards(sortBy);
+  sortFilteredCards(sortBy, query);
   updateFilterActiveState();
   updateDashboardStats();
   renderCards();
 }
 
-function sortFilteredCards(sortBy) {
+function sortFilteredCards(sortBy, query) {
   const searching = searchScores.size > 0;
+  // "Commander" is two questions in one word: which cards can lead a deck, and
+  // which merely say the word. Both are wanted, but a card that can actually be
+  // your commander is the answer, so every one of those comes first and the
+  // mentions follow. The chosen sort still orders within each group.
+  const commanderFirst = isCommanderQuery(query);
 
   filteredCards.sort((a, b) => {
+    if (commanderFirst) {
+      const byEligibility = (isPlayableCommander(b) ? 1 : 0) - (isPlayableCommander(a) ? 1 : 0);
+      if (byEligibility !== 0) return byEligibility;
+    }
+
     // While searching, group by how well each card matched so the cards whose
     // NAME contains the query come first, ahead of ones that merely mention it
     // in their rules or flavour text. The chosen sort still orders within each
     // group.
-    if (searching) {
+    //
+    // Not for a commander search: eligibility above is already the grouping,
+    // and letting relevance in as well would shuffle the chosen sort inside
+    // each tier - collector number stopped being in order.
+    if (searching && !commanderFirst) {
       const byRelevance = (searchScores.get(b.id) || 0) - (searchScores.get(a.id) || 0);
       if (byRelevance !== 0) return byRelevance;
     }
@@ -3137,10 +3403,17 @@ function renderGridView(cards) {
     const isOwned = totalQty > 0;
     const name = displayName(card.ff_name);
     const srcset = cardImageSrcset(card);
+    const wished = Boolean(entryWishlist(entry));
 
     return `
       <article class="card-item ${isOwned ? "is-owned" : ""}" data-card-tile="${esc(card.id)}">
         <div class="card-item-badge-owned" ${isOwned ? "" : 'style="display:none"'} data-owned-badge>✓ OWNED (<span data-owned-count>${totalQty}</span>)</div>
+
+        <button type="button" class="card-wish-btn ${wished ? "is-wished" : ""}"
+                data-action="toggle-wish" data-card-id="${esc(card.id)}"
+                aria-pressed="${wished ? "true" : "false"}"
+                title="${wished ? "On your wishlist" : "Add to wishlist"}"
+                aria-label="${wished ? "Remove" : "Add"} ${esc(name)} ${wished ? "from" : "to"} your wishlist">${wished ? "★" : "☆"}</button>
 
         <div class="card-media-wrapper" data-action="open-modal" data-card-id="${esc(card.id)}" role="button" tabindex="0" aria-label="Open details for ${esc(name)}">
           <img class="card-image"
@@ -3177,6 +3450,12 @@ function renderGridView(cards) {
           </div>
 
           ${purchaseRow(card, entry)}
+
+          ${wished && valueOf("filterOwned") === "wishlist" ? `
+          <button type="button" class="card-wish-move" data-action="wish-to-owned"
+                  data-card-id="${esc(card.id)}">
+            ✔ Move to owned
+          </button>` : ""}
 
           <div class="card-variants-hub">
             <div class="variant-chips-row">
@@ -3284,6 +3563,14 @@ function refreshCardUI(cardId) {
     if (label) label.textContent = `${totalQty} Owned`;
     const chips = tile.querySelector("[data-chips]");
     if (chips) chips.innerHTML = renderVariantChips(card, entry);
+    const star = tile.querySelector("[data-action='toggle-wish']");
+    if (star) {
+      const wished = Boolean(entryWishlist(entry));
+      star.classList.toggle("is-wished", wished);
+      star.setAttribute("aria-pressed", String(wished));
+      star.textContent = wished ? "★" : "☆";
+      star.title = wished ? "On your wishlist" : "Add to wishlist";
+    }
   }
 
   const row = document.querySelector(`[data-card-row="${cssEscape(cardId)}"]`);
@@ -4493,10 +4780,16 @@ function openCardModal(cardId) {
   const content = document.getElementById("modalContent");
   const name = displayName(card.ff_name);
 
+  const wish = entryWishlist(entry);
+  const wishDef = wishlistVariantDef(card, wish);
+  const wishMarket = getActiveUnitPrice(card, wishDef ? wishDef.key : "nonfoil");
+
   if (modalCardId !== cardId) resetLotFolds();
   // Decided by the card rather than remembered: a card with nothing recorded
   // opens with this tile shut, and recording the first copy opens it.
   modalSections.purchase = modalPurchaseDefault(entry);
+  // Same rule for the wishlist tile - open when there is something in it.
+  modalSections.wishlist = Boolean(wish);
   modalCardId = cardId;
   modalShowingBack = false;
 
@@ -4555,6 +4848,44 @@ function openCardModal(cardId) {
           // Stays on the header, so the count is readable with the tile shut.
           aside: `<span class="modal-total-badge" id="modalTotalCopiesBadge" data-card-id="${esc(card.id)}">${totalQty} Total Copies</span>`
         })}
+
+      ${modalSection("wishlist", "\u{2605} Wishlist", `
+        <label class="wish-toggle">
+          <input type="checkbox" data-change="wish-active" data-card-id="${esc(card.id)}"
+                 ${wish ? "checked" : ""}>
+          <span>Add this card to my wishlist</span>
+        </label>
+        ${wish ? `
+        <div class="modal-field-grid wish-fields">
+          <div>
+            <label class="field-label" for="modalWishVariant">Finish wanted</label>
+            <select id="modalWishVariant" class="table-select"
+                    data-change="wish-variant" data-card-id="${esc(card.id)}">
+              ${getCardVariantDefs(card).map(def =>
+                `<option value="${esc(def.key)}" ${def.key === wish.targetVariant ? "selected" : ""}>${esc(def.icon)} ${esc(def.label)}</option>`).join("")}
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="modalWishPrice">Target price (optional)</label>
+            <input id="modalWishPrice" type="number" min="0" step="0.01" inputmode="decimal"
+                   class="table-input" placeholder="what you would pay"
+                   value="${wish.targetPrice === null ? "" : esc(wish.targetPrice.toFixed(2))}"
+                   data-change="wish-price" data-card-id="${esc(card.id)}">
+          </div>
+          <div>
+            <label class="field-label" for="modalWishPriority">Priority</label>
+            <select id="modalWishPriority" class="table-select"
+                    data-change="wish-priority" data-card-id="${esc(card.id)}">
+              ${WISHLIST_PRIORITIES.map(level =>
+                `<option value="${esc(level)}" ${level === wish.priority ? "selected" : ""}>${esc(level)}</option>`).join("")}
+            </select>
+          </div>
+        </div>
+        <p class="wish-hint">Market price for the finish wanted:
+          <strong>${esc(money(wishMarket.value, wishMarket.currency))}</strong></p>
+        <button type="button" class="btn btn-outline btn-small" data-action="wish-to-owned"
+                data-card-id="${esc(card.id)}">\u{2714} I bought it — move to owned</button>` : ""}`,
+        { accent: true })}
 
       ${modalSection("purchase", "\u{1F4B0} Purchase &amp; storage", `
         ${inventoryPanel(card, entry)}
@@ -4857,7 +5188,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 8;
+const REQUIRED_SCRIPT_VERSION = 9;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +
@@ -4979,6 +5310,7 @@ function cardsChangedSince(since) {
       // derived summaries so the sheet stays readable and a device still on the
       // old build sees sensible figures instead of blanks.
       inventory: entryInventory(entry),
+      wishlist: entryWishlist(entry),
       acquired: entry.acquired || {},
       updatedAt: entry.updatedAt,
       ff_name: card ? displayName(card.ff_name) : "",
@@ -5050,6 +5382,13 @@ function mergeRemoteCards(remoteCards, syncStartedAt) {
           Object.prototype.hasOwnProperty.call(raw, "acquiredDate"));
         if (!sentAcquired) {
           remote.acquired = local.acquired || {};
+        }
+        // Same rule for the wishlist, and it matters more: a sheet written by a
+        // script that predates the wishlist column says nothing about it at
+        // all, and taking that silence as "not wanted" would clear the lot on
+        // the first sync. An explicit null still removes it.
+        if (!raw || !Object.prototype.hasOwnProperty.call(raw, "wishlist")) {
+          remote.wishlist = local.wishlist || null;
         }
       }
       collection.cards[id] = remote;

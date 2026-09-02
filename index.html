@@ -104,6 +104,27 @@
         <span class="dashboard-rule" aria-hidden="true"><span class="dashboard-rule-fill" id="progressBarFill"></span></span>
       </button>
 
+      <!-- Shown instead of the collection strip while the wishlist filter is
+           on: in that view the question is what finishing the set would cost,
+           not what is already in it. -->
+      <div class="wishlist-summary" id="wishlistSummary" hidden>
+        <div class="wish-summary-row">
+          <span class="wish-stat">
+            <span class="wish-val" id="wishCount">0</span>
+            <span class="wish-label">wanted</span>
+          </span>
+          <span class="wish-stat">
+            <span class="wish-val" id="wishCost">$0.00</span>
+            <span class="wish-label">estimated cost</span>
+          </span>
+          <span class="wish-stat">
+            <span class="wish-val" id="wishTargetCost">—</span>
+            <span class="wish-label">at your target prices</span>
+          </span>
+        </div>
+        <div class="wish-summary-note" id="wishNote"></div>
+      </div>
+
       <div class="dashboard-panel" id="dashboardPanel">
 
         <!-- Game Breakdown Pills

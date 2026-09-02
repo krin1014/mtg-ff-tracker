@@ -329,7 +329,10 @@ body {
   transform: rotate(-90deg);
 }
 
-.dashboard-toggle[aria-expanded="false"] + .dashboard-panel {
+/* A general sibling, not an adjacent one: the wishlist summary sits between
+   the toggle and the panel, and an adjacent-sibling rule stopped matching
+   the moment it was added - collapsing left the panel on screen. */
+.dashboard-toggle[aria-expanded="false"] ~ .dashboard-panel {
   display: none;
 }
 
@@ -3893,4 +3896,149 @@ body.modal-open {
 .column-picker-row.is-unavailable span:first-of-type {
   text-decoration: line-through;
   text-decoration-color: rgba(148, 163, 184, 0.6);
+}
+
+/* ---------------------------------------------------------------------------
+   Wishlist
+   ------------------------------------------------------------------------- */
+
+/* Top-LEFT of the artwork, because the owned badge already has the right. */
+.card-wish-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: rgba(11, 15, 25, 0.78);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.card-wish-btn:hover,
+.card-wish-btn:focus-visible {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  transform: scale(1.08);
+}
+
+.card-wish-btn.is-wished {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.18);
+}
+
+.card-wish-move {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid var(--accent-emerald);
+  background: rgba(16, 185, 129, 0.12);
+  color: #6EE7B7;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.card-wish-move:hover,
+.card-wish-move:focus-visible {
+  background: rgba(16, 185, 129, 0.24);
+  color: #A7F3D0;
+}
+
+/* The summary bar that stands in for the collection strip. */
+.wishlist-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-gold);
+  border-radius: 12px;
+  padding: 10px 18px;
+  margin-bottom: 16px;
+}
+
+.wish-summary-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+}
+
+.wish-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.wish-val {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+.wish-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.wish-summary-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* While the wishlist view is on, the collection strip would be answering a
+   question nobody asked, so it stands down. */
+.dashboard-section.is-wishlist .dashboard-toggle,
+.dashboard-section.is-wishlist .dashboard-panel {
+  display: none;
+}
+
+/* The card window's wishlist tile. */
+.wish-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.wish-toggle input {
+  accent-color: var(--accent-gold);
+  width: 16px;
+  height: 16px;
+}
+
+.wish-fields {
+  margin-top: 12px;
+}
+
+.wish-hint {
+  margin: 10px 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.wish-hint strong {
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.modal-section[data-section="wishlist"].is-accent .modal-section-head {
+  color: var(--accent-gold);
 }
