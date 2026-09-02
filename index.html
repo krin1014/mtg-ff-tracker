@@ -38,9 +38,9 @@
         </p>
       </div>
 
-      <button type="button" id="menuToggleBtn" class="menu-toggle" aria-expanded="false" aria-controls="headerActions" aria-label="Show collection tools">
+      <button type="button" id="menuToggleBtn" class="menu-toggle" aria-expanded="false" aria-controls="headerActions" aria-label="Show the collection menu">
         <span class="menu-toggle-bars" aria-hidden="true"></span>
-        <span class="menu-toggle-text">Tools</span>
+        <span class="menu-toggle-text">Menu</span>
       </button>
 
       <div class="header-actions" id="headerActions">
@@ -55,18 +55,15 @@
         <button type="button" id="bindersBtn" class="btn btn-outline" title="See which cards are in each binder or box">
           <span class="icon" aria-hidden="true">📒</span> Binders
         </button>
-        <button type="button" id="exportCsvBtn" class="btn btn-outline" title="Export the complete collection with variant counts as CSV">
-          <span class="icon" aria-hidden="true">↓</span> Export CSV
+        <!-- Export, Backup, Restore and Reset are one-off jobs that ran this row
+             to seven buttons. They live in the Tools window now, which is what
+             frees the space for Wishlist to sit up here. -->
+        <button type="button" id="wishlistViewBtn" class="btn btn-outline wishlist-view-btn"
+                aria-pressed="false" title="Show only the cards on your wishlist">
+          <span class="icon" aria-hidden="true">☆</span> <span id="wishlistViewBtnText">Wishlist</span>
         </button>
-        <button type="button" id="backupBtn" class="btn btn-outline" title="Back up the full collection inventory to a JSON file">
-          <span class="icon" aria-hidden="true">💾</span> Backup
-        </button>
-        <label for="restoreFileInput" class="btn btn-outline cursor-pointer" title="Restore a collection backup">
-          <span class="icon" aria-hidden="true">📂</span> Restore
-        </label>
-        <input type="file" id="restoreFileInput" accept=".json,application/json" hidden>
-        <button type="button" id="resetCollectionBtn" class="btn btn-danger-outline" title="Reset the collection inventory">
-          <span class="icon" aria-hidden="true">↺</span> Reset
+        <button type="button" id="toolsBtn" class="btn btn-outline" title="Export, back up, restore or reset the collection">
+          <span class="icon" aria-hidden="true">⚙</span> Tools
         </button>
       </div>
     </div>
@@ -168,6 +165,12 @@
              ::details-content box, so `display: contents` on the disclosure
              hands the row that wrapper - which carries no order of its own and
              lands first - instead of the grid. -->
+        <!-- On a phone the view tabs ride this line with Filters and Sort and
+             wrap only when the width runs out; on a desktop they are hidden
+             here and shown above the cards instead (#viewTabsBar). One set of
+             tabs is rendered into both, so they cannot disagree. -->
+        <div class="view-tabs view-tabs-inline" id="viewTabsInline" role="group" aria-label="Which cards to show"></div>
+
         <button type="button" id="filtersToggle" class="filters-summary"
                 aria-expanded="false" aria-controls="filtersGrid">
           <span>Filters</span>
@@ -259,6 +262,7 @@
       <div class="active-filters" id="activeFilters" style="display:none;"></div>
 
       <div class="results-meta-bar">
+        <div class="view-tabs view-tabs-bar" id="viewTabsBar" role="group" aria-label="Which cards to show"></div>
         <div class="results-count">
           Showing <span id="resultsCount">0</span> of <strong data-total-cards>—</strong> cards
         </div>
@@ -363,6 +367,39 @@
   </div>
 
   <!-- Where the cards physically are -->
+  <!-- Collection tools: the jobs you do once in a while, off the header row. -->
+  <div id="toolsModal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-label="Collection tools">
+    <div class="modal-card modal-card-narrow">
+      <button type="button" id="toolsModalCloseBtn" class="modal-close-btn" aria-label="Close">&times;</button>
+      <div class="sync-body">
+        <h2 class="tools-title">Collection tools</h2>
+        <div class="tools-list">
+          <button type="button" id="exportCsvBtn" class="tools-item">
+            <span class="tools-icon" aria-hidden="true">↓</span>
+            <span class="tools-text"><strong>Export CSV</strong>
+              <span>Every card and variant count, ready for a spreadsheet.</span></span>
+          </button>
+          <button type="button" id="backupBtn" class="tools-item">
+            <span class="tools-icon" aria-hidden="true">💾</span>
+            <span class="tools-text"><strong>Backup</strong>
+              <span>Save the whole collection, purchases and all, to a JSON file.</span></span>
+          </button>
+          <label for="restoreFileInput" class="tools-item cursor-pointer">
+            <span class="tools-icon" aria-hidden="true">📂</span>
+            <span class="tools-text"><strong>Restore</strong>
+              <span>Read a backup file back in over what is here now.</span></span>
+          </label>
+          <input type="file" id="restoreFileInput" accept=".json,application/json" hidden>
+          <button type="button" id="resetCollectionBtn" class="tools-item tools-item-danger">
+            <span class="tools-icon" aria-hidden="true">↺</span>
+            <span class="tools-text"><strong>Reset collection</strong>
+              <span>Clear every recorded copy on this device. There is no undo.</span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="bindersModal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-label="Binders and boxes">
     <div class="modal-card modal-card-narrow">
       <button type="button" id="bindersModalCloseBtn" class="modal-close-btn" aria-label="Close">&times;</button>

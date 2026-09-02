@@ -1082,7 +1082,80 @@ function refreshWishlistUi() {
       opt => opt.value === "wishlist");
     if (option) option.textContent = wishlistOptionLabel();
   }
+  renderViewTabs();
+  refreshWishlistViewBtn();
   renderWishlistSummary();
+}
+
+// ---------------------------------------------------------------------------
+// View tabs
+//
+// All cards / Owned / Wishlist are three readings of the ownership filter,
+// lifted out of the Filters panel so the current view can be read without
+// opening anything. They are a shortcut, not a replacement: the dropdown still
+// holds the finer choices (Not owned, Owned: Foil), and while one of those is
+// picked no tab is lit - which is the honest thing to show.
+//
+// Two mounts, one render: the bar above the cards on a desktop, the inline set
+// on the Filters line on a phone. Rendering both from here is what stops them
+// disagreeing.
+// ---------------------------------------------------------------------------
+
+const VIEW_TABS = [
+  { value: "all", label: "All cards", short: "All" },
+  { value: "owned", label: "Owned", short: "Owned" },
+  { value: "wishlist", label: "Wishlist", short: "", star: true }
+];
+
+function viewTabsHtml(compact) {
+  const current = valueOf("filterOwned");
+  const count = wishlistCount();
+  return VIEW_TABS.map(tab => {
+    const on = current === tab.value;
+    const text = compact ? tab.short : tab.label;
+    const star = tab.star
+      ? `<span class="view-tab-star" aria-hidden="true">${count ? "★" : "☆"}</span>`
+      : "";
+    const badge = tab.star && count ? `<span class="view-tab-count">${count}</span>` : "";
+    const spoken = tab.star ? `${tab.label}${count ? `, ${count} cards` : ""}` : tab.label;
+    return `<button type="button" class="view-tab${on ? " is-on" : ""}${tab.star ? " view-tab-wish" : ""}"
+              data-action="set-view" data-view="${esc(tab.value)}"
+              aria-pressed="${on}" title="${esc(spoken)}" aria-label="${esc(spoken)}"
+              >${star}${text ? `<span class="view-tab-text">${esc(text)}</span>` : ""}${badge}</button>`;
+  }).join("");
+}
+
+function renderViewTabs() {
+  const bar = document.getElementById("viewTabsBar");
+  const inline = document.getElementById("viewTabsInline");
+  if (bar) bar.innerHTML = viewTabsHtml(false);
+  if (inline) inline.innerHTML = viewTabsHtml(true);
+}
+
+/** A tab picks its view outright - only the header button toggles. */
+function setOwnershipView(value) {
+  const select = document.getElementById("filterOwned");
+  if (!select || select.value === value) return;
+  select.value = value;
+  select.dispatchEvent(new Event("change", { bubbles: true }));
+}
+
+/** The header button is a switch: press it again to come back to everything. */
+function toggleWishlistView() {
+  setOwnershipView(valueOf("filterOwned") === "wishlist" ? "all" : "wishlist");
+  closeToolsMenu();
+}
+
+function refreshWishlistViewBtn() {
+  const btn = document.getElementById("wishlistViewBtn");
+  if (!btn) return;
+  const on = valueOf("filterOwned") === "wishlist";
+  const count = wishlistCount();
+  btn.classList.toggle("is-on", on);
+  btn.setAttribute("aria-pressed", String(on));
+  const icon = btn.querySelector(".icon");
+  if (icon) icon.textContent = count ? "★" : "☆";
+  setText("wishlistViewBtnText", wishlistOptionLabel());
 }
 
 /**
@@ -1893,6 +1966,21 @@ function closeToolsMenu() {
   if (toggle) toggle.setAttribute("aria-expanded", "false");
 }
 
+function openToolsModal() {
+  const modal = document.getElementById("toolsModal");
+  if (!modal) return;
+  modal.style.display = "flex";
+  document.body.classList.add("modal-open");
+  closeToolsMenu();
+}
+
+function closeToolsModal() {
+  const modal = document.getElementById("toolsModal");
+  if (!modal || modal.style.display === "none") return;
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+}
+
 function isBindersModalOpen() {
   const modal = document.getElementById("bindersModal");
   return Boolean(modal) && modal.style.display !== "none";
@@ -2484,7 +2572,11 @@ function initEventListeners() {
     el.addEventListener("change", () => {
       currentPage = 1;
       applyFiltersAndRender();
-      if (id === "filterOwned") renderWishlistSummary();
+      if (id === "filterOwned") {
+        renderWishlistSummary();
+        renderViewTabs();
+        refreshWishlistViewBtn();
+      }
       savePrefs();
     });
   });
@@ -2573,6 +2665,15 @@ function initEventListeners() {
     if (event.target.closest("button, label")) closeToolsMenu();
   });
 
+  const wishlistViewBtn = document.getElementById("wishlistViewBtn");
+  if (wishlistViewBtn) wishlistViewBtn.addEventListener("click", toggleWishlistView);
+
+  document.getElementById("toolsBtn").addEventListener("click", openToolsModal);
+  document.getElementById("toolsModalCloseBtn").addEventListener("click", closeToolsModal);
+  document.getElementById("toolsModal").addEventListener("click", event => {
+    if (event.target.id === "toolsModal") closeToolsModal();
+  });
+
   document.getElementById("bindersBtn").addEventListener("click", openBindersModal);
   document.getElementById("bindersModalCloseBtn").addEventListener("click", closeBindersModal);
   document.getElementById("bindersModal").addEventListener("click", event => {
@@ -2599,6 +2700,7 @@ function initEventListeners() {
     closeModal();
     closeSyncModal();
     closeBindersModal();
+    closeToolsModal();
     toggleGameFilterPanel(false);
     toggleColumnPicker(false);
   });
@@ -2762,6 +2864,10 @@ function runAction(target, event) {
     case "goto-page":
       event.preventDefault();
       goToPage(Number(target.getAttribute("data-page")));
+      break;
+    case "set-view":
+      event.preventDefault();
+      setOwnershipView(target.getAttribute("data-view"));
       break;
     case "select-game":
       event.preventDefault();
@@ -3407,13 +3513,18 @@ function renderGridView(cards) {
 
     return `
       <article class="card-item ${isOwned ? "is-owned" : ""}" data-card-tile="${esc(card.id)}">
-        <div class="card-item-badge-owned" ${isOwned ? "" : 'style="display:none"'} data-owned-badge>✓ OWNED (<span data-owned-count>${totalQty}</span>)</div>
+        <!-- One corner, stacked: the wishlist star used to sit top-left, where it
+             covered the card's own name in the artwork. It follows the owned
+             badge down when there is one, and rises to the top when there is not. -->
+        <div class="card-corner">
+          <div class="card-item-badge-owned" ${isOwned ? "" : 'style="display:none"'} data-owned-badge>✓ OWNED (<span data-owned-count>${totalQty}</span>)</div>
 
-        <button type="button" class="card-wish-btn ${wished ? "is-wished" : ""}"
+          <button type="button" class="card-wish-btn ${wished ? "is-wished" : ""}"
                 data-action="toggle-wish" data-card-id="${esc(card.id)}"
                 aria-pressed="${wished ? "true" : "false"}"
                 title="${wished ? "On your wishlist" : "Add to wishlist"}"
                 aria-label="${wished ? "Remove" : "Add"} ${esc(name)} ${wished ? "from" : "to"} your wishlist">${wished ? "★" : "☆"}</button>
+        </div>
 
         <div class="card-media-wrapper" data-action="open-modal" data-card-id="${esc(card.id)}" role="button" tabindex="0" aria-label="Open details for ${esc(name)}">
           <img class="card-image"
@@ -3680,9 +3791,39 @@ function cssEscape(value) {
 // Pagination UI
 // ---------------------------------------------------------------------------
 
+/**
+ * Which page numbers to draw.
+ *
+ * 1,383 cards at 24 to a page is 58 pages, so the control shows both ends, the
+ * current page and its neighbours, and marks the jumps between them. Returns
+ * page numbers with the string "gap" where a run was left out.
+ */
+function pageWindow(current, total, span) {
+  const wanted = new Set([1, total]);
+  for (let page = current - span; page <= current + span; page += 1) {
+    if (page >= 1 && page <= total) wanted.add(page);
+  }
+  const pages = Array.from(wanted).sort((a, b) => a - b);
+  const out = [];
+  pages.forEach((page, index) => {
+    if (index && page - pages[index - 1] > 1) out.push("gap");
+    out.push(page);
+  });
+  return out;
+}
+
+/**
+ * Two controls from one page count.
+ *
+ * The row above the cards stays a stepper - it sits among the filters and has
+ * no room for numbers. The one below the cards, where you land after reading a
+ * page, lists the pages themselves. The count is worked out from the page size
+ * on every render, so changing "Per page" renumbers both.
+ */
 function renderPagination(totalPages) {
   const topPagination = document.getElementById("topPagination");
   const bottomPagination = document.getElementById("bottomPagination");
+  if (!topPagination || !bottomPagination) return;
 
   if (totalPages <= 1) {
     topPagination.innerHTML = "";
@@ -3690,16 +3831,34 @@ function renderPagination(totalPages) {
     return;
   }
 
-  const html = `
-    <button type="button" class="page-btn" ${currentPage === 1 ? "disabled" : ""} data-action="goto-page" data-page="1" aria-label="First page">«</button>
-    <button type="button" class="page-btn" ${currentPage === 1 ? "disabled" : ""} data-action="goto-page" data-page="${currentPage - 1}" aria-label="Previous page">‹</button>
+  const atFirst = currentPage === 1;
+  const atLast = currentPage === totalPages;
+  const step = (page, label, aria, disabled) =>
+    `<button type="button" class="page-btn" ${disabled ? "disabled" : ""}
+       data-action="goto-page" data-page="${page}" aria-label="${aria}">${label}</button>`;
+
+  topPagination.innerHTML = `
+    ${step(1, "«", "First page", atFirst)}
+    ${step(currentPage - 1, "‹", "Previous page", atFirst)}
     <span class="page-indicator">Page ${currentPage} / ${totalPages}</span>
-    <button type="button" class="page-btn" ${currentPage === totalPages ? "disabled" : ""} data-action="goto-page" data-page="${currentPage + 1}" aria-label="Next page">›</button>
-    <button type="button" class="page-btn" ${currentPage === totalPages ? "disabled" : ""} data-action="goto-page" data-page="${totalPages}" aria-label="Last page">»</button>
+    ${step(currentPage + 1, "›", "Next page", atLast)}
+    ${step(totalPages, "»", "Last page", atLast)}
   `;
 
-  topPagination.innerHTML = html;
-  bottomPagination.innerHTML = html;
+  const numbers = pageWindow(currentPage, totalPages, 2).map(item => {
+    if (item === "gap") return `<span class="page-gap" aria-hidden="true">…</span>`;
+    const on = item === currentPage;
+    return `<button type="button" class="page-num${on ? " is-current" : ""}"
+              data-action="goto-page" data-page="${item}"
+              ${on ? `aria-current="page"` : ""}
+              aria-label="Page ${item}">${item}</button>`;
+  }).join("");
+
+  bottomPagination.innerHTML = `
+    ${step(currentPage - 1, "‹", "Previous page", atFirst)}
+    <span class="page-nums">${numbers}</span>
+    ${step(currentPage + 1, "›", "Next page", atLast)}
+  `;
 }
 
 function goToPage(page) {
