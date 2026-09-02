@@ -579,9 +579,17 @@ const DEFAULT_WISHLIST_PRIORITY = "Normal";
 function normaliseWishlist(raw) {
   if (!raw || typeof raw !== "object" || raw.active !== true) return null;
   const price = normaliseAcquiredPrice(raw.targetPrice);
+  // Wants are held per printing, the same way owned copies are. Devices still
+  // on the single-finish shape send targetVariant; read it as a list of one.
+  let variants = Array.isArray(raw.variants)
+    ? raw.variants
+    : (raw.targetVariant ? [raw.targetVariant] : []);
+  variants = variants
+    .map(key => variantStorageKey(key))
+    .filter((key, index, all) => key && all.indexOf(key) === index);
   return {
     active: true,
-    targetVariant: variantStorageKey(raw.targetVariant || "nonfoil"),
+    variants: variants,
     targetPrice: price,
     priority: WISHLIST_PRIORITIES.indexOf(raw.priority) !== -1
       ? raw.priority : DEFAULT_WISHLIST_PRIORITY,
@@ -606,15 +614,35 @@ function wishlistCount() {
 }
 
 /** The finish a wishlisted card is wanted in, falling back to what it comes in. */
-function wishlistVariantDef(card, wish) {
+/**
+ * The printings wanted for one card.
+ *
+ * Never empty for a card on the list: a stored key the card no longer offers
+ * is dropped, and if that leaves nothing the first printing stands in, so
+ * pricing and "move to owned" always have something real to work with.
+ */
+function wishlistVariantDefs(card, wish) {
   const defs = getCardVariantDefs(card);
-  const wanted = wish && wish.targetVariant;
-  return defs.find(def => def.key === wanted) || defs[0] || null;
+  const wanted = (wish && wish.variants) || [];
+  const picked = defs.filter(def => wanted.indexOf(def.key) !== -1);
+  return picked.length ? picked : defs.slice(0, 1);
 }
 
-/** What it would cost to buy every wishlisted card in the finish wanted. */
+function isVariantWished(cardId, variantKey) {
+  const wish = entryWishlist(readCard(cardId));
+  return Boolean(wish) && wish.variants.indexOf(variantKey) !== -1;
+}
+
+/**
+ * What finishing the wishlist would cost.
+ *
+ * A card wanted in two printings is two cards to buy, so the money is counted
+ * per printing while `items` stays the number of cards - that is what the
+ * badge beside Wishlist means.
+ */
 function wishlistTotals() {
   let items = 0;
+  let printings = 0;
   let cost = 0;
   let priced = 0;
   let withTarget = 0;
@@ -623,18 +651,21 @@ function wishlistTotals() {
     const wish = entryWishlist(collection.cards[card.id]);
     if (!wish) return;
     items++;
-    const def = wishlistVariantDef(card, wish);
-    const unit = getActiveUnitPrice(card, def ? def.key : "nonfoil");
-    if (unit.value > 0) {
-      cost += unit.value;
-      priced++;
-    }
-    if (wish.targetPrice !== null) {
-      withTarget++;
-      targetCost += wish.targetPrice;
-    }
+    const defs = wishlistVariantDefs(card, wish);
+    defs.forEach(def => {
+      printings++;
+      const unit = getActiveUnitPrice(card, def.key);
+      if (unit.value > 0) {
+        cost += unit.value;
+        priced++;
+      }
+      if (wish.targetPrice !== null) {
+        withTarget++;
+        targetCost += wish.targetPrice;
+      }
+    });
   });
-  return { items: items, cost: cost, priced: priced,
+  return { items: items, printings: printings, cost: cost, priced: priced,
            withTarget: withTarget, targetCost: targetCost };
 }
 
@@ -1206,7 +1237,7 @@ function setWishlist(cardId, patch) {
     entry.wishlist = null;
   } else {
     entry.wishlist = normaliseWishlist(Object.assign(
-      { active: true, targetVariant: "nonfoil", targetPrice: null,
+      { active: true, variants: [], targetPrice: null,
         priority: DEFAULT_WISHLIST_PRIORITY },
       current || {},
       patch || {}
@@ -1224,8 +1255,39 @@ function setWishlist(cardId, patch) {
   return entry.wishlist;
 }
 
+/**
+ * The star in the tile's corner: want this card, or stop wanting it.
+ *
+ * Adding names the card's first printing rather than leaving the finish blank,
+ * so a wanted card always says which printing it means - exactly as an owned
+ * card always says which printing was collected.
+ */
 function toggleWishlist(cardId) {
-  return setWishlist(cardId, isWishlisted(cardId) ? null : {});
+  if (isWishlisted(cardId)) return setWishlist(cardId, null);
+  const card = cardsById.get(cardId);
+  const first = card ? getCardVariantDefs(card)[0] : null;
+  return setWishlist(cardId, { variants: first ? [first.key] : [] });
+}
+
+/**
+ * Want one printing, or stop wanting it.
+ *
+ * Unticking the last printing takes the card off the list altogether, the way
+ * a card with no copies left is no longer owned.
+ */
+function toggleWishlistVariant(cardId, variantKey) {
+  const key = variantStorageKey(variantKey);
+  if (!key) return;
+  const wish = entryWishlist(readCard(cardId));
+  const current = wish ? wish.variants.slice() : [];
+  const at = current.indexOf(key);
+  if (at === -1) {
+    current.push(key);
+  } else {
+    current.splice(at, 1);
+    if (!current.length) return setWishlist(cardId, null);
+  }
+  return setWishlist(cardId, { variants: current });
 }
 
 /**
@@ -1240,16 +1302,21 @@ function wishlistToOwned(cardId) {
   const wish = entryWishlist(readCard(cardId));
   if (!card || !wish) return;
 
-  const def = wishlistVariantDef(card, wish);
-  const lotId = addInventoryLot(cardId, {
-    quantity: 1,
-    variant: def ? def.key : "nonfoil",
-    purchasePrice: wish.targetPrice
+  // One purchase per printing wanted, because wanting the non-foil and the
+  // borderless means buying two cards, not one.
+  const defs = wishlistVariantDefs(card, wish);
+  let lastLotId = null;
+  defs.forEach(def => {
+    lastLotId = addInventoryLot(cardId, {
+      quantity: 1,
+      variant: def.key,
+      purchasePrice: wish.targetPrice
+    });
   });
   setWishlist(cardId, null);
-  showToast(`Moved to your collection - ${def ? def.label : "Non-Foil"}`);
+  showToast(`Moved to your collection - ${defs.map(def => def.label).join(", ")}`);
   openCardModal(cardId);
-  focusNewLot(cardId, lotId);
+  focusNewLot(cardId, lastLotId);
 }
 
 /** The purchase record for one finish, or an empty one. Never null. */
@@ -2793,6 +2860,11 @@ function runAction(target, event) {
       event.preventDefault();
       removeInventoryLot(cardId, target.getAttribute("data-lot-id"));
       break;
+    case "toggle-wish-variant":
+      event.preventDefault();
+      event.stopPropagation();
+      toggleWishlistVariant(cardId, target.getAttribute("data-vkey"));
+      break;
     case "toggle-wish":
       event.preventDefault();
       event.stopPropagation();
@@ -2884,9 +2956,9 @@ function handleDelegatedChange(event) {
       openCardModal(cardId);
       showToast(target.checked ? "Added to your wishlist" : "Removed from your wishlist");
       break;
-    case "wish-variant":
-      setWishlist(cardId, { targetVariant: target.value });
-      openCardModal(cardId);
+    case "wish-variant-check":
+      toggleWishlistVariant(cardId, target.getAttribute("data-vkey"));
+      if (isWishlisted(cardId)) openCardModal(cardId);
       break;
     case "wish-price":
       setWishlist(cardId, { targetPrice: target.value });
@@ -3421,6 +3493,32 @@ function fitCardNames(scope) {
   }
 }
 
+/**
+ * The printings wanted, as chips, on a tile for a card on the wishlist.
+ *
+ * Deliberately the same shape as the owned chips below it: a want is recorded
+ * against a printing, so it is marked the same way a copy is.
+ */
+function renderWishChips(card, entry) {
+  const wish = entryWishlist(entry);
+  if (!wish) return "";
+  return `
+    <div class="card-wish-wanted">
+      <span class="card-wish-label">Wanted</span>
+      <div class="wish-chips-grid">
+        ${getCardVariantDefs(card).map(def => {
+          const on = wish.variants.indexOf(def.key) !== -1;
+          return `<button type="button" class="wish-chip${on ? " is-on" : ""}"
+            data-action="toggle-wish-variant" data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}"
+            aria-pressed="${on}"
+            title="${on ? "Wanted" : "Not wanted"}: ${esc(def.label)}"
+            aria-label="${on ? "Stop wanting" : "Want"} the ${esc(def.label)} printing"
+            >${def.icon} ${esc(def.short || def.label)}</button>`;
+        }).join("")}
+      </div>
+    </div>`;
+}
+
 function renderVariantChips(card, entry) {
   return getCardVariantDefs(card).map(def => {
     const qty = entry.variants[def.key] || 0;
@@ -3531,6 +3629,8 @@ function renderGridView(cards) {
           </div>
 
           ${purchaseRow(card, entry)}
+
+          <div data-wish-row>${renderWishChips(card, entry)}</div>
 
           ${wished && valueOf("filterOwned") === "wishlist" ? `
           <button type="button" class="card-wish-move" data-action="wish-to-owned"
@@ -3644,6 +3744,8 @@ function refreshCardUI(cardId) {
     if (label) label.textContent = `${totalQty} Owned`;
     const chips = tile.querySelector("[data-chips]");
     if (chips) chips.innerHTML = renderVariantChips(card, entry);
+    const wishRow = tile.querySelector("[data-wish-row]");
+    if (wishRow) wishRow.innerHTML = renderWishChips(card, entry);
     const star = tile.querySelector("[data-action='toggle-wish']");
     if (star) {
       const wished = Boolean(entryWishlist(entry));
@@ -4910,8 +5012,11 @@ function openCardModal(cardId) {
   const name = displayName(card.ff_name);
 
   const wish = entryWishlist(entry);
-  const wishDef = wishlistVariantDef(card, wish);
-  const wishMarket = getActiveUnitPrice(card, wishDef ? wishDef.key : "nonfoil");
+  const wishDefs = wish ? wishlistVariantDefs(card, wish) : [];
+  const wishMarket = wishDefs.reduce((total, def) => {
+    const unit = getActiveUnitPrice(card, def.key);
+    return { value: total.value + unit.value, currency: unit.currency || total.currency };
+  }, { value: 0, currency: "USD" });
 
   if (modalCardId !== cardId) resetLotFolds();
   // Decided by the card rather than remembered: a card with nothing recorded
@@ -4927,9 +5032,19 @@ function openCardModal(cardId) {
   const variantRows = getCardVariantDefs(card).map(def => {
     const qty = entry.variants[def.key] || 0;
     const price = variantPrice(card, def);
+    // The want sits in the same row as the quantity, because a want is
+    // recorded against a printing exactly as a copy is.
+    const wanted = Boolean(wish) && wish.variants.indexOf(def.key) !== -1;
     return `
       <tr>
-        <td><strong>${def.icon} ${esc(def.label)}</strong></td>
+        <td>
+          <button type="button" class="variant-wish${wanted ? " is-on" : ""}"
+                  data-action="toggle-wish-variant" data-card-id="${esc(card.id)}"
+                  data-vkey="${esc(def.key)}" aria-pressed="${wanted}"
+                  title="${wanted ? "On your wishlist" : "Add this printing to your wishlist"}"
+                  aria-label="${wanted ? "Stop wanting" : "Want"} the ${esc(def.label)} printing"
+                  >${wanted ? "★" : "☆"}</button>
+          <strong>${def.icon} ${esc(def.label)}</strong></td>
         <td class="variant-price">${money(price.value, price.currency)}</td>
         <td>
           <div class="stepper-control">
@@ -4985,15 +5100,23 @@ function openCardModal(cardId) {
           <span>Add this card to my wishlist</span>
         </label>
         ${wish ? `
+        <div class="wish-variant-list" role="group" aria-label="Printings wanted">
+          <span class="field-label">Printings wanted</span>
+          ${getCardVariantDefs(card).map(def => {
+            const on = wish.variants.indexOf(def.key) !== -1;
+            const unit = getActiveUnitPrice(card, def.key);
+            return `
+            <label class="wish-variant-row${on ? " is-on" : ""}">
+              <input type="checkbox" data-change="wish-variant-check"
+                     data-card-id="${esc(card.id)}" data-vkey="${esc(def.key)}"
+                     ${on ? "checked" : ""}>
+              <span class="wish-variant-name">${def.icon} ${esc(def.label)}</span>
+              <span class="wish-variant-price">${esc(money(unit.value, unit.currency))}</span>
+            </label>`;
+          }).join("")}
+        </div>
+
         <div class="modal-field-grid wish-fields">
-          <div>
-            <label class="field-label" for="modalWishVariant">Finish wanted</label>
-            <select id="modalWishVariant" class="table-select"
-                    data-change="wish-variant" data-card-id="${esc(card.id)}">
-              ${getCardVariantDefs(card).map(def =>
-                `<option value="${esc(def.key)}" ${def.key === wish.targetVariant ? "selected" : ""}>${esc(def.icon)} ${esc(def.label)}</option>`).join("")}
-            </select>
-          </div>
           <div>
             <label class="field-label" for="modalWishPrice">Target price (optional)</label>
             <input id="modalWishPrice" type="number" min="0" step="0.01" inputmode="decimal"
@@ -5010,7 +5133,8 @@ function openCardModal(cardId) {
             </select>
           </div>
         </div>
-        <p class="wish-hint">Market price for the finish wanted:
+        <p class="wish-hint">Market price for ${wishDefs.length === 1
+          ? "the printing wanted" : `all ${wishDefs.length} printings wanted`}:
           <strong>${esc(money(wishMarket.value, wishMarket.currency))}</strong></p>
         <button type="button" class="btn btn-outline btn-small" data-action="wish-to-owned"
                 data-card-id="${esc(card.id)}">\u{2714} I bought it — move to owned</button>` : ""}`,
@@ -5317,7 +5441,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 9;
+const REQUIRED_SCRIPT_VERSION = 10;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +

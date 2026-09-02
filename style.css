@@ -4205,6 +4205,151 @@ body.modal-open {
   font-size: 13px;
 }
 
+/* --------------------------------------------------------------------------
+   Wanted printings
+
+   A want is recorded against a printing, the same way a copy is, so these
+   deliberately echo the owned variant chips they sit above.
+   -------------------------------------------------------------------------- */
+/* The slot is always in the tile so it can be filled without a re-render; it
+   costs nothing while the card is not wanted. */
+[data-wish-row]:empty { display: none; }
+
+.card-wish-wanted {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 7px 9px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.06);
+}
+
+.card-wish-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  flex: 0 0 auto;
+}
+
+.wish-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 0;
+}
+
+.wish-chip {
+  padding: 4px 8px;
+  border: 1px dashed var(--border-light);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wish-chip:hover,
+.wish-chip:focus-visible {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
+.wish-chip.is-on {
+  border-style: solid;
+  border-color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.16);
+  color: var(--accent-gold);
+}
+
+/* The same mark, in the row of the print-variants table that records copies. */
+.variant-wish {
+  margin-right: 7px;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.variant-wish:hover,
+.variant-wish:focus-visible {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
+.variant-wish.is-on {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.18);
+}
+
+/* The checklist inside the card window's wishlist tile. */
+.wish-variant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.wish-variant-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.wish-variant-row:hover { border-color: var(--border-light); }
+
+.wish-variant-row.is-on {
+  border-color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.wish-variant-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-gold);
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.wish-variant-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.wish-variant-price {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
+}
+
 /* The card window's wishlist tile. */
 .wish-toggle {
   display: flex;
