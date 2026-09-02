@@ -5441,7 +5441,7 @@ const SYNC_TIMEOUT_MS = 25000;
  * runs old code. Checking the version turns a baffling "my fix did nothing" into
  * a message that says exactly what to do.
  */
-const REQUIRED_SCRIPT_VERSION = 10;
+const REQUIRED_SCRIPT_VERSION = 11;
 
 const STALE_SCRIPT_MESSAGE =
   "Your sheet is running an old copy of the sync script, so recent fixes are not " +
