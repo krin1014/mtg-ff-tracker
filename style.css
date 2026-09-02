@@ -2037,31 +2037,6 @@ body.modal-open {
   position: relative;
 }
 
-/* A switch, not a menu, so both states have to be legible at a glance. On is
-   tinted and lit; off is dashed and dim. A plain outline button in both states
-   read as "nothing happened". */
-.toggle-btn .icon {
-  display: inline-block;
-  font-size: 10px;
-  transition: opacity 0.2s ease;
-}
-
-.toggle-btn[aria-pressed="true"] {
-  color: var(--accent-cyan);
-  border-color: var(--accent-cyan);
-  background: rgba(56, 189, 248, 0.12);
-}
-
-.toggle-btn.is-off {
-  color: var(--text-muted);
-  border-style: dashed;
-  background: transparent;
-}
-
-.toggle-btn.is-off .icon {
-  opacity: 0.45;
-}
-
 .btn.btn-small {
   padding: 6px 10px;
   font-size: 12px;
@@ -3810,8 +3785,6 @@ body.modal-open {
 /* Switched off for the whole binder view - the recorded figures and the prompt
    for the missing ones. Display only: nothing is cleared, the dashboard still
    counts it, and the card window still shows it. */
-.cards-grid.hide-purchases .card-purchase,
-.cards-grid.hide-purchases .card-purchase-add { display: none; }
 
 .card-purchase.is-up, .table-purchase.is-up { border-left-color: #34D399; }
 .card-purchase.is-down, .table-purchase.is-down { border-left-color: #F87171; }

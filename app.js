@@ -48,6 +48,10 @@ let collection = createEmptyCollection();
 let currentView = "grid"; // 'grid' | 'table'
 let currentPage = 1;
 let pageSize = 60;
+// The grid is five cards to a row, so the small page is 25 rather than 24 -
+// 24 left a gap at the end of the last row. Kept in one place so the dropdown,
+// the default and the saved preference cannot drift apart.
+const PAGE_SIZES = [25, 60, 120];
 let filteredCards = [];
 // Which Final Fantasy games are being shown. Empty means all of them - the
 // same "no filter" state the selects express as "all", kept as an empty list
@@ -1587,11 +1591,6 @@ const PHONE_HIDDEN_COLUMNS = [
 // Column keys the user has switched off, on this device.
 let hiddenColumns = [];
 
-// Whether the tiles show what was paid. Off is a display choice only - nothing
-// is cleared, and the table's Paid column is governed separately by the column
-// picker, so each view keeps the control that suits it.
-let showPurchases = true;
-
 function savePrefs() {
   const prefs = {
     view: currentView,
@@ -1601,7 +1600,6 @@ function savePrefs() {
     location: activeLocationFilter,
     dashboardOpen: dashboardOpen,
     hiddenColumns: hiddenColumns,
-    showPurchases: showPurchases,
     modalSections: rememberedModalSections(),
     filters: {}
   };
@@ -1625,14 +1623,16 @@ function loadPrefs() {
 
   if (prefs.view === "table" || prefs.view === "grid") currentView = prefs.view;
   if (typeof prefs.dashboardOpen === "boolean") dashboardOpen = prefs.dashboardOpen;
-  if (typeof prefs.showPurchases === "boolean") showPurchases = prefs.showPurchases;
   if (Array.isArray(prefs.hiddenColumns)) {
     // Filter against the registry so a key retired in a later version cannot
     // linger and hide nothing, and so the name column can never be lost.
     hiddenColumns = prefs.hiddenColumns.filter(key => TABLE_COLUMNS.some(
       col => col.key === key && !col.locked));
   }
-  if ([24, 60, 120].indexOf(Number(prefs.pageSize)) !== -1) pageSize = Number(prefs.pageSize);
+  // A device that saved 24 picked "the small page", which is 25 now; carry the
+  // choice over rather than dropping it back to the default.
+  const savedSize = Number(prefs.pageSize) === 24 ? 25 : Number(prefs.pageSize);
+  if (PAGE_SIZES.indexOf(savedSize) !== -1) pageSize = savedSize;
   // "number_asc" was the old default. Nobody picked it deliberately, so move
   // those devices onto the new default rather than pinning them to the old one.
   setValue("sortBySelect", prefs.sort === "number_asc" ? "print_style" : prefs.sort);
@@ -1754,7 +1754,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cardsById = new Map(CARDS_DATA.map(card => [card.id, card]));
   buildSearchIndex();
-  pageSize = isSmallScreen() ? 24 : 60;
+  pageSize = isSmallScreen() ? PAGE_SIZES[0] : 60;
 
   loadCollectionState();
   loadSyncConfig();
@@ -2382,32 +2382,6 @@ function toggleDashboard() {
   savePrefs();
 }
 
-/**
- * Show or hide the paid block on every tile.
- *
- * One class on the grid rather than a re-render: the blocks are already in the
- * markup, so switching them off is instant and nothing has to be rebuilt when
- * they come back.
- */
-function applyPurchaseVisibility() {
-  const grid = document.getElementById("binderGridView");
-  if (grid) grid.classList.toggle("hide-purchases", !showPurchases);
-
-  const btn = document.getElementById("purchaseToggleBtn");
-  if (btn) {
-    btn.style.display = currentView === "grid" ? "" : "none";
-    btn.setAttribute("aria-pressed", String(showPurchases));
-    btn.classList.toggle("is-off", !showPurchases);
-    setText("purchaseToggleIcon", showPurchases ? "◉" : "○");
-  }
-}
-
-function togglePurchaseDisplay() {
-  showPurchases = !showPurchases;
-  applyPurchaseVisibility();
-  savePrefs();
-}
-
 // ---------------------------------------------------------------------------
 // Table columns
 //
@@ -2619,9 +2593,6 @@ function initEventListeners() {
 
   const dashboardToggle = document.getElementById("dashboardToggle");
   if (dashboardToggle) dashboardToggle.addEventListener("click", toggleDashboard);
-
-  const purchaseToggle = document.getElementById("purchaseToggleBtn");
-  if (purchaseToggle) purchaseToggle.addEventListener("click", togglePurchaseDisplay);
 
   // Filters open and close from the button on the search line. A button and a
   // hidden panel rather than <details>: the grid has to be a flex item of that
@@ -2990,7 +2961,6 @@ function applyViewMode() {
   // Each view carries its own density control.
   renderColumnPicker();
   toggleColumnPicker(false);
-  applyPurchaseVisibility();
 }
 
 // ---------------------------------------------------------------------------

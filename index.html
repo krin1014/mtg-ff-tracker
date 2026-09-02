@@ -267,14 +267,6 @@
           Showing <span id="resultsCount">0</span> of <strong data-total-cards>—</strong> cards
         </div>
         <div class="results-controls">
-          <!-- Binder view: purchase blocks on and off. The table has the
-               column picker for the same job, so each view carries the control
-               that fits it. Remembered per device. -->
-          <button type="button" id="purchaseToggleBtn" class="btn btn-outline btn-small toggle-btn"
-                  aria-pressed="true" style="display:none;"
-                  title="Show or hide what you paid on each card">
-            <span class="icon" id="purchaseToggleIcon" aria-hidden="true">◉</span> Purchases
-          </button>
           <!-- Table view ships fifteen columns, which overflow sideways on any
                normal screen. Hidden columns are remembered per device. -->
           <div class="column-picker" id="columnPicker" style="display:none;">
@@ -294,7 +286,7 @@
           </div>
           <label class="page-size-label" for="pageSizeSelect">Per page</label>
           <select id="pageSizeSelect" class="page-size-select">
-            <option value="24">24</option>
+            <option value="25">25</option>
             <option value="60">60</option>
             <option value="120">120</option>
           </select>
