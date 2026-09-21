@@ -12,7 +12,7 @@
  * revalidates it.
  */
 
-const CACHE_VERSION = "v20260914";
+const CACHE_VERSION = "v20260921";
 const SHELL_CACHE = `ff-tracker-shell-${CACHE_VERSION}`;
 const IMAGE_CACHE = `ff-tracker-images-${CACHE_VERSION}`;
 
