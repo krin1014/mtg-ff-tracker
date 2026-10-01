@@ -1655,6 +1655,10 @@ const PHONE_HIDDEN_COLUMNS = [
   "avail", "condition", "price", "price-foil", "location"
 ];
 
+// Whether the sort on screen was picked from the dropdown, rather than left on
+// the default. Only an unpicked sort is moved onto a new default.
+let sortChosen = false;
+
 // Column keys the user has switched off, on this device.
 let hiddenColumns = [];
 
@@ -1663,6 +1667,7 @@ function savePrefs() {
     view: currentView,
     pageSize: pageSize,
     sort: valueOf("sortBySelect"),
+    sortChosen: sortChosen,
     search: valueOf("searchInput"),
     location: activeLocationFilter,
     dashboardOpen: dashboardOpen,
@@ -1700,9 +1705,13 @@ function loadPrefs() {
   // choice over rather than dropping it back to the default.
   const savedSize = Number(prefs.pageSize) === 24 ? 25 : Number(prefs.pageSize);
   if (PAGE_SIZES.indexOf(savedSize) !== -1) pageSize = savedSize;
-  // "number_asc" was the old default. Nobody picked it deliberately, so move
-  // those devices onto the new default rather than pinning them to the old one.
-  setValue("sortBySelect", prefs.sort === "number_asc" ? "print_style" : prefs.sort);
+  // "number_asc" and then "print_style" were each the default in turn. A saved
+  // default is a default nobody chose, so move those devices onto the current
+  // one rather than pinning them to an old one. Picking either again from the
+  // dropdown still sticks.
+  const retiredDefault = prefs.sort === "number_asc" || prefs.sort === "print_style";
+  sortChosen = prefs.sortChosen === true;
+  setValue("sortBySelect", retiredDefault && !sortChosen ? "color_wubrg" : prefs.sort);
   setValue("searchInput", prefs.search);
   if (prefs.filters && typeof prefs.filters === "object") {
     FILTER_IDS.forEach(id => setValue(id, prefs.filters[id]));
@@ -2612,6 +2621,7 @@ function initEventListeners() {
     if (!el) return;
     el.addEventListener("change", () => {
       currentPage = 1;
+      if (id === "sortBySelect") sortChosen = true;
       applyFiltersAndRender();
       if (id === "filterOwned") {
         renderWishlistSummary();
@@ -3000,7 +3010,8 @@ function resetAllFilters() {
   setValue("searchInput", "");
   document.getElementById("clearSearchBtn").style.display = "none";
   FILTER_IDS.forEach(id => setValue(id, "all"));
-  setValue("sortBySelect", "print_style");
+  setValue("sortBySelect", "color_wubrg");
+  sortChosen = false;
   activeGames = [];
   activeLocationFilter = "all";
   locationUiSignature = "";
@@ -3171,8 +3182,10 @@ function sortFilteredCards(sortBy, query) {
       case "number_asc":
         return compareByNumber(a, b);
       case "print_style":
-      default:
         return compareByPrintStyle(a, b);
+      case "color_wubrg":
+      default:
+        return compareByColor(a, b);
     }
   });
 }
@@ -3274,6 +3287,64 @@ function compareBySet(a, b) {
 function compareByPrintStyle(a, b) {
   return (cardKind(a) - cardKind(b))
     || (treatmentRank(a) - treatmentRank(b))
+    || compareBySet(a, b)
+    || compareByNumber(a, b);
+}
+
+// ---------------------------------------------------------------------------
+// Colour-first sort (WUBRG)
+//
+// The binder order a player expects: each colour in turn, then gold cards,
+// then the colourless ones, then artifacts, then lands. Collector number alone
+// scatters artifacts and lands through the middle of the colours.
+// ---------------------------------------------------------------------------
+
+const WUBRG = ["W", "U", "B", "R", "G"];
+
+/**
+ * A card's colours, from the mana cost of its front face.
+ *
+ * The data carries colour IDENTITY, which is not the same thing - a red card
+ * with a white activated ability has identity RW but is mono-red. Colour comes
+ * from the mana cost, and only the front face counts: an adventure's second
+ * cost and a double-faced card's back do not colour the card. Hybrid symbols
+ * count both colours, Phyrexian ones their colour. A card with no cost at all
+ * (a colour-indicated back face, say) falls back to its identity.
+ */
+function cardColors(card) {
+  const front = String(card.mana_cost || "").split("//")[0];
+  const source = front.trim()
+    ? (front.match(/\{[\w/]*\}/g) || []).join("")
+    : (card.color_identity === "Colorless" ? "" : String(card.color_identity || ""));
+  return WUBRG.filter(code => source.indexOf(code) !== -1);
+}
+
+/**
+ * Which group a card belongs to, 1-9, in WUBRG binder order.
+ *
+ * Lands are tested first: an artifact land files with the lands, and a land is
+ * never coloured by cost. Colour comes next, so a coloured artifact stays with
+ * its colour; only colourless artifacts make tier 8.
+ */
+function colorTier(card) {
+  const frontType = String(card.type_line || "").split("//")[0];
+  if (/\bLand\b/.test(frontType)) return 9;
+  const colors = cardColors(card);
+  if (colors.length > 1) return 6;
+  if (colors.length === 1) return WUBRG.indexOf(colors[0]) + 1;
+  if (/\bArtifact\b/.test(frontType)) return 8;
+  return 7;
+}
+
+/**
+ * Colour group, then collector number.
+ *
+ * Collector numbers repeat from set to set, so within a group the sets run in
+ * release order and each one counts up by number - otherwise #1 of every set
+ * would land together at the top.
+ */
+function compareByColor(a, b) {
+  return (colorTier(a) - colorTier(b))
     || compareBySet(a, b)
     || compareByNumber(a, b);
 }
