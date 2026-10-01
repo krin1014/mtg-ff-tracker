@@ -3337,14 +3337,19 @@ function colorTier(card) {
 }
 
 /**
- * Colour group, then collector number.
+ * Print style first, exactly as before, then colour inside each treatment.
  *
- * Collector numbers repeat from set to set, so within a group the sets run in
- * release order and each one counts up by number - otherwise #1 of every set
- * would land together at the top.
+ * The treatments stay the top of the order - playable cards ahead of tokens
+ * and art cards, and each frame treatment in its usual place. Only the order
+ * WITHIN a treatment changes: WUBRG, gold, colourless, artifacts, lands,
+ * instead of collector number scattering artifacts and lands through the
+ * colours. Collector numbers repeat from set to set, so inside a colour group
+ * the sets run in release order and each one counts up by number.
  */
 function compareByColor(a, b) {
-  return (colorTier(a) - colorTier(b))
+  return (cardKind(a) - cardKind(b))
+    || (treatmentRank(a) - treatmentRank(b))
+    || (colorTier(a) - colorTier(b))
     || compareBySet(a, b)
     || compareByNumber(a, b);
 }
